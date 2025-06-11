@@ -1,0 +1,23 @@
+{
+  "name": "zillit-playwright-automation",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:qa": "ENV=.env.qa npx playwright test",
+    "test:production": "ENV=.env.production npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.23",
+    "allure-playwright": "^3.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}

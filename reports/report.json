@@ -1,0 +1,646 @@
+{
+  "config": {
+    "configFile": "/Users/babuyadav/Documents/zillit-playwright-automation/playwright.config.js",
+    "rootDir": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/report.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/results.xml"
+        }
+      ],
+      [
+        "/Users/babuyadav/Documents/zillit-playwright-automation/node_modules/allure-playwright/dist/cjs/index.js",
+        {
+          "outputFolder": "allure-results",
+          "detail": true,
+          "suiteTitle": false
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests",
+        "testIgnore": [
+          "**/skip/**"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests",
+        "testIgnore": [
+          "**/skip/**"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests",
+        "testIgnore": [
+          "**/skip/**"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "upload-mediaTest.spec.js",
+      "file": "upload-mediaTest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Upload media tests",
+          "file": "upload-mediaTest.spec.js",
+          "line": 50,
+          "column": 6,
+          "specs": [
+            {
+              "title": "send message",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8450,
+                      "error": {
+                        "message": "Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\\'dropDown\\']') resolved to 2 elements:\n    1) <div class=\"dropDown\">…</div> aka locator('.dropDown').first()\n    2) <div class=\"dropDown\">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n",
+                        "stack": "Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\\'dropDown\\']') resolved to 2 elements:\n    1) <div class=\"dropDown\">…</div> aka locator('.dropDown').first()\n    2) <div class=\"dropDown\">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n\n    at UploadMedia.moveElement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js:94:32)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/upload-mediaTest.spec.js:73:24",
+                        "location": {
+                          "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                          "column": 32,
+                          "line": 94
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/upload-media.js:94\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[36masync\u001b[39m moveElement(){\n \u001b[90m 93 |\u001b[39m         \u001b[90m// Wait for the element to be visible before hovering\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m         \u001b[90m// Hover over the element\u001b[39m\n \u001b[90m 96 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                            "column": 32,
+                            "line": 94
+                          },
+                          "message": "Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\\'dropDown\\']') resolved to 2 elements:\n    1) <div class=\"dropDown\">…</div> aka locator('.dropDown').first()\n    2) <div class=\"dropDown\">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/upload-media.js:94\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[36masync\u001b[39m moveElement(){\n \u001b[90m 93 |\u001b[39m         \u001b[90m// Wait for the element to be visible before hovering\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m         \u001b[90m// Hover over the element\u001b[39m\n \u001b[90m 96 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     }\u001b[0m\n\u001b[2m    at UploadMedia.moveElement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js:94:32)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/upload-mediaTest.spec.js:73:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[INFO] 2025-06-11T07:32:21.451Z - browser is launching\n"
+                        },
+                        {
+                          "text": "[INFO] 2025-06-11T07:32:39.108Z - send message\n"
+                        },
+                        {
+                          "text": "[INFO] 2025-06-11T07:32:47.573Z - close browser\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-11T07:32:21.126Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/upload-mediaTest-Upload-media-tests-send-message-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "_error-context-0",
+                          "contentType": "text/markdown",
+                          "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/upload-mediaTest-Upload-media-tests-send-message-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                        "column": 32,
+                        "line": 94
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "709cd852171d312f38d8-ddf12721180f80b9d334",
+              "file": "upload-mediaTest.spec.js",
+              "line": 68,
+              "column": 3
+            },
+            {
+              "title": "upload image",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6932,
+                      "error": {
+                        "message": "Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\\'dropDown\\']') resolved to 3 elements:\n    1) <div class=\"dropDown\">…</div> aka locator('.dropDown').first()\n    2) <div class=\"dropDown\">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')\n    3) <div class=\"dropDown\">…</div> aka locator('div:nth-child(4) > .dropDown')\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n",
+                        "stack": "Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\\'dropDown\\']') resolved to 3 elements:\n    1) <div class=\"dropDown\">…</div> aka locator('.dropDown').first()\n    2) <div class=\"dropDown\">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')\n    3) <div class=\"dropDown\">…</div> aka locator('div:nth-child(4) > .dropDown')\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n\n    at UploadMedia.moveElement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js:94:32)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/upload-mediaTest.spec.js:83:24",
+                        "location": {
+                          "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                          "column": 32,
+                          "line": 94
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/upload-media.js:94\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[36masync\u001b[39m moveElement(){\n \u001b[90m 93 |\u001b[39m         \u001b[90m// Wait for the element to be visible before hovering\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m         \u001b[90m// Hover over the element\u001b[39m\n \u001b[90m 96 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                            "column": 32,
+                            "line": 94
+                          },
+                          "message": "Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\\'dropDown\\']') resolved to 3 elements:\n    1) <div class=\"dropDown\">…</div> aka locator('.dropDown').first()\n    2) <div class=\"dropDown\">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')\n    3) <div class=\"dropDown\">…</div> aka locator('div:nth-child(4) > .dropDown')\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/upload-media.js:94\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[36masync\u001b[39m moveElement(){\n \u001b[90m 93 |\u001b[39m         \u001b[90m// Wait for the element to be visible before hovering\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m         \u001b[90m// Hover over the element\u001b[39m\n \u001b[90m 96 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     }\u001b[0m\n\u001b[2m    at UploadMedia.moveElement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js:94:32)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/upload-mediaTest.spec.js:83:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[INFO] 2025-06-11T07:32:48.145Z - browser is launching\n"
+                        },
+                        {
+                          "text": "[INFO] 2025-06-11T07:32:58.978Z - upload image\n"
+                        },
+                        {
+                          "text": "[INFO] 2025-06-11T07:33:05.922Z - close browser\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-11T07:32:48.034Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/upload-mediaTest-Upload-media-tests-upload-image-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "_error-context-0",
+                          "contentType": "text/markdown",
+                          "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/upload-mediaTest-Upload-media-tests-upload-image-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                        "column": 32,
+                        "line": 94
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "709cd852171d312f38d8-29c03c504c121ea4dc64",
+              "file": "upload-mediaTest.spec.js",
+              "line": 78,
+              "column": 3
+            },
+            {
+              "title": "upload video",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8604,
+                      "error": {
+                        "message": "Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\\'dropDown\\']') resolved to 2 elements:\n    1) <div class=\"dropDown\">…</div> aka locator('.dropDown').first()\n    2) <div class=\"dropDown\">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n",
+                        "stack": "Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\\'dropDown\\']') resolved to 2 elements:\n    1) <div class=\"dropDown\">…</div> aka locator('.dropDown').first()\n    2) <div class=\"dropDown\">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n\n    at UploadMedia.moveElement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js:94:32)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/upload-mediaTest.spec.js:93:24",
+                        "location": {
+                          "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                          "column": 32,
+                          "line": 94
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/upload-media.js:94\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[36masync\u001b[39m moveElement(){\n \u001b[90m 93 |\u001b[39m         \u001b[90m// Wait for the element to be visible before hovering\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m         \u001b[90m// Hover over the element\u001b[39m\n \u001b[90m 96 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                            "column": 32,
+                            "line": 94
+                          },
+                          "message": "Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\\'dropDown\\']') resolved to 2 elements:\n    1) <div class=\"dropDown\">…</div> aka locator('.dropDown').first()\n    2) <div class=\"dropDown\">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')\n\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/upload-media.js:94\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[36masync\u001b[39m moveElement(){\n \u001b[90m 93 |\u001b[39m         \u001b[90m// Wait for the element to be visible before hovering\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m         \u001b[90m// Hover over the element\u001b[39m\n \u001b[90m 96 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     }\u001b[0m\n\u001b[2m    at UploadMedia.moveElement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js:94:32)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/upload-mediaTest.spec.js:93:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[INFO] 2025-06-11T07:33:06.469Z - browser is launching\n"
+                        },
+                        {
+                          "text": "[INFO] 2025-06-11T07:33:13.554Z - upload video\n"
+                        },
+                        {
+                          "text": "[INFO] 2025-06-11T07:33:22.170Z - close browser\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-11T07:33:06.358Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/upload-mediaTest-Upload-media-tests-upload-video-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "_error-context-0",
+                          "contentType": "text/markdown",
+                          "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/upload-mediaTest-Upload-media-tests-upload-video-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                        "column": 32,
+                        "line": 94
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "709cd852171d312f38d8-19ccd4884951476f3352",
+              "file": "upload-mediaTest.spec.js",
+              "line": 88,
+              "column": 3
+            },
+            {
+              "title": "upload audio",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12052,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[INFO] 2025-06-11T07:33:22.703Z - browser is launching\n"
+                        },
+                        {
+                          "text": "[INFO] 2025-06-11T07:33:30.236Z - upload audio\n"
+                        },
+                        {
+                          "text": "disaaper the delete pop up\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-11T07:33:22.607Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "709cd852171d312f38d8-dddec9c1b3a2835e948b",
+              "file": "upload-mediaTest.spec.js",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "upload document",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30083,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js",
+                            "column": 32,
+                            "line": 94
+                          },
+                          "message": "Error: locator.waitFor: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'dropDown\\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/upload-media.js:94\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[36masync\u001b[39m moveElement(){\n \u001b[90m 93 |\u001b[39m         \u001b[90m// Wait for the element to be visible before hovering\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m         \u001b[90m// Hover over the element\u001b[39m\n \u001b[90m 96 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mhoverTarget\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     }\u001b[0m\n\u001b[2m    at UploadMedia.moveElement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/upload-media.js:94:32)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/upload-mediaTest.spec.js:109:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[INFO] 2025-06-11T07:33:42.292Z - upload document\n"
+                        },
+                        {
+                          "text": "[INFO] 2025-06-11T07:34:12.389Z - close browser\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-11T07:33:42.289Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/upload-mediaTest-Upload-media-tests-upload-document-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "_error-context-1",
+                          "contentType": "text/markdown",
+                          "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/upload-mediaTest-Upload-media-tests-upload-document-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "709cd852171d312f38d8-d088179da44c23d9016b",
+              "file": "upload-mediaTest.spec.js",
+              "line": 105,
+              "column": 3
+            },
+            {
+              "title": "verify delete",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-11T07:34:12.438Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "709cd852171d312f38d8-92c7c8f60f98f7f32102",
+              "file": "upload-mediaTest.spec.js",
+              "line": 113,
+              "column": 8
+            },
+            {
+              "title": "read the data from json file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-11T07:34:12.438Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "709cd852171d312f38d8-1f73d8fcc93aa3b3d56f",
+              "file": "upload-mediaTest.spec.js",
+              "line": 118,
+              "column": 8
+            },
+            {
+              "title": "setting module",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-11T07:34:12.442Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "709cd852171d312f38d8-9520777b30fe80ee0fef",
+              "file": "upload-mediaTest.spec.js",
+              "line": 124,
+              "column": 8
+            },
+            {
+              "title": "delete multiple",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-11T07:34:12.444Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "709cd852171d312f38d8-7011898dd2f8c38ecc58",
+              "file": "upload-mediaTest.spec.js",
+              "line": 129,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-06-11T07:32:20.779Z",
+    "duration": 111670.352,
+    "expected": 1,
+    "skipped": 4,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

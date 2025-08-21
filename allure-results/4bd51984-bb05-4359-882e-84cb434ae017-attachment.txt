@@ -1,3 +1,0 @@
-[INFO] 2025-06-11T07:32:21.451Z - browser is launching
-[INFO] 2025-06-11T07:32:39.108Z - send message
-[INFO] 2025-06-11T07:32:47.573Z - close browser

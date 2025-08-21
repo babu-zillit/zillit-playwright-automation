@@ -3,10 +3,14 @@ import { defineConfig, devices } from '@playwright/test';
 
 /**
 MyProject/
+├── allure-results               ← folder that stores test result files used by Allure to generate reports
+├── assets                       ← We use assets that store media files (like images, videos, document, audio)
 ├── src/
+│   ├── actions/                 ← Actions that perform specific tasks (e.g., media uploader, login actions)
 │   ├── config/                  ← Environment configs (URLs, base paths, env vars)
 │   ├── fixtures/                ← Sample test data (JSON, mock data)
-│   ├── 
+│   ├── globalSetup/            ← Global setup scripts (e.g., login, session management)
+│   ├── sessions/                ← Session files (e.g., logged-in state, cookies) 
 │   ├── pages/                   ← Page Object Model files (e.g., login.js, home.js)
 │   │   └── login.js
 │   ├── tests/                   ← Your actual test files
@@ -18,9 +22,11 @@ MyProject/
 │   │   ├── loggerUtils.js
 │   │   ├── jsonUtil.js
 │   │   └── excelUtils/          ← Folder with Excel parsing utilities
+│   └── testdata/              ← Sample test data files (e.g., JSON, CSV)
 │
 ├── package.json                 ← Project dependencies & scripts
-└── playwright.config.js         ← Playwright test configuration
+├── playwright.config.js         ← Playwright test configuration
+└── README.md                   ← Project documentation
  * 
  */ 
 
@@ -149,7 +155,7 @@ export default defineConfig({
    * 
    */ 
 
- // retries: process.env.CI ? 1 : 0,
+  //retries: process.env.CI ? 1 : 0,
 
 
 
@@ -191,6 +197,7 @@ export default defineConfig({
    * 
    */ 
 
+  outputDir: 'test-results/', // screenshots, videos, traces
 
 
 
@@ -240,7 +247,7 @@ use: {
    */
 
   viewport: { width: 1280, height: 720 },
-
+ 
 
 
 
@@ -265,7 +272,8 @@ use: {
    * 
    */
 
-  trace: 'on-first-retry',
+  trace: 'retain-on-failure',
+  //trace: 'off', // or 'on-first-retry' or 'retain-on-failure'
 
 
 
@@ -291,7 +299,7 @@ use: {
    */
 
   video: 'retain-on-failure',
-
+  //video: 'off',
 
 
 
@@ -323,11 +331,9 @@ use: {
    * 
    */
 
-  // launchOptions: {
-  //   slowMo: 50,
-  //   args: ['--start-maximized'],
-  // },
-
+   launchOptions: {
+     // slowMo: 1000,
+   },
 
 
 
@@ -361,7 +367,10 @@ use: {
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
-        // Auto-allow permissions in Chromium
+       // viewport: { width: 1400, height: 800 },
+        /**
+         * Auto-allow permissions in Chromium
+         */ 
         permissions: [
           'camera',
           'microphone',
@@ -379,8 +388,11 @@ use: {
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] ,
+        viewport: { width: 1400, height: 800 },
         browserName: 'firefox',
-        // Auto-allow permissions via Firefox prefs
+        /**
+         * Auto-allow permissions in firefox
+         */ 
         firefoxUserPrefs: {
           'permissions.default.desktop-notification': 1,
           'dom.webnotifications.enabled': true,
@@ -398,8 +410,6 @@ use: {
       name: 'webkit',
       use: { ...devices['Desktop Safari'],
         browserName: 'webkit',
-        // No native permission support for camera/mic/notifications,
-        // so omit or handle manually
       },
     },
 

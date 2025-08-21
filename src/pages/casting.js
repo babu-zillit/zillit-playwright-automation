@@ -1,0 +1,188 @@
+import { loadJson } from '../utils/jsonUtil';
+const mediapaths = loadJson('mediapaths', 'testdata');
+
+export default class Casting {
+
+    constructor(page){
+        this.page = page;
+
+        this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
+
+        this.selectsShortlistFinals = page.locator('//div[@class="ant-segmented-group"]//label');
+
+        this.enterEpisode = page.locator('#episodeNo');
+        this.enterCharacter = page.locator('#character');
+        this.enterTalent = page.locator('#castName');
+        this.selectGender = page.locator('#gender');
+        this.enterDiscription = page.locator('#description');
+        this.save = page.locator('#upload_casting_details_save_button');
+
+        this.plus = page.locator('#create_casting_details_modal_open_button');
+        this.attchment = page.locator('[class="ant-float-btn-body"]');
+        this.uploadMediaButton = page.locator("//div[contains(text(), 'Upload Media')]/ancestor::span//input[@type='file']");
+        this.send = page.locator('text=Send');
+
+        this.folder = page.locator('[alt="folder"]');
+        this.viewImage = page.locator('//div[@class="relative cursor-pointer"]//img');
+        this.close = page.locator('[id="close_document_viewer_button"]');
+        this.closeWindow = page.locator('//span[@class="ant-modal-close-x"]//span[@aria-label="close"]');
+
+        this.arrow = page.locator('//div[@class="mt-2"]//span[@aria-label="down"]');
+        this.characterRadioButton = page.locator('//input[@name="radiogroup" and @value="1"]');
+        this.talentRadioButton = page.locator('//input[@name="radiogroup" and @value="2"]');
+
+        this.generatepdf = page.locator('#lcw_generate_pdf_button');
+    }
+
+    async castingMainTab(){
+        await this.tools.click();
+        await this.page.locator('div.ant-card-body').getByText('Casting (Main Cast)').click();
+    }
+
+    async castingBackgroundTab(){
+        await this.tools.click();
+        await this.page.locator('div.ant-card-body').getByText('Casting (Background Cast)').click();
+    }
+
+    async selectsTab(){
+        await this.selectsShortlistFinals.first().click();
+    }
+
+    async shortlistTab(){
+        await this.selectsShortlistFinals.nth(1).click();
+    }
+
+    async finalsTab(){
+        await this.selectsShortlistFinals.nth(2).click();
+    }
+
+    async uploadMedia(){
+        await this.plus.click();
+        await this.attchment.click();
+        await this.uploadMediaButton.setInputFiles(mediapaths.image);
+        await this.send.click();
+    }
+
+    async uploadCasting(episode, character, talent, gender){
+        await this.uploadMedia();
+        await this.enterEpisode.fill(`${episode}`);
+        await this.enterCharacter.fill(`${character}`);
+        await this.enterTalent.fill(`${talent}`);
+        await this.selectGenderType(`${gender}`);
+        
+        await this.enterDiscription.fill('For the villain role');
+        await this.save.click();
+        
+        const successMsg = await this.page.locator('text=Cast photograph(s) has been added successfully.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
+    async openFolder(){
+        await this.folder.first().click();
+    }
+
+    async openImage(){
+        await this.folder.nth(1).click();
+        await this.viewImage.first().click();
+        const target = await this.close;
+        await target.hover();
+        await target.click();
+        await this.closeWindow.nth(1).click();
+        await this.closeWindow.first().click();
+    }
+
+
+    async selectGenderType(genderType) {
+        await this.selectGender.click();
+
+        const gender = genderType.trim().toLowerCase();
+
+        if (gender === "male") {
+            await this.page.keyboard.press('Enter');
+        } else if (gender === "female") {
+            await this.page.keyboard.press('ArrowDown');
+            await this.page.keyboard.press('Enter');
+        } else if (gender === "non binary" || gender === "nonbinary") {
+            await this.page.keyboard.press('ArrowDown');
+            await this.page.keyboard.press('ArrowDown');
+            await this.page.keyboard.press('Enter');
+        } else {
+            throw new Error('Invalid gender type provided');
+        }
+    }
+
+    async arrowClick(){
+        await this.arrow.click();
+    }
+
+
+    async handleDropdownAction(tabFn, actionText, successMessage, confirmDelete = false){
+
+        await this[tabFn]();
+
+        if(!(await this.characterRadioButton.isChecked())){
+            await this.characterRadioButton.click();
+        }
+
+        const arrowCount = await this.arrow.count();
+        if (arrowCount === 1) {
+            await this.arrowClick();
+        } else if (arrowCount > 1) {
+            await this.arrow.first().click();
+        } else {
+            throw new Error('Arrow element not found');
+        }
+        
+        await this.page.waitForSelector('.ant-dropdown-menu-item');
+        const itemTexts = await this.page.$$eval('.ant-dropdown-menu-item .ant-dropdown-menu-title-content', elements =>
+            elements.map(el => el.textContent.trim())
+        );
+        console.log('Dropdown Items:', itemTexts);
+        await this.page.click(`text=${actionText}`);
+
+        if (confirmDelete) {
+            await this.page.locator('//div[@class="ant-modal-confirm-btns"]//button').nth(1).click();
+        } else {
+            await this.save.click();
+        }
+
+        const successMsg = await this.page.locator(`text=${successMessage}`);
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
+    async moveToShortlistFromSelects() {
+        await this.handleDropdownAction('selectsTab', 'Move to Shortlist', 'Cast has been moved successfully.');
+    }
+
+    async moveToFinalFromSelects() {
+        await this.handleDropdownAction('selectsTab', 'Move to Final', 'Cast has been moved successfully.');
+    }
+
+    async deleteFromSelects() {
+        await this.handleDropdownAction('selectsTab', 'Delete', 'Cast photograph has been deleted successfully.', true);
+    }
+
+    async deleteFromShortlist() {
+        await this.handleDropdownAction('shortlistTab', 'Delete', 'Cast photograph has been deleted successfully.', true);
+    }
+
+    async deleteFromFinals() {
+        await this.handleDropdownAction('finalsTab', 'Delete', 'Cast photograph has been deleted successfully.', true);
+    }
+
+    async generatePDF() {
+        await this.generatepdf.click();
+        await this.page.locator('//div[@class="ant-modal-footer"]//button').nth(1).click();
+        const successMsg = await this.page.locator('text=PDF for cast has been successfully created.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+
+        await this.page.locator('//div[@class="ant-modal-body"]//button').first().click();
+        const successMsg2 = await this.page.locator('text=Document Published Sucessfully');
+        await successMsg2.waitFor({ state: 'visible' });
+        await successMsg2.waitFor({ state: 'hidden' });
+    }
+
+}

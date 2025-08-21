@@ -6,9 +6,7 @@
   "scripts": {
     "test": "npx playwright test",
     "test:qa": "ENV=.env.qa npx playwright test",
-    "test:production": "ENV=.env.production npx playwright test",
-    "convert-videos": "node convert-all-videos.js",
-    "test:e2e": "npx playwright test && allure generate allure-results --clean -o allure-report && node sendAllureReport.js"
+    "test:production": "ENV=.env.production npx playwright test"
   },
   "keywords": [],
   "author": "",

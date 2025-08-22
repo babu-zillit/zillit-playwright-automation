@@ -148,6 +148,13 @@ export default class CnC {
         await this.page.waitForTimeout(3000);
     }
 
+    async readBy(){
+        await this.cncDropList('Read By');
+        await this.page.waitForTimeout(2000);
+        await this.page.locator('.ant-modal-content button[aria-label="Close"]').click();
+        await this.page.waitForTimeout(500);
+    }
+
     async delete(){
         await this.cncDropList('Delete');
         

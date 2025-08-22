@@ -166,6 +166,10 @@ test.describe('CnC', () => {
             await cncPage.forward();
         });
 
+        test('verify user read by message', async () => {
+            await cncPage.readBy();
+        });
+
          test('verify user reply message', async () => {
             await cncPage.reply();
         });
@@ -185,6 +189,10 @@ test.describe('CnC', () => {
 
         test('verify user forward message', async () => {
             await cncPage.forward();
+        });
+
+        test('verify user read by message', async () => {
+            await cncPage.readBy();
         });
 
         test('verify user reply message', async () => {
@@ -209,6 +217,10 @@ test.describe('CnC', () => {
             await cncPage.forward();
         });
 
+        test('verify user read by message', async () => {
+            await cncPage.readBy();
+        });
+
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
@@ -228,6 +240,10 @@ test.describe('CnC', () => {
 
         test('verify user forward message', async () => {
             await cncPage.forward();
+        });
+
+        test('verify user read by message', async () => {
+            await cncPage.readBy();
         });
 
         test('verify user reply message', async () => {
@@ -250,6 +266,10 @@ test.describe('CnC', () => {
 
         test('verify user forward message', async () => {
             await cncPage.forward();
+        });
+
+        test('verify user read by message', async () => {
+            await cncPage.readBy();
         });
 
         test('verify user reply message', async () => {

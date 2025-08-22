@@ -151,25 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6769,
+                          "duration": 5828,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-21T12:12:27.172Z - browser is launching\n"
+                              "text": "[INFO] 2025-08-22T06:37:50.422Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-21T12:12:33.462Z - open the project\n"
+                              "text": "[INFO] 2025-08-22T06:37:55.315Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-21T12:12:33.463Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-08-22T06:37:55.315Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-21T12:12:26.847Z",
+                          "startTime": "2025-08-22T06:37:49.029Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -198,16 +198,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 21232,
+                          "duration": 21612,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-21T12:13:05.329Z - close browser\n"
+                              "text": "[INFO] 2025-08-22T06:38:27.680Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-21T12:12:44.064Z",
+                          "startTime": "2025-08-22T06:38:06.038Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -229,8 +229,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-21T12:12:26.492Z",
-    "duration": 39196.461,
+    "startTime": "2025-08-22T06:37:48.575Z",
+    "duration": 39496.248999999996,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

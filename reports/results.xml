@@ -1,17 +1,17 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="39.196461000000006">
-<testsuite name="dodTest.spec.js" timestamp="2025-08-21T12:12:26.512Z" hostname="chromium" tests="2" failures="0" skipped="0" time="28.001" errors="0">
-<testcase name="Schedule D.O.D › D.O.D › verify upload dod document" classname="dodTest.spec.js" time="6.769">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="39.496249">
+<testsuite name="dodTest.spec.js" timestamp="2025-08-22T06:37:48.690Z" hostname="chromium" tests="2" failures="0" skipped="0" time="27.44" errors="0">
+<testcase name="Schedule D.O.D › D.O.D › verify upload dod document" classname="dodTest.spec.js" time="5.828">
 <system-out>
-<![CDATA[[INFO] 2025-08-21T12:12:27.172Z - browser is launching
-[INFO] 2025-08-21T12:12:33.462Z - open the project
+<![CDATA[[INFO] 2025-08-22T06:37:50.422Z - browser is launching
+[INFO] 2025-08-22T06:37:55.315Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-21T12:12:33.463Z - QA environment is started...
+[INFO] 2025-08-22T06:37:55.315Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Schedule D.O.D › D.O.D › verify dod workflow: view → viewCount → download → downloadCount → move → delete" classname="dodTest.spec.js" time="21.232">
+<testcase name="Schedule D.O.D › D.O.D › verify dod workflow: view → viewCount → download → downloadCount → move → delete" classname="dodTest.spec.js" time="21.612">
 <system-out>
-<![CDATA[[INFO] 2025-08-21T12:13:05.329Z - close browser
+<![CDATA[[INFO] 2025-08-22T06:38:27.680Z - close browser
 ]]>
 </system-out>
 </testcase>

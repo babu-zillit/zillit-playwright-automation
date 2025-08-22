@@ -189,5 +189,6 @@ test.describe('Accounts', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/accountTest.spec.js --project=chromium --headed 
+   * ENV_TYPE=qa npx playwright test src/tests/accountTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production 
    */ 

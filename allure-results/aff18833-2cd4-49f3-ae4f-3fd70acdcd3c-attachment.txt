@@ -1,2 +1,0 @@
-before clicking on yourdocument button
-after clicking on yourdocument button

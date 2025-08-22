@@ -1,2 +1,0 @@
-Dropdown Items: [ 'Move to Shortlist', 'Move to Final', 'Distribute', 'Delete' ]
-Dropdown Items: [ 'Move to Shortlist', 'Move to Final', 'Distribute', 'Delete' ]

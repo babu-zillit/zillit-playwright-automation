@@ -1,2 +1,0 @@
-Dropdown Items: [ 'Distribute', 'Delete' ]
-[INFO] 2025-08-22T11:44:35.621Z - close browser

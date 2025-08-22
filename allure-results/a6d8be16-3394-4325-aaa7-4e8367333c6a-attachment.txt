@@ -1,7 +1,0 @@
-[INFO] 2025-08-22T11:20:34.362Z - browser is launching
-[INFO] 2025-08-22T11:20:45.784Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-08-22T11:20:45.784Z - QA environment is started...
-[INFO] 2025-08-22T11:20:51.135Z - [SendMessage] Started sending message...
-✅ AppleScript ran successfully
-✅ AppleScript ran successfully

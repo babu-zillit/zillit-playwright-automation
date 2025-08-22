@@ -1,7 +1,0 @@
-Dropdown items: [
-  'Reply',
-  'Forward',
-  'Forward to Remote Projects',
-  'Delete',
-  'Read By'
-]

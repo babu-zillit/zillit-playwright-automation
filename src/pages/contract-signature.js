@@ -133,6 +133,7 @@ export default class ContractSignature {
         await successMsg.waitFor({ state: 'hidden' });
     }
 
+
     async delete(){
         const deleteButton = await this.deleteDocument.count();
         if (deleteButton > 0) {
@@ -189,6 +190,7 @@ export default class ContractSignature {
         await this.page.mouse.up();
 
         await this.save.click();
+        await this.page.waitForTimeout(3000);
     }
 
     async deleteSignature(){
@@ -204,27 +206,17 @@ export default class ContractSignature {
 
     async standardFormAndContractsAndYourDocument(){
         await this.standardFormAndContractsYourDocuments.click();
-
-        const documentLocator = this.page.locator('//p[text()="Test Form" or text()="Test Contract"]');
-        if (await documentLocator.count() > 0) {
-            await documentLocator.first().click();
-        } else {
-            console.log("No document uploaded");
-        }
+        await this.page.locator('//div[@class="divide-y"]//div//p').nth(0).click();
         await this.addToYourDocument.click();
-        await this.ok.click();    
+        await this.ok.click(); 
     }
 
     async yourDocuments(){
-        await this.page.locator('#your_documents_button');
-        const documentLocator = this.page.locator('//p[text()="Test Form" or text()="Test Contract"]');
-        if (await documentLocator.count() > 0) {
-            await documentLocator.first().click();
-        } else {
-            console.log("No document uploaded");
-        }
-
-        await this.page.locator('#common_add_signature_modal_open_button').click();
+        await this.page.waitForTimeout(3000);
+        await this.page.locator('#your_documents_button').click();
+        await this.page.locator('//div[@class="divide-y"]//div//p').nth(0).click();
+        await this.page.waitForTimeout(1000);
+        await this.page.locator('id=common_add_signature_modal_open_button').click();
         await this.page.locator('//img[@alt="signature"]').click();
         await this.page.locator('#common_sign_document_button').click();
         await this.page.locator('#common_send_document_button').click();
@@ -248,14 +240,13 @@ export default class ContractSignature {
         } else {
             console.log("No document to delete");
         }
-        console.log("No document to delete");
     }
 
     async uploadDocumentAndSeeList(){
         await this.uploadDocumentsAndSeeList.click();
         await this.page.locator('#common_upload_document_drawer_open_button').click();
         await this.page.locator('[placeholder="Contract Name"]').fill('Test Contract')
-        await this.browseYourContracts.setInputFiles(mediapaths.document);
+        await this.browseYourContracts.nth(1).setInputFiles(mediapaths.document);
         await this.page.locator('#upload_document_select_users_screen_open_button').click();
         await this.page.locator('#send_for_signature_select_deselect_users_button').click();
         await this.page.locator('#revise_document_confirmation_screen_open_button').click();

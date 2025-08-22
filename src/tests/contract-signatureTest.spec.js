@@ -55,14 +55,35 @@ test.describe('Contrcat Signature', () => {
         test('verify add signature', async () => {
            await contractSignaturePage.drawSignatureWithMouse();
            await contractSignaturePage.navigiateBack();
+           await contractSignaturePage.navigiateBack();
+           await contractSignaturePage.navigiateBack();
         });
 
     });
 
-    test.describe.skip('Standard Forms & Contracts and Your Documents', async () => {
+    test.describe('Standard Forms & Contracts and Your Documents', async () => {
 
         test('verify verify the standrad form & contracts documents', async () => {
            await contractSignaturePage.standardFormAndContractsAndYourDocument();
+           await contractSignaturePage.yourDocuments();
+           await contractSignaturePage.navigiateBack();
+        });
+
+    });
+
+    test.describe('upload documents and see list', async () => {
+
+        test('verify upload documents and see list', async () => {
+           await contractSignaturePage.uploadDocumentAndSeeList();
+           await contractSignaturePage.navigiateBack();
+        });
+
+    });
+
+    test.describe('Delete signature', async () => {
+
+        test('verify upload documents and see list', async () => {
+           await contractSignaturePage.deleteSignature();
            await contractSignaturePage.navigiateBack();
         });
 

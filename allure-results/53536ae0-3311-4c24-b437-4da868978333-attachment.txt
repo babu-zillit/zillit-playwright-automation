@@ -1,0 +1,1 @@
+[INFO] 2025-08-22T08:26:22.959Z - close browser

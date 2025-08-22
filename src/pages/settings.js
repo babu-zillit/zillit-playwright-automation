@@ -175,11 +175,12 @@ export default class Settings {
         await this.waterMarkLogoCompany.click();
         await this.deleteWaterMarkLogo.waitFor({ state: 'visible' });
         await this.deleteWaterMarkLogo.click();
-        await this.yesButton.nth(1).click();
+        //await this.yesButton.nth(1).click();
+        await this.page.locator('.ant-popconfirm-buttons button span').nth(1).click();
     }
 
     async deleteProjects(){
-        await this.page.waitForTimeout(2000);
+        await this.page.waitForTimeout(3000);
         await this.deleteProject.click();
         await this.page.waitForTimeout(1500);
         await this.projectDeleteButton.click();

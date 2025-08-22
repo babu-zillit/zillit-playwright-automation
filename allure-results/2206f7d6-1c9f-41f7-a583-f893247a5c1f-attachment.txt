@@ -1,0 +1,5 @@
+[INFO] 2025-08-22T11:06:44.093Z - browser is launching
+[INFO] 2025-08-22T11:06:51.625Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-08-22T11:06:51.625Z - QA environment is started...
+[INFO] 2025-08-22T11:07:01.615Z - close browser

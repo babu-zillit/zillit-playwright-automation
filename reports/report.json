@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "contract-signatureTest.spec.js",
-      "file": "contract-signatureTest.spec.js",
+      "title": "settingTest.spec.js",
+      "file": "settingTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Contrcat Signature",
-          "file": "contract-signatureTest.spec.js",
-          "line": 6,
+          "title": "Settings",
+          "file": "settingTest.spec.js",
+          "line": 5,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Upload documents in contract",
-              "file": "contract-signatureTest.spec.js",
-              "line": 34,
-              "column": 10,
+              "title": "Create New Department",
+              "file": "settingTest.spec.js",
+              "line": 27,
+              "column": 8,
               "specs": [
                 {
-                  "title": "verify upload document in contract",
+                  "title": "verify user create new department successfully",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 22360,
+                          "duration": 6490,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-22T08:35:43.444Z - browser is launching\n"
+                              "text": "[INFO] 2025-08-22T11:56:57.323Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-22T08:35:48.539Z - open the project\n"
+                              "text": "[INFO] 2025-08-22T11:57:04.340Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-22T08:35:48.539Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-08-22T11:57:04.341Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-22T08:35:42.322Z",
+                          "startTime": "2025-08-22T11:56:56.240Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,13 +177,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "a71d7b337812dc9ae33b-1d980f8b10abf850da27",
-                  "file": "contract-signatureTest.spec.js",
-                  "line": 36,
-                  "column": 9
+                  "id": "d3bed2f485bdf974b495-c30e1de8c8888104db28",
+                  "file": "settingTest.spec.js",
+                  "line": 28,
+                  "column": 5
                 },
                 {
-                  "title": "verify upload document in form",
+                  "title": "verify user delete new department successfully",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -198,12 +198,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 20340,
+                          "duration": 5920,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-22T08:36:15.718Z",
+                          "startTime": "2025-08-22T11:57:14.183Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -211,21 +211,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "a71d7b337812dc9ae33b-0b65942d55d28c4ef88e",
-                  "file": "contract-signatureTest.spec.js",
-                  "line": 43,
-                  "column": 9
+                  "id": "d3bed2f485bdf974b495-0c5b7cb79fa92b51880f",
+                  "file": "settingTest.spec.js",
+                  "line": 31,
+                  "column": 5
                 }
               ]
             },
             {
-              "title": "Add signature",
-              "file": "contract-signatureTest.spec.js",
-              "line": 53,
-              "column": 10,
+              "title": "Create New Designation",
+              "file": "settingTest.spec.js",
+              "line": 35,
+              "column": 8,
               "specs": [
                 {
-                  "title": "verify add signature",
+                  "title": "verify user create new designation successfully",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -240,12 +240,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8087,
+                          "duration": 7295,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-22T08:36:36.068Z",
+                          "startTime": "2025-08-22T11:57:20.127Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -253,21 +253,207 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "a71d7b337812dc9ae33b-b795bd0f46b5f1ee4087",
-                  "file": "contract-signatureTest.spec.js",
+                  "id": "d3bed2f485bdf974b495-265dbc33be18517a6b62",
+                  "file": "settingTest.spec.js",
+                  "line": 36,
+                  "column": 5
+                },
+                {
+                  "title": "verify user delete new designation successfully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7543,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T11:57:27.433Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "d3bed2f485bdf974b495-12189eecea43ea5ffd0d",
+                  "file": "settingTest.spec.js",
+                  "line": 39,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Home Unit",
+              "file": "settingTest.spec.js",
+              "line": 43,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "verify user create home unit",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8443,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T11:57:34.983Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "d3bed2f485bdf974b495-9a67a1124432345b489f",
+                  "file": "settingTest.spec.js",
+                  "line": 44,
+                  "column": 5
+                },
+                {
+                  "title": "verify user edit home unit",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T11:57:43.434Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "d3bed2f485bdf974b495-2007da7fbec27764138b",
+                  "file": "settingTest.spec.js",
+                  "line": 47,
+                  "column": 10
+                },
+                {
+                  "title": "verify user delete home unit",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7862,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T11:57:43.435Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "d3bed2f485bdf974b495-b2fb934a4c5aadcb5e81",
+                  "file": "settingTest.spec.js",
+                  "line": 50,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "WaterMark Logo Company",
+              "file": "settingTest.spec.js",
+              "line": 54,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "verify user upload water mark logo",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8948,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T11:57:51.309Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "d3bed2f485bdf974b495-ea87954d8594b9fe1275",
+                  "file": "settingTest.spec.js",
                   "line": 55,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Standard Forms & Contracts and Your Documents",
-              "file": "contract-signatureTest.spec.js",
-              "line": 64,
-              "column": 10,
-              "specs": [
+                  "column": 5
+                },
                 {
-                  "title": "verify verify the standrad form & contracts documents",
+                  "title": "verify user delete water mark logo",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -282,12 +468,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 14789,
+                          "duration": 1140,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-22T08:36:44.177Z",
+                          "startTime": "2025-08-22T11:58:00.266Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -295,21 +481,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "a71d7b337812dc9ae33b-b44a63a749779842614d",
-                  "file": "contract-signatureTest.spec.js",
-                  "line": 66,
-                  "column": 9
+                  "id": "d3bed2f485bdf974b495-4fb25242898006d0011c",
+                  "file": "settingTest.spec.js",
+                  "line": 58,
+                  "column": 5
                 }
               ]
             },
             {
-              "title": "upload documents and see list",
-              "file": "contract-signatureTest.spec.js",
-              "line": 74,
-              "column": 10,
+              "title": "Delete project",
+              "file": "settingTest.spec.js",
+              "line": 62,
+              "column": 8,
               "specs": [
                 {
-                  "title": "verify upload documents and see list",
+                  "title": "verify user delete the projects",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -324,12 +510,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5979,
+                          "duration": 10726,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-22T08:36:58.991Z",
+                          "startTime": "2025-08-22T11:58:01.415Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -337,21 +523,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "a71d7b337812dc9ae33b-e55de992ba33282e336e",
-                  "file": "contract-signatureTest.spec.js",
-                  "line": 76,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Delete signature",
-              "file": "contract-signatureTest.spec.js",
-              "line": 83,
-              "column": 10,
-              "specs": [
+                  "id": "d3bed2f485bdf974b495-8e32f72911da58434a7f",
+                  "file": "settingTest.spec.js",
+                  "line": 63,
+                  "column": 5
+                },
                 {
-                  "title": "verify upload documents and see list",
+                  "title": "verify user stops the projects",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -366,16 +544,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5491,
+                          "duration": 5995,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-22T08:37:10.534Z - close browser\n"
+                              "text": "[INFO] 2025-08-22T11:58:18.177Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-22T08:37:04.997Z",
+                          "startTime": "2025-08-22T11:58:12.151Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -383,10 +561,10 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "a71d7b337812dc9ae33b-5ffdb57afc41cb7e62c9",
-                  "file": "contract-signatureTest.spec.js",
-                  "line": 85,
-                  "column": 9
+                  "id": "d3bed2f485bdf974b495-567b53d39135f0944ef9",
+                  "file": "settingTest.spec.js",
+                  "line": 66,
+                  "column": 5
                 }
               ]
             }
@@ -397,10 +575,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-22T08:35:41.947Z",
-    "duration": 88981.803,
-    "expected": 6,
-    "skipped": 0,
+    "startTime": "2025-08-22T11:56:55.772Z",
+    "duration": 82941.537,
+    "expected": 10,
+    "skipped": 1,
     "unexpected": 0,
     "flaky": 0
   }

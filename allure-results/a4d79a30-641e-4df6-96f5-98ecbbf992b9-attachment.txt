@@ -1,0 +1,8 @@
+[INFO] 2025-08-22T11:17:51.157Z - [EditMessage] Started edit message...
+Dropdown list items: [
+  'Edit Message',
+  'Forward',
+  'Delete',
+  'File Cabinet',
+  'Forward to Remote Projects'
+]

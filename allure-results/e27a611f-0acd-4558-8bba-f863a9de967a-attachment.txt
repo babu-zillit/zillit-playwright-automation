@@ -1,0 +1,47 @@
+Failed to select dropdown option: Edit Message page.waitForSelector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('.right-2.top-2.absolute [aria-label="down"]') to be visible
+
+    at UploadMedia.dropDownListOnReply (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:172:43)
+    at UploadMedia.editReply (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:193:20)
+    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/continuity-script-notesTest.spec.js:204:31 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@12',
+    location: {
+      file: '/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js',
+      line: 172,
+      column: 43,
+      function: 'UploadMedia.dropDownListOnReply'
+    },
+    category: 'pw:api',
+    title: 'page.waitForSelector(.right-2.top-2.absolute [aria-label="down"])',
+    apiName: 'page.waitForSelector',
+    params: {
+      selector: '.right-2.top-2.absolute [aria-label="down"]',
+      state: 'visible'
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@12'
+    },
+    complete: [Function: complete],
+    endWallTime: 1755861921217,
+    error: {
+      message: 'Error: page.waitForSelector: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('.right-2.top-2.absolute [aria-label="down"]') to be visible\x1B[22m\n`,
+      stack: 'Error: page.waitForSelector: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('.right-2.top-2.absolute [aria-label="down"]') to be visible\x1B[22m\n` +
+        '\n' +
+        '    at UploadMedia.dropDownListOnReply (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:172:43)\n' +
+        '    at UploadMedia.editReply (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:193:20)\n' +
+        '    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/continuity-script-notesTest.spec.js:204:31',
+      cause: undefined
+    }
+  }
+}

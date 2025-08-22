@@ -1,0 +1,3 @@
+[INFO] 2025-08-22T11:15:04.499Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ 'Edit Message', 'Delete' ]
+[INFO] 2025-08-22T11:15:25.949Z - close browser

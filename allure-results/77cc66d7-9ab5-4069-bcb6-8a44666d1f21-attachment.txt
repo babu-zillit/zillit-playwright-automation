@@ -1,0 +1,11 @@
+[INFO] 2025-08-22T11:11:31.911Z - browser is launching
+[INFO] 2025-08-22T11:11:38.618Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-08-22T11:11:38.618Z - QA environment is started...
+Color options: [
+  'RED',    'BLUE',
+  'GREEN',  'ORANGE',
+  'BROWN',  'PINK',
+  'PURPLE'
+]
+Clicked on available color: GREEN

@@ -1,25 +1,41 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="88.981803">
-<testsuite name="contract-signatureTest.spec.js" timestamp="2025-08-22T08:35:41.970Z" hostname="chromium" tests="6" failures="0" skipped="0" time="77.046" errors="0">
-<testcase name="Contrcat Signature › Upload documents in contract › verify upload document in contract" classname="contract-signatureTest.spec.js" time="22.36">
+<testsuites id="" name="" tests="11" failures="0" skipped="1" errors="0" time="82.941537">
+<testsuite name="settingTest.spec.js" timestamp="2025-08-22T11:56:55.902Z" hostname="chromium" tests="11" failures="0" skipped="1" time="70.362" errors="0">
+<testcase name="Settings › Create New Department › verify user create new department successfully" classname="settingTest.spec.js" time="6.49">
 <system-out>
-<![CDATA[[INFO] 2025-08-22T08:35:43.444Z - browser is launching
-[INFO] 2025-08-22T08:35:48.539Z - open the project
+<![CDATA[[INFO] 2025-08-22T11:56:57.323Z - browser is launching
+[INFO] 2025-08-22T11:57:04.340Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-22T08:35:48.539Z - QA environment is started...
+[INFO] 2025-08-22T11:57:04.341Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Contrcat Signature › Upload documents in contract › verify upload document in form" classname="contract-signatureTest.spec.js" time="20.34">
+<testcase name="Settings › Create New Department › verify user delete new department successfully" classname="settingTest.spec.js" time="5.92">
 </testcase>
-<testcase name="Contrcat Signature › Add signature › verify add signature" classname="contract-signatureTest.spec.js" time="8.087">
+<testcase name="Settings › Create New Designation › verify user create new designation successfully" classname="settingTest.spec.js" time="7.295">
 </testcase>
-<testcase name="Contrcat Signature › Standard Forms &amp; Contracts and Your Documents › verify verify the standrad form &amp; contracts documents" classname="contract-signatureTest.spec.js" time="14.789">
+<testcase name="Settings › Create New Designation › verify user delete new designation successfully" classname="settingTest.spec.js" time="7.543">
 </testcase>
-<testcase name="Contrcat Signature › upload documents and see list › verify upload documents and see list" classname="contract-signatureTest.spec.js" time="5.979">
+<testcase name="Settings › Home Unit › verify user create home unit" classname="settingTest.spec.js" time="8.443">
 </testcase>
-<testcase name="Contrcat Signature › Delete signature › verify upload documents and see list" classname="contract-signatureTest.spec.js" time="5.491">
+<testcase name="Settings › Home Unit › verify user edit home unit" classname="settingTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Settings › Home Unit › verify user delete home unit" classname="settingTest.spec.js" time="7.862">
+</testcase>
+<testcase name="Settings › WaterMark Logo Company › verify user upload water mark logo" classname="settingTest.spec.js" time="8.948">
+</testcase>
+<testcase name="Settings › WaterMark Logo Company › verify user delete water mark logo" classname="settingTest.spec.js" time="1.14">
+</testcase>
+<testcase name="Settings › Delete project › verify user delete the projects" classname="settingTest.spec.js" time="10.726">
+</testcase>
+<testcase name="Settings › Delete project › verify user stops the projects" classname="settingTest.spec.js" time="5.995">
 <system-out>
-<![CDATA[[INFO] 2025-08-22T08:37:10.534Z - close browser
+<![CDATA[[INFO] 2025-08-22T11:58:18.177Z - close browser
 ]]>
 </system-out>
 </testcase>

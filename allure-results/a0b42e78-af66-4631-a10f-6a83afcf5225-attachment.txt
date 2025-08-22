@@ -1,0 +1,38 @@
+[INFO] 2025-08-22T11:13:30.660Z - browser is launching
+[INFO] 2025-08-22T11:13:35.649Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-08-22T11:13:35.649Z - QA environment is started...
+Dropdown Options: [
+  'Post-Production',
+  'Accounts',
+  'Animal Wranglers',
+  'Armoury',
+  'Art',
+  'Assistant Directors',
+  'Camera',
+  'Casting',
+  'Catering',
+  'Clearances',
+  'Construction'
+]
+Dropdown Options: [
+  'Select Department',
+  'Direction',
+  'Writer',
+  'Producers',
+  'Production',
+  'Post-Production',
+  'Accounts',
+  'Animal Wranglers',
+  'Armoury',
+  'Art',
+  'Select Designation',
+  '1st Assistant Accountant',
+  '2nd Assistant Accountant',
+  'Accounts Assistant/cashier',
+  'Assistant Production Accountant',
+  'Financial Controller',
+  'Payroll',
+  'Petty Cash & Production Cards',
+  'Production Accountant'
+]

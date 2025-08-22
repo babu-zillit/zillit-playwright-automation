@@ -1,0 +1,4 @@
+[INFO] 2025-08-22T11:23:41.064Z - [SendMessage] Started sending message...
+✅ AppleScript ran successfully
+✅ AppleScript ran successfully
+[INFO] 2025-08-22T11:24:11.298Z - close browser

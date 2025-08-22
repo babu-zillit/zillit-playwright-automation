@@ -1,0 +1,28 @@
+[INFO] 2025-08-22T11:17:08.422Z - browser is launching
+[INFO] 2025-08-22T11:17:13.083Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-08-22T11:17:13.083Z - QA environment is started...
+Dropdown Options: [
+  'Camera',
+  'Casting',
+  'Catering',
+  'Locations',
+  'Riggers & Electrical-Rigging',
+  'Electrical',
+  'Cast/Talent'
+]
+Dropdown Options: [
+  'Camera',
+  'Casting',
+  'Catering',
+  'Locations',
+  'Riggers & Electrical-Rigging',
+  'Electrical',
+  'Cast/Talent',
+  'Select Designation',
+  'Caterers',
+  'Chef',
+  'Craft Services',
+  'Head Chef',
+  'Scene Cuisine Caterer'
+]

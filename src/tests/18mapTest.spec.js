@@ -53,5 +53,5 @@ test.describe('Map', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/mapTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/18mapTest.spec.js --project=chromium --headed
    */ 

@@ -3,7 +3,7 @@ import CrewListAssetReport from "../pages/crewList-assetReport";
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 
-test.describe('External User', () => {
+test.describe('Crew List → Asset Report', () => {
     let context;
     let page;
     let uploadmedia;
@@ -49,5 +49,5 @@ test.describe('External User', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/crewList-assetReportTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/17crewList-assetReportTest.spec.js --project=chromium --headed
    */ 

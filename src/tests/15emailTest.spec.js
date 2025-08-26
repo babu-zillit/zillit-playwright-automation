@@ -1,13 +1,14 @@
 import { test } from '@playwright/test';
-import ExternalUser from "../pages/external-user";
+import Email from "../pages/email";
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
+import { execPath } from 'process';
 
-test.describe('External User', () => {
+test.describe('Email', () => {
     let context;
     let page;
     let uploadmedia;
-    let externalUserPage;
+    let emailPage;
 
     test.beforeAll(async ({ browser }) => {
         logger.info("browser is launching");
@@ -17,11 +18,11 @@ test.describe('External User', () => {
         await page.goto('/home');
         
         uploadmedia = new UploadMedia(page);
-        externalUserPage = new ExternalUser(page);
+        emailPage = new Email(page);
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
-        await externalUserPage.clickExternalUserTab();
+        await emailPage.clickEmailTab();
     });
 
     test.afterAll(async () => {
@@ -31,14 +32,16 @@ test.describe('External User', () => {
 
 
 
-    test.describe('Add user', () => {
+    test.describe('Send Email', () => {
 
-        test('verify add user', async () => {
-            await externalUserPage.addUser();
+        test('verify send email -> send email with media', async () => {
+            await emailPage.loadEmailPageFully();
+            await emailPage.sendEmail();
+            await emailPage.sendEmailMedia();
         }); 
-        
-        test('verify delete the external user', async () => {
-            await externalUserPage.delete();
+
+        test('verify sent email', async () => {
+            await emailPage.sentMessage();
         });
     
     });
@@ -46,5 +49,5 @@ test.describe('External User', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/external-userTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/15emailTest.spec.js --project=chromium --headed
    */ 

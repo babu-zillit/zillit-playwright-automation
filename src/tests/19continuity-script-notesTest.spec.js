@@ -33,7 +33,7 @@ test.describe('Continuity Script Notes', () => {
 
     test.describe('Selected Takes', () => {
 
-        test('send message', async () => {
+        test('verify send message → upload document by clicking on continuation → upload document by clicking on new', async () => {
             await continuityScriptNotesPage.selectedTakesTab();
             await uploadmedia.sendMessage();
             await continuityScriptNotesPage.uploadDocumentByClickingContinuation();
@@ -69,36 +69,36 @@ test.describe('Continuity Script Notes', () => {
 
     test.describe('Selected Takes', () => {
 
-        test('verify send a message successfully', async () => {
+        test('verify send a message', async () => {
             await continuityScriptNotesPage.selectedTakesTab();
             await uploadmedia.sendMessage();
         });  
     
-        test('verify edit the message successfully', async () => {
+        test('verify edit the message', async () => {
             await continuityScriptNotesPage.selectedTakesTab();
             await uploadmedia.edit();
         });
 
-        test('forward the message successfully', async () => {
+        test('verify forward the message', async () => {
             await continuityScriptNotesPage.selectedTakesTab();
             await uploadmedia.forward();
         });
 
-        test('verify reply to the message successfully', async () => {
+        test('verify reply to the message', async () => {
             await continuityScriptNotesPage.selectedTakesTab();
             await uploadmedia.reply();
         });
 
-        test('verify the edit the reply message successfully', async () => {
+        test('verify the edit the reply message', async () => {
             await continuityScriptNotesPage.selectedTakesTab();
             await uploadmedia.editReply();
         });
 
-        test('verify the delete the reply message successfully', async () => {
+        test('verify the delete the reply message', async () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the delete message successfully', async () => {
+        test('verify the delete message', async () => {
             await continuityScriptNotesPage.selectedTakesTab();
             await uploadmedia.delete();
         });
@@ -107,7 +107,7 @@ test.describe('Continuity Script Notes', () => {
 
     test.describe('Daily Progress Notes', () => {
 
-        test('send message1', async () => {
+        test('verify send message → upload document by clicking on continuation → upload document by clicking on new', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.sendMessage();
             await continuityScriptNotesPage.uploadDocumentByClickingContinuation();
@@ -143,37 +143,37 @@ test.describe('Continuity Script Notes', () => {
 
     test.describe('Daily Progress Notes', () => {
 
-        test('verify send a message successfully', async () => {
+        test('verify send a message', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.sendMessage();
         });  
     
-        test('verify edit the message successfully', async () => {
+        test('verify edit the message', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.edit();
         });
 
-        test('forward the message successfully', async () => {
+        test('verify forward the message', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.forward();
         });
 
-        test('verify reply to the message successfully', async () => {
+        test('verify reply to the message', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.reply();
         });
 
-        test('verify the edit the reply message successfully', async () => {
+        test('verify the edit the reply message', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.editReply();
         });
 
-        test('verify the delete the reply message successfully', async () => {
+        test('verify the delete the reply message', async () => {
             //await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.deleteReply();
         });
 
-        test('verify the delete message successfully', async () => {
+        test('verify the delete message', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.delete();
         });
@@ -182,7 +182,7 @@ test.describe('Continuity Script Notes', () => {
 
     test.describe('Continuity Notes', () => {
 
-        test('send message2', async () => {
+        test('verify send message → upload document by clicking on continuation → upload document by clicking on new', async () => {
             await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.sendMessage();
             await continuityScriptNotesPage.uploadDocumentByClickingContinuation();
@@ -218,37 +218,37 @@ test.describe('Continuity Script Notes', () => {
     
     test.describe('Continuity Notes', () => {
 
-        test('verify send a message successfully', async () => {
+        test('verify send a message', async () => {
             await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.sendMessage();
         });  
     
-        test('verify edit the message successfully', async () => {
+        test('verify edit the message', async () => {
             await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.edit();
         });
 
-        test('forward the message successfully', async () => {
+        test('verify forward the message', async () => {
             await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.forward();
         });
 
-        test('verify reply to the message successfully', async () => {
+        test('verify reply to the message', async () => {
             await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.reply();
         });
 
-        test('verify the edit the reply message successfully', async () => {
+        test('verify the edit the reply message', async () => {
             await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.editReply();
         });
 
-        test('verify the delete the reply message successfully', async () => {
+        test('verify the delete the reply message', async () => {
             //await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.deleteReply();
         });
 
-        test('verify the delete message successfully', async () => {
+        test('verify the delete message', async () => {
             await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.delete();
         });
@@ -259,5 +259,5 @@ test.describe('Continuity Script Notes', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/continuity-script-notesTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/19continuity-script-notesTest.spec.js --project=chromium --headed
    */ 

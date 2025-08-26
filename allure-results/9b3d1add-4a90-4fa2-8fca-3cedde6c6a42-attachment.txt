@@ -1,9 +1,0 @@
-[INFO] 2025-08-26T06:29:23.470Z - [ReadByMessage] Started readBy message...
-Dropdown list items: [
-  'Reply',
-  'Edit Message',
-  'Forward',
-  'Delete',
-  'Read By',
-  'Forward to Remote Projects'
-]

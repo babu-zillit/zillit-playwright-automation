@@ -4,7 +4,7 @@ import Calendar from "../pages/calendar";
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 
-test.describe('Calendar page: ', () => {
+test.describe('Calendar', () => {
     let context;
     let page;
     let uploadmedia;
@@ -31,7 +31,7 @@ test.describe('Calendar page: ', () => {
 
     test.describe('Member calendar', () => {
 
-        test('verify the create the new event for memebrs', async () => {
+        test('verify the create the new event for memebrs and edit → delete a event', async () => {
             await calendar.createEventForMember();
             await calendar.deleteCalenderEvent('member');
         }); 
@@ -40,7 +40,7 @@ test.describe('Calendar page: ', () => {
 
     test.describe('Member calendar full day', () => { 
         
-        test('for memebrs for full day', async () => {
+        test('verify the create a new event and edit → delete a event', async () => {
             await calendar.createEventForMemberForFullDay();
             await calendar.deleteCalenderEvent('member');
         });
@@ -49,7 +49,7 @@ test.describe('Calendar page: ', () => {
 
     test.describe('Personal Calendar', () => { 
         
-        test('personal event', async () => {
+        test('verify the create a new event and edit → delete a event', async () => {
             await calendar.createEventForPersonal();
             await calendar.deleteCalenderEvent('personal');
         });
@@ -58,7 +58,7 @@ test.describe('Calendar page: ', () => {
 
     test.describe('Personal Calendar full day', () => { 
         
-        test('personal event for full day', async () => {
+        test('verify the create a new event and edit → delete a event', async () => {
             await calendar.createEventForPersonalFullDay();
             await calendar.deleteCalenderEvent('personal');
         });
@@ -68,5 +68,5 @@ test.describe('Calendar page: ', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/calendarTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/4calendarTest.spec.js --project=chromium --headed
    */ 

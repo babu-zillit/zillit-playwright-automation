@@ -1,55 +1,189 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="88.57866">
-<testsuite name="4calendarTest.spec.js" timestamp="2025-08-26T07:05:52.426Z" hostname="chromium" tests="4" failures="0" skipped="0" time="77.508" errors="0">
-<testcase name="Calendar › Member calendar › verify the create the new event for memebrs and edit → delete a event" classname="4calendarTest.spec.js" time="22.997">
+<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="90.39141900000001">
+<testsuite name="5callsheetTest.spec.js" timestamp="2025-08-26T07:13:42.830Z" hostname="chromium" tests="17" failures="0" skipped="0" time="77.049" errors="0">
+<testcase name="CallSheet › Send Document › verify the send a message → send document by clicking on continuation → send document by clicking on new" classname="5callsheetTest.spec.js" time="23.591">
 <system-out>
-<![CDATA[[INFO] 2025-08-26T07:05:54.265Z - browser is launching
-[INFO] 2025-08-26T07:06:00.724Z - open the project
+<![CDATA[[INFO] 2025-08-26T07:13:44.243Z - browser is launching
+[INFO] 2025-08-26T07:13:49.794Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-26T07:06:00.725Z - QA environment is started...
-Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
-]
-Clicked on available color: GREEN
+[INFO] 2025-08-26T07:13:49.794Z - QA environment is started...
+[INFO] 2025-08-26T07:13:55.135Z - [SendMessage] Started sending message...
+✅ AppleScript ran successfully
+✅ AppleScript ran successfully
 ]]>
 </system-out>
 </testcase>
-<testcase name="Calendar › Member calendar full day › verify the create a new event and edit → delete a event" classname="4calendarTest.spec.js" time="19.278">
+<testcase name="CallSheet › Send Document › verify the readBy status" classname="5callsheetTest.spec.js" time="1.335">
 <system-out>
-<![CDATA[Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
+<![CDATA[[INFO] 2025-08-26T07:14:18.744Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
 ]
-Clicked on available color: GREEN
 ]]>
 </system-out>
 </testcase>
-<testcase name="Calendar › Personal Calendar › verify the create a new event and edit → delete a event" classname="4calendarTest.spec.js" time="17.106">
+<testcase name="CallSheet › Send Document › verify the forward" classname="5callsheetTest.spec.js" time="5.868">
 <system-out>
-<![CDATA[Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
+<![CDATA[[INFO] 2025-08-26T07:14:20.086Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
 ]
-Clicked on available color: GREEN
 ]]>
 </system-out>
 </testcase>
-<testcase name="Calendar › Personal Calendar full day › verify the create a new event and edit → delete a event" classname="4calendarTest.spec.js" time="18.127">
+<testcase name="CallSheet › Send Document › verify the reply" classname="5callsheetTest.spec.js" time="1.425">
 <system-out>
-<![CDATA[Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
+<![CDATA[[INFO] 2025-08-26T07:14:25.972Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
 ]
-Clicked on available color: GREEN
-[INFO] 2025-08-26T07:07:20.451Z - close browser
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the edit reply" classname="5callsheetTest.spec.js" time="2.411">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:27.408Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the readBy reply" classname="5callsheetTest.spec.js" time="1.984">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:29.829Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the delete reply" classname="5callsheetTest.spec.js" time="5.436">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:31.823Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the delete document" classname="5callsheetTest.spec.js" time="5.841">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:37.279Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify send a message" classname="5callsheetTest.spec.js" time="2.301">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:43.138Z - [SendMessage] Started sending message...
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify edit the message" classname="5callsheetTest.spec.js" time="2.282">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:45.454Z - [EditMessage] Started edit message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify read by status on message" classname="5callsheetTest.spec.js" time="1.423">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:47.743Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify forward the message" classname="5callsheetTest.spec.js" time="5.829">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:49.173Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify reply to the message" classname="5callsheetTest.spec.js" time="1.413">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:55.019Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the edit the reply message" classname="5callsheetTest.spec.js" time="2.383">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:56.449Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the read by status on reply message" classname="5callsheetTest.spec.js" time="1.697">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:14:58.835Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the delete the reply message" classname="5callsheetTest.spec.js" time="5.564">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:15:00.543Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the delete message" classname="5callsheetTest.spec.js" time="6.266">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:15:06.124Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+[INFO] 2025-08-26T07:15:12.403Z - close browser
 ]]>
 </system-out>
 </testcase>

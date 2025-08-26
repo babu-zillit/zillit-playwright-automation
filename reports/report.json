@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "4calendarTest.spec.js",
-      "file": "4calendarTest.spec.js",
+      "title": "5callsheetTest.spec.js",
+      "file": "5callsheetTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Calendar",
-          "file": "4calendarTest.spec.js",
+          "title": "CallSheet",
+          "file": "5callsheetTest.spec.js",
           "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Member calendar",
-              "file": "4calendarTest.spec.js",
-              "line": 32,
+              "title": "Send Document",
+              "file": "5callsheetTest.spec.js",
+              "line": 34,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify the create the new event for memebrs and edit → delete a event",
+                  "title": "verify the send a message → send document by clicking on continuation → send document by clicking on new",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,31 +151,34 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 22997,
+                          "duration": 23591,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-26T07:05:54.265Z - browser is launching\n"
+                              "text": "[INFO] 2025-08-26T07:13:44.243Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-26T07:06:00.724Z - open the project\n"
+                              "text": "[INFO] 2025-08-26T07:13:49.794Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-26T07:06:00.725Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-08-26T07:13:49.794Z - QA environment is started...\n"
                             },
                             {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
+                              "text": "[INFO] 2025-08-26T07:13:55.135Z - [SendMessage] Started sending message...\n"
                             },
                             {
-                              "text": "Clicked on available color: GREEN\n"
+                              "text": "✅ AppleScript ran successfully\n"
+                            },
+                            {
+                              "text": "✅ AppleScript ran successfully\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-26T07:05:52.774Z",
+                          "startTime": "2025-08-26T07:13:43.174Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -183,21 +186,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "cedb3d0429a6ca9f0618-55fba87b893183743ded",
-                  "file": "4calendarTest.spec.js",
-                  "line": 34,
+                  "id": "cd2177c4cad29fd65730-58ccb6dc40e298e01707",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 35,
                   "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Member calendar full day",
-              "file": "4calendarTest.spec.js",
-              "line": 41,
-              "column": 10,
-              "specs": [
+                },
                 {
-                  "title": "verify the create a new event and edit → delete a event",
+                  "title": "verify the readBy status",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -212,19 +207,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 19278,
+                          "duration": 1335,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
+                              "text": "[INFO] 2025-08-26T07:14:18.744Z - [ReadByMessage] Started readBy message...\n"
                             },
                             {
-                              "text": "Clicked on available color: GREEN\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-26T07:06:25.910Z",
+                          "startTime": "2025-08-26T07:14:18.731Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -232,21 +227,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "cedb3d0429a6ca9f0618-c67700b79daa387a1c2d",
-                  "file": "4calendarTest.spec.js",
-                  "line": 43,
+                  "id": "cd2177c4cad29fd65730-537b73d0691f30894ed7",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 41,
                   "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Personal Calendar",
-              "file": "4calendarTest.spec.js",
-              "line": 50,
-              "column": 10,
-              "specs": [
+                },
                 {
-                  "title": "verify the create a new event and edit → delete a event",
+                  "title": "verify the forward",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -261,19 +248,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 17106,
+                          "duration": 5868,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
+                              "text": "[INFO] 2025-08-26T07:14:20.086Z - [ForwardMessage] Started forward message...\n"
                             },
                             {
-                              "text": "Clicked on available color: GREEN\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-26T07:06:45.198Z",
+                          "startTime": "2025-08-26T07:14:20.080Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -281,21 +268,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "cedb3d0429a6ca9f0618-b5d57af8c8cfd861feef",
-                  "file": "4calendarTest.spec.js",
-                  "line": 52,
+                  "id": "cd2177c4cad29fd65730-f0297586ba808c62f96d",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 45,
                   "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Personal Calendar full day",
-              "file": "4calendarTest.spec.js",
-              "line": 59,
-              "column": 10,
-              "specs": [
+                },
                 {
-                  "title": "verify the create a new event and edit → delete a event",
+                  "title": "verify the reply",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -310,22 +289,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 18127,
+                          "duration": 1425,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
+                              "text": "[INFO] 2025-08-26T07:14:25.972Z - [ReplyMessage] Started reply message...\n"
                             },
                             {
-                              "text": "Clicked on available color: GREEN\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-08-26T07:07:20.451Z - close browser\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-26T07:07:02.312Z",
+                          "startTime": "2025-08-26T07:14:25.958Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -333,9 +309,562 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "cedb3d0429a6ca9f0618-00af1091444f6de79b17",
-                  "file": "4calendarTest.spec.js",
+                  "id": "cd2177c4cad29fd65730-a095c3307ffee675cf5e",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 49,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2411,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:27.408Z - [editReply] Started edit reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:27.399Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-4058e25d09c49e5e608d",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 53,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1984,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:29.829Z - [readByReply] Started read By reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:29.820Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-d4abadacadf81271463f",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 57,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5436,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:31.823Z - [deleteReply] Started delete reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:31.815Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-98b5b13be3602ea93078",
+                  "file": "5callsheetTest.spec.js",
                   "line": 61,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5841,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:37.279Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:37.264Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-592319a30ee78d2a26f4",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 65,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Message",
+              "file": "5callsheetTest.spec.js",
+              "line": 72,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify send a message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2301,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:43.138Z - [SendMessage] Started sending message...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:43.123Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-c95ef9ecfc8304699e2e",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 74,
+                  "column": 9
+                },
+                {
+                  "title": "verify edit the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2282,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:45.454Z - [EditMessage] Started edit message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:45.440Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-21778f6b2b2e44a9d780",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 78,
+                  "column": 9
+                },
+                {
+                  "title": "verify read by status on message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1423,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:47.743Z - [ReadByMessage] Started readBy message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:47.737Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-262e2380471576d67cfd",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 82,
+                  "column": 9
+                },
+                {
+                  "title": "verify forward the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5829,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:49.173Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:49.167Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-b8d0be24d8f3581d2bba",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 86,
+                  "column": 9
+                },
+                {
+                  "title": "verify reply to the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1413,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:55.019Z - [ReplyMessage] Started reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:55.005Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-04ae4c169d998808cad0",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 90,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit the reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2383,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:56.449Z - [editReply] Started edit reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:56.437Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-a24a8bf0adf310ee255e",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 94,
+                  "column": 9
+                },
+                {
+                  "title": "verify the read by status on reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1697,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:14:58.835Z - [readByReply] Started read By reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:14:58.831Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-be5d5a6375dc4cab7a88",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 98,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete the reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5564,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:15:00.543Z - [deleteReply] Started delete reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:15:00.533Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-ce3290a864dc6e94c781",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 102,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6266,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:15:06.124Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-08-26T07:15:12.403Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:15:06.110Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cd2177c4cad29fd65730-5e0e8934a0b3ae3e619e",
+                  "file": "5callsheetTest.spec.js",
+                  "line": 106,
                   "column": 9
                 }
               ]
@@ -347,9 +876,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-26T07:05:52.402Z",
-    "duration": 88578.66,
-    "expected": 4,
+    "startTime": "2025-08-26T07:13:42.808Z",
+    "duration": 90391.41900000001,
+    "expected": 17,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

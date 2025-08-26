@@ -31,8 +31,8 @@ test.describe('CallSheet', () => {
     });
 
     
-    test.describe('Send Document Flow', () => {
-        test('verify the send a document', async () => {
+    test.describe('Send Document', () => {
+        test('verify the send a message → send document by clicking on continuation → send document by clicking on new', async () => {
             await uploadmedia.sendMessage();
             await callsheet.uploadDocumentByClickingContinuation();
             await callsheet.uploadDocumentByClickingNew();
@@ -69,13 +69,13 @@ test.describe('CallSheet', () => {
     });
 
 
-    test.describe('CallSheet test cases', () => {
+    test.describe('Send Message', () => {
 
-        test('verify send a message successfully', async () => {
+        test('verify send a message', async () => {
             await uploadmedia.sendMessage();
         });  
     
-        test('verify edit the message successfully', async () => {
+        test('verify edit the message', async () => {
             await uploadmedia.edit();
         });
 
@@ -83,15 +83,15 @@ test.describe('CallSheet', () => {
             await uploadmedia.readBy();
         });
 
-        test('forward the message successfully', async () => {
+        test('verify forward the message', async () => {
             await uploadmedia.forward();
         });
 
-        test('verify reply to the message successfully', async () => {
+        test('verify reply to the message', async () => {
             await uploadmedia.reply();
         });
 
-        test('verify the edit the reply message successfully', async () => {
+        test('verify the edit the reply message', async () => {
             await uploadmedia.editReply();
         });
 
@@ -99,11 +99,11 @@ test.describe('CallSheet', () => {
             await uploadmedia.readByReply();
         });
 
-        test('verify the delete the reply message successfully', async () => {
+        test('verify the delete the reply message', async () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the delete message successfully', async () => {
+        test('verify the delete message', async () => {
             await uploadmedia.delete();
         });
     
@@ -114,5 +114,5 @@ test.describe('CallSheet', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/callsheetTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/5callsheetTest.spec.js --project=chromium --headed
    */ 

@@ -60,5 +60,4 @@ export default class CommonPage {
         console.log('Popup message verified:');
     }
     
-
 }

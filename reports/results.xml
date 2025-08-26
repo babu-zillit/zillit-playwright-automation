@@ -1,114 +1,650 @@
-<testsuites id="" name="" tests="12" failures="1" skipped="0" errors="0" time="214.72188">
-<testsuite name="dodTest.spec.js" timestamp="2025-08-26T05:46:40.407Z" hostname="chromium" tests="2" failures="0" skipped="0" time="27.895" errors="0">
-<testcase name="Schedule D.O.D › D.O.D › verify upload dod document" classname="dodTest.spec.js" time="5.398">
+<testsuites id="" name="" tests="51" failures="1" skipped="1" errors="0" time="227.75008300000002">
+<testsuite name="3bulletinTest.spec.js" timestamp="2025-08-26T06:46:37.675Z" hostname="chromium" tests="51" failures="1" skipped="1" time="207.965" errors="0">
+<testcase name="Bulletin › Delete all message if available › delete all" classname="3bulletinTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Message › verify send a message" classname="3bulletinTest.spec.js" time="5.808">
 <system-out>
-<![CDATA[[INFO] 2025-08-26T05:46:41.691Z - browser is launching
-[INFO] 2025-08-26T05:46:45.687Z - open the project
+<![CDATA[[INFO] 2025-08-26T06:46:38.909Z - browser is launching
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-26T05:46:45.687Z - QA environment is started...
+[INFO] 2025-08-26T06:46:45.917Z - QA environment is started...
+[INFO] 2025-08-26T06:46:47.492Z - [SendMessage] Started sending message...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Schedule D.O.D › D.O.D › verify dod workflow: view → viewCount → download → downloadCount → move → delete" classname="dodTest.spec.js" time="22.497">
+<testcase name="Bulletin › Send Message › verify edit the message" classname="3bulletinTest.spec.js" time="2.529">
 <system-out>
-<![CDATA[[INFO] 2025-08-26T05:47:18.020Z - close browser
+<![CDATA[[INFO] 2025-08-26T06:46:53.315Z - [EditMessage] Started edit message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-</testsuite>
-<testsuite name="scheduleFullLineTest.spec.js" timestamp="2025-08-26T05:46:40.407Z" hostname="chromium" tests="6" failures="0" skipped="0" time="76.447" errors="0">
-<testcase name="Script &amp; Page Distribution › Schedule Full Line › verify upload schedule full document" classname="scheduleFullLineTest.spec.js" time="6.585">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T05:47:18.311Z - browser is launching
-[INFO] 2025-08-26T05:47:21.760Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-08-26T05:47:21.760Z - QA environment is started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Script &amp; Page Distribution › Schedule Full Line › verify fullScript workflow: view → viewCount → download → downloadCount" classname="scheduleFullLineTest.spec.js" time="15.843">
-</testcase>
-<testcase name="Script &amp; Page Distribution › Pages › verify upload page document" classname="scheduleFullLineTest.spec.js" time="7.246">
-</testcase>
-<testcase name="Script &amp; Page Distribution › Pages › verify fullScript workflow: view → viewCount → download → downloadCount → delete" classname="scheduleFullLineTest.spec.js" time="24.714">
-</testcase>
-<testcase name="Script &amp; Page Distribution › Schedule One Line › verify upload page document" classname="scheduleFullLineTest.spec.js" time="6.109">
-</testcase>
-<testcase name="Script &amp; Page Distribution › Schedule One Line › verify fullScript workflow: view → viewCount → download → downloadCount → delete" classname="scheduleFullLineTest.spec.js" time="15.95">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T05:48:42.813Z - close browser
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="scriptDistributionTest.spec.js" timestamp="2025-08-26T05:46:40.407Z" hostname="chromium" tests="4" failures="1" skipped="0" time="72.971" errors="0">
-<testcase name="Script &amp; Page Distribution › Full Script › verify upload fullScript document" classname="scriptDistributionTest.spec.js" time="30.105">
-<failure message="scriptDistributionTest.spec.js:36:9 verify upload fullScript document" type="FAILURE">
-<![CDATA[  [chromium] › scriptDistributionTest.spec.js:36:9 › Script & Page Distribution › Full Script › verify upload fullScript document 
+<testcase name="Bulletin › Send Message › verify read by status on message" classname="3bulletinTest.spec.js" time="30.105">
+<failure message="3bulletinTest.spec.js:43:9 verify read by status on message" type="FAILURE">
+<![CDATA[  [chromium] › 3bulletinTest.spec.js:43:9 › Bulletin › Send Message › verify read by status on message 
 
     Test timeout of 30000ms exceeded.
 
     Error: locator.click: Target page, context or browser has been closed
     Call log:
-      - waiting for locator('//div[@id="scriptFooter"]//button')
+      - waiting for getByRole('button', { name: 'Close' })
 
 
-       at ../pages/script-page-distribution.js:64
+       at ../actions/media-uploader.js:159
 
-      62 |
-      63 |     async uploadScriptDistribution(enterEpisode, enterScene){
-    > 64 |         await this.attachment.click();
-         |                               ^
-      65 |         await this.documentUpload.setInputFiles(mediapaths.document);
-      66 |
-      67 |         if(enterEpisode=='Episode'){
-        at ScriptDistribution.uploadScriptDistribution (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/script-page-distribution.js:64:31)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/scriptDistributionTest.spec.js:38:42
+      157 |
+      158 |         await this.handleDropdownAction('Read By');
+    > 159 |         await this.closeButton.click();
+          |                                ^
+      160 |     }
+      161 |
+      162 |     async reply(){
+        at UploadMedia.readBy (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:159:32)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/3bulletinTest.spec.js:44:13
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/test-failed-1.png
+    test-results/3bulletinTest-Bulletin-Sen-ed598-y-read-by-status-on-message-chromium/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ../../test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/error-context.md
+    Error Context: ../../test-results/3bulletinTest-Bulletin-Sen-ed598-y-read-by-status-on-message-chromium/error-context.md
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/trace.zip
+    test-results/3bulletinTest-Bulletin-Sen-ed598-y-read-by-status-on-message-chromium/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/trace.zip
+        npx playwright show-trace test-results/3bulletinTest-Bulletin-Sen-ed598-y-read-by-status-on-message-chromium/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[[INFO] 2025-08-26T05:48:42.993Z - browser is launching
-[INFO] 2025-08-26T05:48:47.071Z - open the project
+<![CDATA[[INFO] 2025-08-26T06:46:55.855Z - [ReadByMessage] Started readBy message...
+[INFO] 2025-08-26T06:47:26.100Z - close browser
+
+[[ATTACHMENT|../test-results/3bulletinTest-Bulletin-Sen-ed598-y-read-by-status-on-message-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/3bulletinTest-Bulletin-Sen-ed598-y-read-by-status-on-message-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/3bulletinTest-Bulletin-Sen-ed598-y-read-by-status-on-message-chromium/trace.zip]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Failed to select dropdown option: Read By locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('div[class*="ant-dropdown-placement-"] li').first() to be visible[22m
+[2m    15 × locator resolved to hidden <li tabindex="-1" role="menuitem" data-menu-id="rc-menu-uuid-97896-2-0" class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child">…</li>[22m
+
+    at UploadMedia.handleDropdownAction [90m(/Users/babuyadav/Documents/zillit-playwright-automation/[39msrc/actions/media-uploader.js:113:35[90m)[39m
+    at UploadMedia.readBy [90m(/Users/babuyadav/Documents/zillit-playwright-automation/[39msrc/actions/media-uploader.js:158:9[90m)[39m
+    at [90m/Users/babuyadav/Documents/zillit-playwright-automation/[39msrc/tests/3bulletinTest.spec.js:44:13 {
+  name: [32m'TimeoutError'[39m,
+  [[32mSymbol(step)[39m]: {
+    stepId: [32m'pw:api@5'[39m,
+    location: {
+      file: [32m'/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js'[39m,
+      line: [33m113[39m,
+      column: [33m35[39m,
+      function: [32m'UploadMedia.handleDropdownAction'[39m
+    },
+    category: [32m'pw:api'[39m,
+    title: [32m'locator.waitFor(div[class*="ant-dropdown-placement-"] li >> nth=0)'[39m,
+    apiName: [32m'locator.waitFor'[39m,
+    params: {
+      selector: [32m'div[class*="ant-dropdown-placement-"] li >> nth=0'[39m,
+      strict: [33mtrue[39m,
+      omitReturnValue: [33mtrue[39m,
+      state: [32m'visible'[39m,
+      timeout: [33m5000[39m
+    },
+    boxedStack: [90mundefined[39m,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'pw:api@5'[39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1756190820978[39m,
+    error: {
+      message: [32m'TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m`\x1B[2m  - waiting for locator('div[class*="ant-dropdown-placement-"] li').first() to be visible\x1B[22m\n`[39m +
+        [32m'\x1B[2m    15 × locator resolved to hidden <li tabindex="-1" role="menuitem" data-menu-id="rc-menu-uuid-97896-2-0" class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child">…</li>\x1B[22m\n'[39m,
+      stack: [32m'TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m`\x1B[2m  - waiting for locator('div[class*="ant-dropdown-placement-"] li').first() to be visible\x1B[22m\n`[39m +
+        [32m'\x1B[2m    15 × locator resolved to hidden <li tabindex="-1" role="menuitem" data-menu-id="rc-menu-uuid-97896-2-0" class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child">…</li>\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'    at UploadMedia.handleDropdownAction (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:113:35)\n'[39m +
+        [32m'    at UploadMedia.readBy (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:158:9)\n'[39m +
+        [32m'    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/3bulletinTest.spec.js:44:13'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="Bulletin › Send Message › verify forward the message" classname="3bulletinTest.spec.js" time="8.917">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:47:27.499Z - browser is launching
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-26T05:48:47.071Z - QA environment is started...
-[INFO] 2025-08-26T05:49:21.697Z - close browser
-
-[[ATTACHMENT|../test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/trace.zip]]
+[INFO] 2025-08-26T06:47:32.044Z - QA environment is started...
+[INFO] 2025-08-26T06:47:34.721Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Script &amp; Page Distribution › Full Script › verify fullScript workflow: view → viewCount → download → downloadCount" classname="scriptDistributionTest.spec.js" time="15.374">
+<testcase name="Bulletin › Send Message › verify reply to the message" classname="3bulletinTest.spec.js" time="1.44">
 <system-out>
-<![CDATA[[INFO] 2025-08-26T05:49:23.641Z - browser is launching
-[INFO] 2025-08-26T05:49:27.483Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-08-26T05:49:27.484Z - QA environment is started...
+<![CDATA[[INFO] 2025-08-26T06:47:43.657Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Script &amp; Page Distribution › Pages › verify upload page document" classname="scriptDistributionTest.spec.js" time="6.758">
-</testcase>
-<testcase name="Script &amp; Page Distribution › Pages › verify fullScript workflow: view → viewCount → download → downloadCount → delete" classname="scriptDistributionTest.spec.js" time="20.734">
+<testcase name="Bulletin › Send Message › verify the edit the reply message" classname="3bulletinTest.spec.js" time="2.125">
 <system-out>
-<![CDATA[[INFO] 2025-08-26T05:50:14.663Z - close browser
+<![CDATA[[INFO] 2025-08-26T06:47:45.106Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the read by status on reply message" classname="3bulletinTest.spec.js" time="1.978">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:47:47.238Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the delete the reply message" classname="3bulletinTest.spec.js" time="5.417">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:47:49.225Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the delete message" classname="3bulletinTest.spec.js" time="5.834">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:47:54.659Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the send a image" classname="3bulletinTest.spec.js" time="2.792">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:00.583Z - [Media] Upload image started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the readBy status" classname="3bulletinTest.spec.js" time="1.339">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:03.313Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the forward" classname="3bulletinTest.spec.js" time="6.135">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:04.660Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the reply" classname="3bulletinTest.spec.js" time="1.002">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:10.815Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the edit reply" classname="3bulletinTest.spec.js" time="2.544">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:11.831Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the readBy reply" classname="3bulletinTest.spec.js" time="1.69">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:14.380Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the delete reply" classname="3bulletinTest.spec.js" time="5.795">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:16.079Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the delete image" classname="3bulletinTest.spec.js" time="5.812">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:21.893Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the send a video" classname="3bulletinTest.spec.js" time="4.293">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:27.769Z - [Media] Upload video started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the readBy status" classname="3bulletinTest.spec.js" time="1.076">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:32.032Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the forward" classname="3bulletinTest.spec.js" time="5.564">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:33.113Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the reply" classname="3bulletinTest.spec.js" time="1.46">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:38.691Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the edit reply" classname="3bulletinTest.spec.js" time="2.445">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:40.167Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the readBy reply" classname="3bulletinTest.spec.js" time="1.669">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:42.620Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the delete reply" classname="3bulletinTest.spec.js" time="5.604">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:44.300Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the delete video" classname="3bulletinTest.spec.js" time="5.783">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:49.920Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the send a audio" classname="3bulletinTest.spec.js" time="2.8">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:55.771Z - [Media] Upload audio started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the readBy status" classname="3bulletinTest.spec.js" time="1.36">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:58.540Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the forward" classname="3bulletinTest.spec.js" time="5.761">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:48:59.907Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the reply" classname="3bulletinTest.spec.js" time="1.166">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:05.689Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the edit reply" classname="3bulletinTest.spec.js" time="2.541">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:06.867Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the readBy reply" classname="3bulletinTest.spec.js" time="1.88">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:09.414Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the delete reply" classname="3bulletinTest.spec.js" time="5.448">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:11.302Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the delete audio" classname="3bulletinTest.spec.js" time="5.832">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:16.778Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the send a document" classname="3bulletinTest.spec.js" time="0.983">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:22.691Z - [Media] Upload document started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the readBy status" classname="3bulletinTest.spec.js" time="2.77">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:23.639Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the forward" classname="3bulletinTest.spec.js" time="5.551">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:26.415Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the reply" classname="3bulletinTest.spec.js" time="1.412">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:31.984Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the edit reply" classname="3bulletinTest.spec.js" time="2.473">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:33.410Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the readBy reply" classname="3bulletinTest.spec.js" time="1.691">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:35.890Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the delete reply" classname="3bulletinTest.spec.js" time="5.586">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:37.590Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the delete document" classname="3bulletinTest.spec.js" time="5.826">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:43.193Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the send a location" classname="3bulletinTest.spec.js" time="6.825">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:49.174Z - [Location] Upload location started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the readBy status" classname="3bulletinTest.spec.js" time="0.972">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:55.870Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the forward" classname="3bulletinTest.spec.js" time="5.885">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:49:56.846Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the reply" classname="3bulletinTest.spec.js" time="1.457">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:50:02.753Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the edit reply" classname="3bulletinTest.spec.js" time="2.25">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:50:04.217Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the readBy reply" classname="3bulletinTest.spec.js" time="2.169">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:50:06.477Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the delete reply" classname="3bulletinTest.spec.js" time="5.593">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:50:08.653Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the delete location" classname="3bulletinTest.spec.js" time="5.76">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:50:14.264Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Image Reply › verify send a image reply" classname="3bulletinTest.spec.js" time="4.818">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T06:50:20.108Z - [Media] Upload image started...
+[INFO] 2025-08-26T06:50:22.393Z - [ImageReply] Started image reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2025-08-26T06:50:24.869Z - close browser
 ]]>
 </system-out>
 </testcase>

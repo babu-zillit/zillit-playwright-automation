@@ -1,0 +1,9 @@
+[INFO] 2025-08-26T06:31:26.641Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  'Reply',
+  'Forward',
+  'Delete',
+  'Read By',
+  'Distribute',
+  'Forward to Remote Projects'
+]

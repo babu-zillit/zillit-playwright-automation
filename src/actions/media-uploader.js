@@ -304,6 +304,14 @@ export default class UploadMedia {
         }
     }
 
+    async imageReply(){
+        logger.info('[ImageReply] Started image reply message...');
+
+        await this.handleDropdownAction('Image Reply');
+        await this.page.locator('[placeholder="Type a message"]').fill('This is image reply');
+        await this.clickSendMedia();
+    }
+
 
     
     async deleteAll(){

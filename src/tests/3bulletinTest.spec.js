@@ -30,13 +30,13 @@ test.describe('Bulletin', () => {
         });
     });
 
-    test.describe('Send Message flow', () => {
+    test.describe('Send Message', () => {
 
-        test('verify send a message successfully', async () => {
+        test('verify send a message', async () => {
             await uploadmedia.sendMessage();
         });  
     
-        test('verify edit the message successfully', async () => {
+        test('verify edit the message', async () => {
             await uploadmedia.edit();
         });
 
@@ -44,15 +44,15 @@ test.describe('Bulletin', () => {
             await uploadmedia.readBy();
         });
 
-        test('forward the message successfully', async () => {
+        test('verify forward the message', async () => {
             await uploadmedia.forward();
         });
 
-        test('verify reply to the message successfully', async () => {
+        test('verify reply to the message', async () => {
             await uploadmedia.reply();
         });
 
-        test('verify the edit the reply message successfully', async () => {
+        test('verify the edit the reply message', async () => {
             await uploadmedia.editReply();
         });
 
@@ -60,18 +60,18 @@ test.describe('Bulletin', () => {
             await uploadmedia.readByReply();
         });
 
-        test('verify the delete the reply message successfully', async () => {
+        test('verify the delete the reply message', async () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the delete message successfully', async () => {
+        test('verify the delete message', async () => {
             await uploadmedia.delete();
         });
 
     });
     
 
-    test.describe('Send Image Flow', () => {
+    test.describe('Send Image', () => {
         test('verify the send a image', async () => {
             await uploadmedia.clickAttachment();
             await uploadmedia.uploadImage();
@@ -108,7 +108,7 @@ test.describe('Bulletin', () => {
 
     });
 
-    test.describe('Send Video Flow', () => {
+    test.describe('Send Video', () => {
         test('verify the send a video', async () => {
             await uploadmedia.clickAttachment();
             await uploadmedia.uploadVideo();
@@ -145,7 +145,7 @@ test.describe('Bulletin', () => {
 
     });
 
-    test.describe('Send Audio Flow', () => {
+    test.describe('Send Audio', () => {
         test('verify the send a audio', async () => {
             await uploadmedia.clickAttachment();
             await uploadmedia.uploadAudio();
@@ -181,7 +181,7 @@ test.describe('Bulletin', () => {
 
     });
 
-    test.describe('Send Document Flow', () => {
+    test.describe('Send Document', () => {
         test('verify the send a document', async () => {
             await uploadmedia.clickAttachment();
             await uploadmedia.uploadDocument();
@@ -217,7 +217,7 @@ test.describe('Bulletin', () => {
 
     });
 
-    test.describe('Send Location Flow', () => {
+    test.describe('Send Location', () => {
         test('verify the send a location', async () => {
             await uploadmedia.clickAttachment();
             await uploadmedia.uploadLocation();
@@ -253,15 +253,25 @@ test.describe('Bulletin', () => {
 
     });
 
+    test.describe('Send Image Reply', () => {
+        test('verify send a image reply', async () => {
+            await uploadmedia.clickAttachment();
+            await uploadmedia.uploadImage();
+            await uploadmedia.clickSendMedia();
+            await uploadmedia.imageReply();
+        });
+
+    });
+
 });
 
 /**
  * 
- * ENV_TYPE=qa npx playwright test src/tests/bulletinTest.spec.js --project=chromium --headed
- * ENV_TYPE=qa npx playwright test src/tests/bulletinTest.spec.js --project=firefox --headed
- * ENV_TYPE=qa npx playwright test src/tests/bulletinTest.spec.js --project=webkit --headed
- * ENV_TYPE=production npx playwright test src/tests/bulletinTest.spec.js --project=chromium --headed
- * ENV_TYPE=production npx playwright test src/tests/bulletinTest.spec.js --project=firefox --headed
- * ENV_TYPE=production npx playwright test src/tests/bulletinTest.spec.js --project=webkit --headed
+ * ENV_TYPE=qa npx playwright test src/tests/3bulletinTest.spec.js --project=chromium --headed
+ * ENV_TYPE=qa npx playwright test src/tests/3bulletinTest.spec.js --project=firefox --headed
+ * ENV_TYPE=qa npx playwright test src/tests/3bulletinTest.spec.js --project=webkit --headed
+ * ENV_TYPE=production npx playwright test src/tests/3bulletinTest.spec.js --project=chromium --headed
+ * ENV_TYPE=production npx playwright test src/tests/3bulletinTest.spec.js --project=firefox --headed
+ * ENV_TYPE=production npx playwright test src/tests/3bulletinTest.spec.js --project=webkit --headed
  * 
  */

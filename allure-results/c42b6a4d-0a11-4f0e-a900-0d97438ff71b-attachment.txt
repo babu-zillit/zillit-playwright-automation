@@ -1,0 +1,15 @@
+[INFO] 2025-08-26T06:20:42.491Z - browser is launching
+Current hostname is: qa.zillit.com
+[INFO] 2025-08-26T06:20:48.775Z - QA environment is started...
+[INFO] 2025-08-26T06:20:53.315Z - [Media] Upload image started...
+[INFO] 2025-08-26T06:20:56.064Z - [ImageReply] Started image reply message...
+Dropdown list items: [
+  'Reply',
+  'Forward',
+  'Delete',
+  'Image Reply',
+  'Read By',
+  'Distribute',
+  'Forward to Remote Projects'
+]
+[INFO] 2025-08-26T06:21:20.840Z - close browser

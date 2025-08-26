@@ -31,7 +31,7 @@ test.describe('Casting', () => {
 
 
 
-    test.describe('Casting(Main Cast)', () => {
+    test.describe('Casting', () => {
 
         test('verify uploadCasting', async () => {
             await castingPage.uploadCasting('1','Police','Salman','male'); 
@@ -75,12 +75,12 @@ test.describe('Casting', () => {
     
     });
 
-    test.describe('Delete & move to shortlist , move to final from selects', () => {
+    test.describe('Selects → move to shortlist , move to final, delete', () => {
 
         test('verify casts move to shortlist', async () => {
             await castingPage.selectsTab(); 
             await castingPage.moveToShortlistFromSelects();
-            await castingPage.moveToFinalFromSelects(); 
+            await castingPage.moveToFinalFromSelects();
         });
 
         test('verify delete the cast folder from selects', async () => {
@@ -89,7 +89,7 @@ test.describe('Casting', () => {
     
     });
 
-    test.describe('Delete from shortlist', () => {
+    test.describe('Shortlist → delete folder', () => {
 
         test('verify user delete the cast folder from the shortlist', async () => {
             await castingPage.shortlistTab();
@@ -98,7 +98,7 @@ test.describe('Casting', () => {
     
     });
 
-    test.describe('Delete from Finals', () => {
+    test.describe('Finals → delete folder', () => {
 
         test('verify user deletes the cast folder from finals', async () => {
             await castingPage.finalsTab();
@@ -115,7 +115,6 @@ test.describe('Casting', () => {
         });
     
     });
-
 
 });
 

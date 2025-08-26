@@ -21,7 +21,7 @@ test.describe('Casting', () => {
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
-        await castingPage.castingMainTab();
+        await castingPage.castingBackgroundTab();
     });
 
     test.afterAll(async () => {
@@ -120,5 +120,5 @@ test.describe('Casting', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/castingTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/22casting-backgroundTest.spec.js --project=chromium --headed
    */ 

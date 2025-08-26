@@ -92,5 +92,5 @@ test.describe('Contrcat Signature', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/contract-signatureTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/26contract-signatureTest.spec.js --project=chromium --headed
    */ 

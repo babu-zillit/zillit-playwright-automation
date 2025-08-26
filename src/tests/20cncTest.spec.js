@@ -293,5 +293,5 @@ test.describe('CnC', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/cncTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/20cncTest.spec.js --project=chromium --headed
    */ 

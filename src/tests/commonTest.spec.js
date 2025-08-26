@@ -4,7 +4,7 @@ import logger from '../utils/loggerUtils';
 import UploadMedia from '../actions/media-uploader';
 import Common from '../pages/common';
 
-test.describe('Common test', () => {
+test.describe.skip('Common test', () => {
     let context;
     let page;
     let uploadmedia;

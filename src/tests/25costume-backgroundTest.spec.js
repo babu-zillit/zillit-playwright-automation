@@ -112,5 +112,5 @@ test.describe('Costume', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/costume-backgroundTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/25costume-backgroundTest.spec.js --project=chromium --headed
    */ 

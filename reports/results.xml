@@ -1,23 +1,158 @@
-<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="42.29649">
-<testsuite name="8continuityTest.spec.js" timestamp="2025-08-26T07:21:30.990Z" hostname="chromium" tests="5" failures="0" skipped="0" time="29.237" errors="0">
-<testcase name="Continuity › My Department › verify upload the continuity scene" classname="8continuityTest.spec.js" time="0.629">
+<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="123.35353300000001">
+<testsuite name="10cateringTest.spec.js" timestamp="2025-08-26T07:31:52.680Z" hostname="chromium" tests="17" failures="0" skipped="0" time="102.659" errors="0">
+<testcase name="Catering › Catering module › catering test casess" classname="10cateringTest.spec.js" time="9.316">
 <system-out>
-<![CDATA[[INFO] 2025-08-26T07:21:32.694Z - browser is launching
-[INFO] 2025-08-26T07:21:38.341Z - open the project
+<![CDATA[[INFO] 2025-08-26T07:31:53.954Z - browser is launching
+[INFO] 2025-08-26T07:31:59.176Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-26T07:21:38.341Z - QA environment is started...
+[INFO] 2025-08-26T07:31:59.176Z - QA environment is started...
+Dropdown Options: [
+  [32m'Camera'[39m,
+  [32m'Casting'[39m,
+  [32m'Catering'[39m,
+  [32m'Locations'[39m,
+  [32m'Riggers & Electrical-Rigging'[39m,
+  [32m'Electrical'[39m,
+  [32m'Cast/Talent'[39m
+]
+Dropdown Options: [
+  [32m'Camera'[39m,
+  [32m'Casting'[39m,
+  [32m'Catering'[39m,
+  [32m'Locations'[39m,
+  [32m'Riggers & Electrical-Rigging'[39m,
+  [32m'Electrical'[39m,
+  [32m'Cast/Talent'[39m,
+  [32m'Select Designation'[39m,
+  [32m'Caterers'[39m,
+  [32m'Chef'[39m,
+  [32m'Craft Services'[39m,
+  [32m'Head Chef'[39m,
+  [32m'Scene Cuisine Caterer'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Continuity › My Department › verify continuity scene edit -&gt; forward -&gt; delete" classname="8continuityTest.spec.js" time="13.806">
-</testcase>
-<testcase name="Continuity › All Department › verify all department continuity scene" classname="8continuityTest.spec.js" time="2.007">
-</testcase>
-<testcase name="Continuity › All Department › verify delete all department continuity scene" classname="8continuityTest.spec.js" time="6.046">
-</testcase>
-<testcase name="Continuity › All Department › verify delete my department continuity scene" classname="8continuityTest.spec.js" time="6.749">
+<testcase name="Catering › Send Message flow › verify send a message successfully" classname="10cateringTest.spec.js" time="14.662">
 <system-out>
-<![CDATA[[INFO] 2025-08-26T07:22:12.924Z - close browser
+<![CDATA[[INFO] 2025-08-26T07:32:34.163Z - [SendMessage] Started sending message...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Message flow › verify edit the message successfully" classname="10cateringTest.spec.js" time="2.496">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:32:36.477Z - [EditMessage] Started edit message...
+Dropdown list items: [
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Message flow › forward the message successfully" classname="10cateringTest.spec.js" time="5.828">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:32:38.980Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Message flow › verify the delete message successfully" classname="10cateringTest.spec.js" time="6.12">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:32:44.970Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Image Flow › verify the send a image" classname="10cateringTest.spec.js" time="3.004">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:32:51.114Z - [Media] Upload image started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Image Flow › verify the forward" classname="10cateringTest.spec.js" time="5.772">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:32:54.101Z - [ForwardMessage] Started forward message...
+Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Image Flow › verify the delete image" classname="10cateringTest.spec.js" time="6.033">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:33:00.023Z - [Delete] deletion started...
+Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document Flow › verify the send a document" classname="10cateringTest.spec.js" time="1.164">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:33:06.091Z - [Media] Upload document started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document Flow › verify the forward" classname="10cateringTest.spec.js" time="7.791">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:33:07.175Z - [ForwardMessage] Started forward message...
+Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document Flow › verify the delete document" classname="10cateringTest.spec.js" time="6.292">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:33:15.486Z - [Delete] deletion started...
+Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio Flow › verify the send a audio" classname="10cateringTest.spec.js" time="2.934">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:33:21.442Z - [Media] Upload audio started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio Flow › verify the forward" classname="10cateringTest.spec.js" time="8.758">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:33:24.232Z - [ForwardMessage] Started forward message...
+Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio Flow › verify the delete audio" classname="10cateringTest.spec.js" time="6.033">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:33:33.157Z - [Delete] deletion started...
+Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify create unit" classname="10cateringTest.spec.js" time="7.85">
+</testcase>
+<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify edit unit" classname="10cateringTest.spec.js" time="2.229">
+</testcase>
+<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify delete" classname="10cateringTest.spec.js" time="6.377">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T07:33:55.562Z - close browser
 ]]>
 </system-out>
 </testcase>

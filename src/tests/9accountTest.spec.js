@@ -29,9 +29,9 @@ test.describe('Accounts', () => {
         await context.close();
     });
 
-    test.describe('Account module', () => {
+    test.describe('Account', () => {
 
-        test('account test casess', async () => {
+        test('verify user become the accountant', async () => {
             await accountPage.openEditProfile();
             await accountPage.changeDepartmentAndDesignation('Accounts','1st Assistant Accountant');
             await accountPage.clickAccountTab();
@@ -40,41 +40,41 @@ test.describe('Accounts', () => {
     
     });
 
-    test.describe('Send Message flow', () => {
+    test.describe('Send Message', () => {
 
-        test('verify send a message successfully', async () => {
+        test('verify send a message', async () => {
             await uploadmedia.sendMessage();
         });  
     
-        test('verify edit the message successfully', async () => {
+        test('verify edit the message', async () => {
             await uploadmedia.edit();
         });
 
-        test('forward the message successfully', async () => {
+        test('verify forward the message', async () => {
             await uploadmedia.forward();
         });
 
-        test('verify reply to the message successfully', async () => {
+        test('verify reply to the message', async () => {
             await uploadmedia.reply();
         });
 
-        test('verify the edit the reply message successfully', async () => {
+        test('verify the edit the reply message', async () => {
             await accountPage.selectUser();
             await uploadmedia.editReply();
         });
 
-        test('verify the delete the reply message successfully', async () => {
+        test('verify the delete the reply message', async () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the delete message successfully', async () => {
+        test('verify the delete message', async () => {
             await accountPage.selectUser();
             await uploadmedia.delete();
         });
 
     });
 
-    test.describe('Send Image Flow', () => {
+    test.describe('Send Image', () => {
         test('verify the send a image', async () => {
             await accountPage.selectUser();
             await uploadmedia.clickAttachment();
@@ -106,7 +106,7 @@ test.describe('Accounts', () => {
 
     });
 
-    test.describe('Send Document Flow', () => {
+    test.describe('Send Document', () => {
         test('verify the send a document', async () => {
             await accountPage.selectUser();
             await uploadmedia.clickAttachment();
@@ -137,7 +137,7 @@ test.describe('Accounts', () => {
 
     });
 
-    test.describe('Send Audio Flow', () => {
+    test.describe('Send Audio', () => {
         test('verify the send a audio', async () => {
             await accountPage.selectUser();
             await uploadmedia.clickAttachment();
@@ -189,6 +189,6 @@ test.describe('Accounts', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/accountTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/9accountTest.spec.js --project=chromium --headed
    * ENV_TYPE=production 
    */ 

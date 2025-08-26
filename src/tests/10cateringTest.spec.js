@@ -30,39 +30,39 @@ test.describe('Catering', () => {
         await context.close();
     });
 
-    test.describe('Catering module', () => {
+    test.describe('User change the department', () => {
 
-        test('catering test casess', async () => {
+        test('verify user become cater department', async () => {
             await cateringPage.openEditProfile();
             await cateringPage.changeDepartmentAndDesignation('Catering', 'Caterers');
         }); 
     
     });
 
-    test.describe('Send Message flow', () => {
+    test.describe('Send Message', () => {
 
-        test('verify send a message successfully', async () => {
+        test('verify send a message', async () => {
             await cateringPage.clickCateringTab();
             await cateringPage.selectUser();
             await uploadmedia.sendMessage();
         });  
     
-        test('verify edit the message successfully', async () => {
+        test('verify edit the message', async () => {
             await uploadmedia.edit();
         });
 
-        test('forward the message successfully', async () => {
+        test('verify forward the message', async () => {
             await uploadmedia.forward();
         });
 
-        test('verify the delete message successfully', async () => {
+        test('verify the delete message', async () => {
             await cateringPage.selectUser();
             await uploadmedia.delete();
         });
 
     });
 
-    test.describe('Send Image Flow', () => {
+    test.describe('Send Image', () => {
 
         test('verify the send a image', async () => {
             await cateringPage.selectUser();
@@ -82,7 +82,7 @@ test.describe('Catering', () => {
 
     });
 
-    test.describe('Send Document Flow', () => {
+    test.describe('Send Document', () => {
 
         test('verify the send a document', async () => {
             await cateringPage.selectUser();
@@ -101,7 +101,7 @@ test.describe('Catering', () => {
 
     });
 
-    test.describe('Send Audio Flow', () => {
+    test.describe('Send Audio', () => {
 
         test('verify the send a audio', async () => {
             await cateringPage.selectUser();
@@ -132,16 +132,14 @@ test.describe('Catering', () => {
             await cateringPage.editCaterUnit();
         });
 
-        test('verify delete', async () => {
+        test('verify delete unit', async () => {
             await cateringPage.deleteCaterUnit();
         });
 
     });
 
-
-
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/cateringTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/10cateringTest.spec.js --project=chromium --headed
    */ 

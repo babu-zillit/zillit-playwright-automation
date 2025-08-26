@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "8continuityTest.spec.js",
-      "file": "8continuityTest.spec.js",
+      "title": "10cateringTest.spec.js",
+      "file": "10cateringTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Continuity",
-          "file": "8continuityTest.spec.js",
-          "line": 6,
+          "title": "Catering",
+          "file": "10cateringTest.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "My Department",
-              "file": "8continuityTest.spec.js",
-              "line": 34,
+              "title": "Catering module",
+              "file": "10cateringTest.spec.js",
+              "line": 33,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify upload the continuity scene",
+                  "title": "catering test casess",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,31 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 629,
+                          "duration": 9316,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-26T07:21:32.694Z - browser is launching\n"
+                              "text": "[INFO] 2025-08-26T07:31:53.954Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-26T07:21:38.341Z - open the project\n"
+                              "text": "[INFO] 2025-08-26T07:31:59.176Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-26T07:21:38.341Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-08-26T07:31:59.176Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "Dropdown Options: [\n  \u001b[32m'Camera'\u001b[39m,\n  \u001b[32m'Casting'\u001b[39m,\n  \u001b[32m'Catering'\u001b[39m,\n  \u001b[32m'Locations'\u001b[39m,\n  \u001b[32m'Riggers & Electrical-Rigging'\u001b[39m,\n  \u001b[32m'Electrical'\u001b[39m,\n  \u001b[32m'Cast/Talent'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Dropdown Options: [\n  \u001b[32m'Camera'\u001b[39m,\n  \u001b[32m'Casting'\u001b[39m,\n  \u001b[32m'Catering'\u001b[39m,\n  \u001b[32m'Locations'\u001b[39m,\n  \u001b[32m'Riggers & Electrical-Rigging'\u001b[39m,\n  \u001b[32m'Electrical'\u001b[39m,\n  \u001b[32m'Cast/Talent'\u001b[39m,\n  \u001b[32m'Select Designation'\u001b[39m,\n  \u001b[32m'Caterers'\u001b[39m,\n  \u001b[32m'Chef'\u001b[39m,\n  \u001b[32m'Craft Services'\u001b[39m,\n  \u001b[32m'Head Chef'\u001b[39m,\n  \u001b[32m'Scene Cuisine Caterer'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-26T07:21:31.338Z",
+                          "startTime": "2025-08-26T07:31:53.023Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,55 +183,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "f3ca64321ec76f187949-05994094d45cfffaccc3",
-                  "file": "8continuityTest.spec.js",
-                  "line": 36,
-                  "column": 9
-                },
-                {
-                  "title": "verify continuity scene edit -> forward -> delete",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 13806,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-26T07:21:44.254Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "f3ca64321ec76f187949-cbec6a020a5aa6b22809",
-                  "file": "8continuityTest.spec.js",
-                  "line": 40,
+                  "id": "750ea5c8d1884efc0e9c-73ed2e79395434d5a81b",
+                  "file": "10cateringTest.spec.js",
+                  "line": 35,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "All Department",
-              "file": "8continuityTest.spec.js",
-              "line": 49,
+              "title": "Send Message flow",
+              "file": "10cateringTest.spec.js",
+              "line": 42,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify all department continuity scene",
+                  "title": "verify send a message successfully",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -240,84 +212,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2007,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-26T07:21:58.070Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "f3ca64321ec76f187949-08959dec106c4ebe4faa",
-                  "file": "8continuityTest.spec.js",
-                  "line": 51,
-                  "column": 9
-                },
-                {
-                  "title": "verify delete all department continuity scene",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6046,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-26T07:22:00.087Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "f3ca64321ec76f187949-12f8a6c1533072892ce3",
-                  "file": "8continuityTest.spec.js",
-                  "line": 55,
-                  "column": 9
-                },
-                {
-                  "title": "verify delete my department continuity scene",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6749,
+                          "duration": 14662,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-26T07:22:12.924Z - close browser\n"
+                              "text": "[INFO] 2025-08-26T07:32:34.163Z - [SendMessage] Started sending message...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-26T07:22:06.143Z",
+                          "startTime": "2025-08-26T07:32:21.791Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -325,9 +229,654 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "f3ca64321ec76f187949-fa242beeef22750f4132",
-                  "file": "8continuityTest.spec.js",
-                  "line": 59,
+                  "id": "750ea5c8d1884efc0e9c-3357b799ed48df0f2d75",
+                  "file": "10cateringTest.spec.js",
+                  "line": 44,
+                  "column": 9
+                },
+                {
+                  "title": "verify edit the message successfully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2496,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:32:36.477Z - [EditMessage] Started edit message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'File Cabinet'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:32:36.464Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-69e89193f4a27690847f",
+                  "file": "10cateringTest.spec.js",
+                  "line": 50,
+                  "column": 9
+                },
+                {
+                  "title": "forward the message successfully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5828,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:32:38.980Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'File Cabinet'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:32:38.974Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-210aaeeba1aeed9186f2",
+                  "file": "10cateringTest.spec.js",
+                  "line": 54,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete message successfully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6120,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:32:44.970Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'File Cabinet'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:32:44.814Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-f38908e876053dcb5c51",
+                  "file": "10cateringTest.spec.js",
+                  "line": 58,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Image Flow",
+              "file": "10cateringTest.spec.js",
+              "line": 65,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3004,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:32:51.114Z - [Media] Upload image started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:32:50.954Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-791a4f8f77fbc43d8060",
+                  "file": "10cateringTest.spec.js",
+                  "line": 67,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5772,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:32:54.101Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'File Cabinet'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:32:53.980Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-fd444f5c2e920b70c49a",
+                  "file": "10cateringTest.spec.js",
+                  "line": 74,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6033,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:33:00.023Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'File Cabinet'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m ]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:32:59.874Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-10125e18c8a29bd82571",
+                  "file": "10cateringTest.spec.js",
+                  "line": 78,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Document Flow",
+              "file": "10cateringTest.spec.js",
+              "line": 85,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1164,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:33:06.091Z - [Media] Upload document started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:33:05.927Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-095b65d429914dbe686f",
+                  "file": "10cateringTest.spec.js",
+                  "line": 87,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7791,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:33:07.175Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'File Cabinet'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:33:07.144Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-db9ae090de59669d3a93",
+                  "file": "10cateringTest.spec.js",
+                  "line": 93,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6292,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:33:15.486Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'File Cabinet'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m ]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:33:14.962Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-7d268fb2b2463917138e",
+                  "file": "10cateringTest.spec.js",
+                  "line": 97,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Audio Flow",
+              "file": "10cateringTest.spec.js",
+              "line": 104,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a audio",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2934,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:33:21.442Z - [Media] Upload audio started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:33:21.276Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-c2dc51f52daa1975c3e4",
+                  "file": "10cateringTest.spec.js",
+                  "line": 106,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8758,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:33:24.232Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'File Cabinet'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:33:24.225Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-5a1aa03b16b1a8c69093",
+                  "file": "10cateringTest.spec.js",
+                  "line": 112,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete audio",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6033,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:33:33.157Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'File Cabinet'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m ]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:33:32.995Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-acea6972e80453cdfc88",
+                  "file": "10cateringTest.spec.js",
+                  "line": 116,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Catering unit > creation, edition, deletion",
+              "file": "10cateringTest.spec.js",
+              "line": 125,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify create unit",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7850,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:33:39.055Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-5774783a9bace6285c4b",
+                  "file": "10cateringTest.spec.js",
+                  "line": 127,
+                  "column": 9
+                },
+                {
+                  "title": "verify edit unit",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2229,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:33:46.921Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-a03503a84e958c901d19",
+                  "file": "10cateringTest.spec.js",
+                  "line": 131,
+                  "column": 9
+                },
+                {
+                  "title": "verify delete",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6377,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T07:33:55.562Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T07:33:49.162Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "750ea5c8d1884efc0e9c-7dc3ad88b9528f3b16d2",
+                  "file": "10cateringTest.spec.js",
+                  "line": 135,
                   "column": 9
                 }
               ]
@@ -339,9 +888,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-26T07:21:30.968Z",
-    "duration": 42296.49,
-    "expected": 5,
+    "startTime": "2025-08-26T07:31:52.656Z",
+    "duration": 123353.53300000001,
+    "expected": 17,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

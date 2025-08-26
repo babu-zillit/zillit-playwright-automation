@@ -42,5 +42,5 @@ test.describe('Tools Customization', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/2tool-customizationTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/7tool-customizationTest.spec.js --project=chromium --headed
    */ 

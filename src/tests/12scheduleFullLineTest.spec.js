@@ -116,5 +116,5 @@ test.describe('Script & Page Distribution', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/scheduleFullLineTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/12scheduleFullLineTest.spec.js --project=chromium --headed
    */ 

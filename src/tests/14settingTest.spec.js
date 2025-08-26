@@ -33,11 +33,11 @@ test.describe('Settings', () => {
 
     test.describe('Create New Department', () => {
 
-        test('verify user create new department successfully', async () => {
+        test('verify the create new department', async () => {
             await settingPage.createDepartment();
         });
 
-        test('verify user delete new department successfully', async () => {
+        test('verify the delete new department', async () => {
             await settingPage.deleteDepartment();
         });
     
@@ -46,11 +46,11 @@ test.describe('Settings', () => {
 
     test.describe('Create New Designation', () => {
 
-        test('verify user create new designation successfully', async () => {
+        test('verify the create new designation', async () => {
             await settingPage.createDesignation();
         });
 
-        test('verify user delete new designation successfully', async () => {
+        test('verify the delete new designation', async () => {
             await settingPage.deleteDesignation();
         });
     
@@ -59,15 +59,15 @@ test.describe('Settings', () => {
 
     test.describe('Home Unit', () => {
 
-        test('verify user create home unit', async () => {
+        test('verify create home unit', async () => {
             await settingPage.createHomeUnit();
         });
 
-        test.skip('verify user edit home unit', async () => {
+        test.skip('verify edit home unit', async () => {
             await settingPage.editHomeUnit();
         });
 
-        test('verify user delete home unit', async () => {
+        test('verify delete home unit', async () => {
             await settingPage.deleteHomeUnit();
         });
     
@@ -76,11 +76,11 @@ test.describe('Settings', () => {
 
     test.describe('WaterMark Logo Company', () => {
 
-        test('verify user upload water mark logo', async () => {
+        test('verify upload water mark logo', async () => {
             await settingPage.uploadWaterMarkLogo();
         });
 
-        test('verify user delete water mark logo', async () => {
+        test('verify delete water mark logo', async () => {
             await settingPage.deleteWaterMarkLogoCompany();
         });
     
@@ -89,12 +89,16 @@ test.describe('Settings', () => {
 
      test.describe('Delete project', () => {
 
-        test('verify user delete the projects', async () => {
+        test('verify delete the project', async () => {
             await settingPage.deleteProjects();
         });
 
-        test('verify user stops the projects', async () => {
+        test('verify stops the projects', async () => {
             await settingPage.stopProjectDeletions();
+        });
+
+        test('verify again delete the project', async () => {
+            await settingPage.deleteProjects();
         });
     
     });
@@ -103,5 +107,5 @@ test.describe('Settings', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/settingTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/14settingTest.spec.js --project=chromium --headed
    */ 

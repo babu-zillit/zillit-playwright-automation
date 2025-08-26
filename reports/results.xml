@@ -1,158 +1,43 @@
-<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="123.35353300000001">
-<testsuite name="10cateringTest.spec.js" timestamp="2025-08-26T07:31:52.680Z" hostname="chromium" tests="17" failures="0" skipped="0" time="102.659" errors="0">
-<testcase name="Catering › Catering module › catering test casess" classname="10cateringTest.spec.js" time="9.316">
+<testsuites id="" name="" tests="12" failures="0" skipped="1" errors="0" time="96.149891">
+<testsuite name="14settingTest.spec.js" timestamp="2025-08-26T07:45:33.325Z" hostname="chromium" tests="12" failures="0" skipped="1" time="81.801" errors="0">
+<testcase name="Settings › Create New Department › verify the create new department" classname="14settingTest.spec.js" time="6.856">
 <system-out>
-<![CDATA[[INFO] 2025-08-26T07:31:53.954Z - browser is launching
-[INFO] 2025-08-26T07:31:59.176Z - open the project
+<![CDATA[[INFO] 2025-08-26T07:45:34.951Z - browser is launching
+[INFO] 2025-08-26T07:45:44.152Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-26T07:31:59.176Z - QA environment is started...
-Dropdown Options: [
-  [32m'Camera'[39m,
-  [32m'Casting'[39m,
-  [32m'Catering'[39m,
-  [32m'Locations'[39m,
-  [32m'Riggers & Electrical-Rigging'[39m,
-  [32m'Electrical'[39m,
-  [32m'Cast/Talent'[39m
-]
-Dropdown Options: [
-  [32m'Camera'[39m,
-  [32m'Casting'[39m,
-  [32m'Catering'[39m,
-  [32m'Locations'[39m,
-  [32m'Riggers & Electrical-Rigging'[39m,
-  [32m'Electrical'[39m,
-  [32m'Cast/Talent'[39m,
-  [32m'Select Designation'[39m,
-  [32m'Caterers'[39m,
-  [32m'Chef'[39m,
-  [32m'Craft Services'[39m,
-  [32m'Head Chef'[39m,
-  [32m'Scene Cuisine Caterer'[39m
-]
+[INFO] 2025-08-26T07:45:44.152Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Catering › Send Message flow › verify send a message successfully" classname="10cateringTest.spec.js" time="14.662">
+<testcase name="Settings › Create New Department › verify the delete new department" classname="14settingTest.spec.js" time="5.607">
+</testcase>
+<testcase name="Settings › Create New Designation › verify the create new designation" classname="14settingTest.spec.js" time="7.12">
+</testcase>
+<testcase name="Settings › Create New Designation › verify the delete new designation" classname="14settingTest.spec.js" time="7.045">
+</testcase>
+<testcase name="Settings › Home Unit › verify create home unit" classname="14settingTest.spec.js" time="6.577">
+</testcase>
+<testcase name="Settings › Home Unit › verify edit home unit" classname="14settingTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Settings › Home Unit › verify delete home unit" classname="14settingTest.spec.js" time="7.642">
+</testcase>
+<testcase name="Settings › WaterMark Logo Company › verify upload water mark logo" classname="14settingTest.spec.js" time="8.783">
+</testcase>
+<testcase name="Settings › WaterMark Logo Company › verify delete water mark logo" classname="14settingTest.spec.js" time="0.75">
+</testcase>
+<testcase name="Settings › Delete project › verify delete the project" classname="14settingTest.spec.js" time="14.708">
+</testcase>
+<testcase name="Settings › Delete project › verify stops the projects" classname="14settingTest.spec.js" time="6.032">
+</testcase>
+<testcase name="Settings › Delete project › verify again delete the project" classname="14settingTest.spec.js" time="10.681">
 <system-out>
-<![CDATA[[INFO] 2025-08-26T07:32:34.163Z - [SendMessage] Started sending message...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Message flow › verify edit the message successfully" classname="10cateringTest.spec.js" time="2.496">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:32:36.477Z - [EditMessage] Started edit message...
-Dropdown list items: [
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'File Cabinet'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Message flow › forward the message successfully" classname="10cateringTest.spec.js" time="5.828">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:32:38.980Z - [ForwardMessage] Started forward message...
-Dropdown list items: [
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'File Cabinet'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Message flow › verify the delete message successfully" classname="10cateringTest.spec.js" time="6.12">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:32:44.970Z - [Delete] deletion started...
-Dropdown list items: [
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'File Cabinet'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-Waiting for popup to appear...
-Waiting for popup to disappear...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Image Flow › verify the send a image" classname="10cateringTest.spec.js" time="3.004">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:32:51.114Z - [Media] Upload image started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Image Flow › verify the forward" classname="10cateringTest.spec.js" time="5.772">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:32:54.101Z - [ForwardMessage] Started forward message...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Image Flow › verify the delete image" classname="10cateringTest.spec.js" time="6.033">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:33:00.023Z - [Delete] deletion started...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-Waiting for popup to appear...
-Waiting for popup to disappear...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Document Flow › verify the send a document" classname="10cateringTest.spec.js" time="1.164">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:33:06.091Z - [Media] Upload document started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Document Flow › verify the forward" classname="10cateringTest.spec.js" time="7.791">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:33:07.175Z - [ForwardMessage] Started forward message...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Document Flow › verify the delete document" classname="10cateringTest.spec.js" time="6.292">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:33:15.486Z - [Delete] deletion started...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-Waiting for popup to appear...
-Waiting for popup to disappear...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Audio Flow › verify the send a audio" classname="10cateringTest.spec.js" time="2.934">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:33:21.442Z - [Media] Upload audio started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Audio Flow › verify the forward" classname="10cateringTest.spec.js" time="8.758">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:33:24.232Z - [ForwardMessage] Started forward message...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Audio Flow › verify the delete audio" classname="10cateringTest.spec.js" time="6.033">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:33:33.157Z - [Delete] deletion started...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-Waiting for popup to appear...
-Waiting for popup to disappear...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify create unit" classname="10cateringTest.spec.js" time="7.85">
-</testcase>
-<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify edit unit" classname="10cateringTest.spec.js" time="2.229">
-</testcase>
-<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify delete" classname="10cateringTest.spec.js" time="6.377">
-<system-out>
-<![CDATA[[INFO] 2025-08-26T07:33:55.562Z - close browser
+<![CDATA[[INFO] 2025-08-26T07:47:08.945Z - close browser
 ]]>
 </system-out>
 </testcase>

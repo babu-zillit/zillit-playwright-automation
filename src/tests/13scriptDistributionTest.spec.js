@@ -84,5 +84,5 @@ test.describe('Script & Page Distribution', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/scriptDistributionTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/13scriptDistributionTest.spec.js --project=chromium --headed
    */ 

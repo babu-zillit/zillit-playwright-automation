@@ -111,32 +111,32 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.52.0",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "settingTest.spec.js",
-      "file": "settingTest.spec.js",
+      "title": "dodTest.spec.js",
+      "file": "dodTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Settings",
-          "file": "settingTest.spec.js",
-          "line": 5,
+          "title": "Schedule D.O.D",
+          "file": "dodTest.spec.js",
+          "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Create New Department",
-              "file": "settingTest.spec.js",
-              "line": 27,
-              "column": 8,
+              "title": "D.O.D",
+              "file": "dodTest.spec.js",
+              "line": 34,
+              "column": 10,
               "specs": [
                 {
-                  "title": "verify user create new department successfully",
+                  "title": "verify upload dod document",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6490,
+                          "duration": 5398,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-22T11:56:57.323Z - browser is launching\n"
+                              "text": "[INFO] 2025-08-26T05:46:41.691Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-22T11:57:04.340Z - open the project\n"
+                              "text": "[INFO] 2025-08-26T05:46:45.687Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-22T11:57:04.341Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-08-26T05:46:45.687Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-22T11:56:56.240Z",
+                          "startTime": "2025-08-26T05:46:40.766Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,89 +177,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "d3bed2f485bdf974b495-c30e1de8c8888104db28",
-                  "file": "settingTest.spec.js",
-                  "line": 28,
-                  "column": 5
-                },
-                {
-                  "title": "verify user delete new department successfully",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5920,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-22T11:57:14.183Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "d3bed2f485bdf974b495-0c5b7cb79fa92b51880f",
-                  "file": "settingTest.spec.js",
-                  "line": 31,
-                  "column": 5
-                }
-              ]
-            },
-            {
-              "title": "Create New Designation",
-              "file": "settingTest.spec.js",
-              "line": 35,
-              "column": 8,
-              "specs": [
-                {
-                  "title": "verify user create new designation successfully",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7295,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-22T11:57:20.127Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "d3bed2f485bdf974b495-265dbc33be18517a6b62",
-                  "file": "settingTest.spec.js",
+                  "id": "09630da0621f470e1985-093ed23be2325dc5974e",
+                  "file": "dodTest.spec.js",
                   "line": 36,
-                  "column": 5
+                  "column": 9
                 },
                 {
-                  "title": "verify user delete new designation successfully",
+                  "title": "verify dod workflow: view → viewCount → download → downloadCount → move → delete",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -274,286 +198,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7543,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-22T11:57:27.433Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "d3bed2f485bdf974b495-12189eecea43ea5ffd0d",
-                  "file": "settingTest.spec.js",
-                  "line": 39,
-                  "column": 5
-                }
-              ]
-            },
-            {
-              "title": "Home Unit",
-              "file": "settingTest.spec.js",
-              "line": 43,
-              "column": 8,
-              "specs": [
-                {
-                  "title": "verify user create home unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8443,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-22T11:57:34.983Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "d3bed2f485bdf974b495-9a67a1124432345b489f",
-                  "file": "settingTest.spec.js",
-                  "line": 44,
-                  "column": 5
-                },
-                {
-                  "title": "verify user edit home unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-22T11:57:43.434Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "d3bed2f485bdf974b495-2007da7fbec27764138b",
-                  "file": "settingTest.spec.js",
-                  "line": 47,
-                  "column": 10
-                },
-                {
-                  "title": "verify user delete home unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7862,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-22T11:57:43.435Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "d3bed2f485bdf974b495-b2fb934a4c5aadcb5e81",
-                  "file": "settingTest.spec.js",
-                  "line": 50,
-                  "column": 5
-                }
-              ]
-            },
-            {
-              "title": "WaterMark Logo Company",
-              "file": "settingTest.spec.js",
-              "line": 54,
-              "column": 8,
-              "specs": [
-                {
-                  "title": "verify user upload water mark logo",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8948,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-22T11:57:51.309Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "d3bed2f485bdf974b495-ea87954d8594b9fe1275",
-                  "file": "settingTest.spec.js",
-                  "line": 55,
-                  "column": 5
-                },
-                {
-                  "title": "verify user delete water mark logo",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1140,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-22T11:58:00.266Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "d3bed2f485bdf974b495-4fb25242898006d0011c",
-                  "file": "settingTest.spec.js",
-                  "line": 58,
-                  "column": 5
-                }
-              ]
-            },
-            {
-              "title": "Delete project",
-              "file": "settingTest.spec.js",
-              "line": 62,
-              "column": 8,
-              "specs": [
-                {
-                  "title": "verify user delete the projects",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10726,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-22T11:58:01.415Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "d3bed2f485bdf974b495-8e32f72911da58434a7f",
-                  "file": "settingTest.spec.js",
-                  "line": 63,
-                  "column": 5
-                },
-                {
-                  "title": "verify user stops the projects",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5995,
+                          "duration": 22497,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-22T11:58:18.177Z - close browser\n"
+                              "text": "[INFO] 2025-08-26T05:47:18.020Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-22T11:58:12.151Z",
+                          "startTime": "2025-08-26T05:46:55.493Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -561,10 +215,508 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "d3bed2f485bdf974b495-567b53d39135f0944ef9",
-                  "file": "settingTest.spec.js",
-                  "line": 66,
-                  "column": 5
+                  "id": "09630da0621f470e1985-94da1549654b15c1be0f",
+                  "file": "dodTest.spec.js",
+                  "line": 41,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "scheduleFullLineTest.spec.js",
+      "file": "scheduleFullLineTest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Script & Page Distribution",
+          "file": "scheduleFullLineTest.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Schedule Full Line",
+              "file": "scheduleFullLineTest.spec.js",
+              "line": 34,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify upload schedule full document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6585,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T05:47:18.311Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-08-26T05:47:21.760Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-08-26T05:47:21.760Z - QA environment is started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:47:18.300Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7ff5234c623021708b9e-a63c28bf476b1c548aac",
+                  "file": "scheduleFullLineTest.spec.js",
+                  "line": 36,
+                  "column": 9
+                },
+                {
+                  "title": "verify fullScript workflow: view → viewCount → download → downloadCount",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 15843,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:47:32.868Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7ff5234c623021708b9e-058b15813b3e3eedfb6b",
+                  "file": "scheduleFullLineTest.spec.js",
+                  "line": 44,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Pages",
+              "file": "scheduleFullLineTest.spec.js",
+              "line": 57,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify upload page document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7246,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:47:48.725Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7ff5234c623021708b9e-7f8c107092b9bce4a971",
+                  "file": "scheduleFullLineTest.spec.js",
+                  "line": 59,
+                  "column": 9
+                },
+                {
+                  "title": "verify fullScript workflow: view → viewCount → download → downloadCount → delete",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 24714,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:47:55.997Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7ff5234c623021708b9e-eb8401f336a294aefcf0",
+                  "file": "scheduleFullLineTest.spec.js",
+                  "line": 67,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Schedule One Line",
+              "file": "scheduleFullLineTest.spec.js",
+              "line": 90,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify upload page document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6109,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:48:20.728Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7ff5234c623021708b9e-34b0af92ea3ae1e15e3c",
+                  "file": "scheduleFullLineTest.spec.js",
+                  "line": 92,
+                  "column": 9
+                },
+                {
+                  "title": "verify fullScript workflow: view → viewCount → download → downloadCount → delete",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 15950,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T05:48:42.813Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:48:26.845Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7ff5234c623021708b9e-77a3c9294456aa1a6f57",
+                  "file": "scheduleFullLineTest.spec.js",
+                  "line": 100,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "scriptDistributionTest.spec.js",
+      "file": "scriptDistributionTest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Script & Page Distribution",
+          "file": "scriptDistributionTest.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Full Script",
+              "file": "scriptDistributionTest.spec.js",
+              "line": 34,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify upload fullScript document",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 30105,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/script-page-distribution.js",
+                                "column": 31,
+                                "line": 64
+                              },
+                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//div[@id=\"scriptFooter\"]//button')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/script-page-distribution.js:64\n\n\u001b[0m \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m     \u001b[36masync\u001b[39m uploadScriptDistribution(enterEpisode\u001b[33m,\u001b[39m enterScene){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mattachment\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdocumentUpload\u001b[33m.\u001b[39msetInputFiles(mediapaths\u001b[33m.\u001b[39mdocument)\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m\n \u001b[90m 67 |\u001b[39m         \u001b[36mif\u001b[39m(enterEpisode\u001b[33m==\u001b[39m\u001b[32m'Episode'\u001b[39m){\u001b[0m\n\u001b[2m    at ScriptDistribution.uploadScriptDistribution (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/script-page-distribution.js:64:31)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/scriptDistributionTest.spec.js:38:42\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T05:48:42.993Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-08-26T05:48:47.071Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-08-26T05:48:47.071Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-08-26T05:49:21.697Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:48:42.989Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-1",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "ddebc9aa2219a239d0b3-473f642aeb90df7aa970",
+                  "file": "scriptDistributionTest.spec.js",
+                  "line": 36,
+                  "column": 9
+                },
+                {
+                  "title": "verify fullScript workflow: view → viewCount → download → downloadCount",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 15374,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T05:49:23.641Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-08-26T05:49:27.483Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-08-26T05:49:27.484Z - QA environment is started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:49:22.945Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ddebc9aa2219a239d0b3-cd732f070425638841e0",
+                  "file": "scriptDistributionTest.spec.js",
+                  "line": 44,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Pages",
+              "file": "scriptDistributionTest.spec.js",
+              "line": 57,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify upload page document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6758,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:49:47.130Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ddebc9aa2219a239d0b3-fc823bca1a0f22b11ced",
+                  "file": "scriptDistributionTest.spec.js",
+                  "line": 59,
+                  "column": 9
+                },
+                {
+                  "title": "verify fullScript workflow: view → viewCount → download → downloadCount → delete",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 20734,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-08-26T05:50:14.663Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-26T05:49:53.901Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ddebc9aa2219a239d0b3-a91816684a064791344e",
+                  "file": "scriptDistributionTest.spec.js",
+                  "line": 65,
+                  "column": 9
                 }
               ]
             }
@@ -575,11 +727,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-22T11:56:55.772Z",
-    "duration": 82941.537,
-    "expected": 10,
-    "skipped": 1,
-    "unexpected": 0,
+    "startTime": "2025-08-26T05:46:40.269Z",
+    "duration": 214721.88,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

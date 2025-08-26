@@ -1,41 +1,114 @@
-<testsuites id="" name="" tests="11" failures="0" skipped="1" errors="0" time="82.941537">
-<testsuite name="settingTest.spec.js" timestamp="2025-08-22T11:56:55.902Z" hostname="chromium" tests="11" failures="0" skipped="1" time="70.362" errors="0">
-<testcase name="Settings › Create New Department › verify user create new department successfully" classname="settingTest.spec.js" time="6.49">
+<testsuites id="" name="" tests="12" failures="1" skipped="0" errors="0" time="214.72188">
+<testsuite name="dodTest.spec.js" timestamp="2025-08-26T05:46:40.407Z" hostname="chromium" tests="2" failures="0" skipped="0" time="27.895" errors="0">
+<testcase name="Schedule D.O.D › D.O.D › verify upload dod document" classname="dodTest.spec.js" time="5.398">
 <system-out>
-<![CDATA[[INFO] 2025-08-22T11:56:57.323Z - browser is launching
-[INFO] 2025-08-22T11:57:04.340Z - open the project
+<![CDATA[[INFO] 2025-08-26T05:46:41.691Z - browser is launching
+[INFO] 2025-08-26T05:46:45.687Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-22T11:57:04.341Z - QA environment is started...
+[INFO] 2025-08-26T05:46:45.687Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Settings › Create New Department › verify user delete new department successfully" classname="settingTest.spec.js" time="5.92">
-</testcase>
-<testcase name="Settings › Create New Designation › verify user create new designation successfully" classname="settingTest.spec.js" time="7.295">
-</testcase>
-<testcase name="Settings › Create New Designation › verify user delete new designation successfully" classname="settingTest.spec.js" time="7.543">
-</testcase>
-<testcase name="Settings › Home Unit › verify user create home unit" classname="settingTest.spec.js" time="8.443">
-</testcase>
-<testcase name="Settings › Home Unit › verify user edit home unit" classname="settingTest.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Settings › Home Unit › verify user delete home unit" classname="settingTest.spec.js" time="7.862">
-</testcase>
-<testcase name="Settings › WaterMark Logo Company › verify user upload water mark logo" classname="settingTest.spec.js" time="8.948">
-</testcase>
-<testcase name="Settings › WaterMark Logo Company › verify user delete water mark logo" classname="settingTest.spec.js" time="1.14">
-</testcase>
-<testcase name="Settings › Delete project › verify user delete the projects" classname="settingTest.spec.js" time="10.726">
-</testcase>
-<testcase name="Settings › Delete project › verify user stops the projects" classname="settingTest.spec.js" time="5.995">
+<testcase name="Schedule D.O.D › D.O.D › verify dod workflow: view → viewCount → download → downloadCount → move → delete" classname="dodTest.spec.js" time="22.497">
 <system-out>
-<![CDATA[[INFO] 2025-08-22T11:58:18.177Z - close browser
+<![CDATA[[INFO] 2025-08-26T05:47:18.020Z - close browser
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="scheduleFullLineTest.spec.js" timestamp="2025-08-26T05:46:40.407Z" hostname="chromium" tests="6" failures="0" skipped="0" time="76.447" errors="0">
+<testcase name="Script &amp; Page Distribution › Schedule Full Line › verify upload schedule full document" classname="scheduleFullLineTest.spec.js" time="6.585">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T05:47:18.311Z - browser is launching
+[INFO] 2025-08-26T05:47:21.760Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-08-26T05:47:21.760Z - QA environment is started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Script &amp; Page Distribution › Schedule Full Line › verify fullScript workflow: view → viewCount → download → downloadCount" classname="scheduleFullLineTest.spec.js" time="15.843">
+</testcase>
+<testcase name="Script &amp; Page Distribution › Pages › verify upload page document" classname="scheduleFullLineTest.spec.js" time="7.246">
+</testcase>
+<testcase name="Script &amp; Page Distribution › Pages › verify fullScript workflow: view → viewCount → download → downloadCount → delete" classname="scheduleFullLineTest.spec.js" time="24.714">
+</testcase>
+<testcase name="Script &amp; Page Distribution › Schedule One Line › verify upload page document" classname="scheduleFullLineTest.spec.js" time="6.109">
+</testcase>
+<testcase name="Script &amp; Page Distribution › Schedule One Line › verify fullScript workflow: view → viewCount → download → downloadCount → delete" classname="scheduleFullLineTest.spec.js" time="15.95">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T05:48:42.813Z - close browser
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="scriptDistributionTest.spec.js" timestamp="2025-08-26T05:46:40.407Z" hostname="chromium" tests="4" failures="1" skipped="0" time="72.971" errors="0">
+<testcase name="Script &amp; Page Distribution › Full Script › verify upload fullScript document" classname="scriptDistributionTest.spec.js" time="30.105">
+<failure message="scriptDistributionTest.spec.js:36:9 verify upload fullScript document" type="FAILURE">
+<![CDATA[  [chromium] › scriptDistributionTest.spec.js:36:9 › Script & Page Distribution › Full Script › verify upload fullScript document 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('//div[@id="scriptFooter"]//button')
+
+
+       at ../pages/script-page-distribution.js:64
+
+      62 |
+      63 |     async uploadScriptDistribution(enterEpisode, enterScene){
+    > 64 |         await this.attachment.click();
+         |                               ^
+      65 |         await this.documentUpload.setInputFiles(mediapaths.document);
+      66 |
+      67 |         if(enterEpisode=='Episode'){
+        at ScriptDistribution.uploadScriptDistribution (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/script-page-distribution.js:64:31)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/scriptDistributionTest.spec.js:38:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[[INFO] 2025-08-26T05:48:42.993Z - browser is launching
+[INFO] 2025-08-26T05:48:47.071Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-08-26T05:48:47.071Z - QA environment is started...
+[INFO] 2025-08-26T05:49:21.697Z - close browser
+
+[[ATTACHMENT|../test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/scriptDistributionTest-Scr-7b79b--upload-fullScript-document-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Script &amp; Page Distribution › Full Script › verify fullScript workflow: view → viewCount → download → downloadCount" classname="scriptDistributionTest.spec.js" time="15.374">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T05:49:23.641Z - browser is launching
+[INFO] 2025-08-26T05:49:27.483Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-08-26T05:49:27.484Z - QA environment is started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Script &amp; Page Distribution › Pages › verify upload page document" classname="scriptDistributionTest.spec.js" time="6.758">
+</testcase>
+<testcase name="Script &amp; Page Distribution › Pages › verify fullScript workflow: view → viewCount → download → downloadCount → delete" classname="scriptDistributionTest.spec.js" time="20.734">
+<system-out>
+<![CDATA[[INFO] 2025-08-26T05:50:14.663Z - close browser
 ]]>
 </system-out>
 </testcase>

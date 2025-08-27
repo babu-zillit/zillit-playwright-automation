@@ -1,261 +1,118 @@
-<testsuites id="" name="" tests="17" failures="2" skipped="0" errors="0" time="197.76749900000002">
-<testsuite name="10_cateringTest.spec.js" timestamp="2025-08-27T08:33:53.694Z" hostname="chromium" tests="17" failures="2" skipped="0" time="130.778" errors="0">
-<testcase name="Catering › User change the department › verify user become cater department" classname="10_cateringTest.spec.js" time="10.05">
+<testsuites id="" name="" tests="10" failures="1" skipped="2" errors="0" time="124.15886900000001">
+<testsuite name="21_castingTest.spec.js" timestamp="2025-08-27T14:31:13.621Z" hostname="chromium" tests="10" failures="1" skipped="2" time="100.238" errors="0">
+<testcase name="Casting › Selects Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="10.483">
 <system-out>
-<![CDATA[[INFO] 2025-08-27T08:33:55.069Z - browser is launching
-[INFO] 2025-08-27T08:34:05.229Z - open the project
+<![CDATA[[INFO] 2025-08-27T14:31:15.418Z - browser is launching
+[INFO] 2025-08-27T14:31:21.067Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-27T08:34:05.229Z - QA environment is started...
-Dropdown Options: [
-  [32m'Camera'[39m,
-  [32m'Casting'[39m,
-  [32m'Catering'[39m,
-  [32m'Locations'[39m,
-  [32m'Riggers & Electrical-Rigging'[39m,
-  [32m'Electrical'[39m,
-  [32m'Cast/Talent'[39m
-]
-Dropdown Options: [
-  [32m'Camera'[39m,
-  [32m'Casting'[39m,
-  [32m'Catering'[39m,
-  [32m'Locations'[39m,
-  [32m'Riggers & Electrical-Rigging'[39m,
-  [32m'Electrical'[39m,
-  [32m'Cast/Talent'[39m,
-  [32m'Select Designation'[39m,
-  [32m'Caterers'[39m,
-  [32m'Chef'[39m,
-  [32m'Craft Services'[39m,
-  [32m'Head Chef'[39m,
-  [32m'Scene Cuisine Caterer'[39m
-]
+[INFO] 2025-08-27T14:31:21.068Z - QA environment is started...
+Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Catering › Send Message › verify send a message" classname="10_cateringTest.spec.js" time="14.617">
+<testcase name="Casting › Selects Tab › verify move to shortlist cast folder from the character screen" classname="21_castingTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Casting › Selects Tab › verify move to finals cast folder from the character screen" classname="21_castingTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Casting › Selects Tab › verify move to shortlist media from the media screen" classname="21_castingTest.spec.js" time="7.719">
 <system-out>
-<![CDATA[[INFO] 2025-08-27T08:34:41.121Z - [SendMessage] Started sending message...
+<![CDATA[Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Catering › Send Message › verify edit the message" classname="10_cateringTest.spec.js" time="2.333">
+<testcase name="Casting › Selects Tab › verify move to finals media from the media screen" classname="21_castingTest.spec.js" time="7.531">
 <system-out>
-<![CDATA[[INFO] 2025-08-27T08:34:43.424Z - [EditMessage] Started edit message...
-Dropdown list items: [
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'File Cabinet'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
+<![CDATA[Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Catering › Send Message › verify forward the message" classname="10_cateringTest.spec.js" time="6.091">
+<testcase name="Casting › Selects Tab › verify edit cast details from the media screen" classname="21_castingTest.spec.js" time="7.318">
 <system-out>
-<![CDATA[[INFO] 2025-08-27T08:34:45.768Z - [ForwardMessage] Started forward message...
-Dropdown list items: [
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'File Cabinet'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
+<![CDATA[Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Catering › Send Message › verify the delete message" classname="10_cateringTest.spec.js" time="6.081">
+<testcase name="Casting › Selects Tab › verify forward cast" classname="21_castingTest.spec.js" time="10.918">
 <system-out>
-<![CDATA[[INFO] 2025-08-27T08:34:52.002Z - [Delete] deletion started...
-Dropdown list items: [
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'File Cabinet'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-Waiting for popup to appear...
-Waiting for popup to disappear...
+<![CDATA[Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Catering › Send Image › verify the send a image" classname="10_cateringTest.spec.js" time="4.05">
-<system-out>
-<![CDATA[[INFO] 2025-08-27T08:34:58.747Z - [Media] Upload image started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Image › verify the forward" classname="10_cateringTest.spec.js" time="5.76">
-<system-out>
-<![CDATA[[INFO] 2025-08-27T08:35:02.028Z - [ForwardMessage] Started forward message...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Image › verify the delete image" classname="10_cateringTest.spec.js" time="6.307">
-<system-out>
-<![CDATA[[INFO] 2025-08-27T08:35:08.330Z - [Delete] deletion started...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-Waiting for popup to appear...
-Waiting for popup to disappear...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Document › verify the send a document" classname="10_cateringTest.spec.js" time="30.129">
-<failure message="10_cateringTest.spec.js:87:9 verify the send a document" type="FAILURE">
-<![CDATA[  [chromium] › 10_cateringTest.spec.js:87:9 › Catering › Send Document › verify the send a document 
+<testcase name="Casting › Shortlist Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="30.087">
+<failure message="21_castingTest.spec.js:83:9 verify casting upload, open the folder, and view the image" type="FAILURE">
+<![CDATA[  [chromium] › 21_castingTest.spec.js:83:9 › Casting › Shortlist Tab › verify casting upload, open the folder, and view the image 
 
     Test timeout of 30000ms exceeded.
 
     Error: locator.click: Target page, context or browser has been closed
     Call log:
-      - waiting for locator('text=Send')
+      - waiting for locator('div.ant-modal-content div.ant-card-body img').first()
 
 
-       at ../actions/media-uploader.js:275
+       at ../pages/casting.js:118
 
-      273 |
-      274 |         await this.documentUploadButton.setInputFiles(mediapaths.document);
-    > 275 |         await this.page.locator("text=Send").click();
-          |                                              ^
-      276 |     }
-      277 |
-      278 |     async uploadLocation(){
-        at UploadMedia.uploadDocument (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:275:46)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/10_cateringTest.spec.js:90:13
+      116 |     async openFolderSecondScreen(){
+      117 |         const folderCount = await this.folderSecond.count();
+    > 118 |         await (folderCount === 1 ? this.folderSecond.click() : this.folderSecond.first().click()); 
+          |                                                                                          ^
+      119 |     }
+      120 |
+      121 |     async checkCharacterRadioButton(){
+        at Casting.openFolderSecondScreen (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/casting.js:118:90)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/21_castingTest.spec.js:88:14
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/10_cateringTest-Catering-S-187f4--verify-the-send-a-document-chromium/test-failed-1.png
+    test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ../../test-results/10_cateringTest-Catering-S-187f4--verify-the-send-a-document-chromium/error-context.md
+    Error Context: ../../test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/error-context.md
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/10_cateringTest-Catering-S-187f4--verify-the-send-a-document-chromium/trace.zip
+    test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/10_cateringTest-Catering-S-187f4--verify-the-send-a-document-chromium/trace.zip
+        npx playwright show-trace test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[[INFO] 2025-08-27T08:35:14.294Z - [Media] Upload document started...
-[INFO] 2025-08-27T08:35:44.415Z - close browser
+<![CDATA[Popup message verified:
+[INFO] 2025-08-27T14:32:40.460Z - close browser
 
-[[ATTACHMENT|../test-results/10_cateringTest-Catering-S-187f4--verify-the-send-a-document-chromium/test-failed-1.png]]
+[[ATTACHMENT|../test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/test-failed-1.png]]
 
-[[ATTACHMENT|../test-results/10_cateringTest-Catering-S-187f4--verify-the-send-a-document-chromium/error-context.md]]
+[[ATTACHMENT|../test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/error-context.md]]
 
-[[ATTACHMENT|../test-results/10_cateringTest-Catering-S-187f4--verify-the-send-a-document-chromium/trace.zip]]
+[[ATTACHMENT|../test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Catering › Send Document › verify the forward" classname="10_cateringTest.spec.js" time="5.414">
-<failure message="10_cateringTest.spec.js:93:9 verify the forward" type="FAILURE">
-<![CDATA[  [chromium] › 10_cateringTest.spec.js:93:9 › Catering › Send Document › verify the forward ────────
-
-    Error: locator.waitFor: Error: strict mode violation: locator('//div[@class=\'dropDown\']') resolved to 2 elements:
-        1) <div class="dropDown">…</div> aka locator('.dropDown').first()
-        2) <div class="dropDown">…</div> aka locator('div:nth-child(2) > .self-center > .dropDown')
-
-    Call log:
-      - waiting for locator('//div[@class=\'dropDown\']') to be visible
-
-
-       at ../actions/media-uploader.js:106
-
-      104 |
-      105 |     async handleDropdownAction(optionText){
-    > 106 |         await this.hoverTarget.waitFor({ state: 'visible' });
-          |                                ^
-      107 |         await this.hoverTarget.hover();
-      108 |         await this.hoverTarget.click();
-      109 |
-        at UploadMedia.handleDropdownAction (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:106:32)
-        at UploadMedia.forward (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:147:20)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/10_cateringTest.spec.js:94:31
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/10_cateringTest-Catering-Send-Document-verify-the-forward-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../../test-results/10_cateringTest-Catering-Send-Document-verify-the-forward-chromium/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/10_cateringTest-Catering-Send-Document-verify-the-forward-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/10_cateringTest-Catering-Send-Document-verify-the-forward-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Casting › Finals Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="10.084">
 <system-out>
-<![CDATA[[INFO] 2025-08-27T08:35:46.509Z - browser is launching
-[INFO] 2025-08-27T08:35:51.727Z - open the project
+<![CDATA[[INFO] 2025-08-27T14:32:42.540Z - browser is launching
+[INFO] 2025-08-27T14:32:47.037Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-27T08:35:51.727Z - QA environment is started...
-[INFO] 2025-08-27T08:36:04.470Z - [ForwardMessage] Started forward message...
-[INFO] 2025-08-27T08:36:09.999Z - close browser
-
-[[ATTACHMENT|../test-results/10_cateringTest-Catering-Send-Document-verify-the-forward-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/10_cateringTest-Catering-Send-Document-verify-the-forward-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/10_cateringTest-Catering-Send-Document-verify-the-forward-chromium/trace.zip]]
+[INFO] 2025-08-27T14:32:47.038Z - QA environment is started...
+Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Catering › Send Document › verify the delete document" classname="10_cateringTest.spec.js" time="9.905">
+<testcase name="Casting › Generate pdf › verify user generate the pdf from finals" classname="21_castingTest.spec.js" time="16.098">
 <system-out>
-<![CDATA[[INFO] 2025-08-27T08:36:11.985Z - browser is launching
-[INFO] 2025-08-27T08:36:18.118Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-08-27T08:36:18.119Z - QA environment is started...
-[INFO] 2025-08-27T08:36:32.792Z - [Delete] deletion started...
-Dropdown list items: [
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'File Cabinet'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-Waiting for popup to appear...
-Waiting for popup to disappear...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Audio › verify the send a audio" classname="10_cateringTest.spec.js" time="2.45">
-<system-out>
-<![CDATA[[INFO] 2025-08-27T08:36:41.087Z - [Media] Upload audio started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Audio › verify the forward" classname="10_cateringTest.spec.js" time="6.154">
-<system-out>
-<![CDATA[[INFO] 2025-08-27T08:36:43.390Z - [ForwardMessage] Started forward message...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Send Audio › verify the delete audio" classname="10_cateringTest.spec.js" time="5.914">
-<system-out>
-<![CDATA[[INFO] 2025-08-27T08:36:49.727Z - [Delete] deletion started...
-Dropdown list items: [ [32m'Forward'[39m, [32m'Delete'[39m, [32m'File Cabinet'[39m, [32m'Forward to Remote Projects'[39m ]
-Waiting for popup to appear...
-Waiting for popup to disappear...
-]]>
-</system-out>
-</testcase>
-<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify create unit" classname="10_cateringTest.spec.js" time="6.967">
-</testcase>
-<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify edit unit" classname="10_cateringTest.spec.js" time="2.118">
-</testcase>
-<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify delete unit" classname="10_cateringTest.spec.js" time="6.438">
-<system-out>
-<![CDATA[[INFO] 2025-08-27T08:37:11.058Z - close browser
+<![CDATA[[INFO] 2025-08-27T14:33:17.378Z - close browser
 ]]>
 </system-out>
 </testcase>

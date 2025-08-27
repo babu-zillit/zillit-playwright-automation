@@ -39,6 +39,26 @@ export default class Casting {
         this.generatepdf = page.locator('#lcw_generate_pdf_button');
 
         this.deleteOkButton = page.locator('div.ant-modal-content div.ant-modal-confirm-btns button');
+
+        /**
+         * locator from media screen
+         */
+        this.select = page.locator('#lcw_select_unselect_media_button');
+        this.selectImageCheckbox = page.locator('div.ant-modal-body  label input[type="checkbox"]');
+        this.moveTo = page.locator('#lcw_move_media_button');
+        this.moveToOptionButton = page.locator('li.ant-dropdown-menu-item.ant-dropdown-menu-item-only-child span');
+        this.arrowOnMediaScreen = page.locator('div.ant-modal-content div.ant-modal-body span[role="img"][aria-label="down"]');
+
+        this.selectAll = page.locator('#lcw_forward_select_deselect_button');
+        this.forward = page.locator('#lcw_forward_button');
+
+        this.imageReply = page.locator('#casting_image_reply_media_button');
+        this.typeMessage = page.locator('[placeholder="Type a message"]');
+        this.sendImageReplyButton = page.locator('div.ant-modal-body div.text-end button');
+        this.loadingIcon = page.locator('[data-icon="loading"]');
+        this.closeImageReplyWindow = page.locator('div.ant-drawer-content-wrapper button span[aria-label="close-square"]');
+
+
     }
 
     async castingMainTab(){
@@ -84,7 +104,6 @@ export default class Casting {
         await this.enterCharacter.fill(`${character}`);
         await this.enterTalent.fill(`${talent}`);
         await this.selectGenderType(`${gender}`);
-        
         await this.enterDiscription.fill(`${discription}`);
         await this.save.click();
     }
@@ -99,6 +118,12 @@ export default class Casting {
         await (folderCount === 1 ? this.folderSecond.click() : this.folderSecond.first().click()); 
     }
 
+    async checkCharacterRadioButton(){
+        if(!(await this.characterRadioButton.isChecked())){
+            await this.characterRadioButton.click();
+        }
+    }
+
     async viewImages(){
         const imageCount = await this.viewImage.count();
         await (imageCount === 1 ? this.viewImage.click() : this.viewImage.first().click());
@@ -108,17 +133,6 @@ export default class Casting {
         await this.closeWindowFromMediaScreen.click();
         await this.closeWindowFromSecondScreen.click();
     }
-
-    // async openImage(){
-    //     await this.folder.nth(1).click();
-    //     await this.viewImage.first().click();
-    //     const target = await this.close;
-    //     await target.hover();
-    //     await target.click();
-    //     await this.closeWindow.nth(1).click();
-    //     await this.closeWindow.first().click();
-    // }
-
 
     async selectGenderType(genderType) {
         await this.selectGender.click();
@@ -145,10 +159,7 @@ export default class Casting {
 
     async dropDownArrowAction(selectTab, actionText, confirmDelete = false){
         await this[selectTab]();
-        if(!(await this.characterRadioButton.isChecked())){
-            await this.characterRadioButton.click();
-        }
-
+        await this.checkCharacterRadioButton();
         await this.arrowClick();
         await this.page.locator('.ant-dropdown-menu-item', { hasText: actionText }).first().click();
 
@@ -158,6 +169,69 @@ export default class Casting {
             await this.save.click();
         }
     }
+
+    async moveToFromMediaScreen(actionText){
+        await this.checkCharacterRadioButton();
+        await this.openFolderFirstScreen();
+        await this.select.click();
+        const countImage = await this.selectImageCheckbox.count();
+        await (countImage === 1 ? this.selectImageCheckbox.first().check() : this.selectImageCheckbox.first().check());
+        await this.page.waitForTimeout(500);
+        await this.moveTo.hover();
+        await this.page.locator('li.ant-dropdown-menu-item', { hasText: new RegExp(`^${actionText}$`)}).first().click();
+        await this.save.click();
+    }
+
+    async closeImageWindow(){
+        await this.closeWindowFromMediaScreen.click();
+    }
+
+    async clickArrowOnMediaScreen(actionText){
+        await this.arrowOnMediaScreen.click();
+        await this.page.locator('.ant-dropdown-menu-item', { hasText: actionText }).first().click();
+    }
+
+    async editCastDeatils(episode, character, talent, discription){
+        await this.checkCharacterRadioButton();
+        await this.openFolderFirstScreen();
+        await this.clickArrowOnMediaScreen('Edit');
+        await this.enterEpisode.fill(`${episode}`);
+        await this.enterCharacter.fill(`${character}`);
+        await this.enterTalent.fill(`${talent}`);
+        await this.enterDiscription.fill(`${discription}`);
+        await this.save.click();
+    }
+
+    async forwardCast(){
+        await this.checkCharacterRadioButton();
+        await this.openFolderFirstScreen();
+        await this.clickArrowOnMediaScreen('Forward');
+        await this.selectAll.click();
+        await this.forward.click();
+    }
+
+    async imageReplys(){
+        await this.imageReply.click();
+        await this.typeMessage.fill('Hello Babu');
+        await this.sendImageReplyButton.nth(1).click();
+        await this.loadingIcon.waitFor({ state: 'visible' });
+        await this.loadingIcon.waitFor({ state: 'hidden' });
+        await this.page.waitForTimeout(500);
+        await this.closeImageReplyWindow.click();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     async handleDropdownAction(tabFn, actionText, successMessage, confirmDelete = false){
@@ -201,7 +275,8 @@ export default class Casting {
     }
 
     async moveToFinalFromSelects() {
-        await this.handleDropdownAction('selectsTab', 'Move to Final', 'Cast has been moved successfully.');
+        //await this.handleDropdownAction('selectsTab', 'Move to Final', 'Cast has been moved successfully.');
+        await this.dropDownArrowAction('selectsTab', 'Move to Final');
     }
 
     async deleteFromSelects() {

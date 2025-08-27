@@ -1,0 +1,8 @@
+Color options: [
+  'RED',    'BLUE',
+  'GREEN',  'ORANGE',
+  'BROWN',  'PINK',
+  'PURPLE'
+]
+Clicked on available color: GREEN
+[INFO] 2025-08-27T06:37:14.241Z - close browser

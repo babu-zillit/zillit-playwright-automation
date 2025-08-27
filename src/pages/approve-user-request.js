@@ -19,10 +19,10 @@ export default class ApproveUserRequest{
     }
 
     async approveNewUserRequest(){
-        await this.page.waitForTimeout(50000);
         await this.approveNewUserRequestTab.click();
         await this.acceptUser.click();
         await this.yesApprove.nth(1).click();
+        await this.page.waitForTimeout(20000);
     }
 
 }

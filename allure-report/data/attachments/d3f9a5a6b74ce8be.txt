@@ -1,0 +1,10 @@
+[INFO] 2025-08-27T06:38:05.673Z - [Delete] deletion started...
+Dropdown list items: [
+  'Reply',
+  'Forward',
+  'Delete',
+  'Read By',
+  'Forward to Remote Projects'
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...

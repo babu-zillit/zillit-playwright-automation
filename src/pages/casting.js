@@ -1,4 +1,5 @@
 import { loadJson } from '../utils/jsonUtil';
+import { expect } from '@playwright/test';
 const mediapaths = loadJson('mediapaths', 'testdata');
 
 export default class Casting {
@@ -23,15 +24,21 @@ export default class Casting {
         this.send = page.locator('text=Send');
 
         this.folder = page.locator('[alt="folder"]');
+        this.folderSecond = page.locator('div.ant-modal-content div.ant-card-body img');
         this.viewImage = page.locator('//div[@class="relative cursor-pointer"]//img');
-        this.close = page.locator('[id="close_document_viewer_button"]');
-        this.closeWindow = page.locator('//span[@class="ant-modal-close-x"]//span[@aria-label="close"]');
 
-        this.arrow = page.locator('//div[@class="mt-2"]//span[@aria-label="down"]');
+        this.close = page.locator('[id="close_document_viewer_button"]');
+        //this.closeWindow = page.locator('//span[@class="ant-modal-close-x"]//span[@aria-label="close"]');
+        this.closeWindowFromMediaScreen = page.locator('div.ant-modal.css-2iw4eq.bg-white div.ant-modal-content button[aria-label="Close"]');
+        this.closeWindowFromSecondScreen = page.locator('div.ant-modal.css-2iw4eq div.ant-modal-content button[aria-label="Close"]');
+
+        this.arrow = page.locator('div.ant-dropdown-trigger span.anticon-down');
         this.characterRadioButton = page.locator('//input[@name="radiogroup" and @value="1"]');
         this.talentRadioButton = page.locator('//input[@name="radiogroup" and @value="2"]');
 
         this.generatepdf = page.locator('#lcw_generate_pdf_button');
+
+        this.deleteOkButton = page.locator('div.ant-modal-content div.ant-modal-confirm-btns button');
     }
 
     async castingMainTab(){
@@ -63,39 +70,58 @@ export default class Casting {
         await this.send.click();
     }
 
-    async uploadCasting(episode, character, talent, gender){
+    async verifypopup(message){
+        const popup = this.page.locator('.ant-message-notice-wrapper div div div').first();
+        await expect.soft(popup).toBeVisible({ timeout: 10000 });
+        await expect.soft(popup).toHaveText(message, { timeout: 10000 });
+        await expect.soft(popup).toBeHidden({ timeout: 10000 });
+        console.log('Popup message verified:');
+    }
+
+    async uploadCasting(episode, character, talent, gender, discription){
         await this.uploadMedia();
         await this.enterEpisode.fill(`${episode}`);
         await this.enterCharacter.fill(`${character}`);
         await this.enterTalent.fill(`${talent}`);
         await this.selectGenderType(`${gender}`);
         
-        await this.enterDiscription.fill('For the villain role');
+        await this.enterDiscription.fill(`${discription}`);
         await this.save.click();
-        
-        const successMsg = await this.page.locator('text=Cast photograph(s) has been added successfully.');
-        await successMsg.waitFor({ state: 'visible' });
-        await successMsg.waitFor({ state: 'hidden' });
     }
 
-    async openFolder(){
-        await this.folder.first().click();
+    async openFolderFirstScreen(){
+        const folderCount = await this.folder.count();
+        await (folderCount === 1 ? this.folder.click() : this.folder.first().click());
     }
 
-    async openImage(){
-        await this.folder.nth(1).click();
-        await this.viewImage.first().click();
+    async openFolderSecondScreen(){
+        const folderCount = await this.folderSecond.count();
+        await (folderCount === 1 ? this.folderSecond.click() : this.folderSecond.first().click()); 
+    }
+
+    async viewImages(){
+        const imageCount = await this.viewImage.count();
+        await (imageCount === 1 ? this.viewImage.click() : this.viewImage.first().click());
         const target = await this.close;
         await target.hover();
         await target.click();
-        await this.closeWindow.nth(1).click();
-        await this.closeWindow.first().click();
+        await this.closeWindowFromMediaScreen.click();
+        await this.closeWindowFromSecondScreen.click();
     }
+
+    // async openImage(){
+    //     await this.folder.nth(1).click();
+    //     await this.viewImage.first().click();
+    //     const target = await this.close;
+    //     await target.hover();
+    //     await target.click();
+    //     await this.closeWindow.nth(1).click();
+    //     await this.closeWindow.first().click();
+    // }
 
 
     async selectGenderType(genderType) {
         await this.selectGender.click();
-
         const gender = genderType.trim().toLowerCase();
 
         if (gender === "male") {
@@ -113,7 +139,24 @@ export default class Casting {
     }
 
     async arrowClick(){
-        await this.arrow.click();
+       const arrowCount = await this.arrow.count();
+       await (arrowCount === 1 ? this.arrow.click() : this.arrow.first().click());
+    }
+
+    async dropDownArrowAction(selectTab, actionText, confirmDelete = false){
+        await this[selectTab]();
+        if(!(await this.characterRadioButton.isChecked())){
+            await this.characterRadioButton.click();
+        }
+
+        await this.arrowClick();
+        await this.page.locator('.ant-dropdown-menu-item', { hasText: actionText }).first().click();
+
+        if(confirmDelete){
+            await this.deleteOkButton.last().click();
+        } else {
+            await this.save.click();
+        }
     }
 
 
@@ -153,7 +196,8 @@ export default class Casting {
     }
 
     async moveToShortlistFromSelects() {
-        await this.handleDropdownAction('selectsTab', 'Move to Shortlist', 'Cast has been moved successfully.');
+       // await this.handleDropdownAction('selectsTab', 'Move to Shortlist', 'Cast has been moved successfully.');
+       await this.dropDownArrowAction('selectsTab', 'Move to Shortlist');
     }
 
     async moveToFinalFromSelects() {
@@ -165,7 +209,8 @@ export default class Casting {
     }
 
     async deleteFromShortlist() {
-        await this.handleDropdownAction('shortlistTab', 'Delete', 'Cast photograph has been deleted successfully.', true);
+        //await this.handleDropdownAction('shortlistTab', 'Delete', 'Cast photograph has been deleted successfully.', true);
+        await this.dropDownArrowAction('shortlistTab', 'Delete', true);
     }
 
     async deleteFromFinals() {

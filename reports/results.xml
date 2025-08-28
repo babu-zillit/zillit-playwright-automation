@@ -1,120 +1,130 @@
-<testsuites id="" name="" tests="10" failures="1" skipped="2" errors="0" time="124.15886900000001">
-<testsuite name="21_castingTest.spec.js" timestamp="2025-08-27T14:31:13.621Z" hostname="chromium" tests="10" failures="1" skipped="2" time="100.238" errors="0">
-<testcase name="Casting › Selects Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="10.483">
+<testsuites id="" name="" tests="12" failures="1" skipped="3" errors="0" time="113.54796499999999">
+<testsuite name="21_castingTest.spec.js" timestamp="2025-08-28T06:49:32.670Z" hostname="chromium" tests="12" failures="1" skipped="3" time="102.049" errors="0">
+<testcase name="Casting › Selects Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="9.599">
 <system-out>
-<![CDATA[[INFO] 2025-08-27T14:31:15.418Z - browser is launching
-[INFO] 2025-08-27T14:31:21.067Z - open the project
+<![CDATA[[INFO] 2025-08-28T06:49:33.862Z - browser is launching
+[INFO] 2025-08-28T06:49:38.115Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-08-27T14:31:21.068Z - QA environment is started...
+[INFO] 2025-08-28T06:49:38.115Z - QA environment is started...
 Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify move to shortlist cast folder from the character screen" classname="21_castingTest.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Casting › Selects Tab › verify move to finals cast folder from the character screen" classname="21_castingTest.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Casting › Selects Tab › verify move to shortlist media from the media screen" classname="21_castingTest.spec.js" time="7.719">
+<testcase name="Casting › Selects Tab › verify move to shortlist cast folder from the character screen" classname="21_castingTest.spec.js" time="6.081">
 <system-out>
 <![CDATA[Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify move to finals media from the media screen" classname="21_castingTest.spec.js" time="7.531">
+<testcase name="Casting › Selects Tab › verify move to finals cast folder from the character screen" classname="21_castingTest.spec.js" time="7.485">
 <system-out>
 <![CDATA[Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify edit cast details from the media screen" classname="21_castingTest.spec.js" time="7.318">
+<testcase name="Casting › Selects Tab › verify delete cast folder from shortlist" classname="21_castingTest.spec.js" time="7.338">
 <system-out>
 <![CDATA[Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify forward cast" classname="21_castingTest.spec.js" time="10.918">
+<testcase name="Casting › Selects Tab › verify delete cast folder from final" classname="21_castingTest.spec.js" time="8.311">
 <system-out>
 <![CDATA[Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Shortlist Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="30.087">
-<failure message="21_castingTest.spec.js:83:9 verify casting upload, open the folder, and view the image" type="FAILURE">
-<![CDATA[  [chromium] › 21_castingTest.spec.js:83:9 › Casting › Shortlist Tab › verify casting upload, open the folder, and view the image 
+<testcase name="Casting › Selects Tab › verify move to shortlist media from the media screen" classname="21_castingTest.spec.js" time="16.201">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify move to finals media from the media screen" classname="21_castingTest.spec.js" time="9.041">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify edit cast details from the media screen" classname="21_castingTest.spec.js" time="7.896">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify forward cast and image reply" classname="21_castingTest.spec.js" time="30.097">
+<failure message="21_castingTest.spec.js:81:9 verify forward cast and image reply" type="FAILURE">
+<![CDATA[  [chromium] › 21_castingTest.spec.js:81:9 › Casting › Selects Tab › verify forward cast and image reply 
 
     Test timeout of 30000ms exceeded.
 
     Error: locator.click: Target page, context or browser has been closed
     Call log:
-      - waiting for locator('div.ant-modal-content div.ant-card-body img').first()
+      - waiting for locator('div.ant-drawer-content-wrapper button span[aria-label="close-square"]')
 
 
-       at ../pages/casting.js:118
+       at ../pages/casting.js:220
 
-      116 |     async openFolderSecondScreen(){
-      117 |         const folderCount = await this.folderSecond.count();
-    > 118 |         await (folderCount === 1 ? this.folderSecond.click() : this.folderSecond.first().click()); 
-          |                                                                                          ^
-      119 |     }
-      120 |
-      121 |     async checkCharacterRadioButton(){
-        at Casting.openFolderSecondScreen (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/casting.js:118:90)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/21_castingTest.spec.js:88:14
+      218 |         await this.loadingIcon.waitFor({ state: 'hidden' });
+      219 |         await this.page.waitForTimeout(500);
+    > 220 |         await this.closeImageReplyWindow.click();
+          |                                          ^
+      221 |     }
+      222 |
+      223 |
+        at Casting.imageReplys (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/casting.js:220:42)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/21_castingTest.spec.js:84:13
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/test-failed-1.png
+    test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ../../test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/error-context.md
+    Error Context: ../../test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/error-context.md
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/trace.zip
+    test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/trace.zip
+        npx playwright show-trace test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
 <![CDATA[Popup message verified:
-[INFO] 2025-08-27T14:32:40.460Z - close browser
+[INFO] 2025-08-28T06:51:25.604Z - close browser
 
-[[ATTACHMENT|../test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/test-failed-1.png]]
+[[ATTACHMENT|../test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/test-failed-1.png]]
 
-[[ATTACHMENT|../test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/error-context.md]]
+[[ATTACHMENT|../test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/error-context.md]]
 
-[[ATTACHMENT|../test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/trace.zip]]
+[[ATTACHMENT|../test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Finals Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="10.084">
-<system-out>
-<![CDATA[[INFO] 2025-08-27T14:32:42.540Z - browser is launching
-[INFO] 2025-08-27T14:32:47.037Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-08-27T14:32:47.038Z - QA environment is started...
-Popup message verified:
-]]>
-</system-out>
+<testcase name="Casting › Shortlist Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
 </testcase>
-<testcase name="Casting › Generate pdf › verify user generate the pdf from finals" classname="21_castingTest.spec.js" time="16.098">
-<system-out>
-<![CDATA[[INFO] 2025-08-27T14:33:17.378Z - close browser
-]]>
-</system-out>
+<testcase name="Casting › Finals Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Casting › Generate pdf › verify user generate the pdf from finals" classname="21_castingTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
 </testsuites>

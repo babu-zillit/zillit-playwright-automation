@@ -108,6 +108,24 @@ export default class Casting {
         await this.save.click();
     }
 
+    async selectGenderType(genderType) {
+        await this.selectGender.click();
+        const gender = genderType.trim().toLowerCase();
+
+        if (gender === "male") {
+            await this.page.keyboard.press('Enter');
+        } else if (gender === "female") {
+            await this.page.keyboard.press('ArrowDown');
+            await this.page.keyboard.press('Enter');
+        } else if (gender === "non binary" || gender === "nonbinary") {
+            await this.page.keyboard.press('ArrowDown');
+            await this.page.keyboard.press('ArrowDown');
+            await this.page.keyboard.press('Enter');
+        } else {
+            throw new Error('Invalid gender type provided');
+        }
+    }
+
     async openFolderFirstScreen(){
         const folderCount = await this.folder.count();
         await (folderCount === 1 ? this.folder.click() : this.folder.first().click());
@@ -132,24 +150,6 @@ export default class Casting {
         await target.click();
         await this.closeWindowFromMediaScreen.click();
         await this.closeWindowFromSecondScreen.click();
-    }
-
-    async selectGenderType(genderType) {
-        await this.selectGender.click();
-        const gender = genderType.trim().toLowerCase();
-
-        if (gender === "male") {
-            await this.page.keyboard.press('Enter');
-        } else if (gender === "female") {
-            await this.page.keyboard.press('ArrowDown');
-            await this.page.keyboard.press('Enter');
-        } else if (gender === "non binary" || gender === "nonbinary") {
-            await this.page.keyboard.press('ArrowDown');
-            await this.page.keyboard.press('ArrowDown');
-            await this.page.keyboard.press('Enter');
-        } else {
-            throw new Error('Invalid gender type provided');
-        }
     }
 
     async arrowClick(){
@@ -212,8 +212,11 @@ export default class Casting {
 
     async imageReplys(){
         await this.imageReply.click();
+        console.log('before type fill');
         await this.typeMessage.fill('Hello Babu');
+        console.log('after type fill');
         await this.sendImageReplyButton.nth(1).click();
+        console.log('click on send');
         await this.loadingIcon.waitFor({ state: 'visible' });
         await this.loadingIcon.waitFor({ state: 'hidden' });
         await this.page.waitForTimeout(500);

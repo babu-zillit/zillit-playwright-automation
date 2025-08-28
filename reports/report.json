@@ -151,20 +151,20 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 10483,
+                          "duration": 9599,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-08-27T14:31:15.418Z - browser is launching\n"
+                              "text": "[INFO] 2025-08-28T06:49:33.862Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-27T14:31:21.067Z - open the project\n"
+                              "text": "[INFO] 2025-08-28T06:49:38.115Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-27T14:31:21.068Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-08-28T06:49:38.115Z - QA environment is started...\n"
                             },
                             {
                               "text": "Popup message verified:\n"
@@ -172,7 +172,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-27T14:31:13.973Z",
+                          "startTime": "2025-08-28T06:49:33.024Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -192,40 +192,36 @@
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
+                      "annotations": [],
+                      "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
+                          "status": "passed",
+                          "duration": 6081,
                           "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-27T14:31:36.506Z",
-                          "annotations": [
+                          "stdout": [
                             {
-                              "type": "skip"
+                              "text": "Popup message verified:\n"
                             }
                           ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-28T06:49:52.814Z",
+                          "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
                   "id": "df23413f276792f61958-d15024164be99e1cd856",
                   "file": "21_castingTest.spec.js",
                   "line": 44,
-                  "column": 14
+                  "column": 9
                 },
                 {
                   "title": "verify move to finals cast folder from the character screen",
@@ -234,40 +230,112 @@
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
+                      "annotations": [],
+                      "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
+                          "status": "passed",
+                          "duration": 7485,
                           "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-27T14:31:36.506Z",
-                          "annotations": [
+                          "stdout": [
                             {
-                              "type": "skip"
+                              "text": "Popup message verified:\n"
                             }
                           ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-28T06:49:58.906Z",
+                          "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
                   "id": "df23413f276792f61958-6dd1866f384dda7ed31c",
                   "file": "21_castingTest.spec.js",
                   "line": 49,
-                  "column": 14
+                  "column": 9
+                },
+                {
+                  "title": "verify delete cast folder from shortlist",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7338,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Popup message verified:\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-28T06:50:06.409Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "df23413f276792f61958-3ff6b7d97a4112bec94d",
+                  "file": "21_castingTest.spec.js",
+                  "line": 54,
+                  "column": 9
+                },
+                {
+                  "title": "verify delete cast folder from final",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8311,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Popup message verified:\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-28T06:50:13.765Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "df23413f276792f61958-0cd5f95179bab2e1870c",
+                  "file": "21_castingTest.spec.js",
+                  "line": 59,
+                  "column": 9
                 },
                 {
                   "title": "verify move to shortlist media from the media screen",
@@ -285,7 +353,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7719,
+                          "duration": 16201,
                           "errors": [],
                           "stdout": [
                             {
@@ -294,7 +362,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-27T14:31:36.506Z",
+                          "startTime": "2025-08-28T06:50:22.093Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -304,7 +372,7 @@
                   ],
                   "id": "df23413f276792f61958-803ce75eb68d810abffe",
                   "file": "21_castingTest.spec.js",
-                  "line": 54,
+                  "line": 64,
                   "column": 9
                 },
                 {
@@ -323,7 +391,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7531,
+                          "duration": 9041,
                           "errors": [],
                           "stdout": [
                             {
@@ -332,7 +400,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-27T14:31:44.233Z",
+                          "startTime": "2025-08-28T06:50:38.309Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -342,7 +410,7 @@
                   ],
                   "id": "df23413f276792f61958-b6d42afc1dfec7124f8e",
                   "file": "21_castingTest.spec.js",
-                  "line": 60,
+                  "line": 70,
                   "column": 9
                 },
                 {
@@ -361,7 +429,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7318,
+                          "duration": 7896,
                           "errors": [],
                           "stdout": [
                             {
@@ -370,7 +438,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-27T14:31:51.773Z",
+                          "startTime": "2025-08-28T06:50:47.358Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -380,57 +448,11 @@
                   ],
                   "id": "df23413f276792f61958-ffe17ed9e8919202961a",
                   "file": "21_castingTest.spec.js",
-                  "line": 66,
+                  "line": 76,
                   "column": 9
                 },
                 {
-                  "title": "verify forward cast",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10918,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Popup message verified:\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-08-27T14:31:59.103Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "df23413f276792f61958-7d2debea4947428d7587",
-                  "file": "21_castingTest.spec.js",
-                  "line": 71,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Shortlist Tab",
-              "file": "21_castingTest.spec.js",
-              "line": 81,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify casting upload, open the folder, and view the image",
+                  "title": "verify forward cast and image reply",
                   "ok": false,
                   "tags": [],
                   "tests": [
@@ -445,7 +467,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "timedOut",
-                          "duration": 30087,
+                          "duration": 30097,
                           "error": {
                             "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
                             "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
@@ -457,10 +479,10 @@
                             {
                               "location": {
                                 "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/casting.js",
-                                "column": 90,
-                                "line": 118
+                                "column": 42,
+                                "line": 220
                               },
-                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('div.ant-modal-content div.ant-card-body img').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/casting.js:118\n\n\u001b[0m \u001b[90m 116 |\u001b[39m     \u001b[36masync\u001b[39m openFolderSecondScreen(){\n \u001b[90m 117 |\u001b[39m         \u001b[36mconst\u001b[39m folderCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfolderSecond\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 118 |\u001b[39m         \u001b[36mawait\u001b[39m (folderCount \u001b[33m===\u001b[39m \u001b[35m1\u001b[39m \u001b[33m?\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfolderSecond\u001b[33m.\u001b[39mclick() \u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfolderSecond\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick())\u001b[33m;\u001b[39m \n \u001b[90m     |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 119 |\u001b[39m     }\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m     \u001b[36masync\u001b[39m checkCharacterRadioButton(){\u001b[0m\n\u001b[2m    at Casting.openFolderSecondScreen (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/casting.js:118:90)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/21_castingTest.spec.js:88:14\u001b[22m"
+                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('div.ant-drawer-content-wrapper button span[aria-label=\"close-square\"]')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/casting.js:220\n\n\u001b[0m \u001b[90m 218 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloadingIcon\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'hidden'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 219 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 220 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcloseImageReplyWindow\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 221 |\u001b[39m     }\n \u001b[90m 222 |\u001b[39m\n \u001b[90m 223 |\u001b[39m\u001b[0m\n\u001b[2m    at Casting.imageReplys (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/casting.js:220:42)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/21_castingTest.spec.js:84:13\u001b[22m"
                             }
                           ],
                           "stdout": [
@@ -468,28 +490,28 @@
                               "text": "Popup message verified:\n"
                             },
                             {
-                              "text": "[INFO] 2025-08-27T14:32:40.460Z - close browser\n"
+                              "text": "[INFO] 2025-08-28T06:51:25.604Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-27T14:32:10.039Z",
+                          "startTime": "2025-08-28T06:50:55.265Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/test-failed-1.png"
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/test-failed-1.png"
                             },
                             {
                               "name": "_error-context-1",
                               "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/error-context.md"
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/error-context.md"
                             },
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/21_castingTest-Casting-Sho-cdc8b-e-folder-and-view-the-image-chromium/trace.zip"
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/21_castingTest-Casting-Sel-c2be4-orward-cast-and-image-reply-chromium/trace.zip"
                             }
                           ]
                         }
@@ -497,18 +519,18 @@
                       "status": "unexpected"
                     }
                   ],
-                  "id": "df23413f276792f61958-ab6c71e9d0ff97dd54cd",
+                  "id": "df23413f276792f61958-f1460111605c5b02c099",
                   "file": "21_castingTest.spec.js",
-                  "line": 83,
+                  "line": 81,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Finals Tab",
+              "title": "Shortlist Tab",
               "file": "21_castingTest.spec.js",
-              "line": 95,
-              "column": 10,
+              "line": 91,
+              "column": 19,
               "specs": [
                 {
                   "title": "verify casting upload, open the folder, and view the image",
@@ -517,47 +539,81 @@
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10084,
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-08-27T14:32:42.540Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-08-27T14:32:47.037Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: qa.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-08-27T14:32:47.038Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "Popup message verified:\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-27T14:32:41.823Z",
+                          "startTime": "2025-08-28T06:51:26.133Z",
                           "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "df23413f276792f61958-ab6c71e9d0ff97dd54cd",
+                  "file": "21_castingTest.spec.js",
+                  "line": 93,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Finals Tab",
+              "file": "21_castingTest.spec.js",
+              "line": 105,
+              "column": 19,
+              "specs": [
+                {
+                  "title": "verify casting upload, open the folder, and view the image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-28T06:51:26.137Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
                     }
                   ],
                   "id": "df23413f276792f61958-ed21c3b921da7984200f",
                   "file": "21_castingTest.spec.js",
-                  "line": 97,
+                  "line": 107,
                   "column": 9
                 }
               ]
@@ -565,8 +621,8 @@
             {
               "title": "Generate pdf",
               "file": "21_castingTest.spec.js",
-              "line": 109,
-              "column": 10,
+              "line": 119,
+              "column": 19,
               "specs": [
                 {
                   "title": "verify user generate the pdf from finals",
@@ -575,35 +631,35 @@
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 16098,
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-08-27T14:33:17.378Z - close browser\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-08-27T14:33:01.258Z",
+                          "startTime": "2025-08-28T06:51:26.141Z",
                           "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
                     }
                   ],
                   "id": "df23413f276792f61958-3d1adb34be3e20582b55",
                   "file": "21_castingTest.spec.js",
-                  "line": 111,
+                  "line": 121,
                   "column": 9
                 }
               ]
@@ -615,10 +671,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-27T14:31:13.597Z",
-    "duration": 124158.869,
-    "expected": 7,
-    "skipped": 2,
+    "startTime": "2025-08-28T06:49:32.649Z",
+    "duration": 113547.965,
+    "expected": 8,
+    "skipped": 3,
     "unexpected": 1,
     "flaky": 0
   }

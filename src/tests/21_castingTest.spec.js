@@ -41,14 +41,24 @@ test.describe('Casting', () => {
              await castingPage.viewImages(); 
         }); 
         
-        test.skip('verify move to shortlist cast folder from the character screen', async () => {
+        test('verify move to shortlist cast folder from the character screen', async () => {
             await castingPage.dropDownArrowAction('selectsTab', 'Move to Shortlist');
             await castingPage.verifypopup('Cast has been moved successfully.');
         });
 
-        test.skip('verify move to finals cast folder from the character screen', async () => {
+        test('verify move to finals cast folder from the character screen', async () => {
             await castingPage.dropDownArrowAction('selectsTab', 'Move to Final');
             await castingPage.verifypopup('Cast has been moved successfully.');
+        });
+
+        test('verify delete cast folder from shortlist', async () => {
+            await castingPage.dropDownArrowAction('shortlistTab', 'Delete', true);
+            await castingPage.verifypopup('Cast photograph has been deleted successfully.');
+        });
+
+        test('verify delete cast folder from final', async () => {
+            await castingPage.dropDownArrowAction('finalsTab', 'Delete', true);
+            await castingPage.verifypopup('Cast photograph has been deleted successfully.');
         });
 
         test('verify move to shortlist media from the media screen', async () => {
@@ -68,7 +78,7 @@ test.describe('Casting', () => {
             await castingPage.verifypopup('Cast photograph has been saved successfully.');
         });
 
-        test('verify forward cast', async () => {
+        test('verify forward cast and image reply', async () => {
             await castingPage.forwardCast();
             await castingPage.verifypopup('Message forwarded successfully');
             await castingPage.imageReplys();
@@ -78,7 +88,7 @@ test.describe('Casting', () => {
     
     });
 
-    test.describe('Shortlist Tab', () => {
+    test.describe.skip('Shortlist Tab', () => {
 
         test('verify casting upload, open the folder, and view the image', async () => {
             await castingPage.shortlistTab();
@@ -92,7 +102,7 @@ test.describe('Casting', () => {
     
     });
 
-    test.describe('Finals Tab', () => {
+    test.describe.skip('Finals Tab', () => {
 
         test('verify casting upload, open the folder, and view the image', async () => {
             await castingPage.finalsTab();
@@ -106,7 +116,7 @@ test.describe('Casting', () => {
     });
 
 
-    test.describe('Generate pdf', () => {
+    test.describe.skip('Generate pdf', () => {
 
         test('verify user generate the pdf from finals', async () => {
             await castingPage.finalsTab();

@@ -1,0 +1,2 @@
+Popup message verified:
+[INFO] 2025-08-28T06:44:26.254Z - close browser

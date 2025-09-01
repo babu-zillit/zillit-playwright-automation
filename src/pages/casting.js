@@ -21,7 +21,7 @@ export default class Casting {
         this.plus = page.locator('#create_casting_details_modal_open_button');
         this.attchment = page.locator('[class="ant-float-btn-body"]');
         this.uploadMediaButton = page.locator("//div[contains(text(), 'Upload Media')]/ancestor::span//input[@type='file']");
-        this.send = page.locator('text=Send');
+        this.upload = page.locator('div.ant-modal-body div.text-end button');
 
         this.folder = page.locator('[alt="folder"]');
         this.folderSecond = page.locator('div.ant-modal-content div.ant-card-body img');
@@ -35,6 +35,7 @@ export default class Casting {
         this.arrow = page.locator('div.ant-dropdown-trigger span.anticon-down');
         this.characterRadioButton = page.locator('//input[@name="radiogroup" and @value="1"]');
         this.talentRadioButton = page.locator('//input[@name="radiogroup" and @value="2"]');
+        this.episodeRadioButton = page.locator('//input[@name="radiogroup" and @value="3"]');
 
         this.generatepdf = page.locator('#lcw_generate_pdf_button');
 
@@ -54,11 +55,9 @@ export default class Casting {
 
         this.imageReply = page.locator('#casting_image_reply_media_button');
         this.typeMessage = page.locator('[placeholder="Type a message"]');
-        this.sendImageReplyButton = page.locator('div.ant-modal-body div.text-end button');
         this.loadingIcon = page.locator('[data-icon="loading"]');
         this.closeImageReplyWindow = page.locator('div.ant-drawer-content-wrapper button span[aria-label="close-square"]');
-
-
+        
     }
 
     async castingMainTab(){
@@ -87,7 +86,7 @@ export default class Casting {
         await this.plus.click();
         await this.attchment.click();
         await this.uploadMediaButton.setInputFiles(mediapaths.image);
-        await this.send.click();
+        await this.upload.nth(1).click();
     }
 
     async verifypopup(message){
@@ -139,6 +138,12 @@ export default class Casting {
     async checkCharacterRadioButton(){
         if(!(await this.characterRadioButton.isChecked())){
             await this.characterRadioButton.click();
+        }
+    }
+
+    async checkEpisodeRadioButton(){
+        if(!(await this.episodeRadioButton.isChecked())){
+            await this.episodeRadioButton.click();
         }
     }
 
@@ -212,97 +217,36 @@ export default class Casting {
 
     async imageReplys(){
         await this.imageReply.click();
-        console.log('before type fill');
+        await this.page.waitForTimeout(1000);
         await this.typeMessage.fill('Hello Babu');
-        console.log('after type fill');
-        await this.sendImageReplyButton.nth(1).click();
-        console.log('click on send');
+        await this.upload.nth(1).click();
         await this.loadingIcon.waitFor({ state: 'visible' });
         await this.loadingIcon.waitFor({ state: 'hidden' });
         await this.page.waitForTimeout(500);
         await this.closeImageReplyWindow.click();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    async handleDropdownAction(tabFn, actionText, successMessage, confirmDelete = false){
-
-        await this[tabFn]();
-
-        if(!(await this.characterRadioButton.isChecked())){
-            await this.characterRadioButton.click();
-        }
-
-        const arrowCount = await this.arrow.count();
-        if (arrowCount === 1) {
-            await this.arrowClick();
-        } else if (arrowCount > 1) {
+    async deleteFolderIfAvailable(){
+        await this.checkCharacterRadioButton();
+        let arrowCount = await this.arrow.count();
+        while(arrowCount > 0){
             await this.arrow.first().click();
-        } else {
-            throw new Error('Arrow element not found');
+            await this.page.locator('.ant-dropdown-menu-item', { hasText: 'Delete' }).first().click();
+            await this.deleteOkButton.last().click();
+            await this.verifypopup('Cast photograph has been deleted successfully.');
+            arrowCount--;
         }
-        
-        await this.page.waitForSelector('.ant-dropdown-menu-item');
-        const itemTexts = await this.page.$$eval('.ant-dropdown-menu-item .ant-dropdown-menu-title-content', elements =>
-            elements.map(el => el.textContent.trim())
-        );
-        console.log('Dropdown Items:', itemTexts);
-        await this.page.click(`text=${actionText}`);
-
-        if (confirmDelete) {
-            await this.page.locator('//div[@class="ant-modal-confirm-btns"]//button').nth(1).click();
-        } else {
-            await this.save.click();
-        }
-
-        const successMsg = await this.page.locator(`text=${successMessage}`);
-        await successMsg.waitFor({ state: 'visible' });
-        await successMsg.waitFor({ state: 'hidden' });
+        await this.checkEpisodeRadioButton(); 
     }
 
-    async moveToShortlistFromSelects() {
-       // await this.handleDropdownAction('selectsTab', 'Move to Shortlist', 'Cast has been moved successfully.');
-       await this.dropDownArrowAction('selectsTab', 'Move to Shortlist');
-    }
-
-    async moveToFinalFromSelects() {
-        //await this.handleDropdownAction('selectsTab', 'Move to Final', 'Cast has been moved successfully.');
-        await this.dropDownArrowAction('selectsTab', 'Move to Final');
-    }
-
-    async deleteFromSelects() {
-        await this.handleDropdownAction('selectsTab', 'Delete', 'Cast photograph has been deleted successfully.', true);
-    }
-
-    async deleteFromShortlist() {
-        //await this.handleDropdownAction('shortlistTab', 'Delete', 'Cast photograph has been deleted successfully.', true);
-        await this.dropDownArrowAction('shortlistTab', 'Delete', true);
-    }
-
-    async deleteFromFinals() {
-        await this.handleDropdownAction('finalsTab', 'Delete', 'Cast photograph has been deleted successfully.', true);
-    }
-
-    async generatePDF() {
+       async generatePDF() {
         await this.generatepdf.click();
-        await this.page.locator('//div[@class="ant-modal-footer"]//button').nth(1).click();
+        await this.page.locator('div.ant-modal-footer button').nth(1).click();
         const successMsg = await this.page.locator('text=PDF for cast has been successfully created.');
         await successMsg.waitFor({ state: 'visible' });
         await successMsg.waitFor({ state: 'hidden' });
 
-        await this.page.locator('//div[@class="ant-modal-body"]//button').first().click();
+        await this.page.locator('div.ant-modal-body button').first().click();
         const successMsg2 = await this.page.locator('text=Document Published Sucessfully');
         await successMsg2.waitFor({ state: 'visible' });
         await successMsg2.waitFor({ state: 'hidden' });

@@ -31,81 +31,141 @@ test.describe('Casting', () => {
 
 
 
-    test.describe('Casting', () => {
+    test.describe('Selects Tab', () => {
 
-        test('verify uploadCasting', async () => {
-            await castingPage.uploadCasting('1','Police','Salman','male'); 
+        test('verify casting upload, open the folder, and view the image', async () => {
+
+             await castingPage.uploadCasting('1','Police','Salman','male', 'For the villain role');
+             await castingPage.verifypopup('Cast photograph(s) has been added successfully.');
+             await castingPage.openFolderFirstScreen();
+             await castingPage.openFolderSecondScreen();
+             await castingPage.viewImages(); 
         }); 
+        
+        test('verify move to shortlist cast folder from the character screen', async () => {
 
-        test('verify open folder > see image', async () => {
-            await castingPage.openFolder(); 
-            await castingPage.openImage();
+            await castingPage.dropDownArrowAction('selectsTab', 'Move to Shortlist');
+            await castingPage.verifypopup('Cast has been moved successfully.');
+        });
+
+        test('verify move to finals cast folder from the character screen', async () => {
+
+            await castingPage.dropDownArrowAction('selectsTab', 'Move to Final');
+            await castingPage.verifypopup('Cast has been moved successfully.');
+        });
+
+        test('verify delete cast folder from shortlist', async () => {
+
+            await castingPage.dropDownArrowAction('shortlistTab', 'Delete', true);
+            await castingPage.verifypopup('Cast photograph has been deleted successfully.');
+        });
+
+        test('verify delete cast folder from final', async () => {
+
+            await castingPage.dropDownArrowAction('finalsTab', 'Delete', true);
+            await castingPage.verifypopup('Cast photograph has been deleted successfully.');
+        });
+
+        test('verify move to shortlist media from the media screen', async () => {
+
+            await castingPage.selectsTab();
+            await castingPage.moveToFromMediaScreen('Move to Shortlist');
+            await castingPage.verifypopup('Cast has been moved successfully.');
+            await castingPage.closeImageWindow();
+        });
+
+        test('verify move to finals media from the media screen', async () => {
+
+            await castingPage.moveToFromMediaScreen('Move to Final');
+            await castingPage.verifypopup('Cast has been moved successfully.');
+            await castingPage.closeImageWindow();
+        });
+
+        test('verify edit cast details from the media screen', async () => {
+
+            await castingPage.editCastDeatils('55','ISI','Rocky', 'For the villain role');
+            await castingPage.verifypopup('Cast photograph has been saved successfully.');
+        });
+
+        test('verify forward cast and image reply', async () => {
+
+            await castingPage.forwardCast();
+            await castingPage.verifypopup('Message forwarded successfully');
+            //await castingPage.imageReplys();
+            await castingPage.closeImageWindow();
+        });
+
+    
+    });
+
+    test.describe('Shortlist Tab', () => {
+
+        test('verify delete all cast folder from shortlist', async () => {
+
+            await castingPage.shortlistTab();
+            await castingPage.deleteFolderIfAvailable();
+        });
+
+        test('verify casting upload, open the folder, and view the image', async () => {
+
+            await castingPage.shortlistTab();
+            await castingPage.uploadCasting('2','IPS','Deepika','female', 'for the police role');
+            await castingPage.verifypopup('Cast photograph(s) has been added successfully.');
+            await castingPage.openFolderFirstScreen();
+            await castingPage.openFolderSecondScreen();
+            await castingPage.viewImages(); 
+        });
+
+        test('verify move to finals cast folder from the character screen', async () => {
+
+            await castingPage.dropDownArrowAction('shortlistTab', 'Move to Final');
+            await castingPage.verifypopup('Cast has been moved successfully.');
+        });
+
+        test('verify edit cast details from the media screen', async () => {
+
+            await castingPage.shortlistTab();
+            await castingPage.editCastDeatils('66','Raw','Sam', 'For the villain role');
+            await castingPage.verifypopup('Cast photograph has been saved successfully.');
+        });
+
+        test('verify forward cast and image reply', async () => {
+
+            await castingPage.shortlistTab();
+            await castingPage.forwardCast();
+            await castingPage.verifypopup('Message forwarded successfully');
+            await castingPage.closeImageWindow();
+        });    
+    
+    });
+
+    test.describe('Finals Tab', () => {
+
+        test('verify delete all cast folder from final', async () => {
+
+            await castingPage.finalsTab();
+            await castingPage.deleteFolderIfAvailable();
+        });
+
+        test('verify casting upload, open the folder, and view the image', async () => {
+            await castingPage.finalsTab();
+             await castingPage.uploadCasting('3','Professor','Kaitrina','female', 'for the philosophy role');
+             await castingPage.verifypopup('Cast photograph(s) has been added successfully.');
+             await castingPage.openFolderFirstScreen();
+             await castingPage.openFolderSecondScreen();
+             await castingPage.viewImages(); 
         }); 
-    
-    });
+        
+         test('verify forward cast and image reply', async () => {
 
-    test.describe('upload cast in shortlist', () => {
-
-        test('verify uploading cast in shortlist', async () => {
-            await castingPage.shortlistTab();
-            await castingPage.uploadCasting('2','IAS','Deepika','female'); 
-        });
-
-        test('verify open folder > see image', async () => {
-            await castingPage.shortlistTab();
-            await castingPage.openFolder(); 
-            await castingPage.openImage();
-        });
-    
-    });
-
-
-     test.describe('upload cast in finals', () => {
-
-        test('verify uploading cast in finals', async () => {
             await castingPage.finalsTab();
-            await castingPage.uploadCasting('3','IPS','Kaitrina','nonbinary');  
-        });
-
-        test('verify open folder > see image', async () => {
-            await castingPage.finalsTab();
-            await castingPage.openFolder(); 
-            await castingPage.openImage();
-        });
-    
+            await castingPage.forwardCast();
+            await castingPage.verifypopup('Message forwarded successfully');
+            await castingPage.closeImageWindow();
+        }); 
+ 
     });
 
-    test.describe('Selects → move to shortlist , move to final, delete', () => {
-
-        test('verify casts move to shortlist', async () => {
-            await castingPage.selectsTab(); 
-            await castingPage.moveToShortlistFromSelects();
-            await castingPage.moveToFinalFromSelects();
-        });
-
-        test('verify delete the cast folder from selects', async () => {
-            await castingPage.deleteFromSelects();
-        });
-    
-    });
-
-    test.describe('Shortlist → delete folder', () => {
-
-        test('verify user delete the cast folder from the shortlist', async () => {
-            await castingPage.shortlistTab();
-            await castingPage.deleteFromShortlist();
-        });
-    
-    });
-
-    test.describe('Finals → delete folder', () => {
-
-        test('verify user deletes the cast folder from finals', async () => {
-            await castingPage.finalsTab();
-            await castingPage.deleteFromFinals();
-        });
-    
-    });
 
     test.describe('Generate pdf', () => {
 
@@ -113,8 +173,8 @@ test.describe('Casting', () => {
             await castingPage.finalsTab();
             await castingPage.generatePDF();
         });
-    
     });
+
 
 });
 

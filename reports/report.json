@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "22_casting-backgroundTest.spec.js",
-      "file": "22_casting-backgroundTest.spec.js",
+      "title": "05_callsheetTest.spec.js",
+      "file": "05_callsheetTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Casting",
-          "file": "22_casting-backgroundTest.spec.js",
-          "line": 6,
+          "title": "CallSheet",
+          "file": "05_callsheetTest.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Selects Tab",
-              "file": "22_casting-backgroundTest.spec.js",
+              "title": "Send Document",
+              "file": "05_callsheetTest.spec.js",
               "line": 34,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify casting upload, open the folder, and view the image",
+                  "title": "verify the send a message → send document by clicking on continuation → send document by clicking on new",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,28 +151,34 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8430,
+                          "duration": 23314,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-09-01T11:00:19.250Z - browser is launching\n"
+                              "text": "[INFO] 2025-09-29T07:33:44.119Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-09-01T11:00:24.604Z - open the project\n"
+                              "text": "[INFO] 2025-09-29T07:33:50.466Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-09-01T11:00:24.604Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-09-29T07:33:50.466Z - QA environment is started...\n"
                             },
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:33:56.246Z - [SendMessage] Started sending message...\n"
+                            },
+                            {
+                              "text": "✅ AppleScript ran successfully\n"
+                            },
+                            {
+                              "text": "✅ AppleScript ran successfully\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:00:18.203Z",
+                          "startTime": "2025-09-29T07:33:43.200Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -180,13 +186,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-d069136aab360345bb1b",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 36,
+                  "id": "b5ab7d85560b73ec2f8f-1fc85575a006773650d5",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 35,
                   "column": 9
                 },
                 {
-                  "title": "verify move to shortlist cast folder from the character screen",
+                  "title": "verify the readBy status",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -201,16 +207,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5636,
+                          "duration": 1108,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:34:19.578Z - [ReadByMessage] Started readBy message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:00:37.415Z",
+                          "startTime": "2025-09-29T07:34:19.568Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -218,13 +227,54 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-e9d0f7395d55c9b18375",
-                  "file": "22_casting-backgroundTest.spec.js",
+                  "id": "b5ab7d85560b73ec2f8f-5f4484a22e264e75afa6",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5567,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-09-29T07:34:20.692Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T07:34:20.687Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-d71866196b20c4416288",
+                  "file": "05_callsheetTest.spec.js",
                   "line": 45,
                   "column": 9
                 },
                 {
-                  "title": "verify move to finals cast folder from the character screen",
+                  "title": "verify the reply",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -239,16 +289,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6352,
+                          "duration": 1412,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:34:26.274Z - [ReplyMessage] Started reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:00:43.062Z",
+                          "startTime": "2025-09-29T07:34:26.261Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -256,13 +309,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-c2e5ce9a9313531b905d",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 51,
+                  "id": "b5ab7d85560b73ec2f8f-b9d6521ffbbe8d7d94cd",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 49,
                   "column": 9
                 },
                 {
-                  "title": "verify delete cast folder from shortlist",
+                  "title": "verify the edit reply",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -277,16 +330,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6814,
+                          "duration": 2536,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:34:27.694Z - [editReply] Started edit reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:00:49.432Z",
+                          "startTime": "2025-09-29T07:34:27.687Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -294,13 +350,54 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-31dcd146898c393f9e05",
-                  "file": "22_casting-backgroundTest.spec.js",
+                  "id": "b5ab7d85560b73ec2f8f-d025ac93e71442f62ca6",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 53,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1672,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-09-29T07:34:30.235Z - [readByReply] Started read By reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T07:34:30.230Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-21c2f2ed9d7707cae363",
+                  "file": "05_callsheetTest.spec.js",
                   "line": 57,
                   "column": 9
                 },
                 {
-                  "title": "verify delete cast folder from final",
+                  "title": "verify the delete reply",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -315,16 +412,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7360,
+                          "duration": 5427,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:34:31.914Z - [deleteReply] Started delete reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:00:56.262Z",
+                          "startTime": "2025-09-29T07:34:31.909Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -332,13 +432,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-77d1ccd9b378f9ef986a",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 63,
+                  "id": "b5ab7d85560b73ec2f8f-a2831208438a94f74060",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 61,
                   "column": 9
                 },
                 {
-                  "title": "verify move to shortlist media from the media screen",
+                  "title": "verify the delete document",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -353,16 +453,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8971,
+                          "duration": 5960,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:34:37.357Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:01:03.639Z",
+                          "startTime": "2025-09-29T07:34:37.344Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -370,13 +479,59 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-4613856685ed2cedd790",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 69,
+                  "id": "b5ab7d85560b73ec2f8f-382bd7e809a4777e34cc",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 65,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Message",
+              "file": "05_callsheetTest.spec.js",
+              "line": 72,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify send a message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2305,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-09-29T07:34:43.336Z - [SendMessage] Started sending message...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T07:34:43.321Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-2e38278cdfe1b2a43276",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 74,
                   "column": 9
                 },
                 {
-                  "title": "verify move to finals media from the media screen",
+                  "title": "verify edit the message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -391,16 +546,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8216,
+                          "duration": 2787,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:34:45.652Z - [EditMessage] Started edit message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:01:12.625Z",
+                          "startTime": "2025-09-29T07:34:45.642Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -408,13 +566,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-cac863b72b67dbc38249",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 77,
+                  "id": "b5ab7d85560b73ec2f8f-2b91c43f5abc2d8e653f",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 78,
                   "column": 9
                 },
                 {
-                  "title": "verify edit cast details from the media screen",
+                  "title": "verify read by status on message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -429,16 +587,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7379,
+                          "duration": 933,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:34:48.452Z - [ReadByMessage] Started readBy message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:01:20.849Z",
+                          "startTime": "2025-09-29T07:34:48.441Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -446,13 +607,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-a3468f48fc55845811cb",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 84,
+                  "id": "b5ab7d85560b73ec2f8f-728edac4c03c1a48780b",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 82,
                   "column": 9
                 },
                 {
-                  "title": "verify forward cast and image reply",
+                  "title": "verify forward the message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -467,16 +628,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6305,
+                          "duration": 5565,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:34:49.390Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:01:28.240Z",
+                          "startTime": "2025-09-29T07:34:49.386Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -484,21 +648,54 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-59cda54d12b580f74306",
-                  "file": "22_casting-backgroundTest.spec.js",
+                  "id": "b5ab7d85560b73ec2f8f-b5868f318ae9929efde3",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 86,
+                  "column": 9
+                },
+                {
+                  "title": "verify reply to the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1147,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-09-29T07:34:54.971Z - [ReplyMessage] Started reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T07:34:54.959Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-d003bd1b90286d7c6dfe",
+                  "file": "05_callsheetTest.spec.js",
                   "line": 90,
                   "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Shortlist Tab",
-              "file": "22_casting-backgroundTest.spec.js",
-              "line": 101,
-              "column": 10,
-              "specs": [
+                },
                 {
-                  "title": "verify delete all cast folder from shortlist",
+                  "title": "verify the edit the reply message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -513,12 +710,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1057,
+                          "duration": 2398,
                           "errors": [],
-                          "stdout": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-09-29T07:34:56.124Z - [editReply] Started edit reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:01:34.558Z",
+                          "startTime": "2025-09-29T07:34:56.119Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -526,13 +730,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-de09f0feaee266820599",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 103,
+                  "id": "b5ab7d85560b73ec2f8f-30a86dc8ef9bd7b56e70",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 94,
                   "column": 9
                 },
                 {
-                  "title": "verify casting upload, open the folder, and view the image",
+                  "title": "verify the read by status on reply message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -547,16 +751,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8730,
+                          "duration": 1681,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:34:58.528Z - [readByReply] Started read By reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:01:35.625Z",
+                          "startTime": "2025-09-29T07:34:58.524Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -564,13 +771,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-fe16498e0f8fee4f21f1",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 109,
+                  "id": "b5ab7d85560b73ec2f8f-6f8b47f825442e8dd4d8",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 98,
                   "column": 9
                 },
                 {
-                  "title": "verify move to finals cast folder from the character screen",
+                  "title": "verify the delete the reply message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -585,16 +792,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5699,
+                          "duration": 5550,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:35:00.217Z - [deleteReply] Started delete reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:01:44.379Z",
+                          "startTime": "2025-09-29T07:35:00.211Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -602,13 +812,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-0f7d1411050b6aab14cd",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 119,
+                  "id": "b5ab7d85560b73ec2f8f-d58a8dc711040f258513",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 102,
                   "column": 9
                 },
                 {
-                  "title": "verify edit cast details from the media screen",
+                  "title": "verify the delete message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -623,16 +833,28 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6775,
+                          "duration": 5790,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Popup message verified:\n"
+                              "text": "[INFO] 2025-09-29T07:35:05.785Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-09-29T07:35:11.588Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-01T11:01:50.086Z",
+                          "startTime": "2025-09-29T07:35:05.771Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -640,211 +862,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8633cec899819fa28876-3b9fcb35946f955becfc",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 125,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward cast and image reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7322,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Popup message verified:\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-09-01T11:01:56.879Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "8633cec899819fa28876-d5c7cc338cfa17cf8399",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 132,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Finals Tab",
-              "file": "22_casting-backgroundTest.spec.js",
-              "line": 142,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify delete all cast folder from final",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1041,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-09-01T11:02:04.217Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "8633cec899819fa28876-d55a120a69812eea2d87",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 144,
-                  "column": 9
-                },
-                {
-                  "title": "verify casting upload, open the folder, and view the image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9886,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Popup message verified:\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-09-01T11:02:05.266Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "8633cec899819fa28876-45eb7512bafd19293934",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 150,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward cast and image reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6959,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Popup message verified:\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-09-01T11:02:15.161Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "8633cec899819fa28876-98ade5f131689e077059",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 159,
-                  "column": 10
-                }
-              ]
-            },
-            {
-              "title": "Generate pdf",
-              "file": "22_casting-backgroundTest.spec.js",
-              "line": 170,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user generate the pdf from finals",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 18004,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-09-01T11:02:40.155Z - close browser\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-09-01T11:02:22.129Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "8633cec899819fa28876-aeced301676b9c23240a",
-                  "file": "22_casting-backgroundTest.spec.js",
-                  "line": 172,
+                  "id": "b5ab7d85560b73ec2f8f-b6aa90442454dab2cb7c",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 106,
                   "column": 9
                 }
               ]
@@ -856,9 +876,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-01T11:00:17.839Z",
-    "duration": 142802.49300000002,
-    "expected": 18,
+    "startTime": "2025-09-29T07:33:42.844Z",
+    "duration": 89422.91900000001,
+    "expected": 17,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

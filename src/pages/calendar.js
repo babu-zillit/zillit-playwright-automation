@@ -69,7 +69,7 @@ export default class Calendar {
     async selectStartTime(){
         await this.startDate.click();
         await this.page.locator('.ant-picker-header-next-btn').click(); // next month
-        await this.page.locator('.ant-picker-cell:not(.ant-picker-cell-disabled) >> text=29').click();
+        await this.page.locator('.ant-picker-cell:not(.ant-picker-cell-disabled) >> text=25').click();
     }
 
     async selectEndTime(){
@@ -148,13 +148,14 @@ export default class Calendar {
     async addOutSiderUser(enterEmail){
         await this.externalUser.click();
 
-        const emailInput = this.page.locator('[placeholder="Enter Email"]');
+        const emailInput = this.page.locator('[placeholder="Type Email..."]');
         await emailInput.waitFor({ state: 'visible', timeout: 10000 });
         await emailInput.fill(enterEmail);
 
-        const addButton = this.page.locator("//button[@type='button']//span[text()='Add']");
-        await addButton.waitFor({ state: 'visible', timeout: 5000 });
-        await addButton.click();
+        await this.page.locator('div.divide-y').first().click();
+
+        const addButton = this.page.locator("div.ant-modal-confirm-btns button");
+        await addButton.first().click();
 
         const submitButton = this.page.locator('//div[@class="ant-modal-footer"]//span[text()="Submit"]');
         await submitButton.waitFor({ state: 'visible', timeout: 5000 });

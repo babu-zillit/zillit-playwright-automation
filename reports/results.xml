@@ -1,106 +1,193 @@
-<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="142.80249300000003">
-<testsuite name="22_casting-backgroundTest.spec.js" timestamp="2025-09-01T11:00:17.863Z" hostname="chromium" tests="18" failures="0" skipped="0" time="130.936" errors="0">
-<testcase name="Casting › Selects Tab › verify casting upload, open the folder, and view the image" classname="22_casting-backgroundTest.spec.js" time="8.43">
+<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="89.42291900000001">
+<testsuite name="05_callsheetTest.spec.js" timestamp="2025-09-29T07:33:42.865Z" hostname="chromium" tests="17" failures="0" skipped="0" time="75.152" errors="0">
+<testcase name="CallSheet › Send Document › verify the send a message → send document by clicking on continuation → send document by clicking on new" classname="05_callsheetTest.spec.js" time="23.314">
 <system-out>
-<![CDATA[[INFO] 2025-09-01T11:00:19.250Z - browser is launching
-[INFO] 2025-09-01T11:00:24.604Z - open the project
+<![CDATA[[INFO] 2025-09-29T07:33:44.119Z - browser is launching
+[INFO] 2025-09-29T07:33:50.466Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-09-01T11:00:24.604Z - QA environment is started...
-Popup message verified:
+[INFO] 2025-09-29T07:33:50.466Z - QA environment is started...
+[INFO] 2025-09-29T07:33:56.246Z - [SendMessage] Started sending message...
+✅ AppleScript ran successfully
+✅ AppleScript ran successfully
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify move to shortlist cast folder from the character screen" classname="22_casting-backgroundTest.spec.js" time="5.636">
+<testcase name="CallSheet › Send Document › verify the readBy status" classname="05_callsheetTest.spec.js" time="1.108">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:19.578Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify move to finals cast folder from the character screen" classname="22_casting-backgroundTest.spec.js" time="6.352">
+<testcase name="CallSheet › Send Document › verify the forward" classname="05_callsheetTest.spec.js" time="5.567">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:20.692Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify delete cast folder from shortlist" classname="22_casting-backgroundTest.spec.js" time="6.814">
+<testcase name="CallSheet › Send Document › verify the reply" classname="05_callsheetTest.spec.js" time="1.412">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:26.274Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify delete cast folder from final" classname="22_casting-backgroundTest.spec.js" time="7.36">
+<testcase name="CallSheet › Send Document › verify the edit reply" classname="05_callsheetTest.spec.js" time="2.536">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:27.694Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify move to shortlist media from the media screen" classname="22_casting-backgroundTest.spec.js" time="8.971">
+<testcase name="CallSheet › Send Document › verify the readBy reply" classname="05_callsheetTest.spec.js" time="1.672">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:30.235Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify move to finals media from the media screen" classname="22_casting-backgroundTest.spec.js" time="8.216">
+<testcase name="CallSheet › Send Document › verify the delete reply" classname="05_callsheetTest.spec.js" time="5.427">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:31.914Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify edit cast details from the media screen" classname="22_casting-backgroundTest.spec.js" time="7.379">
+<testcase name="CallSheet › Send Document › verify the delete document" classname="05_callsheetTest.spec.js" time="5.96">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:37.357Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Selects Tab › verify forward cast and image reply" classname="22_casting-backgroundTest.spec.js" time="6.305">
+<testcase name="CallSheet › Send Message › verify send a message" classname="05_callsheetTest.spec.js" time="2.305">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:43.336Z - [SendMessage] Started sending message...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Shortlist Tab › verify delete all cast folder from shortlist" classname="22_casting-backgroundTest.spec.js" time="1.057">
-</testcase>
-<testcase name="Casting › Shortlist Tab › verify casting upload, open the folder, and view the image" classname="22_casting-backgroundTest.spec.js" time="8.73">
+<testcase name="CallSheet › Send Message › verify edit the message" classname="05_callsheetTest.spec.js" time="2.787">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:45.652Z - [EditMessage] Started edit message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Shortlist Tab › verify move to finals cast folder from the character screen" classname="22_casting-backgroundTest.spec.js" time="5.699">
+<testcase name="CallSheet › Send Message › verify read by status on message" classname="05_callsheetTest.spec.js" time="0.933">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:48.452Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Shortlist Tab › verify edit cast details from the media screen" classname="22_casting-backgroundTest.spec.js" time="6.775">
+<testcase name="CallSheet › Send Message › verify forward the message" classname="05_callsheetTest.spec.js" time="5.565">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:49.390Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Shortlist Tab › verify forward cast and image reply" classname="22_casting-backgroundTest.spec.js" time="7.322">
+<testcase name="CallSheet › Send Message › verify reply to the message" classname="05_callsheetTest.spec.js" time="1.147">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:54.971Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Finals Tab › verify delete all cast folder from final" classname="22_casting-backgroundTest.spec.js" time="1.041">
-</testcase>
-<testcase name="Casting › Finals Tab › verify casting upload, open the folder, and view the image" classname="22_casting-backgroundTest.spec.js" time="9.886">
+<testcase name="CallSheet › Send Message › verify the edit the reply message" classname="05_callsheetTest.spec.js" time="2.398">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:56.124Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Finals Tab › verify forward cast and image reply" classname="22_casting-backgroundTest.spec.js" time="6.959">
+<testcase name="CallSheet › Send Message › verify the read by status on reply message" classname="05_callsheetTest.spec.js" time="1.681">
 <system-out>
-<![CDATA[Popup message verified:
+<![CDATA[[INFO] 2025-09-29T07:34:58.528Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Casting › Generate pdf › verify user generate the pdf from finals" classname="22_casting-backgroundTest.spec.js" time="18.004">
+<testcase name="CallSheet › Send Message › verify the delete the reply message" classname="05_callsheetTest.spec.js" time="5.55">
 <system-out>
-<![CDATA[[INFO] 2025-09-01T11:02:40.155Z - close browser
+<![CDATA[[INFO] 2025-09-29T07:35:00.217Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the delete message" classname="05_callsheetTest.spec.js" time="5.79">
+<system-out>
+<![CDATA[[INFO] 2025-09-29T07:35:05.785Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+[INFO] 2025-09-29T07:35:11.588Z - close browser
 ]]>
 </system-out>
 </testcase>

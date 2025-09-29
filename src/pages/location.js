@@ -20,7 +20,7 @@ export default class Location {
         this.plus = page.locator('#create_location_details_modal_open_button');
         this.attchment = page.locator('[class="ant-float-btn-body"]');
         this.uploadMediaButton = page.locator("//div[contains(text(), 'Upload Media')]/ancestor::span//input[@type='file']");
-        this.send = page.locator('text=Send');
+        this.send = page.locator('text=Upload');
 
         this.folder = page.locator('[alt="folder"]');
         this.viewImage = page.locator('//div[@class="relative cursor-pointer"]//img');

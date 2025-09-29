@@ -1,0 +1,9 @@
+[INFO] 2025-09-29T07:34:49.390Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  'Reply',
+  'Edit Message',
+  'Forward',
+  'Delete',
+  'Read By',
+  'Forward to Remote Projects'
+]

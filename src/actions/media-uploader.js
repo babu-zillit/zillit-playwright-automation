@@ -61,7 +61,7 @@ export default class UploadMedia {
         this.locationUploadButton = page.locator("//div[text()='Location Upload']");
 
         this.selectButton = page.locator("//span[text()='Select']");
-        this.sendMedia = page.locator("text=Send");
+        this.sendMedia = page.locator("//button[.='Upload']");
 
         /**
          * Delete buttons locator
@@ -264,7 +264,7 @@ export default class UploadMedia {
         logger.info('[Media] Upload audio started...');
 
         await this.audioUploadButton.setInputFiles(mediapaths.audio);
-        await this.page.locator("text=Send").click();
+        await this.sendMedia.click();
         await this.page.locator('[class="w-4 h-4 text-white dark:text-white "]').waitFor({ state: 'visible' });
     }
 
@@ -272,7 +272,7 @@ export default class UploadMedia {
         logger.info('[Media] Upload document started...');
 
         await this.documentUploadButton.setInputFiles(mediapaths.document);
-        await this.page.locator("text=Send").click();
+        await this.sendMedia.click();
     }
 
     async uploadLocation(){

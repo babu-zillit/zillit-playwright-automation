@@ -137,7 +137,7 @@
               "specs": [
                 {
                   "title": "verify uploadLocation",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -150,80 +150,448 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 782,
-                          "error": {
-                            "message": "Error: locator.click: Error: strict mode violation: locator('text=Upload') resolved to 3 elements:\n    1) <div class=\"_attachment_box_hryun_1\">Upload Media</div> aka getByText('Upload Media')\n    2) <div class=\"_attachment_box_hryun_1\">Link Upload</div> aka getByText('Link Upload')\n    3) <span>Upload</span> aka getByRole('button', { name: 'Upload' })\n\nCall log:\n\u001b[2m  - waiting for locator('text=Upload')\u001b[22m\n",
-                            "stack": "Error: locator.click: Error: strict mode violation: locator('text=Upload') resolved to 3 elements:\n    1) <div class=\"_attachment_box_hryun_1\">Upload Media</div> aka getByText('Upload Media')\n    2) <div class=\"_attachment_box_hryun_1\">Link Upload</div> aka getByText('Link Upload')\n    3) <span>Upload</span> aka getByRole('button', { name: 'Upload' })\n\nCall log:\n\u001b[2m  - waiting for locator('text=Upload')\u001b[22m\n\n    at Location.uploadMedia (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:58:25)\n    at Location.uploadLocation (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:62:9)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/23_locationTest.spec.js:37:13",
-                            "location": {
-                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js",
-                              "column": 25,
-                              "line": 58
-                            },
-                            "snippet": "\u001b[90m   at \u001b[39m../pages/location.js:58\n\n\u001b[0m \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mattchment\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muploadMediaButton\u001b[33m.\u001b[39msetInputFiles(mediapaths\u001b[33m.\u001b[39mimage)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msend\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m     }\n \u001b[90m 60 |\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[36masync\u001b[39m uploadLocation(location\u001b[33m,\u001b[39m scene\u001b[33m,\u001b[39m episode){\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js",
-                                "column": 25,
-                                "line": 58
-                              },
-                              "message": "Error: locator.click: Error: strict mode violation: locator('text=Upload') resolved to 3 elements:\n    1) <div class=\"_attachment_box_hryun_1\">Upload Media</div> aka getByText('Upload Media')\n    2) <div class=\"_attachment_box_hryun_1\">Link Upload</div> aka getByText('Link Upload')\n    3) <span>Upload</span> aka getByRole('button', { name: 'Upload' })\n\nCall log:\n\u001b[2m  - waiting for locator('text=Upload')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/location.js:58\n\n\u001b[0m \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mattchment\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muploadMediaButton\u001b[33m.\u001b[39msetInputFiles(mediapaths\u001b[33m.\u001b[39mimage)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msend\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m     }\n \u001b[90m 60 |\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[36masync\u001b[39m uploadLocation(location\u001b[33m,\u001b[39m scene\u001b[33m,\u001b[39m episode){\u001b[0m\n\u001b[2m    at Location.uploadMedia (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:58:25)\u001b[22m\n\u001b[2m    at Location.uploadLocation (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:62:9)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/23_locationTest.spec.js:37:13\u001b[22m"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 5841,
+                          "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-09-29T11:52:50.942Z - browser is launching\n"
+                              "text": "[INFO] 2025-09-29T12:23:36.741Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-09-29T11:52:56.955Z - open the project\n"
+                              "text": "[INFO] 2025-09-29T12:23:42.143Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-09-29T11:52:56.955Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-09-29T11:53:02.505Z - close browser\n"
+                              "text": "[INFO] 2025-09-29T12:23:42.143Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T11:52:50.084Z",
+                          "startTime": "2025-09-29T12:23:35.966Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "_error-context-0",
-                              "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js",
-                            "column": 25,
-                            "line": 58
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "86c6ead66114a2a2b40d-63e0eeace3c3bfbb0009",
                   "file": "23_locationTest.spec.js",
                   "line": 36,
-                  "column": 14
+                  "column": 9
+                },
+                {
+                  "title": "verify open folder > see image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2011,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:23:52.040Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-cfebfbb93971a516e15f",
+                  "file": "23_locationTest.spec.js",
+                  "line": 40,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "upload location in shortlist",
+              "file": "23_locationTest.spec.js",
+              "line": 47,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify uploading location in shortlist",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5348,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:23:54.064Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-d5fdfdd7296009b1a874",
+                  "file": "23_locationTest.spec.js",
+                  "line": 49,
+                  "column": 9
+                },
+                {
+                  "title": "verify open folder > see image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2110,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:23:59.422Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-008c2a8ac33fa9c6e4ca",
+                  "file": "23_locationTest.spec.js",
+                  "line": 54,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "upload location in finals",
+              "file": "23_locationTest.spec.js",
+              "line": 63,
+              "column": 11,
+              "specs": [
+                {
+                  "title": "verify uploading location in finals",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6507,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:24:01.547Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-dc99107eb3e783c61383",
+                  "file": "23_locationTest.spec.js",
+                  "line": 65,
+                  "column": 9
+                },
+                {
+                  "title": "verify open folder > see image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2607,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:24:08.063Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-e9d2b63b7445f203d6cc",
+                  "file": "23_locationTest.spec.js",
+                  "line": 70,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Delete & move to shortlist , move to final from selects",
+              "file": "23_locationTest.spec.js",
+              "line": 78,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify location move to shortlist",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11693,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            },
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:24:10.683Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-9f5f09f851b52ed0f1ab",
+                  "file": "23_locationTest.spec.js",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "verify delete the location folder from selects",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1706,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:24:22.384Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-91fbad928c9f9e01e059",
+                  "file": "23_locationTest.spec.js",
+                  "line": 86,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Delete from shortlist",
+              "file": "23_locationTest.spec.js",
+              "line": 92,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user delete the location folder from the shortlist",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3568,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:24:24.102Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-f71d5cac85216abf5415",
+                  "file": "23_locationTest.spec.js",
+                  "line": 94,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Delete from Finals",
+              "file": "23_locationTest.spec.js",
+              "line": 101,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user deletes the location folder from finals",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2668,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:24:27.680Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-ddd1b601fd69b5dd498e",
+                  "file": "23_locationTest.spec.js",
+                  "line": 103,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Generate pdf",
+              "file": "23_locationTest.spec.js",
+              "line": 110,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user generate the pdf from finals",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 15050,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-09-29T12:24:45.434Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-29T12:24:30.361Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86c6ead66114a2a2b40d-3d2c8c0627fdf68b0b0e",
+                  "file": "23_locationTest.spec.js",
+                  "line": 112,
+                  "column": 9
                 }
               ]
             }
@@ -234,11 +602,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-29T11:52:49.725Z",
-    "duration": 13386.603000000001,
-    "expected": 0,
+    "startTime": "2025-09-29T12:23:35.518Z",
+    "duration": 70433.409,
+    "expected": 11,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

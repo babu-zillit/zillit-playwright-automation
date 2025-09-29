@@ -16,7 +16,7 @@ export default class ScriptDistribution {
          */
         this.attachment = page.locator('//div[@id="scriptFooter"]//button');
         this.documentUpload = page.locator("//div[text()='Document Upload']/ancestor::span[contains(@class, 'ant-upload')]//input[@type='file']");
-        this.send = page.locator('#upload_document_send_script_button');
+        this.send = page.locator("//button[.='Upload']");
 
         /**
          * FullScript & Page locators

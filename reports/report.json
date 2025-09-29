@@ -116,23 +116,23 @@
   },
   "suites": [
     {
-      "title": "23_locationTest.spec.js",
-      "file": "23_locationTest.spec.js",
+      "title": "24_costumeTest.spec.js",
+      "file": "24_costumeTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Location",
-          "file": "23_locationTest.spec.js",
-          "line": 6,
+          "title": "Costume",
+          "file": "24_costumeTest.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Location",
-              "file": "23_locationTest.spec.js",
-              "line": 34,
+              "title": "Costume",
+              "file": "24_costumeTest.spec.js",
+              "line": 35,
               "column": 10,
               "specs": [
                 {
@@ -151,25 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5841,
+                          "duration": 8466,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-09-29T12:23:36.741Z - browser is launching\n"
+                              "text": "[INFO] 2025-09-29T13:55:18.102Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-09-29T12:23:42.143Z - open the project\n"
+                              "text": "[INFO] 2025-09-29T13:55:23.627Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-09-29T12:23:42.143Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-09-29T13:55:23.627Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:23:35.966Z",
+                          "startTime": "2025-09-29T13:55:17.300Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,9 +177,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-63e0eeace3c3bfbb0009",
-                  "file": "23_locationTest.spec.js",
-                  "line": 36,
+                  "id": "253f94232f457f7a03cc-0ea3a7181c799d774e08",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 37,
                   "column": 9
                 },
                 {
@@ -198,12 +198,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2011,
+                          "duration": 2043,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:23:52.040Z",
+                          "startTime": "2025-09-29T13:55:38.548Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -211,21 +211,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-cfebfbb93971a516e15f",
-                  "file": "23_locationTest.spec.js",
-                  "line": 40,
+                  "id": "253f94232f457f7a03cc-8b3df7b60b9d62a71045",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 41,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "upload location in shortlist",
-              "file": "23_locationTest.spec.js",
-              "line": 47,
+              "title": "upload costume in shortlist",
+              "file": "24_costumeTest.spec.js",
+              "line": 48,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify uploading location in shortlist",
+                  "title": "verify uploading costume in shortlist",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -240,12 +240,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5348,
+                          "duration": 6404,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:23:54.064Z",
+                          "startTime": "2025-09-29T13:55:40.608Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -253,9 +253,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-d5fdfdd7296009b1a874",
-                  "file": "23_locationTest.spec.js",
-                  "line": 49,
+                  "id": "253f94232f457f7a03cc-23e8465a4b4781f51b38",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 50,
                   "column": 9
                 },
                 {
@@ -274,12 +274,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2110,
+                          "duration": 1651,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:23:59.422Z",
+                          "startTime": "2025-09-29T13:55:47.025Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -287,21 +287,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-008c2a8ac33fa9c6e4ca",
-                  "file": "23_locationTest.spec.js",
-                  "line": 54,
+                  "id": "253f94232f457f7a03cc-607d7dde08b97d2dde56",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 55,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "upload location in finals",
-              "file": "23_locationTest.spec.js",
-              "line": 63,
+              "title": "upload costume in finals",
+              "file": "24_costumeTest.spec.js",
+              "line": 64,
               "column": 11,
               "specs": [
                 {
-                  "title": "verify uploading location in finals",
+                  "title": "verify uploading costume in finals",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -316,12 +316,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6507,
+                          "duration": 6111,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:24:01.547Z",
+                          "startTime": "2025-09-29T13:55:48.691Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -329,9 +329,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-dc99107eb3e783c61383",
-                  "file": "23_locationTest.spec.js",
-                  "line": 65,
+                  "id": "253f94232f457f7a03cc-3484eda8107872727283",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 66,
                   "column": 9
                 },
                 {
@@ -350,12 +350,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2607,
+                          "duration": 1598,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:24:08.063Z",
+                          "startTime": "2025-09-29T13:55:54.812Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -363,17 +363,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-e9d2b63b7445f203d6cc",
-                  "file": "23_locationTest.spec.js",
-                  "line": 70,
+                  "id": "253f94232f457f7a03cc-63c48d2d08dee8c428a1",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 71,
                   "column": 9
                 }
               ]
             },
             {
               "title": "Delete & move to shortlist , move to final from selects",
-              "file": "23_locationTest.spec.js",
-              "line": 78,
+              "file": "24_costumeTest.spec.js",
+              "line": 79,
               "column": 10,
               "specs": [
                 {
@@ -392,7 +392,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 11693,
+                          "duration": 11166,
                           "errors": [],
                           "stdout": [
                             {
@@ -404,7 +404,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:24:10.683Z",
+                          "startTime": "2025-09-29T13:55:56.428Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -412,9 +412,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-9f5f09f851b52ed0f1ab",
-                  "file": "23_locationTest.spec.js",
-                  "line": 80,
+                  "id": "253f94232f457f7a03cc-d8325ff54eaf17e1dcf6",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 81,
                   "column": 9
                 },
                 {
@@ -433,7 +433,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1706,
+                          "duration": 5028,
                           "errors": [],
                           "stdout": [
                             {
@@ -442,7 +442,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:24:22.384Z",
+                          "startTime": "2025-09-29T13:56:07.606Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -450,17 +450,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-91fbad928c9f9e01e059",
-                  "file": "23_locationTest.spec.js",
-                  "line": 86,
+                  "id": "253f94232f457f7a03cc-79ab622bd386191b2a55",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 87,
                   "column": 9
                 }
               ]
             },
             {
               "title": "Delete from shortlist",
-              "file": "23_locationTest.spec.js",
-              "line": 92,
+              "file": "24_costumeTest.spec.js",
+              "line": 93,
               "column": 10,
               "specs": [
                 {
@@ -479,7 +479,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3568,
+                          "duration": 5976,
                           "errors": [],
                           "stdout": [
                             {
@@ -488,7 +488,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:24:24.102Z",
+                          "startTime": "2025-09-29T13:56:12.651Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -496,17 +496,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-f71d5cac85216abf5415",
-                  "file": "23_locationTest.spec.js",
-                  "line": 94,
+                  "id": "253f94232f457f7a03cc-317c8708773bbb66a9e5",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 95,
                   "column": 9
                 }
               ]
             },
             {
               "title": "Delete from Finals",
-              "file": "23_locationTest.spec.js",
-              "line": 101,
+              "file": "24_costumeTest.spec.js",
+              "line": 102,
               "column": 10,
               "specs": [
                 {
@@ -525,62 +525,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2668,
+                          "duration": 5956,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "Dropdown Items: [ \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-09-29T12:24:27.680Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "86c6ead66114a2a2b40d-ddd1b601fd69b5dd498e",
-                  "file": "23_locationTest.spec.js",
-                  "line": 103,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Generate pdf",
-              "file": "23_locationTest.spec.js",
-              "line": 110,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user generate the pdf from finals",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 15050,
-                          "errors": [],
-                          "stdout": [
+                            },
                             {
-                              "text": "[INFO] 2025-09-29T12:24:45.434Z - close browser\n"
+                              "text": "[INFO] 2025-09-29T13:56:24.625Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-09-29T12:24:30.361Z",
+                          "startTime": "2025-09-29T13:56:18.643Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -588,9 +545,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-3d2c8c0627fdf68b0b0e",
-                  "file": "23_locationTest.spec.js",
-                  "line": 112,
+                  "id": "253f94232f457f7a03cc-7bcca42547129299adc8",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 104,
                   "column": 9
                 }
               ]
@@ -602,9 +559,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-29T12:23:35.518Z",
-    "duration": 70433.409,
-    "expected": 11,
+    "startTime": "2025-09-29T13:55:16.928Z",
+    "duration": 68145.155,
+    "expected": 10,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

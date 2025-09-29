@@ -20,7 +20,7 @@ export default class Costume {
         this.plus = page.locator('#create_costume_details_modal_open_button');
         this.attchment = page.locator('[class="ant-float-btn-body"]');
         this.uploadMediaButton = page.locator("//div[contains(text(), 'Upload Media')]/ancestor::span//input[@type='file']");
-        this.send = page.locator('text=Send');
+        this.upload = page.locator("//button[.='Upload']");
 
         this.folder = page.locator('[alt="folder"]');
         this.viewImage = page.locator('//div[@class="relative cursor-pointer"]//img');
@@ -57,13 +57,13 @@ export default class Costume {
         await this.plus.click();
         await this.attchment.click();
         await this.uploadMediaButton.setInputFiles(mediapaths.image);
-        await this.send.click();
+        await this.upload.click();
     }
 
     async uploadCostume(scene, episode){
         await this.uploadMedia();
         await this.selectCharacter.click();
-        await this.folder.click();
+        await this.folder.first().click();
         await this.enterScene.fill(`${scene}`);
         await this.enterEpisode.fill(`${episode}`);
         

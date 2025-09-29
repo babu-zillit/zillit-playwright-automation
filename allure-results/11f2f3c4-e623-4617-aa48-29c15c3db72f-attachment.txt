@@ -1,0 +1,92 @@
+Failed to select dropdown option: Forward locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for getByText('Forward', { exact: true }).first()
+    - locator resolved to <span class="ant-dropdown-menu-title-content">Forward</span>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    9 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+
+    at CnC.cncDropList (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:84:76)
+    at CnC.forward (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:138:9)
+    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/20_cncTest.spec.js:42:13 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@7',
+    location: {
+      file: '/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js',
+      line: 84,
+      column: 76,
+      function: 'CnC.cncDropList'
+    },
+    category: 'pw:api',
+    title: "locator.getByText('Forward', { exact: true }).first().click",
+    apiName: 'locator.click',
+    params: { selector: 'internal:text="Forward"s >> nth=0', strict: true },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@7'
+    },
+    complete: [Function: complete],
+    endWallTime: 1759145157011,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByText('Forward', { exact: true }).first()\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <span class="ant-dropdown-menu-title-content">Forward</span>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    9 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 500ms\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m  - element was detached from the DOM, retrying\x1B[22m\n',
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByText('Forward', { exact: true }).first()\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <span class="ant-dropdown-menu-title-content">Forward</span>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    9 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 500ms\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m  - element was detached from the DOM, retrying\x1B[22m\n' +
+        '\n' +
+        '    at CnC.cncDropList (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:84:76)\n' +
+        '    at CnC.forward (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:138:9)\n' +
+        '    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/20_cncTest.spec.js:42:13',
+      cause: undefined
+    }
+  }
+}

@@ -62,6 +62,7 @@ export default class Settings {
 
 
     async openSettings(){
+        await this.page.waitForTimeout(10000);
         await this.settings.click();
         await this.adminSetting.click();
     }

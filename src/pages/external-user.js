@@ -37,6 +37,13 @@ export default class ExternalUser {
         await this.page.locator('//span[@class="ant-select-selection-item"]').nth(2).click();
         await this.page.waitForTimeout(500);
         await this.page.keyboard.press('Enter');
+        await this.page.locator('//span[@class="ant-select-selection-item"]').last().click();
+        await this.page.waitForTimeout(500);
+        await this.page.keyboard.press('Enter');
+        await this.page.waitForTimeout(1000);
+        await this.page.locator('#designation_id').click();
+        await this.page.waitForTimeout(500);
+        await this.page.keyboard.press('Enter');
         await this.submit.click();
 
         const successMsg = await this.page.locator('text=External user information has been added successfully.');

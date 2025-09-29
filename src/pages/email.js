@@ -13,7 +13,7 @@ export default class Email {
         this.synchronusEmail = page.locator('//p[@class=" flex items-center gap-2"]');
 
         this.newEmail = page.locator('//button//span[text()="New Email"]');
-        this.to = page.locator('[placeholder="to"]');
+        this.to = page.locator('[placeholder="To"]');
         this.cc = page.locator('[placeholder="cc"]');
         this.subject = page.locator('[placeholder="subject"]');
         this.typeMessage = page.locator('[class="ql-editor ql-blank"]');

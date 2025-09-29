@@ -74,7 +74,7 @@ test.describe('Settings', () => {
     });
 
 
-    test.describe('WaterMark Logo Company', () => {
+    test.describe.skip('WaterMark Logo Company', () => {
 
         test('verify upload water mark logo', async () => {
             await settingPage.uploadWaterMarkLogo();

@@ -33,7 +33,7 @@ test.describe('Location', () => {
 
     test.describe('Location', () => {
 
-        test('verify uploadLocation', async () => {
+        test.only('verify uploadLocation', async () => {
             await locationPage.uploadLocation('Central Park', '9', '1');
         }); 
 

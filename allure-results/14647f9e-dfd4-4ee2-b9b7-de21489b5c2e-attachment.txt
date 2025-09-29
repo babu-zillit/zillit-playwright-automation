@@ -1,0 +1,9 @@
+Dropdown items: [
+  'Image Reply',
+  'Reply',
+  'Forward',
+  'Save',
+  'Forward to Remote Projects',
+  'Delete'
+]
+[INFO] 2025-09-29T11:25:56.741Z - close browser

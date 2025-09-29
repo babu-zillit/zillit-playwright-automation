@@ -1,0 +1,2 @@
+[INFO] 2025-09-29T11:25:58.685Z - browser is launching
+[INFO] 2025-09-29T11:26:00.297Z - close browser

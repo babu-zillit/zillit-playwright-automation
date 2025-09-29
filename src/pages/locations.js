@@ -92,7 +92,7 @@ export default class Location {
         await this.plus.click();
         await this.attchment.click();
         await this.uploadMediaButton.setInputFiles(mediapaths.image);
-        await this.upload.nth(1).click();
+        await this.upload.nth(1).click(); //upload button
     }
 
     async uploadLocation(location, scene, episode, discription){

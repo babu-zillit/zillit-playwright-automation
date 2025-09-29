@@ -1,3 +1,0 @@
-[INFO] 2025-09-29T11:23:36.906Z - [SendMessage] Started sending message...
-✅ AppleScript ran successfully
-✅ AppleScript ran successfully

@@ -1,0 +1,47 @@
+Failed to select dropdown option: Forward locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('div[class*="ant-dropdown-placement-"] li').filter({ hasText: 'Forward' }).first()
+
+    at UploadMedia.handleDropdownAction (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:117:67)
+    at UploadMedia.forward (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:147:9)
+    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/09_accountTest.spec.js:54:13 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@8',
+    location: {
+      file: '/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js',
+      line: 117,
+      column: 67,
+      function: 'UploadMedia.handleDropdownAction'
+    },
+    category: 'pw:api',
+    title: 'locator.click(div[class*="ant-dropdown-placement-"] li >> internal:has-text="Forward"i >> nth=0)',
+    apiName: 'locator.click',
+    params: {
+      selector: 'div[class*="ant-dropdown-placement-"] li >> internal:has-text="Forward"i >> nth=0',
+      strict: true
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@8'
+    },
+    complete: [Function: complete],
+    endWallTime: 1759134259013,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('div[class*="ant-dropdown-placement-"] li').filter({ hasText: 'Forward' }).first()\x1B[22m\n`,
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('div[class*="ant-dropdown-placement-"] li').filter({ hasText: 'Forward' }).first()\x1B[22m\n` +
+        '\n' +
+        '    at UploadMedia.handleDropdownAction (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:117:67)\n' +
+        '    at UploadMedia.forward (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:147:9)\n' +
+        '    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/09_accountTest.spec.js:54:13',
+      cause: undefined
+    }
+  }
+}

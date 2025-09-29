@@ -16,7 +16,7 @@ export default class Continuity {
          */ 
         this.attachment = page.locator('button.css-2iw4eq.ant-float-btn.ant-float-btn-primary.ant-float-btn-circle');
         this.uploadMediaButton = page.locator("//div[text()='Upload Media']/ancestor::span[contains(@class, 'ant-upload')]//input[@type='file']");
-        this.send = page.locator('//div[contains(@class,"text-end")]//button//span[text()="Send"]');
+        this.upload = page.locator("//button[.='Upload']");
 
         /**
          * continuity locators
@@ -62,7 +62,7 @@ export default class Continuity {
     async uploadMedia(){
         await this.attachment.click();
         await this.uploadMediaButton.setInputFiles(mediapaths.image);
-        await this.send.click(); 
+        await this.upload.click(); 
         
         await this.enterSceneNumber.fill('99');
         await this.enterEpisodeNumber.fill('88');

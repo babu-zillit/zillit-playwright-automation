@@ -1,89 +1,78 @@
-<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="89.42291900000001">
-<testsuite name="05_callsheetTest.spec.js" timestamp="2025-09-29T07:33:42.865Z" hostname="chromium" tests="17" failures="0" skipped="0" time="75.152" errors="0">
-<testcase name="CallSheet › Send Document › verify the send a message → send document by clicking on continuation → send document by clicking on new" classname="05_callsheetTest.spec.js" time="23.314">
+<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="134.60914000000002">
+<testsuite name="10_cateringTest.spec.js" timestamp="2025-09-29T09:40:11.407Z" hostname="chromium" tests="17" failures="0" skipped="0" time="111.55" errors="0">
+<testcase name="Catering › User change the department › verify user become cater department" classname="10_cateringTest.spec.js" time="20.02">
 <system-out>
-<![CDATA[[INFO] 2025-09-29T07:33:44.119Z - browser is launching
-[INFO] 2025-09-29T07:33:50.466Z - open the project
+<![CDATA[[INFO] 2025-09-29T09:40:12.525Z - browser is launching
+[INFO] 2025-09-29T09:40:21.398Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-09-29T07:33:50.466Z - QA environment is started...
-[INFO] 2025-09-29T07:33:56.246Z - [SendMessage] Started sending message...
-✅ AppleScript ran successfully
-✅ AppleScript ran successfully
+[INFO] 2025-09-29T09:40:21.398Z - QA environment is started...
+Dropdown Options: [
+  [32m'Camera'[39m,
+  [32m'Casting'[39m,
+  [32m'Catering'[39m,
+  [32m'Locations'[39m,
+  [32m'Riggers & Electrical-Rigging'[39m,
+  [32m'Electrical'[39m,
+  [32m'Cast/Talent'[39m
+]
+Dropdown Options: [
+  [32m'Camera'[39m,
+  [32m'Casting'[39m,
+  [32m'Catering'[39m,
+  [32m'Locations'[39m,
+  [32m'Riggers & Electrical-Rigging'[39m,
+  [32m'Electrical'[39m,
+  [32m'Cast/Talent'[39m,
+  [32m'Select Designation'[39m,
+  [32m'Caterers'[39m,
+  [32m'Chef'[39m,
+  [32m'Craft Services'[39m,
+  [32m'Head Chef'[39m,
+  [32m'Scene Cuisine Caterer'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Document › verify the readBy status" classname="05_callsheetTest.spec.js" time="1.108">
+<testcase name="Catering › Send Message › verify send a message" classname="10_cateringTest.spec.js" time="14.6">
 <system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:19.578Z - [ReadByMessage] Started readBy message...
+<![CDATA[[INFO] 2025-09-29T09:41:06.092Z - [SendMessage] Started sending message...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Message › verify edit the message" classname="10_cateringTest.spec.js" time="2.751">
+<system-out>
+<![CDATA[[INFO] 2025-09-29T09:41:08.395Z - [EditMessage] Started edit message...
 Dropdown list items: [
-  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Document › verify the forward" classname="05_callsheetTest.spec.js" time="5.567">
+<testcase name="Catering › Send Message › verify forward the message" classname="10_cateringTest.spec.js" time="5.727">
 <system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:20.692Z - [ForwardMessage] Started forward message...
+<![CDATA[[INFO] 2025-09-29T09:41:11.157Z - [ForwardMessage] Started forward message...
 Dropdown list items: [
-  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Document › verify the reply" classname="05_callsheetTest.spec.js" time="1.412">
+<testcase name="Catering › Send Message › verify the delete message" classname="10_cateringTest.spec.js" time="5.883">
 <system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:26.274Z - [ReplyMessage] Started reply message...
+<![CDATA[[INFO] 2025-09-29T09:41:17.010Z - [Delete] deletion started...
 Dropdown list items: [
-  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the edit reply" classname="05_callsheetTest.spec.js" time="2.536">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:27.694Z - [editReply] Started edit reply message...
-Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the readBy reply" classname="05_callsheetTest.spec.js" time="1.672">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:30.235Z - [readByReply] Started read By reply message...
-Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the delete reply" classname="05_callsheetTest.spec.js" time="5.427">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:31.914Z - [deleteReply] Started delete reply message...
-Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the delete document" classname="05_callsheetTest.spec.js" time="5.96">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:37.357Z - [Delete] deletion started...
-Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 Waiting for popup to appear...
@@ -91,103 +80,115 @@ Waiting for popup to disappear...
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Message › verify send a message" classname="05_callsheetTest.spec.js" time="2.305">
+<testcase name="Catering › Send Image › verify the send a image" classname="10_cateringTest.spec.js" time="2.973">
 <system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:43.336Z - [SendMessage] Started sending message...
+<![CDATA[[INFO] 2025-09-29T09:41:22.939Z - [Media] Upload image started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Message › verify edit the message" classname="05_callsheetTest.spec.js" time="2.787">
+<testcase name="Catering › Send Image › verify the forward" classname="10_cateringTest.spec.js" time="6.099">
 <system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:45.652Z - [EditMessage] Started edit message...
+<![CDATA[[INFO] 2025-09-29T09:41:25.787Z - [ForwardMessage] Started forward message...
 Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Read By'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Message › verify read by status on message" classname="05_callsheetTest.spec.js" time="0.933">
+<testcase name="Catering › Send Image › verify the delete image" classname="10_cateringTest.spec.js" time="5.929">
 <system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:48.452Z - [ReadByMessage] Started readBy message...
+<![CDATA[[INFO] 2025-09-29T09:41:32.008Z - [Delete] deletion started...
 Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify forward the message" classname="05_callsheetTest.spec.js" time="5.565">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:49.390Z - [ForwardMessage] Started forward message...
-Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify reply to the message" classname="05_callsheetTest.spec.js" time="1.147">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:54.971Z - [ReplyMessage] Started reply message...
-Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the edit the reply message" classname="05_callsheetTest.spec.js" time="2.398">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:56.124Z - [editReply] Started edit reply message...
-Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the read by status on reply message" classname="05_callsheetTest.spec.js" time="1.681">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:34:58.528Z - [readByReply] Started read By reply message...
-Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the delete the reply message" classname="05_callsheetTest.spec.js" time="5.55">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:35:00.217Z - [deleteReply] Started delete reply message...
-Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the delete message" classname="05_callsheetTest.spec.js" time="5.79">
-<system-out>
-<![CDATA[[INFO] 2025-09-29T07:35:05.785Z - [Delete] deletion started...
-Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 Waiting for popup to appear...
 Waiting for popup to disappear...
-[INFO] 2025-09-29T07:35:11.588Z - close browser
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document › verify the send a document" classname="10_cateringTest.spec.js" time="1.029">
+<system-out>
+<![CDATA[[INFO] 2025-09-29T09:41:37.984Z - [Media] Upload document started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document › verify the forward" classname="10_cateringTest.spec.js" time="8.003">
+<system-out>
+<![CDATA[[INFO] 2025-09-29T09:41:38.890Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document › verify the delete document" classname="10_cateringTest.spec.js" time="5.937">
+<system-out>
+<![CDATA[[INFO] 2025-09-29T09:41:47.045Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio › verify the send a audio" classname="10_cateringTest.spec.js" time="2.882">
+<system-out>
+<![CDATA[[INFO] 2025-09-29T09:41:53.002Z - [Media] Upload audio started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio › verify the forward" classname="10_cateringTest.spec.js" time="6.131">
+<system-out>
+<![CDATA[[INFO] 2025-09-29T09:41:55.772Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio › verify the delete audio" classname="10_cateringTest.spec.js" time="5.975">
+<system-out>
+<![CDATA[[INFO] 2025-09-29T09:42:02.042Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify create unit" classname="10_cateringTest.spec.js" time="7.344">
+</testcase>
+<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify edit unit" classname="10_cateringTest.spec.js" time="3.859">
+</testcase>
+<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify delete unit" classname="10_cateringTest.spec.js" time="6.408">
+<system-out>
+<![CDATA[[INFO] 2025-09-29T09:42:25.558Z - close browser
 ]]>
 </system-out>
 </testcase>

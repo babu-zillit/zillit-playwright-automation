@@ -1,7 +1,0 @@
-Color options: [
-  'RED',    'BLUE',
-  'GREEN',  'ORANGE',
-  'BROWN',  'PINK',
-  'PURPLE'
-]
-Clicked on available color: GREEN

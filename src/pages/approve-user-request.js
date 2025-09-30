@@ -14,6 +14,7 @@ export default class ApproveUserRequest{
     }
 
     async openSettings(){
+        await this.page.waitForTimeout(15000);
         await this.settings.click();
         await this.adminSetting.click();
     }
@@ -22,7 +23,7 @@ export default class ApproveUserRequest{
         await this.approveNewUserRequestTab.click();
         await this.acceptUser.click();
         await this.yesApprove.nth(1).click();
-        await this.page.waitForTimeout(20000);
+        await this.page.waitForTimeout(2000);
     }
 
 }

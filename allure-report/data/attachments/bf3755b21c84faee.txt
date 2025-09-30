@@ -1,4 +1,0 @@
-[INFO] 2025-08-27T06:31:10.036Z - [StartProject] project creation is started...
-Language Options: [ 'Entertainment Industry', 'Personal Communication', 'Other' ]
-Options: [ 'Feature', 'Television', 'Commercial', 'Documentary', 'Music Video' ]
-Language Options: []

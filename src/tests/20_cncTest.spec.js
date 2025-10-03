@@ -104,7 +104,7 @@ test.describe('CnC', () => {
     
     });
 
-        test.describe('send document', () => {
+    test.describe('send document', () => {
 
         test('verify user send image', async () => {
             await cncPage.attachment();

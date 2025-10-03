@@ -160,7 +160,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-03T11:59:55.660Z",
+                          "startTime": "2025-10-03T12:54:19.541Z",
                           "annotations": [
                             {
                               "type": "skip"
@@ -193,25 +193,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12674,
+                          "duration": 13527,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-03T11:59:56.579Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-03T12:54:20.114Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-03T12:00:03.141Z - open the project\n"
+                              "text": "[INFO] 2025-10-03T12:54:23.900Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-03T12:00:03.142Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-10-03T12:54:23.900Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-03T11:59:55.660Z",
+                          "startTime": "2025-10-03T12:54:19.542Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -248,12 +248,12 @@
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-03T12:00:20.419Z - close browser\n"
+                              "text": "[INFO] 2025-10-03T12:54:41.347Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-03T12:00:20.414Z",
+                          "startTime": "2025-10-03T12:54:41.340Z",
                           "annotations": [
                             {
                               "type": "skip"
@@ -279,8 +279,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-03T11:59:55.301Z",
-    "duration": 25592.792,
+    "startTime": "2025-10-03T12:54:19.188Z",
+    "duration": 22455.78,
     "expected": 1,
     "skipped": 2,
     "unexpected": 0,

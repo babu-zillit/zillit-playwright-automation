@@ -41,7 +41,7 @@ test.describe('Budget Full', () => {
             await budgetPage.uploadPdf(99);
         });
 
-        test('verify view - download - view count - download count', async () => {
+        test('verify View → Download → View Count → Download Count', async () => {
             await budgetPage.openDocument();
             await budgetPage.view();
             await budgetPage.viewCount();

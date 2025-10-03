@@ -4,7 +4,7 @@ import CnC from "../pages/cnc";
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 
-test.describe('Budget Full', () => {
+test.describe('Budget Department', () => {
     test.setTimeout(30000);
     let context;
     let page;
@@ -35,14 +35,14 @@ test.describe('Budget Full', () => {
 
 
 
-    test.describe.only('upload the budget', () => {
+    test.describe.only('upload the budget department', () => {
 
-        test.skip('verify upload budget full document', async () => {
+        test.skip('verify upload budget department document', async () => {
             await budgetPage.plusBudgetDepartment();
             await budgetPage.uploadPdf(99);
         });
 
-        test('verify view - download - view count - download count', async () => {
+        test('verify View → Download → View Count → Download Count', async () => {
             await budgetPage.openDocument();
             await budgetPage.openDocument();
             await budgetPage.view();

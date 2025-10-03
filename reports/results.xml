@@ -1,5 +1,5 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="2" errors="0" time="25.592792000000003">
-<testsuite name="budgetDepartmentTest.spec.js" timestamp="2025-10-03T11:59:55.326Z" hostname="chromium" tests="3" failures="0" skipped="2" time="12.674" errors="0">
+<testsuites id="" name="" tests="3" failures="0" skipped="2" errors="0" time="22.455779999999997">
+<testsuite name="budgetDepartmentTest.spec.js" timestamp="2025-10-03T12:54:19.211Z" hostname="chromium" tests="3" failures="0" skipped="2" time="13.527" errors="0">
 <testcase name="Budget Full › upload the budget › verify upload budget full document" classname="budgetDepartmentTest.spec.js" time="0">
 <properties>
 <property name="skip" value="">
@@ -8,12 +8,12 @@
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Budget Full › upload the budget › verify view - download - view count - download count" classname="budgetDepartmentTest.spec.js" time="12.674">
+<testcase name="Budget Full › upload the budget › verify view - download - view count - download count" classname="budgetDepartmentTest.spec.js" time="13.527">
 <system-out>
-<![CDATA[[INFO] 2025-10-03T11:59:56.579Z - browser is launching
-[INFO] 2025-10-03T12:00:03.141Z - open the project
+<![CDATA[[INFO] 2025-10-03T12:54:20.114Z - browser is launching
+[INFO] 2025-10-03T12:54:23.900Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-03T12:00:03.142Z - QA environment is started...
+[INFO] 2025-10-03T12:54:23.900Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>

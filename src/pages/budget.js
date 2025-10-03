@@ -9,6 +9,7 @@ export default class Budget{
 
         this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
         this.budgetFull = page.locator('div.ant-card-body').getByText('Budget (Full)');
+        this.budgetDepartment = page.locator('div.ant-card-body').getByText('Budget (Department)');
 
         /**
          * upload pdf locators
@@ -38,11 +39,22 @@ export default class Budget{
         this.createGroupButton = page.locator('#budget_create_group_button');
         this.profilePic = page.locator('div.ant-card-meta-avatar');
 
+        /**
+         * Budget Department locator
+         */
+        this.plusDepartment = page.locator('#budget_create_new_department_button');
+        this.departmentList = page.locator('div.ant-collapse-item');     
+
     }
 
     async openBudget(){
         await this.tools.click();
         await this.budgetFull.click();
+    }
+
+    async openBudgetDepartment(){
+        await this.tools.click();
+        await this.budgetDepartment.click();
     }
 
     async verifypopup(message){
@@ -66,8 +78,11 @@ export default class Budget{
         await this.upload.click();
     }
 
+    async openDocument(){
+        await this.clickOnEpisodeNumber.first().click();
+    }
+
     async view(){ 
-        await this.clickOnEpisodeNumber.click();
         await this.moreButton.click();
         await this.viewButton.click();
         await this.close.click();
@@ -133,13 +148,9 @@ export default class Budget{
         await this.cncPage.send.nth(0).click();
     }
 
-    async documentUpload(){
-        await this.documentUploadInput.setInputFiles(mediapaths.document);
-        await this.send.nth(0).click();
-        await this.page.waitForSelector('[data-icon="loading"]', { state: 'visible' });
-        await this.page.waitForSelector('[data-icon="loading"]', { state: 'hidden' });
+    async plusBudgetDepartment(){
+        await this.plusDepartment.click();
+        await this.departmentList.first().click();
     }
-
-
 
 }

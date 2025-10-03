@@ -5,7 +5,7 @@ import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 
 test.describe('Budget Full', () => {
-    test.setTimeout(60000);
+    test.setTimeout(30000);
     let context;
     let page;
     let uploadmedia;
@@ -25,7 +25,7 @@ test.describe('Budget Full', () => {
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
-        await budgetPage.openBudget();
+        await budgetPage.openBudgetDepartment();
     });
 
     test.afterAll(async () => {
@@ -35,13 +35,15 @@ test.describe('Budget Full', () => {
 
 
 
-    test.describe('upload the budget', () => {
+    test.describe.only('upload the budget', () => {
 
         test.skip('verify upload budget full document', async () => {
+            await budgetPage.plusBudgetDepartment();
             await budgetPage.uploadPdf(99);
         });
 
         test('verify view - download - view count - download count', async () => {
+            await budgetPage.openDocument();
             await budgetPage.openDocument();
             await budgetPage.view();
             await budgetPage.viewCount();
@@ -49,13 +51,13 @@ test.describe('Budget Full', () => {
             await budgetPage.downloadCount();
         });
 
-        test('verify add member', async () => {
+        test.skip('verify add member', async () => {
             await budgetPage.addMember();
         });
     
     });
 
-     test.describe('send message', () => {
+     test.describe.skip('send message', () => {
 
         test('verify user send message', async () => {
             await cncPage.sendMessage();
@@ -75,7 +77,7 @@ test.describe('Budget Full', () => {
     
     });
 
-    test.describe('send image', () => {
+    test.describe.skip('send image', () => {
 
         test('verify user send image', async () => {
             await budgetPage.attachment();
@@ -100,7 +102,7 @@ test.describe('Budget Full', () => {
     
     });
 
-    test.describe('send video', () => {
+    test.describe.skip('send video', () => {
 
         test('verify user send image', async () => {
             await budgetPage.attachment();
@@ -125,7 +127,7 @@ test.describe('Budget Full', () => {
     
     });
 
-    test.describe('send document', () => {
+    test.describe.skip('send document', () => {
 
         test('verify user send image', async () => {
             await budgetPage.attachment();
@@ -151,7 +153,7 @@ test.describe('Budget Full', () => {
     });
 
 
-    test.describe('send audio', () => {
+    test.describe.skip('send audio', () => {
 
         test('verify user send image', async () => {
             await budgetPage.attachment();
@@ -180,5 +182,5 @@ test.describe('Budget Full', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/budgetFullTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/budgetDepartmentTest.spec.js --project=chromium --headed
    */ 

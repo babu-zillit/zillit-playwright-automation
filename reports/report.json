@@ -160,7 +160,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:45:44.491Z",
+                          "startTime": "2025-10-06T07:06:50.958Z",
                           "annotations": [
                             {
                               "type": "skip"
@@ -201,25 +201,22 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5150,
+                          "duration": 6758,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:45:45.535Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-06T07:06:51.235Z - browser is launching\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-06T06:45:50.191Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-06T06:45:52.326Z - [SendMessage] Started sending message...\n"
+                              "text": "[INFO] 2025-10-06T07:06:54.123Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:45:44.491Z",
+                          "startTime": "2025-10-06T07:06:50.959Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -248,19 +245,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2332,
+                          "duration": 2275,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:45:57.489Z - [EditMessage] Started edit message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:45:57.479Z",
+                          "startTime": "2025-10-06T07:07:02.948Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -289,19 +283,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2275,
+                          "duration": 2259,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:45:59.829Z - [ReadByMessage] Started readBy message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:45:59.822Z",
+                          "startTime": "2025-10-06T07:07:05.239Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -330,19 +321,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5859,
+                          "duration": 6269,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:02.124Z - [ForwardMessage] Started forward message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:02.106Z",
+                          "startTime": "2025-10-06T07:07:07.505Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -371,19 +359,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1416,
+                          "duration": 1463,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:07.998Z - [ReplyMessage] Started reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:07.982Z",
+                          "startTime": "2025-10-06T07:07:13.787Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -412,19 +397,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2941,
+                          "duration": 2061,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:09.436Z - [editReply] Started edit reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:09.415Z",
+                          "startTime": "2025-10-06T07:07:15.268Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -453,19 +435,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1989,
+                          "duration": 2279,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:12.382Z - [readByReply] Started read By reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:12.378Z",
+                          "startTime": "2025-10-06T07:07:17.343Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -494,19 +473,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5607,
+                          "duration": 5902,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:14.380Z - [deleteReply] Started delete reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:14.373Z",
+                          "startTime": "2025-10-06T07:07:19.630Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -535,25 +511,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6792,
+                          "duration": 5831,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:46:20.008Z - [Delete] deletion started...\n"
-                            },
-                            {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Waiting for popup to appear...\n"
-                            },
-                            {
-                              "text": "Waiting for popup to disappear...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:19.991Z",
+                          "startTime": "2025-10-06T07:07:25.543Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -590,16 +557,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3317,
+                          "duration": 2400,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:26.888Z - [Media] Upload image started...\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:26.804Z",
+                          "startTime": "2025-10-06T07:07:31.392Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -628,19 +591,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2278,
+                          "duration": 2270,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:30.153Z - [ReadByMessage] Started readBy message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:30.138Z",
+                          "startTime": "2025-10-06T07:07:33.805Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -669,19 +629,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5764,
+                          "duration": 6222,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:32.440Z - [ForwardMessage] Started forward message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:32.432Z",
+                          "startTime": "2025-10-06T07:07:36.090Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -714,15 +671,12 @@
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:46:38.219Z - [ReplyMessage] Started reply message...\n"
-                            },
-                            {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:38.206Z",
+                          "startTime": "2025-10-06T07:07:42.321Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -751,19 +705,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2519,
+                          "duration": 2127,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:39.635Z - [editReply] Started edit reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:39.623Z",
+                          "startTime": "2025-10-06T07:07:43.737Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -792,19 +743,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1997,
+                          "duration": 1971,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:42.161Z - [readByReply] Started read By reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:42.155Z",
+                          "startTime": "2025-10-06T07:07:45.878Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -833,19 +781,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5814,
+                          "duration": 5579,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:46:44.167Z - [deleteReply] Started delete reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:44.160Z",
+                          "startTime": "2025-10-06T07:07:47.859Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -874,7 +819,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 989,
+                          "duration": 900,
                           "errors": [],
                           "stdout": [
                             {
@@ -883,7 +828,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:49.984Z",
+                          "startTime": "2025-10-06T07:07:53.446Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -912,7 +857,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6620,
+                          "duration": 5777,
                           "errors": [],
                           "stdout": [
                             {
@@ -921,7 +866,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:50.989Z",
+                          "startTime": "2025-10-06T07:07:54.360Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -950,25 +895,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6865,
+                          "duration": 5816,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:46:57.628Z - [Delete] deletion started...\n"
-                            },
-                            {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Waiting for popup to appear...\n"
-                            },
-                            {
-                              "text": "Waiting for popup to disappear...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:46:57.615Z",
+                          "startTime": "2025-10-06T07:08:00.147Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1005,16 +941,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3275,
+                          "duration": 2821,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:04.568Z - [Media] Upload video started...\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:04.497Z",
+                          "startTime": "2025-10-06T07:08:05.980Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1043,19 +975,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2301,
+                          "duration": 2408,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:07.798Z - [ReadByMessage] Started readBy message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:07.787Z",
+                          "startTime": "2025-10-06T07:08:08.817Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1084,19 +1013,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6254,
+                          "duration": 5898,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:10.107Z - [ForwardMessage] Started forward message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:10.100Z",
+                          "startTime": "2025-10-06T07:08:11.239Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1125,19 +1051,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1401,
+                          "duration": 1395,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:16.380Z - [ReplyMessage] Started reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:16.365Z",
+                          "startTime": "2025-10-06T07:08:17.147Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1166,19 +1089,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2901,
+                          "duration": 2131,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:17.788Z - [editReply] Started edit reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:17.781Z",
+                          "startTime": "2025-10-06T07:08:18.559Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1207,19 +1127,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2082,
+                          "duration": 2209,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:20.702Z - [readByReply] Started read By reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:20.691Z",
+                          "startTime": "2025-10-06T07:08:20.703Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1248,19 +1165,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5585,
+                          "duration": 5673,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:22.792Z - [deleteReply] Started delete reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:22.785Z",
+                          "startTime": "2025-10-06T07:08:22.923Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1289,7 +1203,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 907,
+                          "duration": 894,
                           "errors": [],
                           "stdout": [
                             {
@@ -1298,7 +1212,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:28.380Z",
+                          "startTime": "2025-10-06T07:08:28.603Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1327,7 +1241,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5560,
+                          "duration": 5558,
                           "errors": [],
                           "stdout": [
                             {
@@ -1336,7 +1250,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:29.302Z",
+                          "startTime": "2025-10-06T07:08:29.504Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1365,25 +1279,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6908,
+                          "duration": 5789,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:47:34.877Z - [Delete] deletion started...\n"
-                            },
-                            {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Waiting for popup to appear...\n"
-                            },
-                            {
-                              "text": "Waiting for popup to disappear...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:34.869Z",
+                          "startTime": "2025-10-06T07:08:35.071Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1420,16 +1325,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2780,
+                          "duration": 2275,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:41.867Z - [Media] Upload audio started...\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:41.790Z",
+                          "startTime": "2025-10-06T07:08:40.875Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1458,19 +1359,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3091,
+                          "duration": 2286,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:44.594Z - [ReadByMessage] Started readBy message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:44.586Z",
+                          "startTime": "2025-10-06T07:08:43.165Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1499,19 +1397,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5853,
+                          "duration": 5876,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:47.694Z - [ForwardMessage] Started forward message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:47.688Z",
+                          "startTime": "2025-10-06T07:08:45.465Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1544,15 +1439,12 @@
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:47:53.570Z - [ReplyMessage] Started reply message...\n"
-                            },
-                            {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:53.552Z",
+                          "startTime": "2025-10-06T07:08:51.362Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1581,19 +1473,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2932,
+                          "duration": 2640,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:55.043Z - [editReply] Started edit reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:55.032Z",
+                          "startTime": "2025-10-06T07:08:52.839Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1622,19 +1511,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1990,
+                          "duration": 2098,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:57.981Z - [readByReply] Started read By reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:57.977Z",
+                          "startTime": "2025-10-06T07:08:55.491Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1663,19 +1549,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5601,
+                          "duration": 5584,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:47:59.980Z - [deleteReply] Started delete reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:47:59.974Z",
+                          "startTime": "2025-10-06T07:08:57.594Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1704,7 +1587,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1006,
+                          "duration": 1008,
                           "errors": [],
                           "stdout": [
                             {
@@ -1713,7 +1596,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:05.584Z",
+                          "startTime": "2025-10-06T07:09:03.189Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1742,7 +1625,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6573,
+                          "duration": 5596,
                           "errors": [],
                           "stdout": [
                             {
@@ -1751,7 +1634,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:06.606Z",
+                          "startTime": "2025-10-06T07:09:04.214Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1780,25 +1663,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6781,
+                          "duration": 5966,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:48:13.203Z - [Delete] deletion started...\n"
-                            },
-                            {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Waiting for popup to appear...\n"
-                            },
-                            {
-                              "text": "Waiting for popup to disappear...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:13.189Z",
+                          "startTime": "2025-10-06T07:09:09.821Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1835,16 +1709,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 975,
+                          "duration": 979,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:48:20.049Z - [Media] Upload document started...\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:19.987Z",
+                          "startTime": "2025-10-06T07:09:15.805Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1873,19 +1743,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4552,
+                          "duration": 3682,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:48:20.977Z - [ReadByMessage] Started readBy message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:20.971Z",
+                          "startTime": "2025-10-06T07:09:16.804Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1914,19 +1781,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5853,
+                          "duration": 6157,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:48:25.537Z - [ForwardMessage] Started forward message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:25.531Z",
+                          "startTime": "2025-10-06T07:09:20.506Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1955,19 +1819,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1405,
+                          "duration": 1377,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:48:31.407Z - [ReplyMessage] Started reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:31.394Z",
+                          "startTime": "2025-10-06T07:09:26.674Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1996,19 +1857,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2890,
+                          "duration": 2574,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:48:32.828Z - [editReply] Started edit reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:32.814Z",
+                          "startTime": "2025-10-06T07:09:28.067Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2037,19 +1895,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2082,
+                          "duration": 1966,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:48:35.737Z - [readByReply] Started read By reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:35.722Z",
+                          "startTime": "2025-10-06T07:09:30.655Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2078,19 +1933,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4474,
+                          "duration": 5469,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:48:37.827Z - [deleteReply] Started delete reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:37.821Z",
+                          "startTime": "2025-10-06T07:09:32.627Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2119,7 +1971,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 896,
+                          "duration": 910,
                           "errors": [],
                           "stdout": [
                             {
@@ -2128,7 +1980,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:42.305Z",
+                          "startTime": "2025-10-06T07:09:38.106Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2157,7 +2009,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 9577,
+                          "duration": 8664,
                           "errors": [],
                           "stdout": [
                             {
@@ -2166,7 +2018,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:43.212Z",
+                          "startTime": "2025-10-06T07:09:39.032Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2195,25 +2047,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6888,
+                          "duration": 5888,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:48:52.813Z - [Delete] deletion started...\n"
-                            },
-                            {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Waiting for popup to appear...\n"
-                            },
-                            {
-                              "text": "Waiting for popup to disappear...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:52.800Z",
+                          "startTime": "2025-10-06T07:09:47.705Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2250,16 +2093,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7185,
+                          "duration": 6564,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:48:59.787Z - [Location] Upload location started...\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:48:59.706Z",
+                          "startTime": "2025-10-06T07:09:53.605Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2288,19 +2127,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2396,
+                          "duration": 2268,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:49:06.914Z - [ReadByMessage] Started readBy message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:49:06.909Z",
+                          "startTime": "2025-10-06T07:10:00.188Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2329,19 +2165,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6762,
+                          "duration": 5850,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:49:09.318Z - [ForwardMessage] Started forward message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:49:09.312Z",
+                          "startTime": "2025-10-06T07:10:02.468Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2370,19 +2203,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1502,
+                          "duration": 1037,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:49:16.112Z - [ReplyMessage] Started reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:49:16.086Z",
+                          "startTime": "2025-10-06T07:10:08.330Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2411,19 +2241,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3052,
+                          "duration": 2096,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:49:17.621Z - [editReply] Started edit reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:49:17.613Z",
+                          "startTime": "2025-10-06T07:10:09.383Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2452,19 +2279,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2103,
+                          "duration": 2195,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:49:20.682Z - [readByReply] Started read By reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:49:20.674Z",
+                          "startTime": "2025-10-06T07:10:11.486Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2493,19 +2317,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5409,
+                          "duration": 4454,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:49:22.794Z - [deleteReply] Started delete reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:49:22.786Z",
+                          "startTime": "2025-10-06T07:10:13.692Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2534,25 +2355,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6902,
+                          "duration": 5763,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:49:28.221Z - [Delete] deletion started...\n"
-                            },
-                            {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Waiting for popup to appear...\n"
-                            },
-                            {
-                              "text": "Waiting for popup to disappear...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:49:28.208Z",
+                          "startTime": "2025-10-06T07:10:18.155Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2589,25 +2401,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6279,
+                          "duration": 5179,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-06T06:49:35.219Z - [Media] Upload image started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-06T06:49:38.473Z - [ImageReply] Started image reply message...\n"
-                            },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-06T06:49:41.431Z - close browser\n"
+                              "text": "[INFO] 2025-10-06T07:10:29.130Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:49:35.127Z",
+                          "startTime": "2025-10-06T07:10:23.930Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2629,8 +2435,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-06T06:45:44.129Z",
-    "duration": 237824.99099999998,
+    "startTime": "2025-10-06T07:06:50.605Z",
+    "duration": 218998.92,
     "expected": 58,
     "skipped": 1,
     "unexpected": 0,

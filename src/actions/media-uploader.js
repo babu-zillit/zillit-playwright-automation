@@ -118,8 +118,6 @@ export default class UploadMedia {
     }
 
     async sendMessage(){
-        logger.info('[SendMessage] Started sending message...');
-
         await this.typeYourMessage.fill('Hello How are you');
         await this.sendButton.click();
         await this.page.waitForTimeout(2000);
@@ -127,8 +125,6 @@ export default class UploadMedia {
     }
 
     async edit(){
-        logger.info('[EditMessage] Started edit message...');
-
         await this.handleDropdownAction('Edit Message');
         await this.typeMessage.fill('This is message');
         await this.replySendButton.click();
@@ -139,8 +135,6 @@ export default class UploadMedia {
     }
 
     async forward(){
-        logger.info('[ForwardMessage] Started forward message...');
-
         await this.handleDropdownAction('Forward');
         await this.confidentialInfoTabButton.click();
 
@@ -150,8 +144,6 @@ export default class UploadMedia {
     }
 
     async readBy(){
-        logger.info('[ReadByMessage] Started readBy message...');
-
         await this.handleDropdownAction('Read By');
         await this.page.waitForTimeout(500);
         await this.readUnreadTab.last().click();
@@ -160,8 +152,6 @@ export default class UploadMedia {
     }
 
     async reply(){
-        logger.info('[ReplyMessage] Started reply message...');
-
         await this.handleDropdownAction('Reply');
         await this.typeMessage.fill('Reply message');
         await this.replySendButton.click();
@@ -202,8 +192,6 @@ export default class UploadMedia {
     }
 
     async editReply(){
-        logger.info('[editReply] Started edit reply message...');
-
         await this.dropDownListOnReply('Edit Message');
         await this.typeMessage.fill('This is message');
         await this.replySendButton.click();
@@ -212,8 +200,6 @@ export default class UploadMedia {
     }
 
     async readByReply(){
-        logger.info('[readByReply] Started read By reply message...');
-
         await this.dropDownListOnReply('Read By');
         await this.page.waitForTimeout(500);
         await this.readUnreadTab.last().click();
@@ -222,8 +208,6 @@ export default class UploadMedia {
     }
 
     async deleteReply(){
-        logger.info('[deleteReply] Started delete reply message...');
-
         await this.dropDownListOnReply('Delete');
         await this.page.getByRole('button', { name: 'Ok' }).click();
 
@@ -233,17 +217,12 @@ export default class UploadMedia {
     }
 
     async delete(){
-        logger.info('[Delete] deletion started...');
-
         await this.handleDropdownAction('Delete');
-
         await this.deleteIcon.click();
         await this.deleteOk.click();
 
         const popup = this.page.locator("text=Message Deleted successfully");
-        console.log('Waiting for popup to appear...');
         await expect(popup).toBeVisible({timeout: 20000});
-        console.log('Waiting for popup to disappear...');
         await expect(popup).toBeHidden({timeout: 20000});
     } 
     
@@ -252,8 +231,6 @@ export default class UploadMedia {
     }
 
     async uploadImage(){
-        logger.info('[Media] Upload image started...');
-
         await this.imageUploadButton.setInputFiles(mediapaths.image);
     }
 
@@ -262,38 +239,26 @@ export default class UploadMedia {
         
         // Wait for "sending" (case-insensitive) to appear
         await this.page.waitForSelector('text=/sending/i', { state: 'visible' });
-
-        // Wait for "sending" (case-insensitive) to disappear
         await this.page.waitForSelector('text=/sending/i', { state: 'hidden' });
-
-        // Wait for "File Size" (case-insensitive) to appear
         await this.page.waitForSelector('text=/file size/i', { state: 'visible' });
     }
 
     async uploadVideo(){
-        logger.info('[Media] Upload video started...');
-
         await this.videoUploadButton.setInputFiles(mediapaths.video);
     }
 
     async uploadAudio(){
-        logger.info('[Media] Upload audio started...');
-
         await this.audioUploadButton.setInputFiles(mediapaths.audio);
         await this.sendMedia.click();
         await this.page.locator('[class="w-4 h-4 text-white dark:text-white "]').waitFor({ state: 'visible' });
     }
 
     async uploadDocument(){
-        logger.info('[Media] Upload document started...');
-
         await this.documentUploadButton.setInputFiles(mediapaths.document);
         await this.sendMedia.click();
     }
 
     async uploadLocation(){
-        logger.info('[Location] Upload location started...');
-
         await this.locationUploadButton.waitFor({ state: 'visible' }),
         await this.locationUploadButton.click();
         await this.selectButton.waitFor({ state: 'visible' })
@@ -321,8 +286,6 @@ export default class UploadMedia {
     }
 
     async imageReply(){
-        logger.info('[ImageReply] Started image reply message...');
-
         await this.handleDropdownAction('Image Reply');
         await this.page.locator('[placeholder="Type a message"]').fill('This is image reply');
         await this.clickSendMedia();

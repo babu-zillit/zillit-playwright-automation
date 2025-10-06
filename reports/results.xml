@@ -1,14 +1,102 @@
-<testsuites id="" name="" tests="58" failures="0" skipped="0" errors="0" time="229.877364">
-<testsuite name="03_bulletinTest.spec.js" timestamp="2025-10-06T07:17:26.183Z" hostname="chromium" tests="58" failures="0" skipped="0" time="221.851" errors="0">
-<testcase name="Bulletin › Send Message › verify send a message" classname="03_bulletinTest.spec.js" time="5.217">
+<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="90.280662">
+<testsuite name="05_callsheetTest.spec.js" timestamp="2025-10-06T07:26:19.510Z" hostname="chromium" tests="18" failures="0" skipped="0" time="78.209" errors="0">
+<testcase name="CallSheet › Send Document › verify the send a message → send document by clicking on continuation → send document by clicking on new" classname="05_callsheetTest.spec.js" time="23.019">
 <system-out>
-<![CDATA[[INFO] 2025-10-06T07:17:27.425Z - browser is launching
+<![CDATA[[INFO] 2025-10-06T07:26:20.768Z - browser is launching
+[INFO] 2025-10-06T07:26:25.477Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-06T07:17:31.646Z - QA environment is started...
+[INFO] 2025-10-06T07:26:25.477Z - QA environment is started...
+✅ AppleScript ran successfully
+✅ AppleScript ran successfully
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify edit the message" classname="03_bulletinTest.spec.js" time="2.389">
+<testcase name="CallSheet › Send Document › verify the readBy status" classname="05_callsheetTest.spec.js" time="2.251">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the forward" classname="05_callsheetTest.spec.js" time="5.749">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the reply" classname="05_callsheetTest.spec.js" time="1.008">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the edit reply" classname="05_callsheetTest.spec.js" time="2.486">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the readBy reply" classname="05_callsheetTest.spec.js" time="2.088">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the delete reply" classname="05_callsheetTest.spec.js" time="5.569">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the save or download" classname="05_callsheetTest.spec.js" time="0.886">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the delete document" classname="05_callsheetTest.spec.js" time="5.583">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify send a message" classname="05_callsheetTest.spec.js" time="2.35">
+</testcase>
+<testcase name="CallSheet › Send Message › verify edit the message" classname="05_callsheetTest.spec.js" time="2.167">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -21,7 +109,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify read by status on message" classname="03_bulletinTest.spec.js" time="2.273">
+<testcase name="CallSheet › Send Message › verify read by status on message" classname="05_callsheetTest.spec.js" time="2.428">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -34,7 +122,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify forward the message" classname="03_bulletinTest.spec.js" time="6.127">
+<testcase name="CallSheet › Send Message › verify forward the message" classname="05_callsheetTest.spec.js" time="5.749">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -47,7 +135,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify reply to the message" classname="03_bulletinTest.spec.js" time="1.416">
+<testcase name="CallSheet › Send Message › verify reply to the message" classname="05_callsheetTest.spec.js" time="1.021">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -60,25 +148,25 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify the edit the reply message" classname="03_bulletinTest.spec.js" time="2.653">
+<testcase name="CallSheet › Send Message › verify the edit the reply message" classname="05_callsheetTest.spec.js" time="2.356">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify the read by status on reply message" classname="03_bulletinTest.spec.js" time="2.43">
+<testcase name="CallSheet › Send Message › verify the read by status on reply message" classname="05_callsheetTest.spec.js" time="2.106">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify the delete the reply message" classname="03_bulletinTest.spec.js" time="5.43">
+<testcase name="CallSheet › Send Message › verify the delete the reply message" classname="05_callsheetTest.spec.js" time="5.576">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify the delete message" classname="03_bulletinTest.spec.js" time="5.865">
+<testcase name="CallSheet › Send Message › verify the delete message" classname="05_callsheetTest.spec.js" time="5.817">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -88,512 +176,7 @@ Current hostname is: qa.zillit.com
   [32m'Read By'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image › verify the send a image" classname="03_bulletinTest.spec.js" time="2.783">
-</testcase>
-<testcase name="Bulletin › Send Image › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.408">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Image Reply'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image › verify the forward" classname="03_bulletinTest.spec.js" time="6.225">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Image Reply'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image › verify the reply" classname="03_bulletinTest.spec.js" time="1.062">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Image Reply'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.401">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.266">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.576">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image › verify the save or download" classname="03_bulletinTest.spec.js" time="0.996">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Image Reply'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image › verify the distribute" classname="03_bulletinTest.spec.js" time="5.762">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Image Reply'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image › verify the delete image" classname="03_bulletinTest.spec.js" time="5.845">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Image Reply'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Video › verify the send a video" classname="03_bulletinTest.spec.js" time="2.769">
-</testcase>
-<testcase name="Bulletin › Send Video › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.504">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Video › verify the forward" classname="03_bulletinTest.spec.js" time="6.221">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Video › verify the reply" classname="03_bulletinTest.spec.js" time="1.438">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Video › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.072">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Video › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.432">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Video › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.961">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Video › verify the save or download" classname="03_bulletinTest.spec.js" time="0.88">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Video › verify the distribute" classname="03_bulletinTest.spec.js" time="5.623">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Video › verify the delete video" classname="03_bulletinTest.spec.js" time="5.899">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the send a audio" classname="03_bulletinTest.spec.js" time="2.273">
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.374">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the forward" classname="03_bulletinTest.spec.js" time="6.202">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the reply" classname="03_bulletinTest.spec.js" time="1.412">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.613">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.25">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.954">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the save or download" classname="03_bulletinTest.spec.js" time="0.902">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the distribute" classname="03_bulletinTest.spec.js" time="6.607">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Audio › verify the delete audio" classname="03_bulletinTest.spec.js" time="6.796">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Document › verify the send a document" classname="03_bulletinTest.spec.js" time="0.966">
-</testcase>
-<testcase name="Bulletin › Send Document › verify the readBy status" classname="03_bulletinTest.spec.js" time="4.16">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Document › verify the forward" classname="03_bulletinTest.spec.js" time="7.19">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Document › verify the reply" classname="03_bulletinTest.spec.js" time="1.2">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Document › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.965">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Document › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.142">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Document › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.586">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Document › verify the save or download" classname="03_bulletinTest.spec.js" time="0.917">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Document › verify the distribute" classname="03_bulletinTest.spec.js" time="8.647">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Document › verify the delete document" classname="03_bulletinTest.spec.js" time="6.835">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Location › verify the send a location" classname="03_bulletinTest.spec.js" time="6.357">
-</testcase>
-<testcase name="Bulletin › Send Location › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.364">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Location › verify the forward" classname="03_bulletinTest.spec.js" time="6.86">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Location › verify the reply" classname="03_bulletinTest.spec.js" time="1.544">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Location › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.743">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Location › verify the readBy reply" classname="03_bulletinTest.spec.js" time="1.928">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Location › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.629">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Location › verify the delete location" classname="03_bulletinTest.spec.js" time="5.805">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Bulletin › Send Image Reply › verify send a image reply" classname="03_bulletinTest.spec.js" time="5.707">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Image Reply'[39m,
-  [32m'Read By'[39m,
-  [32m'Distribute'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-[INFO] 2025-10-06T07:21:15.532Z - close browser
+[INFO] 2025-10-06T07:27:49.366Z - close browser
 ]]>
 </system-out>
 </testcase>

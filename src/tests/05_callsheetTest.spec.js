@@ -62,6 +62,10 @@ test.describe('CallSheet', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
         test('verify the delete document', async () => {
             await uploadmedia.delete();
         });

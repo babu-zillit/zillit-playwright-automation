@@ -1,182 +1,258 @@
-<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="90.280662">
-<testsuite name="05_callsheetTest.spec.js" timestamp="2025-10-06T07:26:19.510Z" hostname="chromium" tests="18" failures="0" skipped="0" time="78.209" errors="0">
-<testcase name="CallSheet › Send Document › verify the send a message → send document by clicking on continuation → send document by clicking on new" classname="05_callsheetTest.spec.js" time="23.019">
+<testsuites id="" name="" tests="32" failures="0" skipped="0" errors="0" time="179.394389">
+<testsuite name="09_accountTest.spec.js" timestamp="2025-10-06T13:02:11.573Z" hostname="chromium" tests="32" failures="0" skipped="0" time="169.008" errors="0">
+<testcase name="Accounts › Account › verify user become the accountant" classname="09_accountTest.spec.js" time="11.812">
 <system-out>
-<![CDATA[[INFO] 2025-10-06T07:26:20.768Z - browser is launching
-[INFO] 2025-10-06T07:26:25.477Z - open the project
+<![CDATA[[INFO] 2025-10-06T13:02:13.500Z - browser is launching
+[INFO] 2025-10-06T13:02:17.020Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-06T07:26:25.477Z - QA environment is started...
-✅ AppleScript ran successfully
-✅ AppleScript ran successfully
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the readBy status" classname="05_callsheetTest.spec.js" time="2.251">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
+[INFO] 2025-10-06T13:02:17.020Z - QA environment is started...
+Dropdown Options: [
+  [32m'Select Department'[39m,
+  [32m'Direction'[39m,
+  [32m'Writer'[39m,
+  [32m'Producers'[39m,
+  [32m'Production'[39m,
+  [32m'Post-Production'[39m,
+  [32m'Accounts'[39m,
+  [32m'Animal Wranglers'[39m,
+  [32m'Armoury'[39m,
+  [32m'Art'[39m
+]
+Dropdown Options: [
+  [32m'Select Department'[39m,
+  [32m'Direction'[39m,
+  [32m'Writer'[39m,
+  [32m'Producers'[39m,
+  [32m'Production'[39m,
+  [32m'Post-Production'[39m,
+  [32m'Accounts'[39m,
+  [32m'Animal Wranglers'[39m,
+  [32m'Armoury'[39m,
+  [32m'Art'[39m,
+  [32m'Select Designation'[39m,
+  [32m'1st Assistant Accountant'[39m,
+  [32m'2nd Assistant Accountant'[39m,
+  [32m'Accounts Assistant/cashier'[39m,
+  [32m'Assistant Production Accountant'[39m,
+  [32m'Financial Controller'[39m,
+  [32m'Payroll'[39m,
+  [32m'Petty Cash & Production Cards'[39m,
+  [32m'Production Accountant'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Document › verify the forward" classname="05_callsheetTest.spec.js" time="5.749">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
+<testcase name="Accounts › Send Message › verify send a message" classname="09_accountTest.spec.js" time="2.328">
 </testcase>
-<testcase name="CallSheet › Send Document › verify the reply" classname="05_callsheetTest.spec.js" time="1.008">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the edit reply" classname="05_callsheetTest.spec.js" time="2.486">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the readBy reply" classname="05_callsheetTest.spec.js" time="2.088">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the delete reply" classname="05_callsheetTest.spec.js" time="5.569">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the save or download" classname="05_callsheetTest.spec.js" time="0.886">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the delete document" classname="05_callsheetTest.spec.js" time="5.583">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify send a message" classname="05_callsheetTest.spec.js" time="2.35">
-</testcase>
-<testcase name="CallSheet › Send Message › verify edit the message" classname="05_callsheetTest.spec.js" time="2.167">
+<testcase name="Accounts › Send Message › verify edit the message" classname="09_accountTest.spec.js" time="2.41">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
   [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Read By'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Message › verify read by status on message" classname="05_callsheetTest.spec.js" time="2.428">
+<testcase name="Accounts › Send Message › verify forward the message" classname="09_accountTest.spec.js" time="6.084">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
   [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Read By'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Message › verify forward the message" classname="05_callsheetTest.spec.js" time="5.749">
+<testcase name="Accounts › Send Message › verify reply to the message" classname="09_accountTest.spec.js" time="1.077">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
   [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Read By'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Message › verify reply to the message" classname="05_callsheetTest.spec.js" time="1.021">
+<testcase name="Accounts › Send Message › verify the edit the reply message" classname="09_accountTest.spec.js" time="1.718">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Message › verify the delete the reply message" classname="09_accountTest.spec.js" time="15.848">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Message › verify the delete message" classname="09_accountTest.spec.js" time="6.027">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
   [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Read By'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Message › verify the edit the reply message" classname="05_callsheetTest.spec.js" time="2.356">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
+<testcase name="Accounts › Send Image › verify the send a image" classname="09_accountTest.spec.js" time="2.901">
 </testcase>
-<testcase name="CallSheet › Send Message › verify the read by status on reply message" classname="05_callsheetTest.spec.js" time="2.106">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the delete the reply message" classname="05_callsheetTest.spec.js" time="5.576">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the delete message" classname="05_callsheetTest.spec.js" time="5.817">
+<testcase name="Accounts › Send Image › verify the forward" classname="09_accountTest.spec.js" time="5.741">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
-  [32m'Read By'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
-[INFO] 2025-10-06T07:27:49.366Z - close browser
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Image › verify the reply" classname="09_accountTest.spec.js" time="1.401">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Image › verify the edit reply" classname="09_accountTest.spec.js" time="2.062">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Image › verify the delete reply" classname="09_accountTest.spec.js" time="22.135">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Image › verify the save or download" classname="09_accountTest.spec.js" time="0.941">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Image › verify the delete image" classname="09_accountTest.spec.js" time="6.155">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Document › verify the send a document" classname="09_accountTest.spec.js" time="1.063">
+</testcase>
+<testcase name="Accounts › Send Document › verify the forward" classname="09_accountTest.spec.js" time="7.067">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Document › verify the reply" classname="09_accountTest.spec.js" time="1.079">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Document › verify the edit reply" classname="09_accountTest.spec.js" time="2.197">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Document › verify the delete reply" classname="09_accountTest.spec.js" time="5.587">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Document › verify the save or download" classname="09_accountTest.spec.js" time="0.929">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Document › verify the delete document" classname="09_accountTest.spec.js" time="5.844">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Audio › verify the send a audio" classname="09_accountTest.spec.js" time="2.402">
+</testcase>
+<testcase name="Accounts › Send Audio › verify the forward" classname="09_accountTest.spec.js" time="6.137">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Audio › verify the reply" classname="09_accountTest.spec.js" time="1.489">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Audio › verify the edit reply" classname="09_accountTest.spec.js" time="2.515">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Audio › verify the delete reply" classname="09_accountTest.spec.js" time="20.164">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Audio › verify the save or download" classname="09_accountTest.spec.js" time="0.904">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Send Audio › verify the delete audio" classname="09_accountTest.spec.js" time="6.049">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accounts › Account unit › verify create the account unit" classname="09_accountTest.spec.js" time="7.658">
+</testcase>
+<testcase name="Accounts › Account unit › verify edit the account unit" classname="09_accountTest.spec.js" time="2.699">
+</testcase>
+<testcase name="Accounts › Account unit › verify delete the account unit" classname="09_accountTest.spec.js" time="6.585">
+<system-out>
+<![CDATA[[INFO] 2025-10-06T13:05:10.406Z - close browser
 ]]>
 </system-out>
 </testcase>

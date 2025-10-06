@@ -99,6 +99,10 @@ test.describe('Accounts', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
         test('verify the delete image', async () => {
             await accountPage.selectUser();
             await uploadmedia.delete();
@@ -130,6 +134,10 @@ test.describe('Accounts', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
         test('verify the delete document', async () => {
             await accountPage.selectUser();
             await uploadmedia.delete();
@@ -159,6 +167,10 @@ test.describe('Accounts', () => {
 
         test('verify the delete reply', async () => {
             await uploadmedia.deleteReply();
+        });
+
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
         });
 
         test('verify the delete audio', async () => {

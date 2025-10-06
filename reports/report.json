@@ -130,59 +130,9 @@
           "specs": [],
           "suites": [
             {
-              "title": "Delete all message if available",
-              "file": "03_bulletinTest.spec.js",
-              "line": 27,
-              "column": 19,
-              "specs": [
-                {
-                  "title": "delete all",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:06:50.958Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-a4a3c13c96aeb5c90956",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 28,
-                  "column": 9
-                }
-              ]
-            },
-            {
               "title": "Send Message",
               "file": "03_bulletinTest.spec.js",
-              "line": 33,
+              "line": 27,
               "column": 10,
               "specs": [
                 {
@@ -201,22 +151,22 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6758,
+                          "duration": 5217,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T07:06:51.235Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-06T07:17:27.425Z - browser is launching\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-06T07:06:54.123Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-10-06T07:17:31.646Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:06:50.959Z",
+                          "startTime": "2025-10-06T07:17:26.517Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -226,7 +176,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-7eac460362b6888ebce1",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 35,
+                  "line": 29,
                   "column": 9
                 },
                 {
@@ -245,7 +195,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2275,
+                          "duration": 2389,
                           "errors": [],
                           "stdout": [
                             {
@@ -254,7 +204,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:07:02.948Z",
+                          "startTime": "2025-10-06T07:17:38.178Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -264,7 +214,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-ff428482318fb485464c",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 39,
+                  "line": 33,
                   "column": 9
                 },
                 {
@@ -283,7 +233,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2259,
+                          "duration": 2273,
                           "errors": [],
                           "stdout": [
                             {
@@ -292,7 +242,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:07:05.239Z",
+                          "startTime": "2025-10-06T07:17:40.583Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -302,7 +252,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-7f10160d8e7d3d8d97bd",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 43,
+                  "line": 37,
                   "column": 9
                 },
                 {
@@ -321,7 +271,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6269,
+                          "duration": 6127,
                           "errors": [],
                           "stdout": [
                             {
@@ -330,7 +280,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:07:07.505Z",
+                          "startTime": "2025-10-06T07:17:42.867Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -340,7 +290,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-35b8dd0764bd4274f590",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 47,
+                  "line": 41,
                   "column": 9
                 },
                 {
@@ -359,7 +309,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1463,
+                          "duration": 1416,
                           "errors": [],
                           "stdout": [
                             {
@@ -368,7 +318,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:07:13.787Z",
+                          "startTime": "2025-10-06T07:17:49.005Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -378,7 +328,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-b8ad6d1dbf9bb39bcdac",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 51,
+                  "line": 45,
                   "column": 9
                 },
                 {
@@ -397,7 +347,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2061,
+                          "duration": 2653,
                           "errors": [],
                           "stdout": [
                             {
@@ -406,7 +356,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:07:15.268Z",
+                          "startTime": "2025-10-06T07:17:50.438Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -416,7 +366,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-03acadd182fa73f59fe7",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 55,
+                  "line": 49,
                   "column": 9
                 },
                 {
@@ -435,7 +385,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2279,
+                          "duration": 2430,
                           "errors": [],
                           "stdout": [
                             {
@@ -444,7 +394,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:07:17.343Z",
+                          "startTime": "2025-10-06T07:17:53.104Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -454,7 +404,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-bf7bb1f9c1e25327e5a4",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 59,
+                  "line": 53,
                   "column": 9
                 },
                 {
@@ -473,7 +423,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5902,
+                          "duration": 5430,
                           "errors": [],
                           "stdout": [
                             {
@@ -482,7 +432,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:07:19.630Z",
+                          "startTime": "2025-10-06T07:17:55.539Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -492,7 +442,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-a217eb223b2ae29441e9",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 63,
+                  "line": 57,
                   "column": 9
                 },
                 {
@@ -511,7 +461,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5831,
+                          "duration": 5865,
                           "errors": [],
                           "stdout": [
                             {
@@ -520,7 +470,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:07:25.543Z",
+                          "startTime": "2025-10-06T07:18:00.980Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -530,7 +480,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-9965be443e3fcab8aba0",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 67,
+                  "line": 61,
                   "column": 9
                 }
               ]
@@ -538,7 +488,7 @@
             {
               "title": "Send Image",
               "file": "03_bulletinTest.spec.js",
-              "line": 74,
+              "line": 68,
               "column": 10,
               "specs": [
                 {
@@ -557,12 +507,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2400,
+                          "duration": 2783,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:07:31.392Z",
+                          "startTime": "2025-10-06T07:18:06.865Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -572,391 +522,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-de390db90ee2e852a804",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 75,
-                  "column": 9
-                },
-                {
-                  "title": "verify the readBy status",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2270,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:07:33.805Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-eb8a9375dff30fdf7132",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 81,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6222,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:07:36.090Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-2288922fe4f1b54a7a04",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 85,
-                  "column": 9
-                },
-                {
-                  "title": "verify the reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1402,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:07:42.321Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-3a97ca78ebc709a11658",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 89,
-                  "column": 9
-                },
-                {
-                  "title": "verify the edit reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2127,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:07:43.737Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-8357504a1c91a728ed1c",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 93,
-                  "column": 9
-                },
-                {
-                  "title": "verify the readBy reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1971,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:07:45.878Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-b0185e39edd7e5a94c9a",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 97,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5579,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:07:47.859Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-c18ba7a292137ae48f59",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 101,
-                  "column": 9
-                },
-                {
-                  "title": "verify the save or download",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 900,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:07:53.446Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-e6af35be95c9595a9c52",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 105,
-                  "column": 9
-                },
-                {
-                  "title": "verify the distribute",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5777,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:07:54.360Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-5b1c531848bb9c8a5792",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 109,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5816,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:08:00.147Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-4038f1f9d0a0e8afef37",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 113,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Send Video",
-              "file": "03_bulletinTest.spec.js",
-              "line": 119,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify the send a video",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2821,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-06T07:08:05.980Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "7803b65b565cbf77adb8-51ea9cbfed44cc918ec6",
-                  "file": "03_bulletinTest.spec.js",
-                  "line": 120,
+                  "line": 69,
                   "column": 9
                 },
                 {
@@ -979,12 +545,12 @@
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:08.817Z",
+                          "startTime": "2025-10-06T07:18:09.668Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -992,9 +558,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "7803b65b565cbf77adb8-26f8e9a39a8e6a797011",
+                  "id": "7803b65b565cbf77adb8-eb8a9375dff30fdf7132",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 126,
+                  "line": 75,
                   "column": 9
                 },
                 {
@@ -1013,16 +579,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5898,
+                          "duration": 6225,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:11.239Z",
+                          "startTime": "2025-10-06T07:18:12.085Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1030,9 +596,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "7803b65b565cbf77adb8-a2d2c240faa2254dbcae",
+                  "id": "7803b65b565cbf77adb8-2288922fe4f1b54a7a04",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 130,
+                  "line": 79,
                   "column": 9
                 },
                 {
@@ -1051,16 +617,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1395,
+                          "duration": 1062,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:17.147Z",
+                          "startTime": "2025-10-06T07:18:18.320Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1068,9 +634,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "7803b65b565cbf77adb8-b46eccb4a7dc6ee2ffbf",
+                  "id": "7803b65b565cbf77adb8-3a97ca78ebc709a11658",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 134,
+                  "line": 83,
                   "column": 9
                 },
                 {
@@ -1089,7 +655,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2131,
+                          "duration": 2401,
                           "errors": [],
                           "stdout": [
                             {
@@ -1098,7 +664,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:18.559Z",
+                          "startTime": "2025-10-06T07:18:19.396Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1106,9 +672,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "7803b65b565cbf77adb8-a1165b6edc134f4cba5a",
+                  "id": "7803b65b565cbf77adb8-8357504a1c91a728ed1c",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 138,
+                  "line": 87,
                   "column": 9
                 },
                 {
@@ -1127,7 +693,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2209,
+                          "duration": 2266,
                           "errors": [],
                           "stdout": [
                             {
@@ -1136,7 +702,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:20.703Z",
+                          "startTime": "2025-10-06T07:18:21.811Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1144,9 +710,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "7803b65b565cbf77adb8-b4b46ec51fc63e39108d",
+                  "id": "7803b65b565cbf77adb8-b0185e39edd7e5a94c9a",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 142,
+                  "line": 91,
                   "column": 9
                 },
                 {
@@ -1165,7 +731,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5673,
+                          "duration": 5576,
                           "errors": [],
                           "stdout": [
                             {
@@ -1174,7 +740,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:22.923Z",
+                          "startTime": "2025-10-06T07:18:24.085Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1182,9 +748,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "7803b65b565cbf77adb8-6d784baf67783c1f7ed2",
+                  "id": "7803b65b565cbf77adb8-c18ba7a292137ae48f59",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 146,
+                  "line": 95,
                   "column": 9
                 },
                 {
@@ -1203,16 +769,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 894,
+                          "duration": 996,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:28.603Z",
+                          "startTime": "2025-10-06T07:18:29.672Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1220,9 +786,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "7803b65b565cbf77adb8-fd559574d9f17b39cb8f",
+                  "id": "7803b65b565cbf77adb8-e6af35be95c9595a9c52",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 150,
+                  "line": 99,
                   "column": 9
                 },
                 {
@@ -1241,7 +807,125 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5558,
+                          "duration": 5762,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:18:30.685Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-5b1c531848bb9c8a5792",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 103,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5845,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:18:36.454Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-4038f1f9d0a0e8afef37",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 107,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Video",
+              "file": "03_bulletinTest.spec.js",
+              "line": 113,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a video",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2769,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:18:42.313Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-51ea9cbfed44cc918ec6",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 114,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2504,
                           "errors": [],
                           "stdout": [
                             {
@@ -1250,7 +934,273 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:29.504Z",
+                          "startTime": "2025-10-06T07:18:45.099Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-26f8e9a39a8e6a797011",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 120,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6221,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:18:47.615Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-a2d2c240faa2254dbcae",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 124,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1438,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:18:53.847Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-b46eccb4a7dc6ee2ffbf",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 128,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2072,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:18:55.301Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-a1165b6edc134f4cba5a",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 132,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2432,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:18:57.381Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-b4b46ec51fc63e39108d",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 136,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5961,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:18:59.824Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-6d784baf67783c1f7ed2",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 140,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 880,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:19:05.793Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-fd559574d9f17b39cb8f",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 144,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5623,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T07:19:06.682Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1260,7 +1210,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-7f0b519b2d9be4aee4d7",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 154,
+                  "line": 148,
                   "column": 9
                 },
                 {
@@ -1279,7 +1229,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5789,
+                          "duration": 5899,
                           "errors": [],
                           "stdout": [
                             {
@@ -1288,7 +1238,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:35.071Z",
+                          "startTime": "2025-10-06T07:19:12.315Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1298,7 +1248,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-3f25aa559cfc6f213b13",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 158,
+                  "line": 152,
                   "column": 9
                 }
               ]
@@ -1306,7 +1256,7 @@
             {
               "title": "Send Audio",
               "file": "03_bulletinTest.spec.js",
-              "line": 164,
+              "line": 158,
               "column": 10,
               "specs": [
                 {
@@ -1325,12 +1275,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2275,
+                          "duration": 2273,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:40.875Z",
+                          "startTime": "2025-10-06T07:19:18.233Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1340,7 +1290,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-9d36a2f43e23986461d0",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 165,
+                  "line": 159,
                   "column": 9
                 },
                 {
@@ -1359,7 +1309,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2286,
+                          "duration": 2374,
                           "errors": [],
                           "stdout": [
                             {
@@ -1368,7 +1318,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:43.165Z",
+                          "startTime": "2025-10-06T07:19:20.524Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1378,7 +1328,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-54262c6a643c5677bbd7",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 170,
+                  "line": 164,
                   "column": 9
                 },
                 {
@@ -1397,7 +1347,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5876,
+                          "duration": 6202,
                           "errors": [],
                           "stdout": [
                             {
@@ -1406,7 +1356,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:45.465Z",
+                          "startTime": "2025-10-06T07:19:22.906Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1416,7 +1366,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-bbbbf0913d6bfd90c8fa",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 174,
+                  "line": 168,
                   "column": 9
                 },
                 {
@@ -1435,7 +1385,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1462,
+                          "duration": 1412,
                           "errors": [],
                           "stdout": [
                             {
@@ -1444,7 +1394,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:51.362Z",
+                          "startTime": "2025-10-06T07:19:29.118Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1454,7 +1404,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-497f56e260f16891c419",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 178,
+                  "line": 172,
                   "column": 9
                 },
                 {
@@ -1473,7 +1423,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2640,
+                          "duration": 2613,
                           "errors": [],
                           "stdout": [
                             {
@@ -1482,7 +1432,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:52.839Z",
+                          "startTime": "2025-10-06T07:19:30.542Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1492,7 +1442,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-56828c9a8dc2f0a1157d",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 182,
+                  "line": 176,
                   "column": 9
                 },
                 {
@@ -1511,7 +1461,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2098,
+                          "duration": 2250,
                           "errors": [],
                           "stdout": [
                             {
@@ -1520,7 +1470,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:55.491Z",
+                          "startTime": "2025-10-06T07:19:33.167Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1530,7 +1480,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-192ff7c96c884dc8ef03",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 186,
+                  "line": 180,
                   "column": 9
                 },
                 {
@@ -1549,7 +1499,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5584,
+                          "duration": 5954,
                           "errors": [],
                           "stdout": [
                             {
@@ -1558,7 +1508,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:08:57.594Z",
+                          "startTime": "2025-10-06T07:19:35.423Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1568,7 +1518,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-1bf753afd20571fd156f",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 190,
+                  "line": 184,
                   "column": 9
                 },
                 {
@@ -1587,7 +1537,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1008,
+                          "duration": 902,
                           "errors": [],
                           "stdout": [
                             {
@@ -1596,7 +1546,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:03.189Z",
+                          "startTime": "2025-10-06T07:19:41.389Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1606,7 +1556,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-9bb89048ada507a6e172",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 194,
+                  "line": 188,
                   "column": 9
                 },
                 {
@@ -1625,7 +1575,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5596,
+                          "duration": 6607,
                           "errors": [],
                           "stdout": [
                             {
@@ -1634,7 +1584,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:04.214Z",
+                          "startTime": "2025-10-06T07:19:42.307Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1644,7 +1594,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-2eff12fae46a7dea84b8",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 198,
+                  "line": 192,
                   "column": 9
                 },
                 {
@@ -1663,7 +1613,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5966,
+                          "duration": 6796,
                           "errors": [],
                           "stdout": [
                             {
@@ -1672,7 +1622,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:09.821Z",
+                          "startTime": "2025-10-06T07:19:48.922Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1682,7 +1632,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-b252403d1d3f0db5a235",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 202,
+                  "line": 196,
                   "column": 9
                 }
               ]
@@ -1690,7 +1640,7 @@
             {
               "title": "Send Document",
               "file": "03_bulletinTest.spec.js",
-              "line": 208,
+              "line": 202,
               "column": 10,
               "specs": [
                 {
@@ -1709,12 +1659,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 979,
+                          "duration": 966,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:15.805Z",
+                          "startTime": "2025-10-06T07:19:55.730Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1724,7 +1674,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-ea3d45e5e5bb11d7bd39",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 209,
+                  "line": 203,
                   "column": 9
                 },
                 {
@@ -1743,7 +1693,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3682,
+                          "duration": 4160,
                           "errors": [],
                           "stdout": [
                             {
@@ -1752,7 +1702,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:16.804Z",
+                          "startTime": "2025-10-06T07:19:56.712Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1762,7 +1712,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-0c7210cc894ecde0e57b",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 214,
+                  "line": 208,
                   "column": 9
                 },
                 {
@@ -1781,7 +1731,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6157,
+                          "duration": 7190,
                           "errors": [],
                           "stdout": [
                             {
@@ -1790,7 +1740,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:20.506Z",
+                          "startTime": "2025-10-06T07:20:00.879Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1800,7 +1750,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-7b2971b00f94f11c2b7f",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 218,
+                  "line": 212,
                   "column": 9
                 },
                 {
@@ -1819,7 +1769,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1377,
+                          "duration": 1200,
                           "errors": [],
                           "stdout": [
                             {
@@ -1828,7 +1778,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:26.674Z",
+                          "startTime": "2025-10-06T07:20:08.079Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1838,7 +1788,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-0e18209a7a1bda54e888",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 222,
+                  "line": 216,
                   "column": 9
                 },
                 {
@@ -1857,7 +1807,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2574,
+                          "duration": 2965,
                           "errors": [],
                           "stdout": [
                             {
@@ -1866,7 +1816,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:28.067Z",
+                          "startTime": "2025-10-06T07:20:09.293Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1876,7 +1826,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-c2bbdeaa5b97f9938168",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 226,
+                  "line": 220,
                   "column": 9
                 },
                 {
@@ -1895,7 +1845,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1966,
+                          "duration": 2142,
                           "errors": [],
                           "stdout": [
                             {
@@ -1904,7 +1854,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:30.655Z",
+                          "startTime": "2025-10-06T07:20:12.272Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1914,7 +1864,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-c4d273bdcaafbc0de53c",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 230,
+                  "line": 224,
                   "column": 9
                 },
                 {
@@ -1933,7 +1883,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5469,
+                          "duration": 5586,
                           "errors": [],
                           "stdout": [
                             {
@@ -1942,7 +1892,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:32.627Z",
+                          "startTime": "2025-10-06T07:20:14.421Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1952,7 +1902,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-0f1bda53d97f1f5aff3e",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 234,
+                  "line": 228,
                   "column": 9
                 },
                 {
@@ -1971,7 +1921,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 910,
+                          "duration": 917,
                           "errors": [],
                           "stdout": [
                             {
@@ -1980,7 +1930,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:38.106Z",
+                          "startTime": "2025-10-06T07:20:20.019Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1990,7 +1940,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-000c659ffc07da7fc942",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 238,
+                  "line": 232,
                   "column": 9
                 },
                 {
@@ -2009,7 +1959,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8664,
+                          "duration": 8647,
                           "errors": [],
                           "stdout": [
                             {
@@ -2018,7 +1968,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:39.032Z",
+                          "startTime": "2025-10-06T07:20:20.961Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2028,7 +1978,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-cbe1c89fc48a119b1bc1",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 242,
+                  "line": 236,
                   "column": 9
                 },
                 {
@@ -2047,7 +1997,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5888,
+                          "duration": 6835,
                           "errors": [],
                           "stdout": [
                             {
@@ -2056,7 +2006,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:47.705Z",
+                          "startTime": "2025-10-06T07:20:29.617Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2066,7 +2016,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-6aee32b98fcdc98b27d6",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 246,
+                  "line": 240,
                   "column": 9
                 }
               ]
@@ -2074,7 +2024,7 @@
             {
               "title": "Send Location",
               "file": "03_bulletinTest.spec.js",
-              "line": 252,
+              "line": 246,
               "column": 10,
               "specs": [
                 {
@@ -2093,12 +2043,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6564,
+                          "duration": 6357,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:09:53.605Z",
+                          "startTime": "2025-10-06T07:20:36.470Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2108,7 +2058,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-d0b434508640a7d78eeb",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 253,
+                  "line": 247,
                   "column": 9
                 },
                 {
@@ -2127,7 +2077,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2268,
+                          "duration": 2364,
                           "errors": [],
                           "stdout": [
                             {
@@ -2136,7 +2086,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:10:00.188Z",
+                          "startTime": "2025-10-06T07:20:42.842Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2146,7 +2096,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-892a3af38e1ed080a2a8",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 258,
+                  "line": 252,
                   "column": 9
                 },
                 {
@@ -2165,7 +2115,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5850,
+                          "duration": 6860,
                           "errors": [],
                           "stdout": [
                             {
@@ -2174,7 +2124,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:10:02.468Z",
+                          "startTime": "2025-10-06T07:20:45.214Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2184,7 +2134,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-84af1af0fd7ce8880194",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 262,
+                  "line": 256,
                   "column": 9
                 },
                 {
@@ -2203,7 +2153,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1037,
+                          "duration": 1544,
                           "errors": [],
                           "stdout": [
                             {
@@ -2212,7 +2162,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:10:08.330Z",
+                          "startTime": "2025-10-06T07:20:52.085Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2222,7 +2172,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-0deaa9f5ce33aa0f67fa",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 266,
+                  "line": 260,
                   "column": 9
                 },
                 {
@@ -2241,7 +2191,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2096,
+                          "duration": 2743,
                           "errors": [],
                           "stdout": [
                             {
@@ -2250,7 +2200,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:10:09.383Z",
+                          "startTime": "2025-10-06T07:20:53.644Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2260,7 +2210,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-af36440e90e66e6274c0",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 270,
+                  "line": 264,
                   "column": 9
                 },
                 {
@@ -2279,7 +2229,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2195,
+                          "duration": 1928,
                           "errors": [],
                           "stdout": [
                             {
@@ -2288,7 +2238,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:10:11.486Z",
+                          "startTime": "2025-10-06T07:20:56.395Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2298,7 +2248,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-dbf8034c260b944e263d",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 274,
+                  "line": 268,
                   "column": 9
                 },
                 {
@@ -2317,7 +2267,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4454,
+                          "duration": 5629,
                           "errors": [],
                           "stdout": [
                             {
@@ -2326,7 +2276,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:10:13.692Z",
+                          "startTime": "2025-10-06T07:20:58.332Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2336,7 +2286,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-0e8eba69cd8dfea8bbad",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 278,
+                  "line": 272,
                   "column": 9
                 },
                 {
@@ -2355,7 +2305,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5763,
+                          "duration": 5805,
                           "errors": [],
                           "stdout": [
                             {
@@ -2364,7 +2314,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:10:18.155Z",
+                          "startTime": "2025-10-06T07:21:03.972Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2374,7 +2324,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-96945bdbf72ee183b42c",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 282,
+                  "line": 276,
                   "column": 9
                 }
               ]
@@ -2382,7 +2332,7 @@
             {
               "title": "Send Image Reply",
               "file": "03_bulletinTest.spec.js",
-              "line": 288,
+              "line": 282,
               "column": 10,
               "specs": [
                 {
@@ -2401,19 +2351,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5179,
+                          "duration": 5707,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-06T07:10:29.130Z - close browser\n"
+                              "text": "[INFO] 2025-10-06T07:21:15.532Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T07:10:23.930Z",
+                          "startTime": "2025-10-06T07:21:09.795Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2423,7 +2373,7 @@
                   ],
                   "id": "7803b65b565cbf77adb8-a3c3913ddbd717f04e22",
                   "file": "03_bulletinTest.spec.js",
-                  "line": 289,
+                  "line": 283,
                   "column": 9
                 }
               ]
@@ -2435,10 +2385,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-06T07:06:50.605Z",
-    "duration": 218998.92,
+    "startTime": "2025-10-06T07:17:26.159Z",
+    "duration": 229877.364,
     "expected": 58,
-    "skipped": 1,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

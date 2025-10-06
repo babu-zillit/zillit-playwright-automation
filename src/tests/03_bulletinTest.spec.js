@@ -24,12 +24,6 @@ test.describe('Bulletin', () => {
         await context.close();
     });
 
-    test.describe.skip('Delete all message if available' , () =>{
-        test('delete all', async () => {
-            await uploadmedia.deleteAll();
-        });
-    });
-
     test.describe('Send Message', () => {
 
         test('verify send a message', async () => {

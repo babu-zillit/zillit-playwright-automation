@@ -1,32 +1,9 @@
-//src/actions/media-uploader.js
-/**
- * 
- * We cannot import expect, test from @playwright/test without curly braces
- * because expect , test is a named export, not the default export.
- * 
- * import expect from '@playwright/test'; // ❌ Invalid for Playwright
- * import { expect } from '@playwright/test'; // ✅ Correct
- * 
- * In Playwright, @playwright/test does not have a default export.
- * 
- */
-
 import { expect } from '@playwright/test';
 import logger from "../utils/loggerUtils";
 import { loadJson } from '../utils/jsonUtil';
 const mediapaths = loadJson('mediapaths', 'testdata');
 const startproject = loadJson('startproject', 'testdata');
-
-/**
- * 
- * export – Share something from a file
- * If you use export with any method, function, class or vaiable name means this is available for other files
- * 
- * export default class UploadMedia {} : You can import it with any name (no {} needed)
- * 
- * export class UploadMedia {} : You must import it with the same name, using {}
- * 
- */ 
+ 
 export default class UploadMedia {
 
     constructor(page){
@@ -167,8 +144,8 @@ export default class UploadMedia {
         await this.page.locator('div.ant-modal-content button').last().click();
 
         const popup = this.page.locator("text=Media distributed successfully.");
-        await expect(popup).toBeVisible({timeout: 20000});
-        await expect(popup).toBeHidden({timeout: 20000});
+        await expect(popup).toBeVisible({timeout: 15000});
+        await expect(popup).toBeHidden({timeout: 15000});
     }
 
     async dropDownListOnReply(optionText){
@@ -236,8 +213,7 @@ export default class UploadMedia {
 
     async clickSendMedia(){
         await this.sendMedia.click();
-        
-        // Wait for "sending" (case-insensitive) to appear
+
         await this.page.waitForSelector('text=/sending/i', { state: 'visible' });
         await this.page.waitForSelector('text=/sending/i', { state: 'hidden' });
         await this.page.waitForSelector('text=/file size/i', { state: 'visible' });
@@ -289,68 +265,6 @@ export default class UploadMedia {
         await this.handleDropdownAction('Image Reply');
         await this.page.locator('[placeholder="Type a message"]').fill('This is image reply');
         await this.clickSendMedia();
-    }
-
-
-    
-    async deleteAll(){
-        await this.page.waitForTimeout(1000);
-
-        const items = this.page.locator('.dropDown');
-        const totalCount = await items.count();
-
-        console.log(`total message: ${totalCount}`);
-
-        if (totalCount === 0) {
-            console.log('No elements found to hover on.');
-            return;
-        }
-
-        // Hover and click the last dropdown icon
-        const lastItem = items.nth(totalCount - 1);
-        await lastItem.hover();
-        await lastItem.click();
-
-        // Wait for dropdown to be visible (not hidden)
-        const dropdown = this.page.locator('div.ant-dropdown:not(.ant-dropdown-hidden)');
-        await dropdown.waitFor({ state: 'visible', timeout: 5000 });
-
-        const options = dropdown.locator('li');
-        const count = await options.count();
-
-        // Get all <li> items from the dropdown
-        console.log('Dropdown options:');
-        for (let i = 0; i < count; i++) {
-            const text = await options.nth(i).textContent();
-            console.log(text);
-        }
-
-        // Click on the 'Delete' option
-        await options.filter({ hasText: 'Delete' }).first().click();
-
-        // ✅ Wait for checkboxes to appear (optional timeout)
-        await this.page.waitForTimeout(1000);
-        const checkboxes = this.page.locator('.ant-checkbox-input');
-        const checkboxCount = await checkboxes.count();
-        console.log(`Total checkboxes: ${checkboxCount}`);
-
-        for (let i = 0; i < checkboxCount; i++) {
-        const checkbox = checkboxes.nth(i);
-        const isChecked = await checkbox.evaluate(el => el.checked);
-        if (!isChecked) {
-            await checkbox.click();
-            await this.page.waitForTimeout(500); // optional wait between clicks
-            }
-        }
-
-        await this.deleteIcon.click();
-        await this.deleteOk.click();
-
-        const popup = this.page.locator("text=Message Deleted successfully");
-        console.log('Waiting for popup to appear...');
-        await expect(popup).toBeVisible({timeout: 20000});
-        console.log('Waiting for popup to disappear...');
-        await expect(popup).toBeHidden({timeout: 20000});
-    }
+    }   
 
 }

@@ -1,22 +1,14 @@
-<testsuites id="" name="" tests="59" failures="0" skipped="1" errors="0" time="218.99892000000003">
-<testsuite name="03_bulletinTest.spec.js" timestamp="2025-10-06T07:06:50.629Z" hostname="chromium" tests="59" failures="0" skipped="1" time="212.2" errors="0">
-<testcase name="Bulletin › Delete all message if available › delete all" classname="03_bulletinTest.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Bulletin › Send Message › verify send a message" classname="03_bulletinTest.spec.js" time="6.758">
+<testsuites id="" name="" tests="58" failures="0" skipped="0" errors="0" time="229.877364">
+<testsuite name="03_bulletinTest.spec.js" timestamp="2025-10-06T07:17:26.183Z" hostname="chromium" tests="58" failures="0" skipped="0" time="221.851" errors="0">
+<testcase name="Bulletin › Send Message › verify send a message" classname="03_bulletinTest.spec.js" time="5.217">
 <system-out>
-<![CDATA[[INFO] 2025-10-06T07:06:51.235Z - browser is launching
+<![CDATA[[INFO] 2025-10-06T07:17:27.425Z - browser is launching
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-06T07:06:54.123Z - QA environment is started...
+[INFO] 2025-10-06T07:17:31.646Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify edit the message" classname="03_bulletinTest.spec.js" time="2.275">
+<testcase name="Bulletin › Send Message › verify edit the message" classname="03_bulletinTest.spec.js" time="2.389">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -29,7 +21,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify read by status on message" classname="03_bulletinTest.spec.js" time="2.259">
+<testcase name="Bulletin › Send Message › verify read by status on message" classname="03_bulletinTest.spec.js" time="2.273">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -42,7 +34,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify forward the message" classname="03_bulletinTest.spec.js" time="6.269">
+<testcase name="Bulletin › Send Message › verify forward the message" classname="03_bulletinTest.spec.js" time="6.127">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -55,7 +47,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify reply to the message" classname="03_bulletinTest.spec.js" time="1.463">
+<testcase name="Bulletin › Send Message › verify reply to the message" classname="03_bulletinTest.spec.js" time="1.416">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -68,25 +60,25 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify the edit the reply message" classname="03_bulletinTest.spec.js" time="2.061">
+<testcase name="Bulletin › Send Message › verify the edit the reply message" classname="03_bulletinTest.spec.js" time="2.653">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify the read by status on reply message" classname="03_bulletinTest.spec.js" time="2.279">
+<testcase name="Bulletin › Send Message › verify the read by status on reply message" classname="03_bulletinTest.spec.js" time="2.43">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify the delete the reply message" classname="03_bulletinTest.spec.js" time="5.902">
+<testcase name="Bulletin › Send Message › verify the delete the reply message" classname="03_bulletinTest.spec.js" time="5.43">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Message › verify the delete message" classname="03_bulletinTest.spec.js" time="5.831">
+<testcase name="Bulletin › Send Message › verify the delete message" classname="03_bulletinTest.spec.js" time="5.865">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -99,9 +91,9 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image › verify the send a image" classname="03_bulletinTest.spec.js" time="2.4">
+<testcase name="Bulletin › Send Image › verify the send a image" classname="03_bulletinTest.spec.js" time="2.783">
 </testcase>
-<testcase name="Bulletin › Send Image › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.27">
+<testcase name="Bulletin › Send Image › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.408">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -116,7 +108,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image › verify the forward" classname="03_bulletinTest.spec.js" time="6.222">
+<testcase name="Bulletin › Send Image › verify the forward" classname="03_bulletinTest.spec.js" time="6.225">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -131,7 +123,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image › verify the reply" classname="03_bulletinTest.spec.js" time="1.402">
+<testcase name="Bulletin › Send Image › verify the reply" classname="03_bulletinTest.spec.js" time="1.062">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -146,25 +138,25 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.127">
+<testcase name="Bulletin › Send Image › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.401">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image › verify the readBy reply" classname="03_bulletinTest.spec.js" time="1.971">
+<testcase name="Bulletin › Send Image › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.266">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.579">
+<testcase name="Bulletin › Send Image › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.576">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image › verify the save or download" classname="03_bulletinTest.spec.js" time="0.9">
+<testcase name="Bulletin › Send Image › verify the save or download" classname="03_bulletinTest.spec.js" time="0.996">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -179,7 +171,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image › verify the distribute" classname="03_bulletinTest.spec.js" time="5.777">
+<testcase name="Bulletin › Send Image › verify the distribute" classname="03_bulletinTest.spec.js" time="5.762">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -194,7 +186,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image › verify the delete image" classname="03_bulletinTest.spec.js" time="5.816">
+<testcase name="Bulletin › Send Image › verify the delete image" classname="03_bulletinTest.spec.js" time="5.845">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -209,9 +201,9 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Video › verify the send a video" classname="03_bulletinTest.spec.js" time="2.821">
+<testcase name="Bulletin › Send Video › verify the send a video" classname="03_bulletinTest.spec.js" time="2.769">
 </testcase>
-<testcase name="Bulletin › Send Video › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.408">
+<testcase name="Bulletin › Send Video › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.504">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -225,7 +217,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Video › verify the forward" classname="03_bulletinTest.spec.js" time="5.898">
+<testcase name="Bulletin › Send Video › verify the forward" classname="03_bulletinTest.spec.js" time="6.221">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -239,7 +231,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Video › verify the reply" classname="03_bulletinTest.spec.js" time="1.395">
+<testcase name="Bulletin › Send Video › verify the reply" classname="03_bulletinTest.spec.js" time="1.438">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -253,25 +245,25 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Video › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.131">
+<testcase name="Bulletin › Send Video › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.072">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Video › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.209">
+<testcase name="Bulletin › Send Video › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.432">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Video › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.673">
+<testcase name="Bulletin › Send Video › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.961">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Video › verify the save or download" classname="03_bulletinTest.spec.js" time="0.894">
+<testcase name="Bulletin › Send Video › verify the save or download" classname="03_bulletinTest.spec.js" time="0.88">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -285,7 +277,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Video › verify the distribute" classname="03_bulletinTest.spec.js" time="5.558">
+<testcase name="Bulletin › Send Video › verify the distribute" classname="03_bulletinTest.spec.js" time="5.623">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -299,7 +291,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Video › verify the delete video" classname="03_bulletinTest.spec.js" time="5.789">
+<testcase name="Bulletin › Send Video › verify the delete video" classname="03_bulletinTest.spec.js" time="5.899">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -313,9 +305,9 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the send a audio" classname="03_bulletinTest.spec.js" time="2.275">
+<testcase name="Bulletin › Send Audio › verify the send a audio" classname="03_bulletinTest.spec.js" time="2.273">
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.286">
+<testcase name="Bulletin › Send Audio › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.374">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -329,7 +321,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the forward" classname="03_bulletinTest.spec.js" time="5.876">
+<testcase name="Bulletin › Send Audio › verify the forward" classname="03_bulletinTest.spec.js" time="6.202">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -343,7 +335,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the reply" classname="03_bulletinTest.spec.js" time="1.462">
+<testcase name="Bulletin › Send Audio › verify the reply" classname="03_bulletinTest.spec.js" time="1.412">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -357,25 +349,25 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.64">
+<testcase name="Bulletin › Send Audio › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.613">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.098">
+<testcase name="Bulletin › Send Audio › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.25">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.584">
+<testcase name="Bulletin › Send Audio › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.954">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the save or download" classname="03_bulletinTest.spec.js" time="1.008">
+<testcase name="Bulletin › Send Audio › verify the save or download" classname="03_bulletinTest.spec.js" time="0.902">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -389,7 +381,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the distribute" classname="03_bulletinTest.spec.js" time="5.596">
+<testcase name="Bulletin › Send Audio › verify the distribute" classname="03_bulletinTest.spec.js" time="6.607">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -403,7 +395,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Audio › verify the delete audio" classname="03_bulletinTest.spec.js" time="5.966">
+<testcase name="Bulletin › Send Audio › verify the delete audio" classname="03_bulletinTest.spec.js" time="6.796">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -417,9 +409,9 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Document › verify the send a document" classname="03_bulletinTest.spec.js" time="0.979">
+<testcase name="Bulletin › Send Document › verify the send a document" classname="03_bulletinTest.spec.js" time="0.966">
 </testcase>
-<testcase name="Bulletin › Send Document › verify the readBy status" classname="03_bulletinTest.spec.js" time="3.682">
+<testcase name="Bulletin › Send Document › verify the readBy status" classname="03_bulletinTest.spec.js" time="4.16">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -433,7 +425,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Document › verify the forward" classname="03_bulletinTest.spec.js" time="6.157">
+<testcase name="Bulletin › Send Document › verify the forward" classname="03_bulletinTest.spec.js" time="7.19">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -447,7 +439,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Document › verify the reply" classname="03_bulletinTest.spec.js" time="1.377">
+<testcase name="Bulletin › Send Document › verify the reply" classname="03_bulletinTest.spec.js" time="1.2">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -461,25 +453,25 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Document › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.574">
+<testcase name="Bulletin › Send Document › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.965">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Document › verify the readBy reply" classname="03_bulletinTest.spec.js" time="1.966">
+<testcase name="Bulletin › Send Document › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.142">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Document › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.469">
+<testcase name="Bulletin › Send Document › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.586">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Document › verify the save or download" classname="03_bulletinTest.spec.js" time="0.91">
+<testcase name="Bulletin › Send Document › verify the save or download" classname="03_bulletinTest.spec.js" time="0.917">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -493,7 +485,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Document › verify the distribute" classname="03_bulletinTest.spec.js" time="8.664">
+<testcase name="Bulletin › Send Document › verify the distribute" classname="03_bulletinTest.spec.js" time="8.647">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -507,7 +499,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Document › verify the delete document" classname="03_bulletinTest.spec.js" time="5.888">
+<testcase name="Bulletin › Send Document › verify the delete document" classname="03_bulletinTest.spec.js" time="6.835">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -521,9 +513,9 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Location › verify the send a location" classname="03_bulletinTest.spec.js" time="6.564">
+<testcase name="Bulletin › Send Location › verify the send a location" classname="03_bulletinTest.spec.js" time="6.357">
 </testcase>
-<testcase name="Bulletin › Send Location › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.268">
+<testcase name="Bulletin › Send Location › verify the readBy status" classname="03_bulletinTest.spec.js" time="2.364">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -535,7 +527,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Location › verify the forward" classname="03_bulletinTest.spec.js" time="5.85">
+<testcase name="Bulletin › Send Location › verify the forward" classname="03_bulletinTest.spec.js" time="6.86">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -547,7 +539,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Location › verify the reply" classname="03_bulletinTest.spec.js" time="1.037">
+<testcase name="Bulletin › Send Location › verify the reply" classname="03_bulletinTest.spec.js" time="1.544">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -559,25 +551,25 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Location › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.096">
+<testcase name="Bulletin › Send Location › verify the edit reply" classname="03_bulletinTest.spec.js" time="2.743">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Location › verify the readBy reply" classname="03_bulletinTest.spec.js" time="2.195">
+<testcase name="Bulletin › Send Location › verify the readBy reply" classname="03_bulletinTest.spec.js" time="1.928">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Location › verify the delete reply" classname="03_bulletinTest.spec.js" time="4.454">
+<testcase name="Bulletin › Send Location › verify the delete reply" classname="03_bulletinTest.spec.js" time="5.629">
 <system-out>
 <![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Location › verify the delete location" classname="03_bulletinTest.spec.js" time="5.763">
+<testcase name="Bulletin › Send Location › verify the delete location" classname="03_bulletinTest.spec.js" time="5.805">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -589,7 +581,7 @@ Current hostname is: qa.zillit.com
 ]]>
 </system-out>
 </testcase>
-<testcase name="Bulletin › Send Image Reply › verify send a image reply" classname="03_bulletinTest.spec.js" time="5.179">
+<testcase name="Bulletin › Send Image Reply › verify send a image reply" classname="03_bulletinTest.spec.js" time="5.707">
 <system-out>
 <![CDATA[Dropdown list items: [
   [32m'Reply'[39m,
@@ -601,7 +593,7 @@ Current hostname is: qa.zillit.com
   [32m'Distribute'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
-[INFO] 2025-10-06T07:10:29.130Z - close browser
+[INFO] 2025-10-06T07:21:15.532Z - close browser
 ]]>
 </system-out>
 </testcase>

@@ -30,7 +30,7 @@ test.describe('Bulletin', () => {
         });
     });
 
-    test.describe.only('Send Message', () => {
+    test.describe('Send Message', () => {
 
         test('verify send a message', async () => {
             await uploadmedia.sendMessage();
@@ -102,6 +102,14 @@ test.describe('Bulletin', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
+        test('verify the distribute', async () => {
+            await uploadmedia.distribute();
+        });
+
         test('verify the delete image', async () => {
             await uploadmedia.delete();
         });
@@ -137,6 +145,14 @@ test.describe('Bulletin', () => {
 
         test('verify the delete reply', async () => {
             await uploadmedia.deleteReply();
+        });
+
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
+        test('verify the distribute', async () => {
+            await uploadmedia.distribute();
         });
 
         test('verify the delete video', async () => {
@@ -175,6 +191,14 @@ test.describe('Bulletin', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
+        test('verify the distribute', async () => {
+            await uploadmedia.distribute();
+        });
+
         test('verify the delete audio', async () => {
             await uploadmedia.delete();
         });
@@ -209,6 +233,14 @@ test.describe('Bulletin', () => {
 
         test('verify the delete reply', async () => {
             await uploadmedia.deleteReply();
+        });
+
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
+        test('verify the distribute', async () => {
+            await uploadmedia.distribute();
         });
 
         test('verify the delete document', async () => {

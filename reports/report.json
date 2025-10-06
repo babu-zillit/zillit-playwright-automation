@@ -130,10 +130,60 @@
           "specs": [],
           "suites": [
             {
+              "title": "Delete all message if available",
+              "file": "03_bulletinTest.spec.js",
+              "line": 27,
+              "column": 19,
+              "specs": [
+                {
+                  "title": "delete all",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:45:44.491Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-a4a3c13c96aeb5c90956",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 28,
+                  "column": 9
+                }
+              ]
+            },
+            {
               "title": "Send Message",
               "file": "03_bulletinTest.spec.js",
               "line": 33,
-              "column": 19,
+              "column": 10,
               "specs": [
                 {
                   "title": "verify send a message",
@@ -151,25 +201,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5147,
+                          "duration": 5150,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:11:45.075Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-06T06:45:45.535Z - browser is launching\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-06T06:11:48.262Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-10-06T06:45:50.191Z - QA environment is started...\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-06T06:11:50.408Z - [SendMessage] Started sending message...\n"
+                              "text": "[INFO] 2025-10-06T06:45:52.326Z - [SendMessage] Started sending message...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:11:44.210Z",
+                          "startTime": "2025-10-06T06:45:44.491Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -198,11 +248,11 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2019,
+                          "duration": 2332,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:11:55.575Z - [EditMessage] Started edit message...\n"
+                              "text": "[INFO] 2025-10-06T06:45:57.489Z - [EditMessage] Started edit message...\n"
                             },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
@@ -210,7 +260,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:11:55.561Z",
+                          "startTime": "2025-10-06T06:45:57.479Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -239,11 +289,11 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2236,
+                          "duration": 2275,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:11:57.604Z - [ReadByMessage] Started readBy message...\n"
+                              "text": "[INFO] 2025-10-06T06:45:59.829Z - [ReadByMessage] Started readBy message...\n"
                             },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
@@ -251,7 +301,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:11:57.595Z",
+                          "startTime": "2025-10-06T06:45:59.822Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -280,11 +330,11 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5842,
+                          "duration": 5859,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:11:59.847Z - [ForwardMessage] Started forward message...\n"
+                              "text": "[INFO] 2025-10-06T06:46:02.124Z - [ForwardMessage] Started forward message...\n"
                             },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
@@ -292,7 +342,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:11:59.841Z",
+                          "startTime": "2025-10-06T06:46:02.106Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -321,11 +371,11 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1410,
+                          "duration": 1416,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:12:05.704Z - [ReplyMessage] Started reply message...\n"
+                              "text": "[INFO] 2025-10-06T06:46:07.998Z - [ReplyMessage] Started reply message...\n"
                             },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
@@ -333,7 +383,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:12:05.693Z",
+                          "startTime": "2025-10-06T06:46:07.982Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -362,11 +412,11 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2065,
+                          "duration": 2941,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:12:07.130Z - [editReply] Started edit reply message...\n"
+                              "text": "[INFO] 2025-10-06T06:46:09.436Z - [editReply] Started edit reply message...\n"
                             },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
@@ -374,7 +424,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:12:07.115Z",
+                          "startTime": "2025-10-06T06:46:09.415Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -403,11 +453,11 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2089,
+                          "duration": 1989,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:12:09.200Z - [readByReply] Started read By reply message...\n"
+                              "text": "[INFO] 2025-10-06T06:46:12.382Z - [readByReply] Started read By reply message...\n"
                             },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
@@ -415,7 +465,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:12:09.196Z",
+                          "startTime": "2025-10-06T06:46:12.378Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -444,11 +494,11 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5675,
+                          "duration": 5607,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:12:11.297Z - [deleteReply] Started delete reply message...\n"
+                              "text": "[INFO] 2025-10-06T06:46:14.380Z - [deleteReply] Started delete reply message...\n"
                             },
                             {
                               "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
@@ -456,7 +506,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:12:11.290Z",
+                          "startTime": "2025-10-06T06:46:14.373Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -485,11 +535,11 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6809,
+                          "duration": 6792,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-06T06:12:16.994Z - [Delete] deletion started...\n"
+                              "text": "[INFO] 2025-10-06T06:46:20.008Z - [Delete] deletion started...\n"
                             },
                             {
                               "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
@@ -499,14 +549,11 @@
                             },
                             {
                               "text": "Waiting for popup to disappear...\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-06T06:12:23.815Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-06T06:12:16.977Z",
+                          "startTime": "2025-10-06T06:46:19.991Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -520,6 +567,2060 @@
                   "column": 9
                 }
               ]
+            },
+            {
+              "title": "Send Image",
+              "file": "03_bulletinTest.spec.js",
+              "line": 74,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3317,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:46:26.888Z - [Media] Upload image started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:26.804Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-de390db90ee2e852a804",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 75,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2278,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:46:30.153Z - [ReadByMessage] Started readBy message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:30.138Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-eb8a9375dff30fdf7132",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 81,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5764,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:46:32.440Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:32.432Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-2288922fe4f1b54a7a04",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 85,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1402,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:46:38.219Z - [ReplyMessage] Started reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:38.206Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-3a97ca78ebc709a11658",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 89,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2519,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:46:39.635Z - [editReply] Started edit reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:39.623Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-8357504a1c91a728ed1c",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 93,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1997,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:46:42.161Z - [readByReply] Started read By reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:42.155Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-b0185e39edd7e5a94c9a",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 97,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5814,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:46:44.167Z - [deleteReply] Started delete reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:44.160Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-c18ba7a292137ae48f59",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 101,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 989,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:49.984Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-e6af35be95c9595a9c52",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 105,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6620,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:50.989Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-5b1c531848bb9c8a5792",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 109,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6865,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:46:57.628Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:46:57.615Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-4038f1f9d0a0e8afef37",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 113,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Video",
+              "file": "03_bulletinTest.spec.js",
+              "line": 119,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a video",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3275,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:04.568Z - [Media] Upload video started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:04.497Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-51ea9cbfed44cc918ec6",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 120,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2301,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:07.798Z - [ReadByMessage] Started readBy message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:07.787Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-26f8e9a39a8e6a797011",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 126,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6254,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:10.107Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:10.100Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-a2d2c240faa2254dbcae",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 130,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1401,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:16.380Z - [ReplyMessage] Started reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:16.365Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-b46eccb4a7dc6ee2ffbf",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 134,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2901,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:17.788Z - [editReply] Started edit reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:17.781Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-a1165b6edc134f4cba5a",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 138,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2082,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:20.702Z - [readByReply] Started read By reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:20.691Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-b4b46ec51fc63e39108d",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 142,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5585,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:22.792Z - [deleteReply] Started delete reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:22.785Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-6d784baf67783c1f7ed2",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 146,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 907,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:28.380Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-fd559574d9f17b39cb8f",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 150,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5560,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:29.302Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-7f0b519b2d9be4aee4d7",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 154,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete video",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6908,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:34.877Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:34.869Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-3f25aa559cfc6f213b13",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 158,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Audio",
+              "file": "03_bulletinTest.spec.js",
+              "line": 164,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a audio",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2780,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:41.867Z - [Media] Upload audio started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:41.790Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-9d36a2f43e23986461d0",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 165,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3091,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:44.594Z - [ReadByMessage] Started readBy message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:44.586Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-54262c6a643c5677bbd7",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 170,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5853,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:47.694Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:47.688Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-bbbbf0913d6bfd90c8fa",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 174,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1462,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:53.570Z - [ReplyMessage] Started reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:53.552Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-497f56e260f16891c419",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 178,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2932,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:55.043Z - [editReply] Started edit reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:55.032Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-56828c9a8dc2f0a1157d",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 182,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1990,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:57.981Z - [readByReply] Started read By reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:57.977Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-192ff7c96c884dc8ef03",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 186,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5601,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:47:59.980Z - [deleteReply] Started delete reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:47:59.974Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-1bf753afd20571fd156f",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 190,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1006,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:05.584Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-9bb89048ada507a6e172",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 194,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6573,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:06.606Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-2eff12fae46a7dea84b8",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 198,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete audio",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6781,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:13.203Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:13.189Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-b252403d1d3f0db5a235",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 202,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Document",
+              "file": "03_bulletinTest.spec.js",
+              "line": 208,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 975,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:20.049Z - [Media] Upload document started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:19.987Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-ea3d45e5e5bb11d7bd39",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 209,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4552,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:20.977Z - [ReadByMessage] Started readBy message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:20.971Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-0c7210cc894ecde0e57b",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 214,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5853,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:25.537Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:25.531Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-7b2971b00f94f11c2b7f",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 218,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1405,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:31.407Z - [ReplyMessage] Started reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:31.394Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-0e18209a7a1bda54e888",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 222,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2890,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:32.828Z - [editReply] Started edit reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:32.814Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-c2bbdeaa5b97f9938168",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 226,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2082,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:35.737Z - [readByReply] Started read By reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:35.722Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-c4d273bdcaafbc0de53c",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 230,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4474,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:37.827Z - [deleteReply] Started delete reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:37.821Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-0f1bda53d97f1f5aff3e",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 234,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 896,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:42.305Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-000c659ffc07da7fc942",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 238,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9577,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:43.212Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-cbe1c89fc48a119b1bc1",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 242,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6888,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:52.813Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:52.800Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-6aee32b98fcdc98b27d6",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 246,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Location",
+              "file": "03_bulletinTest.spec.js",
+              "line": 252,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a location",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7185,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:48:59.787Z - [Location] Upload location started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:48:59.706Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-d0b434508640a7d78eeb",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 253,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2396,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:06.914Z - [ReadByMessage] Started readBy message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:49:06.909Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-892a3af38e1ed080a2a8",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 258,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6762,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:09.318Z - [ForwardMessage] Started forward message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:49:09.312Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-84af1af0fd7ce8880194",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 262,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1502,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:16.112Z - [ReplyMessage] Started reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:49:16.086Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-0deaa9f5ce33aa0f67fa",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 266,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3052,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:17.621Z - [editReply] Started edit reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:49:17.613Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-af36440e90e66e6274c0",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 270,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2103,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:20.682Z - [readByReply] Started read By reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:49:20.674Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-dbf8034c260b944e263d",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 274,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5409,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:22.794Z - [deleteReply] Started delete reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:49:22.786Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-0e8eba69cd8dfea8bbad",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 278,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete location",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6902,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:28.221Z - [Delete] deletion started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Waiting for popup to appear...\n"
+                            },
+                            {
+                              "text": "Waiting for popup to disappear...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:49:28.208Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-96945bdbf72ee183b42c",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 282,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Image Reply",
+              "file": "03_bulletinTest.spec.js",
+              "line": 288,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify send a image reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6279,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:35.219Z - [Media] Upload image started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:38.473Z - [ImageReply] Started image reply message...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-10-06T06:49:41.431Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-06T06:49:35.127Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7803b65b565cbf77adb8-a3c3913ddbd717f04e22",
+                  "file": "03_bulletinTest.spec.js",
+                  "line": 289,
+                  "column": 9
+                }
+              ]
             }
           ]
         }
@@ -528,10 +2629,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-06T06:11:43.746Z",
-    "duration": 40406.309,
-    "expected": 9,
-    "skipped": 0,
+    "startTime": "2025-10-06T06:45:44.129Z",
+    "duration": 237824.99099999998,
+    "expected": 58,
+    "skipped": 1,
     "unexpected": 0,
     "flaky": 0
   }

@@ -37,14 +37,12 @@ export default class UploadMedia {
           */ 
          const projectName = startproject.projectName;
          this.qaProject = page.locator(`text=/${projectName}/i`);
-        //this.qaProject = page.locator('text=/Zl Testing 2nd Jan QA/i');
-        this.productionProject = page.locator('text=/Zl 20 May live/i');
+         this.productionProject = page.locator('text=/Zl 20 May live/i');
 
         /**
          * Message locators
          */
         this.typeYourMessage = page.locator('textarea[placeholder="Type your message"]');
-        //this.sendButton = page.locator('span[aria-label="send"]');
         this.sendButton = page.locator('#send_messages_to_users_button');
         this.sendingIndicator = page.locator('span[aria-label="clock-circle"]');
         this.edited = page.locator("//span[text()='Edited']");
@@ -167,6 +165,20 @@ export default class UploadMedia {
         await this.handleDropdownAction('Reply');
         await this.typeMessage.fill('Reply message');
         await this.replySendButton.click();
+    }
+
+    async save(){
+        await this.handleDropdownAction('Save');
+    }
+
+    async distribute(){
+        await this.handleDropdownAction('Distribute');
+        await this.page.locator('#forward_selected_messages_button').click();
+        await this.page.locator('div.ant-modal-content button').last().click();
+
+        const popup = this.page.locator("text=Media distributed successfully.");
+        await expect(popup).toBeVisible({timeout: 20000});
+        await expect(popup).toBeHidden({timeout: 20000});
     }
 
     async dropDownListOnReply(optionText){

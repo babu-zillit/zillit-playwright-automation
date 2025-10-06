@@ -1,29 +1,107 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="2" errors="0" time="22.455779999999997">
-<testsuite name="budgetDepartmentTest.spec.js" timestamp="2025-10-03T12:54:19.211Z" hostname="chromium" tests="3" failures="0" skipped="2" time="13.527" errors="0">
-<testcase name="Budget Full › upload the budget › verify upload budget full document" classname="budgetDepartmentTest.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Budget Full › upload the budget › verify view - download - view count - download count" classname="budgetDepartmentTest.spec.js" time="13.527">
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="40.406309">
+<testsuite name="03_bulletinTest.spec.js" timestamp="2025-10-06T06:11:43.867Z" hostname="chromium" tests="9" failures="0" skipped="0" time="33.292" errors="0">
+<testcase name="Bulletin › Send Message › verify send a message" classname="03_bulletinTest.spec.js" time="5.147">
 <system-out>
-<![CDATA[[INFO] 2025-10-03T12:54:20.114Z - browser is launching
-[INFO] 2025-10-03T12:54:23.900Z - open the project
+<![CDATA[[INFO] 2025-10-06T06:11:45.075Z - browser is launching
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-03T12:54:23.900Z - QA environment is started...
+[INFO] 2025-10-06T06:11:48.262Z - QA environment is started...
+[INFO] 2025-10-06T06:11:50.408Z - [SendMessage] Started sending message...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › upload the budget › verify add member" classname="budgetDepartmentTest.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
+<testcase name="Bulletin › Send Message › verify edit the message" classname="03_bulletinTest.spec.js" time="2.019">
+<system-out>
+<![CDATA[[INFO] 2025-10-06T06:11:55.575Z - [EditMessage] Started edit message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify read by status on message" classname="03_bulletinTest.spec.js" time="2.236">
+<system-out>
+<![CDATA[[INFO] 2025-10-06T06:11:57.604Z - [ReadByMessage] Started readBy message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify forward the message" classname="03_bulletinTest.spec.js" time="5.842">
+<system-out>
+<![CDATA[[INFO] 2025-10-06T06:11:59.847Z - [ForwardMessage] Started forward message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify reply to the message" classname="03_bulletinTest.spec.js" time="1.41">
+<system-out>
+<![CDATA[[INFO] 2025-10-06T06:12:05.704Z - [ReplyMessage] Started reply message...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the edit the reply message" classname="03_bulletinTest.spec.js" time="2.065">
+<system-out>
+<![CDATA[[INFO] 2025-10-06T06:12:07.130Z - [editReply] Started edit reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the read by status on reply message" classname="03_bulletinTest.spec.js" time="2.089">
+<system-out>
+<![CDATA[[INFO] 2025-10-06T06:12:09.200Z - [readByReply] Started read By reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the delete the reply message" classname="03_bulletinTest.spec.js" time="5.675">
+<system-out>
+<![CDATA[[INFO] 2025-10-06T06:12:11.297Z - [deleteReply] Started delete reply message...
+Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the delete message" classname="03_bulletinTest.spec.js" time="6.809">
+<system-out>
+<![CDATA[[INFO] 2025-10-06T06:12:16.994Z - [Delete] deletion started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+Waiting for popup to appear...
+Waiting for popup to disappear...
+[INFO] 2025-10-06T06:12:23.815Z - close browser
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

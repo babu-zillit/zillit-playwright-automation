@@ -73,8 +73,7 @@ export default class UploadMedia {
         /**
          * ReadBy buttons locator
          */
-        this.readUserButton = page.locator('//div[contains(@class, "ant-segmented-item-label") and text()="READ USER"]');
-        this.unReadUserButton = page.locator('//div[contains(@class, "ant-segmented-item-label") and text()="UN-READ USER"]');
+        this.readUnreadTab = page.locator('div.ant-modal-body label');
         this.closeButton = page.getByRole('button', { name: 'Close' });
 
         /**
@@ -156,6 +155,9 @@ export default class UploadMedia {
         logger.info('[ReadByMessage] Started readBy message...');
 
         await this.handleDropdownAction('Read By');
+        await this.page.waitForTimeout(500);
+        await this.readUnreadTab.last().click();
+        await this.page.waitForTimeout(500);
         await this.closeButton.click();
     }
 
@@ -200,8 +202,10 @@ export default class UploadMedia {
     async readByReply(){
         logger.info('[readByReply] Started read By reply message...');
 
-        await this.dropDownListOnReply('Read By')
-        await this.page.waitForTimeout(1000);
+        await this.dropDownListOnReply('Read By');
+        await this.page.waitForTimeout(500);
+        await this.readUnreadTab.last().click();
+        await this.page.waitForTimeout(500);
         await this.closeButton.click();
     }
 

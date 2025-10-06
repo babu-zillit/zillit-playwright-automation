@@ -30,7 +30,7 @@ test.describe('Bulletin', () => {
         });
     });
 
-    test.describe('Send Message', () => {
+    test.describe.only('Send Message', () => {
 
         test('verify send a message', async () => {
             await uploadmedia.sendMessage();

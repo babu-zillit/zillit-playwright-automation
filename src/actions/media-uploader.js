@@ -305,6 +305,12 @@ export default class UploadMedia {
         await this.clickSendMedia();
     }
 
+    async history(){
+        await this.page.locator('div.ant-float-btn-body').nth(1).click();
+        await this.page.waitForLoadState('load');
+        await this.page.waitForTimeout(2000);
+    }
+
     async pressReturnKey() {
   // AppleScript: simulate pressing the Return key
   const appleScript = `

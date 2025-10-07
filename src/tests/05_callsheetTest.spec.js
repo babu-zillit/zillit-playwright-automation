@@ -66,6 +66,10 @@ test.describe('CallSheet', () => {
             await uploadmedia.save();
         });
 
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete document', async () => {
             await uploadmedia.delete();
         });
@@ -105,6 +109,10 @@ test.describe('CallSheet', () => {
 
         test('verify the delete the reply message', async () => {
             await uploadmedia.deleteReply();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete message', async () => {

@@ -1,3 +1,4 @@
+import { expect } from '@playwright/test';
 import { loadJson } from '../utils/jsonUtil';
 const mediapaths = loadJson('mediapaths', 'testdata');
 
@@ -46,6 +47,15 @@ export default class Settings {
         this.submitWaterMarkLogo = page.locator('#submit_watermark_logo_button');
         this.cancelWaterMarkLogo = page.locator('#cancel_watermark_logo_button');
         this.deleteWaterMarkLogo = page.locator('#delete_watermark_logo_button');
+
+        /**
+         * Forward to Remote Projects
+         */
+        this.remoteShootingUnit = page.locator('#create_remote_shooting_unit');
+        this.createRemoteUnit = page.locator('#create_remote_unit_drawer_open_button');
+        this.enterUnitName = page.locator('[placeholder="Enter unit name"]');
+        this.selectsUserAdmin = page.locator('div.ant-select-selector');
+        this.saveRemoteUnit = page.locator('#save_remote_unit_button');
 
         /**
          * Delete project locator
@@ -178,6 +188,19 @@ export default class Settings {
         await this.deleteWaterMarkLogo.click();
         //await this.yesButton.nth(1).click();
         await this.page.locator('.ant-popconfirm-buttons button span').nth(1).click();
+    }
+
+    async createRemoteProject(){
+        await this.remoteShootingUnit.click();
+        await this.createRemoteUnit.click();
+        await this.enterUnitName.fill('Zl remote automation');
+        await this.selectsUserAdmin.last().click();
+        await this.page.keyboard.press('Enter');
+        await this.saveRemoteUnit.click();
+
+        const popup = this.page.locator("text=Project has been created successfully.");
+        await expect(popup).toBeVisible({timeout: 20000});
+        await expect(popup).toBeHidden({timeout: 20000});
     }
 
     async deleteProjects(){

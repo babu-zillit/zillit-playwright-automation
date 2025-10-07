@@ -1,3 +1,7 @@
+import fs from 'fs/promises';
+import os from 'os';
+import path from 'path';
+import { exec } from 'child_process';
 import { expect } from '@playwright/test';
 import logger from "../utils/loggerUtils";
 import { loadJson } from '../utils/jsonUtil';
@@ -58,6 +62,20 @@ export default class UploadMedia {
         this.replySendButton =  page.getByRole('button', { name: 'Send' });
 
         this.confidentialInfoTabButton = this.page.getByText('Confidential Info Tab');
+
+        /**
+         * Forward to Remote Projects
+         */
+        this.settings = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Settings"]');
+        this.adminSetting = page.locator('[data-node-key="admin"]');
+        this.remoteShootingUnit = page.locator('#create_remote_shooting_unit');
+        this.createRemoteUnit = page.locator('#create_remote_unit_drawer_open_button');
+        this.enterUnitName = page.locator('[placeholder="Enter unit name"]');
+        this.selectsUserAdmin = page.locator('div.ant-select-selector');
+        this.saveRemoteUnit = page.locator('#save_remote_unit_button');
+
+        this.remoteProjectList = page.locator('div.ant-modal-body p');
+
 
     }
 
@@ -136,6 +154,12 @@ export default class UploadMedia {
 
     async save(){
         await this.handleDropdownAction('Save');
+        await this.page.waitForTimeout(500);
+        await this.pressReturnKey();
+
+        const popup = this.page.locator("text=File downloaded successfully");
+        await expect(popup).toBeVisible({timeout: 15000});
+        await expect(popup).toBeHidden({timeout: 15000});
     }
 
     async distribute(){
@@ -146,6 +170,20 @@ export default class UploadMedia {
         const popup = this.page.locator("text=Media distributed successfully.");
         await expect(popup).toBeVisible({timeout: 15000});
         await expect(popup).toBeHidden({timeout: 15000});
+    }
+
+    async forwardRemoteProject(){
+        await this.handleDropdownAction('Forward to Remote Projects');
+        await this.remoteProjectList.first().click();
+        await this.confidentialInfoTabButton.click();
+        
+        const popup = this.page.locator('text=Forward Successfully');
+        await expect(popup).toBeVisible({ timeout: 15000 });
+        await expect(popup).toBeHidden({ timeout: 15000 });
+
+        const close = this.page.locator('div.ant-modal-content button');
+        await close.last().click();
+        await close.first().click();
     }
 
     async dropDownListOnReply(optionText){
@@ -265,6 +303,36 @@ export default class UploadMedia {
         await this.handleDropdownAction('Image Reply');
         await this.page.locator('[placeholder="Type a message"]').fill('This is image reply');
         await this.clickSendMedia();
-    }   
+    }
+
+    async pressReturnKey() {
+  // AppleScript: simulate pressing the Return key
+  const appleScript = `
+    tell application "System Events"
+        key code 36
+    end tell
+  `;
+
+  // Save to a temp script file
+  const tempScriptPath = path.join(os.tmpdir(), 'pressReturn.scpt');
+  await fs.writeFile(tempScriptPath, appleScript);
+
+  const runAppleScript = () => {
+    return new Promise((resolve, reject) => {
+      exec(`osascript ${tempScriptPath}`, (error, stdout, stderr) => {
+        fs.unlink(tempScriptPath); // cleanup
+        if (error) reject(error);
+        else resolve(stdout);
+      });
+    });
+  };
+
+  try {
+    await runAppleScript();
+    console.log('✅ Pressed Return successfully');
+  } catch (err) {
+    console.error('❌ AppleScript error:', err.message);
+  }
+ }
 
 }

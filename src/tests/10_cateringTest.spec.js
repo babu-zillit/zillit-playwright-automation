@@ -75,6 +75,10 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
         test('verify the delete image', async () => {
             await cateringPage.selectUser();
             await uploadmedia.delete();
@@ -92,6 +96,10 @@ test.describe('Catering', () => {
 
         test('verify the forward', async () => {
             await uploadmedia.forward();
+        });
+
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
         });
 
         test('verify the delete document', async () => {
@@ -113,6 +121,10 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
         test('verify the delete audio', async () => {
             await cateringPage.selectUser();
             await uploadmedia.delete();
@@ -121,6 +133,221 @@ test.describe('Catering', () => {
     });
 
 
+    test.describe('Send Message', () => {
+
+        test('verify send a message in lunch', async () => {
+            await cateringPage.lunchTab();
+            await cateringPage.selectUser();
+            await uploadmedia.sendMessage();
+        });  
+    
+        test('verify edit the message in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.edit();
+        });
+
+        test('verify forward the message in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.forward();
+        });
+
+        test('verify the delete message in lunch', async () => {
+            await cateringPage.lunchTab();
+            await cateringPage.selectUser();
+            await uploadmedia.delete();
+        });
+
+    });
+
+    test.describe('Send Image', () => {
+
+        test('verify the send a image in lunch', async () => {
+            await cateringPage.lunchTab();
+            await cateringPage.selectUser();
+            await uploadmedia.clickAttachment();
+            await uploadmedia.uploadImage();
+            await uploadmedia.clickSendMedia();
+        });
+
+        test('verify the forward in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.forward();
+        });
+
+        test('verify the save or download in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.save();
+        });
+
+        test('verify the delete image in lunch', async () => {
+            await cateringPage.lunchTab();
+            await cateringPage.selectUser();
+            await uploadmedia.delete();
+        });
+
+    });
+
+    test.describe('Send Document', () => {
+
+        test('verify the send a document in lunch', async () => {
+            await cateringPage.lunchTab();
+            await cateringPage.selectUser();
+            await uploadmedia.clickAttachment();
+            await uploadmedia.uploadDocument();
+        });
+
+        test('verify the forward in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.forward();
+        });
+
+        test('verify the save or download in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.save();
+        });
+
+        test('verify the delete document in lunch', async () => {
+            await cateringPage.lunchTab();
+            await cateringPage.selectUser();
+            await uploadmedia.delete();
+        });
+
+    });
+
+    test.describe('Send Audio', () => {
+
+        test('verify the send a audio in lunch', async () => {
+            await cateringPage.lunchTab();
+            await cateringPage.selectUser();
+            await uploadmedia.clickAttachment();
+            await uploadmedia.uploadAudio();
+        });
+
+        test('verify the forward in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.forward();
+        });
+
+        test('verify the save or download in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.save();
+        });
+
+        test('verify the delete audio in lunch', async () => {
+            await cateringPage.lunchTab();
+            await cateringPage.selectUser();
+            await uploadmedia.delete();
+        });
+
+    });
+
+    test.describe('Send Message', () => {
+
+        test('verify send a message in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await cateringPage.selectUser();
+            await uploadmedia.sendMessage();
+        });  
+    
+        test('verify edit the message in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.edit();
+        });
+
+        test('verify forward the message in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.forward();
+        });
+
+        test('verify the delete message in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await cateringPage.selectUser();
+            await uploadmedia.delete();
+        });
+
+    });
+
+    test.describe('Send Image', () => {
+
+        test('verify the send a image in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await cateringPage.selectUser();
+            await uploadmedia.clickAttachment();
+            await uploadmedia.uploadImage();
+            await uploadmedia.clickSendMedia();
+        });
+
+        test('verify the forward in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.forward();
+        });
+
+        test('verify the save or download in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.save();
+        });
+
+        test('verify the delete image in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await cateringPage.selectUser();
+            await uploadmedia.delete();
+        });
+
+    });
+
+    test.describe('Send Document', () => {
+
+        test('verify the send a document in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await cateringPage.selectUser();
+            await uploadmedia.clickAttachment();
+            await uploadmedia.uploadDocument();
+        });
+
+        test('verify the forward in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.forward();
+        });
+
+        test('verify the save or download in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.save();
+        });
+
+        test('verify the delete document in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await cateringPage.selectUser();
+            await uploadmedia.delete();
+        });
+
+    });
+
+    test.describe('Send Audio', () => {
+
+        test('verify the send a audio in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await cateringPage.selectUser();
+            await uploadmedia.clickAttachment();
+            await uploadmedia.uploadAudio();
+        });
+
+        test('verify the forward in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.forward();
+        });
+
+        test('verify the save or download in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.save();
+        });
+
+        test('verify the delete audio in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await cateringPage.selectUser();
+            await uploadmedia.delete();
+        });
+
+    });
 
     test.describe('Catering unit > creation, edition, deletion', () => {
 

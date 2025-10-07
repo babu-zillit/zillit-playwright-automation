@@ -1,258 +1,501 @@
-<testsuites id="" name="" tests="32" failures="0" skipped="0" errors="0" time="179.394389">
-<testsuite name="09_accountTest.spec.js" timestamp="2025-10-06T13:02:11.573Z" hostname="chromium" tests="32" failures="0" skipped="0" time="169.008" errors="0">
-<testcase name="Accounts › Account › verify user become the accountant" classname="09_accountTest.spec.js" time="11.812">
+<testsuites id="" name="" tests="52" failures="0" skipped="0" errors="0" time="272.608423">
+<testsuite name="10_cateringTest.spec.js" timestamp="2025-10-07T06:48:25.996Z" hostname="chromium" tests="52" failures="0" skipped="0" time="248.904" errors="0">
+<testcase name="Catering › User change the department › verify user become cater department" classname="10_cateringTest.spec.js" time="10.13">
 <system-out>
-<![CDATA[[INFO] 2025-10-06T13:02:13.500Z - browser is launching
-[INFO] 2025-10-06T13:02:17.020Z - open the project
+<![CDATA[[INFO] 2025-10-07T06:48:27.110Z - browser is launching
+[INFO] 2025-10-07T06:48:33.362Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-06T13:02:17.020Z - QA environment is started...
+[INFO] 2025-10-07T06:48:33.362Z - QA environment is started...
 Dropdown Options: [
-  [32m'Select Department'[39m,
-  [32m'Direction'[39m,
-  [32m'Writer'[39m,
-  [32m'Producers'[39m,
-  [32m'Production'[39m,
-  [32m'Post-Production'[39m,
-  [32m'Accounts'[39m,
-  [32m'Animal Wranglers'[39m,
-  [32m'Armoury'[39m,
-  [32m'Art'[39m
+  [32m'Camera'[39m,
+  [32m'Casting'[39m,
+  [32m'Catering'[39m,
+  [32m'Locations'[39m,
+  [32m'Riggers & Electrical-Rigging'[39m,
+  [32m'Electrical'[39m,
+  [32m'Cast/Talent'[39m
 ]
 Dropdown Options: [
-  [32m'Select Department'[39m,
-  [32m'Direction'[39m,
-  [32m'Writer'[39m,
-  [32m'Producers'[39m,
-  [32m'Production'[39m,
-  [32m'Post-Production'[39m,
-  [32m'Accounts'[39m,
-  [32m'Animal Wranglers'[39m,
-  [32m'Armoury'[39m,
-  [32m'Art'[39m,
+  [32m'Camera'[39m,
+  [32m'Casting'[39m,
+  [32m'Catering'[39m,
+  [32m'Locations'[39m,
+  [32m'Riggers & Electrical-Rigging'[39m,
+  [32m'Electrical'[39m,
+  [32m'Cast/Talent'[39m,
   [32m'Select Designation'[39m,
-  [32m'1st Assistant Accountant'[39m,
-  [32m'2nd Assistant Accountant'[39m,
-  [32m'Accounts Assistant/cashier'[39m,
-  [32m'Assistant Production Accountant'[39m,
-  [32m'Financial Controller'[39m,
-  [32m'Payroll'[39m,
-  [32m'Petty Cash & Production Cards'[39m,
-  [32m'Production Accountant'[39m
+  [32m'Caterers'[39m,
+  [32m'Chef'[39m,
+  [32m'Craft Services'[39m,
+  [32m'Head Chef'[39m,
+  [32m'Scene Cuisine Caterer'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Message › verify send a message" classname="09_accountTest.spec.js" time="2.328">
+<testcase name="Catering › Send Message › verify send a message" classname="10_cateringTest.spec.js" time="14.614">
 </testcase>
-<testcase name="Accounts › Send Message › verify edit the message" classname="09_accountTest.spec.js" time="2.41">
+<testcase name="Catering › Send Message › verify edit the message" classname="10_cateringTest.spec.js" time="2.32">
 <system-out>
 <![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
   [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Message › verify forward the message" classname="09_accountTest.spec.js" time="6.084">
+<testcase name="Catering › Send Message › verify forward the message" classname="10_cateringTest.spec.js" time="6.194">
 <system-out>
 <![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
   [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Message › verify reply to the message" classname="09_accountTest.spec.js" time="1.077">
+<testcase name="Catering › Send Message › verify the delete message" classname="10_cateringTest.spec.js" time="5.971">
 <system-out>
 <![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
   [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Message › verify the edit the reply message" classname="09_accountTest.spec.js" time="1.718">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
+<testcase name="Catering › Send Image › verify the send a image" classname="10_cateringTest.spec.js" time="3.352">
 </testcase>
-<testcase name="Accounts › Send Message › verify the delete the reply message" classname="09_accountTest.spec.js" time="15.848">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Accounts › Send Message › verify the delete message" classname="09_accountTest.spec.js" time="6.027">
+<testcase name="Catering › Send Image › verify the forward" classname="10_cateringTest.spec.js" time="5.743">
 <system-out>
 <![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Image › verify the save or download" classname="10_cateringTest.spec.js" time="1.122">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Image › verify the delete image" classname="10_cateringTest.spec.js" time="5.927">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document › verify the send a document" classname="10_cateringTest.spec.js" time="1.026">
+</testcase>
+<testcase name="Catering › Send Document › verify the forward" classname="10_cateringTest.spec.js" time="7.903">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document › verify the save or download" classname="10_cateringTest.spec.js" time="0.894">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document › verify the delete document" classname="10_cateringTest.spec.js" time="5.967">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio › verify the send a audio" classname="10_cateringTest.spec.js" time="2.352">
+</testcase>
+<testcase name="Catering › Send Audio › verify the forward" classname="10_cateringTest.spec.js" time="6.066">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio › verify the save or download" classname="10_cateringTest.spec.js" time="0.929">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio › verify the delete audio" classname="10_cateringTest.spec.js" time="5.967">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Message › verify send a message in lunch" classname="10_cateringTest.spec.js" time="3.684">
+</testcase>
+<testcase name="Catering › Send Message › verify edit the message in lunch" classname="10_cateringTest.spec.js" time="1.904">
+<system-out>
+<![CDATA[Dropdown list items: [
   [32m'Edit Message'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Image › verify the send a image" classname="09_accountTest.spec.js" time="2.901">
-</testcase>
-<testcase name="Accounts › Send Image › verify the forward" classname="09_accountTest.spec.js" time="5.741">
+<testcase name="Catering › Send Message › verify forward the message in lunch" classname="10_cateringTest.spec.js" time="6.211">
 <system-out>
 <![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Message › verify the delete message in lunch" classname="10_cateringTest.spec.js" time="5.902">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Image › verify the send a image in lunch" classname="10_cateringTest.spec.js" time="2.525">
+</testcase>
+<testcase name="Catering › Send Image › verify the forward in lunch" classname="10_cateringTest.spec.js" time="5.766">
+<system-out>
+<![CDATA[Dropdown list items: [
   [32m'Forward'[39m,
   [32m'Delete'[39m,
   [32m'Save'[39m,
-  [32m'Image Reply'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Image › verify the reply" classname="09_accountTest.spec.js" time="1.401">
+<testcase name="Catering › Send Image › verify the save or download in lunch" classname="10_cateringTest.spec.js" time="1.024">
 <system-out>
 <![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
   [32m'Save'[39m,
-  [32m'Image Reply'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Image › verify the edit reply" classname="09_accountTest.spec.js" time="2.062">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Accounts › Send Image › verify the delete reply" classname="09_accountTest.spec.js" time="22.135">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Accounts › Send Image › verify the save or download" classname="09_accountTest.spec.js" time="0.941">
+<testcase name="Catering › Send Image › verify the delete image in lunch" classname="10_cateringTest.spec.js" time="7.016">
 <system-out>
 <![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
   [32m'Save'[39m,
-  [32m'Image Reply'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Image › verify the delete image" classname="09_accountTest.spec.js" time="6.155">
+<testcase name="Catering › Send Document › verify the send a document in lunch" classname="10_cateringTest.spec.js" time="1.06">
+</testcase>
+<testcase name="Catering › Send Document › verify the forward in lunch" classname="10_cateringTest.spec.js" time="8.048">
 <system-out>
 <![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
   [32m'Forward'[39m,
   [32m'Delete'[39m,
   [32m'Save'[39m,
-  [32m'Image Reply'[39m,
+  [32m'File Cabinet'[39m,
   [32m'Forward to Remote Projects'[39m
 ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Document › verify the send a document" classname="09_accountTest.spec.js" time="1.063">
-</testcase>
-<testcase name="Accounts › Send Document › verify the forward" classname="09_accountTest.spec.js" time="7.067">
+<testcase name="Catering › Send Document › verify the save or download in lunch" classname="10_cateringTest.spec.js" time="0.919">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Document › verify the reply" classname="09_accountTest.spec.js" time="1.079">
+<testcase name="Catering › Send Document › verify the delete document in lunch" classname="10_cateringTest.spec.js" time="6.982">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Document › verify the edit reply" classname="09_accountTest.spec.js" time="2.197">
+<testcase name="Catering › Send Audio › verify the send a audio in lunch" classname="10_cateringTest.spec.js" time="3.384">
+</testcase>
+<testcase name="Catering › Send Audio › verify the forward in lunch" classname="10_cateringTest.spec.js" time="7.124">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Document › verify the delete reply" classname="09_accountTest.spec.js" time="5.587">
+<testcase name="Catering › Send Audio › verify the save or download in lunch" classname="10_cateringTest.spec.js" time="1.017">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Document › verify the save or download" classname="09_accountTest.spec.js" time="0.929">
+<testcase name="Catering › Send Audio › verify the delete audio in lunch" classname="10_cateringTest.spec.js" time="7.015">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Document › verify the delete document" classname="09_accountTest.spec.js" time="5.844">
+<testcase name="Catering › Send Message › verify send a message in dinner" classname="10_cateringTest.spec.js" time="4.323">
+</testcase>
+<testcase name="Catering › Send Message › verify edit the message in dinner" classname="10_cateringTest.spec.js" time="3.375">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Audio › verify the send a audio" classname="09_accountTest.spec.js" time="2.402">
-</testcase>
-<testcase name="Accounts › Send Audio › verify the forward" classname="09_accountTest.spec.js" time="6.137">
+<testcase name="Catering › Send Message › verify forward the message in dinner" classname="10_cateringTest.spec.js" time="6.23">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Audio › verify the reply" classname="09_accountTest.spec.js" time="1.489">
+<testcase name="Catering › Send Message › verify the delete message in dinner" classname="10_cateringTest.spec.js" time="6.978">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Audio › verify the edit reply" classname="09_accountTest.spec.js" time="2.515">
+<testcase name="Catering › Send Image › verify the send a image in dinner" classname="10_cateringTest.spec.js" time="3.457">
+</testcase>
+<testcase name="Catering › Send Image › verify the forward in dinner" classname="10_cateringTest.spec.js" time="6.871">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Audio › verify the delete reply" classname="09_accountTest.spec.js" time="20.164">
+<testcase name="Catering › Send Image › verify the save or download in dinner" classname="10_cateringTest.spec.js" time="0.936">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Audio › verify the save or download" classname="09_accountTest.spec.js" time="0.904">
+<testcase name="Catering › Send Image › verify the delete image in dinner" classname="10_cateringTest.spec.js" time="7.002">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Send Audio › verify the delete audio" classname="09_accountTest.spec.js" time="6.049">
+<testcase name="Catering › Send Document › verify the send a document in dinner" classname="10_cateringTest.spec.js" time="1.04">
+</testcase>
+<testcase name="Catering › Send Document › verify the forward in dinner" classname="10_cateringTest.spec.js" time="9.466">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m ]
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accounts › Account unit › verify create the account unit" classname="09_accountTest.spec.js" time="7.658">
-</testcase>
-<testcase name="Accounts › Account unit › verify edit the account unit" classname="09_accountTest.spec.js" time="2.699">
-</testcase>
-<testcase name="Accounts › Account unit › verify delete the account unit" classname="09_accountTest.spec.js" time="6.585">
+<testcase name="Catering › Send Document › verify the save or download in dinner" classname="10_cateringTest.spec.js" time="0.916">
 <system-out>
-<![CDATA[[INFO] 2025-10-06T13:05:10.406Z - close browser
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Document › verify the delete document in dinner" classname="10_cateringTest.spec.js" time="7">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio › verify the send a audio in dinner" classname="10_cateringTest.spec.js" time="3.368">
+</testcase>
+<testcase name="Catering › Send Audio › verify the forward in dinner" classname="10_cateringTest.spec.js" time="6.211">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio › verify the save or download in dinner" classname="10_cateringTest.spec.js" time="1.013">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Send Audio › verify the delete audio in dinner" classname="10_cateringTest.spec.js" time="7.032">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'File Cabinet'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify create unit" classname="10_cateringTest.spec.js" time="8.375">
+</testcase>
+<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify edit unit" classname="10_cateringTest.spec.js" time="2.86">
+</testcase>
+<testcase name="Catering › Catering unit &gt; creation, edition, deletion › verify delete unit" classname="10_cateringTest.spec.js" time="6.393">
+<system-out>
+<![CDATA[[INFO] 2025-10-07T06:52:58.038Z - close browser
 ]]>
 </system-out>
 </testcase>

@@ -8,6 +8,7 @@ export default class Catering {
 
         this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
         this.settings = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Settings"]');
+        this.cateringTab = page.locator('[role="tab"]');
 
         /**
          * Catering page locators
@@ -36,8 +37,6 @@ export default class Catering {
         this.sendButton = page.locator('span[aria-label="send"]');
     }
 
-
-
     async clickCateringTab(){
         await this.tools.click();
         await this.page.waitForTimeout(10000);
@@ -52,6 +51,18 @@ export default class Catering {
     async openEditProfile(){
         await this.settings.click();
         await this.editProfile.click();
+    }
+
+    async breakFastTab(){
+        await this.cateringTab.nth(0).click();
+    }
+
+    async lunchTab(){
+        await this.cateringTab.nth(1).click();
+    }
+
+    async dinnerTab(){
+        await this.cateringTab.nth(2).click();
     }
 
     async changeDepartmentAndDesignation(departmentName, designationName){

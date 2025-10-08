@@ -55,6 +55,10 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete message', async () => {
             await cateringPage.selectUser();
             await uploadmedia.delete();
@@ -77,6 +81,10 @@ test.describe('Catering', () => {
 
         test('verify the save or download', async () => {
             await uploadmedia.save();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete image', async () => {
@@ -102,6 +110,10 @@ test.describe('Catering', () => {
             await uploadmedia.save();
         });
 
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete document', async () => {
             await cateringPage.selectUser();
             await uploadmedia.delete();
@@ -123,6 +135,10 @@ test.describe('Catering', () => {
 
         test('verify the save or download', async () => {
             await uploadmedia.save();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete audio', async () => {
@@ -149,6 +165,11 @@ test.describe('Catering', () => {
         test('verify forward the message in lunch', async () => {
             await cateringPage.lunchTab();
             await uploadmedia.forward();
+        });
+
+        test('verify the forward to remote project in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete message in lunch', async () => {
@@ -179,6 +200,11 @@ test.describe('Catering', () => {
             await uploadmedia.save();
         });
 
+        test('verify the forward to remote project in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete image in lunch', async () => {
             await cateringPage.lunchTab();
             await cateringPage.selectUser();
@@ -204,6 +230,11 @@ test.describe('Catering', () => {
         test('verify the save or download in lunch', async () => {
             await cateringPage.lunchTab();
             await uploadmedia.save();
+        });
+
+        test('verify the forward to remote project in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete document in lunch', async () => {
@@ -233,6 +264,11 @@ test.describe('Catering', () => {
             await uploadmedia.save();
         });
 
+        test('verify the forward to remote project in lunch', async () => {
+            await cateringPage.lunchTab();
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete audio in lunch', async () => {
             await cateringPage.lunchTab();
             await cateringPage.selectUser();
@@ -257,6 +293,11 @@ test.describe('Catering', () => {
         test('verify forward the message in dinner', async () => {
             await cateringPage.dinnerTab();
             await uploadmedia.forward();
+        });
+
+        test('verify the forward to remote project in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete message in dinner', async () => {
@@ -287,6 +328,11 @@ test.describe('Catering', () => {
             await uploadmedia.save();
         });
 
+        test('verify the forward to remote project in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete image in dinner', async () => {
             await cateringPage.dinnerTab();
             await cateringPage.selectUser();
@@ -314,6 +360,11 @@ test.describe('Catering', () => {
             await uploadmedia.save();
         });
 
+        test('verify the forward to remote project in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete document in dinner', async () => {
             await cateringPage.dinnerTab();
             await cateringPage.selectUser();
@@ -339,6 +390,11 @@ test.describe('Catering', () => {
         test('verify the save or download in dinner', async () => {
             await cateringPage.dinnerTab();
             await uploadmedia.save();
+        });
+
+        test('verify the forward to remote project in dinner', async () => {
+            await cateringPage.dinnerTab();
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete audio in dinner', async () => {

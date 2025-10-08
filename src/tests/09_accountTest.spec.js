@@ -67,6 +67,10 @@ test.describe('Accounts', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete message', async () => {
             await accountPage.selectUser();
             await uploadmedia.delete();
@@ -101,6 +105,10 @@ test.describe('Accounts', () => {
 
         test('verify the save or download', async () => {
             await uploadmedia.save();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete image', async () => {
@@ -138,6 +146,10 @@ test.describe('Accounts', () => {
             await uploadmedia.save();
         });
 
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete document', async () => {
             await accountPage.selectUser();
             await uploadmedia.delete();
@@ -173,11 +185,38 @@ test.describe('Accounts', () => {
             await uploadmedia.save();
         });
 
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete audio', async () => {
             await accountPage.selectUser();
             await uploadmedia.delete();
         });
 
+    });
+
+    test.describe('Account', () => {
+
+        test('verify reply attachment', async () => {
+            await accountPage.selectUser();
+            await uploadmedia.sendMessage();
+            await uploadmedia.replyMediaForAccount();
+            await accountPage.attachmentReply();
+            await accountPage.imageUploadReply();
+            await uploadmedia.replyMediaForAccount();
+            await accountPage.attachmentReply();
+            await accountPage.documentUploadReply();
+            await uploadmedia.replyMediaForAccount();
+            await accountPage.attachmentReply();
+            await accountPage.audioUploadReply();
+        }); 
+
+        test('verify the delete audio', async () => {
+            await accountPage.selectUser();
+            await uploadmedia.delete();
+        });
+    
     });
 
     test.describe('Account unit', () => {
@@ -195,7 +234,6 @@ test.describe('Accounts', () => {
         });
 
     });
-
 
 
 });

@@ -345,4 +345,8 @@ export default class UploadMedia {
   }
  }
 
+ async replyMediaForAccount(){
+    await this.handleDropdownAction('Reply');
+ }
+
 }

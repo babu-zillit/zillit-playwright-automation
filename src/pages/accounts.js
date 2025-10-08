@@ -1,10 +1,14 @@
 import { expect } from '@playwright/test';
 import logger from "../utils/loggerUtils";
+import { loadJson } from '../utils/jsonUtil';
+const mediapaths = loadJson('mediapaths', 'testdata');
+import UploadMedia from '../actions/media-uploader';
 
 export default class Accounts {
 
     constructor(page){
         this.page = page;
+        this.mediaUploaderPage = new UploadMedia(page);
 
         this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
         this.settings = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Settings"]');
@@ -33,6 +37,12 @@ export default class Accounts {
          */
         this.typeYourMessage = page.locator('textarea[placeholder="Type your message"]');
         this.sendButton = page.locator('span[aria-label="send"]');
+
+        /**
+         * Reply attachment locators
+         */ 
+        this.replyAttachment = page.locator('div.ant-modal-content div.ant-float-btn-body');
+        this.uploadTab = page.locator('span.ant-upload input[type="file"]');
     }
 
     
@@ -185,6 +195,30 @@ export default class Accounts {
         }
         await this.page.waitForTimeout(10000);
     }
+
+    async attachmentReply(){
+        await this.replyAttachment.click();
+    }
+
+    async imageUploadReply(){
+        await this.uploadTab.nth(0).setInputFiles(mediapaths.image);
+        await this.mediaUploaderPage.sendMedia.click();
+        await this.page.waitForTimeout(3000);
+    }
+
+    async documentUploadReply(){
+        await this.uploadTab.nth(1).setInputFiles(mediapaths.document);
+        await this.mediaUploaderPage.sendMedia.click();
+        await this.page.waitForTimeout(3000);
+    }
+
+    async audioUploadReply(){
+        await this.uploadTab.nth(2).setInputFiles(mediapaths.audio); 
+        await this.mediaUploaderPage.sendMedia.click();
+        await this.page.waitForTimeout(3000);  
+    }
+
+
 
     
 }

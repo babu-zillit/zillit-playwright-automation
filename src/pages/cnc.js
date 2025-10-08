@@ -1,11 +1,13 @@
 import { expect } from '@playwright/test';
 import { loadJson } from '../utils/jsonUtil';
 const mediapaths = loadJson('mediapaths', 'testdata');
+import UploadMedia from '../actions/media-uploader';
 
 export default class CnC {
 
     constructor(page){
         this.page = page;
+        this.mediaUploaderPage = new UploadMedia(page);
 
         this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
         this.cnc = page.locator('//span[@class="ant-menu-title-content"]//span[text()="C & C"]');
@@ -68,7 +70,7 @@ export default class CnC {
         await targetHover.hover();
 
         const dropdownManu = await this.page.locator('[id="dropdownMenuIconButton"]');
-        await dropdownManu.click();
+        await dropdownManu.first().click();
 
        // await this.page.locator(`text=${optionText}`).first().click();
 
@@ -145,7 +147,26 @@ export default class CnC {
 
     async save(){
         await this.cncDropList('Save');
-        await this.page.waitForTimeout(3000);
+        await this.page.waitForTimeout(500);
+        await this.mediaUploaderPage.pressReturnKey();
+
+        const popup = this.page.locator("text=File downloaded successfully");
+        await expect(popup).toBeVisible({timeout: 15000});
+        await expect(popup).toBeHidden({timeout: 15000});
+    }
+
+    async forwardRemoteProject(){
+        await this.cncDropList('Forward to Remote Projects');
+        await this.mediaUploaderPage.remoteProjectList.first().click();
+        await this.mediaUploaderPage.confidentialInfoTabButton.click();
+        
+        const popup = this.page.locator('text=Forward Successfully');
+        await expect(popup).toBeVisible({ timeout: 15000 });
+        await expect(popup).toBeHidden({ timeout: 15000 });
+
+        const close = this.page.locator('div.ant-modal-content button');
+        await close.last().click();
+        await close.first().click();
     }
 
     async readBy(){

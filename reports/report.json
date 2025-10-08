@@ -116,28 +116,28 @@
   },
   "suites": [
     {
-      "title": "12_scheduleFullLineTest.spec.js",
-      "file": "12_scheduleFullLineTest.spec.js",
+      "title": "17_crewList-assetReportTest.spec.js",
+      "file": "17_crewList-assetReportTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Script & Page Distribution",
-          "file": "12_scheduleFullLineTest.spec.js",
+          "title": "Crew List → Asset Report",
+          "file": "17_crewList-assetReportTest.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Schedule One Line History",
-              "file": "12_scheduleFullLineTest.spec.js",
-              "line": 114,
-              "column": 19,
+              "title": "Crew List",
+              "file": "17_crewList-assetReportTest.spec.js",
+              "line": 33,
+              "column": 10,
               "specs": [
                 {
-                  "title": "verify upload schedule one history",
-                  "ok": true,
+                  "title": "verify user generate the crew list",
+                  "ok": false,
                   "tags": [],
                   "tests": [
                     {
@@ -150,29 +150,135 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2098,
-                          "errors": [],
-                          "stdout": [
+                          "status": "timedOut",
+                          "duration": 30336,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js:12:10",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js",
+                              "column": 10,
+                              "line": 12
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m     \u001b[36mlet\u001b[39m crewListAssetReportPage\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ browser }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m\"browser is launching\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m         context \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewContext()\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
                             {
-                              "text": "[INFO] 2025-10-08T11:01:36.842Z - browser is launching\n"
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js",
+                                "column": 10,
+                                "line": 12
+                              },
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 10 |\u001b[39m     \u001b[36mlet\u001b[39m crewListAssetReportPage\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ browser }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m\"browser is launching\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m         context \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewContext()\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js:12:10\u001b[22m"
                             },
                             {
-                              "text": "[INFO] 2025-10-08T11:01:40.038Z - open the project\n"
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                                "column": 42,
+                                "line": 88
+                              },
+                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=/Zl automation56/i').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../actions/media-uploader.js:88\n\n\u001b[0m \u001b[90m 86 |\u001b[39m         \u001b[36mif\u001b[39m(hostname \u001b[33m===\u001b[39m \u001b[32m'qa.zillit.com'\u001b[39m){\n \u001b[90m 87 |\u001b[39m             logger\u001b[33m.\u001b[39minfo(\u001b[32m'QA environment is started...'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 88 |\u001b[39m             \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mqaProject\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m    \n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 89 |\u001b[39m         } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m(hostname \u001b[33m===\u001b[39m \u001b[32m'web.zillit.com'\u001b[39m){\n \u001b[90m 90 |\u001b[39m             logger\u001b[33m.\u001b[39minfo(\u001b[32m'Production environment is started...'\u001b[39m)\n \u001b[90m 91 |\u001b[39m             \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mproductionProject\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at UploadMedia.clickProjectName (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:88:42)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js:23:27\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-08T12:20:33.147Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-10-08T12:20:37.038Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-08T11:01:40.038Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-10-08T12:20:37.038Z - QA environment is started...\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-08T11:01:46.665Z - close browser\n"
+                              "text": "[INFO] 2025-10-08T12:21:03.263Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-08T11:01:36.537Z",
+                          "startTime": "2025-10-08T12:20:32.190Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-1",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js",
+                            "column": 10,
+                            "line": 12
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "5aae7682afbab2af3ca1-0411f203b63044febac3",
+                  "file": "17_crewList-assetReportTest.spec.js",
+                  "line": 35,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Asset Report",
+              "file": "17_crewList-assetReportTest.spec.js",
+              "line": 41,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user generate the asset report",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12062,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-08T12:21:04.545Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-10-08T12:21:07.745Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-10-08T12:21:07.745Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-10-08T12:21:16.340Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-08T12:21:04.171Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -180,9 +286,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "a2da4004141bed98d85e-b6f27a66a0bdaa6d884a",
-                  "file": "12_scheduleFullLineTest.spec.js",
-                  "line": 115,
+                  "id": "5aae7682afbab2af3ca1-65e38148805c912c312b",
+                  "file": "17_crewList-assetReportTest.spec.js",
+                  "line": 43,
                   "column": 9
                 }
               ]
@@ -194,11 +300,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-08T11:01:36.178Z",
-    "duration": 10756.425000000001,
+    "startTime": "2025-10-08T12:20:31.836Z",
+    "duration": 45614.773,
     "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

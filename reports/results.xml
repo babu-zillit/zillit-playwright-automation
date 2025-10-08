@@ -1,12 +1,74 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="10.756425000000002">
-<testsuite name="12_scheduleFullLineTest.spec.js" timestamp="2025-10-08T11:01:36.198Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.098" errors="0">
-<testcase name="Script &amp; Page Distribution › Schedule One Line History › verify upload schedule one history" classname="12_scheduleFullLineTest.spec.js" time="2.098">
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="45.614773">
+<testsuite name="17_crewList-assetReportTest.spec.js" timestamp="2025-10-08T12:20:31.857Z" hostname="chromium" tests="2" failures="1" skipped="0" time="42.398" errors="0">
+<testcase name="Crew List → Asset Report › Crew List › verify user generate the crew list" classname="17_crewList-assetReportTest.spec.js" time="30.336">
+<failure message="17_crewList-assetReportTest.spec.js:35:9 verify user generate the crew list" type="FAILURE">
+<![CDATA[  [chromium] › 17_crewList-assetReportTest.spec.js:35:9 › Crew List → Asset Report › Crew List › verify user generate the crew list 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      10 |     let crewListAssetReportPage;
+      11 |
+    > 12 |     test.beforeEach(async ({ browser }) => {
+         |          ^
+      13 |         logger.info("browser is launching");
+      14 |         context = await browser.newContext();
+      15 |         page = await context.newPage();
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js:12:10
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text=/Zl automation56/i').first()
+
+
+       at ../actions/media-uploader.js:88
+
+      86 |         if(hostname === 'qa.zillit.com'){
+      87 |             logger.info('QA environment is started...')
+    > 88 |             await this.qaProject.first().click();    
+         |                                          ^
+      89 |         } else if(hostname === 'web.zillit.com'){
+      90 |             logger.info('Production environment is started...')
+      91 |             await this.productionProject.click();
+        at UploadMedia.clickProjectName (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:88:42)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js:23:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[[INFO] 2025-10-08T11:01:36.842Z - browser is launching
-[INFO] 2025-10-08T11:01:40.038Z - open the project
+<![CDATA[[INFO] 2025-10-08T12:20:33.147Z - browser is launching
+[INFO] 2025-10-08T12:20:37.038Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-08T11:01:40.038Z - QA environment is started...
-[INFO] 2025-10-08T11:01:46.665Z - close browser
+[INFO] 2025-10-08T12:20:37.038Z - QA environment is started...
+[INFO] 2025-10-08T12:21:03.263Z - close browser
+
+[[ATTACHMENT|../test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Crew List → Asset Report › Asset Report › verify user generate the asset report" classname="17_crewList-assetReportTest.spec.js" time="12.062">
+<system-out>
+<![CDATA[[INFO] 2025-10-08T12:21:04.545Z - browser is launching
+[INFO] 2025-10-08T12:21:07.745Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-10-08T12:21:07.745Z - QA environment is started...
+[INFO] 2025-10-08T12:21:16.340Z - close browser
 ]]>
 </system-out>
 </testcase>

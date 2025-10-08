@@ -94,6 +94,10 @@ export default class UploadMedia {
         }
     }
 
+    async homeUnitTab(){
+        await this.page.locator('[role="tab"]').nth(3).click();
+    }
+
     async handleDropdownAction(optionText){
         await this.hoverTarget.waitFor({ state: 'visible' });
         await this.hoverTarget.hover();

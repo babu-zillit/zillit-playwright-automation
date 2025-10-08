@@ -43,6 +43,12 @@ export default class Calendar {
         this.deleteEvent = page.locator('//div[@class="flex items-center gap-2"]//span[@class="ant-btn-icon"]');
         this.allEvent = page.locator('//button[@type="button"]//span[text()="All Events"]');
         this.okButton = page.locator('//div[@class="ant-modal-footer"]//button');
+
+        /**
+         * CAdd user locator
+         */
+        this.enterFullName = page.locator('#full_name');
+        
     }
 
 
@@ -160,6 +166,10 @@ export default class Calendar {
         const submitButton = this.page.locator('//div[@class="ant-modal-footer"]//span[text()="Submit"]');
         await submitButton.waitFor({ state: 'visible', timeout: 5000 });
         await submitButton.click();
+    }
+
+    async addUser(){
+
     }
 
     async fillDiscription(enterDiscription){

@@ -49,6 +49,11 @@ export default class Continuity {
         this.production = page.locator('//div[contains(@class,"select_departments_list")]//div[text()="Production"]');
 
 
+        /**
+         * Distribute
+         */
+        this.distributeTab = page.locator('div.ant-spin-container li');
+        this.distributeForward = page.locator('#continuity_forward_scene_button');
 
     }
 
@@ -147,12 +152,23 @@ export default class Continuity {
 
     async allDepartmentScene(){
         await this.allDepartmentTab.click();
+        await this.distribute();
         await this.openSceneFolder();
         await this.production.click();
     }
 
     async closeWindow(){
         await this.close.click();
+    }
+
+    async distribute(){
+        await this.page.locator('div.ant-card-body [aria-label="down"]').first().click();
+        await this.page.locator('text=Distribute').click();
+        await this.page.locator('div.ant-modal-confirm-btns button').last().click();
+
+        const successMsg = await this.page.locator('text=Continuity scene(s) distributed');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
     }
 
 }

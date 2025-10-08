@@ -42,6 +42,7 @@ test.describe('Continuity', () => {
             await continuityPage.edit();
             await continuityPage.forward();
             await continuityPage.closeWindow();
+            await continuityPage.distribute();
         });   
     
     });

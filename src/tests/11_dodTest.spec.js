@@ -55,6 +55,12 @@ test.describe('Schedule D.O.D', () => {
     
     });
 
+    test.describe('D.O.D History', () => {
+        test('verify upload dod history', async () => {
+            await uploadmedia.history();
+        });
+    });
+
 });
 
   /**

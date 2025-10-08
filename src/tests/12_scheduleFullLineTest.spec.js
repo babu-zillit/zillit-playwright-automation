@@ -111,6 +111,12 @@ test.describe('Script & Page Distribution', () => {
     
     });
 
+    test.describe('Schedule One Line History', () => {
+        test('verify upload schedule one history', async () => {
+            await uploadmedia.history();
+        });
+    });
+
 
 
 });

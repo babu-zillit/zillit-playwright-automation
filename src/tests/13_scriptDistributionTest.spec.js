@@ -80,6 +80,12 @@ test.describe('Script & Page Distribution', () => {
     
     });
 
+    test.describe('Script Distribution History', () => {
+        test('verify script distribution history', async () => {
+            await uploadmedia.history();
+        });
+    });
+
 
 });
 

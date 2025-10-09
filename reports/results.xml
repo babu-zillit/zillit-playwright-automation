@@ -1,17 +1,115 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="37.169257">
-<testsuite name="16_external-userTest.spec.js" timestamp="2025-10-09T11:09:34.308Z" hostname="chromium" tests="2" failures="0" skipped="0" time="13.11" errors="0">
-<testcase name="External User › Add user › verify add external user" classname="16_external-userTest.spec.js" time="8.536">
+<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="189.809858">
+<testsuite name="21_castingTest.spec.js" timestamp="2025-10-09T12:50:18.857Z" hostname="chromium" tests="18" failures="0" skipped="0" time="167.883" errors="0">
+<testcase name="Casting › Selects Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="15.112">
 <system-out>
-<![CDATA[[INFO] 2025-10-09T11:09:35.799Z - browser is launching
-[INFO] 2025-10-09T11:09:47.752Z - open the project
+<![CDATA[[INFO] 2025-10-09T12:50:20.158Z - browser is launching
+[INFO] 2025-10-09T12:50:34.283Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-09T11:09:47.753Z - QA environment is started...
+[INFO] 2025-10-09T12:50:34.285Z - QA environment is started...
+Popup message verified:
 ]]>
 </system-out>
 </testcase>
-<testcase name="External User › Add user › verify delete the external user" classname="16_external-userTest.spec.js" time="4.574">
+<testcase name="Casting › Selects Tab › verify move to shortlist cast folder from the character screen" classname="21_castingTest.spec.js" time="6.008">
 <system-out>
-<![CDATA[[INFO] 2025-10-09T11:10:10.788Z - close browser
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify move to finals cast folder from the character screen" classname="21_castingTest.spec.js" time="6.336">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify delete cast folder from shortlist" classname="21_castingTest.spec.js" time="7.422">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify delete cast folder from final" classname="21_castingTest.spec.js" time="6.838">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify move to shortlist media from the media screen" classname="21_castingTest.spec.js" time="8.988">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify move to finals media from the media screen" classname="21_castingTest.spec.js" time="8.243">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify edit cast details from the media screen" classname="21_castingTest.spec.js" time="7.19">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Selects Tab › verify forward cast and image reply" classname="21_castingTest.spec.js" time="6.437">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Shortlist Tab › verify delete all cast folder from shortlist" classname="21_castingTest.spec.js" time="14.03">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Shortlist Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="9.401">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Shortlist Tab › verify move to finals cast folder from the character screen" classname="21_castingTest.spec.js" time="6.063">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Shortlist Tab › verify edit cast details from the media screen" classname="21_castingTest.spec.js" time="7.454">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Shortlist Tab › verify forward cast and image reply" classname="21_castingTest.spec.js" time="6.897">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Finals Tab › verify delete all cast folder from final" classname="21_castingTest.spec.js" time="20.285">
+<system-out>
+<![CDATA[Popup message verified:
+Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Finals Tab › verify casting upload, open the folder, and view the image" classname="21_castingTest.spec.js" time="9.698">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Finals Tab › verify forward cast and image reply" classname="21_castingTest.spec.js" time="6.386">
+<system-out>
+<![CDATA[Popup message verified:
+]]>
+</system-out>
+</testcase>
+<testcase name="Casting › Generate pdf › verify user generate the pdf from finals" classname="21_castingTest.spec.js" time="15.095">
+<system-out>
+<![CDATA[[INFO] 2025-10-09T12:53:28.116Z - close browser
 ]]>
 </system-out>
 </testcase>

@@ -37,6 +37,7 @@ test.describe('Casting', () => {
 
              await castingPage.uploadCasting('1','Police','Salman','male', 'For the villain role');
              await castingPage.verifypopup('Cast photograph(s) has been added successfully.');
+             await castingPage.distribute();
              await castingPage.openFolderFirstScreen();
              await castingPage.openFolderSecondScreen();
              await castingPage.viewImages(); 
@@ -103,6 +104,7 @@ test.describe('Casting', () => {
         test('verify delete all cast folder from shortlist', async () => {
 
             await castingPage.shortlistTab();
+            await castingPage.distribute();
             await castingPage.deleteFolderIfAvailable();
         });
 
@@ -144,6 +146,7 @@ test.describe('Casting', () => {
         test('verify delete all cast folder from final', async () => {
 
             await castingPage.finalsTab();
+            await castingPage.distribute();
             await castingPage.deleteFolderIfAvailable();
         });
 

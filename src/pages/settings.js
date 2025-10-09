@@ -233,7 +233,6 @@ export default class Settings {
         const target = this.page.locator('[role="button"]').nth(4); // the one above it
 
         await source.dragTo(target);
-        await this.page.waitForTimeout(5000);
     }
 
 

@@ -1,47 +1,12 @@
-<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="85.04028699999999">
-<testsuite name="24_costumeTest.spec.js" timestamp="2025-10-09T13:27:29.867Z" hostname="chromium" tests="10" failures="0" skipped="0" time="71.714" errors="0">
-<testcase name="Costume › Costume › verify uploadLocation" classname="24_costumeTest.spec.js" time="14.019">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="33.034456">
+<testsuite name="14_settingTest.spec.js" timestamp="2025-10-09T13:42:11.314Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.329" errors="0">
+<testcase name="Settings › change department list order › verify delete the project" classname="14_settingTest.spec.js" time="7.329">
 <system-out>
-<![CDATA[[INFO] 2025-10-09T13:27:31.453Z - browser is launching
-[INFO] 2025-10-09T13:27:38.706Z - open the project
+<![CDATA[[INFO] 2025-10-09T13:42:12.444Z - browser is launching
+[INFO] 2025-10-09T13:42:24.535Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-09T13:27:38.706Z - QA environment is started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Costume › Costume › verify open folder &gt; see image" classname="24_costumeTest.spec.js" time="1.999">
-</testcase>
-<testcase name="Costume › upload costume in shortlist › verify uploading costume in shortlist" classname="24_costumeTest.spec.js" time="11.98">
-</testcase>
-<testcase name="Costume › upload costume in shortlist › verify open folder &gt; see image" classname="24_costumeTest.spec.js" time="1.621">
-</testcase>
-<testcase name="Costume › upload costume in finals › verify uploading costume in finals" classname="24_costumeTest.spec.js" time="11.852">
-</testcase>
-<testcase name="Costume › upload costume in finals › verify open folder &gt; see image" classname="24_costumeTest.spec.js" time="1.638">
-</testcase>
-<testcase name="Costume › Delete &amp; move to shortlist , move to final from selects › verify location move to shortlist" classname="24_costumeTest.spec.js" time="11.195">
-<system-out>
-<![CDATA[Dropdown Items: [ [32m'Move to Shortlist'[39m, [32m'Move to Final'[39m, [32m'Distribute'[39m, [32m'Delete'[39m ]
-Dropdown Items: [ [32m'Move to Shortlist'[39m, [32m'Move to Final'[39m, [32m'Distribute'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Costume › Delete &amp; move to shortlist , move to final from selects › verify delete the location folder from selects" classname="24_costumeTest.spec.js" time="5.032">
-<system-out>
-<![CDATA[Dropdown Items: [ [32m'Move to Shortlist'[39m, [32m'Move to Final'[39m, [32m'Distribute'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Costume › Delete from shortlist › verify user delete the location folder from the shortlist" classname="24_costumeTest.spec.js" time="6.385">
-<system-out>
-<![CDATA[Dropdown Items: [ [32m'Move to Final'[39m, [32m'Distribute'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Costume › Delete from Finals › verify user deletes the location folder from finals" classname="24_costumeTest.spec.js" time="5.993">
-<system-out>
-<![CDATA[Dropdown Items: [ [32m'Distribute'[39m, [32m'Delete'[39m ]
-[INFO] 2025-10-09T13:28:54.446Z - close browser
+[INFO] 2025-10-09T13:42:24.535Z - QA environment is started...
+[INFO] 2025-10-09T13:42:43.986Z - close browser
 ]]>
 </system-out>
 </testcase>

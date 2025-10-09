@@ -227,5 +227,14 @@ export default class Settings {
         await successMsg.waitFor({ state: 'hidden' });
     }
 
+    async changeDepartmentListOrder(){
+        await this.page.locator('#change_department_listing_order').click();
+        const source = this.page.locator('[role="button"]').nth(5); // the one you want to move up
+        const target = this.page.locator('[role="button"]').nth(4); // the one above it
+
+        await source.dragTo(target);
+        await this.page.waitForTimeout(5000);
+    }
+
 
 }

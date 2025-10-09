@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "24_costumeTest.spec.js",
-      "file": "24_costumeTest.spec.js",
+      "title": "14_settingTest.spec.js",
+      "file": "14_settingTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Costume",
-          "file": "24_costumeTest.spec.js",
-          "line": 7,
+          "title": "Settings",
+          "file": "14_settingTest.spec.js",
+          "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Costume",
-              "file": "24_costumeTest.spec.js",
-              "line": 35,
-              "column": 10,
+              "title": "change department list order",
+              "file": "14_settingTest.spec.js",
+              "line": 106,
+              "column": 19,
               "specs": [
                 {
-                  "title": "verify uploadLocation",
+                  "title": "verify delete the project",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,260 +151,28 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 14019,
+                          "duration": 7329,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-09T13:27:31.453Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-09T13:42:12.444Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-09T13:27:38.706Z - open the project\n"
+                              "text": "[INFO] 2025-10-09T13:42:24.535Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-09T13:27:38.706Z - QA environment is started...\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:27:30.233Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "253f94232f457f7a03cc-0ea3a7181c799d774e08",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 37,
-                  "column": 9
-                },
-                {
-                  "title": "verify open folder > see image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1999,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:27:56.584Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "253f94232f457f7a03cc-8b3df7b60b9d62a71045",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 42,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "upload costume in shortlist",
-              "file": "24_costumeTest.spec.js",
-              "line": 49,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify uploading costume in shortlist",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11980,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:27:58.599Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "253f94232f457f7a03cc-23e8465a4b4781f51b38",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 51,
-                  "column": 9
-                },
-                {
-                  "title": "verify open folder > see image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1621,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:28:10.590Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "253f94232f457f7a03cc-607d7dde08b97d2dde56",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 57,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "upload costume in finals",
-              "file": "24_costumeTest.spec.js",
-              "line": 66,
-              "column": 11,
-              "specs": [
-                {
-                  "title": "verify uploading costume in finals",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11852,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:28:12.229Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "253f94232f457f7a03cc-3484eda8107872727283",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 68,
-                  "column": 9
-                },
-                {
-                  "title": "verify open folder > see image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1638,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:28:24.107Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "253f94232f457f7a03cc-63c48d2d08dee8c428a1",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 74,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Delete & move to shortlist , move to final from selects",
-              "file": "24_costumeTest.spec.js",
-              "line": 82,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify location move to shortlist",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11195,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                              "text": "[INFO] 2025-10-09T13:42:24.535Z - QA environment is started...\n"
                             },
                             {
-                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                              "text": "[INFO] 2025-10-09T13:42:43.986Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:28:25.762Z",
+                          "startTime": "2025-10-09T13:42:11.663Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -412,142 +180,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "253f94232f457f7a03cc-d8325ff54eaf17e1dcf6",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 84,
-                  "column": 9
-                },
-                {
-                  "title": "verify delete the location folder from selects",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5032,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:28:36.970Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "253f94232f457f7a03cc-79ab622bd386191b2a55",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 90,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Delete from shortlist",
-              "file": "24_costumeTest.spec.js",
-              "line": 96,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user delete the location folder from the shortlist",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6385,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown Items: [ \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:28:42.021Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "253f94232f457f7a03cc-317c8708773bbb66a9e5",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 98,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Delete from Finals",
-              "file": "24_costumeTest.spec.js",
-              "line": 105,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user deletes the location folder from finals",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5993,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown Items: [ \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-09T13:28:54.446Z - close browser\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:28:48.419Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "253f94232f457f7a03cc-7bcca42547129299adc8",
-                  "file": "24_costumeTest.spec.js",
-                  "line": 107,
+                  "id": "17d979b38d60e74c3d14-609cffe0aaa2f7afdbde",
+                  "file": "14_settingTest.spec.js",
+                  "line": 108,
                   "column": 9
                 }
               ]
@@ -559,9 +194,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-09T13:27:29.836Z",
-    "duration": 85040.287,
-    "expected": 10,
+    "startTime": "2025-10-09T13:42:11.291Z",
+    "duration": 33034.456,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

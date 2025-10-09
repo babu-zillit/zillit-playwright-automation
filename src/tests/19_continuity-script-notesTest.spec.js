@@ -60,6 +60,14 @@ test.describe('Continuity Script Notes', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete document', async () => {
             await continuityScriptNotesPage.selectedTakesTab();
             await uploadmedia.delete();
@@ -98,6 +106,10 @@ test.describe('Continuity Script Notes', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the forward to remote project in selects', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete message', async () => {
             await continuityScriptNotesPage.selectedTakesTab();
             await uploadmedia.delete();
@@ -134,6 +146,16 @@ test.describe('Continuity Script Notes', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the save or download', async () => {
+            await continuityScriptNotesPage.dailyProgressNotesTab();
+            await uploadmedia.save();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await continuityScriptNotesPage.dailyProgressNotesTab();
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete document', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.delete();
@@ -173,6 +195,11 @@ test.describe('Continuity Script Notes', () => {
             await uploadmedia.deleteReply();
         });
 
+        test('verify the forward to remote project in daily', async () => {
+            await continuityScriptNotesPage.dailyProgressNotesTab();
+            await uploadmedia.forwardRemoteProject();
+        });
+
         test('verify the delete message', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.delete();
@@ -207,6 +234,16 @@ test.describe('Continuity Script Notes', () => {
         test('verify the delete reply', async () => {
             //await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.deleteReply();
+        });
+
+        test('verify the save or download', async () => {
+            await continuityScriptNotesPage.continuityNotesTab();
+            await uploadmedia.save();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await continuityScriptNotesPage.continuityNotesTab();
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete document', async () => {
@@ -246,6 +283,11 @@ test.describe('Continuity Script Notes', () => {
         test('verify the delete the reply message', async () => {
             //await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.deleteReply();
+        });
+
+        test('verify the forward to remote project in countinuity', async () => {
+            await continuityScriptNotesPage.continuityNotesTab();
+            await uploadmedia.forwardRemoteProject();
         });
 
         test('verify the delete message', async () => {

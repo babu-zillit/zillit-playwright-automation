@@ -1,74 +1,703 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="45.614773">
-<testsuite name="17_crewList-assetReportTest.spec.js" timestamp="2025-10-08T12:20:31.857Z" hostname="chromium" tests="2" failures="1" skipped="0" time="42.398" errors="0">
-<testcase name="Crew List → Asset Report › Crew List › verify user generate the crew list" classname="17_crewList-assetReportTest.spec.js" time="30.336">
-<failure message="17_crewList-assetReportTest.spec.js:35:9 verify user generate the crew list" type="FAILURE">
-<![CDATA[  [chromium] › 17_crewList-assetReportTest.spec.js:35:9 › Crew List → Asset Report › Crew List › verify user generate the crew list 
+<testsuites id="" name="" tests="48" failures="4" skipped="0" errors="0" time="433.2215">
+<testsuite name="19_continuity-script-notesTest.spec.js" timestamp="2025-10-09T09:42:16.618Z" hostname="chromium" tests="48" failures="4" skipped="0" time="362.142" errors="0">
+<testcase name="Continuity Script Notes › Selected Takes › verify send message → upload document by clicking on continuation → upload document by clicking on new" classname="19_continuity-script-notesTest.spec.js" time="24.984">
+<system-out>
+<![CDATA[[INFO] 2025-10-09T09:42:18.271Z - browser is launching
+[INFO] 2025-10-09T09:42:25.098Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-10-09T09:42:25.098Z - QA environment is started...
+✅ AppleScript ran successfully
+✅ AppleScript ran successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the forward" classname="19_continuity-script-notesTest.spec.js" time="6.262">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the reply" classname="19_continuity-script-notesTest.spec.js" time="1.529">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the edit reply" classname="19_continuity-script-notesTest.spec.js" time="1.567">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the delete reply" classname="19_continuity-script-notesTest.spec.js" time="18.916">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the save or download" classname="19_continuity-script-notesTest.spec.js" time="16.937">
+<failure message="19_continuity-script-notesTest.spec.js:63:9 verify the save or download" type="FAILURE">
+<![CDATA[  [chromium] › 19_continuity-script-notesTest.spec.js:63:9 › Continuity Script Notes › Selected Takes › verify the save or download 
 
-    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+    Error: Timed out 15000ms waiting for expect(locator).toBeVisible()
 
-      10 |     let crewListAssetReportPage;
-      11 |
-    > 12 |     test.beforeEach(async ({ browser }) => {
-         |          ^
-      13 |         logger.info("browser is launching");
-      14 |         context = await browser.newContext();
-      15 |         page = await context.newPage();
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js:12:10
-
-    Error: locator.click: Target page, context or browser has been closed
+    Locator: locator('text=File downloaded successfully')
+    Expected: visible
+    Received: <element(s) not found>
     Call log:
-      - waiting for locator('text=/Zl automation56/i').first()
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for locator('text=File downloaded successfully')
 
 
-       at ../actions/media-uploader.js:88
+       at ../actions/media-uploader.js:165
 
-      86 |         if(hostname === 'qa.zillit.com'){
-      87 |             logger.info('QA environment is started...')
-    > 88 |             await this.qaProject.first().click();    
-         |                                          ^
-      89 |         } else if(hostname === 'web.zillit.com'){
-      90 |             logger.info('Production environment is started...')
-      91 |             await this.productionProject.click();
-        at UploadMedia.clickProjectName (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:88:42)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/17_crewList-assetReportTest.spec.js:23:27
+      163 |
+      164 |         const popup = this.page.locator("text=File downloaded successfully");
+    > 165 |         await expect(popup).toBeVisible({timeout: 15000});
+          |                             ^
+      166 |         await expect(popup).toBeHidden({timeout: 15000});
+      167 |     }
+      168 |
+        at UploadMedia.save (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:165:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/19_continuity-script-notesTest.spec.js:64:13
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/test-failed-1.png
+    test-results/19_continuity-script-notes-3d3b7-verify-the-save-or-download-chromium/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ../../test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/error-context.md
+    Error Context: ../../test-results/19_continuity-script-notes-3d3b7-verify-the-save-or-download-chromium/error-context.md
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/trace.zip
+    test-results/19_continuity-script-notes-3d3b7-verify-the-save-or-download-chromium/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/trace.zip
+        npx playwright show-trace test-results/19_continuity-script-notes-3d3b7-verify-the-save-or-download-chromium/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[[INFO] 2025-10-08T12:20:33.147Z - browser is launching
-[INFO] 2025-10-08T12:20:37.038Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-10-08T12:20:37.038Z - QA environment is started...
-[INFO] 2025-10-08T12:21:03.263Z - close browser
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+✅ Pressed Return successfully
+[INFO] 2025-10-09T09:43:41.114Z - close browser
 
-[[ATTACHMENT|../test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/test-failed-1.png]]
+[[ATTACHMENT|../test-results/19_continuity-script-notes-3d3b7-verify-the-save-or-download-chromium/test-failed-1.png]]
 
-[[ATTACHMENT|../test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/error-context.md]]
+[[ATTACHMENT|../test-results/19_continuity-script-notes-3d3b7-verify-the-save-or-download-chromium/error-context.md]]
 
-[[ATTACHMENT|../test-results/17_crewList-assetReportTes-b6896-user-generate-the-crew-list-chromium/trace.zip]]
+[[ATTACHMENT|../test-results/19_continuity-script-notes-3d3b7-verify-the-save-or-download-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Crew List → Asset Report › Asset Report › verify user generate the asset report" classname="17_crewList-assetReportTest.spec.js" time="12.062">
+<testcase name="Continuity Script Notes › Selected Takes › verify the forward to remote project" classname="19_continuity-script-notesTest.spec.js" time="15.902">
 <system-out>
-<![CDATA[[INFO] 2025-10-08T12:21:04.545Z - browser is launching
-[INFO] 2025-10-08T12:21:07.745Z - open the project
+<![CDATA[[INFO] 2025-10-09T09:43:43.711Z - browser is launching
+[INFO] 2025-10-09T09:43:48.316Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-08T12:21:07.745Z - QA environment is started...
-[INFO] 2025-10-08T12:21:16.340Z - close browser
+[INFO] 2025-10-09T09:43:48.316Z - QA environment is started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the delete document" classname="19_continuity-script-notesTest.spec.js" time="5.812">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify send a message" classname="19_continuity-script-notesTest.spec.js" time="2.328">
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify edit the message" classname="19_continuity-script-notesTest.spec.js" time="1.546">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify forward the message" classname="19_continuity-script-notesTest.spec.js" time="6.103">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify reply to the message" classname="19_continuity-script-notesTest.spec.js" time="1.107">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the edit the reply message" classname="19_continuity-script-notesTest.spec.js" time="1.93">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the delete the reply message" classname="19_continuity-script-notesTest.spec.js" time="4.604">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the forward to remote project in selects" classname="19_continuity-script-notesTest.spec.js" time="9.502">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the delete message" classname="19_continuity-script-notesTest.spec.js" time="5.936">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify send message → upload document by clicking on continuation → upload document by clicking on new" classname="19_continuity-script-notesTest.spec.js" time="22.819">
+<system-out>
+<![CDATA[✅ AppleScript ran successfully
+✅ AppleScript ran successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the forward" classname="19_continuity-script-notesTest.spec.js" time="6.162">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the reply" classname="19_continuity-script-notesTest.spec.js" time="1.655">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the edit reply" classname="19_continuity-script-notesTest.spec.js" time="1.928">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete reply" classname="19_continuity-script-notesTest.spec.js" time="16.928">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the save or download" classname="19_continuity-script-notesTest.spec.js" time="16.851">
+<failure message="19_continuity-script-notesTest.spec.js:149:9 verify the save or download" type="FAILURE">
+<![CDATA[  [chromium] › 19_continuity-script-notesTest.spec.js:149:9 › Continuity Script Notes › Daily Progress Notes › verify the save or download 
+
+    Error: Timed out 15000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=File downloaded successfully')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for locator('text=File downloaded successfully')
+
+
+       at ../actions/media-uploader.js:165
+
+      163 |
+      164 |         const popup = this.page.locator("text=File downloaded successfully");
+    > 165 |         await expect(popup).toBeVisible({timeout: 15000});
+          |                             ^
+      166 |         await expect(popup).toBeHidden({timeout: 15000});
+      167 |     }
+      168 |
+        at UploadMedia.save (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:165:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/19_continuity-script-notesTest.spec.js:151:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/19_continuity-script-notes-f6f98-verify-the-save-or-download-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/19_continuity-script-notes-f6f98-verify-the-save-or-download-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/19_continuity-script-notes-f6f98-verify-the-save-or-download-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/19_continuity-script-notes-f6f98-verify-the-save-or-download-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+✅ Pressed Return successfully
+[INFO] 2025-10-09T09:45:53.789Z - close browser
+
+[[ATTACHMENT|../test-results/19_continuity-script-notes-f6f98-verify-the-save-or-download-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/19_continuity-script-notes-f6f98-verify-the-save-or-download-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/19_continuity-script-notes-f6f98-verify-the-save-or-download-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the forward to remote project" classname="19_continuity-script-notesTest.spec.js" time="10.785">
+<system-out>
+<![CDATA[[INFO] 2025-10-09T09:45:56.059Z - browser is launching
+[INFO] 2025-10-09T09:46:06.740Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-10-09T09:46:06.741Z - QA environment is started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete document" classname="19_continuity-script-notesTest.spec.js" time="5.94">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify send a message" classname="19_continuity-script-notesTest.spec.js" time="2.386">
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify edit the message" classname="19_continuity-script-notesTest.spec.js" time="1.543">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify forward the message" classname="19_continuity-script-notesTest.spec.js" time="6.213">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify reply to the message" classname="19_continuity-script-notesTest.spec.js" time="1.091">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the edit the reply message" classname="19_continuity-script-notesTest.spec.js" time="1.646">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete the reply message" classname="19_continuity-script-notesTest.spec.js" time="4.616">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the forward to remote project in daily" classname="19_continuity-script-notesTest.spec.js" time="9.073">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete message" classname="19_continuity-script-notesTest.spec.js" time="5.954">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify send message → upload document by clicking on continuation → upload document by clicking on new" classname="19_continuity-script-notesTest.spec.js" time="22.799">
+<system-out>
+<![CDATA[✅ AppleScript ran successfully
+✅ AppleScript ran successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the forward" classname="19_continuity-script-notesTest.spec.js" time="5.804">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the reply" classname="19_continuity-script-notesTest.spec.js" time="1.577">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the edit reply" classname="19_continuity-script-notesTest.spec.js" time="1.945">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the delete reply" classname="19_continuity-script-notesTest.spec.js" time="20.859">
+<failure message="19_continuity-script-notesTest.spec.js:234:9 verify the delete reply" type="FAILURE">
+<![CDATA[  [chromium] › 19_continuity-script-notesTest.spec.js:234:9 › Continuity Script Notes › Continuity Notes › verify the delete reply 
+
+    Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Comment deleted successfully!')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 20000ms
+      - waiting for locator('text=Comment deleted successfully!')
+
+
+       at ../actions/media-uploader.js:234
+
+      232 |
+      233 |         const popup = this.page.locator("text=Comment deleted successfully!");
+    > 234 |         await expect(popup).toBeVisible({timeout: 20000});
+          |                             ^
+      235 |         await expect(popup).toBeHidden({timeout: 20000});
+      236 |     }
+      237 |
+        at UploadMedia.deleteReply (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:234:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/19_continuity-script-notesTest.spec.js:236:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/19_continuity-script-notes-18e69-tes-verify-the-delete-reply-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/19_continuity-script-notes-18e69-tes-verify-the-delete-reply-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/19_continuity-script-notes-18e69-tes-verify-the-delete-reply-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/19_continuity-script-notes-18e69-tes-verify-the-delete-reply-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+[INFO] 2025-10-09T09:47:53.239Z - close browser
+
+[[ATTACHMENT|../test-results/19_continuity-script-notes-18e69-tes-verify-the-delete-reply-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/19_continuity-script-notes-18e69-tes-verify-the-delete-reply-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/19_continuity-script-notes-18e69-tes-verify-the-delete-reply-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the save or download" classname="19_continuity-script-notesTest.spec.js" time="18.898">
+<failure message="19_continuity-script-notesTest.spec.js:239:9 verify the save or download" type="FAILURE">
+<![CDATA[  [chromium] › 19_continuity-script-notesTest.spec.js:239:9 › Continuity Script Notes › Continuity Notes › verify the save or download 
+
+    Error: Timed out 15000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=File downloaded successfully')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for locator('text=File downloaded successfully')
+
+
+       at ../actions/media-uploader.js:165
+
+      163 |
+      164 |         const popup = this.page.locator("text=File downloaded successfully");
+    > 165 |         await expect(popup).toBeVisible({timeout: 15000});
+          |                             ^
+      166 |         await expect(popup).toBeHidden({timeout: 15000});
+      167 |     }
+      168 |
+        at UploadMedia.save (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:165:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/19_continuity-script-notesTest.spec.js:241:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/19_continuity-script-notes-de581-verify-the-save-or-download-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/19_continuity-script-notes-de581-verify-the-save-or-download-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/19_continuity-script-notes-de581-verify-the-save-or-download-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/19_continuity-script-notes-de581-verify-the-save-or-download-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[[INFO] 2025-10-09T09:47:55.017Z - browser is launching
+[INFO] 2025-10-09T09:48:05.657Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-10-09T09:48:05.657Z - QA environment is started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+✅ Pressed Return successfully
+[INFO] 2025-10-09T09:48:28.629Z - close browser
+
+[[ATTACHMENT|../test-results/19_continuity-script-notes-de581-verify-the-save-or-download-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/19_continuity-script-notes-de581-verify-the-save-or-download-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/19_continuity-script-notes-de581-verify-the-save-or-download-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the forward to remote project" classname="19_continuity-script-notesTest.spec.js" time="11.171">
+<system-out>
+<![CDATA[[INFO] 2025-10-09T09:48:30.419Z - browser is launching
+[INFO] 2025-10-09T09:48:35.630Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-10-09T09:48:35.634Z - QA environment is started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the delete document" classname="19_continuity-script-notesTest.spec.js" time="5.953">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify send a message" classname="19_continuity-script-notesTest.spec.js" time="2.339">
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify edit the message" classname="19_continuity-script-notesTest.spec.js" time="1.174">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify forward the message" classname="19_continuity-script-notesTest.spec.js" time="5.84">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify reply to the message" classname="19_continuity-script-notesTest.spec.js" time="1.469">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the edit the reply message" classname="19_continuity-script-notesTest.spec.js" time="1.718">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the delete the reply message" classname="19_continuity-script-notesTest.spec.js" time="4.563">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the forward to remote project in countinuity" classname="19_continuity-script-notesTest.spec.js" time="9.603">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the delete message" classname="19_continuity-script-notesTest.spec.js" time="5.875">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2025-10-09T09:49:29.374Z - close browser
 ]]>
 </system-out>
 </testcase>

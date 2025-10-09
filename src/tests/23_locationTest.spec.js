@@ -35,6 +35,7 @@ test.describe('Location', () => {
 
         test('verify uploadLocation', async () => {
             await locationPage.uploadLocation('Central Park', '9', '1');
+            await locationPage.distribute();
         }); 
 
         test('verify open folder > see image', async () => {
@@ -49,6 +50,7 @@ test.describe('Location', () => {
         test('verify uploading location in shortlist', async () => {
             await locationPage.shortlistTab();
             await locationPage.uploadLocation('Taj Mahal','10','2'); 
+            await locationPage.distribute();
         });
 
         test('verify open folder > see image', async () => {
@@ -64,7 +66,8 @@ test.describe('Location', () => {
 
         test('verify uploading location in finals', async () => {
             await locationPage.finalsTab();
-            await locationPage.uploadLocation('Golden Temple','11','3');  
+            await locationPage.uploadLocation('Golden Temple','11','3'); 
+            await locationPage.distribute();
         });
 
         test('verify open folder > see image', async () => {

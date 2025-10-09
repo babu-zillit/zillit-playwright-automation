@@ -235,4 +235,14 @@ export default class Location {
         await successMsg2.waitFor({ state: 'hidden' });
     }
 
+    async distribute(){
+        await this.page.locator('div.ant-card-body [aria-label="down"]').first().click();
+        await this.page.locator('text=Distribute').first().click();
+        await this.page.locator('div.ant-modal-confirm-btns button').last().click();
+
+       const successMsg2 = await this.page.locator('text=Location photograph distributed successfully.');
+       await successMsg2.waitFor({ state: 'visible' });
+       await successMsg2.waitFor({ state: 'hidden' }); 
+    }
+
 }

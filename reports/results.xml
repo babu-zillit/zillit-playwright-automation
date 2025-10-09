@@ -1,91 +1,47 @@
-<testsuites id="" name="" tests="11" failures="1" skipped="0" errors="0" time="99.52373">
-<testsuite name="23_locationTest.spec.js" timestamp="2025-10-09T13:00:28.136Z" hostname="chromium" tests="11" failures="1" skipped="0" time="76.066" errors="0">
-<testcase name="Location › Location › verify uploadLocation" classname="23_locationTest.spec.js" time="12.377">
+<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="85.04028699999999">
+<testsuite name="24_costumeTest.spec.js" timestamp="2025-10-09T13:27:29.867Z" hostname="chromium" tests="10" failures="0" skipped="0" time="71.714" errors="0">
+<testcase name="Costume › Costume › verify uploadLocation" classname="24_costumeTest.spec.js" time="14.019">
 <system-out>
-<![CDATA[[INFO] 2025-10-09T13:00:29.560Z - browser is launching
-[INFO] 2025-10-09T13:00:35.950Z - open the project
+<![CDATA[[INFO] 2025-10-09T13:27:31.453Z - browser is launching
+[INFO] 2025-10-09T13:27:38.706Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-09T13:00:35.950Z - QA environment is started...
+[INFO] 2025-10-09T13:27:38.706Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Location › Location › verify open folder &gt; see image" classname="23_locationTest.spec.js" time="2.016">
+<testcase name="Costume › Costume › verify open folder &gt; see image" classname="24_costumeTest.spec.js" time="1.999">
 </testcase>
-<testcase name="Location › upload location in shortlist › verify uploading location in shortlist" classname="23_locationTest.spec.js" time="12.256">
+<testcase name="Costume › upload costume in shortlist › verify uploading costume in shortlist" classname="24_costumeTest.spec.js" time="11.98">
 </testcase>
-<testcase name="Location › upload location in shortlist › verify open folder &gt; see image" classname="23_locationTest.spec.js" time="2.072">
+<testcase name="Costume › upload costume in shortlist › verify open folder &gt; see image" classname="24_costumeTest.spec.js" time="1.621">
 </testcase>
-<testcase name="Location › upload location in finals › verify uploading location in finals" classname="23_locationTest.spec.js" time="12.353">
+<testcase name="Costume › upload costume in finals › verify uploading costume in finals" classname="24_costumeTest.spec.js" time="11.852">
 </testcase>
-<testcase name="Location › upload location in finals › verify open folder &gt; see image" classname="23_locationTest.spec.js" time="2.204">
+<testcase name="Costume › upload costume in finals › verify open folder &gt; see image" classname="24_costumeTest.spec.js" time="1.638">
 </testcase>
-<testcase name="Location › Delete &amp; move to shortlist , move to final from selects › verify location move to shortlist" classname="23_locationTest.spec.js" time="13.221">
+<testcase name="Costume › Delete &amp; move to shortlist , move to final from selects › verify location move to shortlist" classname="24_costumeTest.spec.js" time="11.195">
 <system-out>
 <![CDATA[Dropdown Items: [ [32m'Move to Shortlist'[39m, [32m'Move to Final'[39m, [32m'Distribute'[39m, [32m'Delete'[39m ]
 Dropdown Items: [ [32m'Move to Shortlist'[39m, [32m'Move to Final'[39m, [32m'Distribute'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Location › Delete &amp; move to shortlist , move to final from selects › verify delete the location folder from selects" classname="23_locationTest.spec.js" time="1.725">
+<testcase name="Costume › Delete &amp; move to shortlist , move to final from selects › verify delete the location folder from selects" classname="24_costumeTest.spec.js" time="5.032">
 <system-out>
 <![CDATA[Dropdown Items: [ [32m'Move to Shortlist'[39m, [32m'Move to Final'[39m, [32m'Distribute'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Location › Delete from shortlist › verify user delete the location folder from the shortlist" classname="23_locationTest.spec.js" time="1.24">
-<failure message="23_locationTest.spec.js:97:9 verify user delete the location folder from the shortlist" type="FAILURE">
-<![CDATA[  [chromium] › 23_locationTest.spec.js:97:9 › Location › Delete from shortlist › verify user delete the location folder from the shortlist 
-
-    Error: Arrow element not found
-
-       at ../pages/location.js:107
-
-      105 |             await this.arrow.first().click();
-      106 |         } else {
-    > 107 |             throw new Error('Arrow element not found');
-          |                   ^
-      108 |         }
-      109 |         
-      110 |         await this.page.waitForSelector('.ant-dropdown-menu-item');
-        at Location.handleDropdownAction (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:107:19)
-        at Location.deleteFromShortlist (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:144:9)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/23_locationTest.spec.js:99:13
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/23_locationTest-Location-D-2a409-n-folder-from-the-shortlist-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/23_locationTest-Location-D-2a409-n-folder-from-the-shortlist-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/23_locationTest-Location-D-2a409-n-folder-from-the-shortlist-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Costume › Delete from shortlist › verify user delete the location folder from the shortlist" classname="24_costumeTest.spec.js" time="6.385">
 <system-out>
-<![CDATA[[INFO] 2025-10-09T13:01:39.792Z - close browser
-
-[[ATTACHMENT|../test-results/23_locationTest-Location-D-2a409-n-folder-from-the-shortlist-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/23_locationTest-Location-D-2a409-n-folder-from-the-shortlist-chromium/trace.zip]]
+<![CDATA[Dropdown Items: [ [32m'Move to Final'[39m, [32m'Distribute'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Location › Delete from Finals › verify user deletes the location folder from finals" classname="23_locationTest.spec.js" time="3.713">
+<testcase name="Costume › Delete from Finals › verify user deletes the location folder from finals" classname="24_costumeTest.spec.js" time="5.993">
 <system-out>
-<![CDATA[[INFO] 2025-10-09T13:01:41.743Z - browser is launching
-[INFO] 2025-10-09T13:01:46.284Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-10-09T13:01:46.284Z - QA environment is started...
-Dropdown Items: [ [32m'Distribute'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Location › Generate pdf › verify user generate the pdf from finals" classname="23_locationTest.spec.js" time="12.889">
-<system-out>
-<![CDATA[[INFO] 2025-10-09T13:02:07.242Z - close browser
+<![CDATA[Dropdown Items: [ [32m'Distribute'[39m, [32m'Delete'[39m ]
+[INFO] 2025-10-09T13:28:54.446Z - close browser
 ]]>
 </system-out>
 </testcase>

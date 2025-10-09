@@ -152,4 +152,14 @@ export default class Costume {
         await this.handleDropdownAction('finalsTab', 'Delete', 'Costume has been deleted successfully.', true);
     }
 
+    async distribute(){
+        await this.page.locator('div.ant-card-body [aria-label="down"]').first().click();
+        await this.page.locator('text=Distribute').first().click();
+        await this.page.locator('div.ant-modal-confirm-btns button').last().click();
+
+       const successMsg2 = await this.page.locator('text=Costume has been distributed successfully.');
+       await successMsg2.waitFor({ state: 'visible' });
+       await successMsg2.waitFor({ state: 'hidden' }); 
+    }
+
 }

@@ -116,23 +116,23 @@
   },
   "suites": [
     {
-      "title": "23_locationTest.spec.js",
-      "file": "23_locationTest.spec.js",
+      "title": "24_costumeTest.spec.js",
+      "file": "24_costumeTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Location",
-          "file": "23_locationTest.spec.js",
-          "line": 6,
+          "title": "Costume",
+          "file": "24_costumeTest.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Location",
-              "file": "23_locationTest.spec.js",
-              "line": 34,
+              "title": "Costume",
+              "file": "24_costumeTest.spec.js",
+              "line": 35,
               "column": 10,
               "specs": [
                 {
@@ -151,25 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12377,
+                          "duration": 14019,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-09T13:00:29.560Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-09T13:27:31.453Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-09T13:00:35.950Z - open the project\n"
+                              "text": "[INFO] 2025-10-09T13:27:38.706Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-09T13:00:35.950Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-10-09T13:27:38.706Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:00:28.497Z",
+                          "startTime": "2025-10-09T13:27:30.233Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,9 +177,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-63e0eeace3c3bfbb0009",
-                  "file": "23_locationTest.spec.js",
-                  "line": 36,
+                  "id": "253f94232f457f7a03cc-0ea3a7181c799d774e08",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 37,
                   "column": 9
                 },
                 {
@@ -198,12 +198,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2016,
+                          "duration": 1999,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:00:52.406Z",
+                          "startTime": "2025-10-09T13:27:56.584Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -211,21 +211,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-cfebfbb93971a516e15f",
-                  "file": "23_locationTest.spec.js",
-                  "line": 41,
+                  "id": "253f94232f457f7a03cc-8b3df7b60b9d62a71045",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 42,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "upload location in shortlist",
-              "file": "23_locationTest.spec.js",
-              "line": 48,
+              "title": "upload costume in shortlist",
+              "file": "24_costumeTest.spec.js",
+              "line": 49,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify uploading location in shortlist",
+                  "title": "verify uploading costume in shortlist",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -240,12 +240,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12256,
+                          "duration": 11980,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:00:54.440Z",
+                          "startTime": "2025-10-09T13:27:58.599Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -253,9 +253,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-d5fdfdd7296009b1a874",
-                  "file": "23_locationTest.spec.js",
-                  "line": 50,
+                  "id": "253f94232f457f7a03cc-23e8465a4b4781f51b38",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 51,
                   "column": 9
                 },
                 {
@@ -274,12 +274,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2072,
+                          "duration": 1621,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:01:06.706Z",
+                          "startTime": "2025-10-09T13:28:10.590Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -287,21 +287,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-008c2a8ac33fa9c6e4ca",
-                  "file": "23_locationTest.spec.js",
-                  "line": 56,
+                  "id": "253f94232f457f7a03cc-607d7dde08b97d2dde56",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 57,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "upload location in finals",
-              "file": "23_locationTest.spec.js",
-              "line": 65,
+              "title": "upload costume in finals",
+              "file": "24_costumeTest.spec.js",
+              "line": 66,
               "column": 11,
               "specs": [
                 {
-                  "title": "verify uploading location in finals",
+                  "title": "verify uploading costume in finals",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -316,12 +316,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12353,
+                          "duration": 11852,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:01:08.793Z",
+                          "startTime": "2025-10-09T13:28:12.229Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -329,9 +329,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-dc99107eb3e783c61383",
-                  "file": "23_locationTest.spec.js",
-                  "line": 67,
+                  "id": "253f94232f457f7a03cc-3484eda8107872727283",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 68,
                   "column": 9
                 },
                 {
@@ -350,12 +350,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2204,
+                          "duration": 1638,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:01:21.156Z",
+                          "startTime": "2025-10-09T13:28:24.107Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -363,17 +363,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-e9d2b63b7445f203d6cc",
-                  "file": "23_locationTest.spec.js",
-                  "line": 73,
+                  "id": "253f94232f457f7a03cc-63c48d2d08dee8c428a1",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 74,
                   "column": 9
                 }
               ]
             },
             {
               "title": "Delete & move to shortlist , move to final from selects",
-              "file": "23_locationTest.spec.js",
-              "line": 81,
+              "file": "24_costumeTest.spec.js",
+              "line": 82,
               "column": 10,
               "specs": [
                 {
@@ -392,7 +392,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 13221,
+                          "duration": 11195,
                           "errors": [],
                           "stdout": [
                             {
@@ -404,7 +404,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:01:23.375Z",
+                          "startTime": "2025-10-09T13:28:25.762Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -412,9 +412,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-9f5f09f851b52ed0f1ab",
-                  "file": "23_locationTest.spec.js",
-                  "line": 83,
+                  "id": "253f94232f457f7a03cc-d8325ff54eaf17e1dcf6",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 84,
                   "column": 9
                 },
                 {
@@ -433,7 +433,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1725,
+                          "duration": 5032,
                           "errors": [],
                           "stdout": [
                             {
@@ -442,7 +442,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:01:36.605Z",
+                          "startTime": "2025-10-09T13:28:36.970Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -450,22 +450,22 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-91fbad928c9f9e01e059",
-                  "file": "23_locationTest.spec.js",
-                  "line": 89,
+                  "id": "253f94232f457f7a03cc-79ab622bd386191b2a55",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 90,
                   "column": 9
                 }
               ]
             },
             {
               "title": "Delete from shortlist",
-              "file": "23_locationTest.spec.js",
-              "line": 95,
+              "file": "24_costumeTest.spec.js",
+              "line": 96,
               "column": 10,
               "specs": [
                 {
                   "title": "verify user delete the location folder from the shortlist",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -478,70 +478,35 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 1240,
-                          "error": {
-                            "message": "Error: Arrow element not found",
-                            "stack": "Error: Arrow element not found\n    at Location.handleDropdownAction (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:107:19)\n    at Location.deleteFromShortlist (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:144:9)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/23_locationTest.spec.js:99:13",
-                            "location": {
-                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js",
-                              "column": 19,
-                              "line": 107
-                            },
-                            "snippet": "\u001b[90m   at \u001b[39m../pages/location.js:107\n\n\u001b[0m \u001b[90m 105 |\u001b[39m             \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39marrow\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 106 |\u001b[39m         } \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Arrow element not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m         }\n \u001b[90m 109 |\u001b[39m         \n \u001b[90m 110 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.ant-dropdown-menu-item'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js",
-                                "column": 19,
-                                "line": 107
-                              },
-                              "message": "Error: Arrow element not found\n\n\u001b[90m   at \u001b[39m../pages/location.js:107\n\n\u001b[0m \u001b[90m 105 |\u001b[39m             \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39marrow\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 106 |\u001b[39m         } \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Arrow element not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m         }\n \u001b[90m 109 |\u001b[39m         \n \u001b[90m 110 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.ant-dropdown-menu-item'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Location.handleDropdownAction (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:107:19)\u001b[22m\n\u001b[2m    at Location.deleteFromShortlist (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:144:9)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/23_locationTest.spec.js:99:13\u001b[22m"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 6385,
+                          "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-09T13:01:39.792Z - close browser\n"
+                              "text": "Dropdown Items: [ \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:01:38.347Z",
+                          "startTime": "2025-10-09T13:28:42.021Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/23_locationTest-Location-D-2a409-n-folder-from-the-shortlist-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/23_locationTest-Location-D-2a409-n-folder-from-the-shortlist-chromium/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js",
-                            "column": 19,
-                            "line": 107
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-f71d5cac85216abf5415",
-                  "file": "23_locationTest.spec.js",
-                  "line": 97,
+                  "id": "253f94232f457f7a03cc-317c8708773bbb66a9e5",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 98,
                   "column": 9
                 }
               ]
             },
             {
               "title": "Delete from Finals",
-              "file": "23_locationTest.spec.js",
-              "line": 104,
+              "file": "24_costumeTest.spec.js",
+              "line": 105,
               "column": 10,
               "specs": [
                 {
@@ -557,77 +522,22 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 1,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3713,
+                          "duration": 5993,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-09T13:01:41.743Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-09T13:01:46.284Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: qa.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-09T13:01:46.284Z - QA environment is started...\n"
-                            },
                             {
                               "text": "Dropdown Items: [ \u001b[32m'Distribute'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-09T13:01:41.088Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "86c6ead66114a2a2b40d-ddd1b601fd69b5dd498e",
-                  "file": "23_locationTest.spec.js",
-                  "line": 106,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Generate pdf",
-              "file": "23_locationTest.spec.js",
-              "line": 113,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user generate the pdf from finals",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 12889,
-                          "errors": [],
-                          "stdout": [
+                            },
                             {
-                              "text": "[INFO] 2025-10-09T13:02:07.242Z - close browser\n"
+                              "text": "[INFO] 2025-10-09T13:28:54.446Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:01:54.329Z",
+                          "startTime": "2025-10-09T13:28:48.419Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -635,9 +545,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "86c6ead66114a2a2b40d-3d2c8c0627fdf68b0b0e",
-                  "file": "23_locationTest.spec.js",
-                  "line": 115,
+                  "id": "253f94232f457f7a03cc-7bcca42547129299adc8",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 107,
                   "column": 9
                 }
               ]
@@ -649,11 +559,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-09T13:00:28.016Z",
-    "duration": 99523.73,
+    "startTime": "2025-10-09T13:27:29.836Z",
+    "duration": 85040.287,
     "expected": 10,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

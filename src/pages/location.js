@@ -171,5 +171,9 @@ export default class Location {
        await successMsg2.waitFor({ state: 'hidden' }); 
     }
 
+    async chat(){
+        await this.page.locator('div.flex.flex-grow div.flex.items-center').first().click();
+    }
+
 
 }

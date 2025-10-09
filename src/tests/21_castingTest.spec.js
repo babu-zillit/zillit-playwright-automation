@@ -95,8 +95,52 @@ test.describe('Casting', () => {
             //await castingPage.imageReplys();
             await castingPage.closeImageWindow();
         });
-
     
+    });
+
+    test.describe.only('Send Message', () => {
+
+        test('verify send a message', async () => {
+            await castingPage.chat();
+            await uploadmedia.sendMessage();
+        });  
+    
+        test('verify edit the message', async () => {
+            await uploadmedia.edit();
+        });
+
+        test('verify read by status on message', async () => {
+            await uploadmedia.readBy();
+        });
+
+        test('verify forward the message', async () => {
+            await uploadmedia.forward();
+        });
+
+        test('verify reply to the message', async () => {
+            await uploadmedia.reply();
+        });
+
+        test('verify the edit the reply message', async () => {
+            await uploadmedia.editReply();
+        });
+
+        test('verify the read by status on reply message', async () => {
+            await uploadmedia.readByReply();
+        });
+
+        test('verify the delete the reply message', async () => {
+            await uploadmedia.deleteReply();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
+        test('verify the delete message', async () => {
+            await uploadmedia.delete();
+        });
+
     });
 
     test.describe('Shortlist Tab', () => {

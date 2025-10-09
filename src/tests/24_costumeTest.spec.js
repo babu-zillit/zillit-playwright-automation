@@ -36,6 +36,7 @@ test.describe('Costume', () => {
 
         test('verify uploadLocation', async () => {
             await costumePage.uploadCostume('9', '1');
+            await costumePage.distribute();
         }); 
 
         test('verify open folder > see image', async () => {
@@ -49,7 +50,8 @@ test.describe('Costume', () => {
 
         test('verify uploading costume in shortlist', async () => {
             await costumePage.shortlistTab();
-            await costumePage.uploadCostume('10','2'); 
+            await costumePage.uploadCostume('10','2');
+            await costumePage.distribute(); 
         });
 
         test('verify open folder > see image', async () => {
@@ -66,6 +68,7 @@ test.describe('Costume', () => {
         test('verify uploading costume in finals', async () => {
             await costumePage.finalsTab();
             await costumePage.uploadCostume('11','3');  
+            await costumePage.distribute();
         });
 
         test('verify open folder > see image', async () => {

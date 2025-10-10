@@ -172,7 +172,7 @@ export default class Location {
     }
 
     async chat(){
-        await this.page.locator('div.flex.flex-grow div.flex.items-center').first().click();
+        await this.page.locator('div.flex.flex-grow span.ant-badge').last().click();
     }
 
 

@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "14_settingTest.spec.js",
-      "file": "14_settingTest.spec.js",
+      "title": "24_costumeTest.spec.js",
+      "file": "24_costumeTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Settings",
-          "file": "14_settingTest.spec.js",
-          "line": 6,
+          "title": "Costume",
+          "file": "24_costumeTest.spec.js",
+          "line": 8,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "change department list order",
-              "file": "14_settingTest.spec.js",
-              "line": 106,
+              "title": "Send Message",
+              "file": "24_costumeTest.spec.js",
+              "line": 36,
               "column": 19,
               "specs": [
                 {
-                  "title": "verify delete the project",
+                  "title": "verify send a message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,28 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7329,
+                          "duration": 17956,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-09T13:42:12.444Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-10T12:45:38.936Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-09T13:42:24.535Z - open the project\n"
+                              "text": "[INFO] 2025-10-10T12:45:41.850Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-09T13:42:24.535Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-09T13:42:43.986Z - close browser\n"
+                              "text": "[INFO] 2025-10-10T12:45:41.850Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-09T13:42:11.663Z",
+                          "startTime": "2025-10-10T12:45:38.142Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -180,9 +177,217 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "17d979b38d60e74c3d14-609cffe0aaa2f7afdbde",
-                  "file": "14_settingTest.spec.js",
-                  "line": 108,
+                  "id": "253f94232f457f7a03cc-d9366e8a41d2bebf6f92",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 38,
+                  "column": 9
+                },
+                {
+                  "title": "verify edit the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2129,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-10T12:46:04.824Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "253f94232f457f7a03cc-07956db3bca8a25a4fab",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 43,
+                  "column": 9
+                },
+                {
+                  "title": "verify read by status on message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2419,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-10T12:46:06.970Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "253f94232f457f7a03cc-e150a2f511151cc0f4f2",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 48,
+                  "column": 9
+                },
+                {
+                  "title": "verify forward the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6284,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-10T12:46:09.405Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "253f94232f457f7a03cc-70653abbbcbe1ba3dc6a",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 53,
+                  "column": 9
+                },
+                {
+                  "title": "verify reply to the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1660,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-10T12:46:15.700Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "253f94232f457f7a03cc-58689ac8b497f5b3bef6",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 58,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9684,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-10T12:46:17.375Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "253f94232f457f7a03cc-6ea4d0d23d88e1cfe39f",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 63,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6075,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-10T12:46:33.166Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-10T12:46:27.073Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "253f94232f457f7a03cc-e5b884bda8d4c2bced4d",
+                  "file": "24_costumeTest.spec.js",
+                  "line": 68,
                   "column": 9
                 }
               ]
@@ -194,9 +399,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-09T13:42:11.291Z",
-    "duration": 33034.456,
-    "expected": 1,
+    "startTime": "2025-10-10T12:45:37.762Z",
+    "duration": 55775.704,
+    "expected": 7,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

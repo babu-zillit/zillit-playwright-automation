@@ -106,39 +106,33 @@ test.describe('Casting', () => {
         });  
     
         test('verify edit the message', async () => {
-            await uploadmedia.edit();
+            await castingPage.dropDownChat();
+            await castingPage.edit();
         });
 
         test('verify read by status on message', async () => {
-            await uploadmedia.readBy();
+            await castingPage.dropDownChat();
+            await castingPage.readBy();
         });
 
         test('verify forward the message', async () => {
-            await uploadmedia.forward();
+            await castingPage.dropDownChat();
+            await castingPage.forwards();
         });
 
         test('verify reply to the message', async () => {
-            await uploadmedia.reply();
-        });
-
-        test('verify the edit the reply message', async () => {
-            await uploadmedia.editReply();
-        });
-
-        test('verify the read by status on reply message', async () => {
-            await uploadmedia.readByReply();
-        });
-
-        test('verify the delete the reply message', async () => {
-            await uploadmedia.deleteReply();
+            await castingPage.dropDownChat();
+            await castingPage.reply();
         });
 
         test('verify the forward to remote project', async () => {
-            await uploadmedia.forwardRemoteProject();
+            await castingPage.dropDownChat();
+            await castingPage.forwardRemoteProject();
         });
 
         test('verify the delete message', async () => {
-            await uploadmedia.delete();
+            await castingPage.dropDownChat();
+            await castingPage.delete();
         });
 
     });

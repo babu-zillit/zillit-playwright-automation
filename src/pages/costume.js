@@ -162,4 +162,8 @@ export default class Costume {
        await successMsg2.waitFor({ state: 'hidden' }); 
     }
 
+    async chat(){
+        await this.page.locator('div.flex.flex-grow span.ant-badge').last().click();
+    }
+
 }

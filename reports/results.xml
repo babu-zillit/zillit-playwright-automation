@@ -1,12 +1,27 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="33.034456">
-<testsuite name="14_settingTest.spec.js" timestamp="2025-10-09T13:42:11.314Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.329" errors="0">
-<testcase name="Settings › change department list order › verify delete the project" classname="14_settingTest.spec.js" time="7.329">
+<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="55.775704">
+<testsuite name="24_costumeTest.spec.js" timestamp="2025-10-10T12:45:37.786Z" hostname="chromium" tests="7" failures="0" skipped="0" time="46.207" errors="0">
+<testcase name="Costume › Send Message › verify send a message" classname="24_costumeTest.spec.js" time="17.956">
 <system-out>
-<![CDATA[[INFO] 2025-10-09T13:42:12.444Z - browser is launching
-[INFO] 2025-10-09T13:42:24.535Z - open the project
+<![CDATA[[INFO] 2025-10-10T12:45:38.936Z - browser is launching
+[INFO] 2025-10-10T12:45:41.850Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-09T13:42:24.535Z - QA environment is started...
-[INFO] 2025-10-09T13:42:43.986Z - close browser
+[INFO] 2025-10-10T12:45:41.850Z - QA environment is started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Costume › Send Message › verify edit the message" classname="24_costumeTest.spec.js" time="2.129">
+</testcase>
+<testcase name="Costume › Send Message › verify read by status on message" classname="24_costumeTest.spec.js" time="2.419">
+</testcase>
+<testcase name="Costume › Send Message › verify forward the message" classname="24_costumeTest.spec.js" time="6.284">
+</testcase>
+<testcase name="Costume › Send Message › verify reply to the message" classname="24_costumeTest.spec.js" time="1.66">
+</testcase>
+<testcase name="Costume › Send Message › verify the forward to remote project" classname="24_costumeTest.spec.js" time="9.684">
+</testcase>
+<testcase name="Costume › Send Message › verify the delete message" classname="24_costumeTest.spec.js" time="6.075">
+<system-out>
+<![CDATA[[INFO] 2025-10-10T12:46:33.166Z - close browser
 ]]>
 </system-out>
 </testcase>

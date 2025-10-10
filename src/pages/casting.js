@@ -1,11 +1,13 @@
 import { loadJson } from '../utils/jsonUtil';
 import { expect } from '@playwright/test';
 const mediapaths = loadJson('mediapaths', 'testdata');
+import UploadMedia from '../actions/media-uploader';
 
 export default class Casting {
 
     constructor(page){
         this.page = page;
+        this.mediaUploader = new UploadMedia(page);
 
         this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
 
@@ -265,5 +267,73 @@ export default class Casting {
     async chat(){
         await this.page.locator('div.flex.flex-grow div.flex.items-center').first().click();
     }
+
+    async dropDownChat(){
+        await this.page.locator('div.dropDown').first().click();
+    }
+
+    async edit(){
+        await this.page.locator('text=Edit Message').click();
+        await this.mediaUploader.typeMessage.fill('This is message');
+        await this.mediaUploader.replySendButton.click();
+
+        await this.page.locator('[aria-label="clock-circle"]').waitFor({ state: 'detached', timeout: 10000 });
+        await this.mediaUploader.edited.waitFor({state: 'visible', timeout: 15000})
+        await expect(this.mediaUploader.edited).toBeVisible();
+    }
+
+    async reply(){
+        await this.page.locator('text=Reply').click();
+        await this.mediaUploader.typeMessage.fill('Reply message');
+        await this.mediaUploader.replySendButton.click();
+    }
+
+    async forwards(){
+        await this.page.getByText('Forward', { exact: true }).click();
+        await this.mediaUploader.confidentialInfoTabButton.click();
+
+        const popup = this.page.locator('text=Forward Successfully');
+        await expect(popup).toBeVisible({ timeout: 15000 });
+        await expect(popup).toBeHidden({ timeout: 15000 });
+    }
+
+     async readBy(){
+        await this.page.locator('text=Read By').click();
+        await this.page.waitForTimeout(500);
+        await this.mediaUploader.readUnreadTab.last().click();
+        await this.page.waitForTimeout(500);
+        await this.page.locator('div.ant-modal-content button').first().click();
+    }
+
+
+    async forwardRemoteProject(){
+        await this.page.locator('text=Forward to Remote Projects').click();
+        await this.mediaUploader.remoteProjectList.first().click();
+        await this.mediaUploader.confidentialInfoTabButton.click();
+        
+        const popup = this.page.locator('text=Forward Successfully');
+        await expect(popup).toBeVisible({ timeout: 15000 });
+        await expect(popup).toBeHidden({ timeout: 15000 });
+
+        const close = this.page.locator('div.ant-modal-content button');
+        await close.last().click();
+        await close.first().click();
+    }
+
+    async delete(){
+        await this.page.locator('text=Delete').click();
+        await this.mediaUploader.deleteIcon.click();
+        await this.mediaUploader.deleteOk.click();
+
+        const popup = this.page.locator("text=Message Deleted successfully");
+        await expect(popup).toBeVisible({timeout: 20000});
+        await expect(popup).toBeHidden({timeout: 20000});
+    }
+
+    async closeChatWindow(){
+        await this.page.locator('#lcw_close_chat_drawer_button').click();
+    }
+
+
 
 }

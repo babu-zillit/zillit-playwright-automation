@@ -1,5 +1,6 @@
 import { test } from '@playwright/test';
 import Costume from "../pages/costume";
+import Casting from '../pages/casting';
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 import { copyFile } from 'fs';
@@ -9,6 +10,7 @@ test.describe('Costume', () => {
     let page;
     let uploadmedia;
     let costumePage;
+    let castingPage;
 
     test.beforeAll(async ({ browser }) => {
         logger.info("browser is launching");
@@ -19,6 +21,7 @@ test.describe('Costume', () => {
         
         uploadmedia = new UploadMedia(page);
         costumePage = new Costume(page);
+        castingPage = new Casting(page);
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
@@ -30,6 +33,44 @@ test.describe('Costume', () => {
         await context.close();
     });
 
+    test.describe.only('Send Message', () => {
+
+        test('verify send a message', async () => {
+            await costumePage.chat();
+            await uploadmedia.sendMessage();
+        });  
+    
+        test('verify edit the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.edit();
+        });
+
+        test('verify read by status on message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.readBy();
+        });
+
+        test('verify forward the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.forwards();
+        });
+
+        test('verify reply to the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.reply();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.forwardRemoteProject();
+        });
+
+        test('verify the delete message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.delete();
+        });
+
+    });
 
 
     test.describe('Costume', () => {

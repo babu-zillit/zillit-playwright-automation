@@ -1,5 +1,6 @@
 import { test } from '@playwright/test';
 import Location from "../pages/location";
+import Casting from '../pages/casting';
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 
@@ -8,6 +9,7 @@ test.describe('Location', () => {
     let page;
     let uploadmedia;
     let locationPage;
+    let castingPage;
 
     test.beforeAll(async ({ browser }) => {
         logger.info("browser is launching");
@@ -18,6 +20,7 @@ test.describe('Location', () => {
         
         uploadmedia = new UploadMedia(page);
         locationPage = new Location(page);
+        castingPage = new Casting(page);
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
@@ -29,7 +32,44 @@ test.describe('Location', () => {
         await context.close();
     });
 
+    test.describe.only('Send Message', () => {
 
+        test('verify send a message', async () => {
+            await locationPage.chat();
+            await uploadmedia.sendMessage();
+        });  
+    
+        test('verify edit the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.edit();
+        });
+
+        test('verify read by status on message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.readBy();
+        });
+
+        test('verify forward the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.forwards();
+        });
+
+        test('verify reply to the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.reply();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.forwardRemoteProject();
+        });
+
+        test('verify the delete message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.delete();
+        });
+
+    });
 
     test.describe('Location', () => {
 

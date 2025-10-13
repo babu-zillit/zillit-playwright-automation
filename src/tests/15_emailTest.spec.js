@@ -43,6 +43,22 @@ test.describe('Email', () => {
         test('verify sent email', async () => {
             await emailPage.sentMessage();
         });
+
+        test('verify send reply email', async () => {
+            await emailPage.reply();
+        });
+
+        test('verify reply all email', async () => {
+            await emailPage.replyAll();
+        });
+
+        test('verify forward email', async () => {
+            await emailPage.forward();
+        });
+
+        test('verify delete email', async () => {
+            await emailPage.delete();
+        });
     
     });
 

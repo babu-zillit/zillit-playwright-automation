@@ -116,32 +116,32 @@
   },
   "suites": [
     {
-      "title": "02_approve-user-requestTest.spec.js",
-      "file": "02_approve-user-requestTest.spec.js",
+      "title": "15_emailTest.spec.js",
+      "file": "15_emailTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Approve New User Request",
-          "file": "02_approve-user-requestTest.spec.js",
+          "title": "Email",
+          "file": "15_emailTest.spec.js",
           "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "user request",
-              "file": "02_approve-user-requestTest.spec.js",
-              "line": 38,
+              "title": "Send Email",
+              "file": "15_emailTest.spec.js",
+              "line": 35,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user create remote project in settings",
+                  "title": "verify send email -> send email with media",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -151,28 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 18879,
+                          "duration": 20632,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-13T06:23:58.815Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-13T07:14:01.074Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-13T06:24:01.856Z - open the project\n"
+                              "text": "[INFO] 2025-10-13T07:14:05.132Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-13T06:24:01.856Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-13T06:24:37.784Z - close browser\n"
+                              "text": "[INFO] 2025-10-13T07:14:05.133Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-13T06:23:57.855Z",
+                          "startTime": "2025-10-13T07:14:00.035Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -180,10 +177,184 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8e3292d177e6ed15e7c9-973b23f95c1f7b33a2da",
-                  "file": "02_approve-user-requestTest.spec.js",
-                  "line": 44,
-                  "column": 14
+                  "id": "c84613e915cba492262c-9e1f25d6cfa4bcd0bca6",
+                  "file": "15_emailTest.spec.js",
+                  "line": 37,
+                  "column": 9
+                },
+                {
+                  "title": "verify sent email",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2321,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-13T07:14:28.433Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-68faa90fa0d152c43518",
+                  "file": "15_emailTest.spec.js",
+                  "line": 43,
+                  "column": 9
+                },
+                {
+                  "title": "verify send reply email",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5937,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-13T07:14:30.773Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-70a2990976aa34012bd1",
+                  "file": "15_emailTest.spec.js",
+                  "line": 47,
+                  "column": 9
+                },
+                {
+                  "title": "verify reply all email",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7322,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-13T07:14:36.725Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-ea3993665480cb61ccf3",
+                  "file": "15_emailTest.spec.js",
+                  "line": 51,
+                  "column": 9
+                },
+                {
+                  "title": "verify forward email",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7650,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-13T07:14:44.067Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-0fa08d84e376f773ef2c",
+                  "file": "15_emailTest.spec.js",
+                  "line": 55,
+                  "column": 9
+                },
+                {
+                  "title": "verify delete email",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6731,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-10-13T07:14:58.496Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-13T07:14:51.734Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-5dfd43178ee65822e854",
+                  "file": "15_emailTest.spec.js",
+                  "line": 59,
+                  "column": 9
                 }
               ]
             }
@@ -194,9 +365,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-13T06:23:57.400Z",
-    "duration": 40664.198,
-    "expected": 1,
+    "startTime": "2025-10-13T07:13:59.664Z",
+    "duration": 59111.909999999996,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -23,6 +23,13 @@ export default class Email {
         this.attachment = page.locator('//input[@type="file" and @name="email_attachment"]');
 
         this.sentButton = page.locator('//div[contains(@class,"flex items-center")]//span[text()="Sent"]');
+
+        /**
+         * Reply, Reply All, Forward Locators
+         */
+        this.replyReplyAllForward = page.locator('div.flex.items-center.gap-2.px-2.mt-6 button'); 
+        this.deleteSentEmail = page.locator('div.bg-white.flex.flex-col.flex-grow.overflow-y-auto.py-2 span');
+        this.clickOnSentEmail = page.locator('div.bg-white.flex.flex-col.flex-grow.overflow-y-auto.py-2 div.w-full div');
     }
 
     
@@ -98,6 +105,51 @@ export default class Email {
         }
 
         await this.page.waitForTimeout(2000);
+    }
+
+    async reply(){
+        await this.clickOnSentEmail.first().click();
+        await this.replyReplyAllForward.nth(0).click();
+        await this.page.locator('div.ql-editor p').nth(0).fill('Hello this is rely message');
+        await this.button.first().click();
+
+        const successMsg = await this.page.locator('text=Email sent successfully');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
+    async replyAll(){
+        await this.clickOnSentEmail.first().click();
+        await this.replyReplyAllForward.nth(1).click();
+        await this.page.locator('div.ql-editor p').nth(0).fill('Hello this is rely all message');
+        await this.button.first().click();
+
+        const successMsg = await this.page.locator('text=Email sent successfully');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
+    async forward(){
+        await this.clickOnSentEmail.first().click();
+        await this.replyReplyAllForward.nth(2).click();
+        await this.to.fill('pramod@zillit.com');
+        await this.page.keyboard.press('Enter');
+        await this.page.locator('div.ql-editor p').nth(6).fill('Hello this is forward message');
+        await this.button.first().click();
+
+        const successMsg = await this.page.locator('text=Email sent successfully');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
+    async delete(){
+        await this.deleteSentEmail.first().click();
+        await this.page.locator('div.flex.items-center.w-auto button').first().click();
+        await this.page.locator('div.ant-modal-content button').last().click();
+
+        const successMsg = await this.page.locator('text=Email has been moved to Trash successfully.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
     }
 
 

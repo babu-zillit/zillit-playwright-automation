@@ -1,12 +1,25 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="40.664198">
-<testsuite name="02_approve-user-requestTest.spec.js" timestamp="2025-10-13T06:23:57.512Z" hostname="chromium" tests="1" failures="0" skipped="0" time="18.879" errors="0">
-<testcase name="Approve New User Request › user request › verify user create remote project in settings" classname="02_approve-user-requestTest.spec.js" time="18.879">
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="59.111909999999995">
+<testsuite name="15_emailTest.spec.js" timestamp="2025-10-13T07:13:59.684Z" hostname="chromium" tests="6" failures="0" skipped="0" time="50.593" errors="0">
+<testcase name="Email › Send Email › verify send email -&gt; send email with media" classname="15_emailTest.spec.js" time="20.632">
 <system-out>
-<![CDATA[[INFO] 2025-10-13T06:23:58.815Z - browser is launching
-[INFO] 2025-10-13T06:24:01.856Z - open the project
+<![CDATA[[INFO] 2025-10-13T07:14:01.074Z - browser is launching
+[INFO] 2025-10-13T07:14:05.132Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-13T06:24:01.856Z - QA environment is started...
-[INFO] 2025-10-13T06:24:37.784Z - close browser
+[INFO] 2025-10-13T07:14:05.133Z - QA environment is started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Email › Send Email › verify sent email" classname="15_emailTest.spec.js" time="2.321">
+</testcase>
+<testcase name="Email › Send Email › verify send reply email" classname="15_emailTest.spec.js" time="5.937">
+</testcase>
+<testcase name="Email › Send Email › verify reply all email" classname="15_emailTest.spec.js" time="7.322">
+</testcase>
+<testcase name="Email › Send Email › verify forward email" classname="15_emailTest.spec.js" time="7.65">
+</testcase>
+<testcase name="Email › Send Email › verify delete email" classname="15_emailTest.spec.js" time="6.731">
+<system-out>
+<![CDATA[[INFO] 2025-10-13T07:14:58.496Z - close browser
 ]]>
 </system-out>
 </testcase>

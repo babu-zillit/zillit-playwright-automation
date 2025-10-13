@@ -130,13 +130,13 @@
           "specs": [],
           "suites": [
             {
-              "title": "Send Email",
+              "title": "Email Folder",
               "file": "15_emailTest.spec.js",
-              "line": 35,
-              "column": 10,
+              "line": 65,
+              "column": 20,
               "specs": [
                 {
-                  "title": "verify send email -> send email with media",
+                  "title": "verify folder Create email",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 20632,
+                          "duration": 7219,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-13T07:14:01.074Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-13T09:37:16.554Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-13T07:14:05.132Z - open the project\n"
+                              "text": "[INFO] 2025-10-13T09:37:23.370Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-13T07:14:05.133Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-10-13T09:37:23.370Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-13T07:14:00.035Z",
+                          "startTime": "2025-10-13T09:37:15.483Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,13 +177,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-9e1f25d6cfa4bcd0bca6",
+                  "id": "c84613e915cba492262c-6e6f9f3861ccaa893352",
                   "file": "15_emailTest.spec.js",
-                  "line": 37,
+                  "line": 67,
                   "column": 9
                 },
                 {
-                  "title": "verify sent email",
+                  "title": "verify folder Edit email",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -198,12 +198,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2321,
+                          "duration": 4680,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-13T07:14:28.433Z",
+                          "startTime": "2025-10-13T09:37:38.585Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -211,13 +211,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-68faa90fa0d152c43518",
+                  "id": "c84613e915cba492262c-31c6699efb426ae0a0dc",
                   "file": "15_emailTest.spec.js",
-                  "line": 43,
+                  "line": 71,
                   "column": 9
                 },
                 {
-                  "title": "verify send reply email",
+                  "title": "verify folder Delete email1",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -232,118 +232,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5937,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-13T07:14:30.773Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-70a2990976aa34012bd1",
-                  "file": "15_emailTest.spec.js",
-                  "line": 47,
-                  "column": 9
-                },
-                {
-                  "title": "verify reply all email",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7322,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-13T07:14:36.725Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-ea3993665480cb61ccf3",
-                  "file": "15_emailTest.spec.js",
-                  "line": 51,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward email",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7650,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-13T07:14:44.067Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-0fa08d84e376f773ef2c",
-                  "file": "15_emailTest.spec.js",
-                  "line": 55,
-                  "column": 9
-                },
-                {
-                  "title": "verify delete email",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6731,
+                          "duration": 5200,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-13T07:14:58.496Z - close browser\n"
+                              "text": "[INFO] 2025-10-13T09:37:48.512Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-13T07:14:51.734Z",
+                          "startTime": "2025-10-13T09:37:43.281Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -351,10 +249,10 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-5dfd43178ee65822e854",
+                  "id": "c84613e915cba492262c-92fcbff9bb492a6e190f",
                   "file": "15_emailTest.spec.js",
-                  "line": 59,
-                  "column": 9
+                  "line": 75,
+                  "column": 10
                 }
               ]
             }
@@ -365,9 +263,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-13T07:13:59.664Z",
-    "duration": 59111.909999999996,
-    "expected": 6,
+    "startTime": "2025-10-13T09:37:15.120Z",
+    "duration": 33702.263,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

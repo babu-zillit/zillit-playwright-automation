@@ -62,6 +62,24 @@ test.describe('Email', () => {
     
     });
 
+     test.describe('Email Folder', () => {
+
+        test('verify folder Create email', async () => {
+            await emailPage.folderCreate();
+        });
+
+        test('verify folder Edit email', async () => {
+            await emailPage.folderEdit();
+        });
+
+         test('verify folder Delete email1', async () => {
+            await emailPage.folderDelete();
+        });
+    
+    });
+
+
+
 });
 
   /**

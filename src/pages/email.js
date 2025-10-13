@@ -152,6 +152,37 @@ export default class Email {
         await successMsg.waitFor({ state: 'hidden' });
     }
 
+    async folderCreate(){
+        await this.page.locator('div.flex.items-center.px-4.justify-between button').click();
+        await this.page.locator('[placeholder="Folder Name"]').fill('VIP');
+        await this.page.locator('div.ant-modal-footer button').last().click();
+
+        const successMsg = await this.page.locator('text=Email folder has been saved successfully.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
+    async folderEdit(){
+        await this.page.locator('div.ant-dropdown-trigger').click();
+        await this.page.locator('span.ant-dropdown-menu-title-content').first().click();
+        await this.page.locator('[placeholder="Folder Name"]').fill('VIP1');
+        await this.page.locator('div.ant-modal-footer button').last().click();
+        
+        const successMsg = await this.page.locator('text=Email folder renamed successfully.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
+    async folderDelete(){
+        await this.page.locator('div.ant-dropdown-trigger').click();
+        await this.page.locator('span.ant-dropdown-menu-title-content').last().click();
+        await this.page.locator('div.ant-modal-content button').last().click();
+        
+        const successMsg = await this.page.locator('text=Email Folder deleted successfully.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
 
 
 

@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "15_emailTest.spec.js",
-      "file": "15_emailTest.spec.js",
+      "title": "18_mapTest.spec.js",
+      "file": "18_mapTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Email",
-          "file": "15_emailTest.spec.js",
-          "line": 7,
+          "title": "Map",
+          "file": "18_mapTest.spec.js",
+          "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Email Folder",
-              "file": "15_emailTest.spec.js",
-              "line": 65,
-              "column": 20,
+              "title": "Map location",
+              "file": "18_mapTest.spec.js",
+              "line": 34,
+              "column": 10,
               "specs": [
                 {
-                  "title": "verify folder Create email",
+                  "title": "verify search and select city",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,97 +151,28 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7219,
+                          "duration": 12954,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-13T09:37:16.554Z - browser is launching\n"
+                              "text": "[INFO] 2025-10-13T11:42:40.659Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-13T09:37:23.370Z - open the project\n"
+                              "text": "[INFO] 2025-10-13T11:42:45.484Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-13T09:37:23.370Z - QA environment is started...\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-13T09:37:15.483Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-6e6f9f3861ccaa893352",
-                  "file": "15_emailTest.spec.js",
-                  "line": 67,
-                  "column": 9
-                },
-                {
-                  "title": "verify folder Edit email",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4680,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-13T09:37:38.585Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-31c6699efb426ae0a0dc",
-                  "file": "15_emailTest.spec.js",
-                  "line": 71,
-                  "column": 9
-                },
-                {
-                  "title": "verify folder Delete email1",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5200,
-                          "errors": [],
-                          "stdout": [
+                              "text": "[INFO] 2025-10-13T11:42:45.484Z - QA environment is started...\n"
+                            },
                             {
-                              "text": "[INFO] 2025-10-13T09:37:48.512Z - close browser\n"
+                              "text": "[INFO] 2025-10-13T11:43:03.699Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-13T09:37:43.281Z",
+                          "startTime": "2025-10-13T11:42:39.583Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -249,10 +180,10 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-92fcbff9bb492a6e190f",
-                  "file": "15_emailTest.spec.js",
-                  "line": 75,
-                  "column": 10
+                  "id": "ec3d99688a452bc11f1c-8f64351dd67191fcc361",
+                  "file": "18_mapTest.spec.js",
+                  "line": 36,
+                  "column": 14
                 }
               ]
             }
@@ -263,9 +194,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-13T09:37:15.120Z",
-    "duration": 33702.263,
-    "expected": 3,
+    "startTime": "2025-10-13T11:42:39.134Z",
+    "duration": 25198.605,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

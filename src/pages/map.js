@@ -18,6 +18,7 @@ export default class Map {
         
         this.editViewDeleteButton = page.locator('//tbody[@class="ant-table-tbody"]//tr[2]//td//button');
         this.searchForLocation = page.locator('[placeholder="Search For Location"]');
+        this.addButton = page.locator('div.relative button');
     
     }
 
@@ -27,10 +28,18 @@ export default class Map {
     }
 
     async searchSelectCity(){
-        await this.searchAndSelectCity.fill('Noida');
-        await this.page.keyboard.press('ArrowDown');
-        await this.page.keyboard.press('Enter');
         await this.page.waitForTimeout(5000);
+        await this.searchAndSelectCity.fill('Noida');
+        await this.page.waitForTimeout(1000);
+        await this.page.keyboard.press('ArrowDown');
+        await this.page.waitForTimeout(1000);
+        await this.page.keyboard.press('Enter');
+        await this.page.waitForTimeout(1000);
+        await this.addButton.first().click();
+        
+        const successMsg = this.page.locator('text=City created successfully.');
+        await expect(successMsg).toBeVisible();
+        await expect(successMsg).toBeHidden();
     }
 
     async pinLocation(){

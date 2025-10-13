@@ -1,19 +1,12 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="33.702263">
-<testsuite name="15_emailTest.spec.js" timestamp="2025-10-13T09:37:15.143Z" hostname="chromium" tests="3" failures="0" skipped="0" time="17.099" errors="0">
-<testcase name="Email › Email Folder › verify folder Create email" classname="15_emailTest.spec.js" time="7.219">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="25.198605">
+<testsuite name="18_mapTest.spec.js" timestamp="2025-10-13T11:42:39.245Z" hostname="chromium" tests="1" failures="0" skipped="0" time="12.954" errors="0">
+<testcase name="Map › Map location › verify search and select city" classname="18_mapTest.spec.js" time="12.954">
 <system-out>
-<![CDATA[[INFO] 2025-10-13T09:37:16.554Z - browser is launching
-[INFO] 2025-10-13T09:37:23.370Z - open the project
+<![CDATA[[INFO] 2025-10-13T11:42:40.659Z - browser is launching
+[INFO] 2025-10-13T11:42:45.484Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-13T09:37:23.370Z - QA environment is started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Email › Email Folder › verify folder Edit email" classname="15_emailTest.spec.js" time="4.68">
-</testcase>
-<testcase name="Email › Email Folder › verify folder Delete email1" classname="15_emailTest.spec.js" time="5.2">
-<system-out>
-<![CDATA[[INFO] 2025-10-13T09:37:48.512Z - close browser
+[INFO] 2025-10-13T11:42:45.484Z - QA environment is started...
+[INFO] 2025-10-13T11:43:03.699Z - close browser
 ]]>
 </system-out>
 </testcase>

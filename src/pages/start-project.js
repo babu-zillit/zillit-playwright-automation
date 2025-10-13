@@ -2,6 +2,7 @@ import { expect } from '@playwright/test';
 import logger from "../utils/loggerUtils";
 import { loadJson } from '../utils/jsonUtil';
 const startproject = loadJson('startproject', 'testdata');
+const imaps = require('imap-simple');
 
 export default class StartProject {
     
@@ -139,5 +140,5 @@ export default class StartProject {
         await this.clickSubmit();
         await this.next();
     }
-
+    
 }

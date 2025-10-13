@@ -191,6 +191,7 @@ export default class Settings {
     }
 
     async createRemoteProject(){
+        await this.page.waitForTimeout(2000);
         await this.remoteShootingUnit.click();
         await this.createRemoteUnit.click();
         await this.enterUnitName.fill('Zl remote automation');

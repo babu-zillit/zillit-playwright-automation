@@ -33,6 +33,10 @@ test.describe('Map', () => {
 
     test.describe('Map location', () => {
 
+        test.only('verify search and select city', async () => {
+            await mapPage.searchSelectCity();
+        });
+
         test('Verify the PIN → Copy the location link → Open it in a new tab → Delete the location', async () => {
            await mapPage.pinLocation();
            await mapPage.fillLocationDetails();

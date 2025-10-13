@@ -9,6 +9,7 @@ export default class Map {
 
         this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
 
+        this.searchAndSelectCity = page.locator('[placeholder="Search and select city"]');
         this.selectLocationType = page.locator('#location_type');
         this.enterName = page.locator('input[placeholder="Enter name"]');
         this.enterDescription = page.locator('#description');
@@ -23,6 +24,13 @@ export default class Map {
     async mapTab(){
         await this.tools.click();
         await this.page.locator('div.ant-card-body').getByText('Map').click();
+    }
+
+    async searchSelectCity(){
+        await this.searchAndSelectCity.fill('Noida');
+        await this.page.keyboard.press('ArrowDown');
+        await this.page.keyboard.press('Enter');
+        await this.page.waitForTimeout(5000);
     }
 
     async pinLocation(){
@@ -52,7 +60,7 @@ export default class Map {
     async viewPinnedLocation() {
         await this.page.locator('text=View Pinned Location').click();
         await this.editViewDeleteButton.nth(1).click();
-        await this.page.waitForTimeout(2000);
+        await this.page.waitForTimeout(3000);
     }
 
     async deleteLocation() {

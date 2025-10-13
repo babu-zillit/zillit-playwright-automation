@@ -1,6 +1,7 @@
 import { test } from '@playwright/test';
 import ApproveUserRequest from "../pages/Approve-user-request";
 import UploadMedia from "../actions/media-uploader";
+import Settings from "../pages/settings"; 
 import logger from "../utils/loggerUtils";
 
 test.describe('Approve New User Request', () => {
@@ -9,6 +10,7 @@ test.describe('Approve New User Request', () => {
     let page;
     let uploadmedia;
     let approveUserRequest;
+    let settingPage;
 
     test.beforeAll(async ({ browser }) => {
         logger.info("browser is launching");
@@ -19,6 +21,7 @@ test.describe('Approve New User Request', () => {
         
         uploadmedia = new UploadMedia(page);
         approveUserRequest = new ApproveUserRequest(page);
+        settingPage = new Settings(page);
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
@@ -34,8 +37,13 @@ test.describe('Approve New User Request', () => {
 
     test.describe('user request', () => {
 
-        test('verify upload dod document', async () => {
+        test('verify user approve new user request', async () => {
             await approveUserRequest.approveNewUserRequest();
+        });
+
+        test.only('verify user create remote project in settings', async () => {
+            await settingPage.openSettings();
+            await settingPage.createRemoteProject();
         });
     
     });

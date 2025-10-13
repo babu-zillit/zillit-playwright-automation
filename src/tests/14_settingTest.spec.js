@@ -103,7 +103,7 @@ test.describe('Settings', () => {
     
     });
 
-    test.describe.only('change department list order', () => {
+    test.describe('change department list order', () => {
 
         test('verify delete the project', async () => {
             await settingPage.changeDepartmentListOrder();

@@ -1,12 +1,17 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="25.198605">
-<testsuite name="18_mapTest.spec.js" timestamp="2025-10-13T11:42:39.245Z" hostname="chromium" tests="1" failures="0" skipped="0" time="12.954" errors="0">
-<testcase name="Map › Map location › verify search and select city" classname="18_mapTest.spec.js" time="12.954">
+<testsuites id="" name="" tests="2" failures="0" skipped="1" errors="0" time="21.745823">
+<testsuite name="purchase-orderTest.spec.js" timestamp="2025-10-15T12:35:47.157Z" hostname="chromium" tests="2" failures="0" skipped="1" time="12.746" errors="0">
+<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-orderTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-orderTest.spec.js" time="12.746">
 <system-out>
-<![CDATA[[INFO] 2025-10-13T11:42:40.659Z - browser is launching
-[INFO] 2025-10-13T11:42:45.484Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-10-13T11:42:45.484Z - QA environment is started...
-[INFO] 2025-10-13T11:43:03.699Z - close browser
+<![CDATA[Current hostname is: qa.zillit.com
+[INFO] 2025-10-15T12:35:50.948Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>

@@ -19,6 +19,8 @@ export default class Map {
         this.editViewDeleteButton = page.locator('//tbody[@class="ant-table-tbody"]//tr[2]//td//button');
         this.searchForLocation = page.locator('[placeholder="Search For Location"]');
         this.addButton = page.locator('div.relative button');
+
+        this.viewAndDeleteButton = page.locator('div.ant-table-container tbody.ant-table-tbody tr td button');
     
     }
 

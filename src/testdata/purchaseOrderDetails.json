@@ -1,0 +1,22 @@
+{
+    "supplierName": "ABC Supplies Ltd.",
+    "supplierEmail": "contact@abcsupplies.com",
+    "supplierPhone": "+1-555-123-4567",
+    "supplierContactPerson": "John Doe",
+    "supplierVATNumber": "VAT123456789",
+    "supplierCountry": "United States",
+    "supplierPostCode": "10001",
+    "supplierSate": "New York",
+    "supplierCity": "New York",
+    "supplierAddress1": "123 Main Street",
+    "supplierAddress2": "Suite 400",
+
+    "deliveryName": "XYZ Logistics Inc.",
+    "deliveryEmail": "shipping@xyzlogistics.com",
+    "deliveryPhone": "+1-555-987-6543",
+    "deliveryCountry": "United States",
+    "deliveryPostCode": "90001",
+    "deliveryAddress1": "456 Market Avenue",
+    "deliveryAddress2": "Warehouse 12"
+ 
+}

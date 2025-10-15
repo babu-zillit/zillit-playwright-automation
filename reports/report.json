@@ -116,27 +116,69 @@
   },
   "suites": [
     {
-      "title": "18_mapTest.spec.js",
-      "file": "18_mapTest.spec.js",
+      "title": "purchase-orderTest.spec.js",
+      "file": "purchase-orderTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Map",
-          "file": "18_mapTest.spec.js",
+          "title": "Purchase Order",
+          "file": "purchase-orderTest.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Map location",
-              "file": "18_mapTest.spec.js",
-              "line": 34,
+              "title": "Create New PO",
+              "file": "purchase-orderTest.spec.js",
+              "line": 31,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify search and select city",
+                  "title": "verify the add new supplier",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-15T12:35:47.489Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "46c5d8a7538f71e45727-c78e247d0b0e1c91faaf",
+                  "file": "purchase-orderTest.spec.js",
+                  "line": 33,
+                  "column": 14
+                },
+                {
+                  "title": "verify the add new delivery address",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,28 +193,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12954,
+                          "duration": 12746,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-10-13T11:42:40.659Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-13T11:42:45.484Z - open the project\n"
-                            },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-13T11:42:45.484Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-13T11:43:03.699Z - close browser\n"
+                              "text": "[INFO] 2025-10-15T12:35:50.948Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-13T11:42:39.583Z",
+                          "startTime": "2025-10-15T12:35:47.489Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -180,10 +213,10 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "ec3d99688a452bc11f1c-8f64351dd67191fcc361",
-                  "file": "18_mapTest.spec.js",
-                  "line": 36,
-                  "column": 14
+                  "id": "46c5d8a7538f71e45727-79000eca052ad646bc1b",
+                  "file": "purchase-orderTest.spec.js",
+                  "line": 39,
+                  "column": 9
                 }
               ]
             }
@@ -194,10 +227,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-13T11:42:39.134Z",
-    "duration": 25198.605,
+    "startTime": "2025-10-15T12:35:47.135Z",
+    "duration": 21745.823,
     "expected": 1,
-    "skipped": 0,
+    "skipped": 1,
     "unexpected": 0,
     "flaky": 0
   }

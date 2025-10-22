@@ -44,10 +44,20 @@ export default class PurchaseOrder {
         this.selectExistingDeliveryAddress = page.locator('#select_delivery_address_save_button');
         
         /**
+         * select delivery date, currency, shipping charge locator's
+         */ 
+        this.currency = page.locator('#Currency');
+        this.shippingCharge = page.locator('#shippingCharges');
+        this.description = page.locator('#note');
+
+
+        /**
          * P.O Item Add List locators
          */ 
         this.poItemAddList = page.locator('#po_add_list_item_button');
+        this.expenditureType = page.locator('#expenditureType');
         this.itemName = page.locator('#itemName');
+        this.setCode = page.locator('#setCode');
         this.quantity = page.locator('#quantity');
         this.price = page.locator('#price');
         this.tax = page.locator('#tax');
@@ -121,7 +131,32 @@ export default class PurchaseOrder {
         await this.page.locator('[type="checkbox"]').first().click();
         await this.page.waitForTimeout(1000);
         await this.selectExistingDeliveryAddress.click();
+        }
+
+    async selectDeliveryDateCurrencyShippingCharge(){
+        await this.currency.fill('United States');
+        await this.page.keyboard.press('Enter');
+        await this.shippingCharge.fill('5');
+        await this.description.fill('Hello this is for expendisture');
     }
 
-    
+    async addPOItem(){
+        await this.poItemAddList.click();
+        await this.expenditureType.click();
+        await this.page.keyboard.press('Enter');
+        await this.page.waitForTimeout(500);
+        await this.itemName.fill('Mic');
+        await this.budgetCode.fill('123');
+        await this.setCode.fill('321');
+        await this.quantity.fill('3');
+        await this.price.fill('9');
+        await this.tax.fill('2');
+        await this.saveItem.click();
+
+        const successMsg = await this.page.locator('text=Item added successfully');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+        
+        await this.page.locator('#close_add_update_item_modal_button').click();
+    }
 }

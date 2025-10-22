@@ -42,6 +42,11 @@ test.describe('Purchase Order', () => {
             //await purchaseOrderPage.addDeliveryAddress();
             await purchaseOrderPage.selectExistingDelivery();
         });
+
+        test('verify select Delivery Date, Currency, Shipping Charge', async () => {
+            await purchaseOrderPage.selectDeliveryDateCurrencyShippingCharge();
+            await purchaseOrderPage.addPOItem(); 
+        });
     
     });
 

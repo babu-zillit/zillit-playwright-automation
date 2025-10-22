@@ -151,19 +151,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2757,
+                          "duration": 2866,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-22T10:14:02.506Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-10-22T11:26:56.651Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-22T10:13:52.746Z",
+                          "startTime": "2025-10-22T11:26:46.367Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -192,12 +192,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7201,
+                          "duration": 2183,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-22T10:14:08.232Z",
+                          "startTime": "2025-10-22T11:27:02.404Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -209,6 +209,40 @@
                   "file": "purchase-orderTest.spec.js",
                   "line": 40,
                   "column": 9
+                },
+                {
+                  "title": "verify select Delivery Date, Currency, Shipping Charge",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5085,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-22T11:27:04.601Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "46c5d8a7538f71e45727-27c8541e852d76e0ae79",
+                  "file": "purchase-orderTest.spec.js",
+                  "line": 46,
+                  "column": 9
                 }
               ]
             }
@@ -219,9 +253,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-22T10:13:52.371Z",
-    "duration": 23455.778,
-    "expected": 2,
+    "startTime": "2025-10-22T11:26:45.903Z",
+    "duration": 24145.271,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

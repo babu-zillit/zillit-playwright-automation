@@ -30,16 +30,17 @@ test.describe('Purchase Order', () => {
 
     test.describe('Create New PO', () => {
 
-        test.skip('verify the add new supplier', async () => {
+        test('verify the add new supplier', async () => {
             await purchaseOrderPage.createPO();
             await purchaseOrderPage.selectSuppliers();
-            await purchaseOrderPage.createSupplier();
+            //await purchaseOrderPage.createSupplier();
+            await purchaseOrderPage.selectExistingSupplier();
         });
 
         test('verify the add new delivery address', async () => {
-            await purchaseOrderPage.createPO();
             await purchaseOrderPage.selectDeliveryAddres();
-            await purchaseOrderPage.addDeliveryAddress();
+            //await purchaseOrderPage.addDeliveryAddress();
+            await purchaseOrderPage.selectExistingDelivery();
         });
     
     });

@@ -1,19 +1,13 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="1" errors="0" time="21.745823">
-<testsuite name="purchase-orderTest.spec.js" timestamp="2025-10-15T12:35:47.157Z" hostname="chromium" tests="2" failures="0" skipped="1" time="12.746" errors="0">
-<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-orderTest.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-orderTest.spec.js" time="12.746">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="23.455778">
+<testsuite name="purchase-orderTest.spec.js" timestamp="2025-10-22T10:13:52.393Z" hostname="chromium" tests="2" failures="0" skipped="0" time="9.958" errors="0">
+<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-orderTest.spec.js" time="2.757">
 <system-out>
 <![CDATA[Current hostname is: qa.zillit.com
-[INFO] 2025-10-15T12:35:50.948Z - QA environment is started...
+[INFO] 2025-10-22T10:14:02.506Z - QA environment is started...
 ]]>
 </system-out>
+</testcase>
+<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-orderTest.spec.js" time="7.201">
 </testcase>
 </testsuite>
 </testsuites>

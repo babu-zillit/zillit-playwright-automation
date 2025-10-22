@@ -142,40 +142,39 @@
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
+                      "annotations": [],
+                      "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
+                          "status": "passed",
+                          "duration": 2757,
                           "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-15T12:35:47.489Z",
-                          "annotations": [
+                          "stdout": [
                             {
-                              "type": "skip"
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-10-22T10:14:02.506Z - QA environment is started...\n"
                             }
                           ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-22T10:13:52.746Z",
+                          "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
                   "id": "46c5d8a7538f71e45727-c78e247d0b0e1c91faaf",
                   "file": "purchase-orderTest.spec.js",
                   "line": 33,
-                  "column": 14
+                  "column": 9
                 },
                 {
                   "title": "verify the add new delivery address",
@@ -193,19 +192,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12746,
+                          "duration": 7201,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Current hostname is: qa.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-10-15T12:35:50.948Z - QA environment is started...\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-15T12:35:47.489Z",
+                          "startTime": "2025-10-22T10:14:08.232Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -215,7 +207,7 @@
                   ],
                   "id": "46c5d8a7538f71e45727-79000eca052ad646bc1b",
                   "file": "purchase-orderTest.spec.js",
-                  "line": 39,
+                  "line": 40,
                   "column": 9
                 }
               ]
@@ -227,10 +219,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-15T12:35:47.135Z",
-    "duration": 21745.823,
-    "expected": 1,
-    "skipped": 1,
+    "startTime": "2025-10-22T10:13:52.371Z",
+    "duration": 23455.778,
+    "expected": 2,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

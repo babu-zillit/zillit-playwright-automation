@@ -47,7 +47,17 @@ test.describe('Purchase Order', () => {
             await purchaseOrderPage.selectDeliveryDateCurrencyShippingCharge();
             await purchaseOrderPage.addPOItem(); 
         });
-    
+
+        test.skip('verify add company details', async () => {
+            await purchaseOrderPage.CompanyDetails();
+        });
+    });
+
+    test.describe.only('Approval PO', () => {
+
+        test('verify accept or reject approval PO', async () => {
+            await purchaseOrderPage.pOApproval();
+        });
     });
 
 });

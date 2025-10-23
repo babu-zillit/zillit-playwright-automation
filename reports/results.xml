@@ -1,15 +1,11 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="24.145271">
-<testsuite name="purchase-orderTest.spec.js" timestamp="2025-10-22T11:26:46.018Z" hostname="chromium" tests="3" failures="0" skipped="0" time="10.134" errors="0">
-<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-orderTest.spec.js" time="2.866">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="21.382098000000003">
+<testsuite name="purchase-orderTest.spec.js" timestamp="2025-10-23T11:52:12.592Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.013" errors="0">
+<testcase name="Purchase Order › Approval PO › verify accept or reject approval PO" classname="purchase-orderTest.spec.js" time="7.013">
 <system-out>
 <![CDATA[Current hostname is: qa.zillit.com
-[INFO] 2025-10-22T11:26:56.651Z - QA environment is started...
+[INFO] 2025-10-23T11:52:23.667Z - QA environment is started...
 ]]>
 </system-out>
-</testcase>
-<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-orderTest.spec.js" time="2.183">
-</testcase>
-<testcase name="Purchase Order › Create New PO › verify select Delivery Date, Currency, Shipping Charge" classname="purchase-orderTest.spec.js" time="5.085">
 </testcase>
 </testsuite>
 </testsuites>

@@ -67,6 +67,24 @@ export default class PurchaseOrder {
         this.submitForApproval = page.locator('#submit_for_approval_button');
         this.submitForTemplates = page.locator('#submit_for_template_button');
 
+        /**
+         * Company details locators
+         */
+        this.companyDetailsTab = page.locator("//strong[text()='Production Company Details and Address for Deliveries']");
+        this.addCompanyDetails = page.locator('#add_company_details_button');
+        this.companyName = page.locator('#CompanyName');
+        this.companyEmail = page.locator('#CompanyEmail');
+        this.POPrefix = page.locator('#POprefix');
+        this.saveCompanyDetailsButton = page.locator('#save_company_details_button')
+
+        /**
+         * PO submited to me for approval locators
+         */
+        this.pOSubmitedMeForApprovalTab = page.locator("//strong[text()='PO’S Submitted To Me For Approval ']");
+        this.acceptReject = page.locator('#approved_pending_po_accept_reject_button');
+        this.accept = page.locator('#approved_pending_po_accept_button');
+        this.reject = page.locator('#approved_pending_po_reject_button');
+
 
 
     }
@@ -156,7 +174,40 @@ export default class PurchaseOrder {
         const successMsg = await this.page.locator('text=Item added successfully');
         await successMsg.waitFor({ state: 'visible' });
         await successMsg.waitFor({ state: 'hidden' });
-        
+
         await this.page.locator('#close_add_update_item_modal_button').click();
+        await this.page.waitForTimeout(5000);
+    }
+
+    async CompanyDetails(){
+        await this.companyDetailsTab.click();
+        await this.addCompanyDetails.click();
+        await this.page.waitForTimeout(1000);
+        await this.companyName.fill(purchaseOrderDetails.companyName);
+        await this.page.waitForTimeout(1000);
+        await this.vatNumber.fill(purchaseOrderDetails.companyVatNumber);
+        await this.page.waitForTimeout(1000);
+        await this.companyEmail.fill(purchaseOrderDetails.companyEmail);
+        await this.page.waitForTimeout(1000);
+        await this.phone.fill(purchaseOrderDetails.companyPhoneNumber);
+        await this.page.waitForTimeout(1000);
+        await this.country.fill(purchaseOrderDetails.companyCountry);
+        await this.page.keyboard.press('Enter');
+        await this.page.waitForTimeout(1000);
+        await this.postCode.fill(purchaseOrderDetails.companyPostCode);
+        await this.page.waitForTimeout(5000);
+        await this.addressLine1.fill(purchaseOrderDetails.companyAddress1);
+        await this.addressLine2.fill(purchaseOrderDetails.companyAddress2);
+        await this.POPrefix.fill(purchaseOrderDetails.companyPOprefix);
+        await this.saveCompanyDetailsButton.click();
+        await this.page.waitForTimeout(5000);
+    }
+
+    async pOApproval(){
+        await this.pOSubmitedMeForApprovalTab.click();
+        await this.acceptReject.first().click();
+        await this.accept.click();
+        await this.page.locator('div.ant-popover-content button').last().click();
+        await this.page.waitForTimeout(5000);
     }
 }

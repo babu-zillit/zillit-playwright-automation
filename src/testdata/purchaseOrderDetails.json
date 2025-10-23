@@ -17,6 +17,15 @@
     "deliveryCountry": "United States",
     "deliveryPostCode": "90001",
     "deliveryAddress1": "456 Market Avenue",
-    "deliveryAddress2": "Warehouse 12"
- 
+    "deliveryAddress2": "Warehouse 12",
+
+    "companyName": "Global Trading Corp",
+    "companyVatNumber": "VAT987654321",
+    "companyEmail": "info@globaltrading.com",
+    "companyPhoneNumber": "+1-555-321-7654",
+    "companyCountry": "United States",
+    "companyPostCode": "20001",
+    "companyAddress1": "789 Corporate Boulevard",
+    "companyAddress2": "Floor 15",
+    "companyPOprefix": "PO-2023"
 }

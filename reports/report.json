@@ -130,13 +130,13 @@
           "specs": [],
           "suites": [
             {
-              "title": "Create New PO",
+              "title": "Approval PO",
               "file": "purchase-orderTest.spec.js",
-              "line": 31,
-              "column": 10,
+              "line": 56,
+              "column": 19,
               "specs": [
                 {
-                  "title": "verify the add new supplier",
+                  "title": "verify accept or reject approval PO",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,19 +151,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2866,
+                          "duration": 7013,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-22T11:26:56.651Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-10-23T11:52:23.667Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-22T11:26:46.367Z",
+                          "startTime": "2025-10-23T11:52:12.940Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -171,77 +171,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "46c5d8a7538f71e45727-c78e247d0b0e1c91faaf",
+                  "id": "46c5d8a7538f71e45727-69a4bfd923dd9fb074df",
                   "file": "purchase-orderTest.spec.js",
-                  "line": 33,
-                  "column": 9
-                },
-                {
-                  "title": "verify the add new delivery address",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2183,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-22T11:27:02.404Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "46c5d8a7538f71e45727-79000eca052ad646bc1b",
-                  "file": "purchase-orderTest.spec.js",
-                  "line": 40,
-                  "column": 9
-                },
-                {
-                  "title": "verify select Delivery Date, Currency, Shipping Charge",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5085,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-22T11:27:04.601Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "46c5d8a7538f71e45727-27c8541e852d76e0ae79",
-                  "file": "purchase-orderTest.spec.js",
-                  "line": 46,
+                  "line": 58,
                   "column": 9
                 }
               ]
@@ -253,9 +185,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-22T11:26:45.903Z",
-    "duration": 24145.271,
-    "expected": 3,
+    "startTime": "2025-10-23T11:52:12.572Z",
+    "duration": 21382.098,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

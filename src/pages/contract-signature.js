@@ -183,7 +183,7 @@ export default class ContractSignature {
 
     async deleteSignature(){
         await this.signatureBlock.click();
-        await this.deleteSignatureButton.click();
+        await this.deleteSignatureButton.first().click();
         await this.deleteConfirmationButton.nth(1).click();
     
         const successMsg = await this.page.locator('text=Document signature has been deleted successfully.');
@@ -219,7 +219,37 @@ export default class ContractSignature {
     async addToMyDownloads(){
         await this.documentsButtonTab.nth(1).click();
         await this.page.locator('div.ant-modal-confirm-btns button').click(); 
+        await this.documentsButtonTab.first().click();
+        await this.page.locator('div.flex.items-center.gap-2 button').first().click();
     }
+
+    async myDownload(){
+        await this.myDownloads.click();
+        await this.documentsButtonTab.first().click();
+        await this.page.locator('text=Add Signature').click();
+        await this.page.locator('[alt="signature"]').click();
+        await this.page.locator('text=Sign Document').click();
+        await this.page.locator('text=Send Document').click();
+        await this.page.locator('div.ant-popover-inner-content button').last().click();
+
+        const successMsg = await this.page.locator('text=Document has been signed successfully.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
+    async delete(){
+        await this.documents.click();
+        await this.documentsButtonTab.last().click();
+        await this.page.locator('div.ant-modal-content button').last().click();
+
+        const successMsg = await this.page.locator('text=Document deleted successfully.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+
+        await this.page.locator('div.flex.items-center.gap-2 button').first().click();
+    }
+
+
 
 
 

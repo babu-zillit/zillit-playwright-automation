@@ -1,12 +1,39 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="29.508302">
-<testsuite name="26_contract-signatureTest.spec.js" timestamp="2025-10-30T07:12:18.952Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.414" errors="0">
-<testcase name="Contrcat Signature › upload documents standard Documents › verify upload documents" classname="26_contract-signatureTest.spec.js" time="14.414">
+<testsuites id="" name="" tests="7" failures="0" skipped="2" errors="0" time="61.515083000000004">
+<testsuite name="26_contract-signatureTest.spec.js" timestamp="2025-10-30T08:27:19.138Z" hostname="chromium" tests="7" failures="0" skipped="2" time="47.568" errors="0">
+<testcase name="Contrcat Signature › Upload documents in contract › verify upload document in contract" classname="26_contract-signatureTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Contrcat Signature › Upload documents in contract › verify upload document in form" classname="26_contract-signatureTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Contrcat Signature › Add signature › verify add signature" classname="26_contract-signatureTest.spec.js" time="7.606">
 <system-out>
-<![CDATA[[INFO] 2025-10-30T07:12:20.390Z - browser is launching
-[INFO] 2025-10-30T07:12:29.751Z - open the project
+<![CDATA[[INFO] 2025-10-30T08:27:20.256Z - browser is launching
+[INFO] 2025-10-30T08:27:30.090Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-10-30T07:12:29.751Z - QA environment is started...
-[INFO] 2025-10-30T07:12:47.959Z - close browser
+[INFO] 2025-10-30T08:27:30.090Z - QA environment is started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Contrcat Signature › upload documents standard Documents › verify upload documents" classname="26_contract-signatureTest.spec.js" time="18.543">
+</testcase>
+<testcase name="Contrcat Signature › addToMyDownloads › verify add to download and signature" classname="26_contract-signatureTest.spec.js" time="10.803">
+</testcase>
+<testcase name="Contrcat Signature › addToMyDownloads › verify delete the documents" classname="26_contract-signatureTest.spec.js" time="5.158">
+</testcase>
+<testcase name="Contrcat Signature › Delete signature › verify upload documents and see list" classname="26_contract-signatureTest.spec.js" time="5.458">
+<system-out>
+<![CDATA[[INFO] 2025-10-30T08:28:20.224Z - close browser
 ]]>
 </system-out>
 </testcase>

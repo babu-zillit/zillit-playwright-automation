@@ -137,7 +137,7 @@
               "specs": [
                 {
                   "title": "verify accept or reject approval PO",
-                  "ok": true,
+                  "ok": false,
                   "tags": [],
                   "tests": [
                     {
@@ -150,25 +150,57 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7013,
-                          "errors": [],
+                          "status": "timedOut",
+                          "duration": 30091,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js",
+                                "column": 27,
+                                "line": 209
+                              },
+                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('#approved_pending_po_accept_button')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/purchase-order.js:209\n\n\u001b[0m \u001b[90m 207 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpOSubmitedMeForApprovalTab\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 208 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39macceptReject\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 209 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maccept\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 210 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.ant-popover-content button'\u001b[39m)\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 211 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 212 |\u001b[39m     }\u001b[0m\n\u001b[2m    at PurchaseOrder.pOApproval (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:209:27)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-orderTest.spec.js:59:13\u001b[22m"
+                            }
+                          ],
                           "stdout": [
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-23T11:52:23.667Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-10-30T05:42:42.930Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-23T11:52:12.940Z",
+                          "startTime": "2025-10-30T05:42:32.805Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-1",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/trace.zip"
+                            }
+                          ]
                         }
                       ],
-                      "status": "expected"
+                      "status": "unexpected"
                     }
                   ],
                   "id": "46c5d8a7538f71e45727-69a4bfd923dd9fb074df",
@@ -185,11 +217,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-23T11:52:12.572Z",
-    "duration": 21382.098,
-    "expected": 1,
+    "startTime": "2025-10-30T05:42:32.399Z",
+    "duration": 45618.452000000005,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

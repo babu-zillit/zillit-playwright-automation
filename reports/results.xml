@@ -1,52 +1,12 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="45.618452000000005">
-<testsuite name="purchase-orderTest.spec.js" timestamp="2025-10-30T05:42:32.426Z" hostname="chromium" tests="1" failures="1" skipped="0" time="30.091" errors="0">
-<testcase name="Purchase Order › Approval PO › verify accept or reject approval PO" classname="purchase-orderTest.spec.js" time="30.091">
-<failure message="purchase-orderTest.spec.js:58:9 verify accept or reject approval PO" type="FAILURE">
-<![CDATA[  [chromium] › purchase-orderTest.spec.js:58:9 › Purchase Order › Approval PO › verify accept or reject approval PO 
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.click: Target page, context or browser has been closed
-    Call log:
-      - waiting for locator('#approved_pending_po_accept_button')
-
-
-       at ../pages/purchase-order.js:209
-
-      207 |         await this.pOSubmitedMeForApprovalTab.click();
-      208 |         await this.acceptReject.first().click();
-    > 209 |         await this.accept.click();
-          |                           ^
-      210 |         await this.page.locator('div.ant-popover-content button').last().click();
-      211 |         await this.page.waitForTimeout(5000);
-      212 |     }
-        at PurchaseOrder.pOApproval (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:209:27)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-orderTest.spec.js:59:13
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../../test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="29.508302">
+<testsuite name="26_contract-signatureTest.spec.js" timestamp="2025-10-30T07:12:18.952Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.414" errors="0">
+<testcase name="Contrcat Signature › upload documents standard Documents › verify upload documents" classname="26_contract-signatureTest.spec.js" time="14.414">
 <system-out>
-<![CDATA[Current hostname is: qa.zillit.com
-[INFO] 2025-10-30T05:42:42.930Z - QA environment is started...
-
-[[ATTACHMENT|../test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/purchase-orderTest-Purchas-57ee9-ccept-or-reject-approval-PO-chromium/trace.zip]]
+<![CDATA[[INFO] 2025-10-30T07:12:20.390Z - browser is launching
+[INFO] 2025-10-30T07:12:29.751Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-10-30T07:12:29.751Z - QA environment is started...
+[INFO] 2025-10-30T07:12:47.959Z - close browser
 ]]>
 </system-out>
 </testcase>

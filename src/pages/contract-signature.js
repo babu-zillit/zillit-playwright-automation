@@ -45,23 +45,11 @@ export default class ContractSignature {
         this.ok = page.locator('//div[@class="ant-modal-confirm-btns"]//button');
         this.deleteStandardFormDocuments = page.locator('#standard_form_delete_document_button');
         this.deleteConfirmationButtonStandardForm = page.locator('#delete_confirmation_button');
-        
-        /**
-         * locators for Document Received for Signature & Counter Signature
-         */ 
-        this.documentReceivedForSignature = page.locator('text=Document Received for Signature & Counter Signature');
 
-        /**
-         * locators for Documents Under Discussion
-         */
-        this.documentsUnderDiscussion = page.locator('text=Documents Under Discussion');
-        
-        /**
-         * locators upload the documents and see the list
-         */
-        this.uploadDocumentsAndSeeList = page.locator('text=Upload Documents & See the List');
-
-
+        // new locator's
+        this.documents = page.locator('#all_documents_button');
+        this.myDownloads = page.locator('#your_documents_button');
+        this.documentsButtonTab = page.locator('div.flex.gap-2.items-center.justify-end button');
 
     }
 
@@ -70,7 +58,7 @@ export default class ContractSignature {
 
     async contractSignatureTab(){
         await this.tools.click();
-        await this.page.locator('div.ant-card-body').getByText('Contracts & Signature').click();
+        await this.page.locator('div.ant-card-body').getByText('Documents & Signature').click();
     }
 
     async uploadDocumentsForFutureUseTab(){
@@ -155,7 +143,7 @@ export default class ContractSignature {
         await this.addSignatureButton.click();
         await this.signatureNameInput.fill('Babu');
 
-        const canvas = this.page.locator('//canvas[@class="h-full"]');
+        const canvas = this.page.locator('[class="signature-canvas w-full h-full"]');
         await canvas.waitFor({ state: 'visible' });
 
         const box = await canvas.boundingBox();
@@ -202,6 +190,44 @@ export default class ContractSignature {
         await successMsg.waitFor({ state: 'visible' });
         await successMsg.waitFor({ state: 'hidden' });
     }
+
+    async standardDocuments(){
+        await this.page.locator('text=Standard Documents').click();
+        await this.page.locator("//span[text()='Upload Document']").click();
+        await this.page.locator('[placeholder="Document Name"]').fill('Contract Test');
+        await this.page.locator('//input[@type="file"]').setInputFiles(mediapaths.document);
+        await this.page.locator('#common_upload_document_button').click();
+      
+        const successMsg = await this.page.locator('text=Standard documents has been added successfully.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
+    }
+
+    async view(){
+        await this.documentsButtonTab.first().click();
+        await this.page.locator('div.flex.items-center.justify-end.mx-auto button').first().click();
+        await this.page.waitForTimeout(3000);
+        await this.page.locator('div.flex.items-center.gap-2 button').first().click();
+    }
+
+    async checkHistory(){
+        await this.documentsButtonTab.nth(2).click();
+        await this.page.waitForTimeout(2000);
+        await this.page.locator('[aria-label="Close"]').click();
+    }
+
+    async addToMyDownloads(){
+        await this.documentsButtonTab.nth(1).click();
+        await this.page.locator('div.ant-modal-confirm-btns button').click(); 
+    }
+
+
+
+
+
+
+
+
 
 
     async standardFormAndContractsAndYourDocument(){

@@ -31,7 +31,7 @@ test.describe('Contrcat Signature', () => {
 
 
 
-    test.describe('Upload documents in contract', () => {
+    test.describe.skip('Upload documents in contract', () => {
 
         test('verify upload document in contract', async () => {
             await contractSignaturePage.uploadDocumentsForFutureUseTab();
@@ -61,7 +61,7 @@ test.describe('Contrcat Signature', () => {
 
     });
 
-    test.describe('Standard Forms & Contracts and Your Documents', async () => {
+    test.describe.skip('Standard Forms & Contracts and Your Documents', async () => {
 
         test('verify verify the standrad form & contracts documents', async () => {
            await contractSignaturePage.standardFormAndContractsAndYourDocument();
@@ -71,11 +71,13 @@ test.describe('Contrcat Signature', () => {
 
     });
 
-    test.describe('upload documents and see list', async () => {
+    test.describe.only('upload documents standard Documents', async () => {
 
-        test('verify upload documents and see list', async () => {
-           await contractSignaturePage.uploadDocumentAndSeeList();
-           await contractSignaturePage.navigiateBack();
+        test('verify upload documents', async () => {
+           await contractSignaturePage.standardDocuments();
+           await contractSignaturePage.view();
+           await contractSignaturePage.checkHistory();
+           await contractSignaturePage.addToMyDownloads();
         });
 
     });

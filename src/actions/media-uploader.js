@@ -309,10 +309,20 @@ export default class UploadMedia {
         await this.clickSendMedia();
     }
 
+    async voiceOverRecord(){
+        await this.page.locator('#record_audio_button').click();
+        await this.page.waitForTimeout(2000);
+        await this.page.locator('[aria-label="pause-circle"]').click();
+        await this.page.locator('#send_audio_to_selected_users_button').click();
+        await this.page.locator('[aria-label="loading"]').waitFor({ state: 'hidden'});
+    }
+
     async history(){
         await this.page.locator('div.ant-float-btn-body').nth(1).click();
         await this.page.waitForLoadState('load');
         await this.page.waitForTimeout(2000);
+        await this.page.goBack();
+        await this.page.waitForLoadState('load');
     }
 
     async pressReturnKey() {
@@ -360,6 +370,6 @@ export default class UploadMedia {
         } catch(error){
             console.log('Not show the success pop up message', error.message);
         }
-    }
+    } 
 
 }

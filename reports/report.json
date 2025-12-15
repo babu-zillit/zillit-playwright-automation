@@ -116,32 +116,32 @@
   },
   "suites": [
     {
-      "title": "distribution-listTest.spec.js",
-      "file": "distribution-listTest.spec.js",
+      "title": "05_callsheetTest.spec.js",
+      "file": "05_callsheetTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Distribution List",
-          "file": "distribution-listTest.spec.js",
-          "line": 6,
+          "title": "CallSheet",
+          "file": "05_callsheetTest.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Enable Distribution For self user",
-              "file": "distribution-listTest.spec.js",
-              "line": 31,
+              "title": "Send Document",
+              "file": "05_callsheetTest.spec.js",
+              "line": 34,
               "column": 10,
               "specs": [
                 {
-                  "title": "Verify user can enable distribution for home and tools",
+                  "title": "verify the send a message → send document by clicking on continuation → send a message send → document by clicking on new",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 550000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -151,25 +151,31 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 101194,
+                          "duration": 25743,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-12-15T10:46:28.811Z - browser is launching\n"
+                              "text": "[INFO] 2025-12-15T13:24:00.957Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-15T13:24:05.950Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-15T10:46:34.213Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-12-15T13:24:05.950Z - QA environment is started...\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-15T10:48:08.973Z - close browser\n"
+                              "text": "✅ AppleScript ran successfully\n"
+                            },
+                            {
+                              "text": "✅ AppleScript ran successfully\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-15T10:46:27.906Z",
+                          "startTime": "2025-12-15T13:24:00.236Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,26 +183,405 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "ffd6e8d19acfe72a7267-20226a76ecf8849c5cf7",
-                  "file": "distribution-listTest.spec.js",
-                  "line": 33,
+                  "id": "b5ab7d85560b73ec2f8f-00673707b58c40be4c8f",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 35,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2197,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:24:38.861Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-5f4484a22e264e75afa6",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 42,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6207,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:24:41.071Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-d71866196b20c4416288",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 46,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1375,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:24:47.289Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-b9d6521ffbbe8d7d94cd",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 50,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2166,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:24:48.678Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-d025ac93e71442f62ca6",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 54,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2237,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:24:50.853Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-21c2f2ed9d7707cae363",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 58,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5612,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:24:53.097Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-a2831208438a94f74060",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 62,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6277,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "✅ Pressed Return successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:24:58.717Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-b999283f0f6c6b96f0eb",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 66,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9813,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:05.005Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-ac8d7afbccfd453602b3",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 70,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5909,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:14.829Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-382bd7e809a4777e34cc",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 74,
+                  "column": 9
+                },
+                {
+                  "title": "verify the history",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3959,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:20.748Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-dd7382aae40eed479889",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 78,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Enable Distribution For other User",
-              "file": "distribution-listTest.spec.js",
-              "line": 42,
+              "title": "Send Message",
+              "file": "05_callsheetTest.spec.js",
+              "line": 86,
               "column": 10,
               "specs": [
                 {
-                  "title": "Verify user can enable distribution for home and tools",
+                  "title": "verify send a message",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 550000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -206,25 +591,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 110226,
+                          "duration": 3107,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-12-15T10:48:10.012Z - browser is launching\n"
-                            },
-                            {
-                              "text": "Current hostname is: qa.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-15T10:48:13.857Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-15T10:49:59.133Z - close browser\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-15T10:48:10.007Z",
+                          "startTime": "2025-12-15T13:25:24.722Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -232,9 +604,389 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "ffd6e8d19acfe72a7267-8f9b77f88eeb2532b2fb",
-                  "file": "distribution-listTest.spec.js",
-                  "line": 44,
+                  "id": "b5ab7d85560b73ec2f8f-2e38278cdfe1b2a43276",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 88,
+                  "column": 9
+                },
+                {
+                  "title": "verify edit the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2329,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:27.837Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-2b91c43f5abc2d8e653f",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 92,
+                  "column": 9
+                },
+                {
+                  "title": "verify read by status on message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2271,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:30.183Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-728edac4c03c1a48780b",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 96,
+                  "column": 9
+                },
+                {
+                  "title": "verify forward the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5821,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:32.472Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-b5868f318ae9929efde3",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 100,
+                  "column": 9
+                },
+                {
+                  "title": "verify reply to the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1513,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:38.306Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-d003bd1b90286d7c6dfe",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 104,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit the reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1889,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:39.831Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-30a86dc8ef9bd7b56e70",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 108,
+                  "column": 9
+                },
+                {
+                  "title": "verify the read by status on reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1950,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:41.738Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-6f8b47f825442e8dd4d8",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 112,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete the reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5585,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:43.693Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-d58a8dc711040f258513",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 116,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9992,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:49.288Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-0db8bf1af81934e7e57b",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 120,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6785,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:25:59.296Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-b6aa90442454dab2cb7c",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 124,
+                  "column": 9
+                },
+                {
+                  "title": "verify the history",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2180,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-15T13:26:08.318Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T13:26:06.091Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5ab7d85560b73ec2f8f-1e394e176378f79e009e",
+                  "file": "05_callsheetTest.spec.js",
+                  "line": 128,
                   "column": 9
                 }
               ]
@@ -246,9 +998,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-15T10:46:27.516Z",
-    "duration": 212978.29499999998,
-    "expected": 2,
+    "startTime": "2025-12-15T13:23:59.877Z",
+    "duration": 128998.79400000001,
+    "expected": 22,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

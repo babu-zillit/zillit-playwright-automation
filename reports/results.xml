@@ -1,20 +1,216 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="212.97829499999997">
-<testsuite name="distribution-listTest.spec.js" timestamp="2025-12-15T10:46:27.536Z" hostname="chromium" tests="2" failures="0" skipped="0" time="211.42" errors="0">
-<testcase name="Distribution List › Enable Distribution For self user › Verify user can enable distribution for home and tools" classname="distribution-listTest.spec.js" time="101.194">
+<testsuites id="" name="" tests="22" failures="0" skipped="0" errors="0" time="128.998794">
+<testsuite name="05_callsheetTest.spec.js" timestamp="2025-12-15T13:23:59.902Z" hostname="chromium" tests="22" failures="0" skipped="0" time="114.917" errors="0">
+<testcase name="CallSheet › Send Document › verify the send a message → send document by clicking on continuation → send a message send → document by clicking on new" classname="05_callsheetTest.spec.js" time="25.743">
 <system-out>
-<![CDATA[[INFO] 2025-12-15T10:46:28.811Z - browser is launching
+<![CDATA[[INFO] 2025-12-15T13:24:00.957Z - browser is launching
+[INFO] 2025-12-15T13:24:05.950Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-12-15T10:46:34.213Z - QA environment is started...
-[INFO] 2025-12-15T10:48:08.973Z - close browser
+[INFO] 2025-12-15T13:24:05.950Z - QA environment is started...
+✅ AppleScript ran successfully
+✅ AppleScript ran successfully
 ]]>
 </system-out>
 </testcase>
-<testcase name="Distribution List › Enable Distribution For other User › Verify user can enable distribution for home and tools" classname="distribution-listTest.spec.js" time="110.226">
+<testcase name="CallSheet › Send Document › verify the readBy status" classname="05_callsheetTest.spec.js" time="2.197">
 <system-out>
-<![CDATA[[INFO] 2025-12-15T10:48:10.012Z - browser is launching
-Current hostname is: qa.zillit.com
-[INFO] 2025-12-15T10:48:13.857Z - QA environment is started...
-[INFO] 2025-12-15T10:49:59.133Z - close browser
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the forward" classname="05_callsheetTest.spec.js" time="6.207">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the reply" classname="05_callsheetTest.spec.js" time="1.375">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the edit reply" classname="05_callsheetTest.spec.js" time="2.166">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the readBy reply" classname="05_callsheetTest.spec.js" time="2.237">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the delete reply" classname="05_callsheetTest.spec.js" time="5.612">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the save or download" classname="05_callsheetTest.spec.js" time="6.277">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the forward to remote project" classname="05_callsheetTest.spec.js" time="9.813">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the delete document" classname="05_callsheetTest.spec.js" time="5.909">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Document › verify the history" classname="05_callsheetTest.spec.js" time="3.959">
+</testcase>
+<testcase name="CallSheet › Send Message › verify send a message" classname="05_callsheetTest.spec.js" time="3.107">
+</testcase>
+<testcase name="CallSheet › Send Message › verify edit the message" classname="05_callsheetTest.spec.js" time="2.329">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify read by status on message" classname="05_callsheetTest.spec.js" time="2.271">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify forward the message" classname="05_callsheetTest.spec.js" time="5.821">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify reply to the message" classname="05_callsheetTest.spec.js" time="1.513">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the edit the reply message" classname="05_callsheetTest.spec.js" time="1.889">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the read by status on reply message" classname="05_callsheetTest.spec.js" time="1.95">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the delete the reply message" classname="05_callsheetTest.spec.js" time="5.585">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the forward to remote project" classname="05_callsheetTest.spec.js" time="9.992">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the delete message" classname="05_callsheetTest.spec.js" time="6.785">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CallSheet › Send Message › verify the history" classname="05_callsheetTest.spec.js" time="2.18">
+<system-out>
+<![CDATA[[INFO] 2025-12-15T13:26:08.318Z - close browser
 ]]>
 </system-out>
 </testcase>

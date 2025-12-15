@@ -32,9 +32,10 @@ test.describe('CallSheet', () => {
 
     
     test.describe('Send Document', () => {
-        test('verify the send a message → send document by clicking on continuation → send document by clicking on new', async () => {
+        test('verify the send a message → send document by clicking on continuation button → send a message → send document by clicking on new button', async () => {
             await uploadmedia.sendMessage();
             await callsheet.uploadDocumentByClickingContinuation();
+            await uploadmedia.sendMessage();
             await callsheet.uploadDocumentByClickingNew();
         });
 
@@ -72,6 +73,11 @@ test.describe('CallSheet', () => {
 
         test('verify the delete document', async () => {
             await uploadmedia.delete();
+        });
+
+        test('verify the history', async () => {
+            await uploadmedia.history();
+            await callsheet.clickCallSheet();
         });
 
     });

@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "remoteProjectTest.spec.js",
-      "file": "remoteProjectTest.spec.js",
+      "title": "07_tool-customizationTest.spec.js",
+      "file": "07_tool-customizationTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Remote Project Unit",
-          "file": "remoteProjectTest.spec.js",
+          "title": "Tools Customization",
+          "file": "07_tool-customizationTest.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Create Remote Project Unit",
-              "file": "remoteProjectTest.spec.js",
-              "line": 30,
+              "title": "tool customization",
+              "file": "07_tool-customizationTest.spec.js",
+              "line": 33,
               "column": 10,
               "specs": [
                 {
-                  "title": "Verify user can create a remote project unit",
+                  "title": "verify enable all the module of tools",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,31 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8629,
+                          "duration": 5888,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-12-15T08:07:37.559Z - browser is launching\n"
+                              "text": "[INFO] 2025-12-15T09:43:35.384Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-15T09:43:46.867Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-15T08:07:43.455Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-12-15T09:43:46.868Z - QA environment is started...\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-15T08:08:04.108Z - close browser\n"
+                              "text": "[\n  \u001b[32m'constructor'\u001b[39m,         \u001b[32m'clickProjectName'\u001b[39m,\n  \u001b[32m'homeUnitTab'\u001b[39m,         \u001b[32m'handleDropdownAction'\u001b[39m,\n  \u001b[32m'sendMessage'\u001b[39m,         \u001b[32m'edit'\u001b[39m,\n  \u001b[32m'forward'\u001b[39m,             \u001b[32m'readBy'\u001b[39m,\n  \u001b[32m'reply'\u001b[39m,               \u001b[32m'save'\u001b[39m,\n  \u001b[32m'distribute'\u001b[39m,          \u001b[32m'forwardRemoteProject'\u001b[39m,\n  \u001b[32m'dropDownListOnReply'\u001b[39m, \u001b[32m'editReply'\u001b[39m,\n  \u001b[32m'readByReply'\u001b[39m,         \u001b[32m'deleteReply'\u001b[39m,\n  \u001b[32m'delete'\u001b[39m,              \u001b[32m'clickAttachment'\u001b[39m,\n  \u001b[32m'uploadImage'\u001b[39m,         \u001b[32m'clickSendMedia'\u001b[39m,\n  \u001b[32m'uploadVideo'\u001b[39m,         \u001b[32m'uploadAudio'\u001b[39m,\n  \u001b[32m'uploadDocument'\u001b[39m,      \u001b[32m'uploadLocation'\u001b[39m,\n  \u001b[32m'imageReply'\u001b[39m,          \u001b[32m'history'\u001b[39m,\n  \u001b[32m'pressReturnKey'\u001b[39m,      \u001b[32m'replyMediaForAccount'\u001b[39m,\n  \u001b[32m'verifyPopupMessage'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-15T09:43:55.474Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-15T08:07:36.496Z",
+                          "startTime": "2025-12-15T09:43:34.540Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,9 +183,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "1fd6bfb28325dde98c6c-44cee02d7b134c63316a",
-                  "file": "remoteProjectTest.spec.js",
-                  "line": 32,
+                  "id": "246c0dcd61ce777f90c2-af69be792ebe7d3610ac",
+                  "file": "07_tool-customizationTest.spec.js",
+                  "line": 35,
                   "column": 9
                 }
               ]
@@ -191,8 +197,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-15T08:07:36.140Z",
-    "duration": 28314.466,
+    "startTime": "2025-12-15T09:43:34.094Z",
+    "duration": 21646.478,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

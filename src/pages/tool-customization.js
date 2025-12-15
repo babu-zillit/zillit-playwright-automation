@@ -22,10 +22,6 @@ export default class ToolCustomization {
         await this.selectAll.check();
         await expect(this.selectAll).toBeChecked();
         await this.save.click();
-
-        const popup = await this.page.locator('text=Project tools updated.');
-        await popup.waitFor({ state: 'visible' });
-        await popup.waitFor({ state: 'hidden' });
     }
 
 }

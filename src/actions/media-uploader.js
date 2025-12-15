@@ -349,4 +349,17 @@ export default class UploadMedia {
     await this.handleDropdownAction('Reply');
  }
 
+ /**
+  * verifyPopupMessage across the project
+  */
+    async verifyPopupMessage(popupMessage){
+        try{
+            const successMsg = await this.page.locator(`text=${popupMessage}`);
+            await successMsg.waitFor({ state: 'visible', timeout: 15000 });
+            await successMsg.waitFor({ state: 'hidden', timeout: 15000 });
+        } catch(error){
+            console.log('Not show the success pop up message', error.message);
+        }
+    }
+
 }

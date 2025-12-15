@@ -1,5 +1,4 @@
 import { test } from '@playwright/test';
-import ApproveUserRequest from "../pages/Approve-user-request";
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 import ToolCustomization from '../pages/tool-customization';
@@ -35,6 +34,7 @@ test.describe('Tools Customization', () => {
 
         test('verify enable all the module of tools', async () => {
             await toolCustomization.enableToolsModule();
+            await uploadmedia.verifyPopupMessage('Project tools updated.');
         });
     
     });

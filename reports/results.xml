@@ -1,12 +1,11 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="26.430821">
-<testsuite name="02_approve-user-requestTest.spec.js" timestamp="2025-12-15T07:59:31.676Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.438" errors="0">
-<testcase name="Approve New User Request › User Request › Verify new user request approval" classname="02_approve-user-requestTest.spec.js" time="4.438">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="28.314466">
+<testsuite name="remoteProjectTest.spec.js" timestamp="2025-12-15T08:07:36.161Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.629" errors="0">
+<testcase name="Remote Project Unit › Create Remote Project Unit › Verify user can create a remote project unit" classname="remoteProjectTest.spec.js" time="8.629">
 <system-out>
-<![CDATA[[INFO] 2025-12-15T07:59:32.418Z - browser is launching
-[INFO] 2025-12-15T07:59:36.489Z - open the project
+<![CDATA[[INFO] 2025-12-15T08:07:37.559Z - browser is launching
 Current hostname is: qa.zillit.com
-[INFO] 2025-12-15T07:59:36.489Z - QA environment is started...
-[INFO] 2025-12-15T07:59:57.776Z - close browser
+[INFO] 2025-12-15T08:07:43.455Z - QA environment is started...
+[INFO] 2025-12-15T08:08:04.108Z - close browser
 ]]>
 </system-out>
 </testcase>

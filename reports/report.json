@@ -116,32 +116,32 @@
   },
   "suites": [
     {
-      "title": "02_approve-user-requestTest.spec.js",
-      "file": "02_approve-user-requestTest.spec.js",
+      "title": "remoteProjectTest.spec.js",
+      "file": "remoteProjectTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Approve New User Request",
-          "file": "02_approve-user-requestTest.spec.js",
-          "line": 7,
+          "title": "Remote Project Unit",
+          "file": "remoteProjectTest.spec.js",
+          "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "User Request",
-              "file": "02_approve-user-requestTest.spec.js",
-              "line": 38,
+              "title": "Create Remote Project Unit",
+              "file": "remoteProjectTest.spec.js",
+              "line": 30,
               "column": 10,
               "specs": [
                 {
-                  "title": "Verify new user request approval",
+                  "title": "Verify user can create a remote project unit",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -151,28 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4438,
+                          "duration": 8629,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-12-15T07:59:32.418Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-15T07:59:36.489Z - open the project\n"
+                              "text": "[INFO] 2025-12-15T08:07:37.559Z - browser is launching\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-15T07:59:36.489Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-12-15T08:07:43.455Z - QA environment is started...\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-15T07:59:57.776Z - close browser\n"
+                              "text": "[INFO] 2025-12-15T08:08:04.108Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-15T07:59:32.001Z",
+                          "startTime": "2025-12-15T08:07:36.496Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -180,9 +177,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "8e3292d177e6ed15e7c9-2a9052a8481386cc9be5",
-                  "file": "02_approve-user-requestTest.spec.js",
-                  "line": 40,
+                  "id": "1fd6bfb28325dde98c6c-44cee02d7b134c63316a",
+                  "file": "remoteProjectTest.spec.js",
+                  "line": 32,
                   "column": 9
                 }
               ]
@@ -194,8 +191,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-15T07:59:31.576Z",
-    "duration": 26430.821,
+    "startTime": "2025-12-15T08:07:36.140Z",
+    "duration": 28314.466,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

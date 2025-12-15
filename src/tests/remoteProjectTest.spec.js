@@ -29,7 +29,7 @@ test.describe('Remote Project Unit', () => {
 
     test.describe('Create Remote Project Unit', () => {
 
-        test('verify the create remote project unit', async () => {
+        test('Verify user can create a remote project unit', async () => {
             await settingPage.createRemoteProject();
         });
             

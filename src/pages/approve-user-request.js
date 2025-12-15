@@ -9,8 +9,8 @@ export default class ApproveUserRequest{
         this.settings = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Settings"]');
         this.adminSetting = page.locator('[data-node-key="admin"]')
         this.approveNewUserRequestTab = page.locator('#approve_new_user_request');
-        this.acceptUser = page.locator('#accept_onboarding_without_deal_memo_nda');
-        this.yesApprove = page.locator('//div[@class="ant-modal-confirm-btns"]//button');
+        this.acceptUser = page.locator('#accept_join_request');
+        this.yesApprove = page.locator('div.ant-modal-footer button');
     }
 
     async openSettings(){
@@ -22,7 +22,7 @@ export default class ApproveUserRequest{
     async approveNewUserRequest(){
         await this.approveNewUserRequestTab.click();
         await this.acceptUser.click();
-        await this.yesApprove.nth(1).click();
+        await this.yesApprove.last().click();
         await this.page.waitForTimeout(2000);
     }
 

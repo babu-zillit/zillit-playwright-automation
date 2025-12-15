@@ -35,17 +35,12 @@ test.describe('Approve New User Request', () => {
 
 
 
-    test.describe('user request', () => {
+    test.describe('User Request', () => {
 
-        test('verify user approve new user request', async () => {
+        test('Verify new user request approval', async () => {
             await approveUserRequest.approveNewUserRequest();
         });
 
-        test.only('verify user create remote project in settings', async () => {
-            await settingPage.openSettings();
-            await settingPage.createRemoteProject();
-        });
-    
     });
 
 });

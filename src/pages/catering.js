@@ -39,7 +39,7 @@ export default class Catering {
 
     async clickCateringTab(){
         await this.tools.click();
-        await this.page.waitForTimeout(10000);
+       // await this.page.waitForTimeout(10000);
         await this.page.locator('div.ant-card-body').getByText('Catering').click();
     }
 

@@ -119,7 +119,7 @@ test.describe('CallSheet', () => {
             await uploadmedia.delete();
         });
 
-        test.only('verify the history', async () => {
+        test('verify the history', async () => {
             await uploadmedia.history();
         });
     

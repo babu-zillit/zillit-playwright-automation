@@ -2,7 +2,6 @@ import { expect } from '@playwright/test';
 import logger from "../utils/loggerUtils";
 import { loadJson } from '../utils/jsonUtil';
 const startproject = loadJson('startproject', 'testdata');
-const imaps = require('imap-simple');
 
 export default class StartProject {
     
@@ -20,7 +19,7 @@ export default class StartProject {
         this.projectSubType = page.locator('#projectSubType');
         this.language = page.locator('#language');
         this.projectNameInput = page.locator('#projectName');
-        this.emailInput = page.locator('#email');
+        this.emailInput = page.locator('[type="email"]');
         this.checkboxButton = page.locator('#agreeTerms');
         this.submitButton = page.locator('//div[@class="ant-modal-footer"]//button');
     }

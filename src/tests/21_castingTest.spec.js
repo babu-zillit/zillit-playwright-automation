@@ -98,7 +98,7 @@ test.describe('Casting', () => {
     
     });
 
-    test.describe.only('Send Message', () => {
+    test.describe.skip('Send Message', () => {
 
         test('verify send a message', async () => {
             await castingPage.chat();

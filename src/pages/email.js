@@ -110,7 +110,7 @@ export default class Email {
     async reply(){
         await this.clickOnSentEmail.first().click();
         await this.replyReplyAllForward.nth(0).click();
-        await this.page.locator('div.ql-editor p').nth(0).fill('Hello this is rely message');
+        await this.page.locator('div.ql-editor div').nth(0).fill('Hello this is rely message');
         await this.button.first().click();
 
         const successMsg = await this.page.locator('text=Email sent successfully');
@@ -121,7 +121,7 @@ export default class Email {
     async replyAll(){
         await this.clickOnSentEmail.first().click();
         await this.replyReplyAllForward.nth(1).click();
-        await this.page.locator('div.ql-editor p').nth(0).fill('Hello this is rely all message');
+        await this.page.locator('div.ql-editor div').nth(0).fill('Hello this is rely all message');
         await this.button.first().click();
 
         const successMsg = await this.page.locator('text=Email sent successfully');
@@ -134,7 +134,7 @@ export default class Email {
         await this.replyReplyAllForward.nth(2).click();
         await this.to.fill('pramod@zillit.com');
         await this.page.keyboard.press('Enter');
-        await this.page.locator('div.ql-editor p').nth(6).fill('Hello this is forward message');
+        await this.page.locator('div.ql-editor div').nth(6).fill('Hello this is forward message');
         await this.button.first().click();
 
         const successMsg = await this.page.locator('text=Email sent successfully');

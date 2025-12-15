@@ -116,124 +116,32 @@
   },
   "suites": [
     {
-      "title": "26_contract-signatureTest.spec.js",
-      "file": "26_contract-signatureTest.spec.js",
+      "title": "02_approve-user-requestTest.spec.js",
+      "file": "02_approve-user-requestTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Contrcat Signature",
-          "file": "26_contract-signatureTest.spec.js",
-          "line": 6,
+          "title": "Approve New User Request",
+          "file": "02_approve-user-requestTest.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Upload documents in contract",
-              "file": "26_contract-signatureTest.spec.js",
-              "line": 34,
-              "column": 19,
-              "specs": [
-                {
-                  "title": "verify upload document in contract",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-30T08:27:19.479Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "259b6b873a37c490c283-674abea6689f13f2ba85",
-                  "file": "26_contract-signatureTest.spec.js",
-                  "line": 36,
-                  "column": 9
-                },
-                {
-                  "title": "verify upload document in form",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-30T08:27:19.479Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "259b6b873a37c490c283-ed915927ee91259e38f6",
-                  "file": "26_contract-signatureTest.spec.js",
-                  "line": 43,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Add signature",
-              "file": "26_contract-signatureTest.spec.js",
-              "line": 53,
+              "title": "User Request",
+              "file": "02_approve-user-requestTest.spec.js",
+              "line": 38,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify add signature",
+                  "title": "Verify new user request approval",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -243,189 +151,28 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7606,
+                          "duration": 4438,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-10-30T08:27:20.256Z - browser is launching\n"
+                              "text": "[INFO] 2025-12-15T07:59:32.418Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-30T08:27:30.090Z - open the project\n"
+                              "text": "[INFO] 2025-12-15T07:59:36.489Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-10-30T08:27:30.090Z - QA environment is started...\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-30T08:27:19.479Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "259b6b873a37c490c283-f9f6578ca4d63e5798d3",
-                  "file": "26_contract-signatureTest.spec.js",
-                  "line": 55,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "upload documents standard Documents",
-              "file": "26_contract-signatureTest.spec.js",
-              "line": 64,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify upload documents",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 18543,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-30T08:27:40.199Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "259b6b873a37c490c283-7e415136b0df67b3d320",
-                  "file": "26_contract-signatureTest.spec.js",
-                  "line": 66,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "addToMyDownloads",
-              "file": "26_contract-signatureTest.spec.js",
-              "line": 75,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify add to download and signature",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10803,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-30T08:27:58.756Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "259b6b873a37c490c283-8c947db4329c9043d3f1",
-                  "file": "26_contract-signatureTest.spec.js",
-                  "line": 77,
-                  "column": 9
-                },
-                {
-                  "title": "verify delete the documents",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5158,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-10-30T08:28:09.570Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "259b6b873a37c490c283-570787bb25f217672c97",
-                  "file": "26_contract-signatureTest.spec.js",
-                  "line": 81,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Delete signature",
-              "file": "26_contract-signatureTest.spec.js",
-              "line": 87,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify upload documents and see list",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5458,
-                          "errors": [],
-                          "stdout": [
+                              "text": "[INFO] 2025-12-15T07:59:36.489Z - QA environment is started...\n"
+                            },
                             {
-                              "text": "[INFO] 2025-10-30T08:28:20.224Z - close browser\n"
+                              "text": "[INFO] 2025-12-15T07:59:57.776Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-10-30T08:28:14.744Z",
+                          "startTime": "2025-12-15T07:59:32.001Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -433,9 +180,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "259b6b873a37c490c283-907644845d9c0bd96805",
-                  "file": "26_contract-signatureTest.spec.js",
-                  "line": 89,
+                  "id": "8e3292d177e6ed15e7c9-2a9052a8481386cc9be5",
+                  "file": "02_approve-user-requestTest.spec.js",
+                  "line": 40,
                   "column": 9
                 }
               ]
@@ -447,10 +194,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-30T08:27:19.111Z",
-    "duration": 61515.083000000006,
-    "expected": 5,
-    "skipped": 2,
+    "startTime": "2025-12-15T07:59:31.576Z",
+    "duration": 26430.821,
+    "expected": 1,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

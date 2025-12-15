@@ -1,29 +1,20 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="21.646478">
-<testsuite name="07_tool-customizationTest.spec.js" timestamp="2025-12-15T09:43:34.212Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.888" errors="0">
-<testcase name="Tools Customization › tool customization › verify enable all the module of tools" classname="07_tool-customizationTest.spec.js" time="5.888">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="212.97829499999997">
+<testsuite name="distribution-listTest.spec.js" timestamp="2025-12-15T10:46:27.536Z" hostname="chromium" tests="2" failures="0" skipped="0" time="211.42" errors="0">
+<testcase name="Distribution List › Enable Distribution For self user › Verify user can enable distribution for home and tools" classname="distribution-listTest.spec.js" time="101.194">
 <system-out>
-<![CDATA[[INFO] 2025-12-15T09:43:35.384Z - browser is launching
-[INFO] 2025-12-15T09:43:46.867Z - open the project
+<![CDATA[[INFO] 2025-12-15T10:46:28.811Z - browser is launching
 Current hostname is: qa.zillit.com
-[INFO] 2025-12-15T09:43:46.868Z - QA environment is started...
-[
-  [32m'constructor'[39m,         [32m'clickProjectName'[39m,
-  [32m'homeUnitTab'[39m,         [32m'handleDropdownAction'[39m,
-  [32m'sendMessage'[39m,         [32m'edit'[39m,
-  [32m'forward'[39m,             [32m'readBy'[39m,
-  [32m'reply'[39m,               [32m'save'[39m,
-  [32m'distribute'[39m,          [32m'forwardRemoteProject'[39m,
-  [32m'dropDownListOnReply'[39m, [32m'editReply'[39m,
-  [32m'readByReply'[39m,         [32m'deleteReply'[39m,
-  [32m'delete'[39m,              [32m'clickAttachment'[39m,
-  [32m'uploadImage'[39m,         [32m'clickSendMedia'[39m,
-  [32m'uploadVideo'[39m,         [32m'uploadAudio'[39m,
-  [32m'uploadDocument'[39m,      [32m'uploadLocation'[39m,
-  [32m'imageReply'[39m,          [32m'history'[39m,
-  [32m'pressReturnKey'[39m,      [32m'replyMediaForAccount'[39m,
-  [32m'verifyPopupMessage'[39m
-]
-[INFO] 2025-12-15T09:43:55.474Z - close browser
+[INFO] 2025-12-15T10:46:34.213Z - QA environment is started...
+[INFO] 2025-12-15T10:48:08.973Z - close browser
+]]>
+</system-out>
+</testcase>
+<testcase name="Distribution List › Enable Distribution For other User › Verify user can enable distribution for home and tools" classname="distribution-listTest.spec.js" time="110.226">
+<system-out>
+<![CDATA[[INFO] 2025-12-15T10:48:10.012Z - browser is launching
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-15T10:48:13.857Z - QA environment is started...
+[INFO] 2025-12-15T10:49:59.133Z - close browser
 ]]>
 </system-out>
 </testcase>

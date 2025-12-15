@@ -116,32 +116,32 @@
   },
   "suites": [
     {
-      "title": "07_tool-customizationTest.spec.js",
-      "file": "07_tool-customizationTest.spec.js",
+      "title": "distribution-listTest.spec.js",
+      "file": "distribution-listTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Tools Customization",
-          "file": "07_tool-customizationTest.spec.js",
+          "title": "Distribution List",
+          "file": "distribution-listTest.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "tool customization",
-              "file": "07_tool-customizationTest.spec.js",
-              "line": 33,
+              "title": "Enable Distribution For self user",
+              "file": "distribution-listTest.spec.js",
+              "line": 31,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify enable all the module of tools",
+                  "title": "Verify user can enable distribution for home and tools",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 550000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -151,31 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5888,
+                          "duration": 101194,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-12-15T09:43:35.384Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-15T09:43:46.867Z - open the project\n"
+                              "text": "[INFO] 2025-12-15T10:46:28.811Z - browser is launching\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-15T09:43:46.868Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-12-15T10:46:34.213Z - QA environment is started...\n"
                             },
                             {
-                              "text": "[\n  \u001b[32m'constructor'\u001b[39m,         \u001b[32m'clickProjectName'\u001b[39m,\n  \u001b[32m'homeUnitTab'\u001b[39m,         \u001b[32m'handleDropdownAction'\u001b[39m,\n  \u001b[32m'sendMessage'\u001b[39m,         \u001b[32m'edit'\u001b[39m,\n  \u001b[32m'forward'\u001b[39m,             \u001b[32m'readBy'\u001b[39m,\n  \u001b[32m'reply'\u001b[39m,               \u001b[32m'save'\u001b[39m,\n  \u001b[32m'distribute'\u001b[39m,          \u001b[32m'forwardRemoteProject'\u001b[39m,\n  \u001b[32m'dropDownListOnReply'\u001b[39m, \u001b[32m'editReply'\u001b[39m,\n  \u001b[32m'readByReply'\u001b[39m,         \u001b[32m'deleteReply'\u001b[39m,\n  \u001b[32m'delete'\u001b[39m,              \u001b[32m'clickAttachment'\u001b[39m,\n  \u001b[32m'uploadImage'\u001b[39m,         \u001b[32m'clickSendMedia'\u001b[39m,\n  \u001b[32m'uploadVideo'\u001b[39m,         \u001b[32m'uploadAudio'\u001b[39m,\n  \u001b[32m'uploadDocument'\u001b[39m,      \u001b[32m'uploadLocation'\u001b[39m,\n  \u001b[32m'imageReply'\u001b[39m,          \u001b[32m'history'\u001b[39m,\n  \u001b[32m'pressReturnKey'\u001b[39m,      \u001b[32m'replyMediaForAccount'\u001b[39m,\n  \u001b[32m'verifyPopupMessage'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-15T09:43:55.474Z - close browser\n"
+                              "text": "[INFO] 2025-12-15T10:48:08.973Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-15T09:43:34.540Z",
+                          "startTime": "2025-12-15T10:46:27.906Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -183,9 +177,64 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "246c0dcd61ce777f90c2-af69be792ebe7d3610ac",
-                  "file": "07_tool-customizationTest.spec.js",
-                  "line": 35,
+                  "id": "ffd6e8d19acfe72a7267-20226a76ecf8849c5cf7",
+                  "file": "distribution-listTest.spec.js",
+                  "line": 33,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Enable Distribution For other User",
+              "file": "distribution-listTest.spec.js",
+              "line": 42,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify user can enable distribution for home and tools",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 550000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 110226,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-15T10:48:10.012Z - browser is launching\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-15T10:48:13.857Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-15T10:49:59.133Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-15T10:48:10.007Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ffd6e8d19acfe72a7267-8f9b77f88eeb2532b2fb",
+                  "file": "distribution-listTest.spec.js",
+                  "line": 44,
                   "column": 9
                 }
               ]
@@ -197,9 +246,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-15T09:43:34.094Z",
-    "duration": 21646.478,
-    "expected": 1,
+    "startTime": "2025-12-15T10:46:27.516Z",
+    "duration": 212978.29499999998,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

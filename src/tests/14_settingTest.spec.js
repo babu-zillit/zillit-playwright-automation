@@ -30,7 +30,6 @@ test.describe('Settings', () => {
     });
 
 
-
     test.describe('Create New Department', () => {
 
         test('verify the create new department', async () => {

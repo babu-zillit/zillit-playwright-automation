@@ -1,14 +1,65 @@
 import { expect } from '@playwright/test';
 import { loadJson } from '../utils/jsonUtil';
 const mediapaths = loadJson('mediapaths', 'testdata');
+import UploadMedia from '../actions/media-uploader';
 
 export default class Settings {
 
     constructor(page){
         this.page = page;
+        this.uploadMedia = new UploadMedia(page);
 
         this.settings = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Settings"]');
         this.adminSetting = page.locator('[data-node-key="admin"]');
+
+        /**
+         * Edit Profile
+         */
+         this.editProfile = page.locator('#edit_profile');
+         this.lastName = page.locator('#lastName');
+         this.openBccPreset = page.locator('#bcc_preset_modal_open_button');
+         this.addBccPreset = page.locator('#add_bcc_preset_popover_button');
+         this.to = page.locator('[placeholder="To"]');
+         this.bccSubmit = page.locator('#add_bcc_preset_submit_button');
+         this.deleteBccPreset = page.locator('#add_bcc_preset_trash_button');
+         this.sumbitEditProfile = page.locator('#submit_edit_profile_button');
+
+        /**
+         * Invite User
+         */
+        this.inviteUser = page.locator('#invite_users');
+        this.share = page.locator('#invite_users_open_share_popover_button');
+        this.shareViaInternalEmail = page.locator('#invite_users_share_via_internal_email_button');
+        this.to = page.locator('[placeholder="To"]');
+        this.send = page.locator('div.ant-modal-footer button');
+        this.cancelShareProjectCodeWindow = page.locator('#invite_users_close_modal_button');
+
+        /**
+         * Web Preferences
+         */
+        this.webPreferences = page.locator('#web_preferences');
+        this.clickOnHomeUnit = page.locator('div.ant-select-selector');
+        
+
+        /**
+         * Edit Preferences
+         */
+        this.editPreferences = page.locator('#edit_preference');
+        this.changeProfilePicture = page.locator('span.ant-upload input[type="file"]');
+        this.uploadProfilePicture = page.locator('#edit_preferences_change_profile_picture_button');
+        this.country = page.locator('#country_code');
+        this.phone = page.locator('#phone');
+        this.selectCheckBox = page.locator('input.ant-checkbox-input');
+        this.gender = page.locator('#gender');
+        this.submitEditPreference = page.locator('#edit_preferences_submit_button');
+
+        /**
+         * Recovery Code or Email
+         */
+        this.recoveryCode = page.locator('#recovery_code_or_email');
+        this.recoveryEmail = page.locator('#recoveryForm_recoveryEmail');
+        this.recoveryUpdate = page.locator('#recovery_code_update_button');
+
 
         /**
          * Create New Department locator
@@ -68,6 +119,10 @@ export default class Settings {
 
 
 
+    }
+
+    async openProfileSetting(){
+        await this.settings.click();
     }
 
 
@@ -236,5 +291,81 @@ export default class Settings {
         await source.dragTo(target);
     }
 
+    async editProfiles(){
+        await this.editProfile.click();
+        await this.lastName.fill('Web1');  
+    }
+
+    async addPreset(){
+        await this.openBccPreset.click();
+        await this.addBccPreset.click();
+        await this.to.fill('bhavik@zillit.com');
+        await this.page.keyboard.press('Enter');
+        await this.bccSubmit.click();
+        await this.uploadMedia.verifyPopupMessage('Bcc preset has been updated successfully.');
+    }
+
+    async deletePreset(){
+        await this.openBccPreset.click();
+        await this.deleteBccPreset.first().click();
+        await this.uploadMedia.verifyPopupMessage('Bcc preset has been updated successfully.');
+        await this.page.locator('[aria-label="Close"]').last().click();
+    }
+
+    async submitEditProfileFunctionality(){
+        await this.sumbitEditProfile.click();
+        await this.uploadMedia.verifyPopupMessage('Profile updated successfully.');
+    }
+
+    async inviteUsers(){
+        await this.inviteUser.click();
+        await this.share.click();
+        await this.shareViaInternalEmail.click();
+        await this.to.fill('pramod@zillit.com');
+        await this.page.keyboard.press('Enter');
+        await this.send.last().click();
+        await this.uploadMedia.verifyPopupMessage('Email sent successfully');
+        await this.cancelShareProjectCodeWindow.click();
+    }
+
+    async webPreference(){
+        await this.page.waitForTimeout(5000);
+        await this.webPreferences.click();
+        await this.clickOnHomeUnit.click();
+        await this.page.getByRole('option', { name: 'Call Sheet' }).click();
+
+        await this.uploadMedia.verifyPopupMessage('Default Tab updated successfully!');
+        await this.page.locator('[aria-label="Close"]').last().click();
+    }
+
+    async editPreference(){
+        await this.editPreferences.click();
+        await this.page.waitForTimeout(2000);
+        await this.changeProfilePicture.setInputFiles(mediapaths.image);
+        await this.page.locator('div.text-end button').nth(1).click();
+        await this.uploadProfilePicture.click();
+        await this.uploadMedia.verifyPopupMessage('Profile updated successfully.');
+
+        await this.country.fill('India');
+        await this.page.keyboard.press('ArrowDown');
+        await this.page.keyboard.press('Enter');
+        await this.phone.fill('12345');
+        const checkboxes = await this.selectCheckBox.all();
+        for (const checkbox of checkboxes) {
+            const isChecked = await checkbox.isChecked();
+            if (!isChecked) {
+            await checkbox.click();
+            }
+        }
+        await this.submitEditPreference.click();
+        await this.uploadMedia.verifyPopupMessage('Profile updated successfully.');
+    }
+
+    async recoveryCodeEmail(){
+        await this.recoveryCode.click();
+        await this.recoveryEmail.fill('pramod+389@zillit.com');
+        await this.recoveryUpdate.click();
+        await this.uploadMedia.verifyPopupMessage('A verification link has been sent to your email address, kindly verify to proceed.');
+    }
 
 }

@@ -1,216 +1,29 @@
-<testsuites id="" name="" tests="22" failures="0" skipped="0" errors="0" time="128.998794">
-<testsuite name="05_callsheetTest.spec.js" timestamp="2025-12-15T13:23:59.902Z" hostname="chromium" tests="22" failures="0" skipped="0" time="114.917" errors="0">
-<testcase name="CallSheet › Send Document › verify the send a message → send document by clicking on continuation → send a message send → document by clicking on new" classname="05_callsheetTest.spec.js" time="25.743">
+<testsuites id="" name="" tests="5" failures="0" skipped="1" errors="0" time="57.410008999999995">
+<testsuite name="profileSettingTest.spec.js" timestamp="2025-12-16T07:57:47.062Z" hostname="chromium" tests="5" failures="0" skipped="1" time="47.917" errors="0">
+<testcase name="Settings › Edit Profile › Verify editing the profile name → add a BCC preset → delete the BCC preset → add the BCC preset again." classname="profileSettingTest.spec.js" time="22.957">
 <system-out>
-<![CDATA[[INFO] 2025-12-15T13:24:00.957Z - browser is launching
-[INFO] 2025-12-15T13:24:05.950Z - open the project
+<![CDATA[[INFO] 2025-12-16T07:57:47.776Z - browser is launching
+[INFO] 2025-12-16T07:57:53.415Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-12-15T13:24:05.950Z - QA environment is started...
-✅ AppleScript ran successfully
-✅ AppleScript ran successfully
+[INFO] 2025-12-16T07:57:53.415Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="CallSheet › Send Document › verify the readBy status" classname="05_callsheetTest.spec.js" time="2.197">
+<testcase name="Settings › Invites User › Verify the user invitation functionality through email sharing" classname="profileSettingTest.spec.js" time="6.348">
+</testcase>
+<testcase name="Settings › Web Preference › Verify default unit is set to Call Sheet and reflected on Home" classname="profileSettingTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Settings › Edit Preference › Verify edit" classname="profileSettingTest.spec.js" time="12.816">
+</testcase>
+<testcase name="Settings › Recovery Code or Email › Verify recovery email or code" classname="profileSettingTest.spec.js" time="5.796">
 <system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the forward" classname="05_callsheetTest.spec.js" time="6.207">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the reply" classname="05_callsheetTest.spec.js" time="1.375">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the edit reply" classname="05_callsheetTest.spec.js" time="2.166">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the readBy reply" classname="05_callsheetTest.spec.js" time="2.237">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the delete reply" classname="05_callsheetTest.spec.js" time="5.612">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the save or download" classname="05_callsheetTest.spec.js" time="6.277">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-✅ Pressed Return successfully
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the forward to remote project" classname="05_callsheetTest.spec.js" time="9.813">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the delete document" classname="05_callsheetTest.spec.js" time="5.909">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Save'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Document › verify the history" classname="05_callsheetTest.spec.js" time="3.959">
-</testcase>
-<testcase name="CallSheet › Send Message › verify send a message" classname="05_callsheetTest.spec.js" time="3.107">
-</testcase>
-<testcase name="CallSheet › Send Message › verify edit the message" classname="05_callsheetTest.spec.js" time="2.329">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify read by status on message" classname="05_callsheetTest.spec.js" time="2.271">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify forward the message" classname="05_callsheetTest.spec.js" time="5.821">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify reply to the message" classname="05_callsheetTest.spec.js" time="1.513">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the edit the reply message" classname="05_callsheetTest.spec.js" time="1.889">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the read by status on reply message" classname="05_callsheetTest.spec.js" time="1.95">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the delete the reply message" classname="05_callsheetTest.spec.js" time="5.585">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the forward to remote project" classname="05_callsheetTest.spec.js" time="9.992">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the delete message" classname="05_callsheetTest.spec.js" time="6.785">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="CallSheet › Send Message › verify the history" classname="05_callsheetTest.spec.js" time="2.18">
-<system-out>
-<![CDATA[[INFO] 2025-12-15T13:26:08.318Z - close browser
+<![CDATA[[INFO] 2025-12-16T07:58:44.167Z - close browser
 ]]>
 </system-out>
 </testcase>

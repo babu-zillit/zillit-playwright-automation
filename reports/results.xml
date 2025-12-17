@@ -1,17 +1,49 @@
-<testsuites id="" name="" tests="5" failures="0" skipped="1" errors="0" time="57.410008999999995">
-<testsuite name="profileSettingTest.spec.js" timestamp="2025-12-16T07:57:47.062Z" hostname="chromium" tests="5" failures="0" skipped="1" time="47.917" errors="0">
-<testcase name="Settings › Edit Profile › Verify editing the profile name → add a BCC preset → delete the BCC preset → add the BCC preset again." classname="profileSettingTest.spec.js" time="22.957">
+<testsuites id="" name="" tests="24" failures="0" skipped="1" errors="0" time="248.126307">
+<testsuite name="adminSettingTest.spec.js" timestamp="2025-12-17T11:30:27.995Z" hostname="chromium" tests="24" failures="0" skipped="1" time="227.616" errors="0">
+<testcase name="Admin Settings › Create New Department › Verify the creation of a new department" classname="adminSettingTest.spec.js" time="5.334">
 <system-out>
-<![CDATA[[INFO] 2025-12-16T07:57:47.776Z - browser is launching
-[INFO] 2025-12-16T07:57:53.415Z - open the project
+<![CDATA[[INFO] 2025-12-17T11:30:29.328Z - browser is launching
+[INFO] 2025-12-17T11:30:35.384Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-12-16T07:57:53.415Z - QA environment is started...
+[INFO] 2025-12-17T11:30:35.385Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Settings › Invites User › Verify the user invitation functionality through email sharing" classname="profileSettingTest.spec.js" time="6.348">
+<testcase name="Admin Settings › Create New Department › Verify the deletion of a department" classname="adminSettingTest.spec.js" time="6.164">
 </testcase>
-<testcase name="Settings › Web Preference › Verify default unit is set to Call Sheet and reflected on Home" classname="profileSettingTest.spec.js" time="0">
+<testcase name="Admin Settings › Create New Designation › Verify creating a new designation" classname="adminSettingTest.spec.js" time="7.554">
+</testcase>
+<testcase name="Admin Settings › Create New Designation › Verify the deletion of a designation" classname="adminSettingTest.spec.js" time="7.276">
+</testcase>
+<testcase name="Admin Settings › Create Join Unit › Verify the user can create a join unit" classname="adminSettingTest.spec.js" time="7.84">
+</testcase>
+<testcase name="Admin Settings › Create Join Unit › Verify the user can delete a join unit" classname="adminSettingTest.spec.js" time="8.135">
+</testcase>
+<testcase name="Admin Settings › Edit Project Name › Verify the user can edit the project name" classname="adminSettingTest.spec.js" time="5.786">
+</testcase>
+<testcase name="Admin Settings › Customization Of Tools › Verify the user can enable or disable tools in the Tools module" classname="adminSettingTest.spec.js" time="6.516">
+</testcase>
+<testcase name="Admin Settings › Set SOS Receiver › Verify the user can set the SOS receiver" classname="adminSettingTest.spec.js" time="11.645">
+</testcase>
+<testcase name="Admin Settings › Set SOS Receiver › Verify the user can edit the SOS receiver" classname="adminSettingTest.spec.js" time="11.969">
+</testcase>
+<testcase name="Admin Settings › Set SOS Receiver › Verify the user can delete the SOS receiver" classname="adminSettingTest.spec.js" time="12.473">
+</testcase>
+<testcase name="Admin Settings › Home Unit › Verify creating a home unit by selecting all departments" classname="adminSettingTest.spec.js" time="6.935">
+</testcase>
+<testcase name="Admin Settings › Home Unit › Verify the user can edit a home unit" classname="adminSettingTest.spec.js" time="11.374">
+</testcase>
+<testcase name="Admin Settings › Home Unit › Verify the user can delete a home unit" classname="adminSettingTest.spec.js" time="8.572">
+</testcase>
+<testcase name="Admin Settings › Home Unit › Verify creating a home unit by selecting all users" classname="adminSettingTest.spec.js" time="17.874">
+</testcase>
+<testcase name="Admin Settings › WaterMark Logo Company › Verify the user can upload the watermark logo" classname="adminSettingTest.spec.js" time="9.136">
+</testcase>
+<testcase name="Admin Settings › WaterMark Logo Company › Verify the user can delete the watermark logo" classname="adminSettingTest.spec.js" time="0.727">
+</testcase>
+<testcase name="Admin Settings › Change Department List Order › Verify the user can change the order of the department list" classname="adminSettingTest.spec.js" time="18.073">
+</testcase>
+<testcase name="Admin Settings › Approve User Profile › Verify the user can approve a user profile" classname="adminSettingTest.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
@@ -19,11 +51,17 @@ Current hostname is: qa.zillit.com
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Settings › Edit Preference › Verify edit" classname="profileSettingTest.spec.js" time="12.816">
+<testcase name="Admin Settings › User Management › Verify the user can change a regular user to admin" classname="adminSettingTest.spec.js" time="9.204">
 </testcase>
-<testcase name="Settings › Recovery Code or Email › Verify recovery email or code" classname="profileSettingTest.spec.js" time="5.796">
+<testcase name="Admin Settings › Delete project › Verify the user can delete a project" classname="adminSettingTest.spec.js" time="14.457">
+</testcase>
+<testcase name="Admin Settings › Delete project › Verify the user can stop projects after deletion" classname="adminSettingTest.spec.js" time="8.244">
+</testcase>
+<testcase name="Admin Settings › Delete project › Verify the user can delete the project again" classname="adminSettingTest.spec.js" time="12.034">
+</testcase>
+<testcase name="Admin Settings › Pre Approved User › Verify the user can create a pre-approved user and send an internal email" classname="adminSettingTest.spec.js" time="20.294">
 <system-out>
-<![CDATA[[INFO] 2025-12-16T07:58:44.167Z - close browser
+<![CDATA[[INFO] 2025-12-17T11:34:35.623Z - close browser
 ]]>
 </system-out>
 </testcase>

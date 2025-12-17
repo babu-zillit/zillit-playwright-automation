@@ -60,7 +60,7 @@ test.describe('Settings', () => {
 
     test.describe('Edit Preference', () => {
 
-        test('Verify edit', async () => {
+        test('Verify user can upload profile picture → select country → enter phone number → select all checkboxes.', async () => {
             await settingPage.editPreference();
         });
     
@@ -68,7 +68,7 @@ test.describe('Settings', () => {
 
     test.describe('Recovery Code or Email', () => {
 
-        test('Verify recovery email or code', async () => {
+        test('Verify user can update recovery email or code', async () => {
             await settingPage.recoveryCodeEmail();
         });
     

@@ -130,7 +130,7 @@ test.describe('Admin Settings', () => {
     
     });
 
-    test.describe.skip('Approve User Profile', () => {
+    test.describe('Approve User Profile', () => {
 
         test('Verify the user can approve a user profile', async () => {
             await settingPage.approveUserProfile('Request approved and details updated successfully.');

@@ -9,7 +9,7 @@ test.describe('Settings', () => {
     let uploadmedia;
     let settingPage;
 
-    test.beforeAll(async ({ browser }) => {
+    test.beforeEach(async ({ browser }) => {
         logger.info("browser is launching");
         context = await browser.newContext();
         page = await context.newPage();
@@ -24,7 +24,7 @@ test.describe('Settings', () => {
         await settingPage.openProfileSetting();
     });
 
-    test.afterAll(async () => {
+    test.afterEach(async () => {
         logger.info('close browser');
         await context.close();
     });
@@ -32,28 +32,12 @@ test.describe('Settings', () => {
 
     test.describe('Edit Profile', () => {
 
-        test('Verify editing the profile name → add a BCC preset → delete the BCC preset → add the BCC preset again.', async () => {
+        test('Verify editing the profile name → add a BCC preset → delete the BCC preset → add the BCC preset again. and submit the edit profile', async () => {
             await settingPage.editProfiles();
             await settingPage.addPreset();
             await settingPage.deletePreset();
             await settingPage.addPreset();
             await settingPage.submitEditProfileFunctionality();
-        });
-    
-    });
-
-    test.describe('Invites User', () => {
-
-        test('Verify the user invitation functionality through email sharing', async () => {
-            await settingPage.inviteUsers();
-        });
-    
-    });
-
-    test.describe.skip('Web Preference', () => {
-
-        test('Verify default unit is set to Call Sheet and reflected on Home', async () => {
-            await settingPage.webPreference();
         });
     
     });
@@ -70,6 +54,30 @@ test.describe('Settings', () => {
 
         test('Verify user can update recovery email or code', async () => {
             await settingPage.recoveryCodeEmail();
+        });
+    
+    });
+
+    test.describe('Web Preference', () => {
+
+        test('Verify the user can change the default home unit', async () => {
+            await settingPage.webPreference();
+        });
+    
+    });
+
+    test.describe('Invites User', () => {
+
+        test('Verify the user invitation functionality through email sharing and copy the link and send it to home', async () => {
+            await settingPage.inviteUsers();
+        });
+    
+    });
+
+    test.describe('Leave User', () => {
+
+        test('Verify the user can leave the project', async () => {
+            await settingPage.leaveUser();
         });
     
     });

@@ -1,67 +1,62 @@
-<testsuites id="" name="" tests="24" failures="0" skipped="1" errors="0" time="248.126307">
-<testsuite name="adminSettingTest.spec.js" timestamp="2025-12-17T11:30:27.995Z" hostname="chromium" tests="24" failures="0" skipped="1" time="227.616" errors="0">
-<testcase name="Admin Settings › Create New Department › Verify the creation of a new department" classname="adminSettingTest.spec.js" time="5.334">
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="124.317809">
+<testsuite name="profileSettingTest.spec.js" timestamp="2025-12-17T13:41:26.809Z" hostname="chromium" tests="6" failures="0" skipped="0" time="121.154" errors="0">
+<testcase name="Settings › Edit Profile › Verify editing the profile name → add a BCC preset → delete the BCC preset → add the BCC preset again. and submit the edit profile" classname="profileSettingTest.spec.js" time="29.726">
 <system-out>
-<![CDATA[[INFO] 2025-12-17T11:30:29.328Z - browser is launching
-[INFO] 2025-12-17T11:30:35.384Z - open the project
+<![CDATA[[INFO] 2025-12-17T13:41:27.922Z - browser is launching
+[INFO] 2025-12-17T13:41:32.475Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-12-17T11:30:35.385Z - QA environment is started...
+[INFO] 2025-12-17T13:41:32.475Z - QA environment is started...
+[INFO] 2025-12-17T13:41:57.105Z - close browser
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin Settings › Create New Department › Verify the deletion of a department" classname="adminSettingTest.spec.js" time="6.164">
-</testcase>
-<testcase name="Admin Settings › Create New Designation › Verify creating a new designation" classname="adminSettingTest.spec.js" time="7.554">
-</testcase>
-<testcase name="Admin Settings › Create New Designation › Verify the deletion of a designation" classname="adminSettingTest.spec.js" time="7.276">
-</testcase>
-<testcase name="Admin Settings › Create Join Unit › Verify the user can create a join unit" classname="adminSettingTest.spec.js" time="7.84">
-</testcase>
-<testcase name="Admin Settings › Create Join Unit › Verify the user can delete a join unit" classname="adminSettingTest.spec.js" time="8.135">
-</testcase>
-<testcase name="Admin Settings › Edit Project Name › Verify the user can edit the project name" classname="adminSettingTest.spec.js" time="5.786">
-</testcase>
-<testcase name="Admin Settings › Customization Of Tools › Verify the user can enable or disable tools in the Tools module" classname="adminSettingTest.spec.js" time="6.516">
-</testcase>
-<testcase name="Admin Settings › Set SOS Receiver › Verify the user can set the SOS receiver" classname="adminSettingTest.spec.js" time="11.645">
-</testcase>
-<testcase name="Admin Settings › Set SOS Receiver › Verify the user can edit the SOS receiver" classname="adminSettingTest.spec.js" time="11.969">
-</testcase>
-<testcase name="Admin Settings › Set SOS Receiver › Verify the user can delete the SOS receiver" classname="adminSettingTest.spec.js" time="12.473">
-</testcase>
-<testcase name="Admin Settings › Home Unit › Verify creating a home unit by selecting all departments" classname="adminSettingTest.spec.js" time="6.935">
-</testcase>
-<testcase name="Admin Settings › Home Unit › Verify the user can edit a home unit" classname="adminSettingTest.spec.js" time="11.374">
-</testcase>
-<testcase name="Admin Settings › Home Unit › Verify the user can delete a home unit" classname="adminSettingTest.spec.js" time="8.572">
-</testcase>
-<testcase name="Admin Settings › Home Unit › Verify creating a home unit by selecting all users" classname="adminSettingTest.spec.js" time="17.874">
-</testcase>
-<testcase name="Admin Settings › WaterMark Logo Company › Verify the user can upload the watermark logo" classname="adminSettingTest.spec.js" time="9.136">
-</testcase>
-<testcase name="Admin Settings › WaterMark Logo Company › Verify the user can delete the watermark logo" classname="adminSettingTest.spec.js" time="0.727">
-</testcase>
-<testcase name="Admin Settings › Change Department List Order › Verify the user can change the order of the department list" classname="adminSettingTest.spec.js" time="18.073">
-</testcase>
-<testcase name="Admin Settings › Approve User Profile › Verify the user can approve a user profile" classname="adminSettingTest.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Admin Settings › User Management › Verify the user can change a regular user to admin" classname="adminSettingTest.spec.js" time="9.204">
-</testcase>
-<testcase name="Admin Settings › Delete project › Verify the user can delete a project" classname="adminSettingTest.spec.js" time="14.457">
-</testcase>
-<testcase name="Admin Settings › Delete project › Verify the user can stop projects after deletion" classname="adminSettingTest.spec.js" time="8.244">
-</testcase>
-<testcase name="Admin Settings › Delete project › Verify the user can delete the project again" classname="adminSettingTest.spec.js" time="12.034">
-</testcase>
-<testcase name="Admin Settings › Pre Approved User › Verify the user can create a pre-approved user and send an internal email" classname="adminSettingTest.spec.js" time="20.294">
+<testcase name="Settings › Edit Preference › Verify user can upload profile picture → select country → enter phone number → select all checkboxes." classname="profileSettingTest.spec.js" time="23.557">
 <system-out>
-<![CDATA[[INFO] 2025-12-17T11:34:35.623Z - close browser
+<![CDATA[[INFO] 2025-12-17T13:41:57.651Z - browser is launching
+[INFO] 2025-12-17T13:42:01.754Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-17T13:42:01.755Z - QA environment is started...
+[INFO] 2025-12-17T13:42:20.743Z - close browser
+]]>
+</system-out>
+</testcase>
+<testcase name="Settings › Recovery Code or Email › Verify user can update recovery email or code" classname="profileSettingTest.spec.js" time="12.91">
+<system-out>
+<![CDATA[[INFO] 2025-12-17T13:42:21.215Z - browser is launching
+[INFO] 2025-12-17T13:42:24.218Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-17T13:42:24.218Z - QA environment is started...
+[INFO] 2025-12-17T13:42:33.784Z - close browser
+]]>
+</system-out>
+</testcase>
+<testcase name="Settings › Web Preference › Verify the user can change the default home unit" classname="profileSettingTest.spec.js" time="21.227">
+<system-out>
+<![CDATA[[INFO] 2025-12-17T13:42:34.132Z - browser is launching
+[INFO] 2025-12-17T13:42:37.296Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-17T13:42:37.296Z - QA environment is started...
+[INFO] 2025-12-17T13:42:54.953Z - close browser
+]]>
+</system-out>
+</testcase>
+<testcase name="Settings › Invites User › Verify the user invitation functionality through email sharing and copy the link and send it to home" classname="profileSettingTest.spec.js" time="24.07">
+<system-out>
+<![CDATA[[INFO] 2025-12-17T13:42:55.373Z - browser is launching
+[INFO] 2025-12-17T13:42:59.838Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-17T13:42:59.838Z - QA environment is started...
+[INFO] 2025-12-17T13:43:18.971Z - close browser
+]]>
+</system-out>
+</testcase>
+<testcase name="Settings › Leave User › Verify the user can leave the project" classname="profileSettingTest.spec.js" time="9.664">
+<system-out>
+<![CDATA[[INFO] 2025-12-17T13:43:19.449Z - browser is launching
+[INFO] 2025-12-17T13:43:23.161Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-17T13:43:23.161Z - QA environment is started...
+[INFO] 2025-12-17T13:43:27.751Z - close browser
 ]]>
 </system-out>
 </testcase>

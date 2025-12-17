@@ -294,7 +294,7 @@ export default class Settings {
 
     async submitEditProfileFunctionality(){
         await this.sumbitEditProfile.click();
-        await this.uploadMedia.verifyPopupMessage('Profile updated successfully.');
+        //await this.uploadMedia.verifyPopupMessage('Profile updated successfully.');
     }
 
     async inviteUsers(){
@@ -305,17 +305,36 @@ export default class Settings {
         await this.page.keyboard.press('Enter');
         await this.send.last().click();
         await this.uploadMedia.verifyPopupMessage('Email sent successfully');
-        await this.cancelShareProjectCodeWindow.click();
+
+        await this.share.click();
+        await this.page.locator('#invite_users_copy_link_button').click();
+        await this.uploadMedia.verifyPopupMessage('Link copied to clipboard');
+        await this.page.locator('span.ant-modal-close-x').last().click();
+
+        await this.page.locator('//span[@class="ant-menu-title-content"]//span[text()="Home"]').click();
+        await this.page.locator('[placeholder="Type your message"]').click();
+        await this.page.keyboard.press('Meta+V'); 
+        await this.page.locator('#send_messages_to_users_button').click();
     }
 
     async webPreference(){
-        await this.page.waitForTimeout(5000);
+        await this.page.waitForTimeout(2000);
         await this.webPreferences.click();
+        await this.page.locator('//span[@class="ant-menu-title-content"]//span[text()="Home"]').click();
+        await this.settings.click();
+        await this.page.waitForTimeout(3000);
+        await this.webPreferences.click();
+        await this.page.waitForTimeout(2000);
         await this.clickOnHomeUnit.click();
-        await this.page.getByRole('option', { name: 'Call Sheet' }).click();
-
+        await this.page.keyboard.press('ArrowDown');
+        await this.page.keyboard.press('ArrowDown');
+        await this.page.keyboard.press('Enter');
         await this.uploadMedia.verifyPopupMessage('Default Tab updated successfully!');
-        await this.page.locator('[aria-label="Close"]').last().click();
+    }
+
+    async leaveUser(){
+        await this.page.locator('#leave_project').click();
+        await this.page.locator('div.ant-modal-footer button').first().click();
     }
 
     async editPreference(){

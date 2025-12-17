@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "adminSettingTest.spec.js",
-      "file": "adminSettingTest.spec.js",
+      "title": "profileSettingTest.spec.js",
+      "file": "profileSettingTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Admin Settings",
-          "file": "adminSettingTest.spec.js",
+          "title": "Settings",
+          "file": "profileSettingTest.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Create New Department",
-              "file": "adminSettingTest.spec.js",
+              "title": "Edit Profile",
+              "file": "profileSettingTest.spec.js",
               "line": 33,
               "column": 10,
               "specs": [
                 {
-                  "title": "Verify the creation of a new department",
+                  "title": "Verify editing the profile name → add a BCC preset → delete the BCC preset → add the BCC preset again. and submit the edit profile",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,28 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5334,
+                          "duration": 29726,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-12-17T11:30:29.328Z - browser is launching\n"
+                              "text": "[INFO] 2025-12-17T13:41:27.922Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-17T11:30:35.384Z - open the project\n"
+                              "text": "[INFO] 2025-12-17T13:41:32.475Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-17T11:30:35.385Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-12-17T13:41:32.475Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:41:57.105Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-17T11:30:28.332Z",
+                          "startTime": "2025-12-17T13:41:27.147Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,55 +180,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "856295b5f0f55b78449e-2cee7a96166a44b65707",
-                  "file": "adminSettingTest.spec.js",
+                  "id": "f1b0d54bb7b82dc460c0-2c4fe8e32ddedf8236c8",
+                  "file": "profileSettingTest.spec.js",
                   "line": 35,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the deletion of a department",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6164,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:30:52.859Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-2a8c2dd92267f5af0331",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 38,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Create New Designation",
-              "file": "adminSettingTest.spec.js",
+              "title": "Edit Preference",
+              "file": "profileSettingTest.spec.js",
               "line": 45,
               "column": 10,
               "specs": [
                 {
-                  "title": "Verify creating a new designation",
+                  "title": "Verify user can upload profile picture → select country → enter phone number → select all checkboxes.",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -240,826 +209,28 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7554,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:30:59.033Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-2f8fb4929df3bfc21e99",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 47,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the deletion of a designation",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7276,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:31:06.593Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-4ca7d0a7803be1f8ebd4",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 50,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Create Join Unit",
-              "file": "adminSettingTest.spec.js",
-              "line": 56,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can create a join unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7840,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:31:13.879Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-334e83ef752a1ea6da29",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 58,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can delete a join unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8135,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:31:21.732Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-09da71e40f2d41fac494",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 61,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Edit Project Name",
-              "file": "adminSettingTest.spec.js",
-              "line": 67,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can edit the project name",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5786,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:31:30.076Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-3fef5f711e65e6706ec1",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 69,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Customization Of Tools",
-              "file": "adminSettingTest.spec.js",
-              "line": 75,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can enable or disable tools in the Tools module",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6516,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:31:35.876Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-50797052bea5a9830559",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 77,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Set SOS Receiver",
-              "file": "adminSettingTest.spec.js",
-              "line": 83,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can set the SOS receiver",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11645,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:31:42.410Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-b22d20bc69798d847cf3",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 85,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can edit the SOS receiver",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11969,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:31:54.070Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-b0556fb6bfb8e6f63b65",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 88,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can delete the SOS receiver",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 12473,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:32:06.050Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-16302b3982a693796a7d",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 91,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Home Unit",
-              "file": "adminSettingTest.spec.js",
-              "line": 97,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify creating a home unit by selecting all departments",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6935,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:32:18.532Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-19ed08add603f220fe8e",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 99,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can edit a home unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11374,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:32:25.478Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-963d68f304df721922c6",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 102,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can delete a home unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8572,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:32:36.866Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-7e97df38e792602c2e94",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 105,
-                  "column": 9
-                },
-                {
-                  "title": "Verify creating a home unit by selecting all users",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 17874,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:32:45.452Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-fe1df42526ef7552f790",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 108,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "WaterMark Logo Company",
-              "file": "adminSettingTest.spec.js",
-              "line": 114,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can upload the watermark logo",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9136,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:33:03.337Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-b65ffb7c4f7ea9269453",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 116,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can delete the watermark logo",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 727,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:33:12.489Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-bf93f6e95e2c13f54109",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 119,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Change Department List Order",
-              "file": "adminSettingTest.spec.js",
-              "line": 125,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can change the order of the department list",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 18073,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:33:13.226Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-d7158d341b500e52fe59",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 127,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Approve User Profile",
-              "file": "adminSettingTest.spec.js",
-              "line": 133,
-              "column": 19,
-              "specs": [
-                {
-                  "title": "Verify the user can approve a user profile",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:33:31.310Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-165c8f834a98cfc2e0f8",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 135,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "User Management",
-              "file": "adminSettingTest.spec.js",
-              "line": 141,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can change a regular user to admin",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9204,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:33:31.310Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-da80876dc508d8add2ca",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 143,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Delete project",
-              "file": "adminSettingTest.spec.js",
-              "line": 149,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can delete a project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 14457,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:33:40.523Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-c69a3e3902ae19121d4f",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 151,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can stop projects after deletion",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8244,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:33:54.992Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-b9b9124b9821d3d2fab8",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 154,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can delete the project again",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 12034,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-17T11:34:03.254Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "856295b5f0f55b78449e-1946808515b8f7eac3bd",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 157,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Pre Approved User",
-              "file": "adminSettingTest.spec.js",
-              "line": 163,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can create a pre-approved user and send an internal email",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 20294,
+                          "duration": 23557,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-12-17T11:34:35.623Z - close browser\n"
+                              "text": "[INFO] 2025-12-17T13:41:57.651Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:01.754Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:01.755Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:20.743Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-17T11:34:15.310Z",
+                          "startTime": "2025-12-17T13:41:57.648Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1067,9 +238,241 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "856295b5f0f55b78449e-a0d8777e1e83fe1f2c19",
-                  "file": "adminSettingTest.spec.js",
-                  "line": 165,
+                  "id": "f1b0d54bb7b82dc460c0-088e795804d972b7cae6",
+                  "file": "profileSettingTest.spec.js",
+                  "line": 47,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Recovery Code or Email",
+              "file": "profileSettingTest.spec.js",
+              "line": 53,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify user can update recovery email or code",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12910,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:21.215Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:24.218Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:24.218Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:33.784Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-17T13:42:21.210Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f1b0d54bb7b82dc460c0-7a22de852ca7f6993706",
+                  "file": "profileSettingTest.spec.js",
+                  "line": 55,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Web Preference",
+              "file": "profileSettingTest.spec.js",
+              "line": 61,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify the user can change the default home unit",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 21227,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:34.132Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:37.296Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:37.296Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:54.953Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-17T13:42:34.124Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f1b0d54bb7b82dc460c0-ed4e6ed42f595f220350",
+                  "file": "profileSettingTest.spec.js",
+                  "line": 63,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Invites User",
+              "file": "profileSettingTest.spec.js",
+              "line": 69,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify the user invitation functionality through email sharing and copy the link and send it to home",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 24070,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:55.373Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:59.838Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:42:59.838Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:43:18.971Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-17T13:42:55.362Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f1b0d54bb7b82dc460c0-73f53f4bf1a093ee07e4",
+                  "file": "profileSettingTest.spec.js",
+                  "line": 71,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Leave User",
+              "file": "profileSettingTest.spec.js",
+              "line": 77,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify the user can leave the project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9664,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-17T13:43:19.449Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:43:23.161Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:43:23.161Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-17T13:43:27.751Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-17T13:43:19.446Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f1b0d54bb7b82dc460c0-1bdcad41cab9c3266c88",
+                  "file": "profileSettingTest.spec.js",
+                  "line": 79,
                   "column": 9
                 }
               ]
@@ -1081,10 +484,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-17T11:30:27.968Z",
-    "duration": 248126.307,
-    "expected": 23,
-    "skipped": 1,
+    "startTime": "2025-12-17T13:41:26.674Z",
+    "duration": 124317.809,
+    "expected": 6,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

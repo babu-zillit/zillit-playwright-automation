@@ -126,6 +126,29 @@ export default class CnC {
         await this.page.locator('[class="w-4 h-4 text-white dark:text-white "]').waitFor({ state: 'visible' });
     }
 
+    async edit(){
+        await this.page.waitForTimeout(2000);
+        await this.cncDropList('Edit');
+        await this.page.locator('div.ant-modal-body [placeholder="Type a message"]').fill('FrontMan Welcome to Squid Game');
+        await this.page.locator('#edit_message_update_button').click();
+        await this.page.waitForTimeout(2000);
+    }
+
+    async editReply(){
+        await this.page.locator('button[id=dropdownMenuIconButton]').last().click();
+        await this.page.getByRole('menuitem', { name: 'Edit' }).click();
+        await this.page.locator('div.ant-modal-body [placeholder="Type a message"]').fill('Reply Message Edited');
+        await this.page.locator('#edit_message_update_button').click();
+        await this.page.waitForTimeout(1000);
+    }
+
+    async readByReply(){
+        await this.page.locator('button[id=dropdownMenuIconButton]').last().click();
+        await this.page.getByRole('menuitem', { name: 'Read By' }).click();
+        await this.page.waitForTimeout(1000);
+        await this.page.locator('div.ant-modal-footer button').click();
+    }
+
     async reply(){
         await this.cncDropList('Reply');
         await this.typeMessage.nth(1).fill('Reply message');
@@ -134,6 +157,13 @@ export default class CnC {
         //const messages = await this.page.locator('text=Reply message');
         const messages = this.page.getByText('Reply message', { exact: true });
         await messages.waitFor({ state: 'visible', timeout: 10000 });
+    }
+
+    async imageReply(){
+        await this.cncDropList('Image Reply');
+        await this.page.locator('div.text-center [placeholder="Type a message"]').fill('Most Beutiful place');
+        await this.page.locator('div.text-end button').nth(1).click();
+        await this.page.waitForTimeout(3000);
     }
 
     async forward(){
@@ -231,6 +261,18 @@ export default class CnC {
         await this.submit.click();
         await this.allMemberGroupFavoritesTab.nth(3).click();
         await this.groupProfilePic.click();
+    }
+
+    async updateGroup(){
+        await this.groupName.click();
+        await this.page.waitForSelector('[aria-label="edit"]',{state: 'visible', timeout: 10000});
+        await this.page.locator('[aria-label="edit"]').click();
+        await this.page.locator('#roomName').fill('Tester1');
+        await this.page.locator('div.ant-modal-footer button').last().click();
+        
+        const successMsg = await this.page.locator('text=Updated Successfully.');
+        await successMsg.waitFor({ state: 'visible' });
+        await successMsg.waitFor({ state: 'hidden' });
     }
 
     async deleteGroup(){

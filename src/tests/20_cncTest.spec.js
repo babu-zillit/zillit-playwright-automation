@@ -37,19 +37,21 @@ test.describe('CnC', () => {
             await cncPage.clickUserProfile();
             await cncPage.sendMessage();
         });
-
+        test('verify user edit message', async () => {
+            await cncPage.edit();
+        });
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
-
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });
@@ -63,23 +65,21 @@ test.describe('CnC', () => {
             await cncPage.attachment();
             await cncPage.imageUpload();
         });
-
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
         test('verify user save message', async () => {
             await cncPage.save();
         });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
-
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });
@@ -89,27 +89,25 @@ test.describe('CnC', () => {
 
     test.describe('send video', () => {
 
-        test('verify user send image', async () => {
+        test('verify user send video', async () => {
             await cncPage.attachment();
             await cncPage.videoUpload();
         });
-
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
         test('verify user save message', async () => {
             await cncPage.save();
         });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
-
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });
@@ -118,86 +116,141 @@ test.describe('CnC', () => {
 
     test.describe('send document', () => {
 
-        test('verify user send image', async () => {
+        test('verify user send document', async () => {
             await cncPage.attachment();
             await cncPage.documentUpload();
         });
-
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
         test('verify user save message', async () => {
             await cncPage.save();
         });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
-
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });
     
     });
-
 
     test.describe('send audio', () => {
 
-        test('verify user send image', async () => {
+        test('verify user send audio', async () => {
             await cncPage.attachment();
             await cncPage.audioUpload();
         });
-
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
         test('verify user save message', async () => {
             await cncPage.save();
         });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
-
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });
     
     });
 
-    test.describe('send message in group', () => {
+    test.describe('send location', () => {
 
-        test('verify user send message', async () => {
-            await cncPage.createGroup();
-            await cncPage.sendMessage();
+        test('verify user send location', async () => {
+            await cncPage.attachment();
+            await uploadmedia.uploadLocation();
         });
-
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
-        test('verify user read by message', async () => {
-            await cncPage.readBy();
-        });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
-         test('verify user reply message', async () => {
+        test('verify user reply message', async () => {
             await cncPage.reply();
         });
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
+        test('verify user delete message', async () => {
+            await cncPage.deleteAllMessage();
+        });
+    
+    });
 
+    test.describe('send image Reply', () => {
+
+        test('verify user send image', async () => {
+            await cncPage.attachment();
+            await cncPage.imageUpload();
+        });
+        test('verify user image reply message', async () => {
+            await cncPage.imageReply();
+        });
+        test('verify user delete message', async () => {
+            await cncPage.deleteAllMessage();
+        });
+    
+    });
+
+    test.describe.skip('send message for reply edit', () => {
+
+        test('verify user send message', async () => {
+            await cncPage.sendMessage();
+        });
+        test('verify user reply message', async () => {
+            await cncPage.reply();
+        });
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
+        test('verify user delete message', async () => {
+            await cncPage.deleteAllMessage();
+        });
+    
+    });
+
+    test.describe('Group Creation', () => {
+
+        test('verify user creates a group & send message', async () => {
+            await cncPage.createGroup();
+            await cncPage.sendMessage();
+        });
+        test('verify user edit message', async () => {
+            await cncPage.edit();
+        });
+        test('verify user forward message', async () => {
+            await cncPage.forward();
+        });
+        test('verify user read by message', async () => {
+            await cncPage.readBy();
+        });
+        test('verify forward remote project', async () => {
+            await cncPage.forwardRemoteProject();
+        });
+        test('verify user reply message', async () => {
+            await cncPage.reply();
+        });
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
+        test('verify user readBy reply message', async () => {
+            await cncPage.readByReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });
@@ -210,23 +263,24 @@ test.describe('CnC', () => {
             await cncPage.attachment();
             await cncPage.imageUpload();
         });
-
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
         test('verify user read by message', async () => {
             await cncPage.readBy();
         });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
-
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
+        test('verify user readBy reply message', async () => {
+            await cncPage.readByReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });
@@ -240,53 +294,54 @@ test.describe('CnC', () => {
             await cncPage.attachment();
             await cncPage.videoUpload();
         });
-
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
         test('verify user read by message', async () => {
             await cncPage.readBy();
         });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
-
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
-
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
+        test('verify user readBy reply message', async () => {
+            await cncPage.readByReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });
     
     });
 
-        test.describe('send document in group', () => {
+    test.describe('send document in group', () => {
 
         test('verify user send image', async () => {
             await cncPage.attachment();
             await cncPage.documentUpload();
         });
-
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
         test('verify user read by message', async () => {
             await cncPage.readBy();
         });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
-
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
+        test('verify user readBy reply message', async () => {
+            await cncPage.readByReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });
@@ -300,23 +355,66 @@ test.describe('CnC', () => {
             await cncPage.attachment();
             await cncPage.audioUpload();
         });
-
         test('verify user forward message', async () => {
             await cncPage.forward();
         });
-
         test('verify user read by message', async () => {
             await cncPage.readBy();
         });
-
         test('verify forward remote project', async () => {
             await cncPage.forwardRemoteProject();
         });
-
         test('verify user reply message', async () => {
             await cncPage.reply();
         });
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
+        test('verify user readBy reply message', async () => {
+            await cncPage.readByReply();
+        });
+        test('verify user delete message', async () => {
+            await cncPage.deleteAllMessage();
+        });
+    
+    });
 
+    test.describe('send location in group', () => {
+
+        test('verify user send location', async () => {
+            await cncPage.attachment();
+            await uploadmedia.uploadLocation();
+        });
+        test('verify user forward message', async () => {
+            await cncPage.forward();
+        });
+        test('verify forward remote project', async () => {
+            await cncPage.forwardRemoteProject();
+        });
+        test('verify user reply message', async () => {
+            await cncPage.reply();
+        });
+        test('verify user edit reply message', async () => {
+            await cncPage.editReply();
+        });
+        test('verify user readBy reply message', async () => {
+            await cncPage.readByReply();
+        });
+        test('verify user delete message', async () => {
+            await cncPage.deleteAllMessage();
+        });
+    
+    });
+
+    test.describe('send image Reply in group', () => {
+
+        test('verify user send image', async () => {
+            await cncPage.attachment();
+            await cncPage.imageUpload();
+        });
+        test('verify user image reply message', async () => {
+            await cncPage.imageReply();
+        });
         test('verify user delete message', async () => {
             await cncPage.deleteAllMessage();
         });

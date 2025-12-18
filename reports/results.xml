@@ -1,62 +1,660 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="124.317809">
-<testsuite name="profileSettingTest.spec.js" timestamp="2025-12-17T13:41:26.809Z" hostname="chromium" tests="6" failures="0" skipped="0" time="121.154" errors="0">
-<testcase name="Settings › Edit Profile › Verify editing the profile name → add a BCC preset → delete the BCC preset → add the BCC preset again. and submit the edit profile" classname="profileSettingTest.spec.js" time="29.726">
+<testsuites id="" name="" tests="100" failures="0" skipped="4" errors="0" time="494.167489">
+<testsuite name="20_cncTest.spec.js" timestamp="2025-12-18T09:35:44.973Z" hostname="chromium" tests="100" failures="0" skipped="4" time="481.885" errors="0">
+<testcase name="CnC › send message › verify user send message" classname="20_cncTest.spec.js" time="2.431">
 <system-out>
-<![CDATA[[INFO] 2025-12-17T13:41:27.922Z - browser is launching
-[INFO] 2025-12-17T13:41:32.475Z - open the project
+<![CDATA[[INFO] 2025-12-18T09:35:46.381Z - browser is launching
+[INFO] 2025-12-18T09:35:52.357Z - open the project
 Current hostname is: qa.zillit.com
-[INFO] 2025-12-17T13:41:32.475Z - QA environment is started...
-[INFO] 2025-12-17T13:41:57.105Z - close browser
+[INFO] 2025-12-18T09:35:52.358Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Settings › Edit Preference › Verify user can upload profile picture → select country → enter phone number → select all checkboxes." classname="profileSettingTest.spec.js" time="23.557">
+<testcase name="CnC › send message › verify user edit message" classname="20_cncTest.spec.js" time="5.495">
 <system-out>
-<![CDATA[[INFO] 2025-12-17T13:41:57.651Z - browser is launching
-[INFO] 2025-12-17T13:42:01.754Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-12-17T13:42:01.755Z - QA environment is started...
-[INFO] 2025-12-17T13:42:20.743Z - close browser
+<![CDATA[Dropdown items: [
+  [32m'Edit'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Copy'[39m,
+  [32m'Delete'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Settings › Recovery Code or Email › Verify user can update recovery email or code" classname="profileSettingTest.spec.js" time="12.91">
+<testcase name="CnC › send message › verify user forward message" classname="20_cncTest.spec.js" time="5.537">
 <system-out>
-<![CDATA[[INFO] 2025-12-17T13:42:21.215Z - browser is launching
-[INFO] 2025-12-17T13:42:24.218Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-12-17T13:42:24.218Z - QA environment is started...
-[INFO] 2025-12-17T13:42:33.784Z - close browser
+<![CDATA[Dropdown items: [
+  [32m'Edit'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Copy'[39m,
+  [32m'Delete'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Settings › Web Preference › Verify the user can change the default home unit" classname="profileSettingTest.spec.js" time="21.227">
+<testcase name="CnC › send message › verify forward remote project" classname="20_cncTest.spec.js" time="11.674">
 <system-out>
-<![CDATA[[INFO] 2025-12-17T13:42:34.132Z - browser is launching
-[INFO] 2025-12-17T13:42:37.296Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-12-17T13:42:37.296Z - QA environment is started...
-[INFO] 2025-12-17T13:42:54.953Z - close browser
+<![CDATA[Dropdown items: [
+  [32m'Edit'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Copy'[39m,
+  [32m'Delete'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Settings › Invites User › Verify the user invitation functionality through email sharing and copy the link and send it to home" classname="profileSettingTest.spec.js" time="24.07">
+<testcase name="CnC › send message › verify user reply message" classname="20_cncTest.spec.js" time="1.75">
 <system-out>
-<![CDATA[[INFO] 2025-12-17T13:42:55.373Z - browser is launching
-[INFO] 2025-12-17T13:42:59.838Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-12-17T13:42:59.838Z - QA environment is started...
-[INFO] 2025-12-17T13:43:18.971Z - close browser
+<![CDATA[Dropdown items: [
+  [32m'Edit'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Copy'[39m,
+  [32m'Delete'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Settings › Leave User › Verify the user can leave the project" classname="profileSettingTest.spec.js" time="9.664">
+<testcase name="CnC › send message › verify user edit reply message" classname="20_cncTest.spec.js" time="2.128">
+</testcase>
+<testcase name="CnC › send message › verify user delete message" classname="20_cncTest.spec.js" time="6.484">
+</testcase>
+<testcase name="CnC › send image › verify user send image" classname="20_cncTest.spec.js" time="2.313">
+</testcase>
+<testcase name="CnC › send image › verify user forward message" classname="20_cncTest.spec.js" time="6.03">
 <system-out>
-<![CDATA[[INFO] 2025-12-17T13:43:19.449Z - browser is launching
-[INFO] 2025-12-17T13:43:23.161Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-12-17T13:43:23.161Z - QA environment is started...
-[INFO] 2025-12-17T13:43:27.751Z - close browser
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Save'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image › verify user save message" classname="20_cncTest.spec.js" time="10.001">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Save'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m
+]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image › verify forward remote project" classname="20_cncTest.spec.js" time="10.928">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Save'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image › verify user reply message" classname="20_cncTest.spec.js" time="1.912">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Save'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image › verify user edit reply message" classname="20_cncTest.spec.js" time="2.118">
+</testcase>
+<testcase name="CnC › send image › verify user delete message" classname="20_cncTest.spec.js" time="6.409">
+</testcase>
+<testcase name="CnC › send video › verify user send video" classname="20_cncTest.spec.js" time="2.292">
+</testcase>
+<testcase name="CnC › send video › verify user forward message" classname="20_cncTest.spec.js" time="5.864">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send video › verify user save message" classname="20_cncTest.spec.js" time="7.684">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send video › verify forward remote project" classname="20_cncTest.spec.js" time="11.402">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send video › verify user reply message" classname="20_cncTest.spec.js" time="2.691">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send video › verify user edit reply message" classname="20_cncTest.spec.js" time="2.077">
+</testcase>
+<testcase name="CnC › send video › verify user delete message" classname="20_cncTest.spec.js" time="6.735">
+</testcase>
+<testcase name="CnC › send document › verify user send document" classname="20_cncTest.spec.js" time="2.368">
+</testcase>
+<testcase name="CnC › send document › verify user forward message" classname="20_cncTest.spec.js" time="6.345">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send document › verify user save message" classname="20_cncTest.spec.js" time="7.637">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send document › verify forward remote project" classname="20_cncTest.spec.js" time="11.59">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send document › verify user reply message" classname="20_cncTest.spec.js" time="2.191">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send document › verify user edit reply message" classname="20_cncTest.spec.js" time="2.183">
+</testcase>
+<testcase name="CnC › send document › verify user delete message" classname="20_cncTest.spec.js" time="6.527">
+</testcase>
+<testcase name="CnC › send audio › verify user send audio" classname="20_cncTest.spec.js" time="2.455">
+</testcase>
+<testcase name="CnC › send audio › verify user forward message" classname="20_cncTest.spec.js" time="5.695">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send audio › verify user save message" classname="20_cncTest.spec.js" time="12.966">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send audio › verify forward remote project" classname="20_cncTest.spec.js" time="11.638">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send audio › verify user reply message" classname="20_cncTest.spec.js" time="2.287">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Save'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send audio › verify user edit reply message" classname="20_cncTest.spec.js" time="2.134">
+</testcase>
+<testcase name="CnC › send audio › verify user delete message" classname="20_cncTest.spec.js" time="6.825">
+</testcase>
+<testcase name="CnC › send location › verify user send location" classname="20_cncTest.spec.js" time="6.9">
+</testcase>
+<testcase name="CnC › send location › verify user forward message" classname="20_cncTest.spec.js" time="5.709">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send location › verify forward remote project" classname="20_cncTest.spec.js" time="11.298">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send location › verify user reply message" classname="20_cncTest.spec.js" time="1.771">
+<system-out>
+<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Forward to Remote Projects'[39m, [32m'Delete'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send location › verify user edit reply message" classname="20_cncTest.spec.js" time="2.143">
+</testcase>
+<testcase name="CnC › send location › verify user delete message" classname="20_cncTest.spec.js" time="6.4">
+</testcase>
+<testcase name="CnC › send image Reply › verify user send image" classname="20_cncTest.spec.js" time="1.89">
+</testcase>
+<testcase name="CnC › send image Reply › verify user image reply message" classname="20_cncTest.spec.js" time="4.136">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Save'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image Reply › verify user delete message" classname="20_cncTest.spec.js" time="6.527">
+</testcase>
+<testcase name="CnC › send message for reply edit › verify user send message" classname="20_cncTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CnC › send message for reply edit › verify user reply message" classname="20_cncTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CnC › send message for reply edit › verify user edit reply message" classname="20_cncTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CnC › send message for reply edit › verify user delete message" classname="20_cncTest.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CnC › Group Creation › verify user creates a group &amp; send message" classname="20_cncTest.spec.js" time="4.044">
+</testcase>
+<testcase name="CnC › Group Creation › verify user edit message" classname="20_cncTest.spec.js" time="5.52">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Edit'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › Group Creation › verify user forward message" classname="20_cncTest.spec.js" time="6.081">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Edit'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › Group Creation › verify user read by message" classname="20_cncTest.spec.js" time="3.605">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Edit'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › Group Creation › verify forward remote project" classname="20_cncTest.spec.js" time="10.39">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Edit'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › Group Creation › verify user reply message" classname="20_cncTest.spec.js" time="1.761">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Edit'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › Group Creation › verify user edit reply message" classname="20_cncTest.spec.js" time="1.734">
+</testcase>
+<testcase name="CnC › Group Creation › verify user readBy reply message" classname="20_cncTest.spec.js" time="1.7">
+</testcase>
+<testcase name="CnC › Group Creation › verify user delete message" classname="20_cncTest.spec.js" time="6.467">
+</testcase>
+<testcase name="CnC › send image in group › verify user send image" classname="20_cncTest.spec.js" time="2.322">
+</testcase>
+<testcase name="CnC › send image in group › verify user forward message" classname="20_cncTest.spec.js" time="7.013">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image in group › verify user read by message" classname="20_cncTest.spec.js" time="3.618">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image in group › verify forward remote project" classname="20_cncTest.spec.js" time="11.484">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image in group › verify user reply message" classname="20_cncTest.spec.js" time="1.897">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image in group › verify user edit reply message" classname="20_cncTest.spec.js" time="1.969">
+</testcase>
+<testcase name="CnC › send image in group › verify user readBy reply message" classname="20_cncTest.spec.js" time="1.77">
+</testcase>
+<testcase name="CnC › send image in group › verify user delete message" classname="20_cncTest.spec.js" time="6.7">
+</testcase>
+<testcase name="CnC › send video in group › verify user send image" classname="20_cncTest.spec.js" time="2.3">
+</testcase>
+<testcase name="CnC › send video in group › verify user forward message" classname="20_cncTest.spec.js" time="6.256">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send video in group › verify user read by message" classname="20_cncTest.spec.js" time="3.627">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send video in group › verify forward remote project" classname="20_cncTest.spec.js" time="11.269">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send video in group › verify user reply message" classname="20_cncTest.spec.js" time="2.229">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send video in group › verify user edit reply message" classname="20_cncTest.spec.js" time="1.742">
+</testcase>
+<testcase name="CnC › send video in group › verify user readBy reply message" classname="20_cncTest.spec.js" time="1.743">
+</testcase>
+<testcase name="CnC › send video in group › verify user delete message" classname="20_cncTest.spec.js" time="6.142">
+</testcase>
+<testcase name="CnC › send document in group › verify user send image" classname="20_cncTest.spec.js" time="2.422">
+</testcase>
+<testcase name="CnC › send document in group › verify user forward message" classname="20_cncTest.spec.js" time="5.304">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send document in group › verify user read by message" classname="20_cncTest.spec.js" time="3.816">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send document in group › verify forward remote project" classname="20_cncTest.spec.js" time="11.586">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send document in group › verify user reply message" classname="20_cncTest.spec.js" time="2.264">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send document in group › verify user edit reply message" classname="20_cncTest.spec.js" time="2.374">
+</testcase>
+<testcase name="CnC › send document in group › verify user readBy reply message" classname="20_cncTest.spec.js" time="1.729">
+</testcase>
+<testcase name="CnC › send document in group › verify user delete message" classname="20_cncTest.spec.js" time="6.644">
+</testcase>
+<testcase name="CnC › send audio in group › verify user send image" classname="20_cncTest.spec.js" time="2.341">
+</testcase>
+<testcase name="CnC › send audio in group › verify user forward message" classname="20_cncTest.spec.js" time="6.029">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send audio in group › verify user read by message" classname="20_cncTest.spec.js" time="3.623">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send audio in group › verify forward remote project" classname="20_cncTest.spec.js" time="10.936">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send audio in group › verify user reply message" classname="20_cncTest.spec.js" time="1.877">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send audio in group › verify user edit reply message" classname="20_cncTest.spec.js" time="2.297">
+</testcase>
+<testcase name="CnC › send audio in group › verify user readBy reply message" classname="20_cncTest.spec.js" time="1.777">
+</testcase>
+<testcase name="CnC › send audio in group › verify user delete message" classname="20_cncTest.spec.js" time="6.573">
+</testcase>
+<testcase name="CnC › send location in group › verify user send location" classname="20_cncTest.spec.js" time="6.348">
+</testcase>
+<testcase name="CnC › send location in group › verify user forward message" classname="20_cncTest.spec.js" time="5.986">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send location in group › verify forward remote project" classname="20_cncTest.spec.js" time="10.313">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send location in group › verify user reply message" classname="20_cncTest.spec.js" time="1.801">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send location in group › verify user edit reply message" classname="20_cncTest.spec.js" time="2.07">
+</testcase>
+<testcase name="CnC › send location in group › verify user readBy reply message" classname="20_cncTest.spec.js" time="1.944">
+</testcase>
+<testcase name="CnC › send location in group › verify user delete message" classname="20_cncTest.spec.js" time="6.76">
+</testcase>
+<testcase name="CnC › send image Reply in group › verify user send image" classname="20_cncTest.spec.js" time="2.885">
+</testcase>
+<testcase name="CnC › send image Reply in group › verify user image reply message" classname="20_cncTest.spec.js" time="4.885">
+<system-out>
+<![CDATA[Dropdown items: [
+  [32m'Image Reply'[39m,
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Forward to Remote Projects'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="CnC › send image Reply in group › verify user delete message" classname="20_cncTest.spec.js" time="6.451">
+</testcase>
+<testcase name="CnC › Delete Group › verify user delete the group" classname="20_cncTest.spec.js" time="3.897">
+<system-out>
+<![CDATA[[INFO] 2025-12-18T09:43:58.369Z - close browser
 ]]>
 </system-out>
 </testcase>

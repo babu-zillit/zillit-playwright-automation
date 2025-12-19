@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "20_cncTest.spec.js",
-      "file": "20_cncTest.spec.js",
+      "title": "15_emailTest.spec.js",
+      "file": "15_emailTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "CnC",
-          "file": "20_cncTest.spec.js",
-          "line": 6,
+          "title": "Email",
+          "file": "15_emailTest.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "send message",
-              "file": "20_cncTest.spec.js",
-              "line": 34,
+              "title": "Send Email",
+              "file": "15_emailTest.spec.js",
+              "line": 33,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user send message",
+                  "title": "Verify that the user can send an email with message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2431,
+                          "duration": 8656,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-12-18T09:35:46.381Z - browser is launching\n"
+                              "text": "[INFO] 2025-12-19T14:30:14.270Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-18T09:35:52.357Z - open the project\n"
+                              "text": "[INFO] 2025-12-19T14:30:19.376Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-18T09:35:52.358Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-12-19T14:30:19.377Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:35:45.322Z",
+                          "startTime": "2025-12-19T14:30:13.223Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,13 +177,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-5c78e660afef76684c7c",
-                  "file": "20_cncTest.spec.js",
-                  "line": 36,
+                  "id": "c84613e915cba492262c-1601c6c58191a193a1eb",
+                  "file": "15_emailTest.spec.js",
+                  "line": 35,
                   "column": 9
                 },
                 {
-                  "title": "verify user edit message",
+                  "title": "verify user can send email with media",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -198,16 +198,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5495,
+                          "duration": 11837,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Edit'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Copy'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:35:57.450Z",
+                          "startTime": "2025-12-19T14:30:37.897Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -215,13 +211,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-c954abad313994797936",
-                  "file": "20_cncTest.spec.js",
+                  "id": "c84613e915cba492262c-490b27e0d3dc339d1b0b",
+                  "file": "15_emailTest.spec.js",
                   "line": 40,
                   "column": 9
                 },
                 {
-                  "title": "verify user forward message",
+                  "title": "Verify that the user can send a reply email.",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -236,126 +232,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5537,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Edit'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Copy'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:36:02.976Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-cb6aed0bd31c8529f233",
-                  "file": "20_cncTest.spec.js",
-                  "line": 43,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11674,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Edit'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Copy'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:36:08.531Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-83d3d2ef1f4fc427d3f5",
-                  "file": "20_cncTest.spec.js",
-                  "line": 46,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1750,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Edit'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Copy'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:36:20.217Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-e187424f1f268d029752",
-                  "file": "20_cncTest.spec.js",
-                  "line": 49,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2128,
+                          "duration": 13358,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:36:21.977Z",
+                          "startTime": "2025-12-19T14:30:49.752Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -363,13 +245,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-334677ae684fc449a1c7",
-                  "file": "20_cncTest.spec.js",
-                  "line": 52,
+                  "id": "c84613e915cba492262c-7c169555a763a6331e67",
+                  "file": "15_emailTest.spec.js",
+                  "line": 45,
                   "column": 9
                 },
                 {
-                  "title": "verify user delete message",
+                  "title": "Verify that the user can send reply all email",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -384,12 +266,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6484,
+                          "duration": 13203,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:36:24.135Z",
+                          "startTime": "2025-12-19T14:31:03.121Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -397,21 +279,89 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-c312bd15524ed73aa6a7",
-                  "file": "20_cncTest.spec.js",
-                  "line": 55,
+                  "id": "c84613e915cba492262c-7140a5df9247967b65ea",
+                  "file": "15_emailTest.spec.js",
+                  "line": 48,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that the user can forward an email.",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 13005,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-19T14:31:16.350Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-7f6566370a965c4efd70",
+                  "file": "15_emailTest.spec.js",
+                  "line": 51,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that the user can delete an email.",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6017,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-19T14:31:29.377Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-4183373a802460746897",
+                  "file": "15_emailTest.spec.js",
+                  "line": 54,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "send image",
-              "file": "20_cncTest.spec.js",
-              "line": 62,
+              "title": "Move Email",
+              "file": "15_emailTest.spec.js",
+              "line": 60,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user send image",
+                  "title": "Verify that the user can move an email from Sent to Inbox.",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -426,12 +376,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2313,
+                          "duration": 6643,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:36:30.637Z",
+                          "startTime": "2025-12-19T14:31:35.410Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -439,13 +389,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-1598a210372e8a91e2d4",
-                  "file": "20_cncTest.spec.js",
-                  "line": 64,
+                  "id": "c84613e915cba492262c-252a469e484e06566dfa",
+                  "file": "15_emailTest.spec.js",
+                  "line": 62,
                   "column": 9
                 },
                 {
-                  "title": "verify user forward message",
+                  "title": "Verify that the user can move an email from Inbox to Junk.",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -460,16 +410,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6030,
+                          "duration": 7244,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:36:32.964Z",
+                          "startTime": "2025-12-19T14:31:42.068Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -477,13 +423,47 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-1e57a7c75194a9fc8fb2",
-                  "file": "20_cncTest.spec.js",
+                  "id": "c84613e915cba492262c-d7b4b269fc840df7b49b",
+                  "file": "15_emailTest.spec.js",
+                  "line": 65,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that the user can move an email from Junk to Trash.",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6702,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-19T14:31:49.327Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-6eae7624df56db9aaa0b",
+                  "file": "15_emailTest.spec.js",
                   "line": 68,
                   "column": 9
                 },
                 {
-                  "title": "verify user save message",
+                  "title": "Verify that the user can move an email from Trash to Distributed Mail.",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -498,19 +478,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 10001,
+                          "duration": 6830,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "✅ Pressed Return successfully\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:36:39.006Z",
+                          "startTime": "2025-12-19T14:31:56.045Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -518,13 +491,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-6491fe6f64a452091414",
-                  "file": "20_cncTest.spec.js",
+                  "id": "c84613e915cba492262c-ab6b429579b35927e83b",
+                  "file": "15_emailTest.spec.js",
                   "line": 71,
                   "column": 9
-                },
+                }
+              ]
+            },
+            {
+              "title": "Email Folder",
+              "file": "15_emailTest.spec.js",
+              "line": 77,
+              "column": 11,
+              "specs": [
                 {
-                  "title": "verify forward remote project",
+                  "title": "verify that user can create folder",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -539,88 +520,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 10928,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:36:49.025Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-50d4293c6e7484cf678d",
-                  "file": "20_cncTest.spec.js",
-                  "line": 74,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1912,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:36:59.967Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-ab97cb2547016268c96a",
-                  "file": "20_cncTest.spec.js",
-                  "line": 77,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2118,
+                          "duration": 5252,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:37:01.888Z",
+                          "startTime": "2025-12-19T14:32:02.894Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -628,13 +533,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-383a1d8066e3709ffc92",
-                  "file": "20_cncTest.spec.js",
-                  "line": 80,
+                  "id": "c84613e915cba492262c-542ce43f353dda35cb3f",
+                  "file": "15_emailTest.spec.js",
+                  "line": 78,
                   "column": 9
                 },
                 {
-                  "title": "verify user delete message",
+                  "title": "verify that user can create the folder with same name",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -649,12 +554,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6409,
+                          "duration": 5022,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:37:04.017Z",
+                          "startTime": "2025-12-19T14:32:08.159Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -662,21 +567,89 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-30491ed0dd52a28f7abd",
-                  "file": "20_cncTest.spec.js",
-                  "line": 83,
+                  "id": "c84613e915cba492262c-0e41b2deb53ed925d7a5",
+                  "file": "15_emailTest.spec.js",
+                  "line": 81,
+                  "column": 9
+                },
+                {
+                  "title": "verify that user can edit the folder name",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5629,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-19T14:32:13.192Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-1d7ee18c4ac18c1f4480",
+                  "file": "15_emailTest.spec.js",
+                  "line": 84,
+                  "column": 9
+                },
+                {
+                  "title": "verify that user can delete folder",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4592,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-19T14:32:18.831Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-32b79a57d7eb8864857c",
+                  "file": "15_emailTest.spec.js",
+                  "line": 87,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "send video",
-              "file": "20_cncTest.spec.js",
-              "line": 90,
+              "title": "Signature",
+              "file": "15_emailTest.spec.js",
+              "line": 93,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user send video",
+                  "title": "verify that user can create the signature",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -691,12 +664,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2292,
+                          "duration": 5764,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:37:10.481Z",
+                          "startTime": "2025-12-19T14:32:23.437Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -704,13 +677,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-49e2fc0c51bc284df025",
-                  "file": "20_cncTest.spec.js",
-                  "line": 92,
+                  "id": "c84613e915cba492262c-9695045b88f5d501687a",
+                  "file": "15_emailTest.spec.js",
+                  "line": 95,
                   "column": 9
                 },
                 {
-                  "title": "verify user forward message",
+                  "title": "verify that user can edit the signature",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -725,167 +698,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5864,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:37:12.793Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-91bee85cb2bc4ff24469",
-                  "file": "20_cncTest.spec.js",
-                  "line": 96,
-                  "column": 9
-                },
-                {
-                  "title": "verify user save message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7684,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            },
-                            {
-                              "text": "✅ Pressed Return successfully\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:37:18.666Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-07d5b70ff04dc3ed882b",
-                  "file": "20_cncTest.spec.js",
-                  "line": 99,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11402,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:37:26.365Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-0caaa9be4236a586991b",
-                  "file": "20_cncTest.spec.js",
-                  "line": 102,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2691,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:37:37.781Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-80e4b8ff73c7b443eaff",
-                  "file": "20_cncTest.spec.js",
-                  "line": 105,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2077,
+                          "duration": 5415,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:37:40.481Z",
+                          "startTime": "2025-12-19T14:32:29.227Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -893,13 +711,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-b01b02f4ec637df76ab8",
-                  "file": "20_cncTest.spec.js",
-                  "line": 108,
+                  "id": "c84613e915cba492262c-c6baa109b3a0412d1261",
+                  "file": "15_emailTest.spec.js",
+                  "line": 98,
                   "column": 9
                 },
                 {
-                  "title": "verify user delete message",
+                  "title": "verify that user can delete the signature",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -914,12 +732,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6735,
+                          "duration": 3678,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:37:42.564Z",
+                          "startTime": "2025-12-19T14:32:34.650Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -927,21 +745,55 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-5d604417321fffc60844",
-                  "file": "20_cncTest.spec.js",
-                  "line": 111,
+                  "id": "c84613e915cba492262c-29e36f3c3dbdb1f4d57a",
+                  "file": "15_emailTest.spec.js",
+                  "line": 101,
+                  "column": 9
+                },
+                {
+                  "title": "verify that user can create the signature again",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5884,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-19T14:32:38.338Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-7e0ca51025c0043cec5c",
+                  "file": "15_emailTest.spec.js",
+                  "line": 104,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "send document",
-              "file": "20_cncTest.spec.js",
-              "line": 117,
+              "title": "BCC Preset",
+              "file": "15_emailTest.spec.js",
+              "line": 111,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user send document",
+                  "title": "verify that user can add the BCC Preset",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -956,12 +808,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2368,
+                          "duration": 5184,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:37:49.309Z",
+                          "startTime": "2025-12-19T14:32:44.235Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -969,14 +821,90 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-10264e5c8cec960cd147",
-                  "file": "20_cncTest.spec.js",
+                  "id": "c84613e915cba492262c-c2dbf39b511051d7221e",
+                  "file": "15_emailTest.spec.js",
+                  "line": 113,
+                  "column": 9
+                },
+                {
+                  "title": "verify that user can delete the BCC preset",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3991,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-19T14:32:49.430Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-ac2b55ffca666ad0a593",
+                  "file": "15_emailTest.spec.js",
+                  "line": 116,
+                  "column": 9
+                },
+                {
+                  "title": "verify that user can add BCC preset again",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5766,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-19T14:32:53.433Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-e9185b8fcd0dd5d85aa5",
+                  "file": "15_emailTest.spec.js",
                   "line": 119,
                   "column": 9
-                },
+                }
+              ]
+            },
+            {
+              "title": "Create Email Group",
+              "file": "15_emailTest.spec.js",
+              "line": 125,
+              "column": 10,
+              "specs": [
                 {
-                  "title": "verify user forward message",
-                  "ok": true,
+                  "title": "Verify that user can create the email group",
+                  "ok": false,
                   "tags": [],
                   "tests": [
                     {
@@ -989,337 +917,145 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6345,
-                          "errors": [],
-                          "stdout": [
+                          "status": "timedOut",
+                          "duration": 30118,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
                             {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:37:51.790Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-4fa28695daaf82da7aa4",
-                  "file": "20_cncTest.spec.js",
-                  "line": 123,
-                  "column": 9
-                },
-                {
-                  "title": "verify user save message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7637,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                             },
                             {
-                              "text": "✅ Pressed Return successfully\n"
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js",
+                                "column": 72,
+                                "line": 279
+                              },
+                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('div.ant-modal-footer button').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" id=\"delete-emails-button\" class=\"ant-btn css-2iw4eq ant-btn-default ant-btn-loading bg-red-500 text-white px-4 py-1 rounded disabled:cursor-not-allowed disabled:opacity-70\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/email.js:279\n\n\u001b[0m \u001b[90m 277 |\u001b[39m     \u001b[36masync\u001b[39m createEmailGroup(){\n \u001b[90m 278 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignatureConversationImportBCCPresetEmailGroupEmailSetup\u001b[33m.\u001b[39mnth(\u001b[35m4\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 279 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.ant-modal-footer button'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 280 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#group_name'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'Tester'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 281 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.ant-modal-body button'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 282 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.ant-modal-body button'\u001b[39m)\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Email.createEmailGroup (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js:279:72)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/15_emailTest.spec.js:128:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-19T14:33:29.540Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:37:58.142Z",
+                          "startTime": "2025-12-19T14:32:59.210Z",
                           "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-3cf7711f5b6857adeab5",
-                  "file": "20_cncTest.spec.js",
-                  "line": 126,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11590,
-                          "errors": [],
-                          "stdout": [
+                          "attachments": [
                             {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:38:05.792Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-074b115b9906e6c4557b",
-                  "file": "20_cncTest.spec.js",
-                  "line": 129,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2191,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:38:17.396Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-cb8c48403386500f52c8",
-                  "file": "20_cncTest.spec.js",
-                  "line": 132,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2183,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:38:19.597Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-ab134ef3e28f79ca88ff",
-                  "file": "20_cncTest.spec.js",
-                  "line": 135,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6527,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:38:21.792Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-f582a65b81dacba784fb",
-                  "file": "20_cncTest.spec.js",
-                  "line": 138,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "send audio",
-              "file": "20_cncTest.spec.js",
-              "line": 144,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user send audio",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2455,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:38:28.334Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-109dd61386b2888f7017",
-                  "file": "20_cncTest.spec.js",
-                  "line": 146,
-                  "column": 9
-                },
-                {
-                  "title": "verify user forward message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5695,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:38:30.806Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-fc464feddd6bb627e3a3",
-                  "file": "20_cncTest.spec.js",
-                  "line": 150,
-                  "column": 9
-                },
-                {
-                  "title": "verify user save message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 12966,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/test-failed-1.png"
                             },
                             {
-                              "text": "✅ Pressed Return successfully\n"
+                              "name": "_error-context-1",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "c84613e915cba492262c-6861e46d2124003f1430",
+                  "file": "15_emailTest.spec.js",
+                  "line": 127,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can delete the email group",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 30110,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js",
+                                "column": 81,
+                                "line": 291
+                              },
+                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('div.divide-y.h-full span.ant-btn-icon').last()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/email.js:291\n\n\u001b[0m \u001b[90m 289 |\u001b[39m     \u001b[36masync\u001b[39m deleteEmailGroup(successMsg){\n \u001b[90m 290 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignatureConversationImportBCCPresetEmailGroupEmailSetup\u001b[33m.\u001b[39mnth(\u001b[35m4\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 291 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.divide-y.h-full span.ant-btn-icon'\u001b[39m)\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 292 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#delete_confirmation_button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 293 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muploadMedia\u001b[33m.\u001b[39mverifyPopupMessage(\u001b[32m`${successMsg}`\u001b[39m) \n \u001b[90m 294 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[aria-label=\"close\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Email.deleteEmailGroup (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js:291:81)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/15_emailTest.spec.js:131:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-19T14:33:31.416Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-19T14:33:37.561Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-19T14:33:37.561Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-19T14:34:18.377Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:38:36.513Z",
+                          "startTime": "2025-12-19T14:33:30.798Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-1",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/trace.zip"
+                            }
+                          ]
                         }
                       ],
-                      "status": "expected"
+                      "status": "unexpected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-b84437caebd523983f5b",
-                  "file": "20_cncTest.spec.js",
-                  "line": 153,
+                  "id": "c84613e915cba492262c-b63bb89e18ffa5be5996",
+                  "file": "15_emailTest.spec.js",
+                  "line": 130,
                   "column": 9
                 },
                 {
-                  "title": "verify forward remote project",
+                  "title": "Verify that user can create the email group again",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -1331,57 +1067,28 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 11638,
+                          "duration": 6076,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:38:49.492Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-41910d9af72ae2596458",
-                  "file": "20_cncTest.spec.js",
-                  "line": 156,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2287,
-                          "errors": [],
-                          "stdout": [
+                              "text": "[INFO] 2025-12-19T14:34:20.072Z - browser is launching\n"
+                            },
                             {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Save'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                              "text": "[INFO] 2025-12-19T14:34:24.504Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-19T14:34:24.504Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:39:01.144Z",
+                          "startTime": "2025-12-19T14:34:19.472Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1389,89 +1096,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-7258a3396bf08d351e18",
-                  "file": "20_cncTest.spec.js",
-                  "line": 159,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2134,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:03.441Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-601d51ad8ae36ef00b0e",
-                  "file": "20_cncTest.spec.js",
-                  "line": 162,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6825,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:05.591Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-25fc5ce5702e005a60f8",
-                  "file": "20_cncTest.spec.js",
-                  "line": 165,
+                  "id": "c84613e915cba492262c-014c7ac00f9fe5649f72",
+                  "file": "15_emailTest.spec.js",
+                  "line": 133,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "send location",
-              "file": "20_cncTest.spec.js",
-              "line": 171,
+              "title": "Email Setup Externally",
+              "file": "15_emailTest.spec.js",
+              "line": 139,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user send location",
+                  "title": "verify that user can edit the password",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -1483,15 +1122,15 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6900,
+                          "duration": 5999,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:39:12.433Z",
+                          "startTime": "2025-12-19T14:34:41.385Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1499,203 +1138,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-c106c4ea5b10f7127f33",
-                  "file": "20_cncTest.spec.js",
-                  "line": 173,
-                  "column": 9
-                },
-                {
-                  "title": "verify user forward message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5709,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:19.346Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-0630ffd7393b9fdd7361",
-                  "file": "20_cncTest.spec.js",
-                  "line": 177,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11298,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:25.087Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-f12f3b97c915621815d1",
-                  "file": "20_cncTest.spec.js",
-                  "line": 180,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1771,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Forward to Remote Projects'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:36.397Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-8271ab782f4f32e14fdc",
-                  "file": "20_cncTest.spec.js",
-                  "line": 183,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2143,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:38.177Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-e405e45b1d755a0ffd63",
-                  "file": "20_cncTest.spec.js",
-                  "line": 186,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6400,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:40.327Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-4f5eeedc02481d273c37",
-                  "file": "20_cncTest.spec.js",
-                  "line": 189,
+                  "id": "c84613e915cba492262c-c259bbfbf1299922fce2",
+                  "file": "15_emailTest.spec.js",
+                  "line": 141,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "send image Reply",
-              "file": "20_cncTest.spec.js",
-              "line": 195,
+              "title": "Send Email to Group",
+              "file": "15_emailTest.spec.js",
+              "line": 147,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user send image",
+                  "title": "verify that user can send group email",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -1707,343 +1164,22 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1890,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:46.742Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-9970cc1cc3c83b2e142a",
-                  "file": "20_cncTest.spec.js",
-                  "line": 197,
-                  "column": 9
-                },
-                {
-                  "title": "verify user image reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4136,
+                          "duration": 16083,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:48.645Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-53a7201721db8657ef00",
-                  "file": "20_cncTest.spec.js",
-                  "line": 201,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6527,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:52.793Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-46a561c2617507cd4cb3",
-                  "file": "20_cncTest.spec.js",
-                  "line": 204,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "send message for reply edit",
-              "file": "20_cncTest.spec.js",
-              "line": 210,
-              "column": 19,
-              "specs": [
-                {
-                  "title": "verify user send message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:59.337Z",
-                          "annotations": [
+                              "text": "Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Email has been sent') to be visible\u001b[22m\n\n"
+                            },
                             {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-8fa5f77859b4d5cab0bd",
-                  "file": "20_cncTest.spec.js",
-                  "line": 212,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:59.337Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-492c5534926079911d32",
-                  "file": "20_cncTest.spec.js",
-                  "line": 215,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:59.337Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-26798155e11be22fdd97",
-                  "file": "20_cncTest.spec.js",
-                  "line": 218,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:59.337Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-2a9892a5abe160050afc",
-                  "file": "20_cncTest.spec.js",
-                  "line": 221,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Group Creation",
-              "file": "20_cncTest.spec.js",
-              "line": 227,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user creates a group & send message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4044,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:39:59.337Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-84f45fe18ef1188ad496",
-                  "file": "20_cncTest.spec.js",
-                  "line": 229,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5520,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Edit'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
+                              "text": "[INFO] 2025-12-19T14:35:03.636Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-18T09:40:03.405Z",
+                          "startTime": "2025-12-19T14:34:47.396Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2051,1865 +1187,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3f132c5ace3d0f4165ad-1eb3f0e8eacd6ec170e7",
-                  "file": "20_cncTest.spec.js",
-                  "line": 233,
-                  "column": 9
-                },
-                {
-                  "title": "verify user forward message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6081,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Edit'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:08.938Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-ddc961ddf3d51fba3ce0",
-                  "file": "20_cncTest.spec.js",
-                  "line": 236,
-                  "column": 9
-                },
-                {
-                  "title": "verify user read by message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3605,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Edit'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:15.033Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-9dc6de4e752c6b1afe71",
-                  "file": "20_cncTest.spec.js",
-                  "line": 239,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10390,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Edit'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:18.654Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-852da861198b5a453b1e",
-                  "file": "20_cncTest.spec.js",
-                  "line": 242,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1761,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Edit'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:29.067Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-06088484f7b3c1598886",
-                  "file": "20_cncTest.spec.js",
-                  "line": 245,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1734,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:30.837Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-bf34fd0d4fa36f54c523",
-                  "file": "20_cncTest.spec.js",
-                  "line": 248,
-                  "column": 9
-                },
-                {
-                  "title": "verify user readBy reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1700,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:32.584Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-442b0972d7e3f17e48f1",
-                  "file": "20_cncTest.spec.js",
-                  "line": 251,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6467,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:34.300Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-2f35de6706ddad3f4487",
-                  "file": "20_cncTest.spec.js",
-                  "line": 254,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "send image in group",
-              "file": "20_cncTest.spec.js",
-              "line": 260,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user send image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2322,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:40.776Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-08a3d76aaf17db235554",
-                  "file": "20_cncTest.spec.js",
-                  "line": 262,
-                  "column": 9
-                },
-                {
-                  "title": "verify user forward message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7013,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:43.112Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-d2a163ad1f26f0805023",
-                  "file": "20_cncTest.spec.js",
-                  "line": 266,
-                  "column": 9
-                },
-                {
-                  "title": "verify user read by message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3618,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:50.135Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-775accb5b70b2ea34c25",
-                  "file": "20_cncTest.spec.js",
-                  "line": 269,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11484,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:40:53.769Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-592dd529884acd7e308b",
-                  "file": "20_cncTest.spec.js",
-                  "line": 272,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1897,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:05.280Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-1eab91921b8a137ba62f",
-                  "file": "20_cncTest.spec.js",
-                  "line": 275,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1969,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:07.197Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-ed8f96e9c2f4a1e6b3ce",
-                  "file": "20_cncTest.spec.js",
-                  "line": 278,
-                  "column": 9
-                },
-                {
-                  "title": "verify user readBy reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1770,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:09.177Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-236e804f1773079ce8cc",
-                  "file": "20_cncTest.spec.js",
-                  "line": 281,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6700,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:10.964Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-85467ada64e1a76d6cf4",
-                  "file": "20_cncTest.spec.js",
-                  "line": 284,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "send video in group",
-              "file": "20_cncTest.spec.js",
-              "line": 291,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user send image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2300,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:17.674Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-c8af01f0370d1fe668fd",
-                  "file": "20_cncTest.spec.js",
-                  "line": 293,
-                  "column": 9
-                },
-                {
-                  "title": "verify user forward message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6256,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:19.988Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-24b370e924678ccdcd8e",
-                  "file": "20_cncTest.spec.js",
-                  "line": 297,
-                  "column": 9
-                },
-                {
-                  "title": "verify user read by message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3627,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:26.254Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-1be356ef482dba6c6678",
-                  "file": "20_cncTest.spec.js",
-                  "line": 300,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11269,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:29.912Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-d2b2d36ba72a1c84bedd",
-                  "file": "20_cncTest.spec.js",
-                  "line": 303,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2229,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:41.200Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-b77e1394bfff79e5d451",
-                  "file": "20_cncTest.spec.js",
-                  "line": 306,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1742,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:43.435Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-11d86c3f73e090abe09d",
-                  "file": "20_cncTest.spec.js",
-                  "line": 309,
-                  "column": 9
-                },
-                {
-                  "title": "verify user readBy reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1743,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:45.186Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-8eeeb13d3abe81fbbd0d",
-                  "file": "20_cncTest.spec.js",
-                  "line": 312,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6142,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:46.945Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-26bed3fffa91622cc5b8",
-                  "file": "20_cncTest.spec.js",
-                  "line": 315,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "send document in group",
-              "file": "20_cncTest.spec.js",
-              "line": 321,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user send image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2422,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:53.097Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-441e4cb005013a5ea159",
-                  "file": "20_cncTest.spec.js",
-                  "line": 323,
-                  "column": 9
-                },
-                {
-                  "title": "verify user forward message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5304,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:41:55.531Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-5b10b61db8cb99e89df1",
-                  "file": "20_cncTest.spec.js",
-                  "line": 327,
-                  "column": 9
-                },
-                {
-                  "title": "verify user read by message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3816,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:00.844Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-5ab1939043291abe7ba5",
-                  "file": "20_cncTest.spec.js",
-                  "line": 330,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11586,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:04.673Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-210fea03405938290291",
-                  "file": "20_cncTest.spec.js",
-                  "line": 333,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2264,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:16.278Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-3216f57a4aa398f0bcb0",
-                  "file": "20_cncTest.spec.js",
-                  "line": 336,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2374,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:18.550Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-30e62b4b762123d76073",
-                  "file": "20_cncTest.spec.js",
-                  "line": 339,
-                  "column": 9
-                },
-                {
-                  "title": "verify user readBy reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1729,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:20.936Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-5b532c7fed2c57a9244e",
-                  "file": "20_cncTest.spec.js",
-                  "line": 342,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6644,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:22.677Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-9edff931d98fed25adfb",
-                  "file": "20_cncTest.spec.js",
-                  "line": 345,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "send audio in group",
-              "file": "20_cncTest.spec.js",
-              "line": 352,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user send image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2341,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:29.333Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-e952e27d628d5a0fe290",
-                  "file": "20_cncTest.spec.js",
-                  "line": 354,
-                  "column": 9
-                },
-                {
-                  "title": "verify user forward message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6029,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:31.687Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-769f357e92189ddabbe9",
-                  "file": "20_cncTest.spec.js",
-                  "line": 358,
-                  "column": 9
-                },
-                {
-                  "title": "verify user read by message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3623,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:37.722Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-cee7d2b91fe983be375a",
-                  "file": "20_cncTest.spec.js",
-                  "line": 361,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10936,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:41.358Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-9d5e1406585621d1e927",
-                  "file": "20_cncTest.spec.js",
-                  "line": 364,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1877,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:52.310Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-628fd77a3e6992d3c7a1",
-                  "file": "20_cncTest.spec.js",
-                  "line": 367,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2297,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:54.193Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-7c4e71478b92aa032d3d",
-                  "file": "20_cncTest.spec.js",
-                  "line": 370,
-                  "column": 9
-                },
-                {
-                  "title": "verify user readBy reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1777,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:56.502Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-d93317a035d18dcc8a37",
-                  "file": "20_cncTest.spec.js",
-                  "line": 373,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6573,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:42:58.295Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-7e4ecbe91c0bff357d76",
-                  "file": "20_cncTest.spec.js",
-                  "line": 376,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "send location in group",
-              "file": "20_cncTest.spec.js",
-              "line": 382,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user send location",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6348,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:04.876Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-8d85871eb78b654c47d7",
-                  "file": "20_cncTest.spec.js",
-                  "line": 384,
-                  "column": 9
-                },
-                {
-                  "title": "verify user forward message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5986,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:11.239Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-c2faddda0198ee0bfff7",
-                  "file": "20_cncTest.spec.js",
-                  "line": 388,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10313,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:17.238Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-c9111c524a26cdb3bca4",
-                  "file": "20_cncTest.spec.js",
-                  "line": 391,
-                  "column": 9
-                },
-                {
-                  "title": "verify user reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1801,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:27.565Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-d7ebabc9ee5818e53a96",
-                  "file": "20_cncTest.spec.js",
-                  "line": 394,
-                  "column": 9
-                },
-                {
-                  "title": "verify user edit reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2070,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:29.373Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-a715fe70ccf1eb6d86e9",
-                  "file": "20_cncTest.spec.js",
-                  "line": 397,
-                  "column": 9
-                },
-                {
-                  "title": "verify user readBy reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1944,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:31.454Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-5a0c8f5eb184ba465ed5",
-                  "file": "20_cncTest.spec.js",
-                  "line": 400,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6760,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:33.410Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-977de1e24b74b8163152",
-                  "file": "20_cncTest.spec.js",
-                  "line": 403,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "send image Reply in group",
-              "file": "20_cncTest.spec.js",
-              "line": 409,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user send image",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2885,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:40.179Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-b0198f481d716889a86d",
-                  "file": "20_cncTest.spec.js",
-                  "line": 411,
-                  "column": 9
-                },
-                {
-                  "title": "verify user image reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4885,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown items: [\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:43.073Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-7294a64ad5f822ebafc9",
-                  "file": "20_cncTest.spec.js",
-                  "line": 415,
-                  "column": 9
-                },
-                {
-                  "title": "verify user delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6451,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:47.972Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-a24f10b6a22a880eadfb",
-                  "file": "20_cncTest.spec.js",
-                  "line": 418,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Delete Group",
-              "file": "20_cncTest.spec.js",
-              "line": 424,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify user delete the group",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3897,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-12-18T09:43:58.369Z - close browser\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-18T09:43:54.442Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3f132c5ace3d0f4165ad-61ac8d2edaf6ac033cba",
-                  "file": "20_cncTest.spec.js",
-                  "line": 426,
+                  "id": "c84613e915cba492262c-00e951e35b3729976ada",
+                  "file": "15_emailTest.spec.js",
+                  "line": 148,
                   "column": 9
                 }
               ]
@@ -3921,11 +1201,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-18T09:35:44.844Z",
-    "duration": 494167.489,
-    "expected": 96,
-    "skipped": 4,
-    "unexpected": 0,
+    "startTime": "2025-12-19T14:30:12.856Z",
+    "duration": 291078.549,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

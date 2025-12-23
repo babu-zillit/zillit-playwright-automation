@@ -130,13 +130,13 @@
           "specs": [],
           "suites": [
             {
-              "title": "Calendar Member Delete",
+              "title": "Member Calendar",
               "file": "calendarTest.spec.js",
-              "line": 461,
+              "line": 27,
               "column": 19,
               "specs": [
                 {
-                  "title": "Verify that user can delete the member calendar event",
+                  "title": "Verify that user can create a event by filling all option",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,19 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 16949,
+                          "duration": 18875,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-23T14:07:39.733Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-12-23T14:33:15.717Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Clicked on available color: GREEN\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-23T14:07:34.803Z",
+                          "startTime": "2025-12-23T14:33:08.565Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -171,21 +177,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3bc4d3b4a1bfca787ace-1d9f6ea604edd3902812",
+                  "id": "3bc4d3b4a1bfca787ace-cb724cfe0afe11bc9ca5",
                   "file": "calendarTest.spec.js",
-                  "line": 462,
+                  "line": 29,
                   "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Calendar Personal Delete",
-              "file": "calendarTest.spec.js",
-              "line": 468,
-              "column": 19,
-              "specs": [
+                },
                 {
-                  "title": "Verify that user can delete the personal calendar event",
+                  "title": "Verify that user can create a event by filling all option with changing the repeat status",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -200,12 +198,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 15264,
+                          "duration": 17052,
                           "errors": [],
-                          "stdout": [],
+                          "stdout": [
+                            {
+                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Clicked on available color: GREEN\n"
+                            }
+                          ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-23T14:08:01.134Z",
+                          "startTime": "2025-12-23T14:33:40.751Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -213,9 +218,363 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3bc4d3b4a1bfca787ace-63485088c3afe87a57f2",
+                  "id": "3bc4d3b4a1bfca787ace-37f4721789cb2aa805e4",
                   "file": "calendarTest.spec.js",
-                  "line": 469,
+                  "line": 46,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, all department, audio call",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9330,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:33:57.818Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-9a3c503cc2d18de2cf59",
+                  "file": "calendarTest.spec.js",
+                  "line": 64,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, select user, audio call",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9381,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:34:07.158Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-994c50c2d4aefab55928",
+                  "file": "calendarTest.spec.js",
+                  "line": 72,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, select user, video call",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9360,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:34:16.558Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-96c55680e83471b4a5ca",
+                  "file": "calendarTest.spec.js",
+                  "line": 81,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, all department, video call",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9200,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:34:25.951Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-37430493d99c8fc6e584",
+                  "file": "calendarTest.spec.js",
+                  "line": 90,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, all department, audio call, every day",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10527,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:34:35.168Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-134238a44203a5fdf09c",
+                  "file": "calendarTest.spec.js",
+                  "line": 99,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, all department, audio call, every day, 15 min before",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10133,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:34:45.717Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-0bebd9867915aa2762ff",
+                  "file": "calendarTest.spec.js",
+                  "line": 109,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, all department, audio call, every week, 5 min before",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 15126,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:34:55.874Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-26455af47348fdc8f6ab",
+                  "file": "calendarTest.spec.js",
+                  "line": 120,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, all department, video call, every week, 5 min before, organizer included",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 14993,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:35:11.021Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-6cef21add22f3673218f",
+                  "file": "calendarTest.spec.js",
+                  "line": 132,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 16742,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Clicked on available color: GREEN\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:35:26.036Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-8a6a5d1ce05be59590a8",
+                  "file": "calendarTest.spec.js",
+                  "line": 145,
+                  "column": 9
+                },
+                {
+                  "title": "Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour, select outsider",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 16902,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Clicked on available color: GREEN\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-23T14:35:42.803Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3bc4d3b4a1bfca787ace-266f43292ad610aae4ac",
+                  "file": "calendarTest.spec.js",
+                  "line": 159,
                   "column": 9
                 }
               ]
@@ -227,9 +586,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-23T14:07:34.400Z",
-    "duration": 42334.494,
-    "expected": 2,
+    "startTime": "2025-12-23T14:33:08.180Z",
+    "duration": 172248.042,
+    "expected": 12,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

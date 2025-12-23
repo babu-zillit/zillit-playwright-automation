@@ -1,13 +1,70 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="42.334494">
-<testsuite name="calendarTest.spec.js" timestamp="2025-12-23T14:07:34.463Z" hostname="chromium" tests="2" failures="0" skipped="0" time="32.213" errors="0">
-<testcase name="Calendar › Calendar Member Delete › Verify that user can delete the member calendar event" classname="calendarTest.spec.js" time="16.949">
+<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="172.248042">
+<testsuite name="calendarTest.spec.js" timestamp="2025-12-23T14:33:08.211Z" hostname="chromium" tests="12" failures="0" skipped="0" time="157.621" errors="0">
+<testcase name="Calendar › Member Calendar › Verify that user can create a event by filling all option" classname="calendarTest.spec.js" time="18.875">
 <system-out>
 <![CDATA[Current hostname is: qa.zillit.com
-[INFO] 2025-12-23T14:07:39.733Z - QA environment is started...
+[INFO] 2025-12-23T14:33:15.717Z - QA environment is started...
+Color options: [
+  [32m'RED'[39m,    [32m'BLUE'[39m,
+  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
+  [32m'BROWN'[39m,  [32m'PINK'[39m,
+  [32m'PURPLE'[39m
+]
+Clicked on available color: GREEN
 ]]>
 </system-out>
 </testcase>
-<testcase name="Calendar › Calendar Personal Delete › Verify that user can delete the personal calendar event" classname="calendarTest.spec.js" time="15.264">
+<testcase name="Calendar › Member Calendar › Verify that user can create a event by filling all option with changing the repeat status" classname="calendarTest.spec.js" time="17.052">
+<system-out>
+<![CDATA[Color options: [
+  [32m'RED'[39m,    [32m'BLUE'[39m,
+  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
+  [32m'BROWN'[39m,  [32m'PINK'[39m,
+  [32m'PURPLE'[39m
+]
+Clicked on available color: GREEN
+]]>
+</system-out>
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call" classname="calendarTest.spec.js" time="9.33">
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, select user, audio call" classname="calendarTest.spec.js" time="9.381">
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, select user, video call" classname="calendarTest.spec.js" time="9.36">
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, video call" classname="calendarTest.spec.js" time="9.2">
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every day" classname="calendarTest.spec.js" time="10.527">
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every day, 15 min before" classname="calendarTest.spec.js" time="10.133">
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every week, 5 min before" classname="calendarTest.spec.js" time="15.126">
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, video call, every week, 5 min before, organizer included" classname="calendarTest.spec.js" time="14.993">
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour" classname="calendarTest.spec.js" time="16.742">
+<system-out>
+<![CDATA[Color options: [
+  [32m'RED'[39m,    [32m'BLUE'[39m,
+  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
+  [32m'BROWN'[39m,  [32m'PINK'[39m,
+  [32m'PURPLE'[39m
+]
+Clicked on available color: GREEN
+]]>
+</system-out>
+</testcase>
+<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour, select outsider" classname="calendarTest.spec.js" time="16.902">
+<system-out>
+<![CDATA[Color options: [
+  [32m'RED'[39m,    [32m'BLUE'[39m,
+  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
+  [32m'BROWN'[39m,  [32m'PINK'[39m,
+  [32m'PURPLE'[39m
+]
+Clicked on available color: GREEN
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

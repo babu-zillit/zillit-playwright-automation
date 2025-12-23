@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "15_emailTest.spec.js",
-      "file": "15_emailTest.spec.js",
+      "title": "calendarTest.spec.js",
+      "file": "calendarTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Email",
-          "file": "15_emailTest.spec.js",
+          "title": "Calendar",
+          "file": "calendarTest.spec.js",
           "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Send Email",
-              "file": "15_emailTest.spec.js",
-              "line": 33,
-              "column": 10,
+              "title": "Personal Calendar Full Day",
+              "file": "calendarTest.spec.js",
+              "line": 392,
+              "column": 19,
               "specs": [
                 {
-                  "title": "Verify that the user can send an email with message",
+                  "title": "1",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8656,
+                          "duration": 17338,
                           "errors": [],
                           "stdout": [
-                            {
-                              "text": "[INFO] 2025-12-19T14:30:14.270Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-19T14:30:19.376Z - open the project\n"
-                            },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-19T14:30:19.377Z - QA environment is started...\n"
+                              "text": "[INFO] 2025-12-23T12:33:07.380Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "Clicked on available color: GREEN\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-19T14:30:13.223Z",
+                          "startTime": "2025-12-23T12:33:01.568Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,13 +177,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-1601c6c58191a193a1eb",
-                  "file": "15_emailTest.spec.js",
-                  "line": 35,
+                  "id": "3bc4d3b4a1bfca787ace-c33ab53d58f4b13a0fcc",
+                  "file": "calendarTest.spec.js",
+                  "line": 394,
                   "column": 9
                 },
                 {
-                  "title": "verify user can send email with media",
+                  "title": "2",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -198,12 +198,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 11837,
+                          "duration": 8533,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-19T14:30:37.897Z",
+                          "startTime": "2025-12-23T12:33:29.477Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -211,13 +211,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-490b27e0d3dc339d1b0b",
-                  "file": "15_emailTest.spec.js",
-                  "line": 40,
+                  "id": "3bc4d3b4a1bfca787ace-ec1def494a37d6882821",
+                  "file": "calendarTest.spec.js",
+                  "line": 406,
                   "column": 9
                 },
                 {
-                  "title": "Verify that the user can send a reply email.",
+                  "title": "3",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -232,12 +232,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 13358,
+                          "duration": 9660,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-19T14:30:49.752Z",
+                          "startTime": "2025-12-23T12:33:38.034Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -245,13 +245,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-7c169555a763a6331e67",
-                  "file": "15_emailTest.spec.js",
-                  "line": 45,
+                  "id": "3bc4d3b4a1bfca787ace-88e55f74bcf62e1a7a20",
+                  "file": "calendarTest.spec.js",
+                  "line": 415,
                   "column": 9
                 },
                 {
-                  "title": "Verify that the user can send reply all email",
+                  "title": "4",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -266,12 +266,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 13203,
+                          "duration": 14283,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-19T14:31:03.121Z",
+                          "startTime": "2025-12-23T12:33:47.709Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -279,13 +279,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-7140a5df9247967b65ea",
-                  "file": "15_emailTest.spec.js",
-                  "line": 48,
+                  "id": "3bc4d3b4a1bfca787ace-ef58b781cc0c0c9ec124",
+                  "file": "calendarTest.spec.js",
+                  "line": 424,
                   "column": 9
                 },
                 {
-                  "title": "Verify that the user can forward an email.",
+                  "title": "5",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -300,795 +300,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 13005,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:31:16.350Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-7f6566370a965c4efd70",
-                  "file": "15_emailTest.spec.js",
-                  "line": 51,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that the user can delete an email.",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6017,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:31:29.377Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-4183373a802460746897",
-                  "file": "15_emailTest.spec.js",
-                  "line": 54,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Move Email",
-              "file": "15_emailTest.spec.js",
-              "line": 60,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify that the user can move an email from Sent to Inbox.",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6643,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:31:35.410Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-252a469e484e06566dfa",
-                  "file": "15_emailTest.spec.js",
-                  "line": 62,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that the user can move an email from Inbox to Junk.",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7244,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:31:42.068Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-d7b4b269fc840df7b49b",
-                  "file": "15_emailTest.spec.js",
-                  "line": 65,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that the user can move an email from Junk to Trash.",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6702,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:31:49.327Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-6eae7624df56db9aaa0b",
-                  "file": "15_emailTest.spec.js",
-                  "line": 68,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that the user can move an email from Trash to Distributed Mail.",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6830,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:31:56.045Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-ab6b429579b35927e83b",
-                  "file": "15_emailTest.spec.js",
-                  "line": 71,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Email Folder",
-              "file": "15_emailTest.spec.js",
-              "line": 77,
-              "column": 11,
-              "specs": [
-                {
-                  "title": "verify that user can create folder",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5252,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:02.894Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-542ce43f353dda35cb3f",
-                  "file": "15_emailTest.spec.js",
-                  "line": 78,
-                  "column": 9
-                },
-                {
-                  "title": "verify that user can create the folder with same name",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5022,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:08.159Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-0e41b2deb53ed925d7a5",
-                  "file": "15_emailTest.spec.js",
-                  "line": 81,
-                  "column": 9
-                },
-                {
-                  "title": "verify that user can edit the folder name",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5629,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:13.192Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-1d7ee18c4ac18c1f4480",
-                  "file": "15_emailTest.spec.js",
-                  "line": 84,
-                  "column": 9
-                },
-                {
-                  "title": "verify that user can delete folder",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4592,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:18.831Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-32b79a57d7eb8864857c",
-                  "file": "15_emailTest.spec.js",
-                  "line": 87,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Signature",
-              "file": "15_emailTest.spec.js",
-              "line": 93,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify that user can create the signature",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5764,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:23.437Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-9695045b88f5d501687a",
-                  "file": "15_emailTest.spec.js",
-                  "line": 95,
-                  "column": 9
-                },
-                {
-                  "title": "verify that user can edit the signature",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5415,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:29.227Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-c6baa109b3a0412d1261",
-                  "file": "15_emailTest.spec.js",
-                  "line": 98,
-                  "column": 9
-                },
-                {
-                  "title": "verify that user can delete the signature",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3678,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:34.650Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-29e36f3c3dbdb1f4d57a",
-                  "file": "15_emailTest.spec.js",
-                  "line": 101,
-                  "column": 9
-                },
-                {
-                  "title": "verify that user can create the signature again",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5884,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:38.338Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-7e0ca51025c0043cec5c",
-                  "file": "15_emailTest.spec.js",
-                  "line": 104,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "BCC Preset",
-              "file": "15_emailTest.spec.js",
-              "line": 111,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify that user can add the BCC Preset",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5184,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:44.235Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-c2dbf39b511051d7221e",
-                  "file": "15_emailTest.spec.js",
-                  "line": 113,
-                  "column": 9
-                },
-                {
-                  "title": "verify that user can delete the BCC preset",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3991,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:49.430Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-ac2b55ffca666ad0a593",
-                  "file": "15_emailTest.spec.js",
-                  "line": 116,
-                  "column": 9
-                },
-                {
-                  "title": "verify that user can add BCC preset again",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5766,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:53.433Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-e9185b8fcd0dd5d85aa5",
-                  "file": "15_emailTest.spec.js",
-                  "line": 119,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Create Email Group",
-              "file": "15_emailTest.spec.js",
-              "line": 125,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify that user can create the email group",
-                  "ok": false,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "timedOut",
-                          "duration": 30118,
-                          "error": {
-                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                          },
-                          "errors": [
-                            {
-                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                            },
-                            {
-                              "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js",
-                                "column": 72,
-                                "line": 279
-                              },
-                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('div.ant-modal-footer button').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" id=\"delete-emails-button\" class=\"ant-btn css-2iw4eq ant-btn-default ant-btn-loading bg-red-500 text-white px-4 py-1 rounded disabled:cursor-not-allowed disabled:opacity-70\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/email.js:279\n\n\u001b[0m \u001b[90m 277 |\u001b[39m     \u001b[36masync\u001b[39m createEmailGroup(){\n \u001b[90m 278 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignatureConversationImportBCCPresetEmailGroupEmailSetup\u001b[33m.\u001b[39mnth(\u001b[35m4\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 279 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.ant-modal-footer button'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 280 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#group_name'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'Tester'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 281 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.ant-modal-body button'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 282 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.ant-modal-body button'\u001b[39m)\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Email.createEmailGroup (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js:279:72)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/15_emailTest.spec.js:128:13\u001b[22m"
-                            }
-                          ],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-12-19T14:33:29.540Z - close browser\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:32:59.210Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "_error-context-1",
-                              "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "unexpected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-6861e46d2124003f1430",
-                  "file": "15_emailTest.spec.js",
-                  "line": 127,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can delete the email group",
-                  "ok": false,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
-                          "status": "timedOut",
-                          "duration": 30110,
-                          "error": {
-                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                          },
-                          "errors": [
-                            {
-                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                            },
-                            {
-                              "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js",
-                                "column": 81,
-                                "line": 291
-                              },
-                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('div.divide-y.h-full span.ant-btn-icon').last()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/email.js:291\n\n\u001b[0m \u001b[90m 289 |\u001b[39m     \u001b[36masync\u001b[39m deleteEmailGroup(successMsg){\n \u001b[90m 290 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignatureConversationImportBCCPresetEmailGroupEmailSetup\u001b[33m.\u001b[39mnth(\u001b[35m4\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 291 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.divide-y.h-full span.ant-btn-icon'\u001b[39m)\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 292 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#delete_confirmation_button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 293 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muploadMedia\u001b[33m.\u001b[39mverifyPopupMessage(\u001b[32m`${successMsg}`\u001b[39m) \n \u001b[90m 294 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[aria-label=\"close\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Email.deleteEmailGroup (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js:291:81)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/15_emailTest.spec.js:131:13\u001b[22m"
-                            }
-                          ],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2025-12-19T14:33:31.416Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-19T14:33:37.561Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: qa.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-19T14:33:37.561Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-19T14:34:18.377Z - close browser\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:33:30.798Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "_error-context-1",
-                              "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "unexpected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-b63bb89e18ffa5be5996",
-                  "file": "15_emailTest.spec.js",
-                  "line": 130,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can create the email group again",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6076,
+                          "duration": 13758,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2025-12-19T14:34:20.072Z - browser is launching\n"
+                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-19T14:34:24.504Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: qa.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2025-12-19T14:34:24.504Z - QA environment is started...\n"
+                              "text": "Clicked on available color: GREEN\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-19T14:34:19.472Z",
+                          "startTime": "2025-12-23T12:34:02.019Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1096,21 +320,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-014c7ac00f9fe5649f72",
-                  "file": "15_emailTest.spec.js",
-                  "line": 133,
+                  "id": "3bc4d3b4a1bfca787ace-d89871d3bd816ef5d0a4",
+                  "file": "calendarTest.spec.js",
+                  "line": 435,
                   "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Email Setup Externally",
-              "file": "15_emailTest.spec.js",
-              "line": 139,
-              "column": 10,
-              "specs": [
+                },
                 {
-                  "title": "verify that user can edit the password",
+                  "title": "6",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -1122,64 +338,22 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 2,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5999,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-19T14:34:41.385Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c84613e915cba492262c-c259bbfbf1299922fce2",
-                  "file": "15_emailTest.spec.js",
-                  "line": 141,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Send Email to Group",
-              "file": "15_emailTest.spec.js",
-              "line": 147,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify that user can send group email",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 16083,
+                          "duration": 13205,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Email has been sent') to be visible\u001b[22m\n\n"
+                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-19T14:35:03.636Z - close browser\n"
+                              "text": "Clicked on available color: GREEN\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-19T14:34:47.396Z",
+                          "startTime": "2025-12-23T12:34:15.801Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1187,9 +361,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c84613e915cba492262c-00e951e35b3729976ada",
-                  "file": "15_emailTest.spec.js",
-                  "line": 148,
+                  "id": "3bc4d3b4a1bfca787ace-5f6808a8e3e0120bc0ae",
+                  "file": "calendarTest.spec.js",
+                  "line": 447,
                   "column": 9
                 }
               ]
@@ -1201,11 +375,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-19T14:30:12.856Z",
-    "duration": 291078.549,
-    "expected": 24,
+    "startTime": "2025-12-23T12:33:01.191Z",
+    "duration": 88223.295,
+    "expected": 6,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }

@@ -1,188 +1,46 @@
-<testsuites id="" name="" tests="26" failures="2" skipped="0" errors="0" time="291.078549">
-<testsuite name="15_emailTest.spec.js" timestamp="2025-12-19T14:30:12.884Z" hostname="chromium" tests="26" failures="2" skipped="0" time="238.058" errors="0">
-<testcase name="Email › Send Email › Verify that the user can send an email with message" classname="15_emailTest.spec.js" time="8.656">
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="88.223295">
+<testsuite name="calendarTest.spec.js" timestamp="2025-12-23T12:33:01.220Z" hostname="chromium" tests="6" failures="0" skipped="0" time="76.777" errors="0">
+<testcase name="Calendar › Personal Calendar Full Day › 1" classname="calendarTest.spec.js" time="17.338">
 <system-out>
-<![CDATA[[INFO] 2025-12-19T14:30:14.270Z - browser is launching
-[INFO] 2025-12-19T14:30:19.376Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-12-19T14:30:19.377Z - QA environment is started...
+<![CDATA[Current hostname is: qa.zillit.com
+[INFO] 2025-12-23T12:33:07.380Z - QA environment is started...
+Color options: [
+  [32m'RED'[39m,    [32m'BLUE'[39m,
+  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
+  [32m'BROWN'[39m,  [32m'PINK'[39m,
+  [32m'PURPLE'[39m
+]
+Clicked on available color: GREEN
 ]]>
 </system-out>
 </testcase>
-<testcase name="Email › Send Email › verify user can send email with media" classname="15_emailTest.spec.js" time="11.837">
+<testcase name="Calendar › Personal Calendar Full Day › 2" classname="calendarTest.spec.js" time="8.533">
 </testcase>
-<testcase name="Email › Send Email › Verify that the user can send a reply email." classname="15_emailTest.spec.js" time="13.358">
+<testcase name="Calendar › Personal Calendar Full Day › 3" classname="calendarTest.spec.js" time="9.66">
 </testcase>
-<testcase name="Email › Send Email › Verify that the user can send reply all email" classname="15_emailTest.spec.js" time="13.203">
+<testcase name="Calendar › Personal Calendar Full Day › 4" classname="calendarTest.spec.js" time="14.283">
 </testcase>
-<testcase name="Email › Send Email › Verify that the user can forward an email." classname="15_emailTest.spec.js" time="13.005">
-</testcase>
-<testcase name="Email › Send Email › Verify that the user can delete an email." classname="15_emailTest.spec.js" time="6.017">
-</testcase>
-<testcase name="Email › Move Email › Verify that the user can move an email from Sent to Inbox." classname="15_emailTest.spec.js" time="6.643">
-</testcase>
-<testcase name="Email › Move Email › Verify that the user can move an email from Inbox to Junk." classname="15_emailTest.spec.js" time="7.244">
-</testcase>
-<testcase name="Email › Move Email › Verify that the user can move an email from Junk to Trash." classname="15_emailTest.spec.js" time="6.702">
-</testcase>
-<testcase name="Email › Move Email › Verify that the user can move an email from Trash to Distributed Mail." classname="15_emailTest.spec.js" time="6.83">
-</testcase>
-<testcase name="Email › Email Folder › verify that user can create folder" classname="15_emailTest.spec.js" time="5.252">
-</testcase>
-<testcase name="Email › Email Folder › verify that user can create the folder with same name" classname="15_emailTest.spec.js" time="5.022">
-</testcase>
-<testcase name="Email › Email Folder › verify that user can edit the folder name" classname="15_emailTest.spec.js" time="5.629">
-</testcase>
-<testcase name="Email › Email Folder › verify that user can delete folder" classname="15_emailTest.spec.js" time="4.592">
-</testcase>
-<testcase name="Email › Signature › verify that user can create the signature" classname="15_emailTest.spec.js" time="5.764">
-</testcase>
-<testcase name="Email › Signature › verify that user can edit the signature" classname="15_emailTest.spec.js" time="5.415">
-</testcase>
-<testcase name="Email › Signature › verify that user can delete the signature" classname="15_emailTest.spec.js" time="3.678">
-</testcase>
-<testcase name="Email › Signature › verify that user can create the signature again" classname="15_emailTest.spec.js" time="5.884">
-</testcase>
-<testcase name="Email › BCC Preset › verify that user can add the BCC Preset" classname="15_emailTest.spec.js" time="5.184">
-</testcase>
-<testcase name="Email › BCC Preset › verify that user can delete the BCC preset" classname="15_emailTest.spec.js" time="3.991">
-</testcase>
-<testcase name="Email › BCC Preset › verify that user can add BCC preset again" classname="15_emailTest.spec.js" time="5.766">
-</testcase>
-<testcase name="Email › Create Email Group › Verify that user can create the email group" classname="15_emailTest.spec.js" time="30.118">
-<failure message="15_emailTest.spec.js:127:9 Verify that user can create the email group" type="FAILURE">
-<![CDATA[  [chromium] › 15_emailTest.spec.js:127:9 › Email › Create Email Group › Verify that user can create the email group 
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.click: Target page, context or browser has been closed
-    Call log:
-      - waiting for locator('div.ant-modal-footer button').first()
-        - locator resolved to <button disabled type="button" id="delete-emails-button" class="ant-btn css-2iw4eq ant-btn-default ant-btn-loading bg-red-500 text-white px-4 py-1 rounded disabled:cursor-not-allowed disabled:opacity-70">…</button>
-      - attempting click action
-        2 × waiting for element to be visible, enabled and stable
-          - element is not visible
-        - retrying click action
-        - waiting 20ms
-        2 × waiting for element to be visible, enabled and stable
-          - element is not visible
-        - retrying click action
-          - waiting 100ms
-        57 × waiting for element to be visible, enabled and stable
-           - element is not visible
-         - retrying click action
-           - waiting 500ms
-
-
-       at ../pages/email.js:279
-
-      277 |     async createEmailGroup(){
-      278 |         await this.signatureConversationImportBCCPresetEmailGroupEmailSetup.nth(4).click();
-    > 279 |         await this.page.locator('div.ant-modal-footer button').first().click();
-          |                                                                        ^
-      280 |         await this.page.locator('#group_name').fill('Tester');
-      281 |         await this.page.locator('div.ant-modal-body button').first().click();
-      282 |         await this.page.locator('div.ant-modal-body button').last().click();
-        at Email.createEmailGroup (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js:279:72)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/15_emailTest.spec.js:128:13
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../../test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Calendar › Personal Calendar Full Day › 5" classname="calendarTest.spec.js" time="13.758">
 <system-out>
-<![CDATA[[INFO] 2025-12-19T14:33:29.540Z - close browser
-
-[[ATTACHMENT|../test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/15_emailTest-Email-Create--35c6b--can-create-the-email-group-chromium/trace.zip]]
+<![CDATA[Color options: [
+  [32m'RED'[39m,    [32m'BLUE'[39m,
+  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
+  [32m'BROWN'[39m,  [32m'PINK'[39m,
+  [32m'PURPLE'[39m
+]
+Clicked on available color: GREEN
 ]]>
 </system-out>
 </testcase>
-<testcase name="Email › Create Email Group › Verify that user can delete the email group" classname="15_emailTest.spec.js" time="30.11">
-<failure message="15_emailTest.spec.js:130:9 Verify that user can delete the email group" type="FAILURE">
-<![CDATA[  [chromium] › 15_emailTest.spec.js:130:9 › Email › Create Email Group › Verify that user can delete the email group 
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.click: Target page, context or browser has been closed
-    Call log:
-      - waiting for locator('div.divide-y.h-full span.ant-btn-icon').last()
-
-
-       at ../pages/email.js:291
-
-      289 |     async deleteEmailGroup(successMsg){
-      290 |         await this.signatureConversationImportBCCPresetEmailGroupEmailSetup.nth(4).click();
-    > 291 |         await this.page.locator('div.divide-y.h-full span.ant-btn-icon').last().click();
-          |                                                                                 ^
-      292 |         await this.page.locator('#delete_confirmation_button').click();
-      293 |         await this.uploadMedia.verifyPopupMessage(`${successMsg}`) 
-      294 |         await this.page.locator('[aria-label="close"]').click();
-        at Email.deleteEmailGroup (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/email.js:291:81)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/15_emailTest.spec.js:131:13
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../../test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Calendar › Personal Calendar Full Day › 6" classname="calendarTest.spec.js" time="13.205">
 <system-out>
-<![CDATA[[INFO] 2025-12-19T14:33:31.416Z - browser is launching
-[INFO] 2025-12-19T14:33:37.561Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-12-19T14:33:37.561Z - QA environment is started...
-[INFO] 2025-12-19T14:34:18.377Z - close browser
-
-[[ATTACHMENT|../test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/15_emailTest-Email-Create--e2061--can-delete-the-email-group-chromium/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Email › Create Email Group › Verify that user can create the email group again" classname="15_emailTest.spec.js" time="6.076">
-<system-out>
-<![CDATA[[INFO] 2025-12-19T14:34:20.072Z - browser is launching
-[INFO] 2025-12-19T14:34:24.504Z - open the project
-Current hostname is: qa.zillit.com
-[INFO] 2025-12-19T14:34:24.504Z - QA environment is started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Email › Email Setup Externally › verify that user can edit the password" classname="15_emailTest.spec.js" time="5.999">
-</testcase>
-<testcase name="Email › Send Email to Group › verify that user can send group email" classname="15_emailTest.spec.js" time="16.083">
-<system-out>
-<![CDATA[Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.
-Call log:
-[2m  - waiting for locator('text=Email has been sent') to be visible[22m
-
-[INFO] 2025-12-19T14:35:03.636Z - close browser
+<![CDATA[Color options: [
+  [32m'RED'[39m,    [32m'BLUE'[39m,
+  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
+  [32m'BROWN'[39m,  [32m'PINK'[39m,
+  [32m'PURPLE'[39m
+]
+Clicked on available color: GREEN
 ]]>
 </system-out>
 </testcase>

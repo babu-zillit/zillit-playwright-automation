@@ -160,9 +160,6 @@ export default class Calendar {
 
         await this.page.locator('div.divide-y').first().click();
 
-        const addButton = this.page.locator("div.ant-modal-confirm-btns button");
-        await addButton.first().click();
-
         const submitButton = this.page.locator('//div[@class="ant-modal-footer"]//span[text()="Submit"]');
         await submitButton.waitFor({ state: 'visible', timeout: 5000 });
         await submitButton.click();
@@ -274,7 +271,76 @@ export default class Calendar {
         await this.allEvent.click();
         await this.okButton.nth(1).click();
         await this.page.waitForTimeout(4000);
-        await this.page.locator('[aria-label="close"]').first().click();
+        await this.page.locator('div.ant-modal-content button[aria-label="Close"]').first().click();
     }
+
+    async createEventForMember1(){
+        await this.clickCalendarTab();
+        await this.clickAddEvent();
+        await this.navigateToMembers();
+        await this.fillEventName('Babu10');
+        await this.selectStartTime();
+        await this.selectEndTime();
+        await this.selectInvitees();
+        await this.selectCallType('Video Call');
+        await this.addOutSiderUser('Bhavik@gmail.com');
+        await this.submitEvent();
+        await this.page.locator('div.ant-modal-footer div button').click();
+    }
+
+    async deleteCalender(tabName){
+        await this.createdEvent.click();
+
+        if(tabName == 'member'){
+            await this.page.locator('//div[@title="Invites-Sent"]').click();
+        } else if (tabName === 'personal') {
+            await this.page.locator('//div[@title="Personal"]').click();
+        }
+
+        await this.deleteEvent.nth(1).click();
+        await this.okButton.nth(1).click();
+        await this.page.waitForTimeout(4000);
+        await this.page.locator('div.ant-modal-content button[aria-label="Close"]').first().click();
+    }
+
+    async createEventForMember2(){
+        await this.clickCalendarTab();
+        await this.clickAddEvent();
+        await this.navigateToMembers();
+        await this.fillEventName('Babu10');
+        await this.selectStartTime();
+        await this.selectEndTime();
+        await this.selectInvitees();
+        await this.chooseLocation();
+        await this.selectCallType('Meet In Person & Call');
+        await this.addOutSiderUser('Bhavik@gmail.com');
+        await this.submitEvent();
+        await this.page.locator('div.ant-modal-footer div button').click();
+    }
+
+    async includeExcludeOrganizer(){
+        const checkbox = this.page.locator('#createUser_exclude');
+        if (!(await checkbox.isChecked())) {
+            await checkbox.check();
+        }
+    }
+
+    async createEventForMember3(){
+        await this.clickCalendarTab();
+        await this.clickAddEvent();
+        await this.navigateToMembers();
+        await this.fillEventName('Babu10');
+        await this.selectStartTime();
+        await this.selectEndTime();
+        await this.selectInvitees();
+        await this.chooseLocation();
+        await this.selectCallType('Meet In Person & Call');
+        await this.includeExcludeOrganizer();
+        await this.addOutSiderUser('Bhavik@gmail.com');
+        await this.submitEvent();
+        await this.page.locator('div.ant-modal-footer div button').click();
+    }
+
+    
 
 }

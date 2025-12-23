@@ -1,5 +1,6 @@
 import { test } from '@playwright/test';
 import StartProject from '../pages/start-project';
+import { verifyEmailWithOtp } from '../tests/otp.spec';
 
    test('Verify the user is created project successfully', async ({ page }) => {
       test.setTimeout(60000);

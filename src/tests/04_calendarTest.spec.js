@@ -65,6 +65,70 @@ test.describe('Calendar', () => {
     
     });
 
+    test.describe('Member Calendar', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, location, coulor, Discription, organiser not part of this event and delete this event', async () => {
+            await calendar.createEventForMember1();
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe('Member Calendar', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, coulor, Discription and meet in person call and delete this event', async () => {
+            await calendar.createEventForMember2();
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe.only('Member Calendar', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, coulor, Discription and meet in person call , including organiser and delete this event', async () => {
+            await calendar.createEventForMember3();
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe('Member Calendar Full Day', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, location, coulor, Discription, organiser not part of this event and delete this event', async () => {
+            await calendar.clickCalendarTab();
+            await calendar.clickAddEvent();
+            await calendar.navigateToMembers();
+            await calendar.fillEventName('Babu2');
+            await calendar.fullDay();
+            await calendar.selectStartTime();
+            await calendar.selectInvitees();
+            await calendar.selectCallType('Audio Call');
+            await calendar.addOutSiderUser('Bhavik@gmail.com');
+            await calendar.submitEvent();
+        });
+        test('verify the delete the calendar', async () => {
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe('Member Calendar Full day', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, coulor, Discription and meet in person call and delete this event', async () => {
+            await calendar.createEventForMember2();
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe('Member Calendar Full Day', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, coulor, Discription and meet in person call , including organiser and delete this event', async () => {
+            
+        });
+    
+    });
+
 });
 
   /**

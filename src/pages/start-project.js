@@ -1,12 +1,14 @@
 import { expect } from '@playwright/test';
 import logger from "../utils/loggerUtils";
 import { loadJson } from '../utils/jsonUtil';
+import UploadMedia from '../actions/media-uploader'
 const startproject = loadJson('startproject', 'testdata');
 
 export default class StartProject {
     
     constructor(page){
         this.page = page;
+        this.uploadMedia = new UploadMedia(page);
 
         this.startProjectViewButton = page.locator('//button[@type="button"]//span[contains(text(),"Start Project")]');
 
@@ -20,6 +22,7 @@ export default class StartProject {
         this.language = page.locator('#language');
         this.projectNameInput = page.locator('#projectName');
         this.emailInput = page.locator('[type="email"]');
+        this.verifyOTP = page.locator('[id="email"] button');
         this.checkboxButton = page.locator('#agreeTerms');
         this.submitButton = page.locator('//div[@class="ant-modal-footer"]//button');
     }
@@ -99,9 +102,18 @@ export default class StartProject {
         await expect(this.projectNameInput).toHaveValue(startproject.projectName, { timeout: 5000 });
     }
 
-    async enterEmail(){
+    async enterEmail(successMsg){
         await this.emailInput.fill(startproject.email);
         await expect(this.emailInput).toHaveValue(startproject.email, { timeout: 5000});
+        await this.verifyOTP.click();
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`)
+        await this.page.waitForTimeout(5000);
+    }
+
+    async verifyGmailOTP(){
+        await this.emailInput.fill('babu.yadav@gmail.com');
+        await this.verifyOTP.click();
+        await this.page.waitForTimeout(10000);
     }
 
     async clickCheckBox(){
@@ -133,11 +145,15 @@ export default class StartProject {
         await this.page.waitForTimeout(1500);
         await this.enterProjectName();
         await this.page.waitForTimeout(1500);
-        await this.enterEmail();
+        await this.enterEmail('Verification code sent to your email successfully');
         await this.page.waitForTimeout(1500);
-        await this.clickCheckBox();
-        await this.clickSubmit();
-        await this.next();
+        // await this.clickCheckBox();
+        // await this.clickSubmit();
+        // await this.next();
+    }
+
+    async gmailOTP(){
+
     }
     
 }

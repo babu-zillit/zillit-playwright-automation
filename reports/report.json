@@ -130,13 +130,13 @@
           "specs": [],
           "suites": [
             {
-              "title": "Personal Calendar Full Day",
+              "title": "Calendar Member Delete",
               "file": "calendarTest.spec.js",
-              "line": 392,
+              "line": 461,
               "column": 19,
               "specs": [
                 {
-                  "title": "1",
+                  "title": "Verify that user can delete the member calendar event",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 17338,
+                          "duration": 16949,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-23T12:33:07.380Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Clicked on available color: GREEN\n"
+                              "text": "[INFO] 2025-12-23T14:07:39.733Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-23T12:33:01.568Z",
+                          "startTime": "2025-12-23T14:07:34.803Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,13 +171,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3bc4d3b4a1bfca787ace-c33ab53d58f4b13a0fcc",
+                  "id": "3bc4d3b4a1bfca787ace-1d9f6ea604edd3902812",
                   "file": "calendarTest.spec.js",
-                  "line": 394,
+                  "line": 462,
                   "column": 9
-                },
+                }
+              ]
+            },
+            {
+              "title": "Calendar Personal Delete",
+              "file": "calendarTest.spec.js",
+              "line": 468,
+              "column": 19,
+              "specs": [
                 {
-                  "title": "2",
+                  "title": "Verify that user can delete the personal calendar event",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -198,12 +200,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8533,
+                          "duration": 15264,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-23T12:33:29.477Z",
+                          "startTime": "2025-12-23T14:08:01.134Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -211,159 +213,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3bc4d3b4a1bfca787ace-ec1def494a37d6882821",
+                  "id": "3bc4d3b4a1bfca787ace-63485088c3afe87a57f2",
                   "file": "calendarTest.spec.js",
-                  "line": 406,
-                  "column": 9
-                },
-                {
-                  "title": "3",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9660,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T12:33:38.034Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-88e55f74bcf62e1a7a20",
-                  "file": "calendarTest.spec.js",
-                  "line": 415,
-                  "column": 9
-                },
-                {
-                  "title": "4",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 14283,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T12:33:47.709Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-ef58b781cc0c0c9ec124",
-                  "file": "calendarTest.spec.js",
-                  "line": 424,
-                  "column": 9
-                },
-                {
-                  "title": "5",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 13758,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Clicked on available color: GREEN\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T12:34:02.019Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-d89871d3bd816ef5d0a4",
-                  "file": "calendarTest.spec.js",
-                  "line": 435,
-                  "column": 9
-                },
-                {
-                  "title": "6",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 13205,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Clicked on available color: GREEN\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T12:34:15.801Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-5f6808a8e3e0120bc0ae",
-                  "file": "calendarTest.spec.js",
-                  "line": 447,
+                  "line": 469,
                   "column": 9
                 }
               ]
@@ -375,9 +227,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-23T12:33:01.191Z",
-    "duration": 88223.295,
-    "expected": 6,
+    "startTime": "2025-12-23T14:07:34.400Z",
+    "duration": 42334.494,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -31,6 +31,11 @@ export default class CalendarEvent {
     
         this.addEvent = page.getByRole('button', { name: 'Add Event' });
         this.descriptionInput = page.locator('#description');
+        
+        this.createdEvent = page.locator('//button[@type="button"]//span[text()="Created-Events"]');
+        this.delete = page.locator('div.ant-card-body div.flex.justify-between.items-center button');
+        this.allEvent = page.locator('//button[@type="button"]//span[text()="All Events"]');
+        this.ok = page.locator('//div[@class="ant-modal-footer"]//button');
     }
 
     async clickCalendarTab(){
@@ -168,7 +173,7 @@ export default class CalendarEvent {
 
              /* ---------- External User ---------- */
             if (selectOutSiderUser == null) return; //skip if not passed
-            
+
              if (selectOutSiderUser === true){
                 if(!enterEmail){
                     throw new Error('enterEmail is required when selectOutSiderUser is true');
@@ -233,5 +238,23 @@ export default class CalendarEvent {
         await this.page.waitForTimeout(5000); 
     }
 
+    async deleteCalender(tabName){
+        await this.createdEvent.click();
 
+        if(tabName == 'Member'){
+            await this.page.locator('//div[@title="Invites-Sent"]').click();
+        } else if (tabName === 'Personal') {
+            await this.page.locator('//div[@title="Personal"]').click();
+        }
+
+        await this.delete.nth(1).click();
+        await this.page.waitForTimeout(2000);
+        if (await this.allEvent.isVisible()) {
+            await this.allEvent.click();
+        }
+        await this.page.locator('div.ant-modal-footer button').last().click();
+        await this.page.waitForTimeout(5000);
+        await this.page.locator('div.ant-modal-content button[aria-label="Close"]').first().click();
+    }
+       
 }

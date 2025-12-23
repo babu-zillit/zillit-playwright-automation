@@ -389,7 +389,7 @@ test.describe('Calendar', () => {
             
     });    
 
-    test.describe.only('Personal Calendar Full Day', () => {
+    test.describe('Personal Calendar Full Day', () => {
 
         test('1', async () => {
                     await calendarPage.createCalendar({
@@ -456,7 +456,21 @@ test.describe('Calendar', () => {
                     
         });
         
-    });    
+    }); 
+    
+    test.describe('Calendar Member Delete', () => {
+        test('Verify that user can delete the member calendar event', async () =>{
+            await calendarPage.deleteCalender('Member');
+        });
+
+    });
+
+    test.describe('Calendar Personal Delete', () => {
+        test('Verify that user can delete the personal calendar event', async () =>{
+            await calendarPage.deleteCalender('Personal');
+        });
+
+    });
 
 
 });

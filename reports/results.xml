@@ -1,48 +1,13 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="88.223295">
-<testsuite name="calendarTest.spec.js" timestamp="2025-12-23T12:33:01.220Z" hostname="chromium" tests="6" failures="0" skipped="0" time="76.777" errors="0">
-<testcase name="Calendar › Personal Calendar Full Day › 1" classname="calendarTest.spec.js" time="17.338">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="42.334494">
+<testsuite name="calendarTest.spec.js" timestamp="2025-12-23T14:07:34.463Z" hostname="chromium" tests="2" failures="0" skipped="0" time="32.213" errors="0">
+<testcase name="Calendar › Calendar Member Delete › Verify that user can delete the member calendar event" classname="calendarTest.spec.js" time="16.949">
 <system-out>
 <![CDATA[Current hostname is: qa.zillit.com
-[INFO] 2025-12-23T12:33:07.380Z - QA environment is started...
-Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
-]
-Clicked on available color: GREEN
+[INFO] 2025-12-23T14:07:39.733Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Calendar › Personal Calendar Full Day › 2" classname="calendarTest.spec.js" time="8.533">
-</testcase>
-<testcase name="Calendar › Personal Calendar Full Day › 3" classname="calendarTest.spec.js" time="9.66">
-</testcase>
-<testcase name="Calendar › Personal Calendar Full Day › 4" classname="calendarTest.spec.js" time="14.283">
-</testcase>
-<testcase name="Calendar › Personal Calendar Full Day › 5" classname="calendarTest.spec.js" time="13.758">
-<system-out>
-<![CDATA[Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
-]
-Clicked on available color: GREEN
-]]>
-</system-out>
-</testcase>
-<testcase name="Calendar › Personal Calendar Full Day › 6" classname="calendarTest.spec.js" time="13.205">
-<system-out>
-<![CDATA[Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
-]
-Clicked on available color: GREEN
-]]>
-</system-out>
+<testcase name="Calendar › Calendar Personal Delete › Verify that user can delete the personal calendar event" classname="calendarTest.spec.js" time="15.264">
 </testcase>
 </testsuite>
 </testsuites>

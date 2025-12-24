@@ -24,7 +24,7 @@ test.describe('Calendar', () => {
         await context.close();
     });
 
-    test.describe.only('Member Calendar', () => {
+    test.describe('Member Calendar', () => {
 
         test('Verify that user can create a event by filling all option', async () => {
                     await calendarPage.createCalendar({
@@ -61,7 +61,7 @@ test.describe('Calendar', () => {
                     });
 
         });
-        test('Verify that user can create an event by filling event name, all department, audio call', async () => {
+        test('Verify that user can create an event by filling event name, Invitees Type: all department, Call Type: audio call', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu3',
@@ -78,7 +78,7 @@ test.describe('Calendar', () => {
                     });
                     
         });
-        test('Verify that user can create an event by filling event name, select user, video call', async () => {
+        test('Verify that user can create an event by filling event name, Invitees Type: select user, Call Type: video call', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu5',
@@ -177,7 +177,7 @@ test.describe('Calendar', () => {
 
     test.describe('Member Calendar Full Day', () => {
 
-        test('1', async () => {
+        test('Verify that user can create a event by filling all option', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu1',
@@ -194,7 +194,7 @@ test.describe('Calendar', () => {
                         enterDescription: 'This is member event'
                     });
         });
-        test('2', async () => {
+        test('Verify that user can create a event by filling all option with changing the repeat status', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu2',
@@ -211,7 +211,7 @@ test.describe('Calendar', () => {
                         enterDescription: 'This is member event'
                     });
         });
-        test('3', async () => {
+        test('Verify that user can create an event by filling event name, Invitees Type: all department, Call Type: audio call', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu3',
@@ -220,7 +220,7 @@ test.describe('Calendar', () => {
                         selectCallType: 'Audio Call'
                     });     
         }); 
-        test('4', async () => {
+        test('Verify that user can create an event by filling event name, Invitees Type: select user, Call Type: audio call', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu4',
@@ -229,7 +229,7 @@ test.describe('Calendar', () => {
                         selectCallType: 'Audio Call'
                     });            
         });
-        test('5', async () => {
+        test('Verify that user can create an event by filling event name, Invitees Type: select user, Call Type: video call', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu5',
@@ -238,7 +238,7 @@ test.describe('Calendar', () => {
                         selectCallType: 'Video Call'
                     });                 
         });
-        test('6', async () => {
+        test('Verify that user can create an event by filling event name, Invitees Type: all department, Call Type: video call', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu6',
@@ -247,7 +247,7 @@ test.describe('Calendar', () => {
                         selectCallType: 'Video Call'
                     });             
         });
-        test('7', async () => {
+        test('Verify that user can create an event by filling event name, Repeat Status: Every Day, Invitees Type: all department, Call Type: audio call', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu7',
@@ -257,7 +257,7 @@ test.describe('Calendar', () => {
                         repeatStatusOption: 'Every Day',
                     });            
         });
-        test('8', async () => {
+        test('Verify that user can create an event by filling event name, Repeat Status: Every Day, Invitees Type: all department, Call Type: audio call, Notification: One Day Before', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu8',
@@ -268,7 +268,7 @@ test.describe('Calendar', () => {
                         notificationOption: 'One Week Before'
                     });               
         });
-        test('9', async () => {
+        test('Verify that user can create an event by filling event name, Repeat Status: Every Week, Invitees Type: all department, Call Type: audio call, Notification: One Week Before, Select location', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu9',
@@ -280,7 +280,7 @@ test.describe('Calendar', () => {
                         selectLocation: true,
                     });            
         });
-        test('10', async () => {
+        test('Verify that user can create an event by filling event name, Repeat Status: Every Week, Invitees Type: all department, Call Type: audio call, Notification: One Week Before, location, organizer included', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu10',
@@ -293,7 +293,7 @@ test.describe('Calendar', () => {
                         organizerIncluded: true,
                     });
         });
-        test('11', async () => {
+        test('Verify that user can create an event by filling event name, Repeat Status: Every Week, Invitees Type: all department, Call Type: audio call, Notification: One Week Before, location, organizer included, colour', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu11',
@@ -307,7 +307,7 @@ test.describe('Calendar', () => {
                         selectColour: true,
                     });
         });
-        test('12', async () => {
+        test('Verify that user can create an event by filling event name, Repeat Status: Every Week, Invitees Type: all department, Call Type: audio call, Notification: One Week Before, location, organizer included, colour, outsider', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Member',
                         eventName: 'Babu12',
@@ -328,7 +328,7 @@ test.describe('Calendar', () => {
 
     test.describe('Personal Calendar', () => {
 
-        test('1', async () => {
+        test('Verify that user can create a event by filling all option', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu1',
@@ -339,7 +339,7 @@ test.describe('Calendar', () => {
                         enterDescription: 'This is member event'
                     });
         });
-        test('2', async () => {
+        test('Verify that user can create a event by filling event name, repeat status: every day', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu2',
@@ -347,7 +347,7 @@ test.describe('Calendar', () => {
                     });
 
         });
-        test('3', async () => {
+        test('Verify that user can create a event by filling event name, repeat status: every day, notification: 5 min before', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu3',
@@ -355,7 +355,7 @@ test.describe('Calendar', () => {
                         notificationOption: '5 Minute Before',
                     });     
         }); 
-        test('4', async () => {
+        test('Verify that user can create a event by filling event name, repeat status: every day, notification: 5 min before, location', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu4',
@@ -365,7 +365,7 @@ test.describe('Calendar', () => {
                     });
                     
         });
-        test('5', async () => {
+        test('Verify that user can create a event by filling event name, notification: 5 min before, location, colour, description', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu5',
@@ -376,7 +376,7 @@ test.describe('Calendar', () => {
                     });
                     
         });
-        test('6', async () => {
+        test('Verify that user can create a event by filling event name, location, location, colour, description', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu6',
@@ -391,7 +391,7 @@ test.describe('Calendar', () => {
 
     test.describe('Personal Calendar Full Day', () => {
 
-        test('1', async () => {
+        test('Verify that user can create a event by filling all option', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu1',
@@ -403,7 +403,7 @@ test.describe('Calendar', () => {
                         enterDescription: 'This is member event'
                     });
         });
-        test('2', async () => {
+        test('Verify that user can create a event by filling event name, repeat status: every day', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu2',
@@ -412,7 +412,7 @@ test.describe('Calendar', () => {
                     });
 
         });
-        test('3', async () => {
+        test('Verify that user can create a event by filling event name, repeat status: every day, notification: 5 min before', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu3',
@@ -421,7 +421,7 @@ test.describe('Calendar', () => {
                         notificationOption: 'One Day Before',
                     });     
         }); 
-        test('4', async () => {
+        test('Verify that user can create a event by filling event name, repeat status: every day, notification: 5 min before, location', async () => {
                     await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu4',
@@ -432,7 +432,7 @@ test.describe('Calendar', () => {
                     });
                     
         });
-        test('5', async () => {
+        test('Verify that user can create a event by filling event name, notification: 5 min before, location, colour, description', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu5',
@@ -444,7 +444,7 @@ test.describe('Calendar', () => {
                     });
                     
         });
-        test('6', async () => {
+        test('Verify that user can create a event by filling event name, location, location, colour, description', async () => {
             await calendarPage.createCalendar({
                         eventType: 'Personal',
                         eventName: 'Babu6',

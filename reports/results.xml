@@ -1,68 +1,1054 @@
-<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="172.248042">
-<testsuite name="calendarTest.spec.js" timestamp="2025-12-23T14:33:08.211Z" hostname="chromium" tests="12" failures="0" skipped="0" time="157.621" errors="0">
-<testcase name="Calendar › Member Calendar › Verify that user can create a event by filling all option" classname="calendarTest.spec.js" time="18.875">
+<testsuites id="" name="" tests="75" failures="5" skipped="0" errors="0" time="471.991303">
+<testsuite name="homeUnitTest.spec.js" timestamp="2025-12-26T05:59:49.664Z" hostname="chromium" tests="75" failures="5" skipped="0" time="402.794" errors="0">
+<testcase name="Home Unit › Send Message › verify send a message" classname="homeUnitTest.spec.js" time="3.142">
 <system-out>
-<![CDATA[Current hostname is: qa.zillit.com
-[INFO] 2025-12-23T14:33:15.717Z - QA environment is started...
-Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
-]
-Clicked on available color: GREEN
+<![CDATA[[INFO] 2025-12-26T05:59:51.591Z - browser is launching
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-26T05:59:56.162Z - QA environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create a event by filling all option with changing the repeat status" classname="calendarTest.spec.js" time="17.052">
+<testcase name="Home Unit › Send Message › verify edit the message" classname="homeUnitTest.spec.js" time="2.249">
 <system-out>
-<![CDATA[Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
 ]
-Clicked on available color: GREEN
 ]]>
 </system-out>
 </testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call" classname="calendarTest.spec.js" time="9.33">
-</testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, select user, audio call" classname="calendarTest.spec.js" time="9.381">
-</testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, select user, video call" classname="calendarTest.spec.js" time="9.36">
-</testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, video call" classname="calendarTest.spec.js" time="9.2">
-</testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every day" classname="calendarTest.spec.js" time="10.527">
-</testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every day, 15 min before" classname="calendarTest.spec.js" time="10.133">
-</testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every week, 5 min before" classname="calendarTest.spec.js" time="15.126">
-</testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, video call, every week, 5 min before, organizer included" classname="calendarTest.spec.js" time="14.993">
-</testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour" classname="calendarTest.spec.js" time="16.742">
+<testcase name="Home Unit › Send Message › verify read by status on message" classname="homeUnitTest.spec.js" time="2.496">
 <system-out>
-<![CDATA[Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
 ]
-Clicked on available color: GREEN
 ]]>
 </system-out>
 </testcase>
-<testcase name="Calendar › Member Calendar › Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour, select outsider" classname="calendarTest.spec.js" time="16.902">
+<testcase name="Home Unit › Send Message › verify forward the message" classname="homeUnitTest.spec.js" time="6.196">
 <system-out>
-<![CDATA[Color options: [
-  [32m'RED'[39m,    [32m'BLUE'[39m,
-  [32m'GREEN'[39m,  [32m'ORANGE'[39m,
-  [32m'BROWN'[39m,  [32m'PINK'[39m,
-  [32m'PURPLE'[39m
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
 ]
-Clicked on available color: GREEN
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Message › verify reply to the message" classname="homeUnitTest.spec.js" time="1.56">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Message › verify the edit the reply message" classname="homeUnitTest.spec.js" time="2.485">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Message › verify the read by status on reply message" classname="homeUnitTest.spec.js" time="2.507">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Message › verify the delete the reply message" classname="homeUnitTest.spec.js" time="6.174">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Message › verify the forward to remote project" classname="homeUnitTest.spec.js" time="10.075">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Message › verify the delete message" classname="homeUnitTest.spec.js" time="5.913">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the send a image" classname="homeUnitTest.spec.js" time="2.821">
+</testcase>
+<testcase name="Home Unit › Send Image › verify the readBy status" classname="homeUnitTest.spec.js" time="2.337">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the forward" classname="homeUnitTest.spec.js" time="6.177">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the reply" classname="homeUnitTest.spec.js" time="1.159">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the edit reply" classname="homeUnitTest.spec.js" time="2.485">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the readBy reply" classname="homeUnitTest.spec.js" time="1.954">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the delete reply" classname="homeUnitTest.spec.js" time="4.553">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the save or download" classname="homeUnitTest.spec.js" time="8.369">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the distribute" classname="homeUnitTest.spec.js" time="15.94">
+<failure message="homeUnitTest.spec.js:108:9 verify the distribute" type="FAILURE">
+<![CDATA[  [chromium] › homeUnitTest.spec.js:108:9 › Home Unit › Send Image › verify the distribute ─────────
+
+    Error: Timed out 15000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Media distributed successfully.')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for locator('text=Media distributed successfully.')
+
+
+       at ../actions/media-uploader.js:175
+
+      173 |
+      174 |         const popup = this.page.locator("text=Media distributed successfully.");
+    > 175 |         await expect(popup).toBeVisible({timeout: 15000});
+          |                             ^
+      176 |         await expect(popup).toBeHidden({timeout: 15000});
+      177 |     }
+      178 |
+        at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:109:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2025-12-26T06:01:30.183Z - close browser
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the forward to remote project" classname="homeUnitTest.spec.js" time="9.704">
+<system-out>
+<![CDATA[[INFO] 2025-12-26T06:01:32.844Z - browser is launching
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-26T06:01:36.713Z - QA environment is started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image › verify the delete image" classname="homeUnitTest.spec.js" time="5.783">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the send a video" classname="homeUnitTest.spec.js" time="2.365">
+</testcase>
+<testcase name="Home Unit › Send Video › verify the readBy status" classname="homeUnitTest.spec.js" time="2.311">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the forward" classname="homeUnitTest.spec.js" time="6.224">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the reply" classname="homeUnitTest.spec.js" time="1.057">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the edit reply" classname="homeUnitTest.spec.js" time="2.119">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the readBy reply" classname="homeUnitTest.spec.js" time="2.025">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the delete reply" classname="homeUnitTest.spec.js" time="4.493">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the save or download" classname="homeUnitTest.spec.js" time="6.419">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the distribute" classname="homeUnitTest.spec.js" time="15.957">
+<failure message="homeUnitTest.spec.js:157:9 verify the distribute" type="FAILURE">
+<![CDATA[  [chromium] › homeUnitTest.spec.js:157:9 › Home Unit › Send Video › verify the distribute ─────────
+
+    Error: Timed out 15000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Media distributed successfully.')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for locator('text=Media distributed successfully.')
+
+
+       at ../actions/media-uploader.js:175
+
+      173 |
+      174 |         const popup = this.page.locator("text=Media distributed successfully.");
+    > 175 |         await expect(popup).toBeVisible({timeout: 15000});
+          |                             ^
+      176 |         await expect(popup).toBeHidden({timeout: 15000});
+      177 |     }
+      178 |
+        at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:158:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2025-12-26T06:02:40.347Z - close browser
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the forward to remote project" classname="homeUnitTest.spec.js" time="10.482">
+<system-out>
+<![CDATA[[INFO] 2025-12-26T06:02:42.509Z - browser is launching
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-26T06:02:46.142Z - QA environment is started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Video › verify the delete video" classname="homeUnitTest.spec.js" time="5.902">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the send a audio" classname="homeUnitTest.spec.js" time="2.308">
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the readBy status" classname="homeUnitTest.spec.js" time="2.316">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the forward" classname="homeUnitTest.spec.js" time="6.132">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the reply" classname="homeUnitTest.spec.js" time="1.583">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the edit reply" classname="homeUnitTest.spec.js" time="2.502">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the readBy reply" classname="homeUnitTest.spec.js" time="1.969">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the delete reply" classname="homeUnitTest.spec.js" time="4.673">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the save or download" classname="homeUnitTest.spec.js" time="7.268">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the distribute" classname="homeUnitTest.spec.js" time="16.198">
+<failure message="homeUnitTest.spec.js:205:9 verify the distribute" type="FAILURE">
+<![CDATA[  [chromium] › homeUnitTest.spec.js:205:9 › Home Unit › Send Audio › verify the distribute ─────────
+
+    Error: Timed out 15000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Media distributed successfully.')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for locator('text=Media distributed successfully.')
+
+
+       at ../actions/media-uploader.js:175
+
+      173 |
+      174 |         const popup = this.page.locator("text=Media distributed successfully.");
+    > 175 |         await expect(popup).toBeVisible({timeout: 15000});
+          |                             ^
+      176 |         await expect(popup).toBeHidden({timeout: 15000});
+      177 |     }
+      178 |
+        at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:206:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2025-12-26T06:03:52.728Z - close browser
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the forward to remote project" classname="homeUnitTest.spec.js" time="11.175">
+<system-out>
+<![CDATA[[INFO] 2025-12-26T06:03:54.696Z - browser is launching
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-26T06:03:58.330Z - QA environment is started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Audio › verify the delete audio" classname="homeUnitTest.spec.js" time="5.83">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the send a document" classname="homeUnitTest.spec.js" time="1.032">
+</testcase>
+<testcase name="Home Unit › Send Document › verify the readBy status" classname="homeUnitTest.spec.js" time="3.698">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the forward" classname="homeUnitTest.spec.js" time="6.248">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the reply" classname="homeUnitTest.spec.js" time="1.325">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the edit reply" classname="homeUnitTest.spec.js" time="2.572">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the readBy reply" classname="homeUnitTest.spec.js" time="2.041">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the delete reply" classname="homeUnitTest.spec.js" time="6.141">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the save or download" classname="homeUnitTest.spec.js" time="7.244">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the distribute" classname="homeUnitTest.spec.js" time="15.987">
+<failure message="homeUnitTest.spec.js:253:9 verify the distribute" type="FAILURE">
+<![CDATA[  [chromium] › homeUnitTest.spec.js:253:9 › Home Unit › Send Document › verify the distribute ──────
+
+    Error: Timed out 15000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Media distributed successfully.')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for locator('text=Media distributed successfully.')
+
+
+       at ../actions/media-uploader.js:175
+
+      173 |
+      174 |         const popup = this.page.locator("text=Media distributed successfully.");
+    > 175 |         await expect(popup).toBeVisible({timeout: 15000});
+          |                             ^
+      176 |         await expect(popup).toBeHidden({timeout: 15000});
+      177 |     }
+      178 |
+        at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:254:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2025-12-26T06:05:06.983Z - close browser
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the forward to remote project" classname="homeUnitTest.spec.js" time="10.364">
+<system-out>
+<![CDATA[[INFO] 2025-12-26T06:05:08.925Z - browser is launching
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-26T06:05:12.535Z - QA environment is started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Document › verify the delete document" classname="homeUnitTest.spec.js" time="5.971">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Location › verify the send a location" classname="homeUnitTest.spec.js" time="7.266">
+</testcase>
+<testcase name="Home Unit › Send Location › verify the readBy status" classname="homeUnitTest.spec.js" time="2.536">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Location › verify the forward" classname="homeUnitTest.spec.js" time="5.766">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Location › verify the reply" classname="homeUnitTest.spec.js" time="1.472">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Location › verify the edit reply" classname="homeUnitTest.spec.js" time="2.556">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Location › verify the readBy reply" classname="homeUnitTest.spec.js" time="2.399">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Location › verify the delete reply" classname="homeUnitTest.spec.js" time="5.986">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Location › verify the forward to remote project" classname="homeUnitTest.spec.js" time="11.913">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Location › verify the delete location" classname="homeUnitTest.spec.js" time="6.011">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the send a voiceOver" classname="homeUnitTest.spec.js" time="2.541">
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the readBy status" classname="homeUnitTest.spec.js" time="3.546">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the forward" classname="homeUnitTest.spec.js" time="5.857">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the reply" classname="homeUnitTest.spec.js" time="1.54">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the edit reply" classname="homeUnitTest.spec.js" time="2.168">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the readBy reply" classname="homeUnitTest.spec.js" time="1.981">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the delete reply" classname="homeUnitTest.spec.js" time="6.028">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the save or download" classname="homeUnitTest.spec.js" time="7.314">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+✅ Pressed Return successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the distribute" classname="homeUnitTest.spec.js" time="16.064">
+<failure message="homeUnitTest.spec.js:340:9 verify the distribute" type="FAILURE">
+<![CDATA[  [chromium] › homeUnitTest.spec.js:340:9 › Home Unit › Send VoiceOver › verify the distribute ─────
+
+    Error: Timed out 15000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Media distributed successfully.')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for locator('text=Media distributed successfully.')
+
+
+       at ../actions/media-uploader.js:175
+
+      173 |
+      174 |         const popup = this.page.locator("text=Media distributed successfully.");
+    > 175 |         await expect(popup).toBeVisible({timeout: 15000});
+          |                             ^
+      176 |         await expect(popup).toBeHidden({timeout: 15000});
+      177 |     }
+      178 |
+        at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:341:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2025-12-26T06:07:07.674Z - close browser
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the forward to remote project" classname="homeUnitTest.spec.js" time="11.074">
+<system-out>
+<![CDATA[[INFO] 2025-12-26T06:07:10.615Z - browser is launching
+Current hostname is: qa.zillit.com
+[INFO] 2025-12-26T06:07:14.322Z - QA environment is started...
+Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send VoiceOver › verify the delete audio" classname="homeUnitTest.spec.js" time="5.912">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Unit › Send Image Reply › verify send a image reply" classname="homeUnitTest.spec.js" time="4.854">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Save'[39m,
+  [32m'Image Reply'[39m,
+  [32m'Read By'[39m,
+  [32m'Distribute'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2025-12-26T06:07:41.208Z - close browser
 ]]>
 </system-out>
 </testcase>

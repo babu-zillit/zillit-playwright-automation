@@ -116,27 +116,27 @@
   },
   "suites": [
     {
-      "title": "calendarTest.spec.js",
-      "file": "calendarTest.spec.js",
+      "title": "homeUnitTest.spec.js",
+      "file": "homeUnitTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Calendar",
-          "file": "calendarTest.spec.js",
-          "line": 7,
+          "title": "Home Unit",
+          "file": "homeUnitTest.spec.js",
+          "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Member Calendar",
-              "file": "calendarTest.spec.js",
-              "line": 27,
-              "column": 19,
+              "title": "Send Message",
+              "file": "homeUnitTest.spec.js",
+              "line": 28,
+              "column": 10,
               "specs": [
                 {
-                  "title": "Verify that user can create a event by filling all option",
+                  "title": "verify send a message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -151,25 +151,22 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 18875,
+                          "duration": 3142,
                           "errors": [],
                           "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-26T05:59:51.591Z - browser is launching\n"
+                            },
                             {
                               "text": "Current hostname is: qa.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2025-12-23T14:33:15.717Z - QA environment is started...\n"
-                            },
-                            {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Clicked on available color: GREEN\n"
+                              "text": "[INFO] 2025-12-26T05:59:56.162Z - QA environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-23T14:33:08.565Z",
+                          "startTime": "2025-12-26T05:59:50.012Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -177,13 +174,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3bc4d3b4a1bfca787ace-cb724cfe0afe11bc9ca5",
-                  "file": "calendarTest.spec.js",
-                  "line": 29,
+                  "id": "14c24c8c854131bd6d9e-56accf70d37d4b21cb39",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 30,
                   "column": 9
                 },
                 {
-                  "title": "Verify that user can create a event by filling all option with changing the repeat status",
+                  "title": "verify edit the message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -198,19 +195,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 17052,
+                          "duration": 2249,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Clicked on available color: GREEN\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-23T14:33:40.751Z",
+                          "startTime": "2025-12-26T06:00:04.253Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -218,13 +212,127 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3bc4d3b4a1bfca787ace-37f4721789cb2aa805e4",
-                  "file": "calendarTest.spec.js",
+                  "id": "14c24c8c854131bd6d9e-88279829ce408d73039c",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 34,
+                  "column": 9
+                },
+                {
+                  "title": "verify read by status on message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2496,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:06.519Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-5b1cbcf2f7efd517ca61",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 38,
+                  "column": 9
+                },
+                {
+                  "title": "verify forward the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6196,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:09.023Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-b726dbe465759081a1c4",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 42,
+                  "column": 9
+                },
+                {
+                  "title": "verify reply to the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1560,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:15.232Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-edd920359673134d5384",
+                  "file": "homeUnitTest.spec.js",
                   "line": 46,
                   "column": 9
                 },
                 {
-                  "title": "Verify that user can create an event by filling event name, all department, audio call",
+                  "title": "verify the edit the reply message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -239,291 +347,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 9330,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T14:33:57.818Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-9a3c503cc2d18de2cf59",
-                  "file": "calendarTest.spec.js",
-                  "line": 64,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can create an event by filling event name, select user, audio call",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9381,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T14:34:07.158Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-994c50c2d4aefab55928",
-                  "file": "calendarTest.spec.js",
-                  "line": 72,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can create an event by filling event name, select user, video call",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9360,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T14:34:16.558Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-96c55680e83471b4a5ca",
-                  "file": "calendarTest.spec.js",
-                  "line": 81,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can create an event by filling event name, all department, video call",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9200,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T14:34:25.951Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-37430493d99c8fc6e584",
-                  "file": "calendarTest.spec.js",
-                  "line": 90,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can create an event by filling event name, all department, audio call, every day",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10527,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T14:34:35.168Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-134238a44203a5fdf09c",
-                  "file": "calendarTest.spec.js",
-                  "line": 99,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can create an event by filling event name, all department, audio call, every day, 15 min before",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10133,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T14:34:45.717Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-0bebd9867915aa2762ff",
-                  "file": "calendarTest.spec.js",
-                  "line": 109,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can create an event by filling event name, all department, audio call, every week, 5 min before",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 15126,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T14:34:55.874Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-26455af47348fdc8f6ab",
-                  "file": "calendarTest.spec.js",
-                  "line": 120,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can create an event by filling event name, all department, video call, every week, 5 min before, organizer included",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 14993,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2025-12-23T14:35:11.021Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3bc4d3b4a1bfca787ace-6cef21add22f3673218f",
-                  "file": "calendarTest.spec.js",
-                  "line": 132,
-                  "column": 9
-                },
-                {
-                  "title": "Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 16742,
+                          "duration": 2485,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Clicked on available color: GREEN\n"
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-23T14:35:26.036Z",
+                          "startTime": "2025-12-26T06:00:16.810Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -531,13 +364,874 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3bc4d3b4a1bfca787ace-8a6a5d1ce05be59590a8",
-                  "file": "calendarTest.spec.js",
+                  "id": "14c24c8c854131bd6d9e-991cf00685c1918cfb0a",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 50,
+                  "column": 9
+                },
+                {
+                  "title": "verify the read by status on reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2507,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:19.306Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-db2ce8d97e106cc07e14",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 54,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete the reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6174,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:21.819Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-0d8c23b5fcf3b9efbf05",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 58,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10075,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:28.005Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-b89c638dec83852a42e9",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 62,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5913,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:38.093Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-163a733f1c873b618dcc",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 66,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Image",
+              "file": "homeUnitTest.spec.js",
+              "line": 73,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2821,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:44.023Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-457a4948b14d1852fc46",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 74,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2337,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:46.861Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-25b36052a6c33afaeadc",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6177,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:49.209Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-342902a079c4204cc242",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 84,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1159,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:55.396Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-a397ab3d4b8828291456",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 88,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2485,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:56.571Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-afbe11a8027c9c840cab",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 92,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1954,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:00:59.073Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-cdd259395c7c1b39cf0b",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 96,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4553,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:01:01.035Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-ef901b8cd28896908d4b",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 100,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8369,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "✅ Pressed Return successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:01:05.599Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-214684638258340bf4c1",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 104,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 15940,
+                          "error": {
+                            "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:109:13",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                              "column": 29,
+                              "line": 175
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                                "column": 29,
+                                "line": 175
+                              },
+                              "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m\n\u001b[2m    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:109:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:01:30.183Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:01:13.985Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-0",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Image-verify-the-distribute-chromium/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                            "column": 29,
+                            "line": 175
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-e88cf4b05c1734bc85cd",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 108,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9704,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-26T06:01:32.844Z - browser is launching\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:01:36.713Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:01:32.150Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-cc450f8c6fa4f10a7f16",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 112,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5783,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:01:51.198Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-fbd0c6ad64e103e4d504",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 116,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Video",
+              "file": "homeUnitTest.spec.js",
+              "line": 122,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a video",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2365,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:01:57.004Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-5a231377af953a38fdb4",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 123,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2311,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:01:59.396Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-74bcb68e9ed431982896",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 129,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6224,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:02:01.716Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-2c1f0b2957a2bbc1416d",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 133,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1057,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:02:07.952Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-856a9eaee12a89cafbd1",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 137,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2119,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:02:09.024Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-202722a7343a0380a1bc",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 141,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2025,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:02:11.157Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-8f6a912662ba494558e2",
+                  "file": "homeUnitTest.spec.js",
                   "line": 145,
                   "column": 9
                 },
                 {
-                  "title": "Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour, select outsider",
+                  "title": "verify the delete reply",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -549,22 +1243,19 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 16902,
+                          "duration": 4493,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Color options: [\n  \u001b[32m'RED'\u001b[39m,    \u001b[32m'BLUE'\u001b[39m,\n  \u001b[32m'GREEN'\u001b[39m,  \u001b[32m'ORANGE'\u001b[39m,\n  \u001b[32m'BROWN'\u001b[39m,  \u001b[32m'PINK'\u001b[39m,\n  \u001b[32m'PURPLE'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "Clicked on available color: GREEN\n"
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-23T14:35:42.803Z",
+                          "startTime": "2025-12-26T06:02:13.192Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -572,9 +1263,2042 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3bc4d3b4a1bfca787ace-266f43292ad610aae4ac",
-                  "file": "calendarTest.spec.js",
-                  "line": 159,
+                  "id": "14c24c8c854131bd6d9e-18867cdb15e239d672b6",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 149,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6419,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "✅ Pressed Return successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:02:17.696Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-691161bb9f9ce7028620",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 153,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 15957,
+                          "error": {
+                            "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:158:13",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                              "column": 29,
+                              "line": 175
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                                "column": 29,
+                                "line": 175
+                              },
+                              "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m\n\u001b[2m    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:158:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:02:40.347Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:02:24.131Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-0",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Video-verify-the-distribute-chromium/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                            "column": 29,
+                            "line": 175
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-c3634647a8655a236771",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 157,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10482,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-26T06:02:42.509Z - browser is launching\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:02:46.142Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:02:41.863Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-84f96f56fd5dce42c2b7",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 161,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete video",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5902,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:01.439Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-a1b8318e69e2a67b1285",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 165,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Audio",
+              "file": "homeUnitTest.spec.js",
+              "line": 171,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a audio",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2308,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:07.353Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-da6037548124f2491bea",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 172,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2316,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:09.760Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-017a8c4efe00eda67c6e",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 177,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6132,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:12.096Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-3b9304d7d40f9ac503c5",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 181,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1583,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:18.242Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-147b676d0884d74496dc",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 185,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2502,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:19.840Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-98df905ccf99ef1d739a",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 189,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1969,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:22.358Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-0530b882172b27cd3e38",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 193,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4673,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:24.338Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-ad9c7046f12e4005ac42",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 197,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7268,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "✅ Pressed Return successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:29.022Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-2b92fd9c50fbc7c4141b",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 201,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 16198,
+                          "error": {
+                            "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:206:13",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                              "column": 29,
+                              "line": 175
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                                "column": 29,
+                                "line": 175
+                              },
+                              "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m\n\u001b[2m    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:206:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:03:52.728Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:36.305Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-0",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Audio-verify-the-distribute-chromium/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                            "column": 29,
+                            "line": 175
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-46fc53a509eba313e144",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 205,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11175,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-26T06:03:54.696Z - browser is launching\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:03:58.330Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:03:54.085Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-09af9d71646016c5bacf",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 209,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete audio",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5830,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:14.483Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-54f417688934277bc543",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 213,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Document",
+              "file": "homeUnitTest.spec.js",
+              "line": 219,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1032,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:20.327Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-c1a815cd938c5100d614",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 220,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3698,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:21.383Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-96b1da98b91dbfce5af0",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 225,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6248,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:25.096Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-5e5a134dfaf430113f4b",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 229,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1325,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:31.353Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-f5c5b24478f6b2dc8650",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 233,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2572,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:32.694Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-2112d50f4a1cf9057d7d",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 237,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2041,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:35.293Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-5d7144532af8cb786977",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 241,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6141,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:37.351Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-dbeb0835f337e486f00e",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 245,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7244,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "✅ Pressed Return successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:43.499Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-64f93ddf4285f586a76d",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 249,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 15987,
+                          "error": {
+                            "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:254:13",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                              "column": 29,
+                              "line": 175
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                                "column": 29,
+                                "line": 175
+                              },
+                              "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m\n\u001b[2m    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:254:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:05:06.983Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:04:50.772Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-0",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-Document-verify-the-distribute-chromium/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                            "column": 29,
+                            "line": 175
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-bb962f19005780189f2b",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 253,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10364,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-26T06:05:08.925Z - browser is launching\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:05:12.535Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:05:08.321Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-2152c0645fe49f33e1ea",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 257,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete document",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5971,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:05:27.891Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-0b7f14e6c4fbc935d27c",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 261,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Location",
+              "file": "homeUnitTest.spec.js",
+              "line": 267,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a location",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7266,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:05:33.873Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-9dfbac6251b41fc62a6f",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 268,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2536,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:05:41.153Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-57e412fb9c161e9719b3",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 273,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5766,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:05:43.698Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-e24d469f6216e0e9eed6",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 277,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1472,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:05:49.477Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-60c4645c392335196c2a",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 281,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2556,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:05:50.964Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-cabb1a70a5282a2b91ba",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 285,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2399,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:05:53.529Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-b1df6673237c3fded3c0",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 289,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5986,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:05:55.940Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-08d47c6df26476da2f74",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 293,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11913,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:01.937Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-fa0582353a7b102ec780",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 297,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete location",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6011,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:13.861Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-ee84ca02da808e2690ab",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 301,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send VoiceOver",
+              "file": "homeUnitTest.spec.js",
+              "line": 307,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify the send a voiceOver",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2541,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:19.890Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-45e83c163655a41cac0c",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 308,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy status",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3546,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:22.448Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-cfc5e0ed8cb0f75dc4a3",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 312,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5857,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:26.010Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-03b1f414643ab580eb07",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 316,
+                  "column": 9
+                },
+                {
+                  "title": "verify the reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1540,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:31.884Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-9f713d37590133f84193",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 320,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2168,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:33.437Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-342479aa4ae44ffa1551",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 324,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1981,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:35.612Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-140ecea22cb5df016fde",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 328,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6028,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:37.598Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-3226bf9875e25bcb9aaa",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 332,
+                  "column": 9
+                },
+                {
+                  "title": "verify the save or download",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7314,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "✅ Pressed Return successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:43.637Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-8ee276332c1ed3cf807e",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 336,
+                  "column": 9
+                },
+                {
+                  "title": "verify the distribute",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 16064,
+                          "error": {
+                            "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:341:13",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                              "column": 29,
+                              "line": 175
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                                "column": 29,
+                                "line": 175
+                              },
+                              "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Media distributed successfully.')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Media distributed successfully.')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../actions/media-uploader.js:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Media distributed successfully.\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     }\n \u001b[90m 178 |\u001b[39m\u001b[0m\n\u001b[2m    at UploadMedia.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:175:29)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/homeUnitTest.spec.js:341:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:07:07.674Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:06:50.969Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-0",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/homeUnitTest-Home-Unit-Send-VoiceOver-verify-the-distribute-chromium/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js",
+                            "column": 29,
+                            "line": 175
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-4fc317edbace9a12f592",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 340,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11074,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2025-12-26T06:07:10.615Z - browser is launching\n"
+                            },
+                            {
+                              "text": "Current hostname is: qa.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:07:14.322Z - QA environment is started...\n"
+                            },
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:07:09.917Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-332d9e96da84ad1c4765",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 344,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete audio",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5912,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:07:30.398Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-3086d217863b3fc77fec",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 348,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Send Image Reply",
+              "file": "homeUnitTest.spec.js",
+              "line": 354,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify send a image reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4854,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Save'\u001b[39m,\n  \u001b[32m'Image Reply'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Distribute'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "[INFO] 2025-12-26T06:07:41.208Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-26T06:07:36.322Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "14c24c8c854131bd6d9e-bc584c61d930a21f7db6",
+                  "file": "homeUnitTest.spec.js",
+                  "line": 355,
                   "column": 9
                 }
               ]
@@ -586,11 +3310,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-23T14:33:08.180Z",
-    "duration": 172248.042,
-    "expected": 12,
+    "startTime": "2025-12-26T05:59:49.530Z",
+    "duration": 471991.303,
+    "expected": 70,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 5,
     "flaky": 0
   }
 }

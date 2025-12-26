@@ -95,7 +95,7 @@ export default class UploadMedia {
     }
 
     async homeUnitTab(){
-        await this.page.locator('[role="tab"]').nth(3).click();
+        await this.page.locator('[role="tab"]').last().click();
     }
 
     async handleDropdownAction(optionText){

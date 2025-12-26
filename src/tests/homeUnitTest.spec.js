@@ -304,6 +304,53 @@ test.describe('Home Unit', () => {
 
     });
 
+    test.describe('Send VoiceOver', () => {
+        test('verify the send a voiceOver', async () => {
+            await uploadmedia.voiceOverRecord();
+        });
+
+        test('verify the readBy status', async () => {
+            await uploadmedia.readBy();
+        });
+
+        test('verify the forward', async () => {
+            await uploadmedia.forward();
+        });
+
+        test('verify the reply', async () => {
+            await uploadmedia.reply();
+        });
+
+        test('verify the edit reply', async () => {
+            await uploadmedia.editReply();
+        });
+
+        test('verify the readBy reply', async () => {
+            await uploadmedia.readByReply();
+        });
+
+        test('verify the delete reply', async () => {
+            await uploadmedia.deleteReply();
+        });
+
+        test('verify the save or download', async () => {
+            await uploadmedia.save();
+        });
+
+        test('verify the distribute', async () => {
+            await uploadmedia.distribute();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
+        test('verify the delete audio', async () => {
+            await uploadmedia.delete();
+        });
+
+    });
+
     test.describe('Send Image Reply', () => {
         test('verify send a image reply', async () => {
             await uploadmedia.clickAttachment();

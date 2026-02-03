@@ -165,5 +165,5 @@ test.describe('Location', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/23_locationTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/23_locationTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/location.spec.js --project=chromium --headed
    */ 

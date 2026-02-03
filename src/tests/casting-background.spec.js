@@ -98,7 +98,7 @@ test.describe('Casting', () => {
     
     });
 
-    test.describe.only('Send Message', () => {
+    test.describe('Send Message', () => {
 
         test('verify send a message', async () => {
             await castingPage.chat();
@@ -218,7 +218,7 @@ test.describe('Casting', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/22_casting-backgroundTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/casting-background.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/22_casting-backgroundTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/casting-background.spec.js --project=chromium --headed
    */ 

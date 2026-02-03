@@ -108,27 +108,27 @@
   },
   "suites": [
     {
-      "title": "crew-list-asset-report.spec.js",
-      "file": "crew-list-asset-report.spec.js",
+      "title": "costume-background.spec.js",
+      "file": "costume-background.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Crew List → Asset Report",
-          "file": "crew-list-asset-report.spec.js",
-          "line": 6,
+          "title": "Costume",
+          "file": "costume-background.spec.js",
+          "line": 8,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Crew List",
-              "file": "crew-list-asset-report.spec.js",
-              "line": 33,
+              "title": "Send Message",
+              "file": "costume-background.spec.js",
+              "line": 37,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user generate the crew list",
+                  "title": "verify send a message",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -143,28 +143,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 20375,
+                          "duration": 15662,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-03T08:14:42.170Z - browser is launching\n"
+                              "text": "[INFO] 2026-02-03T10:13:50.170Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T08:14:47.663Z - open the project\n"
+                              "text": "[INFO] 2026-02-03T10:13:56.538Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T08:14:47.663Z - Production environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-03T08:15:02.156Z - close browser\n"
+                              "text": "[INFO] 2026-02-03T10:13:56.538Z - Production environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T08:14:41.317Z",
+                          "startTime": "2026-02-03T10:13:49.372Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -172,21 +169,225 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "a1674e3d83dd52b1836c-027020fd707b00dc9b40",
-                  "file": "crew-list-asset-report.spec.js",
-                  "line": 35,
+                  "id": "9b9a6748381ecb31a7b6-fcac7f20da1548c42c1e",
+                  "file": "costume-background.spec.js",
+                  "line": 39,
+                  "column": 9
+                },
+                {
+                  "title": "verify edit the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1444,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:16.591Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-1654db8e17275056c2d6",
+                  "file": "costume-background.spec.js",
+                  "line": 44,
+                  "column": 9
+                },
+                {
+                  "title": "verify read by status on message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1658,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:18.044Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-13583644745104116c5a",
+                  "file": "costume-background.spec.js",
+                  "line": 49,
+                  "column": 9
+                },
+                {
+                  "title": "verify forward the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5711,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:19.711Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-a5d7d1146daa3e0c1f4a",
+                  "file": "costume-background.spec.js",
+                  "line": 54,
+                  "column": 9
+                },
+                {
+                  "title": "verify reply to the message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1055,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:25.433Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-684b24bbbf46af9ff36e",
+                  "file": "costume-background.spec.js",
+                  "line": 59,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8754,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:26.502Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-14029ca93c3d360f738c",
+                  "file": "costume-background.spec.js",
+                  "line": 64,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5501,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:35.265Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-2afc172292a0a2a65839",
+                  "file": "costume-background.spec.js",
+                  "line": 69,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Asset Report",
-              "file": "crew-list-asset-report.spec.js",
-              "line": 41,
+              "title": "Costume in fittings",
+              "file": "costume-background.spec.js",
+              "line": 77,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user generate the asset report",
+                  "title": "verify upload costume in fittings",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -201,28 +402,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 14222,
+                          "duration": 6803,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2026-02-03T08:15:02.548Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-03T08:15:07.551Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: web.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-03T08:15:07.551Z - Production environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-03T08:15:16.553Z - close browser\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T08:15:02.546Z",
+                          "startTime": "2026-02-03T10:14:40.779Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -230,9 +415,377 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "a1674e3d83dd52b1836c-7b22b71a4274cbe80341",
-                  "file": "crew-list-asset-report.spec.js",
-                  "line": 43,
+                  "id": "9b9a6748381ecb31a7b6-eea0ee458cd4842c7f42",
+                  "file": "costume-background.spec.js",
+                  "line": 79,
+                  "column": 9
+                },
+                {
+                  "title": "verify open folder > see image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2152,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:47.597Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-343a872bd088a4307422",
+                  "file": "costume-background.spec.js",
+                  "line": 83,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "upload costume in shortlist",
+              "file": "costume-background.spec.js",
+              "line": 90,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify uploading costume in shortlist",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6487,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:49.766Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-a592c02a06e4a628b9c5",
+                  "file": "costume-background.spec.js",
+                  "line": 92,
+                  "column": 9
+                },
+                {
+                  "title": "verify open folder > see image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1633,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:56.271Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-16c4e880791a5317e0d8",
+                  "file": "costume-background.spec.js",
+                  "line": 97,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "upload costume in finals",
+              "file": "costume-background.spec.js",
+              "line": 106,
+              "column": 11,
+              "specs": [
+                {
+                  "title": "verify uploading costume in finals",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7111,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:14:57.916Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-57ca3f4ff089f1846a54",
+                  "file": "costume-background.spec.js",
+                  "line": 108,
+                  "column": 9
+                },
+                {
+                  "title": "verify open folder > see image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1581,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:15:05.037Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-0a5a6f9af41c8f258afb",
+                  "file": "costume-background.spec.js",
+                  "line": 113,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Delete & move to shortlist , move to final from selects",
+              "file": "costume-background.spec.js",
+              "line": 121,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify costume move to shortlist",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11294,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
+                            },
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:15:06.632Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-2227c004e645f1c5e2be",
+                  "file": "costume-background.spec.js",
+                  "line": 123,
+                  "column": 9
+                },
+                {
+                  "title": "verify delete the costume folder from selects",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5053,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:15:17.937Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-1718c4fd26e5d55b6a06",
+                  "file": "costume-background.spec.js",
+                  "line": 129,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Delete from shortlist",
+              "file": "costume-background.spec.js",
+              "line": 135,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user delete the costume folder from the shortlist",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6033,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:15:23.003Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-f7a11aa9be1205227ecb",
+                  "file": "costume-background.spec.js",
+                  "line": 137,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Delete from Finals",
+              "file": "costume-background.spec.js",
+              "line": 144,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user deletes the costume folder from finals",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6037,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown Items: [ \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-03T10:15:35.114Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:15:29.051Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9b9a6748381ecb31a7b6-4dcbf81c16b07810f368",
+                  "file": "costume-background.spec.js",
+                  "line": 146,
                   "column": 9
                 }
               ]
@@ -244,9 +797,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-03T08:14:40.962Z",
-    "duration": 35986.394,
-    "expected": 2,
+    "startTime": "2026-02-03T10:13:49.007Z",
+    "duration": 106730.941,
+    "expected": 17,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

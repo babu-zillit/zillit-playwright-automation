@@ -1,5 +1,6 @@
 import { test } from '@playwright/test';
 import Costume from "../pages/costume";
+import Casting from '../pages/casting';
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 import { copyFile } from 'fs';
@@ -9,6 +10,7 @@ test.describe('Costume', () => {
     let page;
     let uploadmedia;
     let costumePage;
+    let castingPage;
 
     test.beforeAll(async ({ browser }) => {
         logger.info("browser is launching");
@@ -19,6 +21,7 @@ test.describe('Costume', () => {
         
         uploadmedia = new UploadMedia(page);
         costumePage = new Costume(page);
+        castingPage = new Casting(page);
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
@@ -31,10 +34,49 @@ test.describe('Costume', () => {
     });
 
 
+    test.describe('Send Message', () => {
 
-    test.describe('Costume', () => {
+        test('verify send a message', async () => {
+            await costumePage.chat();
+            await uploadmedia.sendMessage();
+        });  
+    
+        test('verify edit the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.edit();
+        });
 
-        test('verify uploadLocation', async () => {
+        test('verify read by status on message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.readBy();
+        });
+
+        test('verify forward the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.forwards();
+        });
+
+        test('verify reply to the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.reply();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.forwardRemoteProject();
+        });
+
+        test('verify the delete message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.delete();
+        });
+
+    });
+
+
+    test.describe('Costume in fittings', () => {
+
+        test('verify upload costume in fittings', async () => {
             await costumePage.uploadCostume('9', '1');
         }); 
 
@@ -78,13 +120,13 @@ test.describe('Costume', () => {
 
     test.describe('Delete & move to shortlist , move to final from selects', () => {
 
-        test('verify location move to shortlist', async () => {
+        test('verify costume move to shortlist', async () => {
             await costumePage.selectsTab(); 
             await costumePage.moveToShortlistFromSelects();
             await costumePage.moveToFinalFromSelects(); 
         });
 
-        test('verify delete the location folder from selects', async () => {
+        test('verify delete the costume folder from selects', async () => {
             await costumePage.deleteFromSelects();
         });
     
@@ -92,7 +134,7 @@ test.describe('Costume', () => {
 
     test.describe('Delete from shortlist', () => {
 
-        test('verify user delete the location folder from the shortlist', async () => {
+        test('verify user delete the costume folder from the shortlist', async () => {
             await costumePage.shortlistTab();
             await costumePage.deleteFromShortlist();
         });
@@ -101,7 +143,7 @@ test.describe('Costume', () => {
 
     test.describe('Delete from Finals', () => {
 
-        test('verify user deletes the location folder from finals', async () => {
+        test('verify user deletes the costume folder from finals', async () => {
             await costumePage.finalsTab();
             await costumePage.deleteFromFinals();
         });
@@ -114,5 +156,5 @@ test.describe('Costume', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/25_costume-backgroundTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/25_costume-backgroundTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/costume-background.spec.js --project=chromium --headed
    */ 

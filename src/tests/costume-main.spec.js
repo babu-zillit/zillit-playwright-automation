@@ -73,9 +73,9 @@ test.describe('Costume', () => {
     });
 
 
-    test.describe('Costume', () => {
+    test.describe('Costume in fittings', () => {
 
-        test('verify uploadLocation', async () => {
+        test('verify upload costume', async () => {
             await costumePage.uploadCostume('9', '1');
             await costumePage.distribute();
         }); 
@@ -158,5 +158,5 @@ test.describe('Costume', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/24_costumeTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/24_costumeTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/costume-main.spec.js --project=chromium --headed
    */ 

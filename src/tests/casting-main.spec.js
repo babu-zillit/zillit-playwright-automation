@@ -220,7 +220,7 @@ test.describe('Casting', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/21_castingTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/casting-main.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/21_castingTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/casting-main.spec.js --project=chromium --headed
    */ 

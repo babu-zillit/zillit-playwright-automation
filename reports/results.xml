@@ -1,22 +1,61 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="35.986394">
-<testsuite name="crew-list-asset-report.spec.js" timestamp="2026-02-03T08:14:40.983Z" hostname="chromium" tests="2" failures="0" skipped="0" time="34.597" errors="0">
-<testcase name="Crew List → Asset Report › Crew List › verify user generate the crew list" classname="crew-list-asset-report.spec.js" time="20.375">
+<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="106.730941">
+<testsuite name="costume-background.spec.js" timestamp="2026-02-03T10:13:49.035Z" hostname="chromium" tests="17" failures="0" skipped="0" time="93.969" errors="0">
+<testcase name="Costume › Send Message › verify send a message" classname="costume-background.spec.js" time="15.662">
 <system-out>
-<![CDATA[[INFO] 2026-02-03T08:14:42.170Z - browser is launching
-[INFO] 2026-02-03T08:14:47.663Z - open the project
+<![CDATA[[INFO] 2026-02-03T10:13:50.170Z - browser is launching
+[INFO] 2026-02-03T10:13:56.538Z - open the project
 Current hostname is: web.zillit.com
-[INFO] 2026-02-03T08:14:47.663Z - Production environment is started...
-[INFO] 2026-02-03T08:15:02.156Z - close browser
+[INFO] 2026-02-03T10:13:56.538Z - Production environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Crew List → Asset Report › Asset Report › verify user generate the asset report" classname="crew-list-asset-report.spec.js" time="14.222">
+<testcase name="Costume › Send Message › verify edit the message" classname="costume-background.spec.js" time="1.444">
+</testcase>
+<testcase name="Costume › Send Message › verify read by status on message" classname="costume-background.spec.js" time="1.658">
+</testcase>
+<testcase name="Costume › Send Message › verify forward the message" classname="costume-background.spec.js" time="5.711">
+</testcase>
+<testcase name="Costume › Send Message › verify reply to the message" classname="costume-background.spec.js" time="1.055">
+</testcase>
+<testcase name="Costume › Send Message › verify the forward to remote project" classname="costume-background.spec.js" time="8.754">
+</testcase>
+<testcase name="Costume › Send Message › verify the delete message" classname="costume-background.spec.js" time="5.501">
+</testcase>
+<testcase name="Costume › Costume in fittings › verify upload costume in fittings" classname="costume-background.spec.js" time="6.803">
+</testcase>
+<testcase name="Costume › Costume in fittings › verify open folder &gt; see image" classname="costume-background.spec.js" time="2.152">
+</testcase>
+<testcase name="Costume › upload costume in shortlist › verify uploading costume in shortlist" classname="costume-background.spec.js" time="6.487">
+</testcase>
+<testcase name="Costume › upload costume in shortlist › verify open folder &gt; see image" classname="costume-background.spec.js" time="1.633">
+</testcase>
+<testcase name="Costume › upload costume in finals › verify uploading costume in finals" classname="costume-background.spec.js" time="7.111">
+</testcase>
+<testcase name="Costume › upload costume in finals › verify open folder &gt; see image" classname="costume-background.spec.js" time="1.581">
+</testcase>
+<testcase name="Costume › Delete &amp; move to shortlist , move to final from selects › verify costume move to shortlist" classname="costume-background.spec.js" time="11.294">
 <system-out>
-<![CDATA[[INFO] 2026-02-03T08:15:02.548Z - browser is launching
-[INFO] 2026-02-03T08:15:07.551Z - open the project
-Current hostname is: web.zillit.com
-[INFO] 2026-02-03T08:15:07.551Z - Production environment is started...
-[INFO] 2026-02-03T08:15:16.553Z - close browser
+<![CDATA[Dropdown Items: [ [32m'Move to Shortlist'[39m, [32m'Move to Final'[39m, [32m'Delete'[39m, [32m'Distribute'[39m ]
+Dropdown Items: [ [32m'Move to Shortlist'[39m, [32m'Move to Final'[39m, [32m'Delete'[39m, [32m'Distribute'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Costume › Delete &amp; move to shortlist , move to final from selects › verify delete the costume folder from selects" classname="costume-background.spec.js" time="5.053">
+<system-out>
+<![CDATA[Dropdown Items: [ [32m'Move to Shortlist'[39m, [32m'Move to Final'[39m, [32m'Delete'[39m, [32m'Distribute'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Costume › Delete from shortlist › verify user delete the costume folder from the shortlist" classname="costume-background.spec.js" time="6.033">
+<system-out>
+<![CDATA[Dropdown Items: [ [32m'Move to Final'[39m, [32m'Delete'[39m, [32m'Distribute'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Costume › Delete from Finals › verify user deletes the costume folder from finals" classname="costume-background.spec.js" time="6.037">
+<system-out>
+<![CDATA[Dropdown Items: [ [32m'Delete'[39m, [32m'Distribute'[39m ]
+[INFO] 2026-02-03T10:15:35.114Z - close browser
 ]]>
 </system-out>
 </testcase>

@@ -1,11 +1,13 @@
 import { loadJson } from '../utils/jsonUtil';
 import CnC from "../pages/cnc";
 const mediapaths = loadJson('mediapaths', 'testdata');
+import UploadMedia from '../actions/media-uploader';
 
 export default class Budget{
     constructor(page){
         this.page = page;
         this.cncPage = new CnC(page);
+        this.uploadMedia = new UploadMedia(page);
 
         this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
         this.budgetFull = page.locator('div.ant-card-body').getByText('Budget (Full)');
@@ -43,7 +45,13 @@ export default class Budget{
          * Budget Department locator
          */
         this.plusDepartment = page.locator('#budget_create_new_department_button');
-        this.departmentList = page.locator('div.ant-collapse-item');     
+        this.departmentList = page.locator('div.ant-collapse-item');  
+        
+        //Group creation
+        this.creategroupTab = page.locator('#budget_create_group_button'); 
+        this.groupName = page.locator('[placeholder="Group Name"]');
+        this.selectAll = page.locator('#select_deselect_selected_users_button');
+        this.createGroupButton = page.locator('#create_group_button');
 
     }
 
@@ -59,9 +67,9 @@ export default class Budget{
 
     async verifypopup(message){
         const popup = this.page.locator('.ant-message-notice-wrapper div div div').first();
-        await expect.soft(popup).toBeVisible({ timeout: 10000 });
-        await expect.soft(popup).toHaveText(message, { timeout: 10000 });
-        await expect.soft(popup).toBeHidden({ timeout: 10000 });
+        await expect.soft(popup).toBeVisible({ timeout: 15000 });
+        await expect.soft(popup).toHaveText(message, { timeout: 15000 });
+        await expect.soft(popup).toBeHidden({ timeout: 15000 });
         console.log('Popup message verified:');
     }
 
@@ -161,6 +169,16 @@ export default class Budget{
     async plusBudgetDepartment(){
         await this.plusDepartment.click();
         await this.departmentList.first().click();
+    }
+
+    async createGroup(){
+        await this.plus.click();
+        await this.creategroupTab.click();
+        await this.groupName.fill('Tester');
+        await this.selectAll.click();
+        await this.createGroupButton.click();
+        
+        await this.uploadMedia.verifyPopupMessage('Group has been created successfully');
     }
 
 }

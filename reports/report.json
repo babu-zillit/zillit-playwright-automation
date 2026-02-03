@@ -108,32 +108,166 @@
   },
   "suites": [
     {
-      "title": "costume-background.spec.js",
-      "file": "costume-background.spec.js",
+      "title": "budget-full.spec.js",
+      "file": "budget-full.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Costume",
-          "file": "costume-background.spec.js",
-          "line": 8,
+          "title": "Budget Full",
+          "file": "budget-full.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Send Message",
-              "file": "costume-background.spec.js",
-              "line": 37,
-              "column": 10,
+              "title": "upload the budget",
+              "file": "budget-full.spec.js",
+              "line": 38,
+              "column": 19,
               "specs": [
                 {
-                  "title": "verify send a message",
+                  "title": "verify upload budget full document",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:57:39.672Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-3bf9a3d518f36fedd639",
+                  "file": "budget-full.spec.js",
+                  "line": 40,
+                  "column": 9
+                },
+                {
+                  "title": "verify View → Download → View Count → Download Count",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:57:39.673Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-89cebb4e9f8eb2eb0eb7",
+                  "file": "budget-full.spec.js",
+                  "line": 44,
+                  "column": 9
+                },
+                {
+                  "title": "verify add member",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:57:39.673Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-846e677c6ff46817675c",
+                  "file": "budget-full.spec.js",
+                  "line": 52,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "send message",
+              "file": "budget-full.spec.js",
+              "line": 58,
+              "column": 11,
+              "specs": [
+                {
+                  "title": "verify user send message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -143,25 +277,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 15662,
+                          "duration": 17811,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-03T10:13:50.170Z - browser is launching\n"
+                              "text": "[INFO] 2026-02-03T10:57:40.455Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T10:13:56.538Z - open the project\n"
+                              "text": "[INFO] 2026-02-03T10:57:46.661Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T10:13:56.538Z - Production environment is started...\n"
+                              "text": "[INFO] 2026-02-03T10:57:46.661Z - Production environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:13:49.372Z",
+                          "startTime": "2026-02-03T10:57:39.673Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -169,18 +303,18 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-fcac7f20da1548c42c1e",
-                  "file": "costume-background.spec.js",
-                  "line": 39,
+                  "id": "00b1f3d10263d841c9db-e060e1fdc4bb9d1dfb80",
+                  "file": "budget-full.spec.js",
+                  "line": 60,
                   "column": 9
                 },
                 {
-                  "title": "verify edit the message",
+                  "title": "verify user forward message",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -190,12 +324,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1444,
+                          "duration": 5259,
                           "errors": [],
-                          "stdout": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Edit'\u001b[39m, \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Copy'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:14:16.591Z",
+                          "startTime": "2026-02-03T10:58:08.627Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -203,154 +341,18 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-1654db8e17275056c2d6",
-                  "file": "costume-background.spec.js",
-                  "line": 44,
-                  "column": 9
-                },
-                {
-                  "title": "verify read by status on message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1658,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-03T10:14:18.044Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "9b9a6748381ecb31a7b6-13583644745104116c5a",
-                  "file": "costume-background.spec.js",
-                  "line": 49,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5711,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-03T10:14:19.711Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "9b9a6748381ecb31a7b6-a5d7d1146daa3e0c1f4a",
-                  "file": "costume-background.spec.js",
-                  "line": 54,
-                  "column": 9
-                },
-                {
-                  "title": "verify reply to the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1055,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-03T10:14:25.433Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "9b9a6748381ecb31a7b6-684b24bbbf46af9ff36e",
-                  "file": "costume-background.spec.js",
-                  "line": 59,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward to remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8754,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-03T10:14:26.502Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "9b9a6748381ecb31a7b6-14029ca93c3d360f738c",
-                  "file": "costume-background.spec.js",
+                  "id": "00b1f3d10263d841c9db-d85193624f86acde87b8",
+                  "file": "budget-full.spec.js",
                   "line": 64,
                   "column": 9
                 },
                 {
-                  "title": "verify the delete message",
+                  "title": "verify user reply message",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -360,12 +362,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5501,
+                          "duration": 2052,
                           "errors": [],
-                          "stdout": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Edit'\u001b[39m, \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Copy'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:14:35.265Z",
+                          "startTime": "2026-02-03T10:58:13.899Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -373,26 +379,60 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-2afc172292a0a2a65839",
-                  "file": "costume-background.spec.js",
-                  "line": 69,
+                  "id": "00b1f3d10263d841c9db-f50738e6b99712d87237",
+                  "file": "budget-full.spec.js",
+                  "line": 68,
+                  "column": 10
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6465,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:58:15.965Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-f8d050aac64bebe4e4fc",
+                  "file": "budget-full.spec.js",
+                  "line": 72,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Costume in fittings",
-              "file": "costume-background.spec.js",
-              "line": 77,
+              "title": "send image",
+              "file": "budget-full.spec.js",
+              "line": 78,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify upload costume in fittings",
+                  "title": "verify user send image",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -402,12 +442,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6803,
+                          "duration": 234,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:14:40.779Z",
+                          "startTime": "2026-02-03T10:58:22.449Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -415,18 +455,18 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-eea0ee458cd4842c7f42",
-                  "file": "costume-background.spec.js",
-                  "line": 79,
+                  "id": "00b1f3d10263d841c9db-e5926d06575df3d8ed7b",
+                  "file": "budget-full.spec.js",
+                  "line": 80,
                   "column": 9
                 },
                 {
-                  "title": "verify open folder > see image",
+                  "title": "verify user forward message",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -436,12 +476,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2152,
+                          "duration": 9415,
                           "errors": [],
-                          "stdout": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Image Reply'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:14:47.597Z",
+                          "startTime": "2026-02-03T10:58:22.695Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -449,60 +493,60 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-343a872bd088a4307422",
-                  "file": "costume-background.spec.js",
-                  "line": 83,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "upload costume in shortlist",
-              "file": "costume-background.spec.js",
-              "line": 90,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify uploading costume in shortlist",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6487,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-03T10:14:49.766Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "9b9a6748381ecb31a7b6-a592c02a06e4a628b9c5",
-                  "file": "costume-background.spec.js",
-                  "line": 92,
+                  "id": "00b1f3d10263d841c9db-f3b9222c2c25bfe5199a",
+                  "file": "budget-full.spec.js",
+                  "line": 85,
                   "column": 9
                 },
                 {
-                  "title": "verify open folder > see image",
+                  "title": "verify user save message",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:58:32.116Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-12d992f910f3aa833002",
+                  "file": "budget-full.spec.js",
+                  "line": 89,
+                  "column": 14
+                },
+                {
+                  "title": "verify user reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -512,12 +556,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1633,
+                          "duration": 2125,
                           "errors": [],
-                          "stdout": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Image Reply'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:14:56.271Z",
+                          "startTime": "2026-02-03T10:58:32.116Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -525,26 +573,60 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-16c4e880791a5317e0d8",
-                  "file": "costume-background.spec.js",
+                  "id": "00b1f3d10263d841c9db-cfc6f3fc33b2189fb0a0",
+                  "file": "budget-full.spec.js",
+                  "line": 93,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6399,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:58:34.265Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-cb09b7725f4dcb0ce88d",
+                  "file": "budget-full.spec.js",
                   "line": 97,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "upload costume in finals",
-              "file": "costume-background.spec.js",
-              "line": 106,
-              "column": 11,
+              "title": "send video",
+              "file": "budget-full.spec.js",
+              "line": 103,
+              "column": 10,
               "specs": [
                 {
-                  "title": "verify uploading costume in finals",
+                  "title": "verify user send image",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -554,12 +636,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7111,
+                          "duration": 219,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:14:57.916Z",
+                          "startTime": "2026-02-03T10:58:40.681Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -567,18 +649,18 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-57ca3f4ff089f1846a54",
-                  "file": "costume-background.spec.js",
-                  "line": 108,
+                  "id": "00b1f3d10263d841c9db-d89318d9f8d8a70f11ea",
+                  "file": "budget-full.spec.js",
+                  "line": 105,
                   "column": 9
                 },
                 {
-                  "title": "verify open folder > see image",
+                  "title": "verify user forward message",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -588,39 +670,77 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1581,
+                          "duration": 7472,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:58:40.914Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-55dfb3892ac3397a6640",
+                  "file": "budget-full.spec.js",
+                  "line": 110,
+                  "column": 9
+                },
+                {
+                  "title": "verify user save message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:15:05.037Z",
-                          "annotations": [],
+                          "startTime": "2026-02-03T10:58:48.400Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-0a5a6f9af41c8f258afb",
-                  "file": "costume-background.spec.js",
-                  "line": 113,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Delete & move to shortlist , move to final from selects",
-              "file": "costume-background.spec.js",
-              "line": 121,
-              "column": 10,
-              "specs": [
+                  "id": "00b1f3d10263d841c9db-09686d377bda6cd230b5",
+                  "file": "budget-full.spec.js",
+                  "line": 114,
+                  "column": 14
+                },
                 {
-                  "title": "verify costume move to shortlist",
+                  "title": "verify user reply message",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -630,19 +750,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 11294,
+                          "duration": 1781,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
-                            },
-                            {
-                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:15:06.632Z",
+                          "startTime": "2026-02-03T10:58:48.401Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -650,18 +767,18 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-2227c004e645f1c5e2be",
-                  "file": "costume-background.spec.js",
-                  "line": 123,
+                  "id": "00b1f3d10263d841c9db-7b7716b681ab2b20228b",
+                  "file": "budget-full.spec.js",
+                  "line": 118,
                   "column": 9
                 },
                 {
-                  "title": "verify delete the costume folder from selects",
+                  "title": "verify user delete message",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -671,16 +788,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5053,
+                          "duration": 5978,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown Items: [ \u001b[32m'Move to Shortlist'\u001b[39m, \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:15:17.937Z",
+                          "startTime": "2026-02-03T10:58:50.194Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -688,26 +801,26 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-1718c4fd26e5d55b6a06",
-                  "file": "costume-background.spec.js",
-                  "line": 129,
+                  "id": "00b1f3d10263d841c9db-4de984d94014612cc295",
+                  "file": "budget-full.spec.js",
+                  "line": 122,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Delete from shortlist",
-              "file": "costume-background.spec.js",
-              "line": 135,
+              "title": "send document",
+              "file": "budget-full.spec.js",
+              "line": 128,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user delete the costume folder from the shortlist",
+                  "title": "verify user send image",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -717,16 +830,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6033,
+                          "duration": 180,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown Items: [ \u001b[32m'Move to Final'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:15:23.003Z",
+                          "startTime": "2026-02-03T10:58:56.178Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -734,26 +843,178 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-f7a11aa9be1205227ecb",
-                  "file": "costume-background.spec.js",
-                  "line": 137,
+                  "id": "00b1f3d10263d841c9db-d43d177c1f375cf5e982",
+                  "file": "budget-full.spec.js",
+                  "line": 130,
+                  "column": 9
+                },
+                {
+                  "title": "verify user forward message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6975,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:58:56.366Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-28159421fef2866b9977",
+                  "file": "budget-full.spec.js",
+                  "line": 135,
+                  "column": 9
+                },
+                {
+                  "title": "verify user save message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:03.349Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-6225d0d3a0445b6e4d48",
+                  "file": "budget-full.spec.js",
+                  "line": 139,
+                  "column": 14
+                },
+                {
+                  "title": "verify user reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1746,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:03.349Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-d6f34182a53f4dfc3754",
+                  "file": "budget-full.spec.js",
+                  "line": 143,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6337,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:05.105Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-653fa650bd017d2ff682",
+                  "file": "budget-full.spec.js",
+                  "line": 147,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Delete from Finals",
-              "file": "costume-background.spec.js",
-              "line": 144,
+              "title": "send audio",
+              "file": "budget-full.spec.js",
+              "line": 154,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user deletes the costume folder from finals",
+                  "title": "verify user send image",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 30000,
+                      "timeout": 60000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -763,19 +1024,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6037,
+                          "duration": 176,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown Items: [ \u001b[32m'Delete'\u001b[39m, \u001b[32m'Distribute'\u001b[39m ]\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-03T10:15:35.114Z - close browser\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:15:29.051Z",
+                          "startTime": "2026-02-03T10:59:11.449Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -783,9 +1037,1869 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "9b9a6748381ecb31a7b6-4dcbf81c16b07810f368",
-                  "file": "costume-background.spec.js",
-                  "line": 146,
+                  "id": "00b1f3d10263d841c9db-90fc2b4707be3c066c75",
+                  "file": "budget-full.spec.js",
+                  "line": 156,
+                  "column": 9
+                },
+                {
+                  "title": "verify user forward message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6960,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:11.632Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-ff31e0fe685f9275a8b1",
+                  "file": "budget-full.spec.js",
+                  "line": 161,
+                  "column": 9
+                },
+                {
+                  "title": "verify user save message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:18.617Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-b7f6a49e36ef280f77bd",
+                  "file": "budget-full.spec.js",
+                  "line": 165,
+                  "column": 14
+                },
+                {
+                  "title": "verify user reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1851,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:18.617Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-5cf7efdb41c00a1fe3b1",
+                  "file": "budget-full.spec.js",
+                  "line": 169,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6412,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:20.479Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-940acee08a4380a8b30d",
+                  "file": "budget-full.spec.js",
+                  "line": 173,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Group Creation",
+              "file": "budget-full.spec.js",
+              "line": 179,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user creates a group & send message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6323,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:26.903Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-15722b4e1b71681c99be",
+                  "file": "budget-full.spec.js",
+                  "line": 181,
+                  "column": 9
+                },
+                {
+                  "title": "verify user edit message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5410,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Edit'\u001b[39m, \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:33.240Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-bf3b70f0d9bf27f16447",
+                  "file": "budget-full.spec.js",
+                  "line": 185,
+                  "column": 9
+                },
+                {
+                  "title": "verify user forward message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5522,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Edit'\u001b[39m, \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:38.663Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-d1f1a014d8edc7d03e97",
+                  "file": "budget-full.spec.js",
+                  "line": 188,
+                  "column": 9
+                },
+                {
+                  "title": "verify user read by message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3746,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Edit'\u001b[39m, \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:44.201Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-7aab23cc491f7545e2ff",
+                  "file": "budget-full.spec.js",
+                  "line": 191,
+                  "column": 9
+                },
+                {
+                  "title": "verify user reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1835,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Edit'\u001b[39m, \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:47.964Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-0440e17fcd00e2c8f764",
+                  "file": "budget-full.spec.js",
+                  "line": 194,
+                  "column": 9
+                },
+                {
+                  "title": "verify user edit reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2075,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:49.813Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-bbb97bc308659f0146f0",
+                  "file": "budget-full.spec.js",
+                  "line": 197,
+                  "column": 9
+                },
+                {
+                  "title": "verify user readBy reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1729,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:51.899Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-f7e7960b6db923d870c2",
+                  "file": "budget-full.spec.js",
+                  "line": 200,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6985,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T10:59:53.644Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-ef3797f0bf1104e67f36",
+                  "file": "budget-full.spec.js",
+                  "line": 203,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "send image in group",
+              "file": "budget-full.spec.js",
+              "line": 209,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user send image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2063,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:00.639Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-4eab42c40d9a9d58096e",
+                  "file": "budget-full.spec.js",
+                  "line": 211,
+                  "column": 9
+                },
+                {
+                  "title": "verify user forward message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7123,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Image Reply'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:02.716Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-6c5d406d16733e93e55a",
+                  "file": "budget-full.spec.js",
+                  "line": 215,
+                  "column": 9
+                },
+                {
+                  "title": "verify user read by message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3569,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Image Reply'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:09.851Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-9e8e2960aed06cc138bc",
+                  "file": "budget-full.spec.js",
+                  "line": 218,
+                  "column": 9
+                },
+                {
+                  "title": "verify user reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2303,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Image Reply'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:13.434Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-23130471cdc1af150d3e",
+                  "file": "budget-full.spec.js",
+                  "line": 221,
+                  "column": 9
+                },
+                {
+                  "title": "verify user edit reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1772,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:15.753Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-ab20f3aa54dabdac8a80",
+                  "file": "budget-full.spec.js",
+                  "line": 224,
+                  "column": 9
+                },
+                {
+                  "title": "verify user readBy reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1740,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:17.536Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-4f5ba9f94d3ba16994b2",
+                  "file": "budget-full.spec.js",
+                  "line": 227,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6605,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:19.285Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-1a9d31c32de9ca17d64d",
+                  "file": "budget-full.spec.js",
+                  "line": 230,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "send video in group",
+              "file": "budget-full.spec.js",
+              "line": 237,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user send image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2496,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:25.900Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-7bc25cf2ee3f2431438b",
+                  "file": "budget-full.spec.js",
+                  "line": 239,
+                  "column": 9
+                },
+                {
+                  "title": "verify user forward message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5734,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:28.411Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-feaca9d55e4d30781d21",
+                  "file": "budget-full.spec.js",
+                  "line": 243,
+                  "column": 9
+                },
+                {
+                  "title": "verify user read by message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3573,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:34.161Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-e2608cb6fc4d53cfc401",
+                  "file": "budget-full.spec.js",
+                  "line": 246,
+                  "column": 9
+                },
+                {
+                  "title": "verify user reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2278,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:37.747Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-71694b1a77b1ca0c1d54",
+                  "file": "budget-full.spec.js",
+                  "line": 249,
+                  "column": 9
+                },
+                {
+                  "title": "verify user edit reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1774,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:40.038Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-16a7f969a5808f17f287",
+                  "file": "budget-full.spec.js",
+                  "line": 252,
+                  "column": 9
+                },
+                {
+                  "title": "verify user readBy reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1758,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:41.830Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-09251dcb4c44ccde42e8",
+                  "file": "budget-full.spec.js",
+                  "line": 255,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6370,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:43.601Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-d9573d344f80105b6a91",
+                  "file": "budget-full.spec.js",
+                  "line": 258,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "send document in group",
+              "file": "budget-full.spec.js",
+              "line": 264,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user send image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1493,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:49.982Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-29f6b02c32025ec93202",
+                  "file": "budget-full.spec.js",
+                  "line": 266,
+                  "column": 9
+                },
+                {
+                  "title": "verify user forward message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5496,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:51.486Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-b275fbed0b29e95d7282",
+                  "file": "budget-full.spec.js",
+                  "line": 270,
+                  "column": 9
+                },
+                {
+                  "title": "verify user read by message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3581,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:00:56.992Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-e14421a7b885dc38f329",
+                  "file": "budget-full.spec.js",
+                  "line": 273,
+                  "column": 9
+                },
+                {
+                  "title": "verify user reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1773,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:00.584Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-50aca441099ee5274052",
+                  "file": "budget-full.spec.js",
+                  "line": 276,
+                  "column": 9
+                },
+                {
+                  "title": "verify user edit reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1711,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:02.373Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-79946ca70af22edb742c",
+                  "file": "budget-full.spec.js",
+                  "line": 279,
+                  "column": 9
+                },
+                {
+                  "title": "verify user readBy reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1848,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:04.091Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-bd2c392efab81096304c",
+                  "file": "budget-full.spec.js",
+                  "line": 282,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6421,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:05.953Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-e4c21a0ea69bf32d691c",
+                  "file": "budget-full.spec.js",
+                  "line": 285,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "send audio in group",
+              "file": "budget-full.spec.js",
+              "line": 292,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user send image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1505,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:12.383Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-b1679b36d0af05024d64",
+                  "file": "budget-full.spec.js",
+                  "line": 294,
+                  "column": 9
+                },
+                {
+                  "title": "verify user forward message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5500,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:13.900Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-f95ff5e244ac40b7d1ee",
+                  "file": "budget-full.spec.js",
+                  "line": 298,
+                  "column": 9
+                },
+                {
+                  "title": "verify user read by message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3562,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:19.414Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-605dd246bc4976b8fafd",
+                  "file": "budget-full.spec.js",
+                  "line": 301,
+                  "column": 9
+                },
+                {
+                  "title": "verify user reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2256,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:22.994Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-749ad2caef16d40f0b25",
+                  "file": "budget-full.spec.js",
+                  "line": 304,
+                  "column": 9
+                },
+                {
+                  "title": "verify user edit reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1721,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:25.266Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-5603ba510261296d0020",
+                  "file": "budget-full.spec.js",
+                  "line": 307,
+                  "column": 9
+                },
+                {
+                  "title": "verify user readBy reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1730,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:27.000Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-d1265695b8e26f7a2983",
+                  "file": "budget-full.spec.js",
+                  "line": 310,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6433,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:28.737Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-14403dea5c51853d145e",
+                  "file": "budget-full.spec.js",
+                  "line": 313,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "send location in group",
+              "file": "budget-full.spec.js",
+              "line": 319,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user send location",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8735,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:35.181Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-79103683044d8f97c862",
+                  "file": "budget-full.spec.js",
+                  "line": 321,
+                  "column": 9
+                },
+                {
+                  "title": "verify user forward message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5001,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:43.933Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-0fc66373590e81845ad2",
+                  "file": "budget-full.spec.js",
+                  "line": 325,
+                  "column": 9
+                },
+                {
+                  "title": "verify user reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1861,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:48.946Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-b701e1a3b236dca0d461",
+                  "file": "budget-full.spec.js",
+                  "line": 328,
+                  "column": 9
+                },
+                {
+                  "title": "verify user edit reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2193,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:50.820Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-fef2318838ba3a254ea8",
+                  "file": "budget-full.spec.js",
+                  "line": 331,
+                  "column": 9
+                },
+                {
+                  "title": "verify user readBy reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1722,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:53.036Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-9ef23ea88560d74f4777",
+                  "file": "budget-full.spec.js",
+                  "line": 334,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6348,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:01:54.894Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-3a81520ede7c7f4f9179",
+                  "file": "budget-full.spec.js",
+                  "line": 337,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "send image Reply in group",
+              "file": "budget-full.spec.js",
+              "line": 343,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user send image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1857,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:02:01.251Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-b53e9ccc9863d32c98ec",
+                  "file": "budget-full.spec.js",
+                  "line": 345,
+                  "column": 9
+                },
+                {
+                  "title": "verify user image reply message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9363,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Read By'\u001b[39m, \u001b[32m'Image Reply'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:02:03.123Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-e8f04d437c0482d5c69e",
+                  "file": "budget-full.spec.js",
+                  "line": 349,
+                  "column": 9
+                },
+                {
+                  "title": "verify user delete message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6134,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:02:12.497Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-0d5e48714505d5e76829",
+                  "file": "budget-full.spec.js",
+                  "line": 352,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Delete Group",
+              "file": "budget-full.spec.js",
+              "line": 358,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "verify user delete the group",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3953,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2026-02-03T11:02:22.626Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-03T11:02:18.646Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "00b1f3d10263d841c9db-d61ce62e494ee79be61f",
+                  "file": "budget-full.spec.js",
+                  "line": 360,
                   "column": 9
                 }
               ]
@@ -797,10 +2911,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-03T10:13:49.007Z",
-    "duration": 106730.941,
-    "expected": 17,
-    "skipped": 0,
+    "startTime": "2026-02-03T10:57:39.299Z",
+    "duration": 283817.964,
+    "expected": 66,
+    "skipped": 7,
     "unexpected": 0,
     "flaky": 0
   }

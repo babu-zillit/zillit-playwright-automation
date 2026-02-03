@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="73" failures="0" skipped="7" errors="0" time="283.81796399999996">
-<testsuite name="budget-full.spec.js" timestamp="2026-02-03T10:57:39.331Z" hostname="chromium" tests="73" failures="0" skipped="7" time="270.827" errors="0">
-<testcase name="Budget Full › upload the budget › verify upload budget full document" classname="budget-full.spec.js" time="0">
+<testsuites id="" name="" tests="73" failures="2" skipped="7" errors="0" time="350.90177500000004">
+<testsuite name="budget-department.spec.js" timestamp="2026-02-03T11:13:27.498Z" hostname="chromium" tests="73" failures="2" skipped="7" time="305.982" errors="0">
+<testcase name="Budget Department › upload the budget department › verify upload budget department document" classname="budget-department.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
@@ -8,7 +8,7 @@
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Budget Full › upload the budget › verify View → Download → View Count → Download Count" classname="budget-full.spec.js" time="0">
+<testcase name="Budget Department › upload the budget department › verify View → Download → View Count → Download Count" classname="budget-department.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
@@ -16,46 +16,145 @@
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Budget Full › upload the budget › verify add member" classname="budget-full.spec.js" time="0">
+<testcase name="Budget Department › upload the budget department › verify add member" classname="budget-department.spec.js" time="0">
 <properties>
+<property name="skip" value="">
+</property>
 <property name="skip" value="">
 </property>
 </properties>
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Budget Full › send message › verify user send message" classname="budget-full.spec.js" time="17.811">
+<testcase name="Budget Department › send message › verify user send message" classname="budget-department.spec.js" time="10.554">
 <system-out>
-<![CDATA[[INFO] 2026-02-03T10:57:40.455Z - browser is launching
-[INFO] 2026-02-03T10:57:46.661Z - open the project
+<![CDATA[[INFO] 2026-02-03T11:13:28.826Z - browser is launching
+[INFO] 2026-02-03T11:13:37.104Z - open the project
 Current hostname is: web.zillit.com
-[INFO] 2026-02-03T10:57:46.661Z - Production environment is started...
+[INFO] 2026-02-03T11:13:37.104Z - Production environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send message › verify user forward message" classname="budget-full.spec.js" time="5.259">
+<testcase name="Budget Department › send message › verify user forward message" classname="budget-department.spec.js" time="5.675">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Edit'[39m, [32m'Reply'[39m, [32m'Forward'[39m, [32m'Copy'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send message › verify user reply message" classname="budget-full.spec.js" time="2.052">
+<testcase name="Budget Department › send message › verify user reply message" classname="budget-department.spec.js" time="1.843">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Edit'[39m, [32m'Reply'[39m, [32m'Forward'[39m, [32m'Copy'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send message › verify user delete message" classname="budget-full.spec.js" time="6.465">
+<testcase name="Budget Department › send message › verify user delete message" classname="budget-department.spec.js" time="6.578">
 </testcase>
-<testcase name="Budget Full › send image › verify user send image" classname="budget-full.spec.js" time="0.234">
+<testcase name="Budget Department › send image › verify user send image" classname="budget-department.spec.js" time="0.248">
 </testcase>
-<testcase name="Budget Full › send image › verify user forward message" classname="budget-full.spec.js" time="9.415">
+<testcase name="Budget Department › send image › verify user forward message" classname="budget-department.spec.js" time="30.11">
+<failure message="budget-department.spec.js:87:9 verify user forward message" type="FAILURE">
+<![CDATA[  [chromium] › budget-department.spec.js:87:9 › Budget Department › send image › verify user forward message 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.waitFor: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text=Forward Successfully') to be visible
+
+
+       at ../pages/cnc.js:174
+
+      172 |         
+      173 |         const popup = this.page.locator('text=Forward Successfully');
+    > 174 |         await popup.waitFor({ state: 'visible' });
+          |                     ^
+      175 |         await popup.waitFor({ state: 'hidden' });
+      176 |     }
+      177 |
+        at CnC.forward (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:174:21)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/budget-department.spec.js:88:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Image Reply'[39m, [32m'Delete'[39m ]
+<![CDATA[[INFO] 2026-02-03T11:14:37.046Z - close browser
+
+[[ATTACHMENT|../test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/trace.zip]]
 ]]>
 </system-out>
+<system-err>
+<![CDATA[Failed to select dropdown option: Forward locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content').first() to be visible[22m
+
+    at CnC.cncDropList [90m(/Users/babuyadav/Documents/zillit-playwright-automation/[39msrc/pages/cnc.js:79:37[90m)[39m
+    at CnC.forward [90m(/Users/babuyadav/Documents/zillit-playwright-automation/[39msrc/pages/cnc.js:170:9[90m)[39m
+    at [90m/Users/babuyadav/Documents/zillit-playwright-automation/[39msrc/tests/budget-department.spec.js:88:13 {
+  name: [32m'TimeoutError'[39m,
+  [[32mSymbol(step)[39m]: {
+    stepId: [32m'pw:api@4'[39m,
+    location: {
+      file: [32m'/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js'[39m,
+      line: [33m79[39m,
+      column: [33m37[39m,
+      function: [32m'CnC.cncDropList'[39m
+    },
+    category: [32m'pw:api'[39m,
+    title: [32m'locator.waitFor(ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content >> nth=0)'[39m,
+    apiName: [32m'locator.waitFor'[39m,
+    params: {
+      selector: [32m'ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content >> nth=0'[39m,
+      strict: [33mtrue[39m,
+      omitReturnValue: [33mtrue[39m,
+      state: [32m'visible'[39m,
+      timeout: [33m10000[39m
+    },
+    boxedStack: [90mundefined[39m,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'pw:api@4'[39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1770117258641[39m,
+    error: {
+      message: [32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m"\x1B[2m  - waiting for locator('ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content').first() to be visible\x1B[22m\n"[39m,
+      stack: [32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m"\x1B[2m  - waiting for locator('ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content').first() to be visible\x1B[22m\n"[39m +
+        [32m'\n'[39m +
+        [32m'    at CnC.cncDropList (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:79:37)\n'[39m +
+        [32m'    at CnC.forward (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:170:9)\n'[39m +
+        [32m'    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/budget-department.spec.js:88:13'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
 </testcase>
-<testcase name="Budget Full › send image › verify user save message" classname="budget-full.spec.js" time="0">
+<testcase name="Budget Department › send image › verify user save message" classname="budget-department.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
@@ -63,23 +162,27 @@ Current hostname is: web.zillit.com
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Budget Full › send image › verify user reply message" classname="budget-full.spec.js" time="2.125">
+<testcase name="Budget Department › send image › verify user reply message" classname="budget-department.spec.js" time="11.296">
 <system-out>
-<![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Image Reply'[39m, [32m'Delete'[39m ]
+<![CDATA[[INFO] 2026-02-03T11:14:38.892Z - browser is launching
+[INFO] 2026-02-03T11:14:45.694Z - open the project
+Current hostname is: web.zillit.com
+[INFO] 2026-02-03T11:14:45.694Z - Production environment is started...
+Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Image Reply'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send image › verify user delete message" classname="budget-full.spec.js" time="6.399">
+<testcase name="Budget Department › send image › verify user delete message" classname="budget-department.spec.js" time="6.56">
 </testcase>
-<testcase name="Budget Full › send video › verify user send image" classname="budget-full.spec.js" time="0.219">
+<testcase name="Budget Department › send video › verify user send image" classname="budget-department.spec.js" time="0.625">
 </testcase>
-<testcase name="Budget Full › send video › verify user forward message" classname="budget-full.spec.js" time="7.472">
+<testcase name="Budget Department › send video › verify user forward message" classname="budget-department.spec.js" time="7.285">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send video › verify user save message" classname="budget-full.spec.js" time="0">
+<testcase name="Budget Department › send video › verify user save message" classname="budget-department.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
@@ -87,23 +190,23 @@ Current hostname is: web.zillit.com
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Budget Full › send video › verify user reply message" classname="budget-full.spec.js" time="1.781">
+<testcase name="Budget Department › send video › verify user reply message" classname="budget-department.spec.js" time="1.747">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send video › verify user delete message" classname="budget-full.spec.js" time="5.978">
+<testcase name="Budget Department › send video › verify user delete message" classname="budget-department.spec.js" time="6.376">
 </testcase>
-<testcase name="Budget Full › send document › verify user send image" classname="budget-full.spec.js" time="0.18">
+<testcase name="Budget Department › send document › verify user send image" classname="budget-department.spec.js" time="0.189">
 </testcase>
-<testcase name="Budget Full › send document › verify user forward message" classname="budget-full.spec.js" time="6.975">
+<testcase name="Budget Department › send document › verify user forward message" classname="budget-department.spec.js" time="6.674">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send document › verify user save message" classname="budget-full.spec.js" time="0">
+<testcase name="Budget Department › send document › verify user save message" classname="budget-department.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
@@ -111,23 +214,23 @@ Current hostname is: web.zillit.com
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Budget Full › send document › verify user reply message" classname="budget-full.spec.js" time="1.746">
+<testcase name="Budget Department › send document › verify user reply message" classname="budget-department.spec.js" time="2.209">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send document › verify user delete message" classname="budget-full.spec.js" time="6.337">
+<testcase name="Budget Department › send document › verify user delete message" classname="budget-department.spec.js" time="6.333">
 </testcase>
-<testcase name="Budget Full › send audio › verify user send image" classname="budget-full.spec.js" time="0.176">
+<testcase name="Budget Department › send audio › verify user send image" classname="budget-department.spec.js" time="0.254">
 </testcase>
-<testcase name="Budget Full › send audio › verify user forward message" classname="budget-full.spec.js" time="6.96">
+<testcase name="Budget Department › send audio › verify user forward message" classname="budget-department.spec.js" time="6.976">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send audio › verify user save message" classname="budget-full.spec.js" time="0">
+<testcase name="Budget Department › send audio › verify user save message" classname="budget-department.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
@@ -135,183 +238,233 @@ Current hostname is: web.zillit.com
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Budget Full › send audio › verify user reply message" classname="budget-full.spec.js" time="1.851">
+<testcase name="Budget Department › send audio › verify user reply message" classname="budget-department.spec.js" time="2.261">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send audio › verify user delete message" classname="budget-full.spec.js" time="6.412">
+<testcase name="Budget Department › send audio › verify user delete message" classname="budget-department.spec.js" time="6.452">
 </testcase>
-<testcase name="Budget Full › Group Creation › verify user creates a group &amp; send message" classname="budget-full.spec.js" time="6.323">
+<testcase name="Budget Department › Group Creation › verify user creates a group &amp; send message" classname="budget-department.spec.js" time="5.467">
 </testcase>
-<testcase name="Budget Full › Group Creation › verify user edit message" classname="budget-full.spec.js" time="5.41">
+<testcase name="Budget Department › Group Creation › verify user edit message" classname="budget-department.spec.js" time="5.289">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Edit'[39m, [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › Group Creation › verify user forward message" classname="budget-full.spec.js" time="5.522">
+<testcase name="Budget Department › Group Creation › verify user forward message" classname="budget-department.spec.js" time="5.737">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Edit'[39m, [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › Group Creation › verify user read by message" classname="budget-full.spec.js" time="3.746">
+<testcase name="Budget Department › Group Creation › verify user read by message" classname="budget-department.spec.js" time="3.705">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Edit'[39m, [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › Group Creation › verify user reply message" classname="budget-full.spec.js" time="1.835">
+<testcase name="Budget Department › Group Creation › verify user reply message" classname="budget-department.spec.js" time="1.703">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Edit'[39m, [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › Group Creation › verify user edit reply message" classname="budget-full.spec.js" time="2.075">
+<testcase name="Budget Department › Group Creation › verify user edit reply message" classname="budget-department.spec.js" time="2.146">
 </testcase>
-<testcase name="Budget Full › Group Creation › verify user readBy reply message" classname="budget-full.spec.js" time="1.729">
+<testcase name="Budget Department › Group Creation › verify user readBy reply message" classname="budget-department.spec.js" time="1.734">
 </testcase>
-<testcase name="Budget Full › Group Creation › verify user delete message" classname="budget-full.spec.js" time="6.985">
+<testcase name="Budget Department › Group Creation › verify user delete message" classname="budget-department.spec.js" time="6.378">
 </testcase>
-<testcase name="Budget Full › send image in group › verify user send image" classname="budget-full.spec.js" time="2.063">
+<testcase name="Budget Department › send image in group › verify user send image" classname="budget-department.spec.js" time="2.367">
 </testcase>
-<testcase name="Budget Full › send image in group › verify user forward message" classname="budget-full.spec.js" time="7.123">
+<testcase name="Budget Department › send image in group › verify user forward message" classname="budget-department.spec.js" time="8.915">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Image Reply'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send image in group › verify user read by message" classname="budget-full.spec.js" time="3.569">
+<testcase name="Budget Department › send image in group › verify user read by message" classname="budget-department.spec.js" time="3.572">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Image Reply'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send image in group › verify user reply message" classname="budget-full.spec.js" time="2.303">
+<testcase name="Budget Department › send image in group › verify user reply message" classname="budget-department.spec.js" time="2.227">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Image Reply'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send image in group › verify user edit reply message" classname="budget-full.spec.js" time="1.772">
+<testcase name="Budget Department › send image in group › verify user edit reply message" classname="budget-department.spec.js" time="2.332">
 </testcase>
-<testcase name="Budget Full › send image in group › verify user readBy reply message" classname="budget-full.spec.js" time="1.74">
+<testcase name="Budget Department › send image in group › verify user readBy reply message" classname="budget-department.spec.js" time="1.865">
 </testcase>
-<testcase name="Budget Full › send image in group › verify user delete message" classname="budget-full.spec.js" time="6.605">
+<testcase name="Budget Department › send image in group › verify user delete message" classname="budget-department.spec.js" time="6.448">
 </testcase>
-<testcase name="Budget Full › send video in group › verify user send image" classname="budget-full.spec.js" time="2.496">
+<testcase name="Budget Department › send video in group › verify user send image" classname="budget-department.spec.js" time="2.143">
 </testcase>
-<testcase name="Budget Full › send video in group › verify user forward message" classname="budget-full.spec.js" time="5.734">
+<testcase name="Budget Department › send video in group › verify user forward message" classname="budget-department.spec.js" time="5.655">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send video in group › verify user read by message" classname="budget-full.spec.js" time="3.573">
+<testcase name="Budget Department › send video in group › verify user read by message" classname="budget-department.spec.js" time="3.631">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send video in group › verify user reply message" classname="budget-full.spec.js" time="2.278">
+<testcase name="Budget Department › send video in group › verify user reply message" classname="budget-department.spec.js" time="2.076">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send video in group › verify user edit reply message" classname="budget-full.spec.js" time="1.774">
+<testcase name="Budget Department › send video in group › verify user edit reply message" classname="budget-department.spec.js" time="2.095">
 </testcase>
-<testcase name="Budget Full › send video in group › verify user readBy reply message" classname="budget-full.spec.js" time="1.758">
+<testcase name="Budget Department › send video in group › verify user readBy reply message" classname="budget-department.spec.js" time="1.852">
 </testcase>
-<testcase name="Budget Full › send video in group › verify user delete message" classname="budget-full.spec.js" time="6.37">
+<testcase name="Budget Department › send video in group › verify user delete message" classname="budget-department.spec.js" time="6.481">
 </testcase>
-<testcase name="Budget Full › send document in group › verify user send image" classname="budget-full.spec.js" time="1.493">
+<testcase name="Budget Department › send document in group › verify user send image" classname="budget-department.spec.js" time="1.518">
 </testcase>
-<testcase name="Budget Full › send document in group › verify user forward message" classname="budget-full.spec.js" time="5.496">
+<testcase name="Budget Department › send document in group › verify user forward message" classname="budget-department.spec.js" time="5.569">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send document in group › verify user read by message" classname="budget-full.spec.js" time="3.581">
+<testcase name="Budget Department › send document in group › verify user read by message" classname="budget-department.spec.js" time="3.659">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send document in group › verify user reply message" classname="budget-full.spec.js" time="1.773">
+<testcase name="Budget Department › send document in group › verify user reply message" classname="budget-department.spec.js" time="2.186">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send document in group › verify user edit reply message" classname="budget-full.spec.js" time="1.711">
+<testcase name="Budget Department › send document in group › verify user edit reply message" classname="budget-department.spec.js" time="1.731">
 </testcase>
-<testcase name="Budget Full › send document in group › verify user readBy reply message" classname="budget-full.spec.js" time="1.848">
+<testcase name="Budget Department › send document in group › verify user readBy reply message" classname="budget-department.spec.js" time="1.725">
 </testcase>
-<testcase name="Budget Full › send document in group › verify user delete message" classname="budget-full.spec.js" time="6.421">
+<testcase name="Budget Department › send document in group › verify user delete message" classname="budget-department.spec.js" time="6.353">
 </testcase>
-<testcase name="Budget Full › send audio in group › verify user send image" classname="budget-full.spec.js" time="1.505">
+<testcase name="Budget Department › send audio in group › verify user send image" classname="budget-department.spec.js" time="1.597">
 </testcase>
-<testcase name="Budget Full › send audio in group › verify user forward message" classname="budget-full.spec.js" time="5.5">
+<testcase name="Budget Department › send audio in group › verify user forward message" classname="budget-department.spec.js" time="5.161">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send audio in group › verify user read by message" classname="budget-full.spec.js" time="3.562">
+<testcase name="Budget Department › send audio in group › verify user read by message" classname="budget-department.spec.js" time="3.567">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send audio in group › verify user reply message" classname="budget-full.spec.js" time="2.256">
+<testcase name="Budget Department › send audio in group › verify user reply message" classname="budget-department.spec.js" time="2.229">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send audio in group › verify user edit reply message" classname="budget-full.spec.js" time="1.721">
+<testcase name="Budget Department › send audio in group › verify user edit reply message" classname="budget-department.spec.js" time="1.71">
 </testcase>
-<testcase name="Budget Full › send audio in group › verify user readBy reply message" classname="budget-full.spec.js" time="1.73">
+<testcase name="Budget Department › send audio in group › verify user readBy reply message" classname="budget-department.spec.js" time="1.737">
 </testcase>
-<testcase name="Budget Full › send audio in group › verify user delete message" classname="budget-full.spec.js" time="6.433">
+<testcase name="Budget Department › send audio in group › verify user delete message" classname="budget-department.spec.js" time="6.53">
 </testcase>
-<testcase name="Budget Full › send location in group › verify user send location" classname="budget-full.spec.js" time="8.735">
+<testcase name="Budget Department › send location in group › verify user send location" classname="budget-department.spec.js" time="7.28">
 </testcase>
-<testcase name="Budget Full › send location in group › verify user forward message" classname="budget-full.spec.js" time="5.001">
+<testcase name="Budget Department › send location in group › verify user forward message" classname="budget-department.spec.js" time="5.547">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send location in group › verify user reply message" classname="budget-full.spec.js" time="1.861">
+<testcase name="Budget Department › send location in group › verify user reply message" classname="budget-department.spec.js" time="2.357">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send location in group › verify user edit reply message" classname="budget-full.spec.js" time="2.193">
+<testcase name="Budget Department › send location in group › verify user edit reply message" classname="budget-department.spec.js" time="2.064">
 </testcase>
-<testcase name="Budget Full › send location in group › verify user readBy reply message" classname="budget-full.spec.js" time="1.722">
+<testcase name="Budget Department › send location in group › verify user readBy reply message" classname="budget-department.spec.js" time="1.776">
 </testcase>
-<testcase name="Budget Full › send location in group › verify user delete message" classname="budget-full.spec.js" time="6.348">
+<testcase name="Budget Department › send location in group › verify user delete message" classname="budget-department.spec.js" time="6.338">
 </testcase>
-<testcase name="Budget Full › send image Reply in group › verify user send image" classname="budget-full.spec.js" time="1.857">
+<testcase name="Budget Department › send image Reply in group › verify user send image" classname="budget-department.spec.js" time="1.86">
 </testcase>
-<testcase name="Budget Full › send image Reply in group › verify user image reply message" classname="budget-full.spec.js" time="9.363">
+<testcase name="Budget Department › send image Reply in group › verify user image reply message" classname="budget-department.spec.js" time="12.767">
 <system-out>
 <![CDATA[Dropdown items: [ [32m'Reply'[39m, [32m'Forward'[39m, [32m'Read By'[39m, [32m'Image Reply'[39m, [32m'Delete'[39m ]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Budget Full › send image Reply in group › verify user delete message" classname="budget-full.spec.js" time="6.134">
-</testcase>
-<testcase name="Budget Full › Delete Group › verify user delete the group" classname="budget-full.spec.js" time="3.953">
+<testcase name="Budget Department › send image Reply in group › verify user delete message" classname="budget-department.spec.js" time="6.774">
+<failure message="budget-department.spec.js:354:9 verify user delete message" type="FAILURE">
+<![CDATA[  [chromium] › budget-department.spec.js:354:9 › Budget Department › send image Reply in group › verify user delete message 
+
+    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('//div[@style="position: relative;"]//label//input[not(@checked)]').first() to be visible
+
+
+       at ../pages/cnc.js:223
+
+      221 |         await this.page.waitForTimeout(1000);
+      222 |         const checkbox = await this.page.locator('//div[@style="position: relative;"]//label//input[not(@checked)]').first();
+    > 223 |         await checkbox.waitFor({ state: 'visible', timeout: 5000 });
+          |                        ^
+      224 |         const isChecked = await checkbox.isChecked();
+      225 |
+      226 |         if(!isChecked){
+        at CnC.toggleCheckBox (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:223:24)
+        at CnC.deleteAllMessage (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:244:9)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/budget-department.spec.js:355:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[[INFO] 2026-02-03T11:02:22.626Z - close browser
+<![CDATA[[INFO] 2026-02-03T11:18:53.101Z - close browser
+
+[[ATTACHMENT|../test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Budget Department › Delete Group › verify user delete the group" classname="budget-department.spec.js" time="9.884">
+<system-out>
+<![CDATA[[INFO] 2026-02-03T11:18:55.892Z - browser is launching
+[INFO] 2026-02-03T11:19:02.638Z - open the project
+Current hostname is: web.zillit.com
+[INFO] 2026-02-03T11:19:02.638Z - Production environment is started...
+[INFO] 2026-02-03T11:19:17.104Z - close browser
 ]]>
 </system-out>
 </testcase>

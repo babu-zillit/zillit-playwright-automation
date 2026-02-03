@@ -108,32 +108,32 @@
   },
   "suites": [
     {
-      "title": "budget-full.spec.js",
-      "file": "budget-full.spec.js",
+      "title": "budget-department.spec.js",
+      "file": "budget-department.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Budget Full",
-          "file": "budget-full.spec.js",
+          "title": "Budget Department",
+          "file": "budget-department.spec.js",
           "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "upload the budget",
-              "file": "budget-full.spec.js",
+              "title": "upload the budget department",
+              "file": "budget-department.spec.js",
               "line": 38,
               "column": 19,
               "specs": [
                 {
-                  "title": "verify upload budget full document",
+                  "title": "verify upload budget department document",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [
                         {
                           "type": "skip"
@@ -152,7 +152,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:57:39.672Z",
+                          "startTime": "2026-02-03T11:13:27.835Z",
                           "annotations": [
                             {
                               "type": "skip"
@@ -164,8 +164,8 @@
                       "status": "skipped"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-3bf9a3d518f36fedd639",
-                  "file": "budget-full.spec.js",
+                  "id": "4777421152762c308c1b-a7bdb9c99be37df1fa48",
+                  "file": "budget-department.spec.js",
                   "line": 40,
                   "column": 9
                 },
@@ -175,7 +175,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [
                         {
                           "type": "skip"
@@ -194,7 +194,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:57:39.673Z",
+                          "startTime": "2026-02-03T11:13:27.835Z",
                           "annotations": [
                             {
                               "type": "skip"
@@ -206,9 +206,9 @@
                       "status": "skipped"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-89cebb4e9f8eb2eb0eb7",
-                  "file": "budget-full.spec.js",
-                  "line": 44,
+                  "id": "4777421152762c308c1b-3f6d0f7ee4ed8519f400",
+                  "file": "budget-department.spec.js",
+                  "line": 45,
                   "column": 9
                 },
                 {
@@ -217,8 +217,11 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [
+                        {
+                          "type": "skip"
+                        },
                         {
                           "type": "skip"
                         }
@@ -236,8 +239,11 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:57:39.673Z",
+                          "startTime": "2026-02-03T11:13:27.835Z",
                           "annotations": [
+                            {
+                              "type": "skip"
+                            },
                             {
                               "type": "skip"
                             }
@@ -248,17 +254,17 @@
                       "status": "skipped"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-846e677c6ff46817675c",
-                  "file": "budget-full.spec.js",
-                  "line": 52,
-                  "column": 9
+                  "id": "4777421152762c308c1b-7bf6b89b76bc341ec14d",
+                  "file": "budget-department.spec.js",
+                  "line": 54,
+                  "column": 14
                 }
               ]
             },
             {
               "title": "send message",
-              "file": "budget-full.spec.js",
-              "line": 58,
+              "file": "budget-department.spec.js",
+              "line": 60,
               "column": 11,
               "specs": [
                 {
@@ -267,7 +273,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -277,25 +283,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 17811,
+                          "duration": 10554,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-03T10:57:40.455Z - browser is launching\n"
+                              "text": "[INFO] 2026-02-03T11:13:28.826Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T10:57:46.661Z - open the project\n"
+                              "text": "[INFO] 2026-02-03T11:13:37.104Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T10:57:46.661Z - Production environment is started...\n"
+                              "text": "[INFO] 2026-02-03T11:13:37.104Z - Production environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:57:39.673Z",
+                          "startTime": "2026-02-03T11:13:27.835Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -303,9 +309,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-e060e1fdc4bb9d1dfb80",
-                  "file": "budget-full.spec.js",
-                  "line": 60,
+                  "id": "4777421152762c308c1b-0763df5ded275d85a4b1",
+                  "file": "budget-department.spec.js",
+                  "line": 62,
                   "column": 9
                 },
                 {
@@ -314,7 +320,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -324,7 +330,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5259,
+                          "duration": 5675,
                           "errors": [],
                           "stdout": [
                             {
@@ -333,7 +339,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:08.627Z",
+                          "startTime": "2026-02-03T11:13:52.219Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -341,9 +347,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-d85193624f86acde87b8",
-                  "file": "budget-full.spec.js",
-                  "line": 64,
+                  "id": "4777421152762c308c1b-8ff6f8410bc603415969",
+                  "file": "budget-department.spec.js",
+                  "line": 66,
                   "column": 9
                 },
                 {
@@ -352,7 +358,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -362,7 +368,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2052,
+                          "duration": 1843,
                           "errors": [],
                           "stdout": [
                             {
@@ -371,7 +377,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:13.899Z",
+                          "startTime": "2026-02-03T11:13:57.908Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -379,9 +385,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-f50738e6b99712d87237",
-                  "file": "budget-full.spec.js",
-                  "line": 68,
+                  "id": "4777421152762c308c1b-9e91baa47da3f884da63",
+                  "file": "budget-department.spec.js",
+                  "line": 70,
                   "column": 10
                 },
                 {
@@ -390,7 +396,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -400,12 +406,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6465,
+                          "duration": 6578,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:15.965Z",
+                          "startTime": "2026-02-03T11:13:59.765Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -413,17 +419,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-f8d050aac64bebe4e4fc",
-                  "file": "budget-full.spec.js",
-                  "line": 72,
+                  "id": "4777421152762c308c1b-35dd0cce277a513f16cf",
+                  "file": "budget-department.spec.js",
+                  "line": 74,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send image",
-              "file": "budget-full.spec.js",
-              "line": 78,
+              "file": "budget-department.spec.js",
+              "line": 80,
               "column": 10,
               "specs": [
                 {
@@ -432,7 +438,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -442,12 +448,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 234,
+                          "duration": 248,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:22.449Z",
+                          "startTime": "2026-02-03T11:14:06.360Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -455,18 +461,18 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-e5926d06575df3d8ed7b",
-                  "file": "budget-full.spec.js",
-                  "line": 80,
+                  "id": "4777421152762c308c1b-5f2b050826d73906dee0",
+                  "file": "budget-department.spec.js",
+                  "line": 82,
                   "column": 9
                 },
                 {
                   "title": "verify user forward message",
-                  "ok": true,
+                  "ok": false,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -475,27 +481,63 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9415,
-                          "errors": [],
-                          "stdout": [
+                          "status": "timedOut",
+                          "duration": 30110,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
                             {
-                              "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Image Reply'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js",
+                                "column": 21,
+                                "line": 174
+                              },
+                              "message": "Error: locator.waitFor: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Forward Successfully') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/cnc.js:174\n\n\u001b[0m \u001b[90m 172 |\u001b[39m         \n \u001b[90m 173 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Forward Successfully'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 174 |\u001b[39m         \u001b[36mawait\u001b[39m popup\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 175 |\u001b[39m         \u001b[36mawait\u001b[39m popup\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'hidden'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 176 |\u001b[39m     }\n \u001b[90m 177 |\u001b[39m\u001b[0m\n\u001b[2m    at CnC.forward (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:174:21)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/budget-department.spec.js:88:13\u001b[22m"
                             }
                           ],
-                          "stderr": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2026-02-03T11:14:37.046Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [
+                            {
+                              "text": "Failed to select dropdown option: Forward locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content').first() to be visible\u001b[22m\n\n    at CnC.cncDropList \u001b[90m(/Users/babuyadav/Documents/zillit-playwright-automation/\u001b[39msrc/pages/cnc.js:79:37\u001b[90m)\u001b[39m\n    at CnC.forward \u001b[90m(/Users/babuyadav/Documents/zillit-playwright-automation/\u001b[39msrc/pages/cnc.js:170:9\u001b[90m)\u001b[39m\n    at \u001b[90m/Users/babuyadav/Documents/zillit-playwright-automation/\u001b[39msrc/tests/budget-department.spec.js:88:13 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    stepId: \u001b[32m'pw:api@4'\u001b[39m,\n    location: {\n      file: \u001b[32m'/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js'\u001b[39m,\n      line: \u001b[33m79\u001b[39m,\n      column: \u001b[33m37\u001b[39m,\n      function: \u001b[32m'CnC.cncDropList'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m'locator.waitFor(ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content >> nth=0)'\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content >> nth=0'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m10000\u001b[39m\n    },\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@4'\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1770117258641\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content').first() to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('ul.ant-dropdown-menu li span.ant-dropdown-menu-title-content').first() to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at CnC.cncDropList (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:79:37)\\n'\u001b[39m +\n        \u001b[32m'    at CnC.forward (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:170:9)\\n'\u001b[39m +\n        \u001b[32m'    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/budget-department.spec.js:88:13'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                            }
+                          ],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:22.695Z",
+                          "startTime": "2026-02-03T11:14:06.620Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-1",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/budget-department-Budget-D-bfc04-verify-user-forward-message-chromium/trace.zip"
+                            }
+                          ]
                         }
                       ],
-                      "status": "expected"
+                      "status": "unexpected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-f3b9222c2c25bfe5199a",
-                  "file": "budget-full.spec.js",
-                  "line": 85,
+                  "id": "4777421152762c308c1b-9dc764a5eef928c69337",
+                  "file": "budget-department.spec.js",
+                  "line": 87,
                   "column": 9
                 },
                 {
@@ -504,7 +546,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [
                         {
                           "type": "skip"
@@ -515,7 +557,7 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "skipped",
                           "duration": 0,
@@ -523,7 +565,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:32.116Z",
+                          "startTime": "2026-02-03T11:14:38.257Z",
                           "annotations": [
                             {
                               "type": "skip"
@@ -535,9 +577,9 @@
                       "status": "skipped"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-12d992f910f3aa833002",
-                  "file": "budget-full.spec.js",
-                  "line": 89,
+                  "id": "4777421152762c308c1b-dc380610eb73ce395870",
+                  "file": "budget-department.spec.js",
+                  "line": 91,
                   "column": 14
                 },
                 {
@@ -546,26 +588,38 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2125,
+                          "duration": 11296,
                           "errors": [],
                           "stdout": [
+                            {
+                              "text": "[INFO] 2026-02-03T11:14:38.892Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-03T11:14:45.694Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: web.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-03T11:14:45.694Z - Production environment is started...\n"
+                            },
                             {
                               "text": "Dropdown items: [ \u001b[32m'Reply'\u001b[39m, \u001b[32m'Forward'\u001b[39m, \u001b[32m'Image Reply'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:32.116Z",
+                          "startTime": "2026-02-03T11:14:38.257Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -573,9 +627,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-cfc6f3fc33b2189fb0a0",
-                  "file": "budget-full.spec.js",
-                  "line": 93,
+                  "id": "4777421152762c308c1b-5cf3978090b3d193b281",
+                  "file": "budget-department.spec.js",
+                  "line": 95,
                   "column": 9
                 },
                 {
@@ -584,22 +638,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6399,
+                          "duration": 6560,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:34.265Z",
+                          "startTime": "2026-02-03T11:15:01.735Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -607,17 +661,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-cb09b7725f4dcb0ce88d",
-                  "file": "budget-full.spec.js",
-                  "line": 97,
+                  "id": "4777421152762c308c1b-62422a9f3a17bb3897ac",
+                  "file": "budget-department.spec.js",
+                  "line": 99,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send video",
-              "file": "budget-full.spec.js",
-              "line": 103,
+              "file": "budget-department.spec.js",
+              "line": 105,
               "column": 10,
               "specs": [
                 {
@@ -626,22 +680,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 219,
+                          "duration": 625,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:40.681Z",
+                          "startTime": "2026-02-03T11:15:08.304Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -649,9 +703,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-d89318d9f8d8a70f11ea",
-                  "file": "budget-full.spec.js",
-                  "line": 105,
+                  "id": "4777421152762c308c1b-c6a41e1dbee39527ee31",
+                  "file": "budget-department.spec.js",
+                  "line": 107,
                   "column": 9
                 },
                 {
@@ -660,17 +714,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7472,
+                          "duration": 7285,
                           "errors": [],
                           "stdout": [
                             {
@@ -679,7 +733,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:40.914Z",
+                          "startTime": "2026-02-03T11:15:08.942Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -687,9 +741,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-55dfb3892ac3397a6640",
-                  "file": "budget-full.spec.js",
-                  "line": 110,
+                  "id": "4777421152762c308c1b-0c14006285088fd855e7",
+                  "file": "budget-department.spec.js",
+                  "line": 112,
                   "column": 9
                 },
                 {
@@ -698,7 +752,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [
                         {
                           "type": "skip"
@@ -709,7 +763,7 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "skipped",
                           "duration": 0,
@@ -717,7 +771,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:48.400Z",
+                          "startTime": "2026-02-03T11:15:16.243Z",
                           "annotations": [
                             {
                               "type": "skip"
@@ -729,9 +783,9 @@
                       "status": "skipped"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-09686d377bda6cd230b5",
-                  "file": "budget-full.spec.js",
-                  "line": 114,
+                  "id": "4777421152762c308c1b-40cbc1e030e55fa0164a",
+                  "file": "budget-department.spec.js",
+                  "line": 116,
                   "column": 14
                 },
                 {
@@ -740,17 +794,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1781,
+                          "duration": 1747,
                           "errors": [],
                           "stdout": [
                             {
@@ -759,7 +813,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:48.401Z",
+                          "startTime": "2026-02-03T11:15:16.243Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -767,9 +821,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-7b7716b681ab2b20228b",
-                  "file": "budget-full.spec.js",
-                  "line": 118,
+                  "id": "4777421152762c308c1b-9f24cfab747005cbdf80",
+                  "file": "budget-department.spec.js",
+                  "line": 120,
                   "column": 9
                 },
                 {
@@ -778,22 +832,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5978,
+                          "duration": 6376,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:50.194Z",
+                          "startTime": "2026-02-03T11:15:18.022Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -801,17 +855,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-4de984d94014612cc295",
-                  "file": "budget-full.spec.js",
-                  "line": 122,
+                  "id": "4777421152762c308c1b-426015fa069135d12a33",
+                  "file": "budget-department.spec.js",
+                  "line": 124,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send document",
-              "file": "budget-full.spec.js",
-              "line": 128,
+              "file": "budget-department.spec.js",
+              "line": 130,
               "column": 10,
               "specs": [
                 {
@@ -820,22 +874,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 180,
+                          "duration": 189,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:56.178Z",
+                          "startTime": "2026-02-03T11:15:24.414Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -843,9 +897,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-d43d177c1f375cf5e982",
-                  "file": "budget-full.spec.js",
-                  "line": 130,
+                  "id": "4777421152762c308c1b-0f5a85d4a5bb864a504c",
+                  "file": "budget-department.spec.js",
+                  "line": 132,
                   "column": 9
                 },
                 {
@@ -854,17 +908,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6975,
+                          "duration": 6674,
                           "errors": [],
                           "stdout": [
                             {
@@ -873,7 +927,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:58:56.366Z",
+                          "startTime": "2026-02-03T11:15:24.614Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -881,9 +935,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-28159421fef2866b9977",
-                  "file": "budget-full.spec.js",
-                  "line": 135,
+                  "id": "4777421152762c308c1b-cb2c37347283e67e7765",
+                  "file": "budget-department.spec.js",
+                  "line": 137,
                   "column": 9
                 },
                 {
@@ -892,7 +946,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [
                         {
                           "type": "skip"
@@ -903,7 +957,7 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "skipped",
                           "duration": 0,
@@ -911,7 +965,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:03.349Z",
+                          "startTime": "2026-02-03T11:15:31.305Z",
                           "annotations": [
                             {
                               "type": "skip"
@@ -923,9 +977,9 @@
                       "status": "skipped"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-6225d0d3a0445b6e4d48",
-                  "file": "budget-full.spec.js",
-                  "line": 139,
+                  "id": "4777421152762c308c1b-b092cf0b443d1c2a0277",
+                  "file": "budget-department.spec.js",
+                  "line": 141,
                   "column": 14
                 },
                 {
@@ -934,17 +988,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1746,
+                          "duration": 2209,
                           "errors": [],
                           "stdout": [
                             {
@@ -953,7 +1007,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:03.349Z",
+                          "startTime": "2026-02-03T11:15:31.306Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -961,9 +1015,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-d6f34182a53f4dfc3754",
-                  "file": "budget-full.spec.js",
-                  "line": 143,
+                  "id": "4777421152762c308c1b-27b51ad6cb66a0c8a38f",
+                  "file": "budget-department.spec.js",
+                  "line": 145,
                   "column": 9
                 },
                 {
@@ -972,22 +1026,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6337,
+                          "duration": 6333,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:05.105Z",
+                          "startTime": "2026-02-03T11:15:33.532Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -995,17 +1049,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-653fa650bd017d2ff682",
-                  "file": "budget-full.spec.js",
-                  "line": 147,
+                  "id": "4777421152762c308c1b-40ecd1193ccebc44c4c4",
+                  "file": "budget-department.spec.js",
+                  "line": 149,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send audio",
-              "file": "budget-full.spec.js",
-              "line": 154,
+              "file": "budget-department.spec.js",
+              "line": 156,
               "column": 10,
               "specs": [
                 {
@@ -1014,22 +1068,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 176,
+                          "duration": 254,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:11.449Z",
+                          "startTime": "2026-02-03T11:15:39.882Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1037,9 +1091,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-90fc2b4707be3c066c75",
-                  "file": "budget-full.spec.js",
-                  "line": 156,
+                  "id": "4777421152762c308c1b-834a0f1e76e6d652efc4",
+                  "file": "budget-department.spec.js",
+                  "line": 158,
                   "column": 9
                 },
                 {
@@ -1048,17 +1102,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6960,
+                          "duration": 6976,
                           "errors": [],
                           "stdout": [
                             {
@@ -1067,7 +1121,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:11.632Z",
+                          "startTime": "2026-02-03T11:15:40.147Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1075,9 +1129,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-ff31e0fe685f9275a8b1",
-                  "file": "budget-full.spec.js",
-                  "line": 161,
+                  "id": "4777421152762c308c1b-9b914e6916f4f135b2c4",
+                  "file": "budget-department.spec.js",
+                  "line": 163,
                   "column": 9
                 },
                 {
@@ -1086,7 +1140,7 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [
                         {
                           "type": "skip"
@@ -1097,7 +1151,7 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "skipped",
                           "duration": 0,
@@ -1105,7 +1159,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:18.617Z",
+                          "startTime": "2026-02-03T11:15:47.175Z",
                           "annotations": [
                             {
                               "type": "skip"
@@ -1117,9 +1171,9 @@
                       "status": "skipped"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-b7f6a49e36ef280f77bd",
-                  "file": "budget-full.spec.js",
-                  "line": 165,
+                  "id": "4777421152762c308c1b-3c34631cd5f5a3c070d9",
+                  "file": "budget-department.spec.js",
+                  "line": 167,
                   "column": 14
                 },
                 {
@@ -1128,17 +1182,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1851,
+                          "duration": 2261,
                           "errors": [],
                           "stdout": [
                             {
@@ -1147,7 +1201,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:18.617Z",
+                          "startTime": "2026-02-03T11:15:47.176Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1155,9 +1209,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-5cf7efdb41c00a1fe3b1",
-                  "file": "budget-full.spec.js",
-                  "line": 169,
+                  "id": "4777421152762c308c1b-bf138cd915c767ece806",
+                  "file": "budget-department.spec.js",
+                  "line": 171,
                   "column": 9
                 },
                 {
@@ -1166,22 +1220,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6412,
+                          "duration": 6452,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:20.479Z",
+                          "startTime": "2026-02-03T11:15:49.452Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1189,17 +1243,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-940acee08a4380a8b30d",
-                  "file": "budget-full.spec.js",
-                  "line": 173,
+                  "id": "4777421152762c308c1b-0554d1f411ea31f9bd8b",
+                  "file": "budget-department.spec.js",
+                  "line": 175,
                   "column": 9
                 }
               ]
             },
             {
               "title": "Group Creation",
-              "file": "budget-full.spec.js",
-              "line": 179,
+              "file": "budget-department.spec.js",
+              "line": 181,
               "column": 10,
               "specs": [
                 {
@@ -1208,22 +1262,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6323,
+                          "duration": 5467,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:26.903Z",
+                          "startTime": "2026-02-03T11:15:55.926Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1231,9 +1285,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-15722b4e1b71681c99be",
-                  "file": "budget-full.spec.js",
-                  "line": 181,
+                  "id": "4777421152762c308c1b-693f2c34ff8a1cee1d2b",
+                  "file": "budget-department.spec.js",
+                  "line": 183,
                   "column": 9
                 },
                 {
@@ -1242,17 +1296,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5410,
+                          "duration": 5289,
                           "errors": [],
                           "stdout": [
                             {
@@ -1261,7 +1315,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:33.240Z",
+                          "startTime": "2026-02-03T11:16:01.406Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1269,9 +1323,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-bf3b70f0d9bf27f16447",
-                  "file": "budget-full.spec.js",
-                  "line": 185,
+                  "id": "4777421152762c308c1b-1141568b6836759dd065",
+                  "file": "budget-department.spec.js",
+                  "line": 187,
                   "column": 9
                 },
                 {
@@ -1280,17 +1334,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5522,
+                          "duration": 5737,
                           "errors": [],
                           "stdout": [
                             {
@@ -1299,7 +1353,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:38.663Z",
+                          "startTime": "2026-02-03T11:16:06.712Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1307,9 +1361,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-d1f1a014d8edc7d03e97",
-                  "file": "budget-full.spec.js",
-                  "line": 188,
+                  "id": "4777421152762c308c1b-ce3622fb8b9394eb1081",
+                  "file": "budget-department.spec.js",
+                  "line": 190,
                   "column": 9
                 },
                 {
@@ -1318,17 +1372,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3746,
+                          "duration": 3705,
                           "errors": [],
                           "stdout": [
                             {
@@ -1337,7 +1391,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:44.201Z",
+                          "startTime": "2026-02-03T11:16:12.468Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1345,9 +1399,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-7aab23cc491f7545e2ff",
-                  "file": "budget-full.spec.js",
-                  "line": 191,
+                  "id": "4777421152762c308c1b-9c9cdddce7f97fb889e1",
+                  "file": "budget-department.spec.js",
+                  "line": 193,
                   "column": 9
                 },
                 {
@@ -1356,17 +1410,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1835,
+                          "duration": 1703,
                           "errors": [],
                           "stdout": [
                             {
@@ -1375,7 +1429,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:47.964Z",
+                          "startTime": "2026-02-03T11:16:16.185Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1383,9 +1437,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-0440e17fcd00e2c8f764",
-                  "file": "budget-full.spec.js",
-                  "line": 194,
+                  "id": "4777421152762c308c1b-e32e02018a593b7a0e86",
+                  "file": "budget-department.spec.js",
+                  "line": 196,
                   "column": 9
                 },
                 {
@@ -1394,22 +1448,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2075,
+                          "duration": 2146,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:49.813Z",
+                          "startTime": "2026-02-03T11:16:17.900Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1417,9 +1471,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-bbb97bc308659f0146f0",
-                  "file": "budget-full.spec.js",
-                  "line": 197,
+                  "id": "4777421152762c308c1b-8090ed6286fcd4a67af1",
+                  "file": "budget-department.spec.js",
+                  "line": 199,
                   "column": 9
                 },
                 {
@@ -1428,22 +1482,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1729,
+                          "duration": 1734,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:51.899Z",
+                          "startTime": "2026-02-03T11:16:20.060Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1451,9 +1505,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-f7e7960b6db923d870c2",
-                  "file": "budget-full.spec.js",
-                  "line": 200,
+                  "id": "4777421152762c308c1b-d632a0f4d23e825ae4a3",
+                  "file": "budget-department.spec.js",
+                  "line": 202,
                   "column": 9
                 },
                 {
@@ -1462,22 +1516,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6985,
+                          "duration": 6378,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T10:59:53.644Z",
+                          "startTime": "2026-02-03T11:16:21.807Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1485,17 +1539,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-ef3797f0bf1104e67f36",
-                  "file": "budget-full.spec.js",
-                  "line": 203,
+                  "id": "4777421152762c308c1b-c82717755a1345ba6359",
+                  "file": "budget-department.spec.js",
+                  "line": 205,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send image in group",
-              "file": "budget-full.spec.js",
-              "line": 209,
+              "file": "budget-department.spec.js",
+              "line": 211,
               "column": 10,
               "specs": [
                 {
@@ -1504,22 +1558,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2063,
+                          "duration": 2367,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:00.639Z",
+                          "startTime": "2026-02-03T11:16:28.192Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1527,9 +1581,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-4eab42c40d9a9d58096e",
-                  "file": "budget-full.spec.js",
-                  "line": 211,
+                  "id": "4777421152762c308c1b-642fef57d1a19a9a0425",
+                  "file": "budget-department.spec.js",
+                  "line": 213,
                   "column": 9
                 },
                 {
@@ -1538,17 +1592,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7123,
+                          "duration": 8915,
                           "errors": [],
                           "stdout": [
                             {
@@ -1557,7 +1611,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:02.716Z",
+                          "startTime": "2026-02-03T11:16:30.568Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1565,9 +1619,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-6c5d406d16733e93e55a",
-                  "file": "budget-full.spec.js",
-                  "line": 215,
+                  "id": "4777421152762c308c1b-ec665590d128fc024181",
+                  "file": "budget-department.spec.js",
+                  "line": 217,
                   "column": 9
                 },
                 {
@@ -1576,17 +1630,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3569,
+                          "duration": 3572,
                           "errors": [],
                           "stdout": [
                             {
@@ -1595,7 +1649,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:09.851Z",
+                          "startTime": "2026-02-03T11:16:39.496Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1603,9 +1657,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-9e8e2960aed06cc138bc",
-                  "file": "budget-full.spec.js",
-                  "line": 218,
+                  "id": "4777421152762c308c1b-cd0d029da1900d8ec9ee",
+                  "file": "budget-department.spec.js",
+                  "line": 220,
                   "column": 9
                 },
                 {
@@ -1614,17 +1668,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2303,
+                          "duration": 2227,
                           "errors": [],
                           "stdout": [
                             {
@@ -1633,7 +1687,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:13.434Z",
+                          "startTime": "2026-02-03T11:16:43.083Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1641,9 +1695,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-23130471cdc1af150d3e",
-                  "file": "budget-full.spec.js",
-                  "line": 221,
+                  "id": "4777421152762c308c1b-00ae41a5411e68a5e44b",
+                  "file": "budget-department.spec.js",
+                  "line": 223,
                   "column": 9
                 },
                 {
@@ -1652,22 +1706,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1772,
+                          "duration": 2332,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:15.753Z",
+                          "startTime": "2026-02-03T11:16:45.322Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1675,9 +1729,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-ab20f3aa54dabdac8a80",
-                  "file": "budget-full.spec.js",
-                  "line": 224,
+                  "id": "4777421152762c308c1b-f7a7830ab7de981bcb36",
+                  "file": "budget-department.spec.js",
+                  "line": 226,
                   "column": 9
                 },
                 {
@@ -1686,22 +1740,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1740,
+                          "duration": 1865,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:17.536Z",
+                          "startTime": "2026-02-03T11:16:47.666Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1709,9 +1763,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-4f5ba9f94d3ba16994b2",
-                  "file": "budget-full.spec.js",
-                  "line": 227,
+                  "id": "4777421152762c308c1b-a415f4d8f86608ce3fe5",
+                  "file": "budget-department.spec.js",
+                  "line": 229,
                   "column": 9
                 },
                 {
@@ -1720,22 +1774,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6605,
+                          "duration": 6448,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:19.285Z",
+                          "startTime": "2026-02-03T11:16:49.545Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1743,17 +1797,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-1a9d31c32de9ca17d64d",
-                  "file": "budget-full.spec.js",
-                  "line": 230,
+                  "id": "4777421152762c308c1b-7768a5cd83d6fad0656b",
+                  "file": "budget-department.spec.js",
+                  "line": 232,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send video in group",
-              "file": "budget-full.spec.js",
-              "line": 237,
+              "file": "budget-department.spec.js",
+              "line": 239,
               "column": 10,
               "specs": [
                 {
@@ -1762,22 +1816,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2496,
+                          "duration": 2143,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:25.900Z",
+                          "startTime": "2026-02-03T11:16:56.004Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1785,9 +1839,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-7bc25cf2ee3f2431438b",
-                  "file": "budget-full.spec.js",
-                  "line": 239,
+                  "id": "4777421152762c308c1b-d635ecd20ba9318ce87e",
+                  "file": "budget-department.spec.js",
+                  "line": 241,
                   "column": 9
                 },
                 {
@@ -1796,17 +1850,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5734,
+                          "duration": 5655,
                           "errors": [],
                           "stdout": [
                             {
@@ -1815,7 +1869,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:28.411Z",
+                          "startTime": "2026-02-03T11:16:58.160Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1823,9 +1877,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-feaca9d55e4d30781d21",
-                  "file": "budget-full.spec.js",
-                  "line": 243,
+                  "id": "4777421152762c308c1b-07812107d2aad4e62c40",
+                  "file": "budget-department.spec.js",
+                  "line": 245,
                   "column": 9
                 },
                 {
@@ -1834,17 +1888,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3573,
+                          "duration": 3631,
                           "errors": [],
                           "stdout": [
                             {
@@ -1853,7 +1907,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:34.161Z",
+                          "startTime": "2026-02-03T11:17:03.828Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1861,9 +1915,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-e2608cb6fc4d53cfc401",
-                  "file": "budget-full.spec.js",
-                  "line": 246,
+                  "id": "4777421152762c308c1b-6a85da5cb98187792405",
+                  "file": "budget-department.spec.js",
+                  "line": 248,
                   "column": 9
                 },
                 {
@@ -1872,17 +1926,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2278,
+                          "duration": 2076,
                           "errors": [],
                           "stdout": [
                             {
@@ -1891,7 +1945,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:37.747Z",
+                          "startTime": "2026-02-03T11:17:07.472Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1899,9 +1953,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-71694b1a77b1ca0c1d54",
-                  "file": "budget-full.spec.js",
-                  "line": 249,
+                  "id": "4777421152762c308c1b-d2ffdbf6fa9d2d6773cb",
+                  "file": "budget-department.spec.js",
+                  "line": 251,
                   "column": 9
                 },
                 {
@@ -1910,22 +1964,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1774,
+                          "duration": 2095,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:40.038Z",
+                          "startTime": "2026-02-03T11:17:09.555Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1933,9 +1987,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-16a7f969a5808f17f287",
-                  "file": "budget-full.spec.js",
-                  "line": 252,
+                  "id": "4777421152762c308c1b-e1e8f4c1ec38144f1510",
+                  "file": "budget-department.spec.js",
+                  "line": 254,
                   "column": 9
                 },
                 {
@@ -1944,22 +1998,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1758,
+                          "duration": 1852,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:41.830Z",
+                          "startTime": "2026-02-03T11:17:11.664Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1967,9 +2021,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-09251dcb4c44ccde42e8",
-                  "file": "budget-full.spec.js",
-                  "line": 255,
+                  "id": "4777421152762c308c1b-31dc3425fcdc62640ee0",
+                  "file": "budget-department.spec.js",
+                  "line": 257,
                   "column": 9
                 },
                 {
@@ -1978,22 +2032,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6370,
+                          "duration": 6481,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:43.601Z",
+                          "startTime": "2026-02-03T11:17:13.528Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2001,17 +2055,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-d9573d344f80105b6a91",
-                  "file": "budget-full.spec.js",
-                  "line": 258,
+                  "id": "4777421152762c308c1b-4cc7b7f09d030a223dd4",
+                  "file": "budget-department.spec.js",
+                  "line": 260,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send document in group",
-              "file": "budget-full.spec.js",
-              "line": 264,
+              "file": "budget-department.spec.js",
+              "line": 266,
               "column": 10,
               "specs": [
                 {
@@ -2020,22 +2074,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1493,
+                          "duration": 1518,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:49.982Z",
+                          "startTime": "2026-02-03T11:17:20.020Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2043,9 +2097,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-29f6b02c32025ec93202",
-                  "file": "budget-full.spec.js",
-                  "line": 266,
+                  "id": "4777421152762c308c1b-120ea15005505aea2566",
+                  "file": "budget-department.spec.js",
+                  "line": 268,
                   "column": 9
                 },
                 {
@@ -2054,17 +2108,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5496,
+                          "duration": 5569,
                           "errors": [],
                           "stdout": [
                             {
@@ -2073,7 +2127,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:51.486Z",
+                          "startTime": "2026-02-03T11:17:21.552Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2081,9 +2135,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-b275fbed0b29e95d7282",
-                  "file": "budget-full.spec.js",
-                  "line": 270,
+                  "id": "4777421152762c308c1b-9c5535f1917affe10ce4",
+                  "file": "budget-department.spec.js",
+                  "line": 272,
                   "column": 9
                 },
                 {
@@ -2092,17 +2146,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3581,
+                          "duration": 3659,
                           "errors": [],
                           "stdout": [
                             {
@@ -2111,7 +2165,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:00:56.992Z",
+                          "startTime": "2026-02-03T11:17:27.134Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2119,9 +2173,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-e14421a7b885dc38f329",
-                  "file": "budget-full.spec.js",
-                  "line": 273,
+                  "id": "4777421152762c308c1b-3b4744a3d30a9930ce1e",
+                  "file": "budget-department.spec.js",
+                  "line": 275,
                   "column": 9
                 },
                 {
@@ -2130,17 +2184,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1773,
+                          "duration": 2186,
                           "errors": [],
                           "stdout": [
                             {
@@ -2149,7 +2203,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:00.584Z",
+                          "startTime": "2026-02-03T11:17:30.806Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2157,9 +2211,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-50aca441099ee5274052",
-                  "file": "budget-full.spec.js",
-                  "line": 276,
+                  "id": "4777421152762c308c1b-547bd455dcba50909111",
+                  "file": "budget-department.spec.js",
+                  "line": 278,
                   "column": 9
                 },
                 {
@@ -2168,22 +2222,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1711,
+                          "duration": 1731,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:02.373Z",
+                          "startTime": "2026-02-03T11:17:33.007Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2191,9 +2245,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-79946ca70af22edb742c",
-                  "file": "budget-full.spec.js",
-                  "line": 279,
+                  "id": "4777421152762c308c1b-078dc649fc9ce149922d",
+                  "file": "budget-department.spec.js",
+                  "line": 281,
                   "column": 9
                 },
                 {
@@ -2202,22 +2256,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1848,
+                          "duration": 1725,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:04.091Z",
+                          "startTime": "2026-02-03T11:17:34.753Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2225,9 +2279,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-bd2c392efab81096304c",
-                  "file": "budget-full.spec.js",
-                  "line": 282,
+                  "id": "4777421152762c308c1b-0dfce2efb06da6805f99",
+                  "file": "budget-department.spec.js",
+                  "line": 284,
                   "column": 9
                 },
                 {
@@ -2236,22 +2290,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6421,
+                          "duration": 6353,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:05.953Z",
+                          "startTime": "2026-02-03T11:17:36.491Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2259,17 +2313,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-e4c21a0ea69bf32d691c",
-                  "file": "budget-full.spec.js",
-                  "line": 285,
+                  "id": "4777421152762c308c1b-17e5744a91f4d92d695a",
+                  "file": "budget-department.spec.js",
+                  "line": 287,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send audio in group",
-              "file": "budget-full.spec.js",
-              "line": 292,
+              "file": "budget-department.spec.js",
+              "line": 294,
               "column": 10,
               "specs": [
                 {
@@ -2278,22 +2332,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1505,
+                          "duration": 1597,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:12.383Z",
+                          "startTime": "2026-02-03T11:17:42.855Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2301,9 +2355,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-b1679b36d0af05024d64",
-                  "file": "budget-full.spec.js",
-                  "line": 294,
+                  "id": "4777421152762c308c1b-fd0470dad1472527ad8f",
+                  "file": "budget-department.spec.js",
+                  "line": 296,
                   "column": 9
                 },
                 {
@@ -2312,17 +2366,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5500,
+                          "duration": 5161,
                           "errors": [],
                           "stdout": [
                             {
@@ -2331,7 +2385,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:13.900Z",
+                          "startTime": "2026-02-03T11:17:44.466Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2339,9 +2393,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-f95ff5e244ac40b7d1ee",
-                  "file": "budget-full.spec.js",
-                  "line": 298,
+                  "id": "4777421152762c308c1b-5fd03fd42888efe8f205",
+                  "file": "budget-department.spec.js",
+                  "line": 300,
                   "column": 9
                 },
                 {
@@ -2350,17 +2404,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3562,
+                          "duration": 3567,
                           "errors": [],
                           "stdout": [
                             {
@@ -2369,7 +2423,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:19.414Z",
+                          "startTime": "2026-02-03T11:17:49.640Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2377,9 +2431,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-605dd246bc4976b8fafd",
-                  "file": "budget-full.spec.js",
-                  "line": 301,
+                  "id": "4777421152762c308c1b-c14a5370d1184750ec43",
+                  "file": "budget-department.spec.js",
+                  "line": 303,
                   "column": 9
                 },
                 {
@@ -2388,17 +2442,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2256,
+                          "duration": 2229,
                           "errors": [],
                           "stdout": [
                             {
@@ -2407,7 +2461,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:22.994Z",
+                          "startTime": "2026-02-03T11:17:53.220Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2415,9 +2469,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-749ad2caef16d40f0b25",
-                  "file": "budget-full.spec.js",
-                  "line": 304,
+                  "id": "4777421152762c308c1b-08e0fbd51777d140097b",
+                  "file": "budget-department.spec.js",
+                  "line": 306,
                   "column": 9
                 },
                 {
@@ -2426,22 +2480,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1721,
+                          "duration": 1710,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:25.266Z",
+                          "startTime": "2026-02-03T11:17:55.463Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2449,9 +2503,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-5603ba510261296d0020",
-                  "file": "budget-full.spec.js",
-                  "line": 307,
+                  "id": "4777421152762c308c1b-f578ecbfcb2808d14610",
+                  "file": "budget-department.spec.js",
+                  "line": 309,
                   "column": 9
                 },
                 {
@@ -2460,22 +2514,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1730,
+                          "duration": 1737,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:27.000Z",
+                          "startTime": "2026-02-03T11:17:57.196Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2483,9 +2537,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-d1265695b8e26f7a2983",
-                  "file": "budget-full.spec.js",
-                  "line": 310,
+                  "id": "4777421152762c308c1b-eef9330db09aba16c779",
+                  "file": "budget-department.spec.js",
+                  "line": 312,
                   "column": 9
                 },
                 {
@@ -2494,22 +2548,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6433,
+                          "duration": 6530,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:28.737Z",
+                          "startTime": "2026-02-03T11:17:58.944Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2517,17 +2571,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-14403dea5c51853d145e",
-                  "file": "budget-full.spec.js",
-                  "line": 313,
+                  "id": "4777421152762c308c1b-dcd73528aae68201f5ea",
+                  "file": "budget-department.spec.js",
+                  "line": 315,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send location in group",
-              "file": "budget-full.spec.js",
-              "line": 319,
+              "file": "budget-department.spec.js",
+              "line": 321,
               "column": 10,
               "specs": [
                 {
@@ -2536,22 +2590,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8735,
+                          "duration": 7280,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:35.181Z",
+                          "startTime": "2026-02-03T11:18:05.483Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2559,9 +2613,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-79103683044d8f97c862",
-                  "file": "budget-full.spec.js",
-                  "line": 321,
+                  "id": "4777421152762c308c1b-af4a37145cc263bcfe64",
+                  "file": "budget-department.spec.js",
+                  "line": 323,
                   "column": 9
                 },
                 {
@@ -2570,17 +2624,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5001,
+                          "duration": 5547,
                           "errors": [],
                           "stdout": [
                             {
@@ -2589,7 +2643,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:43.933Z",
+                          "startTime": "2026-02-03T11:18:12.776Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2597,9 +2651,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-0fc66373590e81845ad2",
-                  "file": "budget-full.spec.js",
-                  "line": 325,
+                  "id": "4777421152762c308c1b-132ad623d03dd9380a7b",
+                  "file": "budget-department.spec.js",
+                  "line": 327,
                   "column": 9
                 },
                 {
@@ -2608,17 +2662,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1861,
+                          "duration": 2357,
                           "errors": [],
                           "stdout": [
                             {
@@ -2627,7 +2681,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:48.946Z",
+                          "startTime": "2026-02-03T11:18:18.330Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2635,9 +2689,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-b701e1a3b236dca0d461",
-                  "file": "budget-full.spec.js",
-                  "line": 328,
+                  "id": "4777421152762c308c1b-005857b5fd8111a814c9",
+                  "file": "budget-department.spec.js",
+                  "line": 330,
                   "column": 9
                 },
                 {
@@ -2646,22 +2700,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2193,
+                          "duration": 2064,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:50.820Z",
+                          "startTime": "2026-02-03T11:18:20.699Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2669,9 +2723,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-fef2318838ba3a254ea8",
-                  "file": "budget-full.spec.js",
-                  "line": 331,
+                  "id": "4777421152762c308c1b-2fa5820922a5b72c23af",
+                  "file": "budget-department.spec.js",
+                  "line": 333,
                   "column": 9
                 },
                 {
@@ -2680,22 +2734,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1722,
+                          "duration": 1776,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:53.036Z",
+                          "startTime": "2026-02-03T11:18:22.775Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2703,9 +2757,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-9ef23ea88560d74f4777",
-                  "file": "budget-full.spec.js",
-                  "line": 334,
+                  "id": "4777421152762c308c1b-47bd2e38ed3a6d1d1ec1",
+                  "file": "budget-department.spec.js",
+                  "line": 336,
                   "column": 9
                 },
                 {
@@ -2714,22 +2768,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6348,
+                          "duration": 6338,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:01:54.894Z",
+                          "startTime": "2026-02-03T11:18:24.565Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2737,17 +2791,17 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-3a81520ede7c7f4f9179",
-                  "file": "budget-full.spec.js",
-                  "line": 337,
+                  "id": "4777421152762c308c1b-1ff3328d6780e241d013",
+                  "file": "budget-department.spec.js",
+                  "line": 339,
                   "column": 9
                 }
               ]
             },
             {
               "title": "send image Reply in group",
-              "file": "budget-full.spec.js",
-              "line": 343,
+              "file": "budget-department.spec.js",
+              "line": 345,
               "column": 10,
               "specs": [
                 {
@@ -2756,22 +2810,22 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1857,
+                          "duration": 1860,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:02:01.251Z",
+                          "startTime": "2026-02-03T11:18:30.912Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2779,9 +2833,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-b53e9ccc9863d32c98ec",
-                  "file": "budget-full.spec.js",
-                  "line": 345,
+                  "id": "4777421152762c308c1b-29fdf82d170f04785c90",
+                  "file": "budget-department.spec.js",
+                  "line": 347,
                   "column": 9
                 },
                 {
@@ -2790,17 +2844,17 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 9363,
+                          "duration": 12767,
                           "errors": [],
                           "stdout": [
                             {
@@ -2809,7 +2863,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:02:03.123Z",
+                          "startTime": "2026-02-03T11:18:32.785Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2817,51 +2871,95 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-e8f04d437c0482d5c69e",
-                  "file": "budget-full.spec.js",
-                  "line": 349,
+                  "id": "4777421152762c308c1b-93c5caa29c2171e86d62",
+                  "file": "budget-department.spec.js",
+                  "line": 351,
                   "column": 9
                 },
                 {
                   "title": "verify user delete message",
-                  "ok": true,
+                  "ok": false,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6134,
-                          "errors": [],
-                          "stdout": [],
+                          "status": "failed",
+                          "duration": 6774,
+                          "error": {
+                            "message": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@style=\"position: relative;\"]//label//input[not(@checked)]').first() to be visible\u001b[22m\n",
+                            "stack": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@style=\"position: relative;\"]//label//input[not(@checked)]').first() to be visible\u001b[22m\n\n    at CnC.toggleCheckBox (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:223:24)\n    at CnC.deleteAllMessage (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:244:9)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/budget-department.spec.js:355:13",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js",
+                              "column": 24,
+                              "line": 223
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../pages/cnc.js:223\n\n\u001b[0m \u001b[90m 221 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 222 |\u001b[39m         \u001b[36mconst\u001b[39m checkbox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'//div[@style=\"position: relative;\"]//label//input[not(@checked)]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 223 |\u001b[39m         \u001b[36mawait\u001b[39m checkbox\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 224 |\u001b[39m         \u001b[36mconst\u001b[39m isChecked \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m checkbox\u001b[33m.\u001b[39misChecked()\u001b[33m;\u001b[39m\n \u001b[90m 225 |\u001b[39m\n \u001b[90m 226 |\u001b[39m         \u001b[36mif\u001b[39m(\u001b[33m!\u001b[39misChecked){\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js",
+                                "column": 24,
+                                "line": 223
+                              },
+                              "message": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@style=\"position: relative;\"]//label//input[not(@checked)]').first() to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/cnc.js:223\n\n\u001b[0m \u001b[90m 221 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 222 |\u001b[39m         \u001b[36mconst\u001b[39m checkbox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'//div[@style=\"position: relative;\"]//label//input[not(@checked)]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 223 |\u001b[39m         \u001b[36mawait\u001b[39m checkbox\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 224 |\u001b[39m         \u001b[36mconst\u001b[39m isChecked \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m checkbox\u001b[33m.\u001b[39misChecked()\u001b[33m;\u001b[39m\n \u001b[90m 225 |\u001b[39m\n \u001b[90m 226 |\u001b[39m         \u001b[36mif\u001b[39m(\u001b[33m!\u001b[39misChecked){\u001b[0m\n\u001b[2m    at CnC.toggleCheckBox (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:223:24)\u001b[22m\n\u001b[2m    at CnC.deleteAllMessage (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js:244:9)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/budget-department.spec.js:355:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2026-02-03T11:18:53.101Z - close browser\n"
+                            }
+                          ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:02:12.497Z",
+                          "startTime": "2026-02-03T11:18:45.563Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-0",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/budget-department-Budget-D-99791--verify-user-delete-message-chromium/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/cnc.js",
+                            "column": 24,
+                            "line": 223
+                          }
                         }
                       ],
-                      "status": "expected"
+                      "status": "unexpected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-0d5e48714505d5e76829",
-                  "file": "budget-full.spec.js",
-                  "line": 352,
+                  "id": "4777421152762c308c1b-c7feea798f952a2ac587",
+                  "file": "budget-department.spec.js",
+                  "line": 354,
                   "column": 9
                 }
               ]
             },
             {
               "title": "Delete Group",
-              "file": "budget-full.spec.js",
-              "line": 358,
+              "file": "budget-department.spec.js",
+              "line": 360,
               "column": 10,
               "specs": [
                 {
@@ -2870,26 +2968,38 @@
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 60000,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3953,
+                          "duration": 9884,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-03T11:02:22.626Z - close browser\n"
+                              "text": "[INFO] 2026-02-03T11:18:55.892Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-03T11:19:02.638Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: web.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-03T11:19:02.638Z - Production environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-03T11:19:17.104Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T11:02:18.646Z",
+                          "startTime": "2026-02-03T11:18:55.262Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -2897,9 +3007,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "00b1f3d10263d841c9db-d61ce62e494ee79be61f",
-                  "file": "budget-full.spec.js",
-                  "line": 360,
+                  "id": "4777421152762c308c1b-97c049a34d097e0bf893",
+                  "file": "budget-department.spec.js",
+                  "line": 362,
                   "column": 9
                 }
               ]
@@ -2911,11 +3021,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-03T10:57:39.299Z",
-    "duration": 283817.964,
-    "expected": 66,
+    "startTime": "2026-02-03T11:13:27.465Z",
+    "duration": 350901.775,
+    "expected": 64,
     "skipped": 7,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

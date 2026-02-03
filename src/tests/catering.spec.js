@@ -424,7 +424,7 @@ test.describe('Catering', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/10_cateringTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/catering.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/10_cateringTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/catering.spec.js --project=chromium --headed
    */ 

@@ -1,129 +1,22 @@
-<testsuites id="" name="" tests="5" failures="2" skipped="0" errors="0" time="119.62533499999999">
-<testsuite name="08_continuityTest.spec.js" timestamp="2026-02-03T06:29:04.976Z" hostname="chromium" tests="5" failures="2" skipped="0" time="80.12" errors="0">
-<testcase name="Continuity › My Department › verify upload the continuity scene" classname="08_continuityTest.spec.js" time="0.986">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="35.986394">
+<testsuite name="crew-list-asset-report.spec.js" timestamp="2026-02-03T08:14:40.983Z" hostname="chromium" tests="2" failures="0" skipped="0" time="34.597" errors="0">
+<testcase name="Crew List → Asset Report › Crew List › verify user generate the crew list" classname="crew-list-asset-report.spec.js" time="20.375">
 <system-out>
-<![CDATA[[INFO] 2026-02-03T06:29:06.319Z - browser is launching
-[INFO] 2026-02-03T06:29:13.705Z - open the project
+<![CDATA[[INFO] 2026-02-03T08:14:42.170Z - browser is launching
+[INFO] 2026-02-03T08:14:47.663Z - open the project
 Current hostname is: web.zillit.com
-[INFO] 2026-02-03T06:29:13.706Z - Production environment is started...
+[INFO] 2026-02-03T08:14:47.663Z - Production environment is started...
+[INFO] 2026-02-03T08:15:02.156Z - close browser
 ]]>
 </system-out>
 </testcase>
-<testcase name="Continuity › My Department › verify continuity scene edit -&gt; forward -&gt; delete" classname="08_continuityTest.spec.js" time="30.084">
-<failure message="08_continuityTest.spec.js:40:9 verify continuity scene edit -&gt; forward -&gt; delete" type="FAILURE">
-<![CDATA[  [chromium] › 08_continuityTest.spec.js:40:9 › Continuity › My Department › verify continuity scene edit -> forward -> delete 
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.waitFor: Target page, context or browser has been closed
-    Call log:
-      - waiting for locator('text=Continuity scene(s) distributed') to be visible
-
-
-       at ../pages/continuity.js:170
-
-      168 |
-      169 |         const successMsg = await this.page.locator('text=Continuity scene(s) distributed');
-    > 170 |         await successMsg.waitFor({ state: 'visible' });
-          |                          ^
-      171 |         await successMsg.waitFor({ state: 'hidden' });
-      172 |     }
-      173 |
-        at Continuity.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/continuity.js:170:26)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/08_continuityTest.spec.js:45:13
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../../test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Crew List → Asset Report › Asset Report › verify user generate the asset report" classname="crew-list-asset-report.spec.js" time="14.222">
 <system-out>
-<![CDATA[[INFO] 2026-02-03T06:29:49.955Z - close browser
-
-[[ATTACHMENT|../test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity › All Department › verify all department continuity scene" classname="08_continuityTest.spec.js" time="30.114">
-<failure message="08_continuityTest.spec.js:52:9 verify all department continuity scene" type="FAILURE">
-<![CDATA[  [chromium] › 08_continuityTest.spec.js:52:9 › Continuity › All Department › verify all department continuity scene 
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.waitFor: Target page, context or browser has been closed
-    Call log:
-      - waiting for locator('text=Continuity scene(s) distributed') to be visible
-
-
-       at ../pages/continuity.js:170
-
-      168 |
-      169 |         const successMsg = await this.page.locator('text=Continuity scene(s) distributed');
-    > 170 |         await successMsg.waitFor({ state: 'visible' });
-          |                          ^
-      171 |         await successMsg.waitFor({ state: 'hidden' });
-      172 |     }
-      173 |
-        at Continuity.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/continuity.js:170:26)
-        at Continuity.allDepartmentScene (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/continuity.js:155:9)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/08_continuityTest.spec.js:53:13
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../../test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[[INFO] 2026-02-03T06:29:52.147Z - browser is launching
-[INFO] 2026-02-03T06:29:57.980Z - open the project
+<![CDATA[[INFO] 2026-02-03T08:15:02.548Z - browser is launching
+[INFO] 2026-02-03T08:15:07.551Z - open the project
 Current hostname is: web.zillit.com
-[INFO] 2026-02-03T06:29:57.980Z - Production environment is started...
-[INFO] 2026-02-03T06:30:33.175Z - close browser
-
-[[ATTACHMENT|../test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity › All Department › verify delete all department continuity scene" classname="08_continuityTest.spec.js" time="12.414">
-<system-out>
-<![CDATA[[INFO] 2026-02-03T06:30:34.585Z - browser is launching
-[INFO] 2026-02-03T06:30:40.564Z - open the project
-Current hostname is: web.zillit.com
-[INFO] 2026-02-03T06:30:40.564Z - Production environment is started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity › All Department › verify delete my department continuity scene" classname="08_continuityTest.spec.js" time="6.522">
-<system-out>
-<![CDATA[[INFO] 2026-02-03T06:31:04.321Z - close browser
+[INFO] 2026-02-03T08:15:07.551Z - Production environment is started...
+[INFO] 2026-02-03T08:15:16.553Z - close browser
 ]]>
 </system-out>
 </testcase>

@@ -108,27 +108,27 @@
   },
   "suites": [
     {
-      "title": "08_continuityTest.spec.js",
-      "file": "08_continuityTest.spec.js",
+      "title": "crew-list-asset-report.spec.js",
+      "file": "crew-list-asset-report.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Continuity",
-          "file": "08_continuityTest.spec.js",
+          "title": "Crew List → Asset Report",
+          "file": "crew-list-asset-report.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "My Department",
-              "file": "08_continuityTest.spec.js",
-              "line": 34,
+              "title": "Crew List",
+              "file": "crew-list-asset-report.spec.js",
+              "line": 33,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify upload the continuity scene",
+                  "title": "verify user generate the crew list",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -143,25 +143,28 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 986,
+                          "duration": 20375,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-03T06:29:06.319Z - browser is launching\n"
+                              "text": "[INFO] 2026-02-03T08:14:42.170Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T06:29:13.705Z - open the project\n"
+                              "text": "[INFO] 2026-02-03T08:14:47.663Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T06:29:13.706Z - Production environment is started...\n"
+                              "text": "[INFO] 2026-02-03T08:14:47.663Z - Production environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-03T08:15:02.156Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T06:29:05.320Z",
+                          "startTime": "2026-02-03T08:14:41.317Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -169,173 +172,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "952214916e7e90020e47-0e70ce0ab49879d5467a",
-                  "file": "08_continuityTest.spec.js",
-                  "line": 36,
-                  "column": 9
-                },
-                {
-                  "title": "verify continuity scene edit -> forward -> delete",
-                  "ok": false,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "timedOut",
-                          "duration": 30084,
-                          "error": {
-                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                          },
-                          "errors": [
-                            {
-                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                            },
-                            {
-                              "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/continuity.js",
-                                "column": 26,
-                                "line": 170
-                              },
-                              "message": "Error: locator.waitFor: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Continuity scene(s) distributed') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/continuity.js:170\n\n\u001b[0m \u001b[90m 168 |\u001b[39m\n \u001b[90m 169 |\u001b[39m         \u001b[36mconst\u001b[39m successMsg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Continuity scene(s) distributed'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 170 |\u001b[39m         \u001b[36mawait\u001b[39m successMsg\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 171 |\u001b[39m         \u001b[36mawait\u001b[39m successMsg\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'hidden'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 172 |\u001b[39m     }\n \u001b[90m 173 |\u001b[39m\u001b[0m\n\u001b[2m    at Continuity.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/continuity.js:170:26)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/08_continuityTest.spec.js:45:13\u001b[22m"
-                            }
-                          ],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2026-02-03T06:29:49.955Z - close browser\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-03T06:29:19.604Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "_error-context-1",
-                              "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/08_continuityTest-Continui-87cd3-ene-edit---forward---delete-chromium/trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "unexpected"
-                    }
-                  ],
-                  "id": "952214916e7e90020e47-4a86c4f41404f683e27f",
-                  "file": "08_continuityTest.spec.js",
-                  "line": 40,
+                  "id": "a1674e3d83dd52b1836c-027020fd707b00dc9b40",
+                  "file": "crew-list-asset-report.spec.js",
+                  "line": 35,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "All Department",
-              "file": "08_continuityTest.spec.js",
-              "line": 50,
+              "title": "Asset Report",
+              "file": "crew-list-asset-report.spec.js",
+              "line": 41,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify all department continuity scene",
-                  "ok": false,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
-                          "status": "timedOut",
-                          "duration": 30114,
-                          "error": {
-                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                          },
-                          "errors": [
-                            {
-                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                            },
-                            {
-                              "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/continuity.js",
-                                "column": 26,
-                                "line": 170
-                              },
-                              "message": "Error: locator.waitFor: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Continuity scene(s) distributed') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/continuity.js:170\n\n\u001b[0m \u001b[90m 168 |\u001b[39m\n \u001b[90m 169 |\u001b[39m         \u001b[36mconst\u001b[39m successMsg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Continuity scene(s) distributed'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 170 |\u001b[39m         \u001b[36mawait\u001b[39m successMsg\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 171 |\u001b[39m         \u001b[36mawait\u001b[39m successMsg\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'hidden'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 172 |\u001b[39m     }\n \u001b[90m 173 |\u001b[39m\u001b[0m\n\u001b[2m    at Continuity.distribute (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/continuity.js:170:26)\u001b[22m\n\u001b[2m    at Continuity.allDepartmentScene (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/continuity.js:155:9)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/08_continuityTest.spec.js:53:13\u001b[22m"
-                            }
-                          ],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2026-02-03T06:29:52.147Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-03T06:29:57.980Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: web.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-03T06:29:57.980Z - Production environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-03T06:30:33.175Z - close browser\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-03T06:29:51.561Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "_error-context-1",
-                              "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/08_continuityTest-Continui-f6de8-department-continuity-scene-chromium/trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "unexpected"
-                    }
-                  ],
-                  "id": "952214916e7e90020e47-c8cb6a44a87636e4e089",
-                  "file": "08_continuityTest.spec.js",
-                  "line": 52,
-                  "column": 9
-                },
-                {
-                  "title": "verify delete all department continuity scene",
+                  "title": "verify user generate the asset report",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -347,66 +198,31 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 2,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12414,
+                          "duration": 14222,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-03T06:30:34.585Z - browser is launching\n"
+                              "text": "[INFO] 2026-02-03T08:15:02.548Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T06:30:40.564Z - open the project\n"
+                              "text": "[INFO] 2026-02-03T08:15:07.551Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-03T06:30:40.564Z - Production environment is started...\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-03T06:30:34.194Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "952214916e7e90020e47-4518d8eb22a0ab789ed9",
-                  "file": "08_continuityTest.spec.js",
-                  "line": 56,
-                  "column": 9
-                },
-                {
-                  "title": "verify delete my department continuity scene",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6522,
-                          "errors": [],
-                          "stdout": [
+                              "text": "[INFO] 2026-02-03T08:15:07.551Z - Production environment is started...\n"
+                            },
                             {
-                              "text": "[INFO] 2026-02-03T06:31:04.321Z - close browser\n"
+                              "text": "[INFO] 2026-02-03T08:15:16.553Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-03T06:30:57.767Z",
+                          "startTime": "2026-02-03T08:15:02.546Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -414,9 +230,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "952214916e7e90020e47-d26976a9d6e7fc96ca66",
-                  "file": "08_continuityTest.spec.js",
-                  "line": 60,
+                  "id": "a1674e3d83dd52b1836c-7b22b71a4274cbe80341",
+                  "file": "crew-list-asset-report.spec.js",
+                  "line": 43,
                   "column": 9
                 }
               ]
@@ -428,11 +244,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-03T06:29:04.940Z",
-    "duration": 119625.33499999999,
-    "expected": 3,
+    "startTime": "2026-02-03T08:14:40.962Z",
+    "duration": 35986.394,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }

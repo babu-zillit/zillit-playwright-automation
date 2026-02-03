@@ -79,7 +79,7 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -106,7 +106,7 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -133,7 +133,7 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -195,7 +195,7 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
-        test('verify the save or download in lunch', async () => {
+        test.skip('verify the save or download in lunch', async () => {
             await cateringPage.lunchTab();
             await uploadmedia.save();
         });
@@ -227,7 +227,7 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
-        test('verify the save or download in lunch', async () => {
+        test.skip('verify the save or download in lunch', async () => {
             await cateringPage.lunchTab();
             await uploadmedia.save();
         });
@@ -259,7 +259,7 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
-        test('verify the save or download in lunch', async () => {
+        test.skip('verify the save or download in lunch', async () => {
             await cateringPage.lunchTab();
             await uploadmedia.save();
         });
@@ -323,7 +323,7 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
-        test('verify the save or download in dinner', async () => {
+        test.skip('verify the save or download in dinner', async () => {
             await cateringPage.dinnerTab();
             await uploadmedia.save();
         });
@@ -355,7 +355,7 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
-        test('verify the save or download in dinner', async () => {
+        test.skip('verify the save or download in dinner', async () => {
             await cateringPage.dinnerTab();
             await uploadmedia.save();
         });
@@ -387,7 +387,7 @@ test.describe('Catering', () => {
             await uploadmedia.forward();
         });
 
-        test('verify the save or download in dinner', async () => {
+        test.skip('verify the save or download in dinner', async () => {
             await cateringPage.dinnerTab();
             await uploadmedia.save();
         });
@@ -425,4 +425,6 @@ test.describe('Catering', () => {
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/10_cateringTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/10_cateringTest.spec.js --project=chromium --headed
    */ 

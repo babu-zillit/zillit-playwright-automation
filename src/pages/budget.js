@@ -148,6 +148,16 @@ export default class Budget{
         await this.cncPage.send.nth(0).click();
     }
 
+    async documentUpload(){
+        await this.cncPage.documentUploadInput.setInputFiles(mediapaths.document);
+        await this.cncPage.send.nth(0).click();
+    }
+
+    async audioUpload(){
+        await this.cncPage.audioUploadInput.setInputFiles(mediapaths.audio);
+        await this.cncPage.send.nth(0).click();
+    }
+
     async plusBudgetDepartment(){
         await this.plusDepartment.click();
         await this.departmentList.first().click();

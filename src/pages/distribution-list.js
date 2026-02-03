@@ -10,7 +10,7 @@ export default class DistributionList {
         this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
         this.distribution = page.locator('div.ant-card-body').getByText('Distribution List');
 
-        this.distribute = page.locator('#distribution_list_distribute_button');
+        this.distribute = page.locator('div.ant-table-container span input.ant-checkbox-input');
         this.dropDownManu = page.locator('div.ant-select-selector');
 
     }

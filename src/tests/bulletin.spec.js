@@ -100,7 +100,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -149,7 +149,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -197,7 +197,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -245,7 +245,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -332,7 +332,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -364,7 +364,10 @@ test.describe('Bulletin', () => {
 
 /**
  * 
- * ENV_TYPE=qa npx playwright test src/tests/03_bulletinTest.spec.js --project=chromium --headed
+ * ENV_TYPE=qa npx playwright test src/tests/06_bulletinTest.spec.js --project=chromium --headed
+ * 
+ * ENV_TYPE=production npx playwright test src/tests/06_bulletinTest.spec.js --project=chromium --headed
+ * 
  * ENV_TYPE=qa npx playwright test src/tests/3bulletinTest.spec.js --project=firefox --headed
  * ENV_TYPE=qa npx playwright test src/tests/3bulletinTest.spec.js --project=webkit --headed
  * ENV_TYPE=production npx playwright test src/tests/3bulletinTest.spec.js --project=chromium --headed

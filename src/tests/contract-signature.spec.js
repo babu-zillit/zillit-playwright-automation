@@ -31,7 +31,7 @@ test.describe('Contrcat Signature', () => {
 
 
 
-    test.describe.skip('Upload documents in contract', () => {
+    test.describe('Upload documents in contract', () => {
 
         test('verify upload document in contract', async () => {
             await contractSignaturePage.uploadDocumentsForFutureUseTab();
@@ -97,4 +97,6 @@ test.describe('Contrcat Signature', () => {
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/26_contract-signatureTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/26_contract-signatureTest.spec.js --project=chromium --headed
    */ 

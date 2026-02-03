@@ -35,9 +35,9 @@ test.describe('Budget Department', () => {
 
 
 
-    test.describe.only('upload the budget department', () => {
+    test.describe.skip('upload the budget department', () => {
 
-        test.skip('verify upload budget department document', async () => {
+        test('verify upload budget department document', async () => {
             await budgetPage.plusBudgetDepartment();
             await budgetPage.uploadPdf(99);
         });
@@ -57,7 +57,7 @@ test.describe('Budget Department', () => {
     
     });
 
-     test.describe.skip('send message', () => {
+     test.describe('send message', () => {
 
         test('verify user send message', async () => {
             await cncPage.sendMessage();
@@ -77,7 +77,7 @@ test.describe('Budget Department', () => {
     
     });
 
-    test.describe.skip('send image', () => {
+    test.describe('send image', () => {
 
         test('verify user send image', async () => {
             await budgetPage.attachment();
@@ -88,7 +88,7 @@ test.describe('Budget Department', () => {
             await cncPage.forward();
         });
 
-        test('verify user save message', async () => {
+        test.skip('verify user save message', async () => {
             await cncPage.save();
         });
 
@@ -102,7 +102,7 @@ test.describe('Budget Department', () => {
     
     });
 
-    test.describe.skip('send video', () => {
+    test.describe('send video', () => {
 
         test('verify user send image', async () => {
             await budgetPage.attachment();
@@ -113,7 +113,7 @@ test.describe('Budget Department', () => {
             await cncPage.forward();
         });
 
-        test('verify user save message', async () => {
+        test.skip('verify user save message', async () => {
             await cncPage.save();
         });
 
@@ -127,7 +127,7 @@ test.describe('Budget Department', () => {
     
     });
 
-    test.describe.skip('send document', () => {
+    test.describe('send document', () => {
 
         test('verify user send image', async () => {
             await budgetPage.attachment();
@@ -138,7 +138,7 @@ test.describe('Budget Department', () => {
             await cncPage.forward();
         });
 
-        test('verify user save message', async () => {
+        test.skip('verify user save message', async () => {
             await cncPage.save();
         });
 
@@ -153,7 +153,7 @@ test.describe('Budget Department', () => {
     });
 
 
-    test.describe.skip('send audio', () => {
+    test.describe('send audio', () => {
 
         test('verify user send image', async () => {
             await budgetPage.attachment();
@@ -164,7 +164,7 @@ test.describe('Budget Department', () => {
             await cncPage.forward();
         });
 
-        test('verify user save message', async () => {
+        test.skip('verify user save message', async () => {
             await cncPage.save();
         });
 
@@ -183,4 +183,6 @@ test.describe('Budget Department', () => {
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/budgetDepartmentTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/budgetDepartmentTest.spec.js --project=chromium --headed
    */ 

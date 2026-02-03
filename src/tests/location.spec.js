@@ -1,15 +1,14 @@
 import { test } from '@playwright/test';
-import Costume from "../pages/costume";
+import Location from "../pages/location";
 import Casting from '../pages/casting';
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
-import { copyFile } from 'fs';
 
-test.describe('Costume', () => {
+test.describe('Location', () => {
     let context;
     let page;
     let uploadmedia;
-    let costumePage;
+    let locationPage;
     let castingPage;
 
     test.beforeAll(async ({ browser }) => {
@@ -20,12 +19,12 @@ test.describe('Costume', () => {
         await page.goto('/home');
         
         uploadmedia = new UploadMedia(page);
-        costumePage = new Costume(page);
+        locationPage = new Location(page);
         castingPage = new Casting(page);
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
-        await costumePage.costumeTab();
+        await locationPage.locationTab();
     });
 
     test.afterAll(async () => {
@@ -33,10 +32,10 @@ test.describe('Costume', () => {
         await context.close();
     });
 
-    test.describe.only('Send Message', () => {
+    test.describe('Send Message', () => {
 
         test('verify send a message', async () => {
-            await costumePage.chat();
+            await locationPage.chat();
             await uploadmedia.sendMessage();
         });  
     
@@ -72,50 +71,49 @@ test.describe('Costume', () => {
 
     });
 
-
-    test.describe('Costume', () => {
+    test.describe('Location', () => {
 
         test('verify uploadLocation', async () => {
-            await costumePage.uploadCostume('9', '1');
-            await costumePage.distribute();
+            await locationPage.uploadLocation('Central Park', '9', '1');
+            await locationPage.distribute();
         }); 
 
         test('verify open folder > see image', async () => {
-            await costumePage.openFolder(); 
-            await costumePage.openImage();
+            await locationPage.openFolder(); 
+            await locationPage.openImage();
         }); 
     
     });
 
-    test.describe('upload costume in shortlist', () => {
+    test.describe('upload location in shortlist', () => {
 
-        test('verify uploading costume in shortlist', async () => {
-            await costumePage.shortlistTab();
-            await costumePage.uploadCostume('10','2');
-            await costumePage.distribute(); 
+        test('verify uploading location in shortlist', async () => {
+            await locationPage.shortlistTab();
+            await locationPage.uploadLocation('Taj Mahal','10','2'); 
+            await locationPage.distribute();
         });
 
         test('verify open folder > see image', async () => {
-            await costumePage.shortlistTab();
-            await costumePage.openFolder(); 
-            await costumePage.openImage();
+            await locationPage.shortlistTab();
+            await locationPage.openFolder(); 
+            await locationPage.openImage();
         });
     
     });
 
 
-     test.describe('upload costume in finals', () => {
+     test.describe('upload location in finals', () => {
 
-        test('verify uploading costume in finals', async () => {
-            await costumePage.finalsTab();
-            await costumePage.uploadCostume('11','3');  
-            await costumePage.distribute();
+        test('verify uploading location in finals', async () => {
+            await locationPage.finalsTab();
+            await locationPage.uploadLocation('Golden Temple','11','3'); 
+            await locationPage.distribute();
         });
 
         test('verify open folder > see image', async () => {
-            await costumePage.finalsTab();
-            await costumePage.openFolder(); 
-            await costumePage.openImage();
+            await locationPage.finalsTab();
+            await locationPage.openFolder(); 
+            await locationPage.openImage();
         });
     
     });
@@ -123,13 +121,13 @@ test.describe('Costume', () => {
     test.describe('Delete & move to shortlist , move to final from selects', () => {
 
         test('verify location move to shortlist', async () => {
-            await costumePage.selectsTab(); 
-            await costumePage.moveToShortlistFromSelects();
-            await costumePage.moveToFinalFromSelects(); 
+            await locationPage.selectsTab(); 
+            await locationPage.moveToShortlistFromSelects();
+            await locationPage.moveToFinalFromSelects(); 
         });
 
         test('verify delete the location folder from selects', async () => {
-            await costumePage.deleteFromSelects();
+            await locationPage.deleteFromSelects();
         });
     
     });
@@ -137,8 +135,8 @@ test.describe('Costume', () => {
     test.describe('Delete from shortlist', () => {
 
         test('verify user delete the location folder from the shortlist', async () => {
-            await costumePage.shortlistTab();
-            await costumePage.deleteFromShortlist();
+            await locationPage.shortlistTab();
+            await locationPage.deleteFromShortlist();
         });
     
     });
@@ -146,8 +144,17 @@ test.describe('Costume', () => {
     test.describe('Delete from Finals', () => {
 
         test('verify user deletes the location folder from finals', async () => {
-            await costumePage.finalsTab();
-            await costumePage.deleteFromFinals();
+            await locationPage.finalsTab();
+            await locationPage.deleteFromFinals();
+        });
+    
+    });
+
+    test.describe('Generate pdf', () => {
+
+        test('verify user generate the pdf from finals', async () => {
+            await locationPage.finalsTab();
+            await locationPage.generatePDF();
         });
     
     });
@@ -156,5 +163,7 @@ test.describe('Costume', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/24_costumeTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/23_locationTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/23_locationTest.spec.js --project=chromium --headed
    */ 

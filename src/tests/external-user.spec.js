@@ -47,4 +47,6 @@ test.describe('External User', () => {
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/16_external-userTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/16_external-userTest.spec.js --project=chromium --headed
    */ 

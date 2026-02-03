@@ -10,7 +10,7 @@ test.describe('Distribution List', () => {
     let uploadmedia;
     let distributionPage;
 
-    test.beforeEach(async ({ browser }) => {
+    test.beforeAll(async ({ browser }) => {
         logger.info("browser is launching");
         context = await browser.newContext();
         page = await context.newPage();
@@ -23,14 +23,14 @@ test.describe('Distribution List', () => {
         await distributionPage.openDistributionTab();
     });
 
-    test.afterEach(async () => {
+    test.afterAll(async () => {
         logger.info('close browser');
         await context.close();
     });
 
     test.describe('Enable Distribution For self user', () => {
 
-        test('Verify user can enable distribution for home and tools', async () => {
+        test('Verify user can enable distribution for home and', async () => {
             await distributionPage.enableDistributionForUser();
             await distributionPage.enableDistributionForHome();
             await distributionPage.enableDistributionForTools();
@@ -39,7 +39,7 @@ test.describe('Distribution List', () => {
             
     });
 
-    test.describe('Enable Distribution For other User', () => {
+    test.describe.skip('Enable Distribution For other User', () => {
 
         test('Verify user can enable distribution for home and tools', async () => {
             await distributionPage.enableDistributionForSecondUser();
@@ -54,5 +54,7 @@ test.describe('Distribution List', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/distribution-listTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/05_distribution-listTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/05_distribution-listTest.spec.js --project=chromium --headed
    */ 

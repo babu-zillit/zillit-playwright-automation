@@ -14,7 +14,8 @@ export default class ApproveUserRequest{
     }
 
     async openSettings(){
-        await this.page.waitForTimeout(15000);
+        //await this.page.waitForTimeout(15000);
+        await this.settings.waitFor({ state: 'visible', timeout: 20000 });
         await this.settings.click();
         await this.adminSetting.click();
     }

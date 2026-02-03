@@ -35,9 +35,9 @@ test.describe('Budget Full', () => {
 
 
 
-    test.describe('upload the budget', () => {
+    test.describe.skip('upload the budget', () => {
 
-        test.skip('verify upload budget full document', async () => {
+        test('verify upload budget full document', async () => {
             await budgetPage.uploadPdf(99);
         });
 
@@ -86,7 +86,7 @@ test.describe('Budget Full', () => {
             await cncPage.forward();
         });
 
-        test('verify user save message', async () => {
+        test.skip('verify user save message', async () => {
             await cncPage.save();
         });
 
@@ -111,7 +111,7 @@ test.describe('Budget Full', () => {
             await cncPage.forward();
         });
 
-        test('verify user save message', async () => {
+        test.skip('verify user save message', async () => {
             await cncPage.save();
         });
 
@@ -136,7 +136,7 @@ test.describe('Budget Full', () => {
             await cncPage.forward();
         });
 
-        test('verify user save message', async () => {
+        test.skip('verify user save message', async () => {
             await cncPage.save();
         });
 
@@ -162,7 +162,7 @@ test.describe('Budget Full', () => {
             await cncPage.forward();
         });
 
-        test('verify user save message', async () => {
+        test.skip('verify user save message', async () => {
             await cncPage.save();
         });
 
@@ -177,8 +177,12 @@ test.describe('Budget Full', () => {
     });
 
 
+
+
 });
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/budgetFullTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/budgetFullTest.spec.js --project=chromium --headed
    */ 

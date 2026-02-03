@@ -302,4 +302,6 @@ test.describe('Continuity Script Notes', () => {
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/19_continuity-script-notesTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/19_continuity-script-notesTest.spec.js --project=chromium --headed
    */ 

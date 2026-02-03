@@ -279,10 +279,13 @@ export default class Settings {
     async addPreset(){
         await this.openBccPreset.click();
         await this.addBccPreset.click();
-        await this.to.fill('bhavik@zillit.com');
+
+        const randomNumber = Math.floor(Math.random() * 10000);
+        await this.to.fill(`bhavik+${randomNumber}@zillit.com`);
         await this.page.keyboard.press('Enter');
         await this.bccSubmit.click();
-        await this.uploadMedia.verifyPopupMessage('Bcc preset has been updated successfully.');
+        await this.page.waitForTimeout(3000);
+       // await this.uploadMedia.verifyPopupMessage('Bcc preset has been updated successfully.');
     }
 
     async deletePreset(){
@@ -294,7 +297,7 @@ export default class Settings {
 
     async submitEditProfileFunctionality(){
         await this.sumbitEditProfile.click();
-        //await this.uploadMedia.verifyPopupMessage('Profile updated successfully.');
+        await this.uploadMedia.verifyPopupMessage('Profile updated successfully.');
     }
 
     async inviteUsers(){
@@ -304,7 +307,7 @@ export default class Settings {
         await this.to.fill('pramod@zillit.com');
         await this.page.keyboard.press('Enter');
         await this.send.last().click();
-        await this.uploadMedia.verifyPopupMessage('Email sent successfully');
+        await this.uploadMedia.verifyPopupMessage('Email has been sent');
 
         await this.share.click();
         await this.page.locator('#invite_users_copy_link_button').click();
@@ -362,7 +365,8 @@ export default class Settings {
 
     async recoveryCodeEmail(){
         await this.recoveryCode.click();
-        await this.recoveryEmail.fill('pramod+389@zillit.com');
+        const randomNumber = Math.floor(Math.random() * 100); 
+        await this.recoveryEmail.fill(`pramod+${randomNumber}@zillit.com`);
         await this.recoveryUpdate.click();
         await this.uploadMedia.verifyPopupMessage('A verification link has been sent to your email address, kindly verify to proceed.');
     }

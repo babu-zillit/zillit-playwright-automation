@@ -184,7 +184,9 @@ export default class CalendarEvent {
                 await emailInput.waitFor({ state: 'visible', timeout: 10000 });
                 await emailInput.fill(enterEmail);
 
-                await this.page.locator('div.divide-y').first().click();
+                await this.page.getByText('Add Email', { exact: true }).click();
+                await this.page.locator('div.ant-modal-confirm-btns button').first().click();
+                
                 const submitButton = this.page.locator('//div[@class="ant-modal-footer"]//span[text()="Submit"]');
                 await submitButton.waitFor({ state: 'visible', timeout: 5000 });
                 await submitButton.click();

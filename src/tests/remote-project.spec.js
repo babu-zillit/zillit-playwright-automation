@@ -38,5 +38,7 @@ test.describe('Remote Project Unit', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/remoteProjectTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/03_remoteProjectTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/03_remoteProjectTest.spec.js --project=chromium --headed
    */ 

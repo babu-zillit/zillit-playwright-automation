@@ -1,6 +1,6 @@
 //src/tests/calendarTest.spec.js
 import { test } from '@playwright/test';
-import CalendarEvent from "../pages/calendarEvent";
+import Calendar from "../pages/calendar";
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 
@@ -8,473 +8,129 @@ test.describe('Calendar', () => {
     let context;
     let page;
     let uploadmedia;
-    let calendarPage;
+    let calendar;
 
     test.beforeAll(async ({ browser }) => {
+        logger.info("browser is launching");
         context = await browser.newContext();
         page = await context.newPage();
+
         await page.goto('/home');
+        
         uploadmedia = new UploadMedia(page);
-        calendarPage = new CalendarEvent(page);
+        calendar = new Calendar(page);
+
+        logger.info('open the project')
         await uploadmedia.clickProjectName();
-        await calendarPage.clickCalendarTab();
     });
 
     test.afterAll(async () => {
+        logger.info('close browser');
         await context.close();
     });
 
-    test.describe('Member Calendar', () => {
+    test.describe('Member calendar', () => {
 
-        test('Verify that user can create a event by filling all option', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu1',
-                        isFullDay: false,
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: '5 Minute Before',
-                        selectLocation: true,
-                        selectInviteesType: 'Select User',
-                        selectCallType: 'Audio Call',
-                        organizerIncluded: true,
-                        selectColour: true,
-                        selectOutSiderUser: true,
-                        enterEmail: 'bhavik@zillit.com',
-                        enterDescription: 'This is member event'
-                    });
-        });
-        test('Verify that user can create a event by filling all option with changing the repeat status', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu2',
-                        isFullDay: false,
-                        repeatStatusOption: 'Every Week',
-                        notificationOption: '10 Minute Before',
-                        selectLocation: true,
-                        selectInviteesType: 'Select User',
-                        selectCallType: 'Audio Call',
-                        organizerIncluded: true,
-                        selectColour: true,
-                        selectOutSiderUser: true,
-                        enterEmail: 'bhavik@zillit.com',
-                        enterDescription: 'This is member event'
-                    });
-
-        });
-        test('Verify that user can create an event by filling event name, Invitees Type: all department, Call Type: audio call', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu3',
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call'
-                    });     
+        test('verify the create the new event for memebrs and edit → delete a event', async () => {
+            await calendar.createEventForMember();
+            await calendar.deleteCalenderEvent('member');
         }); 
-        test('Verify that user can create an event by filling event name, select user, audio call', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu4',
-                        selectInviteesType: 'Select User',
-                        selectCallType: 'Audio Call'
-                    });
-                    
-        });
-        test('Verify that user can create an event by filling event name, Invitees Type: select user, Call Type: video call', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu5',
-                        selectInviteesType: 'Select User',
-                        selectCallType: 'Video Call'
-                    });
-                    
-        });
-        test('Verify that user can create an event by filling event name, all department, video call', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu6',
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Video Call'
-                    });
-                    
-        });
-        test('Verify that user can create an event by filling event name, all department, audio call, every day', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu7',
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call',
-                        repeatStatusOption: 'Every Day',
-                    });
-                    
-        });
-        test('Verify that user can create an event by filling event name, all department, audio call, every day, 15 min before', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu8',
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call',
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: '15 Minute Before'
-                    });
-                    
-        });
-        test('Verify that user can create an event by filling event name, all department, audio call, every week, 5 min before', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu9',
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call',
-                        repeatStatusOption: 'Every Week',
-                        notificationOption: '5 Minute Before',
-                        selectLocation: true,
-                    });
-                    
-        });
-        test('Verify that user can create an event by filling event name, all department, video call, every week, 5 min before, organizer included', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu10',
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Video Call',
-                        repeatStatusOption: 'Every Week',
-                        notificationOption: '5 Minute Before',
-                        selectLocation: true,
-                        organizerIncluded: true,
-                    });
-
-        });
-        test('Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu11',
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call',
-                        repeatStatusOption: 'Every Week',
-                        notificationOption: '10 Minute Before',
-                        selectLocation: true,
-                        organizerIncluded: true,
-                        selectColour: true,
-                    });
-
-        });
-        test('Verify that user can create an event by filling event name, all department, audio call, every week, 10 min before, organizer included, select location, select coulour, select outsider', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu12',
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Video Call',
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: '10 Minute Before',
-                        selectLocation: true,
-                        organizerIncluded: true,
-                        selectColour: true,
-                        selectOutSiderUser: true,
-                        enterEmail: 'bhavik@zillit.com'
-                    });
-
-        });
-            
-    });    
-
-    test.describe('Member Calendar Full Day', () => {
-
-        test('Verify that user can create a event by filling all option', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu1',
-                        isFullDay: true,
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: 'One Day Before',
-                        selectLocation: true,
-                        selectInviteesType: 'Select User',
-                        selectCallType: 'Audio Call',
-                        organizerIncluded: true,
-                        selectColour: true,
-                        selectOutSiderUser: true,
-                        enterEmail: 'bhavik@zillit.com',
-                        enterDescription: 'This is member event'
-                    });
-        });
-        test('Verify that user can create a event by filling all option with changing the repeat status', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu2',
-                        isFullDay: true,
-                        repeatStatusOption: 'Every Week',
-                        notificationOption: 'One Day Before',
-                        selectLocation: true,
-                        selectInviteesType: 'Select User',
-                        selectCallType: 'Audio Call',
-                        organizerIncluded: true,
-                        selectColour: true,
-                        selectOutSiderUser: true,
-                        enterEmail: 'bhavik@zillit.com',
-                        enterDescription: 'This is member event'
-                    });
-        });
-        test('Verify that user can create an event by filling event name, Invitees Type: all department, Call Type: audio call', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu3',
-                        isFullDay: true,
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call'
-                    });     
-        }); 
-        test('Verify that user can create an event by filling event name, Invitees Type: select user, Call Type: audio call', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu4',
-                        isFullDay: true,
-                        selectInviteesType: 'Select User',
-                        selectCallType: 'Audio Call'
-                    });            
-        });
-        test('Verify that user can create an event by filling event name, Invitees Type: select user, Call Type: video call', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu5',
-                        isFullDay: true,
-                        selectInviteesType: 'Select User',
-                        selectCallType: 'Video Call'
-                    });                 
-        });
-        test('Verify that user can create an event by filling event name, Invitees Type: all department, Call Type: video call', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu6',
-                        isFullDay: true,
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Video Call'
-                    });             
-        });
-        test('Verify that user can create an event by filling event name, Repeat Status: Every Day, Invitees Type: all department, Call Type: audio call', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu7',
-                        isFullDay: true,
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call',
-                        repeatStatusOption: 'Every Day',
-                    });            
-        });
-        test('Verify that user can create an event by filling event name, Repeat Status: Every Day, Invitees Type: all department, Call Type: audio call, Notification: One Day Before', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu8',
-                        isFullDay: true,
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call',
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: 'One Week Before'
-                    });               
-        });
-        test('Verify that user can create an event by filling event name, Repeat Status: Every Week, Invitees Type: all department, Call Type: audio call, Notification: One Week Before, Select location', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu9',
-                        isFullDay: true,
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call',
-                        repeatStatusOption: 'Every Week',
-                        notificationOption: 'One Week Before',
-                        selectLocation: true,
-                    });            
-        });
-        test('Verify that user can create an event by filling event name, Repeat Status: Every Week, Invitees Type: all department, Call Type: audio call, Notification: One Week Before, location, organizer included', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu10',
-                        isFullDay: true,
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Video Call',
-                        repeatStatusOption: 'Every Week',
-                        notificationOption: 'One Week Before',
-                        selectLocation: true,
-                        organizerIncluded: true,
-                    });
-        });
-        test('Verify that user can create an event by filling event name, Repeat Status: Every Week, Invitees Type: all department, Call Type: audio call, Notification: One Week Before, location, organizer included, colour', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu11',
-                        isFullDay: true,
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Audio Call',
-                        repeatStatusOption: 'Every Week',
-                        notificationOption: 'One Day Before',
-                        selectLocation: true,
-                        organizerIncluded: true,
-                        selectColour: true,
-                    });
-        });
-        test('Verify that user can create an event by filling event name, Repeat Status: Every Week, Invitees Type: all department, Call Type: audio call, Notification: One Week Before, location, organizer included, colour, outsider', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Member',
-                        eventName: 'Babu12',
-                        isFullDay: true,
-                        selectInviteesType: 'All Department',
-                        selectCallType: 'Video Call',
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: 'One Day Before',
-                        selectLocation: true,
-                        organizerIncluded: true,
-                        selectColour: true,
-                        selectOutSiderUser: true,
-                        enterEmail: 'bhavik@zillit.com'
-                    });
-        });      
-            
-    });    
-
-    test.describe('Personal Calendar', () => {
-
-        test('Verify that user can create a event by filling all option', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu1',
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: '5 Minute Before',
-                        selectLocation: true,
-                        selectColour: true,
-                        enterDescription: 'This is member event'
-                    });
-        });
-        test('Verify that user can create a event by filling event name, repeat status: every day', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu2',
-                        repeatStatusOption: 'Every Day',
-                    });
-
-        });
-        test('Verify that user can create a event by filling event name, repeat status: every day, notification: 5 min before', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu3',
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: '5 Minute Before',
-                    });     
-        }); 
-        test('Verify that user can create a event by filling event name, repeat status: every day, notification: 5 min before, location', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu4',
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: '5 Minute Before',
-                        selectLocation: true,
-                    });
-                    
-        });
-        test('Verify that user can create a event by filling event name, notification: 5 min before, location, colour, description', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu5',
-                        notificationOption: '5 Minute Before',
-                        selectLocation: true,
-                        selectColour: true,
-                        enterDescription: 'This is member event'
-                    });
-                    
-        });
-        test('Verify that user can create a event by filling event name, location, location, colour, description', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu6',
-                        selectLocation: true,
-                        selectColour: true,
-                        enterDescription: 'This is member event'
-                    });
-                    
-        });
-            
-    });    
-
-    test.describe('Personal Calendar Full Day', () => {
-
-        test('Verify that user can create a event by filling all option', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu1',
-                        isFullDay: true,
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: 'One Week Before',
-                        selectLocation: true,
-                        selectColour: true,
-                        enterDescription: 'This is member event'
-                    });
-        });
-        test('Verify that user can create a event by filling event name, repeat status: every day', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu2',
-                        isFullDay: true,
-                        repeatStatusOption: 'Every Week',
-                    });
-
-        });
-        test('Verify that user can create a event by filling event name, repeat status: every day, notification: 5 min before', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu3',
-                        isFullDay: true,
-                        repeatStatusOption: 'Every Day',
-                        notificationOption: 'One Day Before',
-                    });     
-        }); 
-        test('Verify that user can create a event by filling event name, repeat status: every day, notification: 5 min before, location', async () => {
-                    await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu4',
-                        isFullDay: true,
-                        repeatStatusOption: 'Every Week',
-                        notificationOption: 'One Day Before',
-                        selectLocation: true,
-                    });
-                    
-        });
-        test('Verify that user can create a event by filling event name, notification: 5 min before, location, colour, description', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu5',
-                        isFullDay: true,
-                        notificationOption: 'One Day Before',
-                        selectLocation: true,
-                        selectColour: true,
-                        enterDescription: 'This is member event'
-                    });
-                    
-        });
-        test('Verify that user can create a event by filling event name, location, location, colour, description', async () => {
-            await calendarPage.createCalendar({
-                        eventType: 'Personal',
-                        eventName: 'Babu6',
-                        isFullDay: true,
-                        selectLocation: true,
-                        selectColour: true,
-                        enterDescription: 'This is member event'
-                    });
-                    
-        });
-        
-    }); 
     
-    test.describe('Calendar Member Delete', () => {
-        test('Verify that user can delete the member calendar event', async () =>{
-            await calendarPage.deleteCalender('Member');
-        });
-
     });
 
-    test.describe('Calendar Personal Delete', () => {
-        test('Verify that user can delete the personal calendar event', async () =>{
-            await calendarPage.deleteCalender('Personal');
+    test.describe('Member calendar full day', () => { 
+        
+        test('verify the create a new event and edit → delete a event', async () => {
+            await calendar.createEventForMemberForFullDay();
+            await calendar.deleteCalenderEvent('member');
         });
-
+    
     });
 
+    test.describe('Personal Calendar', () => { 
+        
+        test('verify the create a new event and edit → delete a event', async () => {
+            await calendar.createEventForPersonal();
+            await calendar.deleteCalenderEvent('personal');
+        });
+    
+    });
+
+    test.describe('Personal Calendar full day', () => { 
+        
+        test('verify the create a new event and edit → delete a event', async () => {
+            await calendar.createEventForPersonalFullDay();
+            await calendar.deleteCalenderEvent('personal');
+        });
+    
+    });
+
+    test.describe('Member Calendar', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, location, coulor, Discription, organiser not part of this event and delete this event', async () => {
+            await calendar.createEventForMember1();
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe('Member Calendar', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, coulor, Discription and meet in person call and delete this event', async () => {
+            await calendar.createEventForMember2();
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe.only('Member Calendar', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, coulor, Discription and meet in person call , including organiser and delete this event', async () => {
+            await calendar.createEventForMember3();
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe('Member Calendar Full Day', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, location, coulor, Discription, organiser not part of this event and delete this event', async () => {
+            await calendar.clickCalendarTab();
+            await calendar.clickAddEvent();
+            await calendar.navigateToMembers();
+            await calendar.fillEventName('Babu2');
+            await calendar.fullDay();
+            await calendar.selectStartTime();
+            await calendar.selectInvitees();
+            await calendar.selectCallType('Audio Call');
+            await calendar.addOutSiderUser('Bhavik@gmail.com');
+            await calendar.submitEvent();
+        });
+        test('verify the delete the calendar', async () => {
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe('Member Calendar Full day', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, coulor, Discription and meet in person call and delete this event', async () => {
+            await calendar.createEventForMember2();
+            await calendar.deleteCalender('member');
+        });
+    
+    });
+
+    test.describe('Member Calendar Full Day', () => { 
+        
+        test('verify the create a new event without filling reapeat status, notification, coulor, Discription and meet in person call , including organiser and delete this event', async () => {
+            
+        });
+    
+    });
 
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/calendarTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/04_calendarTest.spec.js --project=chromium --headed
    */ 

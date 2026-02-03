@@ -127,11 +127,11 @@ export default defineConfig({
      * allure generate allure-results --clean -o allure-report
      * allure open allure-report
      */ 
-    ['allure-playwright', {
-      outputFolder: 'allure-results', // ✅ root directory
-      detail: true,
-      suiteTitle: false
-    }]
+    // ['allure-playwright', {
+    //   outputFolder: 'allure-results', // ✅ root directory
+    //   detail: true,
+    //   suiteTitle: false
+    // }]
 
   ],
 

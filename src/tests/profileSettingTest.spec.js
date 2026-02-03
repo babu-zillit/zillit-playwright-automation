@@ -86,4 +86,6 @@ test.describe('Settings', () => {
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/profileSettingTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/profileSettingTest.spec.js --project=chromium --headed
    */ 

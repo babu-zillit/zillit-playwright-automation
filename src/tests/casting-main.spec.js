@@ -21,7 +21,7 @@ test.describe('Casting', () => {
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
-        await castingPage.castingBackgroundTab();
+        await castingPage.castingMainTab();
     });
 
     test.afterAll(async () => {
@@ -37,6 +37,7 @@ test.describe('Casting', () => {
 
              await castingPage.uploadCasting('1','Police','Salman','male', 'For the villain role');
              await castingPage.verifypopup('Cast photograph(s) has been added successfully.');
+             await castingPage.distribute();
              await castingPage.openFolderFirstScreen();
              await castingPage.openFolderSecondScreen();
              await castingPage.viewImages(); 
@@ -94,8 +95,46 @@ test.describe('Casting', () => {
             //await castingPage.imageReplys();
             await castingPage.closeImageWindow();
         });
-
     
+    });
+
+    test.describe('Send Message', () => {
+
+        test('verify send a message', async () => {
+            await castingPage.chat();
+            await uploadmedia.sendMessage();
+        });  
+    
+        test('verify edit the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.edit();
+        });
+
+        test('verify read by status on message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.readBy();
+        });
+
+        test('verify forward the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.forwards();
+        });
+
+        test('verify reply to the message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.reply();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.forwardRemoteProject();
+        });
+
+        test('verify the delete message', async () => {
+            await castingPage.dropDownChat();
+            await castingPage.delete();
+        });
+
     });
 
     test.describe('Shortlist Tab', () => {
@@ -103,6 +142,7 @@ test.describe('Casting', () => {
         test('verify delete all cast folder from shortlist', async () => {
 
             await castingPage.shortlistTab();
+            await castingPage.distribute();
             await castingPage.deleteFolderIfAvailable();
         });
 
@@ -144,6 +184,7 @@ test.describe('Casting', () => {
         test('verify delete all cast folder from final', async () => {
 
             await castingPage.finalsTab();
+            await castingPage.distribute();
             await castingPage.deleteFolderIfAvailable();
         });
 
@@ -179,5 +220,7 @@ test.describe('Casting', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/22_casting-backgroundTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/21_castingTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/21_castingTest.spec.js --project=chromium --headed
    */ 

@@ -28,8 +28,6 @@ export default class StartProject {
     }
 
     async clickStartProject(){
-      logger.info('[StartProject] project creation is started...')
-
         await this.startProjectViewButton.click();
     }
 
@@ -106,14 +104,13 @@ export default class StartProject {
         await this.emailInput.fill(startproject.email);
         await expect(this.emailInput).toHaveValue(startproject.email, { timeout: 5000});
         await this.verifyOTP.click();
-        await this.uploadMedia.verifyPopupMessage(`${successMsg}`)
-        await this.page.waitForTimeout(5000);
-    }
 
-    async verifyGmailOTP(){
-        await this.emailInput.fill('babu.yadav@gmail.com');
-        await this.verifyOTP.click();
-        await this.page.waitForTimeout(10000);
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`)
+        await this.page.waitForTimeout(28000);
+
+        const button = this.page.locator('div.ant-modal-body button').nth(1);
+        await button.waitFor({ state: 'visible' });
+        await button.click();
     }
 
     async clickCheckBox(){
@@ -126,7 +123,7 @@ export default class StartProject {
     }
 
     async next(){
-        await this.page.waitForTimeout(28000);
+        //div.ant-modal-content button
         await this.page.locator('#invite_users_next_button').click();
         await this.page.locator('#skip_navigation_to_project_setup_notes_button');
     }
@@ -147,13 +144,9 @@ export default class StartProject {
         await this.page.waitForTimeout(1500);
         await this.enterEmail('Verification code sent to your email successfully');
         await this.page.waitForTimeout(1500);
-        // await this.clickCheckBox();
-        // await this.clickSubmit();
-        // await this.next();
-    }
-
-    async gmailOTP(){
-
+        await this.clickCheckBox();
+        await this.clickSubmit();
+        await this.next();
     }
     
 }

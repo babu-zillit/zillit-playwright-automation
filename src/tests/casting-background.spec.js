@@ -21,7 +21,7 @@ test.describe('Casting', () => {
 
         logger.info('open the project')
         await uploadmedia.clickProjectName();
-        await castingPage.castingMainTab();
+        await castingPage.castingBackgroundTab();
     });
 
     test.afterAll(async () => {
@@ -37,7 +37,6 @@ test.describe('Casting', () => {
 
              await castingPage.uploadCasting('1','Police','Salman','male', 'For the villain role');
              await castingPage.verifypopup('Cast photograph(s) has been added successfully.');
-             await castingPage.distribute();
              await castingPage.openFolderFirstScreen();
              await castingPage.openFolderSecondScreen();
              await castingPage.viewImages(); 
@@ -95,10 +94,11 @@ test.describe('Casting', () => {
             //await castingPage.imageReplys();
             await castingPage.closeImageWindow();
         });
+
     
     });
 
-    test.describe.skip('Send Message', () => {
+    test.describe.only('Send Message', () => {
 
         test('verify send a message', async () => {
             await castingPage.chat();
@@ -142,7 +142,6 @@ test.describe('Casting', () => {
         test('verify delete all cast folder from shortlist', async () => {
 
             await castingPage.shortlistTab();
-            await castingPage.distribute();
             await castingPage.deleteFolderIfAvailable();
         });
 
@@ -184,7 +183,6 @@ test.describe('Casting', () => {
         test('verify delete all cast folder from final', async () => {
 
             await castingPage.finalsTab();
-            await castingPage.distribute();
             await castingPage.deleteFolderIfAvailable();
         });
 
@@ -220,5 +218,7 @@ test.describe('Casting', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/21_castingTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/22_casting-backgroundTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/22_casting-backgroundTest.spec.js --project=chromium --headed
    */ 

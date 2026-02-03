@@ -79,10 +79,10 @@ test.describe('Casting', () => {
             await locationPage.closeImageWindow();
         });
 
-        test.skip('verify edit cast details from the media screen', async () => {
+        test.skip('verify edit location details from the media screen', async () => {
 
-            await castingPage.editCastDeatils('55','ISI','Rocky', 'For the villain role');
-            await castingPage.verifypopup('Cast photograph has been saved successfully.');
+            await locationPage.editCastDeatils('Noida', '95', '5', 'famous for IT');
+            await locationPage.verifypopup('Location photograph(s) have been added successfully.');
         });
 
         test('verify forward cast and image reply', async () => {
@@ -108,16 +108,16 @@ test.describe('Casting', () => {
 
             await locationPage.shortlistTab();
             await locationPage.uploadLocation('TajMahal', '90', '1', 'famous for love');
-            await castingPage.verifypopup('Cast photograph(s) has been added successfully.');
-            await castingPage.openFolderFirstScreen();
-            await castingPage.openFolderSecondScreen();
-            await castingPage.viewImages(); 
+            await locationPage.verifypopup('Cast photograph(s) has been added successfully.');
+            await locationPage.openFolderFirstScreen();
+            await locationPage.openFolderSecondScreen();
+            await locationPage.viewImages(); 
         });
 
         test('verify move to finals cast folder from the character screen', async () => {
 
-            await castingPage.dropDownArrowAction('shortlistTab', 'Move to Final');
-            await castingPage.verifypopup('Cast has been moved successfully.');
+            await locationPage.dropDownArrowAction('shortlistTab', 'Move to Final');
+            await locationPage.verifypopup('Cast has been moved successfully.');
         });
 
         test('verify edit cast details from the media screen', async () => {
@@ -179,4 +179,6 @@ test.describe('Casting', () => {
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/locationTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/locationTest.spec.js --project=chromium --headed
    */ 

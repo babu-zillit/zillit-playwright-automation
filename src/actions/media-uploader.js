@@ -18,7 +18,8 @@ export default class UploadMedia {
           */ 
          const projectName = startproject.projectName;
          this.qaProject = page.locator(`text=/${projectName}/i`);
-         this.productionProject = page.locator('text=/Zl 20 May live/i');
+         //this.productionProject = page.locator('text=/Zl remote automation/i');
+         this.productionProject = page.locator(`text=/${projectName}/i`);
 
         /**
          * Message locators
@@ -88,7 +89,7 @@ export default class UploadMedia {
             await this.qaProject.first().click();    
         } else if(hostname === 'web.zillit.com'){
             logger.info('Production environment is started...')
-            await this.productionProject.click();
+            await this.productionProject.first().click();
         } else{
             console.log("Environment is wrong...");
         }
@@ -157,7 +158,7 @@ export default class UploadMedia {
     }
 
     async save(){
-        await this.handleDropdownAction('Save');
+        await this.handleDropdownAction('Download');
         await this.page.waitForTimeout(500);
         await this.pressReturnKey();
 

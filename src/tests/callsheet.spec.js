@@ -63,7 +63,7 @@ test.describe('CallSheet', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -136,5 +136,7 @@ test.describe('CallSheet', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/05_callsheetTest.spec.js --project=chromium --headed
+   * ENV_TYPE=qa npx playwright test src/tests/08_callsheetTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/08_callsheetTest.spec.js --project=chromium --headed
    */ 

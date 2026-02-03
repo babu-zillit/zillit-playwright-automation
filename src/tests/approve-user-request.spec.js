@@ -47,4 +47,6 @@ test.describe('Approve New User Request', () => {
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/02_approve-user-requestTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/02_approve-user-requestTest.spec.js --project=chromium --headed
    */ 

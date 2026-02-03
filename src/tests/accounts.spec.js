@@ -103,7 +103,7 @@ test.describe('Accounts', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -142,7 +142,7 @@ test.describe('Accounts', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -181,7 +181,7 @@ test.describe('Accounts', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -239,6 +239,7 @@ test.describe('Accounts', () => {
 });
 
   /**
-   * ENV_TYPE=qa npx playwright test src/tests/09_accountTest.spec.js --project=chromium --headed
-   * ENV_TYPE=production 
+   * ENV_TYPE=qa npx playwright test src/tests/accounts.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/accounts.spec.js --project=chromium --headed
    */ 

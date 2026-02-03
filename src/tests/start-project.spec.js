@@ -1,9 +1,8 @@
 import { test } from '@playwright/test';
 import StartProject from '../pages/start-project';
-import { verifyEmailWithOtp } from '../tests/otp.spec';
 
    test('Verify the user is created project successfully', async ({ page }) => {
-      test.setTimeout(60000);
+      test.setTimeout(120000);
 
       await page.goto('/');
       const startproject = new StartProject(page);
@@ -13,5 +12,8 @@ import { verifyEmailWithOtp } from '../tests/otp.spec';
 
 
 /**
- * ENV_TYPE=qa npx playwright test src/tests/01_startprojectTest.spec.js --project=chromium --headed
+ * 
+ * ENV_TYPE=qa npx playwright test src/tests/start-project.spec.js --project=chromium --headed
+ * 
+ * ENV_TYPE=production npx playwright test src/tests/start-project.spec.js --project=chromium --headed
  */

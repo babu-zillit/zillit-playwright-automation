@@ -265,6 +265,7 @@ export default class Casting {
     }
 
     async chat(){
+        await this.page.waitForTimeout(11000);
         await this.page.locator('div.flex.flex-grow div.flex.items-center').first().click();
     }
 

@@ -1,481 +1,170 @@
-<testsuites id="" name="" tests="48" failures="0" skipped="3" errors="0" time="295.276183">
-<testsuite name="continuity-script-notes.spec.js" timestamp="2026-02-04T10:46:32.968Z" hostname="chromium" tests="48" failures="0" skipped="3" time="278.4" errors="0">
-<testcase name="Continuity Script Notes › Selected Takes › verify send message → upload document by clicking on continuation → upload document by clicking on new" classname="continuity-script-notes.spec.js" time="25.063">
+<testsuites id="" name="" tests="24" failures="2" skipped="0" errors="0" time="343.106179">
+<testsuite name="admin-setting.spec.js" timestamp="2026-02-04T11:01:10.597Z" hostname="chromium" tests="24" failures="2" skipped="0" time="280.74" errors="0">
+<testcase name="Admin Settings › Create New Department › Verify the creation of a new department" classname="admin-setting.spec.js" time="4.961">
 <system-out>
-<![CDATA[[INFO] 2026-02-04T10:46:34.284Z - browser is launching
-[INFO] 2026-02-04T10:46:41.252Z - open the project
+<![CDATA[[INFO] 2026-02-04T11:01:11.618Z - browser is launching
+[INFO] 2026-02-04T11:01:16.714Z - open the project
 Current hostname is: web.zillit.com
-[INFO] 2026-02-04T10:46:41.254Z - Production environment is started...
-✅ AppleScript ran successfully
-✅ AppleScript ran successfully
+[INFO] 2026-02-04T11:01:16.714Z - Production environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the forward" classname="continuity-script-notes.spec.js" time="6.032">
+<testcase name="Admin Settings › Create New Department › Verify the deletion of a department" classname="admin-setting.spec.js" time="5.64">
+</testcase>
+<testcase name="Admin Settings › Create New Designation › Verify creating a new designation" classname="admin-setting.spec.js" time="6.519">
+</testcase>
+<testcase name="Admin Settings › Create New Designation › Verify the deletion of a designation" classname="admin-setting.spec.js" time="7.736">
+</testcase>
+<testcase name="Admin Settings › Create Join Unit › Verify the user can create a join unit" classname="admin-setting.spec.js" time="8.224">
+</testcase>
+<testcase name="Admin Settings › Create Join Unit › Verify the user can delete a join unit" classname="admin-setting.spec.js" time="7.855">
+</testcase>
+<testcase name="Admin Settings › Edit Project Name › Verify the user can edit the project name" classname="admin-setting.spec.js" time="6.565">
+</testcase>
+<testcase name="Admin Settings › Customization Of Tools › Verify the user can enable or disable tools in the Tools module" classname="admin-setting.spec.js" time="6.074">
+</testcase>
+<testcase name="Admin Settings › Set SOS Receiver › Verify the user can set the SOS receiver" classname="admin-setting.spec.js" time="11.399">
+</testcase>
+<testcase name="Admin Settings › Set SOS Receiver › Verify the user can edit the SOS receiver" classname="admin-setting.spec.js" time="12.008">
+</testcase>
+<testcase name="Admin Settings › Set SOS Receiver › Verify the user can delete the SOS receiver" classname="admin-setting.spec.js" time="12.66">
+</testcase>
+<testcase name="Admin Settings › Home Unit › Verify creating a home unit by selecting all departments" classname="admin-setting.spec.js" time="6.926">
+</testcase>
+<testcase name="Admin Settings › Home Unit › Verify the user can edit a home unit" classname="admin-setting.spec.js" time="11.978">
+</testcase>
+<testcase name="Admin Settings › Home Unit › Verify the user can delete a home unit" classname="admin-setting.spec.js" time="8.916">
+</testcase>
+<testcase name="Admin Settings › Home Unit › Verify creating a home unit by selecting all users" classname="admin-setting.spec.js" time="13.159">
+</testcase>
+<testcase name="Admin Settings › WaterMark Logo Company › Verify the user can upload the watermark logo" classname="admin-setting.spec.js" time="9.612">
+</testcase>
+<testcase name="Admin Settings › WaterMark Logo Company › Verify the user can delete the watermark logo" classname="admin-setting.spec.js" time="1.236">
+</testcase>
+<testcase name="Admin Settings › Change Department List Order › Verify the user can change the order of the department list" classname="admin-setting.spec.js" time="18.98">
+</testcase>
+<testcase name="Admin Settings › Approve User Profile › Verify the user can approve a user profile" classname="admin-setting.spec.js" time="30.105">
+<failure message="admin-setting.spec.js:135:9 Verify the user can approve a user profile" type="FAILURE">
+<![CDATA[  [chromium] › admin-setting.spec.js:135:9 › Admin Settings › Approve User Profile › Verify the user can approve a user profile 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('#open_user_profile')
+
+
+       at ../pages/settings.js:498
+
+      496 |     async approveUserProfile(successMsg){
+      497 |         await this.approveUserProfileTab.click();
+    > 498 |         await this.open.click();
+          |                         ^
+      499 |         await this.approve.last().click();
+      500 |         await this.uploadMedia.verifyPopupMessage(`${successMsg}`);
+      501 |         await this.page.waitForTimeout(2000);
+        at Settings.approveUserProfile (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js:498:25)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/admin-setting.spec.js:136:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
+<![CDATA[[INFO] 2026-02-04T11:04:40.909Z - close browser
+
+[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the reply" classname="continuity-script-notes.spec.js" time="1.256">
+<testcase name="Admin Settings › User Management › Verify the user can change a regular user to admin" classname="admin-setting.spec.js" time="30.128">
+<failure message="admin-setting.spec.js:143:9 Verify the user can change a regular user to admin" type="FAILURE">
+<![CDATA[  [chromium] › admin-setting.spec.js:143:9 › Admin Settings › User Management › Verify the user can change a regular user to admin 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('div.ant-modal-confirm-btns button').last()
+
+
+       at ../pages/settings.js:507
+
+      505 |         await this.page.locator('#user_management').click();
+      506 |         await this.page.locator('[role="switch"]').last().click();
+    > 507 |         await this.page.locator('div.ant-modal-confirm-btns button').last().click();
+          |                                                                             ^
+      508 |         await this.page.waitForTimeout(5000);
+      509 |         await this.page.goBack({ waitUntil: 'load' });
+      510 |         await this.settings.click();
+        at Settings.userManagement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js:507:77)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/admin-setting.spec.js:144:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
+<![CDATA[[INFO] 2026-02-04T11:04:42.901Z - browser is launching
+[INFO] 2026-02-04T11:04:50.147Z - open the project
+Current hostname is: web.zillit.com
+[INFO] 2026-02-04T11:04:50.148Z - Production environment is started...
+[INFO] 2026-02-04T11:05:33.626Z - close browser
+
+[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the edit reply" classname="continuity-script-notes.spec.js" time="1.51">
+<testcase name="Admin Settings › Delete project › Verify the user can delete a project" classname="admin-setting.spec.js" time="11.222">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+<![CDATA[[INFO] 2026-02-04T11:05:35.418Z - browser is launching
+[INFO] 2026-02-04T11:05:40.495Z - open the project
+Current hostname is: web.zillit.com
+[INFO] 2026-02-04T11:05:40.495Z - Production environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the delete reply" classname="continuity-script-notes.spec.js" time="5.505">
+<testcase name="Admin Settings › Delete project › Verify the user can stop projects after deletion" classname="admin-setting.spec.js" time="7.824">
+</testcase>
+<testcase name="Admin Settings › Delete project › Verify the user can delete the project again" classname="admin-setting.spec.js" time="11.893">
+</testcase>
+<testcase name="Admin Settings › Pre Approved User › Verify the user can create a pre-approved user and send an internal email" classname="admin-setting.spec.js" time="29.12">
 <system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the save or download" classname="continuity-script-notes.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the forward to remote project" classname="continuity-script-notes.spec.js" time="10.341">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the delete document" classname="continuity-script-notes.spec.js" time="5.714">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify send a message" classname="continuity-script-notes.spec.js" time="2.327">
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify edit the message" classname="continuity-script-notes.spec.js" time="0.885">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify forward the message" classname="continuity-script-notes.spec.js" time="5.954">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify reply to the message" classname="continuity-script-notes.spec.js" time="1.214">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the edit the reply message" classname="continuity-script-notes.spec.js" time="2.152">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the delete the reply message" classname="continuity-script-notes.spec.js" time="12.475">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the forward to remote project in selects" classname="continuity-script-notes.spec.js" time="9.352">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Selected Takes › verify the delete message" classname="continuity-script-notes.spec.js" time="6.701">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify send message → upload document by clicking on continuation → upload document by clicking on new" classname="continuity-script-notes.spec.js" time="23.813">
-<system-out>
-<![CDATA[✅ AppleScript ran successfully
-✅ AppleScript ran successfully
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the forward" classname="continuity-script-notes.spec.js" time="5.611">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the reply" classname="continuity-script-notes.spec.js" time="0.879">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the edit reply" classname="continuity-script-notes.spec.js" time="1.877">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete reply" classname="continuity-script-notes.spec.js" time="13.461">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the save or download" classname="continuity-script-notes.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the forward to remote project" classname="continuity-script-notes.spec.js" time="9.877">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete document" classname="continuity-script-notes.spec.js" time="5.618">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify send a message" classname="continuity-script-notes.spec.js" time="2.405">
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify edit the message" classname="continuity-script-notes.spec.js" time="1.389">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify forward the message" classname="continuity-script-notes.spec.js" time="5.569">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify reply to the message" classname="continuity-script-notes.spec.js" time="1.201">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the edit the reply message" classname="continuity-script-notes.spec.js" time="1.897">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete the reply message" classname="continuity-script-notes.spec.js" time="4.52">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the forward to remote project in daily" classname="continuity-script-notes.spec.js" time="10.301">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete message" classname="continuity-script-notes.spec.js" time="5.775">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify send message → upload document by clicking on continuation → upload document by clicking on new" classname="continuity-script-notes.spec.js" time="24.484">
-<system-out>
-<![CDATA[✅ AppleScript ran successfully
-✅ AppleScript ran successfully
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the forward" classname="continuity-script-notes.spec.js" time="6.599">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the reply" classname="continuity-script-notes.spec.js" time="1.229">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the edit reply" classname="continuity-script-notes.spec.js" time="1.885">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the delete reply" classname="continuity-script-notes.spec.js" time="5.381">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the save or download" classname="continuity-script-notes.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the forward to remote project" classname="continuity-script-notes.spec.js" time="8.961">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the delete document" classname="continuity-script-notes.spec.js" time="6.673">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify send a message" classname="continuity-script-notes.spec.js" time="2.33">
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify edit the message" classname="continuity-script-notes.spec.js" time="1.258">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify forward the message" classname="continuity-script-notes.spec.js" time="6.019">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify reply to the message" classname="continuity-script-notes.spec.js" time="0.932">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the edit the reply message" classname="continuity-script-notes.spec.js" time="2.428">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the delete the reply message" classname="continuity-script-notes.spec.js" time="4.481">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the forward to remote project in countinuity" classname="continuity-script-notes.spec.js" time="9.358">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Continuity Script Notes › Continuity Notes › verify the delete message" classname="continuity-script-notes.spec.js" time="5.708">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Read By'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-[INFO] 2026-02-04T10:51:27.701Z - close browser
+<![CDATA[Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('text=Email sent successfully') to be visible[22m
+
+[INFO] 2026-02-04T11:06:53.347Z - close browser
 ]]>
 </system-out>
 </testcase>

@@ -108,27 +108,27 @@
   },
   "suites": [
     {
-      "title": "continuity-script-notes.spec.js",
-      "file": "continuity-script-notes.spec.js",
+      "title": "admin-setting.spec.js",
+      "file": "admin-setting.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Continuity Script Notes",
-          "file": "continuity-script-notes.spec.js",
+          "title": "Admin Settings",
+          "file": "admin-setting.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Selected Takes",
-              "file": "continuity-script-notes.spec.js",
-              "line": 34,
+              "title": "Create New Department",
+              "file": "admin-setting.spec.js",
+              "line": 33,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify send message → upload document by clicking on continuation → upload document by clicking on new",
+                  "title": "Verify the creation of a new department",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -143,31 +143,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 25063,
+                          "duration": 4961,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-04T10:46:34.284Z - browser is launching\n"
+                              "text": "[INFO] 2026-02-04T11:01:11.618Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-04T10:46:41.252Z - open the project\n"
+                              "text": "[INFO] 2026-02-04T11:01:16.714Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-04T10:46:41.254Z - Production environment is started...\n"
-                            },
-                            {
-                              "text": "✅ AppleScript ran successfully\n"
-                            },
-                            {
-                              "text": "✅ AppleScript ran successfully\n"
+                              "text": "[INFO] 2026-02-04T11:01:16.714Z - Production environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:46:33.322Z",
+                          "startTime": "2026-02-04T11:01:10.936Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -175,13 +169,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-3337680c4580fecaabb5",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 36,
+                  "id": "1fe795fbcd006f4fd4d7-cdc22de30cc1b6a56cd4",
+                  "file": "admin-setting.spec.js",
+                  "line": 35,
                   "column": 9
                 },
                 {
-                  "title": "verify the forward",
+                  "title": "Verify the deletion of a department",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -196,16 +190,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6032,
+                          "duration": 5640,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:13.812Z",
+                          "startTime": "2026-02-04T11:01:34.792Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -213,13 +203,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-1b0518cc9401800796f9",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 43,
+                  "id": "1fe795fbcd006f4fd4d7-ac26537b789d4d770421",
+                  "file": "admin-setting.spec.js",
+                  "line": 38,
                   "column": 9
-                },
+                }
+              ]
+            },
+            {
+              "title": "Create New Designation",
+              "file": "admin-setting.spec.js",
+              "line": 45,
+              "column": 10,
+              "specs": [
                 {
-                  "title": "verify the reply",
+                  "title": "Verify creating a new designation",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -234,16 +232,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1256,
+                          "duration": 6519,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:19.861Z",
+                          "startTime": "2026-02-04T11:01:40.445Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -251,13 +245,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-b3ec43d7a38e63111108",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 48,
+                  "id": "1fe795fbcd006f4fd4d7-d49a3c4b2f1727cce129",
+                  "file": "admin-setting.spec.js",
+                  "line": 47,
                   "column": 9
                 },
                 {
-                  "title": "verify the edit reply",
+                  "title": "Verify the deletion of a designation",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -272,16 +266,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1510,
+                          "duration": 7736,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:21.129Z",
+                          "startTime": "2026-02-04T11:01:46.973Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -289,13 +279,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-6e4b40ad90c7386c5429",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 53,
+                  "id": "1fe795fbcd006f4fd4d7-5742dfe72f2ba1ca97a2",
+                  "file": "admin-setting.spec.js",
+                  "line": 50,
                   "column": 9
-                },
+                }
+              ]
+            },
+            {
+              "title": "Create Join Unit",
+              "file": "admin-setting.spec.js",
+              "line": 56,
+              "column": 10,
+              "specs": [
                 {
-                  "title": "verify the delete reply",
+                  "title": "Verify the user can create a join unit",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -310,16 +308,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5505,
+                          "duration": 8224,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:22.651Z",
+                          "startTime": "2026-02-04T11:01:54.715Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -327,79 +321,33 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-e1d30962d1b3b8954393",
-                  "file": "continuity-script-notes.spec.js",
+                  "id": "1fe795fbcd006f4fd4d7-99ca684cb291ff6aa2b5",
+                  "file": "admin-setting.spec.js",
                   "line": 58,
                   "column": 9
                 },
                 {
-                  "title": "verify the save or download",
+                  "title": "Verify the user can delete a join unit",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
+                      "annotations": [],
+                      "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
+                          "status": "passed",
+                          "duration": 7855,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:28.166Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-4066e5dfb36c6a96a702",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 63,
-                  "column": 14
-                },
-                {
-                  "title": "verify the forward to remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10341,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:47:28.166Z",
+                          "startTime": "2026-02-04T11:02:02.947Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -407,59 +355,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-0921c0152419a4f47cdf",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 67,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete document",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5714,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:47:38.522Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-514be36d50c5c702f0a0",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 71,
+                  "id": "1fe795fbcd006f4fd4d7-2fbab999be0ab632f397",
+                  "file": "admin-setting.spec.js",
+                  "line": 61,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Selected Takes",
-              "file": "continuity-script-notes.spec.js",
-              "line": 78,
+              "title": "Edit Project Name",
+              "file": "admin-setting.spec.js",
+              "line": 67,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify send a message",
+                  "title": "Verify the user can edit the project name",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -474,12 +384,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2327,
+                          "duration": 6565,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:44.248Z",
+                          "startTime": "2026-02-04T11:02:10.848Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -487,13 +397,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-bda5b4a229a10fdc030c",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 80,
+                  "id": "1fe795fbcd006f4fd4d7-8d85716124e1884b46e5",
+                  "file": "admin-setting.spec.js",
+                  "line": 69,
                   "column": 9
-                },
+                }
+              ]
+            },
+            {
+              "title": "Customization Of Tools",
+              "file": "admin-setting.spec.js",
+              "line": 75,
+              "column": 10,
+              "specs": [
                 {
-                  "title": "verify edit the message",
+                  "title": "Verify the user can enable or disable tools in the Tools module",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -508,16 +426,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 885,
+                          "duration": 6074,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:46.592Z",
+                          "startTime": "2026-02-04T11:02:17.462Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -525,13 +439,55 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-73342f81f3189da29b3f",
-                  "file": "continuity-script-notes.spec.js",
+                  "id": "1fe795fbcd006f4fd4d7-983321dab6ed52264aed",
+                  "file": "admin-setting.spec.js",
+                  "line": 77,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Set SOS Receiver",
+              "file": "admin-setting.spec.js",
+              "line": 83,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify the user can set the SOS receiver",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11399,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-04T11:02:23.547Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1fe795fbcd006f4fd4d7-0ebfcaf59c577ef2238c",
+                  "file": "admin-setting.spec.js",
                   "line": 85,
                   "column": 9
                 },
                 {
-                  "title": "verify forward the message",
+                  "title": "Verify the user can edit the SOS receiver",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -546,16 +502,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5954,
+                          "duration": 12008,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:47.487Z",
+                          "startTime": "2026-02-04T11:02:34.955Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -563,13 +515,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-140ae0498f9981357c01",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 90,
+                  "id": "1fe795fbcd006f4fd4d7-cebf456c694ed12518b8",
+                  "file": "admin-setting.spec.js",
+                  "line": 88,
                   "column": 9
                 },
                 {
-                  "title": "verify reply to the message",
+                  "title": "Verify the user can delete the SOS receiver",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -584,16 +536,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1214,
+                          "duration": 12660,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:53.452Z",
+                          "startTime": "2026-02-04T11:02:46.973Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -601,13 +549,55 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-1f023b12e19e02144420",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 95,
+                  "id": "1fe795fbcd006f4fd4d7-5b4f78db00b65e073440",
+                  "file": "admin-setting.spec.js",
+                  "line": 91,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Home Unit",
+              "file": "admin-setting.spec.js",
+              "line": 97,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify creating a home unit by selecting all departments",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6926,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-04T11:02:59.642Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1fe795fbcd006f4fd4d7-ac31d890222dcd1e20ad",
+                  "file": "admin-setting.spec.js",
+                  "line": 99,
                   "column": 9
                 },
                 {
-                  "title": "verify the edit the reply message",
+                  "title": "Verify the user can edit a home unit",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -622,16 +612,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2152,
+                          "duration": 11978,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:54.681Z",
+                          "startTime": "2026-02-04T11:03:06.577Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -639,13 +625,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-0a6b13483ae88bc66c7e",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 100,
+                  "id": "1fe795fbcd006f4fd4d7-e8916c1f96b635c75fb4",
+                  "file": "admin-setting.spec.js",
+                  "line": 102,
                   "column": 9
                 },
                 {
-                  "title": "verify the delete the reply message",
+                  "title": "Verify the user can delete a home unit",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -660,16 +646,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12475,
+                          "duration": 8916,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:47:56.844Z",
+                          "startTime": "2026-02-04T11:03:18.571Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -677,13 +659,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-f61722614c4e4803a403",
-                  "file": "continuity-script-notes.spec.js",
+                  "id": "1fe795fbcd006f4fd4d7-0f72ee9043e9afc92063",
+                  "file": "admin-setting.spec.js",
                   "line": 105,
                   "column": 9
                 },
                 {
-                  "title": "verify the forward to remote project in selects",
+                  "title": "Verify creating a home unit by selecting all users",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -698,16 +680,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 9352,
+                          "duration": 13159,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:48:09.357Z",
+                          "startTime": "2026-02-04T11:03:27.500Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -715,59 +693,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-a71053b27ce181dac22e",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 109,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6701,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:48:18.721Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-48b68b8db5fb52d8a2d3",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 113,
+                  "id": "1fe795fbcd006f4fd4d7-384f724864b4e7782a53",
+                  "file": "admin-setting.spec.js",
+                  "line": 108,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Daily Progress Notes",
-              "file": "continuity-script-notes.spec.js",
-              "line": 120,
+              "title": "WaterMark Logo Company",
+              "file": "admin-setting.spec.js",
+              "line": 114,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify send message → upload document by clicking on continuation → upload document by clicking on new",
+                  "title": "Verify the user can upload the watermark logo",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -782,227 +722,26 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 23813,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "✅ AppleScript ran successfully\n"
-                            },
-                            {
-                              "text": "✅ AppleScript ran successfully\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:48:25.435Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-abc0b8a556253001cbb0",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 122,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5611,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:48:49.270Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-ceea24b16ffa501413b0",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 129,
-                  "column": 9
-                },
-                {
-                  "title": "verify the reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 879,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:48:54.893Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-a0437354ffbda57c9393",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 134,
-                  "column": 9
-                },
-                {
-                  "title": "verify the edit reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1877,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:48:55.781Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-ae8fab4ede32d88bd82e",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 139,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 13461,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:48:57.664Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-2ddc704acb33cb7568dc",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 144,
-                  "column": 9
-                },
-                {
-                  "title": "verify the save or download",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
+                          "duration": 9612,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:49:11.134Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
+                          "startTime": "2026-02-04T11:03:40.668Z",
+                          "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-8a46d7581e8844988bdd",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 149,
-                  "column": 14
+                  "id": "1fe795fbcd006f4fd4d7-7d522ee526013296140e",
+                  "file": "admin-setting.spec.js",
+                  "line": 116,
+                  "column": 9
                 },
                 {
-                  "title": "verify the forward to remote project",
+                  "title": "Verify the user can delete the watermark logo",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -1017,16 +756,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 9877,
+                          "duration": 1236,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:49:11.134Z",
+                          "startTime": "2026-02-04T11:03:50.292Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1034,13 +769,312 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-03cdb047dcc38993959f",
-                  "file": "continuity-script-notes.spec.js",
+                  "id": "1fe795fbcd006f4fd4d7-2b3bbbbd9bf219f33966",
+                  "file": "admin-setting.spec.js",
+                  "line": 119,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Change Department List Order",
+              "file": "admin-setting.spec.js",
+              "line": 125,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify the user can change the order of the department list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 18980,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-04T11:03:51.544Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1fe795fbcd006f4fd4d7-3f5196a95b84369d40b1",
+                  "file": "admin-setting.spec.js",
+                  "line": 127,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Approve User Profile",
+              "file": "admin-setting.spec.js",
+              "line": 133,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify the user can approve a user profile",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 30105,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js",
+                                "column": 25,
+                                "line": 498
+                              },
+                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('#open_user_profile')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/settings.js:498\n\n\u001b[0m \u001b[90m 496 |\u001b[39m     \u001b[36masync\u001b[39m approveUserProfile(successMsg){\n \u001b[90m 497 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapproveUserProfileTab\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 498 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mopen\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 499 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapprove\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 500 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muploadMedia\u001b[33m.\u001b[39mverifyPopupMessage(\u001b[32m`${successMsg}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 501 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Settings.approveUserProfile (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js:498:25)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/admin-setting.spec.js:136:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2026-02-04T11:04:40.909Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-04T11:04:10.535Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-1",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1fe795fbcd006f4fd4d7-f6adb824faa19829acf0",
+                  "file": "admin-setting.spec.js",
+                  "line": 135,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "User Management",
+              "file": "admin-setting.spec.js",
+              "line": 141,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify the user can change a regular user to admin",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "timedOut",
+                          "duration": 30128,
+                          "error": {
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                          },
+                          "errors": [
+                            {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js",
+                                "column": 77,
+                                "line": 507
+                              },
+                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('div.ant-modal-confirm-btns button').last()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/settings.js:507\n\n\u001b[0m \u001b[90m 505 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#user_management'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 506 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[role=\"switch\"]'\u001b[39m)\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 507 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.ant-modal-confirm-btns button'\u001b[39m)\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 508 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 509 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoBack({ waitUntil\u001b[33m:\u001b[39m \u001b[32m'load'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 510 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msettings\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Settings.userManagement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js:507:77)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/admin-setting.spec.js:144:13\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2026-02-04T11:04:42.901Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-04T11:04:50.147Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: web.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-04T11:04:50.148Z - Production environment is started...\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-04T11:05:33.626Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-04T11:04:42.250Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-1",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1fe795fbcd006f4fd4d7-dc9b2391edee7122f549",
+                  "file": "admin-setting.spec.js",
+                  "line": 143,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Delete project",
+              "file": "admin-setting.spec.js",
+              "line": 149,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify the user can delete a project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11222,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[INFO] 2026-02-04T11:05:35.418Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-04T11:05:40.495Z - open the project\n"
+                            },
+                            {
+                              "text": "Current hostname is: web.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-04T11:05:40.495Z - Production environment is started...\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-04T11:05:34.813Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1fe795fbcd006f4fd4d7-3160e5039ff2101ab8db",
+                  "file": "admin-setting.spec.js",
+                  "line": 151,
+                  "column": 9
+                },
+                {
+                  "title": "Verify the user can stop projects after deletion",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7824,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-04T11:06:04.458Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1fe795fbcd006f4fd4d7-b5b1f0fb7ab752bc3e2a",
+                  "file": "admin-setting.spec.js",
                   "line": 154,
                   "column": 9
                 },
                 {
-                  "title": "verify the delete document",
+                  "title": "Verify the user can delete the project again",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -1052,61 +1086,15 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5618,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:49:21.020Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-300fdfc6b44de4d99ae2",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 159,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Daily Progress Notes",
-              "file": "continuity-script-notes.spec.js",
-              "line": 166,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify send a message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2405,
+                          "duration": 11893,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:49:26.650Z",
+                          "startTime": "2026-02-04T11:06:12.299Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1114,287 +1102,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-6950ebe2358a295b8df2",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 168,
-                  "column": 9
-                },
-                {
-                  "title": "verify edit the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1389,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:49:29.068Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-35ebd23d90eb3083d6c9",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 173,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5569,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:49:30.467Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-f47b3812c3ae4412ec42",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 178,
-                  "column": 9
-                },
-                {
-                  "title": "verify reply to the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1201,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:49:36.045Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-5e927a957c938ebcfe28",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 183,
-                  "column": 9
-                },
-                {
-                  "title": "verify the edit the reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1897,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:49:37.258Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-22a9ab556d8de24af684",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 188,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete the reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4520,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:49:39.163Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-9a6e8232b8f9b5088400",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 193,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward to remote project in daily",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10301,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:49:43.692Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-ff233e967892c5bf578f",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 198,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5775,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:49:54.003Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-a26600d3876b8cb32dc4",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 203,
+                  "id": "1fe795fbcd006f4fd4d7-ec98499c0fe75392e2bb",
+                  "file": "admin-setting.spec.js",
+                  "line": 157,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Continuity Notes",
-              "file": "continuity-script-notes.spec.js",
-              "line": 210,
+              "title": "Pre Approved User",
+              "file": "admin-setting.spec.js",
+              "line": 163,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify send message → upload document by clicking on continuation → upload document by clicking on new",
+                  "title": "Verify the user can create a pre-approved user and send an internal email",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -1406,22 +1128,22 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 2,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 24484,
+                          "duration": 29120,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "✅ AppleScript ran successfully\n"
+                              "text": "Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Email sent successfully') to be visible\u001b[22m\n\n"
                             },
                             {
-                              "text": "✅ AppleScript ran successfully\n"
+                              "text": "[INFO] 2026-02-04T11:06:53.347Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T10:49:59.791Z",
+                          "startTime": "2026-02-04T11:06:24.209Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -1429,590 +1151,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "89e25b46fd1087a85fdf-81b63039807db9af228f",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 212,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6599,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:24.293Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-5f47d3b5c96e58507d0d",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 219,
-                  "column": 9
-                },
-                {
-                  "title": "verify the reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1229,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:30.904Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-e3b2da404ab782218231",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 224,
-                  "column": 9
-                },
-                {
-                  "title": "verify the edit reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1885,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:32.148Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-e45cf81a88e53ed921c5",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 229,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5381,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:34.046Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-afeca33a16182f1b608e",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 234,
-                  "column": 9
-                },
-                {
-                  "title": "verify the save or download",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:39.436Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-d7f643500be4c796850c",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 239,
-                  "column": 14
-                },
-                {
-                  "title": "verify the forward to remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8961,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:39.436Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-bac5cf5c3d36d1089788",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 244,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete document",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6673,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:48.408Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-554b1960c937441a7b72",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 249,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Continuity Notes",
-              "file": "continuity-script-notes.spec.js",
-              "line": 256,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify send a message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2330,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:55.092Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-4fd38867cb5065985eda",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 258,
-                  "column": 9
-                },
-                {
-                  "title": "verify edit the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1258,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:57.438Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-58f6ba21321286d03440",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 263,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6019,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:50:58.705Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-dab5124e5c6a8c4c9d6e",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 268,
-                  "column": 9
-                },
-                {
-                  "title": "verify reply to the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 932,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:51:04.733Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-f0e49f3c9b03f2aaa820",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 273,
-                  "column": 9
-                },
-                {
-                  "title": "verify the edit the reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2428,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:51:05.680Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-aa3db226412c0fe3e39e",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 278,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete the reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4481,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:51:08.113Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-81cb48a5b057921c8e56",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 283,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward to remote project in countinuity",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9358,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:51:12.601Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-a50a829853172f9f2052",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 288,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5708,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-04T10:51:27.701Z - close browser\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T10:51:21.970Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "89e25b46fd1087a85fdf-dd2e3ae2161bf9906b15",
-                  "file": "continuity-script-notes.spec.js",
-                  "line": 293,
+                  "id": "1fe795fbcd006f4fd4d7-c21ec82ca7e145fbbf6e",
+                  "file": "admin-setting.spec.js",
+                  "line": 165,
                   "column": 9
                 }
               ]
@@ -2024,11 +1165,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-04T10:46:32.940Z",
-    "duration": 295276.183,
-    "expected": 45,
-    "skipped": 3,
-    "unexpected": 0,
+    "startTime": "2026-02-04T11:01:10.571Z",
+    "duration": 343106.179,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

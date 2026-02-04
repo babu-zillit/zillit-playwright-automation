@@ -174,5 +174,5 @@ test.describe('Admin Settings', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/adminSettingTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/adminSettingTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/admin-setting.spec.js --project=chromium --headed
    */ 

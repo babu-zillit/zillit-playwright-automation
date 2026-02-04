@@ -503,7 +503,9 @@ export default class Settings {
 
     async userManagement(){
         await this.page.locator('#user_management').click();
+        await this.page.waitForTimeout(4000);
         await this.page.locator('[role="switch"]').last().click();
+        await this.page.waitForTimeout(2000);
         await this.page.locator('div.ant-modal-confirm-btns button').last().click();
         await this.page.waitForTimeout(5000);
         await this.page.goBack({ waitUntil: 'load' });

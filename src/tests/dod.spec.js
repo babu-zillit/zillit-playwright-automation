@@ -66,5 +66,5 @@ test.describe('Schedule D.O.D', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/11_dodTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/11_dodTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/dod.spec.js --project=chromium --headed
    */ 

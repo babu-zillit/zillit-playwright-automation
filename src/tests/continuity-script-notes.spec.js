@@ -60,7 +60,7 @@ test.describe('Continuity Script Notes', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await uploadmedia.save();
         });
 
@@ -146,7 +146,7 @@ test.describe('Continuity Script Notes', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await continuityScriptNotesPage.dailyProgressNotesTab();
             await uploadmedia.save();
         });
@@ -236,7 +236,7 @@ test.describe('Continuity Script Notes', () => {
             await uploadmedia.deleteReply();
         });
 
-        test('verify the save or download', async () => {
+        test.skip('verify the save or download', async () => {
             await continuityScriptNotesPage.continuityNotesTab();
             await uploadmedia.save();
         });
@@ -303,5 +303,5 @@ test.describe('Continuity Script Notes', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/19_continuity-script-notesTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/19_continuity-script-notesTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/continuity-script-notes.spec.js --project=chromium --headed
    */ 

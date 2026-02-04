@@ -1,25 +1,481 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="59.391366999999995">
-<testsuite name="map.spec.js" timestamp="2026-02-04T10:12:49.647Z" hostname="chromium" tests="6" failures="0" skipped="0" time="45.356" errors="0">
-<testcase name="Map › Map › Verify the user can search and select a city on the map" classname="map.spec.js" time="12.952">
+<testsuites id="" name="" tests="48" failures="0" skipped="3" errors="0" time="295.276183">
+<testsuite name="continuity-script-notes.spec.js" timestamp="2026-02-04T10:46:32.968Z" hostname="chromium" tests="48" failures="0" skipped="3" time="278.4" errors="0">
+<testcase name="Continuity Script Notes › Selected Takes › verify send message → upload document by clicking on continuation → upload document by clicking on new" classname="continuity-script-notes.spec.js" time="25.063">
 <system-out>
-<![CDATA[[INFO] 2026-02-04T10:12:51.273Z - browser is launching
-[INFO] 2026-02-04T10:12:58.236Z - open the project
+<![CDATA[[INFO] 2026-02-04T10:46:34.284Z - browser is launching
+[INFO] 2026-02-04T10:46:41.252Z - open the project
 Current hostname is: web.zillit.com
-[INFO] 2026-02-04T10:12:58.237Z - Production environment is started...
+[INFO] 2026-02-04T10:46:41.254Z - Production environment is started...
+✅ AppleScript ran successfully
+✅ AppleScript ran successfully
 ]]>
 </system-out>
 </testcase>
-<testcase name="Map › Map › Verify the user can pin a location on the map" classname="map.spec.js" time="6.41">
-</testcase>
-<testcase name="Map › Map › Verify the user can fill and save location details" classname="map.spec.js" time="10.189">
-</testcase>
-<testcase name="Map › Map › Verify the user can view the pinned location on the map" classname="map.spec.js" time="3.359">
-</testcase>
-<testcase name="Map › Map › Verify user can copy and open the pinned location link in new tab" classname="map.spec.js" time="8.17">
-</testcase>
-<testcase name="Map › Map › Verify user can delete a pinned location" classname="map.spec.js" time="4.276">
+<testcase name="Continuity Script Notes › Selected Takes › verify the forward" classname="continuity-script-notes.spec.js" time="6.032">
 <system-out>
-<![CDATA[[INFO] 2026-02-04T10:13:48.628Z - close browser
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the reply" classname="continuity-script-notes.spec.js" time="1.256">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the edit reply" classname="continuity-script-notes.spec.js" time="1.51">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the delete reply" classname="continuity-script-notes.spec.js" time="5.505">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the save or download" classname="continuity-script-notes.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the forward to remote project" classname="continuity-script-notes.spec.js" time="10.341">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the delete document" classname="continuity-script-notes.spec.js" time="5.714">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify send a message" classname="continuity-script-notes.spec.js" time="2.327">
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify edit the message" classname="continuity-script-notes.spec.js" time="0.885">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify forward the message" classname="continuity-script-notes.spec.js" time="5.954">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify reply to the message" classname="continuity-script-notes.spec.js" time="1.214">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the edit the reply message" classname="continuity-script-notes.spec.js" time="2.152">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the delete the reply message" classname="continuity-script-notes.spec.js" time="12.475">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the forward to remote project in selects" classname="continuity-script-notes.spec.js" time="9.352">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Selected Takes › verify the delete message" classname="continuity-script-notes.spec.js" time="6.701">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify send message → upload document by clicking on continuation → upload document by clicking on new" classname="continuity-script-notes.spec.js" time="23.813">
+<system-out>
+<![CDATA[✅ AppleScript ran successfully
+✅ AppleScript ran successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the forward" classname="continuity-script-notes.spec.js" time="5.611">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the reply" classname="continuity-script-notes.spec.js" time="0.879">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the edit reply" classname="continuity-script-notes.spec.js" time="1.877">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete reply" classname="continuity-script-notes.spec.js" time="13.461">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the save or download" classname="continuity-script-notes.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the forward to remote project" classname="continuity-script-notes.spec.js" time="9.877">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete document" classname="continuity-script-notes.spec.js" time="5.618">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify send a message" classname="continuity-script-notes.spec.js" time="2.405">
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify edit the message" classname="continuity-script-notes.spec.js" time="1.389">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify forward the message" classname="continuity-script-notes.spec.js" time="5.569">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify reply to the message" classname="continuity-script-notes.spec.js" time="1.201">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the edit the reply message" classname="continuity-script-notes.spec.js" time="1.897">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete the reply message" classname="continuity-script-notes.spec.js" time="4.52">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the forward to remote project in daily" classname="continuity-script-notes.spec.js" time="10.301">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Daily Progress Notes › verify the delete message" classname="continuity-script-notes.spec.js" time="5.775">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify send message → upload document by clicking on continuation → upload document by clicking on new" classname="continuity-script-notes.spec.js" time="24.484">
+<system-out>
+<![CDATA[✅ AppleScript ran successfully
+✅ AppleScript ran successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the forward" classname="continuity-script-notes.spec.js" time="6.599">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the reply" classname="continuity-script-notes.spec.js" time="1.229">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the edit reply" classname="continuity-script-notes.spec.js" time="1.885">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the delete reply" classname="continuity-script-notes.spec.js" time="5.381">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the save or download" classname="continuity-script-notes.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the forward to remote project" classname="continuity-script-notes.spec.js" time="8.961">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the delete document" classname="continuity-script-notes.spec.js" time="6.673">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Download'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify send a message" classname="continuity-script-notes.spec.js" time="2.33">
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify edit the message" classname="continuity-script-notes.spec.js" time="1.258">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify forward the message" classname="continuity-script-notes.spec.js" time="6.019">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify reply to the message" classname="continuity-script-notes.spec.js" time="0.932">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the edit the reply message" classname="continuity-script-notes.spec.js" time="2.428">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the delete the reply message" classname="continuity-script-notes.spec.js" time="4.481">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the forward to remote project in countinuity" classname="continuity-script-notes.spec.js" time="9.358">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Continuity Script Notes › Continuity Notes › verify the delete message" classname="continuity-script-notes.spec.js" time="5.708">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Edit Message'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2026-02-04T10:51:27.701Z - close browser
 ]]>
 </system-out>
 </testcase>

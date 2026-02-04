@@ -37,25 +37,29 @@ export default class Map {
         await this.page.waitForTimeout(1000);
         await this.page.keyboard.press('Enter');
         await this.page.waitForTimeout(1000);
-        await this.addButton.first().click();
+        await this.addButton.last().click();
         
-        const successMsg = this.page.locator('text=City created successfully.');
+        const successMsg = this.page.locator('text=New city has been added in the city list.');
         await expect(successMsg).toBeVisible();
         await expect(successMsg).toBeHidden();
     }
 
     async pinLocation(){
+        await this.page.locator('div.ant-space-item button').first().click();
+        await this.page.waitForTimeout(3000);
         await this.page.locator('//div[contains(@class,"absolute top-4")]//button').first().click();
         await this.page.locator('//div[@role="button"]//img').dblclick();
+        await this.page.waitForTimeout(3000);
     }
 
     async fillLocationDetails() {
+        await this.page.waitForTimeout(3000);
         await this.selectLocationType.click();
         await this.page.keyboard.press('Enter');
+        await this.page.waitForTimeout(2000);
 
-        const checkBox = this.page.locator('#forCast');
-        await checkBox.waitFor({ state: 'visible' });
-        await checkBox.check();
+        const sceneNumber = this.page.locator('[placeholder="Enter Scene Number"]');
+        await sceneNumber.fill('99');
 
         await this.enterName.fill('Test Location');
         await this.enterDescription.fill('This is a test location description');
@@ -70,12 +74,13 @@ export default class Map {
 
     async viewPinnedLocation() {
         await this.page.locator('text=View Pinned Location').click();
-        await this.editViewDeleteButton.nth(1).click();
+        await this.page.locator('[aria-label="eye"]').click();
         await this.page.waitForTimeout(3000);
     }
 
     async deleteLocation() {
-        await this.editViewDeleteButton.nth(2).click();
+        await this.page.locator('[aria-label="delete"]').last().click();
+        await this.page.locator('div.ant-modal-confirm-btns button').last().click();
 
         const successMsg = this.page.locator('text=Map location deleted successfully.');
         await successMsg.waitFor({ state: 'visible' });

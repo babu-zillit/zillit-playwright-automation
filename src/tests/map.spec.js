@@ -4,6 +4,7 @@ import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 
 test.describe('Map', () => {
+    test.setTimeout(60000);
     let context;
     let page;
     let uploadmedia;
@@ -30,26 +31,30 @@ test.describe('Map', () => {
     });
 
 
+    test.describe('Map', () => {
 
-    test.describe('Map location', () => {
-
-        test.only('verify search and select city', async () => {
+        test('Verify the user can search and select a city on the map', async () => {
             await mapPage.searchSelectCity();
         });
 
-        test('Verify the PIN → Copy the location link → Open it in a new tab → Delete the location', async () => {
-           await mapPage.pinLocation();
-           await mapPage.fillLocationDetails();
-           await mapPage.viewPinnedLocation();
-           await mapPage.copyViewLocationLink();
-           await mapPage.deleteLocation();
+        test('Verify the user can pin a location on the map', async () => {
+            await mapPage.pinLocation();
         });
 
-        test('Search and verify the location using the PIN, fill in the details, then delete the location', async () => {
-           await mapPage.searchLocation();
-           await mapPage.fillLocationDetails();
-           await mapPage.viewPinnedLocation();
-           await mapPage.deleteLocation();
+        test('Verify the user can fill and save location details', async () => {
+            await mapPage.fillLocationDetails();
+        });
+
+        test('Verify the user can view the pinned location on the map', async () => {
+            await mapPage.viewPinnedLocation();
+        });
+
+        test('Verify user can copy and open the pinned location link in new tab', async () => {
+            await mapPage.copyViewLocationLink();
+        });
+
+        test('Verify user can delete a pinned location', async () => {
+            await mapPage.deleteLocation();
         });
     
     });
@@ -59,5 +64,5 @@ test.describe('Map', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/18_mapTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/18_mapTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/map.spec.js --project=chromium --headed
    */ 

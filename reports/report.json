@@ -108,27 +108,27 @@
   },
   "suites": [
     {
-      "title": "purchase-order.spec.js",
-      "file": "purchase-order.spec.js",
+      "title": "email.spec.js",
+      "file": "email.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Purchase Order",
-          "file": "purchase-order.spec.js",
-          "line": 6,
+          "title": "Email",
+          "file": "email.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Create New PO",
-              "file": "purchase-order.spec.js",
-              "line": 31,
+              "title": "Send Draft Email",
+              "file": "email.spec.js",
+              "line": 154,
               "column": 19,
               "specs": [
                 {
-                  "title": "verify the add new supplier",
+                  "title": "verify that user can send email from draft",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -143,144 +143,45 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2567,
+                          "duration": 27455,
                           "errors": [],
                           "stdout": [
+                            {
+                              "text": "[INFO] 2026-02-05T14:17:15.235Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-05T14:17:20.976Z - open the project\n"
+                            },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-05T12:43:03.680Z - Production environment is started...\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-05T12:42:56.937Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "2d1a92e3a60b39058739-7610c9ba0cf14e1c9969",
-                  "file": "purchase-order.spec.js",
-                  "line": 33,
-                  "column": 9
-                },
-                {
-                  "title": "verify the add new delivery address",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2179,
-                          "errors": [],
-                          "stdout": [
+                              "text": "[INFO] 2026-02-05T14:17:20.976Z - Production environment is started...\n"
+                            },
                             {
-                              "text": "There is no any delivery address\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-05T12:43:11.105Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "2d1a92e3a60b39058739-447921918f79ff82dd96",
-                  "file": "purchase-order.spec.js",
-                  "line": 39,
-                  "column": 9
-                },
-                {
-                  "title": "verify select Delivery Date, Currency, Shipping Charge",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10596,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-05T12:43:13.328Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "2d1a92e3a60b39058739-e7b121163328f6b16846",
-                  "file": "purchase-order.spec.js",
-                  "line": 44,
-                  "column": 9
-                },
-                {
-                  "title": "verify add company details",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-05T12:43:24.172Z",
-                          "annotations": [
+                              "text": "Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Draft updated successfully') to be visible\u001b[22m\n\n"
+                            },
                             {
-                              "type": "skip"
+                              "text": "draft functionality\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-05T14:17:58.164Z - close browser\n"
                             }
                           ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-05T14:17:14.356Z",
+                          "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
-                  "id": "2d1a92e3a60b39058739-130ea45d0f0aaca96e04",
-                  "file": "purchase-order.spec.js",
-                  "line": 49,
-                  "column": 14
+                  "id": "23e3414c603cb6b677e1-e3fd46853ced74220bf7",
+                  "file": "email.spec.js",
+                  "line": 155,
+                  "column": 9
                 }
               ]
             }
@@ -291,10 +192,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-05T12:42:56.488Z",
-    "duration": 28089.388,
-    "expected": 3,
-    "skipped": 1,
+    "startTime": "2026-02-05T14:17:13.810Z",
+    "duration": 44682.496,
+    "expected": 1,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

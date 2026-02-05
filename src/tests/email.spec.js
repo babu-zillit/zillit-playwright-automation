@@ -151,11 +151,13 @@ test.describe('Email', () => {
 
     });
 
-    test.describe('Send Draft Email', () => {
+    test.describe.only('Send Draft Email', () => {
         test('verify that user can send email from draft', async () => {
-            
+            await emailPage.clickNewEmail();
+            await emailPage.writeTextInBody();
+            await emailPage.saveDraftEmail('Draft updated successfully');
+            await emailPage.sendDraftEmail('Email has been sent');
         });
-
     });
 
 

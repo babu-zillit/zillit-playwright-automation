@@ -1,27 +1,19 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="1" errors="0" time="28.089388">
-<testsuite name="purchase-order.spec.js" timestamp="2026-02-05T12:42:56.604Z" hostname="chromium" tests="4" failures="0" skipped="1" time="15.342" errors="0">
-<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-order.spec.js" time="2.567">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="44.682496">
+<testsuite name="email.spec.js" timestamp="2026-02-05T14:17:13.945Z" hostname="chromium" tests="1" failures="0" skipped="0" time="27.455" errors="0">
+<testcase name="Email › Send Draft Email › verify that user can send email from draft" classname="email.spec.js" time="27.455">
 <system-out>
-<![CDATA[Current hostname is: web.zillit.com
-[INFO] 2026-02-05T12:43:03.680Z - Production environment is started...
+<![CDATA[[INFO] 2026-02-05T14:17:15.235Z - browser is launching
+[INFO] 2026-02-05T14:17:20.976Z - open the project
+Current hostname is: web.zillit.com
+[INFO] 2026-02-05T14:17:20.976Z - Production environment is started...
+Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('text=Draft updated successfully') to be visible[22m
+
+draft functionality
+[INFO] 2026-02-05T14:17:58.164Z - close browser
 ]]>
 </system-out>
-</testcase>
-<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-order.spec.js" time="2.179">
-<system-out>
-<![CDATA[There is no any delivery address
-]]>
-</system-out>
-</testcase>
-<testcase name="Purchase Order › Create New PO › verify select Delivery Date, Currency, Shipping Charge" classname="purchase-order.spec.js" time="10.596">
-</testcase>
-<testcase name="Purchase Order › Create New PO › verify add company details" classname="purchase-order.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
 </testcase>
 </testsuite>
 </testsuites>

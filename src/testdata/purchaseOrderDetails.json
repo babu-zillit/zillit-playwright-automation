@@ -27,5 +27,17 @@
     "companyPostCode": "20001",
     "companyAddress1": "789 Corporate Boulevard",
     "companyAddress2": "Floor 15",
-    "companyPOprefix": "PO-2023"
+    "companyPOprefix": "PO-2023",
+
+    "selectCurrency": "United States",
+    "shippingCharge": "5",
+    "description": "Hello this is for expendisture",
+
+    "itemName": "Mic",
+    "itemBudgetCode": "123",
+    "itemSetCode": "321",
+    "itemQuantity": "3",
+    "itemprice": "9",
+    "itemTax": "2"
+
 }

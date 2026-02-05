@@ -125,11 +125,11 @@
               "title": "Create New PO",
               "file": "purchase-order.spec.js",
               "line": 31,
-              "column": 10,
+              "column": 19,
               "specs": [
                 {
                   "title": "verify the add new supplier",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -142,60 +142,25 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 25842,
-                          "error": {
-                            "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"checkbox\"]').first()\u001b[22m\n",
-                            "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"checkbox\"]').first()\u001b[22m\n\n    at PurchaseOrder.selectExistingSupplier (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:123:62)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:37:37",
-                            "location": {
-                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js",
-                              "column": 62,
-                              "line": 123
-                            },
-                            "snippet": "\u001b[90m   at \u001b[39m../pages/purchase-order.js:123\n\n\u001b[0m \u001b[90m 121 |\u001b[39m\n \u001b[90m 122 |\u001b[39m     \u001b[36masync\u001b[39m selectExistingSupplier(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 123 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[type=\"checkbox\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 124 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msaveSupplierAddress\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 126 |\u001b[39m     }\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js",
-                                "column": 62,
-                                "line": 123
-                              },
-                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"checkbox\"]').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/purchase-order.js:123\n\n\u001b[0m \u001b[90m 121 |\u001b[39m\n \u001b[90m 122 |\u001b[39m     \u001b[36masync\u001b[39m selectExistingSupplier(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 123 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[type=\"checkbox\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 124 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msaveSupplierAddress\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 126 |\u001b[39m     }\u001b[0m\n\u001b[2m    at PurchaseOrder.selectExistingSupplier (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:123:62)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:37:37\u001b[22m"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 2567,
+                          "errors": [],
                           "stdout": [
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-05T07:04:30.977Z - Production environment is started...\n"
+                              "text": "[INFO] 2026-02-05T12:43:03.680Z - Production environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-05T07:04:26.376Z",
+                          "startTime": "2026-02-05T12:42:56.937Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "_error-context-0",
-                              "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js",
-                            "column": 62,
-                            "line": 123
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "2d1a92e3a60b39058739-7610c9ba0cf14e1c9969",
@@ -205,7 +170,7 @@
                 },
                 {
                   "title": "verify the add new delivery address",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -216,60 +181,29 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 1,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 0,
-                          "error": {
-                            "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n",
-                            "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:16:20",
-                            "location": {
-                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js",
-                              "column": 20,
-                              "line": 16
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/home'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m         \n \u001b[90m 18 |\u001b[39m         uploadmedia \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mUploadMedia\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m         purchaseOrderPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mPurchaseOrder\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
+                          "status": "passed",
+                          "duration": 2179,
+                          "errors": [],
+                          "stdout": [
                             {
-                              "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js",
-                                "column": 20,
-                                "line": 16
-                              },
-                              "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 14 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/home'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m         \n \u001b[90m 18 |\u001b[39m         uploadmedia \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mUploadMedia\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m         purchaseOrderPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mPurchaseOrder\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:16:20\u001b[22m"
+                              "text": "There is no any delivery address\n"
                             }
                           ],
-                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-05T07:05:02.727Z",
+                          "startTime": "2026-02-05T12:43:11.105Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "_error-context-0",
-                              "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js",
-                            "column": 20,
-                            "line": 16
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "2d1a92e3a60b39058739-447921918f79ff82dd96",
                   "file": "purchase-order.spec.js",
-                  "line": 40,
+                  "line": 39,
                   "column": 9
                 },
                 {
@@ -285,25 +219,25 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": -1,
-                          "parallelIndex": -1,
-                          "status": "skipped",
-                          "duration": 0,
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10596,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-05T07:05:04.979Z",
+                          "startTime": "2026-02-05T12:43:13.328Z",
                           "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
                   "id": "2d1a92e3a60b39058739-e7b121163328f6b16846",
                   "file": "purchase-order.spec.js",
-                  "line": 46,
+                  "line": 44,
                   "column": 9
                 },
                 {
@@ -323,16 +257,20 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": -1,
-                          "parallelIndex": -1,
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
                           "status": "skipped",
                           "duration": 0,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-05T07:05:04.982Z",
-                          "annotations": [],
+                          "startTime": "2026-02-05T12:43:24.172Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
                           "attachments": []
                         }
                       ],
@@ -341,50 +279,8 @@
                   ],
                   "id": "2d1a92e3a60b39058739-130ea45d0f0aaca96e04",
                   "file": "purchase-order.spec.js",
-                  "line": 51,
+                  "line": 49,
                   "column": 14
-                }
-              ]
-            },
-            {
-              "title": "Approval PO",
-              "file": "purchase-order.spec.js",
-              "line": 56,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify accept or reject approval PO",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": -1,
-                          "parallelIndex": -1,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-05T07:05:04.986Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "2d1a92e3a60b39058739-eac3d6e30ce9a1786892",
-                  "file": "purchase-order.spec.js",
-                  "line": 58,
-                  "column": 9
                 }
               ]
             }
@@ -395,11 +291,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-05T07:04:26.012Z",
-    "duration": 38985.405000000006,
-    "expected": 0,
-    "skipped": 3,
-    "unexpected": 2,
+    "startTime": "2026-02-05T12:42:56.488Z",
+    "duration": 28089.388,
+    "expected": 3,
+    "skipped": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

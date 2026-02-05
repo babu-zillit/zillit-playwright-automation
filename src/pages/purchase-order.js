@@ -1,10 +1,12 @@
 import { expect } from '@playwright/test';
 import { loadJson } from '../utils/jsonUtil';
+import UploadMedia from '../actions/media-uploader'
 const purchaseOrderDetails = loadJson('purchaseOrderDetails', 'testdata');
 
 export default class PurchaseOrder {
     constructor(page){
         this.page = page;
+        this.uploadMedia = new UploadMedia(page);
 
         this.tools = page.locator('//span[@class="ant-menu-title-content"]//span[text()="Tools"]');
 
@@ -94,7 +96,7 @@ export default class PurchaseOrder {
         await this.page.locator('div.ant-card-body').getByText('Purchase Order').click();
     }
 
-    async createPO(){
+    async openCreatePOTab(){
         await this.createNewPO.click();
     }
 
@@ -102,7 +104,7 @@ export default class PurchaseOrder {
         await this.selectSupplier.click();
     }
 
-    async createSupplier(){
+    async addNewSupplierDetails(){
         await this.addNewSupplier.click();
         await this.supplierName.fill(purchaseOrderDetails.supplierName);
         await this.supplierEmail.fill(purchaseOrderDetails.supplierEmail);
@@ -123,6 +125,23 @@ export default class PurchaseOrder {
         await this.page.locator('[type="checkbox"]').first().click();
         await this.page.waitForTimeout(1000);
         await this.saveSupplierAddress.click();
+    }
+
+    async addSupplier(){
+        const edit = this.page.locator('#po_edit_supplier_button');
+
+        try{
+            await edit.waitFor({ state: 'visible', timeout: 10000 });
+        }catch(e){
+            console.log('there is no supplier');
+        }
+        
+        if(await edit.first().isVisible()){
+            await this.selectExistingSupplier();
+        } else {
+            await this.addNewSupplierDetails();
+            await this.selectExistingSupplier();
+        }
     }
 
     async selectDeliveryAddres(){
@@ -149,31 +168,46 @@ export default class PurchaseOrder {
         await this.page.locator('[type="checkbox"]').first().click();
         await this.page.waitForTimeout(1000);
         await this.selectExistingDeliveryAddress.click();
-        }
-
-    async selectDeliveryDateCurrencyShippingCharge(){
-        await this.currency.fill('United States');
-        await this.page.keyboard.press('Enter');
-        await this.shippingCharge.fill('5');
-        await this.description.fill('Hello this is for expendisture');
     }
 
-    async addPOItem(){
+    async addDelivery(){
+        const edit = this.page.locator('#po_edit_delivery_address_button');
+
+        try{
+            await edit.waitFor({ state: 'visible', timeout: 10000 });
+        }catch(e){
+            console.log('There is no any delivery address');
+        }
+        
+        if(await edit.first().isVisible()){
+            await this.selectExistingDelivery();
+        } else {
+            await this.addDeliveryAddress();
+            await this.selectExistingDelivery();
+        }
+    }
+
+    async selectDeliveryDateCurrencyShippingCharge(){
+        await this.currency.fill(purchaseOrderDetails.selectCurrency);
+        await this.page.keyboard.press('Enter');
+        await this.shippingCharge.fill(purchaseOrderDetails.shippingCharge);
+        await this.description.fill(purchaseOrderDetails.description);
+    }
+
+    async addPOItem(successMsg){
         await this.poItemAddList.click();
         await this.expenditureType.click();
         await this.page.keyboard.press('Enter');
         await this.page.waitForTimeout(500);
-        await this.itemName.fill('Mic');
-        await this.budgetCode.fill('123');
-        await this.setCode.fill('321');
-        await this.quantity.fill('3');
-        await this.price.fill('9');
-        await this.tax.fill('2');
+        await this.itemName.fill(purchaseOrderDetails.itemName);
+        await this.budgetCode.fill(purchaseOrderDetails.itemBudgetCode);
+        await this.setCode.fill(purchaseOrderDetails.itemSetCode);
+        await this.quantity.fill(purchaseOrderDetails.itemQuantity);
+        await this.price.fill(purchaseOrderDetails.itemprice);
+        await this.tax.fill(purchaseOrderDetails.itemTax);
         await this.saveItem.click();
 
-        const successMsg = await this.page.locator('text=Item added successfully');
-        await successMsg.waitFor({ state: 'visible' });
-        await successMsg.waitFor({ state: 'hidden' });
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`)
 
         await this.page.locator('#close_add_update_item_modal_button').click();
         await this.page.waitForTimeout(5000);

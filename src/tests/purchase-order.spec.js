@@ -28,24 +28,22 @@ test.describe('Purchase Order', () => {
 
 
 
-    test.describe('Create New PO', () => {
+    test.describe.only('Create New PO', () => {
 
         test('verify the add new supplier', async () => {
-            await purchaseOrderPage.createPO();
+            await purchaseOrderPage.openCreatePOTab();
             await purchaseOrderPage.selectSuppliers();
-            //await purchaseOrderPage.createSupplier();
-            await purchaseOrderPage.selectExistingSupplier();
+            await purchaseOrderPage.addSupplier();
         });
 
         test('verify the add new delivery address', async () => {
             await purchaseOrderPage.selectDeliveryAddres();
-            //await purchaseOrderPage.addDeliveryAddress();
-            await purchaseOrderPage.selectExistingDelivery();
+            await purchaseOrderPage.addDelivery();
         });
 
         test('verify select Delivery Date, Currency, Shipping Charge', async () => {
             await purchaseOrderPage.selectDeliveryDateCurrencyShippingCharge();
-            await purchaseOrderPage.addPOItem(); 
+            await purchaseOrderPage.addPOItem('Item added successfully'); 
         });
 
         test.skip('verify add company details', async () => {

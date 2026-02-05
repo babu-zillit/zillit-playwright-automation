@@ -1,97 +1,25 @@
-<testsuites id="" name="" tests="5" failures="2" skipped="3" errors="0" time="38.98540500000001">
-<testsuite name="purchase-order.spec.js" timestamp="2026-02-05T07:04:26.034Z" hostname="chromium" tests="5" failures="2" skipped="3" time="25.842" errors="0">
-<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-order.spec.js" time="25.842">
-<failure message="purchase-order.spec.js:33:9 verify the add new supplier" type="FAILURE">
-<![CDATA[  [chromium] › purchase-order.spec.js:33:9 › Purchase Order › Create New PO › verify the add new supplier 
-
-    Error: locator.click: Target page, context or browser has been closed
-    Call log:
-      - waiting for locator('[type="checkbox"]').first()
-
-
-       at ../pages/purchase-order.js:123
-
-      121 |
-      122 |     async selectExistingSupplier(){
-    > 123 |         await this.page.locator('[type="checkbox"]').first().click();
-          |                                                              ^
-      124 |         await this.page.waitForTimeout(1000);
-      125 |         await this.saveSupplierAddress.click();
-      126 |     }
-        at PurchaseOrder.selectExistingSupplier (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:123:62)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:37:37
-
-    Error Context: ../../test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="4" failures="0" skipped="1" errors="0" time="28.089388">
+<testsuite name="purchase-order.spec.js" timestamp="2026-02-05T12:42:56.604Z" hostname="chromium" tests="4" failures="0" skipped="1" time="15.342" errors="0">
+<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-order.spec.js" time="2.567">
 <system-out>
 <![CDATA[Current hostname is: web.zillit.com
-[INFO] 2026-02-05T07:04:30.977Z - Production environment is started...
-
-[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/trace.zip]]
+[INFO] 2026-02-05T12:43:03.680Z - Production environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-order.spec.js" time="0">
-<failure message="purchase-order.spec.js:40:9 verify the add new delivery address" type="FAILURE">
-<![CDATA[  [chromium] › purchase-order.spec.js:40:9 › Purchase Order › Create New PO › verify the add new delivery address 
-
-    Error: page.goto: Target page, context or browser has been closed
-    Call log:
-      - navigating to "https://web.zillit.com/home", waiting until "load"
-
-
-      14 |         page = await context.newPage();
-      15 |
-    > 16 |         await page.goto('/home');
-         |                    ^
-      17 |         
-      18 |         uploadmedia = new UploadMedia(page);
-      19 |         purchaseOrderPage = new PurchaseOrder(page);
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:16:20
-
-    Error Context: ../../test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-order.spec.js" time="2.179">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/trace.zip]]
+<![CDATA[There is no any delivery address
 ]]>
 </system-out>
 </testcase>
-<testcase name="Purchase Order › Create New PO › verify select Delivery Date, Currency, Shipping Charge" classname="purchase-order.spec.js" time="0">
-<skipped>
-</skipped>
+<testcase name="Purchase Order › Create New PO › verify select Delivery Date, Currency, Shipping Charge" classname="purchase-order.spec.js" time="10.596">
 </testcase>
 <testcase name="Purchase Order › Create New PO › verify add company details" classname="purchase-order.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
 </properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Purchase Order › Approval PO › verify accept or reject approval PO" classname="purchase-order.spec.js" time="0">
 <skipped>
 </skipped>
 </testcase>

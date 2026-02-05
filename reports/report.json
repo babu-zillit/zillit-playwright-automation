@@ -108,724 +108,27 @@
   },
   "suites": [
     {
-      "title": "admin-setting.spec.js",
-      "file": "admin-setting.spec.js",
+      "title": "purchase-order.spec.js",
+      "file": "purchase-order.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Admin Settings",
-          "file": "admin-setting.spec.js",
+          "title": "Purchase Order",
+          "file": "purchase-order.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Create New Department",
-              "file": "admin-setting.spec.js",
-              "line": 33,
+              "title": "Create New PO",
+              "file": "purchase-order.spec.js",
+              "line": 31,
               "column": 10,
               "specs": [
                 {
-                  "title": "Verify the creation of a new department",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4961,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2026-02-04T11:01:11.618Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-04T11:01:16.714Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: web.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-04T11:01:16.714Z - Production environment is started...\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:01:10.936Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-cdc22de30cc1b6a56cd4",
-                  "file": "admin-setting.spec.js",
-                  "line": 35,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the deletion of a department",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5640,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:01:34.792Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-ac26537b789d4d770421",
-                  "file": "admin-setting.spec.js",
-                  "line": 38,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Create New Designation",
-              "file": "admin-setting.spec.js",
-              "line": 45,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify creating a new designation",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6519,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:01:40.445Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-d49a3c4b2f1727cce129",
-                  "file": "admin-setting.spec.js",
-                  "line": 47,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the deletion of a designation",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7736,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:01:46.973Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-5742dfe72f2ba1ca97a2",
-                  "file": "admin-setting.spec.js",
-                  "line": 50,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Create Join Unit",
-              "file": "admin-setting.spec.js",
-              "line": 56,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can create a join unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8224,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:01:54.715Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-99ca684cb291ff6aa2b5",
-                  "file": "admin-setting.spec.js",
-                  "line": 58,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can delete a join unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7855,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:02:02.947Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-2fbab999be0ab632f397",
-                  "file": "admin-setting.spec.js",
-                  "line": 61,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Edit Project Name",
-              "file": "admin-setting.spec.js",
-              "line": 67,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can edit the project name",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6565,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:02:10.848Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-8d85716124e1884b46e5",
-                  "file": "admin-setting.spec.js",
-                  "line": 69,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Customization Of Tools",
-              "file": "admin-setting.spec.js",
-              "line": 75,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can enable or disable tools in the Tools module",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6074,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:02:17.462Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-983321dab6ed52264aed",
-                  "file": "admin-setting.spec.js",
-                  "line": 77,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Set SOS Receiver",
-              "file": "admin-setting.spec.js",
-              "line": 83,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can set the SOS receiver",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11399,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:02:23.547Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-0ebfcaf59c577ef2238c",
-                  "file": "admin-setting.spec.js",
-                  "line": 85,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can edit the SOS receiver",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 12008,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:02:34.955Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-cebf456c694ed12518b8",
-                  "file": "admin-setting.spec.js",
-                  "line": 88,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can delete the SOS receiver",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 12660,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:02:46.973Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-5b4f78db00b65e073440",
-                  "file": "admin-setting.spec.js",
-                  "line": 91,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Home Unit",
-              "file": "admin-setting.spec.js",
-              "line": 97,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify creating a home unit by selecting all departments",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6926,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:02:59.642Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-ac31d890222dcd1e20ad",
-                  "file": "admin-setting.spec.js",
-                  "line": 99,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can edit a home unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11978,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:03:06.577Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-e8916c1f96b635c75fb4",
-                  "file": "admin-setting.spec.js",
-                  "line": 102,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can delete a home unit",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8916,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:03:18.571Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-0f72ee9043e9afc92063",
-                  "file": "admin-setting.spec.js",
-                  "line": 105,
-                  "column": 9
-                },
-                {
-                  "title": "Verify creating a home unit by selecting all users",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 13159,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:03:27.500Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-384f724864b4e7782a53",
-                  "file": "admin-setting.spec.js",
-                  "line": 108,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "WaterMark Logo Company",
-              "file": "admin-setting.spec.js",
-              "line": 114,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can upload the watermark logo",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9612,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:03:40.668Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-7d522ee526013296140e",
-                  "file": "admin-setting.spec.js",
-                  "line": 116,
-                  "column": 9
-                },
-                {
-                  "title": "Verify the user can delete the watermark logo",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1236,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:03:50.292Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-2b3bbbbd9bf219f33966",
-                  "file": "admin-setting.spec.js",
-                  "line": 119,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Change Department List Order",
-              "file": "admin-setting.spec.js",
-              "line": 125,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can change the order of the department list",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 18980,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:03:51.544Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-3f5196a95b84369d40b1",
-                  "file": "admin-setting.spec.js",
-                  "line": 127,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Approve User Profile",
-              "file": "admin-setting.spec.js",
-              "line": 133,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can approve a user profile",
+                  "title": "verify the add new supplier",
                   "ok": false,
                   "tags": [],
                   "tests": [
@@ -839,71 +142,69 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "timedOut",
-                          "duration": 30105,
+                          "status": "failed",
+                          "duration": 25842,
                           "error": {
-                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"checkbox\"]').first()\u001b[22m\n",
+                            "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"checkbox\"]').first()\u001b[22m\n\n    at PurchaseOrder.selectExistingSupplier (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:123:62)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:37:37",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js",
+                              "column": 62,
+                              "line": 123
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../pages/purchase-order.js:123\n\n\u001b[0m \u001b[90m 121 |\u001b[39m\n \u001b[90m 122 |\u001b[39m     \u001b[36masync\u001b[39m selectExistingSupplier(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 123 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[type=\"checkbox\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 124 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msaveSupplierAddress\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 126 |\u001b[39m     }\u001b[0m"
                           },
                           "errors": [
                             {
-                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                            },
-                            {
                               "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js",
-                                "column": 25,
-                                "line": 498
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js",
+                                "column": 62,
+                                "line": 123
                               },
-                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('#open_user_profile')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/settings.js:498\n\n\u001b[0m \u001b[90m 496 |\u001b[39m     \u001b[36masync\u001b[39m approveUserProfile(successMsg){\n \u001b[90m 497 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapproveUserProfileTab\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 498 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mopen\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 499 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapprove\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 500 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muploadMedia\u001b[33m.\u001b[39mverifyPopupMessage(\u001b[32m`${successMsg}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 501 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Settings.approveUserProfile (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js:498:25)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/admin-setting.spec.js:136:13\u001b[22m"
+                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"checkbox\"]').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/purchase-order.js:123\n\n\u001b[0m \u001b[90m 121 |\u001b[39m\n \u001b[90m 122 |\u001b[39m     \u001b[36masync\u001b[39m selectExistingSupplier(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 123 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[type=\"checkbox\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 124 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msaveSupplierAddress\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 126 |\u001b[39m     }\u001b[0m\n\u001b[2m    at PurchaseOrder.selectExistingSupplier (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:123:62)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:37:37\u001b[22m"
                             }
                           ],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-04T11:04:40.909Z - close browser\n"
+                              "text": "Current hostname is: web.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-05T07:04:30.977Z - Production environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T11:04:10.535Z",
+                          "startTime": "2026-02-05T07:04:26.376Z",
                           "annotations": [],
                           "attachments": [
                             {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "_error-context-1",
+                              "name": "_error-context-0",
                               "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/error-context.md"
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/error-context.md"
                             },
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/trace.zip"
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/trace.zip"
                             }
-                          ]
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js",
+                            "column": 62,
+                            "line": 123
+                          }
                         }
                       ],
                       "status": "unexpected"
                     }
                   ],
-                  "id": "1fe795fbcd006f4fd4d7-f6adb824faa19829acf0",
-                  "file": "admin-setting.spec.js",
-                  "line": 135,
+                  "id": "2d1a92e3a60b39058739-7610c9ba0cf14e1c9969",
+                  "file": "purchase-order.spec.js",
+                  "line": 33,
                   "column": 9
-                }
-              ]
-            },
-            {
-              "title": "User Management",
-              "file": "admin-setting.spec.js",
-              "line": 141,
-              "column": 10,
-              "specs": [
+                },
                 {
-                  "title": "Verify the user can change a regular user to admin",
+                  "title": "verify the add new delivery address",
                   "ok": false,
                   "tags": [],
                   "tests": [
@@ -917,130 +218,62 @@
                         {
                           "workerIndex": 1,
                           "parallelIndex": 0,
-                          "status": "timedOut",
-                          "duration": 30128,
+                          "status": "failed",
+                          "duration": 0,
                           "error": {
-                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n",
+                            "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:16:20",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js",
+                              "column": 20,
+                              "line": 16
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/home'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m         \n \u001b[90m 18 |\u001b[39m         uploadmedia \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mUploadMedia\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m         purchaseOrderPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mPurchaseOrder\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m"
                           },
                           "errors": [
                             {
-                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                            },
-                            {
                               "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js",
-                                "column": 77,
-                                "line": 507
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js",
+                                "column": 20,
+                                "line": 16
                               },
-                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('div.ant-modal-confirm-btns button').last()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/settings.js:507\n\n\u001b[0m \u001b[90m 505 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#user_management'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 506 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[role=\"switch\"]'\u001b[39m)\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 507 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'div.ant-modal-confirm-btns button'\u001b[39m)\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 508 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 509 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoBack({ waitUntil\u001b[33m:\u001b[39m \u001b[32m'load'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 510 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msettings\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Settings.userManagement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js:507:77)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/admin-setting.spec.js:144:13\u001b[22m"
+                              "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 14 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/home'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m         \n \u001b[90m 18 |\u001b[39m         uploadmedia \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mUploadMedia\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m         purchaseOrderPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mPurchaseOrder\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:16:20\u001b[22m"
                             }
                           ],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2026-02-04T11:04:42.901Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-04T11:04:50.147Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: web.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-04T11:04:50.148Z - Production environment is started...\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-04T11:05:33.626Z - close browser\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T11:04:42.250Z",
+                          "startTime": "2026-02-05T07:05:02.727Z",
                           "annotations": [],
                           "attachments": [
                             {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/test-failed-1.png"
-                            },
-                            {
-                              "name": "_error-context-1",
+                              "name": "_error-context-0",
                               "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/error-context.md"
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/error-context.md"
                             },
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/trace.zip"
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/trace.zip"
                             }
-                          ]
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js",
+                            "column": 20,
+                            "line": 16
+                          }
                         }
                       ],
                       "status": "unexpected"
                     }
                   ],
-                  "id": "1fe795fbcd006f4fd4d7-dc9b2391edee7122f549",
-                  "file": "admin-setting.spec.js",
-                  "line": 143,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Delete project",
-              "file": "admin-setting.spec.js",
-              "line": 149,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "Verify the user can delete a project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11222,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2026-02-04T11:05:35.418Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-04T11:05:40.495Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: web.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-04T11:05:40.495Z - Production environment is started...\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-04T11:05:34.813Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "1fe795fbcd006f4fd4d7-3160e5039ff2101ab8db",
-                  "file": "admin-setting.spec.js",
-                  "line": 151,
+                  "id": "2d1a92e3a60b39058739-447921918f79ff82dd96",
+                  "file": "purchase-order.spec.js",
+                  "line": 40,
                   "column": 9
                 },
                 {
-                  "title": "Verify the user can stop projects after deletion",
+                  "title": "verify select Delivery Date, Currency, Shipping Charge",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -1052,71 +285,75 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7824,
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T11:06:04.458Z",
+                          "startTime": "2026-02-05T07:05:04.979Z",
                           "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
                     }
                   ],
-                  "id": "1fe795fbcd006f4fd4d7-b5b1f0fb7ab752bc3e2a",
-                  "file": "admin-setting.spec.js",
-                  "line": 154,
+                  "id": "2d1a92e3a60b39058739-e7b121163328f6b16846",
+                  "file": "purchase-order.spec.js",
+                  "line": 46,
                   "column": 9
                 },
                 {
-                  "title": "Verify the user can delete the project again",
+                  "title": "verify add company details",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11893,
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T11:06:12.299Z",
+                          "startTime": "2026-02-05T07:05:04.982Z",
                           "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
                     }
                   ],
-                  "id": "1fe795fbcd006f4fd4d7-ec98499c0fe75392e2bb",
-                  "file": "admin-setting.spec.js",
-                  "line": 157,
-                  "column": 9
+                  "id": "2d1a92e3a60b39058739-130ea45d0f0aaca96e04",
+                  "file": "purchase-order.spec.js",
+                  "line": 51,
+                  "column": 14
                 }
               ]
             },
             {
-              "title": "Pre Approved User",
-              "file": "admin-setting.spec.js",
-              "line": 163,
+              "title": "Approval PO",
+              "file": "purchase-order.spec.js",
+              "line": 56,
               "column": 10,
               "specs": [
                 {
-                  "title": "Verify the user can create a pre-approved user and send an internal email",
+                  "title": "verify accept or reject approval PO",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -1128,32 +365,25 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 29120,
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Email sent successfully') to be visible\u001b[22m\n\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-04T11:06:53.347Z - close browser\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-04T11:06:24.209Z",
+                          "startTime": "2026-02-05T07:05:04.986Z",
                           "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
                     }
                   ],
-                  "id": "1fe795fbcd006f4fd4d7-c21ec82ca7e145fbbf6e",
-                  "file": "admin-setting.spec.js",
-                  "line": 165,
+                  "id": "2d1a92e3a60b39058739-eac3d6e30ce9a1786892",
+                  "file": "purchase-order.spec.js",
+                  "line": 58,
                   "column": 9
                 }
               ]
@@ -1165,10 +395,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-04T11:01:10.571Z",
-    "duration": 343106.179,
-    "expected": 22,
-    "skipped": 0,
+    "startTime": "2026-02-05T07:04:26.012Z",
+    "duration": 38985.405000000006,
+    "expected": 0,
+    "skipped": 3,
     "unexpected": 2,
     "flaky": 0
   }

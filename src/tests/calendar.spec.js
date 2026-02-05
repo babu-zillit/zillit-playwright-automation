@@ -478,5 +478,5 @@ test.describe('Calendar', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/07_calendarTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/07_calendarTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/calendar.spec.js --project=chromium --headed
    */ 

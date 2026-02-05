@@ -1,172 +1,99 @@
-<testsuites id="" name="" tests="24" failures="2" skipped="0" errors="0" time="343.106179">
-<testsuite name="admin-setting.spec.js" timestamp="2026-02-04T11:01:10.597Z" hostname="chromium" tests="24" failures="2" skipped="0" time="280.74" errors="0">
-<testcase name="Admin Settings › Create New Department › Verify the creation of a new department" classname="admin-setting.spec.js" time="4.961">
-<system-out>
-<![CDATA[[INFO] 2026-02-04T11:01:11.618Z - browser is launching
-[INFO] 2026-02-04T11:01:16.714Z - open the project
-Current hostname is: web.zillit.com
-[INFO] 2026-02-04T11:01:16.714Z - Production environment is started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Admin Settings › Create New Department › Verify the deletion of a department" classname="admin-setting.spec.js" time="5.64">
-</testcase>
-<testcase name="Admin Settings › Create New Designation › Verify creating a new designation" classname="admin-setting.spec.js" time="6.519">
-</testcase>
-<testcase name="Admin Settings › Create New Designation › Verify the deletion of a designation" classname="admin-setting.spec.js" time="7.736">
-</testcase>
-<testcase name="Admin Settings › Create Join Unit › Verify the user can create a join unit" classname="admin-setting.spec.js" time="8.224">
-</testcase>
-<testcase name="Admin Settings › Create Join Unit › Verify the user can delete a join unit" classname="admin-setting.spec.js" time="7.855">
-</testcase>
-<testcase name="Admin Settings › Edit Project Name › Verify the user can edit the project name" classname="admin-setting.spec.js" time="6.565">
-</testcase>
-<testcase name="Admin Settings › Customization Of Tools › Verify the user can enable or disable tools in the Tools module" classname="admin-setting.spec.js" time="6.074">
-</testcase>
-<testcase name="Admin Settings › Set SOS Receiver › Verify the user can set the SOS receiver" classname="admin-setting.spec.js" time="11.399">
-</testcase>
-<testcase name="Admin Settings › Set SOS Receiver › Verify the user can edit the SOS receiver" classname="admin-setting.spec.js" time="12.008">
-</testcase>
-<testcase name="Admin Settings › Set SOS Receiver › Verify the user can delete the SOS receiver" classname="admin-setting.spec.js" time="12.66">
-</testcase>
-<testcase name="Admin Settings › Home Unit › Verify creating a home unit by selecting all departments" classname="admin-setting.spec.js" time="6.926">
-</testcase>
-<testcase name="Admin Settings › Home Unit › Verify the user can edit a home unit" classname="admin-setting.spec.js" time="11.978">
-</testcase>
-<testcase name="Admin Settings › Home Unit › Verify the user can delete a home unit" classname="admin-setting.spec.js" time="8.916">
-</testcase>
-<testcase name="Admin Settings › Home Unit › Verify creating a home unit by selecting all users" classname="admin-setting.spec.js" time="13.159">
-</testcase>
-<testcase name="Admin Settings › WaterMark Logo Company › Verify the user can upload the watermark logo" classname="admin-setting.spec.js" time="9.612">
-</testcase>
-<testcase name="Admin Settings › WaterMark Logo Company › Verify the user can delete the watermark logo" classname="admin-setting.spec.js" time="1.236">
-</testcase>
-<testcase name="Admin Settings › Change Department List Order › Verify the user can change the order of the department list" classname="admin-setting.spec.js" time="18.98">
-</testcase>
-<testcase name="Admin Settings › Approve User Profile › Verify the user can approve a user profile" classname="admin-setting.spec.js" time="30.105">
-<failure message="admin-setting.spec.js:135:9 Verify the user can approve a user profile" type="FAILURE">
-<![CDATA[  [chromium] › admin-setting.spec.js:135:9 › Admin Settings › Approve User Profile › Verify the user can approve a user profile 
-
-    Test timeout of 30000ms exceeded.
+<testsuites id="" name="" tests="5" failures="2" skipped="3" errors="0" time="38.98540500000001">
+<testsuite name="purchase-order.spec.js" timestamp="2026-02-05T07:04:26.034Z" hostname="chromium" tests="5" failures="2" skipped="3" time="25.842" errors="0">
+<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-order.spec.js" time="25.842">
+<failure message="purchase-order.spec.js:33:9 verify the add new supplier" type="FAILURE">
+<![CDATA[  [chromium] › purchase-order.spec.js:33:9 › Purchase Order › Create New PO › verify the add new supplier 
 
     Error: locator.click: Target page, context or browser has been closed
     Call log:
-      - waiting for locator('#open_user_profile')
+      - waiting for locator('[type="checkbox"]').first()
 
 
-       at ../pages/settings.js:498
+       at ../pages/purchase-order.js:123
 
-      496 |     async approveUserProfile(successMsg){
-      497 |         await this.approveUserProfileTab.click();
-    > 498 |         await this.open.click();
-          |                         ^
-      499 |         await this.approve.last().click();
-      500 |         await this.uploadMedia.verifyPopupMessage(`${successMsg}`);
-      501 |         await this.page.waitForTimeout(2000);
-        at Settings.approveUserProfile (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js:498:25)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/admin-setting.spec.js:136:13
+      121 |
+      122 |     async selectExistingSupplier(){
+    > 123 |         await this.page.locator('[type="checkbox"]').first().click();
+          |                                                              ^
+      124 |         await this.page.waitForTimeout(1000);
+      125 |         await this.saveSupplierAddress.click();
+      126 |     }
+        at PurchaseOrder.selectExistingSupplier (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:123:62)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:37:37
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
+    Error Context: ../../test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/error-context.md
 
-    Error Context: ../../test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/trace.zip
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/trace.zip
+        npx playwright show-trace test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[[INFO] 2026-02-04T11:04:40.909Z - close browser
+<![CDATA[Current hostname is: web.zillit.com
+[INFO] 2026-02-05T07:04:30.977Z - Production environment is started...
 
-[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/test-failed-1.png]]
+[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/error-context.md]]
 
-[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d7834--can-approve-a-user-profile-chromium/trace.zip]]
+[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-f2f95-verify-the-add-new-supplier-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin Settings › User Management › Verify the user can change a regular user to admin" classname="admin-setting.spec.js" time="30.128">
-<failure message="admin-setting.spec.js:143:9 Verify the user can change a regular user to admin" type="FAILURE">
-<![CDATA[  [chromium] › admin-setting.spec.js:143:9 › Admin Settings › User Management › Verify the user can change a regular user to admin 
+<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-order.spec.js" time="0">
+<failure message="purchase-order.spec.js:40:9 verify the add new delivery address" type="FAILURE">
+<![CDATA[  [chromium] › purchase-order.spec.js:40:9 › Purchase Order › Create New PO › verify the add new delivery address 
 
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.click: Target page, context or browser has been closed
+    Error: page.goto: Target page, context or browser has been closed
     Call log:
-      - waiting for locator('div.ant-modal-confirm-btns button').last()
+      - navigating to "https://web.zillit.com/home", waiting until "load"
 
 
-       at ../pages/settings.js:507
+      14 |         page = await context.newPage();
+      15 |
+    > 16 |         await page.goto('/home');
+         |                    ^
+      17 |         
+      18 |         uploadmedia = new UploadMedia(page);
+      19 |         purchaseOrderPage = new PurchaseOrder(page);
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:16:20
 
-      505 |         await this.page.locator('#user_management').click();
-      506 |         await this.page.locator('[role="switch"]').last().click();
-    > 507 |         await this.page.locator('div.ant-modal-confirm-btns button').last().click();
-          |                                                                             ^
-      508 |         await this.page.waitForTimeout(5000);
-      509 |         await this.page.goBack({ waitUntil: 'load' });
-      510 |         await this.settings.click();
-        at Settings.userManagement (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/settings.js:507:77)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/admin-setting.spec.js:144:13
+    Error Context: ../../test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/error-context.md
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../../test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/trace.zip
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/trace.zip
+        npx playwright show-trace test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[[INFO] 2026-02-04T11:04:42.901Z - browser is launching
-[INFO] 2026-02-04T11:04:50.147Z - open the project
-Current hostname is: web.zillit.com
-[INFO] 2026-02-04T11:04:50.148Z - Production environment is started...
-[INFO] 2026-02-04T11:05:33.626Z - close browser
+<![CDATA[
+[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/error-context.md]]
 
-[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/error-context.md]]
-
-[[ATTACHMENT|../test-results/admin-setting-Admin-Settin-d0d56-nge-a-regular-user-to-admin-chromium/trace.zip]]
+[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-86aff-he-add-new-delivery-address-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin Settings › Delete project › Verify the user can delete a project" classname="admin-setting.spec.js" time="11.222">
-<system-out>
-<![CDATA[[INFO] 2026-02-04T11:05:35.418Z - browser is launching
-[INFO] 2026-02-04T11:05:40.495Z - open the project
-Current hostname is: web.zillit.com
-[INFO] 2026-02-04T11:05:40.495Z - Production environment is started...
-]]>
-</system-out>
+<testcase name="Purchase Order › Create New PO › verify select Delivery Date, Currency, Shipping Charge" classname="purchase-order.spec.js" time="0">
+<skipped>
+</skipped>
 </testcase>
-<testcase name="Admin Settings › Delete project › Verify the user can stop projects after deletion" classname="admin-setting.spec.js" time="7.824">
+<testcase name="Purchase Order › Create New PO › verify add company details" classname="purchase-order.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
 </testcase>
-<testcase name="Admin Settings › Delete project › Verify the user can delete the project again" classname="admin-setting.spec.js" time="11.893">
-</testcase>
-<testcase name="Admin Settings › Pre Approved User › Verify the user can create a pre-approved user and send an internal email" classname="admin-setting.spec.js" time="29.12">
-<system-out>
-<![CDATA[Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.
-Call log:
-[2m  - waiting for locator('text=Email sent successfully') to be visible[22m
-
-[INFO] 2026-02-04T11:06:53.347Z - close browser
-]]>
-</system-out>
+<testcase name="Purchase Order › Approval PO › verify accept or reject approval PO" classname="purchase-order.spec.js" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
 </testsuites>

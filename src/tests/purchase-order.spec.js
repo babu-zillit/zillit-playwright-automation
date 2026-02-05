@@ -53,7 +53,7 @@ test.describe('Purchase Order', () => {
         });
     });
 
-    test.describe.only('Approval PO', () => {
+    test.describe('Approval PO', () => {
 
         test('verify accept or reject approval PO', async () => {
             await purchaseOrderPage.pOApproval();
@@ -64,4 +64,6 @@ test.describe('Purchase Order', () => {
 
   /**
    * ENV_TYPE=qa npx playwright test src/tests/purchase-orderTest.spec.js --project=chromium --headed
+   * 
+   * ENV_TYPE=production npx playwright test src/tests/purchase-order.spec.js --project=chromium --headed
    */ 

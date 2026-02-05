@@ -366,7 +366,7 @@ test.describe('Bulletin', () => {
  * 
  * ENV_TYPE=qa npx playwright test src/tests/06_bulletinTest.spec.js --project=chromium --headed
  * 
- * ENV_TYPE=production npx playwright test src/tests/06_bulletinTest.spec.js --project=chromium --headed
+ * ENV_TYPE=production npx playwright test src/tests/bulletin.spec.js --project=chromium --headed
  * 
  * ENV_TYPE=qa npx playwright test src/tests/3bulletinTest.spec.js --project=firefox --headed
  * ENV_TYPE=qa npx playwright test src/tests/3bulletinTest.spec.js --project=webkit --headed

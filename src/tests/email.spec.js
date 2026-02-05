@@ -151,6 +151,13 @@ test.describe('Email', () => {
 
     });
 
+    test.describe('Send Draft Email', () => {
+        test('verify that user can send email from draft', async () => {
+            
+        });
+
+    });
+
 
 
 });
@@ -158,5 +165,5 @@ test.describe('Email', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/10_emailTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/10_emailTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/email.spec.js --project=chromium --headed
    */ 

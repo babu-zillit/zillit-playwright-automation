@@ -1,19 +1,44 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="44.682496">
-<testsuite name="email.spec.js" timestamp="2026-02-05T14:17:13.945Z" hostname="chromium" tests="1" failures="0" skipped="0" time="27.455" errors="0">
-<testcase name="Email › Send Draft Email › verify that user can send email from draft" classname="email.spec.js" time="27.455">
+<testsuites id="" name="" tests="14" failures="0" skipped="0" errors="0" time="150.620111">
+<testsuite name="purchase-order.spec.js" timestamp="2026-02-09T13:56:58.784Z" hostname="chromium" tests="14" failures="0" skipped="0" time="137.527" errors="0">
+<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-order.spec.js" time="2.985">
 <system-out>
-<![CDATA[[INFO] 2026-02-05T14:17:15.235Z - browser is launching
-[INFO] 2026-02-05T14:17:20.976Z - open the project
-Current hostname is: web.zillit.com
-[INFO] 2026-02-05T14:17:20.976Z - Production environment is started...
-Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.
-Call log:
-[2m  - waiting for locator('text=Draft updated successfully') to be visible[22m
-
-draft functionality
-[INFO] 2026-02-05T14:17:58.164Z - close browser
+<![CDATA[Current hostname is: web.zillit.com
+[INFO] 2026-02-09T13:57:05.436Z - Production environment is started...
 ]]>
 </system-out>
+</testcase>
+<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-order.spec.js" time="2.137">
+</testcase>
+<testcase name="Purchase Order › Create New PO › verify select Delivery Date, Currency, Shipping Charge" classname="purchase-order.spec.js" time="11.106">
+</testcase>
+<testcase name="Purchase Order › Create New PO › verify user can save to Draft" classname="purchase-order.spec.js" time="1.282">
+</testcase>
+<testcase name="Purchase Order › Create New PO › verify add company details" classname="purchase-order.spec.js" time="16.765">
+</testcase>
+<testcase name="Purchase Order › My PO › verify my draft PO" classname="purchase-order.spec.js" time="13.209">
+</testcase>
+<testcase name="Purchase Order › PO Submited To Me For Approval › verify reject po" classname="purchase-order.spec.js" time="7.182">
+</testcase>
+<testcase name="Purchase Order › PO Submited To Me For Approval › verify user resubmit the PO after reject the PO" classname="purchase-order.spec.js" time="11.515">
+</testcase>
+<testcase name="Purchase Order › PO Submited To Me For Approval › verify accept PO" classname="purchase-order.spec.js" time="19.086">
+</testcase>
+<testcase name="Purchase Order › email to supplier › verify email to supplier" classname="purchase-order.spec.js" time="15.724">
+</testcase>
+<testcase name="Purchase Order › All PO in The Project › verify approved PO in the all po project tab" classname="purchase-order.spec.js" time="1.871">
+</testcase>
+<testcase name="Purchase Order › Set Approval Level › verify use can set the approval level" classname="purchase-order.spec.js" time="7.599">
+</testcase>
+<testcase name="Purchase Order › Set Approval Level › verify use can edit approval level" classname="purchase-order.spec.js" time="21.617">
+<system-out>
+<![CDATA[Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('text=Approval level has been saved succesfully.') to be visible[22m
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Purchase Order › Set Approval Level › verify use can delete approval level" classname="purchase-order.spec.js" time="5.449">
 </testcase>
 </testsuite>
 </testsuites>

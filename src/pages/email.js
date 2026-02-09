@@ -277,7 +277,13 @@ export default class Email {
 
     async createEmailGroup(){
         await this.signatureConversationImportBCCPresetEmailGroupEmailSetup.nth(4).click();
-        await this.page.locator('div.ant-modal-footer button').first().click();
+        //await this.page.locator('div.ant-modal-footer button').first().click();
+
+        const footerButton = this.page.locator('div.ant-modal-footer button').first();
+        await footerButton.waitFor({ state: 'visible', timeout: 15000 });
+        await expect(footerButton).toBeEnabled({ timeout: 15000 });
+        await footerButton.click();
+
         await this.page.locator('#group_name').fill('Tester');
         await this.page.locator('div.ant-modal-body button').first().click();
         await this.page.locator('div.ant-modal-body button').last().click();

@@ -1,6 +1,7 @@
 import { expect } from '@playwright/test';
 import { loadJson } from '../utils/jsonUtil';
 import UploadMedia from '../actions/media-uploader'
+const mediapaths = loadJson('mediapaths', 'testdata');
 const purchaseOrderDetails = loadJson('purchaseOrderDetails', 'testdata');
 
 export default class PurchaseOrder {
@@ -65,9 +66,9 @@ export default class PurchaseOrder {
         this.tax = page.locator('#tax');
         this.saveItem = page.locator('#create_new_po_save_update_item_button');
 
-        this.saveToDraft = page.locator('#save_to_draft_button');
-        this.submitForApproval = page.locator('#submit_for_approval_button');
-        this.submitForTemplates = page.locator('#submit_for_template_button');
+        this.saveToDraftButton = page.locator('#save_to_draft_button');
+        this.submitForApprovalButton = page.locator('#submit_for_approval_button');
+        this.saveForTemplatesButton = page.locator('#submit_for_template_button');
 
         /**
          * Company details locators
@@ -87,7 +88,11 @@ export default class PurchaseOrder {
         this.accept = page.locator('#approved_pending_po_accept_button');
         this.reject = page.locator('#approved_pending_po_reject_button');
 
-
+        //My PO
+        this.viewDetailsButton = page.locator('#send_to_suppliers_accounts_view_more_details_button');
+        this.viewAddAttachment = page.locator('[data-icon="paper-clip"]');
+        this.uploadAttachment = page.locator('//input[@type="file"]');
+        this.upload = page.locator('#upload_document_send_script_button');   
 
     }
 
@@ -213,6 +218,26 @@ export default class PurchaseOrder {
         await this.page.waitForTimeout(5000);
     }
 
+    async saveToDraft(){
+        await this.saveToDraftButton.click();
+
+        const popup = this.page.locator('.ant-message-notice-content');
+        await expect(popup).toContainText(
+            'Purchase order draft created successfully. You can view your draft(s) in My PO\'s section.');
+            
+        await this.page.goBack();    
+    }
+
+    async submitForApproval(){
+        await this.submitForApprovalButton.click();
+        await this.page.waitForTimeout(5000);
+    }
+
+    async saveForTemplate(){
+        await this.saveForTemplatesButton.click();
+        await this.page.waitForTimeout(5000);
+    }
+
     async CompanyDetails(){
         await this.companyDetailsTab.click();
         await this.addCompanyDetails.click();
@@ -235,13 +260,114 @@ export default class PurchaseOrder {
         await this.POPrefix.fill(purchaseOrderDetails.companyPOprefix);
         await this.saveCompanyDetailsButton.click();
         await this.page.waitForTimeout(5000);
+
+        await this.page.goBack();
     }
 
-    async pOApproval(){
+    async myPO(successMsg){
+        await this.page.getByText("My PO", { exact: false }).click();
+
+        await this.viewDetailsButton.first().click();
+        await this.viewAddAttachment.click();
+        await this.uploadAttachment.setInputFiles(mediapaths.document);
+        await this.upload.click();
+
+        await this.page.locator('[aria-label="close"]').last().click();
+        await this.page.locator('div.ant-drawer-footer button').first().click();
+        
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`);
+
+        await this.page.goBack();
+    }
+
+    async rejectPO(successMsg){
         await this.pOSubmitedMeForApprovalTab.click();
+
+        await this.acceptReject.first().click();
+        await this.reject.click();
+        await this.page.locator('div.ant-popconfirm-buttons button').first().click();
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`)
+
+        await this.page.goBack();
+    }
+
+    async myPOAfterRejectPO(successMsg){
+        await this.page.getByText("My PO", { exact: false }).click();
+
+        await this.viewDetailsButton.first().click();
+        await this.page.locator('#resubmit_rejected_po_button').click();
+
+        await this.page.locator('button.pobuttonstyle').click();
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`);
+
+        await this.page.goBack();
+    }
+
+    async acceptPO(successMsg){
+        await this.pOSubmitedMeForApprovalTab.click();
+
         await this.acceptReject.first().click();
         await this.accept.click();
         await this.page.locator('div.ant-popover-content button').last().click();
-        await this.page.waitForTimeout(5000);
+
+        const popup = this.page.getByText(successMsg, { exact: false });
+        await expect(popup).toBeVisible({ timeout: 25000 });
+        await expect(popup).toBeHidden({ timeout: 25000 });
     }
+
+    async emailToSupplier(successMsg){
+        await this.page.getByText("My PO", { exact: false }).click();
+
+        await this.viewDetailsButton.first().click();
+        await this.page.locator('#email_to_supplier_button').click();
+
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`);
+
+        await this.page.locator('[data-icon="close"]').click();
+        await this.page.goBack();
+    }
+
+    async allPOInTheProject(){
+        await this.page.getByText("All Po's In The Project", { exact: false }).click();
+
+        await expect(this.page.locator('text=Approved').first()).toBeVisible({ timeout: 5000 });
+        await this.page.goBack();
+    }
+
+    async setApprovalLevel(successMsg){
+        await this.page.getByText("Set Approval Levels Globally or for each Department ", { exact: false }).click();
+
+        await this.page.locator('div.ant-card-body span').first().click();
+        await this.page.locator('div.ant-modal-body button').last().click();
+        await this.page.locator('[placeholder="Range"]').fill('60000');
+
+        await this.page.locator('#approver').first().click();
+        await this.page.keyboard.press('Enter');
+
+        await this.page.getByRole('button', { name: 'Set' }).click();
+    
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`);
+    }
+
+    async editApprovalLevel(successMsg){
+        await this.page.locator('#edit_global_department_levels_button').last().click();
+        await this.page.locator('#approval-level').fill('60001');
+
+        await this.page.getByRole('button', { name: 'Set' }).click();
+        await this.page.waitForTimeout(6000);
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`);
+    }
+
+    async deleteApprovalLevel(successMsg){
+        const deleteIcons = this.page.locator('[data-icon="delete"]');
+        await deleteIcons.nth(2).click()
+        await this.page.locator('div.ant-popconfirm-buttons button').last().click();
+
+        await this.uploadMedia.verifyPopupMessage(`${successMsg}`);
+
+        await this.page.locator('#close_global_department_modal_button').click();
+        await this.page.goBack();
+    }
+
+ 
 }

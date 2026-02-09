@@ -151,8 +151,8 @@ test.describe('Email', () => {
 
     });
 
-    test.describe.only('Send Draft Email', () => {
-        test('verify that user can send email from draft', async () => {
+    test.describe('Send Draft Email', () => {
+        test('verify that user can send email from draft and disappear from draft and view in sent', async () => {
             await emailPage.clickNewEmail();
             await emailPage.writeTextInBody();
             await emailPage.saveDraftEmail('Draft updated successfully');

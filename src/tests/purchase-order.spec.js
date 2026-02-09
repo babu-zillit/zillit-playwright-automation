@@ -28,7 +28,7 @@ test.describe('Purchase Order', () => {
 
 
 
-    test.describe.only('Create New PO', () => {
+    test.describe('Create New PO', () => {
 
         test('verify the add new supplier', async () => {
             await purchaseOrderPage.openCreatePOTab();
@@ -46,16 +46,69 @@ test.describe('Purchase Order', () => {
             await purchaseOrderPage.addPOItem('Item added successfully'); 
         });
 
-        test.skip('verify add company details', async () => {
+        test('verify user can save to Draft', async () => {
+            await purchaseOrderPage.saveToDraft();
+        });
+
+        test('verify add company details', async () => {
             await purchaseOrderPage.CompanyDetails();
         });
     });
 
-    test.describe('Approval PO', () => {
+    test.describe('My PO', () => {
 
-        test('verify accept or reject approval PO', async () => {
-            await purchaseOrderPage.pOApproval();
+        test('verify my draft PO', async () => {
+            await purchaseOrderPage.myPO('Purchase order created and submitted for approval.');
         });
+    });
+
+    test.describe('PO Submited To Me For Approval', () => {
+
+        test('verify reject po', async () => {
+            const rejectPopupMessage = 'Rejection has been save succesfully, we will notify user to act on it and request to re-submit as per your comment.';
+            await purchaseOrderPage.rejectPO(rejectPopupMessage);
+        });
+
+        test('verify user resubmit the PO after reject the PO', async () => {
+            const resubmitPOpopup = 'Purchase order has been re-submitted succesfully. Approvals are all reset for all users and will follow the approval workflow.';
+            await purchaseOrderPage.myPOAfterRejectPO(resubmitPOpopup);
+        });
+
+        test('verify accept PO', async () => {
+            await purchaseOrderPage.acceptPO('Purchase Order approved successfully');
+        });
+
+    });
+
+    test.describe('email to supplier', () => {
+
+        test('verify email to supplier', async () => {
+            const emailToSupplierpopup = 'The approved purchase order invoice has been successfully emailed to the supplier and the accounts department.';
+            await purchaseOrderPage.emailToSupplier(emailToSupplierpopup);
+        });
+    });
+
+    test.describe('All PO in The Project', () => {
+
+        test('verify approved PO in the all po project tab', async () => {
+            await purchaseOrderPage.allPOInTheProject();
+        });
+    });
+
+    test.describe('Set Approval Level', () => {
+
+        test('verify use can set the approval level', async () => {
+            await purchaseOrderPage.setApprovalLevel('Approval level has been created succesfully.');
+        });
+
+        test('verify use can edit approval level', async () => {
+            await purchaseOrderPage.editApprovalLevel('Approval level has been saved succesfully.');
+        });
+
+        test('verify use can delete approval level', async () => {
+            await purchaseOrderPage.deleteApprovalLevel('Approval level deleted Sucessfully');
+        });
+
     });
 
 });

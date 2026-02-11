@@ -57,24 +57,24 @@ test.describe('Purchase Order', () => {
 
     test.describe('My PO', () => {
 
-        test('verify my draft PO', async () => {
+        test('Verify draft PO creation', async () => {
             await purchaseOrderPage.myPO('Purchase order created and submitted for approval.');
         });
     });
 
     test.describe('PO Submited To Me For Approval', () => {
 
-        test('verify reject po', async () => {
+        test('Verify PO rejection flow', async () => {
             const rejectPopupMessage = 'Rejection has been save succesfully, we will notify user to act on it and request to re-submit as per your comment.';
             await purchaseOrderPage.rejectPO(rejectPopupMessage);
         });
 
-        test('verify user resubmit the PO after reject the PO', async () => {
+        test('Verify PO resubmission after rejection', async () => {
             const resubmitPOpopup = 'Purchase order has been re-submitted succesfully. Approvals are all reset for all users and will follow the approval workflow.';
             await purchaseOrderPage.myPOAfterRejectPO(resubmitPOpopup);
         });
 
-        test('verify accept PO', async () => {
+        test('verify accept PO flow', async () => {
             await purchaseOrderPage.acceptPO('Purchase Order approved successfully');
         });
 
@@ -82,7 +82,7 @@ test.describe('Purchase Order', () => {
 
     test.describe('email to supplier', () => {
 
-        test('verify email to supplier', async () => {
+        test('Verify PO email sent to supplier', async () => {
             const emailToSupplierpopup = 'The approved purchase order invoice has been successfully emailed to the supplier and the accounts department.';
             await purchaseOrderPage.emailToSupplier(emailToSupplierpopup);
         });
@@ -90,22 +90,22 @@ test.describe('Purchase Order', () => {
 
     test.describe('All PO in The Project', () => {
 
-        test('verify approved PO in the all po project tab', async () => {
+        test('Verify approved PO in All PO Project tab', async () => {
             await purchaseOrderPage.allPOInTheProject();
         });
     });
 
     test.describe('Set Approval Level', () => {
 
-        test('verify use can set the approval level', async () => {
+        test('Verify approval level creation', async () => {
             await purchaseOrderPage.setApprovalLevel('Approval level has been created succesfully.');
         });
 
-        test('verify use can edit approval level', async () => {
+        test('Verify approval level update/edit', async () => {
             await purchaseOrderPage.editApprovalLevel('Approval level has been saved succesfully.');
         });
 
-        test('verify use can delete approval level', async () => {
+        test('Verify approval level deletion', async () => {
             await purchaseOrderPage.deleteApprovalLevel('Approval level deleted Sucessfully');
         });
 

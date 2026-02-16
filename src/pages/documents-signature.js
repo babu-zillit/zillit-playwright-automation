@@ -144,7 +144,7 @@ export default class DocumentsSignature {
         await this.myDownalod.click();
         await this.viewAddToMyDownloadHistryDelete.nth(0).click();
         await this.page.getByText('Add Signature', {exact : true}).click();
-        await this.page.locator('[alt="signature"]').click();
+        await this.page.locator('[alt="signature"]').first().click();
         await this.page.getByText('Sign Document', {exact : true}).click();
         await this.page.waitForTimeout(5000);
 

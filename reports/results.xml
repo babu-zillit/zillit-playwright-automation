@@ -1,102 +1,105 @@
-<testsuites id="" name="" tests="11" failures="2" skipped="0" errors="0" time="72.185204">
-<testsuite name="documents-signature.spec.js" timestamp="2026-02-11T12:13:58.305Z" hostname="chromium" tests="11" failures="2" skipped="0" time="55.07" errors="0">
-<testcase name="Documents &amp; Signature › Documents &amp; Signature: Signature Management › verify user can add new signature" classname="documents-signature.spec.js" time="1.445">
+<testsuites id="" name="" tests="14" failures="1" skipped="0" errors="0" time="186.297458">
+<testsuite name="purchase-order.spec.js" timestamp="2026-02-12T14:10:04.904Z" hostname="chromium" tests="14" failures="1" skipped="0" time="157.523" errors="0">
+<testcase name="Purchase Order › Create New PO › verify the add new supplier" classname="purchase-order.spec.js" time="3.877">
 <system-out>
 <![CDATA[Current hostname is: web.zillit.com
-[INFO] 2026-02-11T12:14:06.573Z - Production environment is started...
+[INFO] 2026-02-12T14:10:13.493Z - Production environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Documents &amp; Signature › Documents &amp; Signature: Signature Management › verify user can edit signature" classname="documents-signature.spec.js" time="1.495">
+<testcase name="Purchase Order › Create New PO › verify the add new delivery address" classname="purchase-order.spec.js" time="2.185">
 </testcase>
-<testcase name="Documents &amp; Signature › Documents &amp; Signature: Signature Management › verify user can delete signature" classname="documents-signature.spec.js" time="6.607">
+<testcase name="Purchase Order › Create New PO › verify select Delivery Date, Currency, Shipping Charge" classname="purchase-order.spec.js" time="10.705">
 </testcase>
-<testcase name="Documents &amp; Signature › Documents &amp; Signature: Signature Management › verify user add signature again" classname="documents-signature.spec.js" time="0.293">
+<testcase name="Purchase Order › Create New PO › verify user can save to Draft" classname="purchase-order.spec.js" time="2.336">
 </testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can upload documents" classname="documents-signature.spec.js" time="10.676">
+<testcase name="Purchase Order › Create New PO › verify add company details" classname="purchase-order.spec.js" time="16.826">
 </testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can view the uploaded document" classname="documents-signature.spec.js" time="1.178">
+<testcase name="Purchase Order › My PO › Verify draft PO creation" classname="purchase-order.spec.js" time="13.443">
 </testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can add the document to My Downloads" classname="documents-signature.spec.js" time="1.904">
+<testcase name="Purchase Order › PO Submited To Me For Approval › Verify PO rejection flow" classname="purchase-order.spec.js" time="6.513">
 </testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can check history" classname="documents-signature.spec.js" time="0.354">
+<testcase name="Purchase Order › PO Submited To Me For Approval › Verify PO resubmission after rejection" classname="purchase-order.spec.js" time="11.387">
 </testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can delete uploaded documents" classname="documents-signature.spec.js" time="4.246">
-</testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify the sign the document from My Downloads" classname="documents-signature.spec.js" time="26.872">
-<failure message="documents-signature.spec.js:82:9 verify the sign the document from My Downloads" type="FAILURE">
-<![CDATA[  [chromium] › documents-signature.spec.js:82:9 › Documents & Signature › Standrad Documents › verify the sign the document from My Downloads 
+<testcase name="Purchase Order › PO Submited To Me For Approval › verify accept PO flow" classname="purchase-order.spec.js" time="30.101">
+<failure message="purchase-order.spec.js:77:9 verify accept PO flow" type="FAILURE">
+<![CDATA[  [chromium] › purchase-order.spec.js:77:9 › Purchase Order › PO Submited To Me For Approval › verify accept PO flow 
 
-    Error: locator.click: Target page, context or browser has been closed
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toBeVisible()
+
+    Locator: getByText('Purchase Order approved successfully')
+    Expected: visible
+    Received: <element(s) not found>
     Call log:
-      - waiting for getByText('Add Signature', { exact: true })
+      - expect.toBeVisible with timeout 25000ms
+      - waiting for getByText('Purchase Order approved successfully')
 
 
-       at ../pages/documents-signature.js:146
+       at ../pages/purchase-order.js:314
 
-      144 |         await this.myDownalod.click();
-      145 |         await this.viewAddToMyDownloadHistryDelete.nth(0).click();
-    > 146 |         await this.page.getByText('Add Signature', {exact : true}).click();
-          |                                                                    ^
-      147 |         await this.page.locator('[alt="signature"]').click();
-      148 |         await this.page.getByText('Sign Document', {exact : true}).click();
-      149 |         await this.page.waitForTimeout(5000);
-        at DocumentsSignature.myDownalodsView (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/documents-signature.js:146:68)
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/documents-signature.spec.js:83:13
+      312 |
+      313 |         const popup = this.page.getByText(successMsg, { exact: false });
+    > 314 |         await expect(popup).toBeVisible({ timeout: 25000 });
+          |                             ^
+      315 |         await expect(popup).toBeHidden({ timeout: 25000 });
+      316 |     }
+      317 |
+        at PurchaseOrder.acceptPO (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:314:29)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:78:13
 
-    Error Context: ../../test-results/documents-signature-Docume-2135a--document-from-My-Downloads-chromium/error-context.md
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/documents-signature-Docume-2135a--document-from-My-Downloads-chromium/trace.zip
+    Error Context: ../../test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/documents-signature-Docume-2135a--document-from-My-Downloads-chromium/trace.zip
+        npx playwright show-trace test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/documents-signature-Docume-2135a--document-from-My-Downloads-chromium/error-context.md]]
+[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/test-failed-1.png]]
 
-[[ATTACHMENT|../test-results/documents-signature-Docume-2135a--document-from-My-Downloads-chromium/trace.zip]]
+[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify My Downloads → History details" classname="documents-signature.spec.js" time="0">
-<failure message="documents-signature.spec.js:86:9 verify My Downloads → History details" type="FAILURE">
-<![CDATA[  [chromium] › documents-signature.spec.js:86:9 › Documents & Signature › Standrad Documents › verify My Downloads → History details 
-
-    Error: page.goto: Target page, context or browser has been closed
-    Call log:
-      - navigating to "https://web.zillit.com/home", waiting until "load"
-
-
-      13 |         page = await context.newPage();
-      14 |
-    > 15 |         await page.goto('/home');
-         |                    ^
-      16 |         
-      17 |         uploadmedia = new UploadMedia(page);
-      18 |         documentSignaturePage = new DocumentsSignature(page);
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/documents-signature.spec.js:15:20
-
-    Error Context: ../../test-results/documents-signature-Docume-b1d59-Downloads-→-History-details-chromium/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/documents-signature-Docume-b1d59-Downloads-→-History-details-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/documents-signature-Docume-b1d59-Downloads-→-History-details-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Purchase Order › email to supplier › Verify PO email sent to supplier" classname="purchase-order.spec.js" time="14.071">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/documents-signature-Docume-b1d59-Downloads-→-History-details-chromium/error-context.md]]
+<![CDATA[Current hostname is: web.zillit.com
+[INFO] 2026-02-12T14:12:05.372Z - Production environment is started...
+]]>
+</system-out>
+</testcase>
+<testcase name="Purchase Order › All PO in The Project › Verify approved PO in All PO Project tab" classname="purchase-order.spec.js" time="1.853">
+</testcase>
+<testcase name="Purchase Order › Set Approval Level › Verify approval level creation" classname="purchase-order.spec.js" time="6.935">
+</testcase>
+<testcase name="Purchase Order › Set Approval Level › Verify approval level update/edit" classname="purchase-order.spec.js" time="21.608">
+<system-out>
+<![CDATA[Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('text=Approval level has been saved succesfully.') to be visible[22m
 
-[[ATTACHMENT|../test-results/documents-signature-Docume-b1d59-Downloads-→-History-details-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Purchase Order › Set Approval Level › Verify approval level deletion" classname="purchase-order.spec.js" time="15.683">
+<system-out>
+<![CDATA[Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('text=Approval level deleted Sucessfully') to be visible[22m
+
 ]]>
 </system-out>
 </testcase>

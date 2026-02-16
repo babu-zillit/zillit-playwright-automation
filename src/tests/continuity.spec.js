@@ -70,5 +70,5 @@ test.describe('Continuity', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/08_continuityTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/08_continuityTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/continuity.spec.js --project=chromium --headed
    */ 

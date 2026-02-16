@@ -434,5 +434,5 @@ test.describe('CnC', () => {
   /**
    * ENV_TYPE=qa npx playwright test src/tests/20_cncTest.spec.js --project=chromium --headed
    * 
-   * ENV_TYPE=production npx playwright test src/tests/20_cncTest.spec.js --project=chromium --headed
+   * ENV_TYPE=production npx playwright test src/tests/cnc.spec.js --project=chromium --headed
    */ 

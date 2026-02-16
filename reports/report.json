@@ -108,27 +108,27 @@
   },
   "suites": [
     {
-      "title": "documents-signature.spec.js",
-      "file": "documents-signature.spec.js",
+      "title": "purchase-order.spec.js",
+      "file": "purchase-order.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Documents & Signature",
-          "file": "documents-signature.spec.js",
-          "line": 5,
+          "title": "Purchase Order",
+          "file": "purchase-order.spec.js",
+          "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Documents & Signature: Signature Management",
-              "file": "documents-signature.spec.js",
-              "line": 30,
+              "title": "Create New PO",
+              "file": "purchase-order.spec.js",
+              "line": 31,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user can add new signature",
+                  "title": "verify the add new supplier",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -143,19 +143,19 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1445,
+                          "duration": 3877,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-11T12:14:06.573Z - Production environment is started...\n"
+                              "text": "[INFO] 2026-02-12T14:10:13.493Z - Production environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-11T12:13:58.658Z",
+                          "startTime": "2026-02-12T14:10:05.239Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -163,13 +163,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-bf4ccd805262c1147f5c",
-                  "file": "documents-signature.spec.js",
-                  "line": 32,
+                  "id": "2d1a92e3a60b39058739-7610c9ba0cf14e1c9969",
+                  "file": "purchase-order.spec.js",
+                  "line": 33,
                   "column": 9
                 },
                 {
-                  "title": "verify user can edit signature",
+                  "title": "verify the add new delivery address",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -184,12 +184,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1495,
+                          "duration": 2185,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-11T12:14:12.930Z",
+                          "startTime": "2026-02-12T14:10:21.502Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -197,13 +197,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-169bf98520bbbfe2111e",
-                  "file": "documents-signature.spec.js",
-                  "line": 38,
+                  "id": "2d1a92e3a60b39058739-447921918f79ff82dd96",
+                  "file": "purchase-order.spec.js",
+                  "line": 39,
                   "column": 9
                 },
                 {
-                  "title": "verify user can delete signature",
+                  "title": "verify select Delivery Date, Currency, Shipping Charge",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -218,12 +218,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6607,
+                          "duration": 10705,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-11T12:14:14.504Z",
+                          "startTime": "2026-02-12T14:10:23.694Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -231,13 +231,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-cc5444923da99eff797b",
-                  "file": "documents-signature.spec.js",
+                  "id": "2d1a92e3a60b39058739-e7b121163328f6b16846",
+                  "file": "purchase-order.spec.js",
                   "line": 44,
                   "column": 9
                 },
                 {
-                  "title": "verify user add signature again",
+                  "title": "verify user can save to Draft",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -252,12 +252,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 293,
+                          "duration": 2336,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-11T12:14:21.122Z",
+                          "startTime": "2026-02-12T14:10:34.412Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -265,21 +265,55 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-77f46fda08b4036b4f7f",
-                  "file": "documents-signature.spec.js",
-                  "line": 48,
+                  "id": "2d1a92e3a60b39058739-9e3dfb65ae631a500897",
+                  "file": "purchase-order.spec.js",
+                  "line": 49,
+                  "column": 9
+                },
+                {
+                  "title": "verify add company details",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 16826,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-12T14:10:36.765Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2d1a92e3a60b39058739-130ea45d0f0aaca96e04",
+                  "file": "purchase-order.spec.js",
+                  "line": 53,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "Standrad Documents",
-              "file": "documents-signature.spec.js",
-              "line": 55,
+              "title": "My PO",
+              "file": "purchase-order.spec.js",
+              "line": 58,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user can upload documents",
+                  "title": "Verify draft PO creation",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -294,12 +328,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 10676,
+                          "duration": 13443,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-11T12:14:21.434Z",
+                          "startTime": "2026-02-12T14:10:53.636Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -307,13 +341,55 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-b3c2ffaa584d7610ab38",
-                  "file": "documents-signature.spec.js",
-                  "line": 57,
+                  "id": "2d1a92e3a60b39058739-faffc76e1c9c4fd786cf",
+                  "file": "purchase-order.spec.js",
+                  "line": 60,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "PO Submited To Me For Approval",
+              "file": "purchase-order.spec.js",
+              "line": 65,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify PO rejection flow",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6513,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-12T14:11:07.139Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2d1a92e3a60b39058739-0264ec46502426852af1",
+                  "file": "purchase-order.spec.js",
+                  "line": 67,
                   "column": 9
                 },
                 {
-                  "title": "verify user can view the uploaded document",
+                  "title": "Verify PO resubmission after rejection",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -328,12 +404,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1178,
+                          "duration": 11387,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-11T12:14:32.120Z",
+                          "startTime": "2026-02-12T14:11:13.699Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -341,115 +417,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-505c532d355ec4a1ebbc",
-                  "file": "documents-signature.spec.js",
-                  "line": 64,
-                  "column": 9
-                },
-                {
-                  "title": "verify user can add the document to My Downloads",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1904,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-11T12:14:33.311Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-416cc78b40bdf8817bfa",
-                  "file": "documents-signature.spec.js",
-                  "line": 68,
-                  "column": 9
-                },
-                {
-                  "title": "verify user can check history",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 354,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-11T12:14:35.222Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-4fdb0204beae1920e523",
-                  "file": "documents-signature.spec.js",
+                  "id": "2d1a92e3a60b39058739-66681fb5b177638915d5",
+                  "file": "purchase-order.spec.js",
                   "line": 72,
                   "column": 9
                 },
                 {
-                  "title": "verify user can delete uploaded documents",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4246,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-11T12:14:35.590Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-f8fde0d93a3992da9c7b",
-                  "file": "documents-signature.spec.js",
-                  "line": 76,
-                  "column": 9
-                },
-                {
-                  "title": "verify the sign the document from My Downloads",
+                  "title": "verify accept PO flow",
                   "ok": false,
                   "tags": [],
                   "tests": [
@@ -463,63 +437,68 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 26872,
+                          "status": "timedOut",
+                          "duration": 30101,
                           "error": {
-                            "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByText('Add Signature', { exact: true })\u001b[22m\n",
-                            "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByText('Add Signature', { exact: true })\u001b[22m\n\n    at DocumentsSignature.myDownalodsView (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/documents-signature.js:146:68)\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/documents-signature.spec.js:83:13",
-                            "location": {
-                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/documents-signature.js",
-                              "column": 68,
-                              "line": 146
-                            },
-                            "snippet": "\u001b[90m   at \u001b[39m../pages/documents-signature.js:146\n\n\u001b[0m \u001b[90m 144 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmyDownalod\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 145 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mviewAddToMyDownloadHistryDelete\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 146 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m'Add Signature'\u001b[39m\u001b[33m,\u001b[39m {exact \u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 147 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[alt=\"signature\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 148 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m'Sign Document'\u001b[39m\u001b[33m,\u001b[39m {exact \u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 149 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                            "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                            "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                           },
                           "errors": [
                             {
+                              "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                            },
+                            {
                               "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/documents-signature.js",
-                                "column": 68,
-                                "line": 146
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js",
+                                "column": 29,
+                                "line": 314
                               },
-                              "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByText('Add Signature', { exact: true })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/documents-signature.js:146\n\n\u001b[0m \u001b[90m 144 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmyDownalod\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 145 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mviewAddToMyDownloadHistryDelete\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 146 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m'Add Signature'\u001b[39m\u001b[33m,\u001b[39m {exact \u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 147 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[alt=\"signature\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 148 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m'Sign Document'\u001b[39m\u001b[33m,\u001b[39m {exact \u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 149 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at DocumentsSignature.myDownalodsView (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/documents-signature.js:146:68)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/documents-signature.spec.js:83:13\u001b[22m"
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Purchase Order approved successfully')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 25000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Purchase Order approved successfully')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/purchase-order.js:314\n\n\u001b[0m \u001b[90m 312 |\u001b[39m\n \u001b[90m 313 |\u001b[39m         \u001b[36mconst\u001b[39m popup \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(successMsg\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mfalse\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 314 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m25000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 315 |\u001b[39m         \u001b[36mawait\u001b[39m expect(popup)\u001b[33m.\u001b[39mtoBeHidden({ timeout\u001b[33m:\u001b[39m \u001b[35m25000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 316 |\u001b[39m     }\n \u001b[90m 317 |\u001b[39m\u001b[0m\n\u001b[2m    at PurchaseOrder.acceptPO (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/purchase-order.js:314:29)\u001b[22m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/purchase-order.spec.js:78:13\u001b[22m"
                             }
                           ],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-11T12:14:39.845Z",
+                          "startTime": "2026-02-12T14:11:25.147Z",
                           "annotations": [],
                           "attachments": [
                             {
-                              "name": "_error-context-0",
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "_error-context-1",
                               "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/documents-signature-Docume-2135a--document-from-My-Downloads-chromium/error-context.md"
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/error-context.md"
                             },
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/documents-signature-Docume-2135a--document-from-My-Downloads-chromium/trace.zip"
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/purchase-order-Purchase-Or-be38c-roval-verify-accept-PO-flow-chromium/trace.zip"
                             }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/documents-signature.js",
-                            "column": 68,
-                            "line": 146
-                          }
+                          ]
                         }
                       ],
                       "status": "unexpected"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-579ef1e85c35b1266ada",
-                  "file": "documents-signature.spec.js",
-                  "line": 82,
+                  "id": "2d1a92e3a60b39058739-5bcc6c7ab97130161f2b",
+                  "file": "purchase-order.spec.js",
+                  "line": 77,
                   "column": 9
-                },
+                }
+              ]
+            },
+            {
+              "title": "email to supplier",
+              "file": "purchase-order.spec.js",
+              "line": 83,
+              "column": 10,
+              "specs": [
                 {
-                  "title": "verify My Downloads → History details",
-                  "ok": false,
+                  "title": "Verify PO email sent to supplier",
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -532,58 +511,190 @@
                         {
                           "workerIndex": 1,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 0,
-                          "error": {
-                            "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n",
-                            "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/documents-signature.spec.js:15:20",
-                            "location": {
-                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/documents-signature.spec.js",
-                              "column": 20,
-                              "line": 15
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 13 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/home'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m         \n \u001b[90m 17 |\u001b[39m         uploadmedia \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mUploadMedia\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m         documentSignaturePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mDocumentsSignature\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
+                          "status": "passed",
+                          "duration": 14071,
+                          "errors": [],
+                          "stdout": [
                             {
-                              "location": {
-                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/documents-signature.spec.js",
-                                "column": 20,
-                                "line": 15
-                              },
-                              "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 13 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/home'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m         \n \u001b[90m 17 |\u001b[39m         uploadmedia \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mUploadMedia\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m         documentSignaturePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mDocumentsSignature\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/documents-signature.spec.js:15:20\u001b[22m"
+                              "text": "Current hostname is: web.zillit.com\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-12T14:12:05.372Z - Production environment is started...\n"
                             }
                           ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-12T14:11:56.746Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2d1a92e3a60b39058739-57a555eba94800d95231",
+                  "file": "purchase-order.spec.js",
+                  "line": 85,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "All PO in The Project",
+              "file": "purchase-order.spec.js",
+              "line": 91,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify approved PO in All PO Project tab",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1853,
+                          "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-11T12:15:08.128Z",
+                          "startTime": "2026-02-12T14:12:24.650Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "_error-context-0",
-                              "contentType": "text/markdown",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/documents-signature-Docume-b1d59-Downloads-→-History-details-chromium/error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/documents-signature-Docume-b1d59-Downloads-→-History-details-chromium/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/documents-signature.spec.js",
-                            "column": 20,
-                            "line": 15
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-aa63ab62a66e6a029415",
-                  "file": "documents-signature.spec.js",
-                  "line": 86,
+                  "id": "2d1a92e3a60b39058739-d8e19292bfc54e113ff4",
+                  "file": "purchase-order.spec.js",
+                  "line": 93,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Set Approval Level",
+              "file": "purchase-order.spec.js",
+              "line": 98,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "Verify approval level creation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6935,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-12T14:12:26.565Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2d1a92e3a60b39058739-0092f6270cb02432024c",
+                  "file": "purchase-order.spec.js",
+                  "line": 100,
+                  "column": 9
+                },
+                {
+                  "title": "Verify approval level update/edit",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 21608,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Approval level has been saved succesfully.') to be visible\u001b[22m\n\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-12T14:12:33.548Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2d1a92e3a60b39058739-b1855a869ed533dd3fe7",
+                  "file": "purchase-order.spec.js",
+                  "line": 104,
+                  "column": 9
+                },
+                {
+                  "title": "Verify approval level deletion",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 15683,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Not show the success pop up message locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Approval level deleted Sucessfully') to be visible\u001b[22m\n\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-12T14:12:55.171Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2d1a92e3a60b39058739-419301be7a2eaff976c4",
+                  "file": "purchase-order.spec.js",
+                  "line": 108,
                   "column": 9
                 }
               ]
@@ -595,11 +706,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-11T12:13:58.279Z",
-    "duration": 72185.204,
-    "expected": 9,
+    "startTime": "2026-02-12T14:10:04.878Z",
+    "duration": 186297.458,
+    "expected": 13,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 1,
     "flaky": 0
   }
 }

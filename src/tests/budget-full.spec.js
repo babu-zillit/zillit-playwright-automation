@@ -35,9 +35,9 @@ test.describe('Budget Full', () => {
 
 
 
-    test.describe.skip('upload the budget', () => {
+    test.describe('upload the budget', () => {
 
-        test('verify upload budget full document', async () => {
+        test.skip('verify upload budget full document', async () => {
             await budgetPage.uploadPdf(99);
         });
 

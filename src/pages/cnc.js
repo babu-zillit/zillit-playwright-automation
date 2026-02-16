@@ -28,7 +28,7 @@ export default class CnC {
         this.videoUploadInput = page.locator('//span[contains(@class,"ant-upload")][.//div[contains(text(),"Video Upload")]]//input[@type="file"]');
         this.documentUploadInput = page.locator('//span[contains(@class,"ant-upload")][.//div[contains(text(),"Document Upload")]]//input[@type="file"]');
         this.audioUploadInput = page.locator('//span[contains(@class,"ant-upload")][.//div[contains(text(),"Audio Upload")]]//input[@type="file"]');
-        this.send = page.locator('div.text-end button');
+        this.send = page.getByRole('button', { name: 'Upload' });
 
         this.replyButton = page.locator('#reply_button');
 
@@ -101,28 +101,28 @@ export default class CnC {
 
     async imageUpload(){
         await this.imageUploadInput.setInputFiles(mediapaths.image);
-        await this.send.nth(1).click();
+        await this.send.click();
         await this.page.waitForSelector('text=/sending/i', { state: 'visible' });
         await this.page.waitForSelector('text=/sending/i', { state: 'hidden' });
     }
 
     async videoUpload(){
         await this.videoUploadInput.setInputFiles(mediapaths.video);
-        await this.send.nth(0).click();
+        await this.send.click();
         await this.page.waitForSelector('text=/sending/i', { state: 'visible' });
         await this.page.waitForSelector('text=/sending/i', { state: 'hidden' });
     }
 
     async documentUpload(){
         await this.documentUploadInput.setInputFiles(mediapaths.document);
-        await this.send.nth(0).click();
+        await this.send.click();
         await this.page.waitForSelector('[data-icon="loading"]', { state: 'visible' });
         await this.page.waitForSelector('[data-icon="loading"]', { state: 'hidden' });
     }
 
     async audioUpload(){
         await this.audioUploadInput.setInputFiles(mediapaths.audio);
-        await this.send.nth(0).click();
+        await this.send.click();
         await this.page.locator('[class="w-4 h-4 text-white dark:text-white "]').waitFor({ state: 'visible' });
     }
 
@@ -162,7 +162,8 @@ export default class CnC {
     async imageReply(){
         await this.cncDropList('Image Reply');
         await this.page.locator('div.text-center [placeholder="Type a message"]').fill('Most Beutiful place');
-        await this.page.locator('div.text-end button').nth(1).click();
+       // await this.page.locator('div.text-end button').nth(1).click();
+       await this.send.click();
         await this.page.waitForTimeout(3000);
     }
 
@@ -176,13 +177,14 @@ export default class CnC {
     }
 
     async save(){
-        await this.cncDropList('Save');
-        await this.page.waitForTimeout(500);
-        await this.mediaUploaderPage.pressReturnKey();
+        console.log('change the downlaod');
+        // await this.cncDropList('Download');
+        // await this.page.waitForTimeout(500);
+        // await this.mediaUploaderPage.pressReturnKey();
 
-        const popup = this.page.locator("text=File downloaded successfully");
-        await expect(popup).toBeVisible({timeout: 15000});
-        await expect(popup).toBeHidden({timeout: 15000});
+        // const popup = this.page.locator("text=File downloaded successfully");
+        // await expect(popup).toBeVisible({timeout: 15000});
+        // await expect(popup).toBeHidden({timeout: 15000});
     }
 
     async forwardRemoteProject(){

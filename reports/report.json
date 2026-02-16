@@ -108,505 +108,27 @@
   },
   "suites": [
     {
-      "title": "documents-signature.spec.js",
-      "file": "documents-signature.spec.js",
+      "title": "zillit-help.spec.js",
+      "file": "zillit-help.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Documents & Signature",
-          "file": "documents-signature.spec.js",
-          "line": 5,
+          "title": "Tools Customization",
+          "file": "zillit-help.spec.js",
+          "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Documents & Signature: Signature Management",
-              "file": "documents-signature.spec.js",
-              "line": 30,
-              "column": 19,
-              "specs": [
-                {
-                  "title": "verify user can add new signature",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.102Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-bf4ccd805262c1147f5c",
-                  "file": "documents-signature.spec.js",
-                  "line": 32,
-                  "column": 9
-                },
-                {
-                  "title": "verify user can edit signature",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.102Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-169bf98520bbbfe2111e",
-                  "file": "documents-signature.spec.js",
-                  "line": 38,
-                  "column": 9
-                },
-                {
-                  "title": "verify user can delete signature",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.102Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-cc5444923da99eff797b",
-                  "file": "documents-signature.spec.js",
-                  "line": 44,
-                  "column": 9
-                },
-                {
-                  "title": "verify user add signature again",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.102Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-77f46fda08b4036b4f7f",
-                  "file": "documents-signature.spec.js",
-                  "line": 48,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Standrad Documents",
-              "file": "documents-signature.spec.js",
-              "line": 55,
-              "column": 19,
-              "specs": [
-                {
-                  "title": "verify user can upload documents",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.103Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-b3c2ffaa584d7610ab38",
-                  "file": "documents-signature.spec.js",
-                  "line": 57,
-                  "column": 9
-                },
-                {
-                  "title": "verify user can view the uploaded document",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.103Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-505c532d355ec4a1ebbc",
-                  "file": "documents-signature.spec.js",
-                  "line": 64,
-                  "column": 9
-                },
-                {
-                  "title": "verify user can add the document to My Downloads",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.103Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-416cc78b40bdf8817bfa",
-                  "file": "documents-signature.spec.js",
-                  "line": 68,
-                  "column": 9
-                },
-                {
-                  "title": "verify user can check history",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.103Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-4fdb0204beae1920e523",
-                  "file": "documents-signature.spec.js",
-                  "line": 72,
-                  "column": 9
-                },
-                {
-                  "title": "verify user can delete uploaded documents",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.103Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-f8fde0d93a3992da9c7b",
-                  "file": "documents-signature.spec.js",
-                  "line": 76,
-                  "column": 9
-                },
-                {
-                  "title": "verify the sign the document from My Downloads",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.103Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-579ef1e85c35b1266ada",
-                  "file": "documents-signature.spec.js",
-                  "line": 82,
-                  "column": 9
-                },
-                {
-                  "title": "verify My Downloads → History details",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.103Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-aa63ab62a66e6a029415",
-                  "file": "documents-signature.spec.js",
-                  "line": 86,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Chat With Users",
-              "file": "documents-signature.spec.js",
-              "line": 91,
+              "title": "Zillit Help",
+              "file": "zillit-help.spec.js",
+              "line": 33,
               "column": 10,
               "specs": [
                 {
-                  "title": "verify user clicks on chat with user tab and select the user",
+                  "title": "verify validate all links in newly opened tab",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -621,19 +143,79 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 14385,
+                          "duration": 21142,
                           "errors": [],
                           "stdout": [
+                            {
+                              "text": "[INFO] 2026-02-16T13:18:43.709Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-16T13:18:52.149Z - open the project\n"
+                            },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-16T10:23:40.677Z - Production environment is started...\n"
+                              "text": "[INFO] 2026-02-16T13:18:52.149Z - Production environment is started...\n"
+                            },
+                            {
+                              "text": "New Tab URL: https://corporate.zillit.com/terms-of-use\n"
+                            },
+                            {
+                              "text": "Total Links Found: 16\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/ → 200\n"
+                            },
+                            {
+                              "text": "https://support.apple.com/en-us/HT204396 → 200\n"
+                            },
+                            {
+                              "text": "https://support.apple.com/en-us/HT201304 → 200\n"
+                            },
+                            {
+                              "text": "https://support.google.com/googleplay/answer/1626831?hl=en → 200\n"
+                            },
+                            {
+                              "text": "https://support.google.com/googleplay/answer/1075738?hl=en → 200\n"
+                            },
+                            {
+                              "text": "https://support.apple.com/guide/iphone/important-safety-information-iph301fc905/ios#:~:text=Medical%20device%20interference%20iPhone%20contains,such%20as%20pacemakers%20and%20defibrillators → 200\n"
+                            },
+                            {
+                              "text": "https://support.google.com/pixelphone/answer/9803272?hl=en → 200\n"
+                            },
+                            {
+                              "text": "https://images.samsung.com/is/content/samsung/p5/hk_en/support/mobile-devices/how-do-i-ensure-that-my-samsung-mobile-device-is-powered-by-safe-batteries/how-do-i-ensure-that-my-samsung-mobile-device-is-powered-by-safe-batteries.pdf → 200\n"
+                            },
+                            {
+                              "text": "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/ → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/about-us → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/our-team → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/frequently-asked-questions → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/terms-of-use → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/privacy-policy → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/end-user-license-agreement → 200\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T10:23:31.103Z",
+                          "startTime": "2026-02-16T13:18:42.561Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -641,13 +223,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-2b1181061ccedb423931",
-                  "file": "documents-signature.spec.js",
-                  "line": 93,
+                  "id": "3742a90bc3b515cd02b6-34cf6b63f30a98428aba",
+                  "file": "zillit-help.spec.js",
+                  "line": 35,
                   "column": 9
                 },
                 {
-                  "title": "verify send a message",
+                  "title": "verify validate all links ",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -662,829 +244,148 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2309,
+                          "duration": 7064,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "New Tab URL: https://corporate.zillit.com/privacy-policy\n"
+                            },
+                            {
+                              "text": "Total Links Found: 10\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/ → 200\n"
+                            },
+                            {
+                              "text": "https://support.google.com/analytics/answer/181881?hl=en → 200\n"
+                            },
+                            {
+                              "text": "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/ → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/about-us → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/our-team → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/frequently-asked-questions → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/terms-of-use → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/privacy-policy → 200\n"
+                            },
+                            {
+                              "text": "https://corporate.zillit.com/end-user-license-agreement → 200\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-16T13:19:16.815Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3742a90bc3b515cd02b6-21ee765b6bcfd33da227",
+                  "file": "zillit-help.spec.js",
+                  "line": 42,
+                  "column": 9
+                },
+                {
+                  "title": "verify validate all links for FAQ ",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T10:23:59.856Z",
-                          "annotations": [],
+                          "startTime": "2026-02-16T13:19:23.910Z",
+                          "annotations": [
+                            {
+                              "type": "skip"
+                            }
+                          ],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-498637a81365b895dc8e",
-                  "file": "documents-signature.spec.js",
-                  "line": 98,
-                  "column": 9
+                  "id": "3742a90bc3b515cd02b6-61bab9f790dbd2f075fd",
+                  "file": "zillit-help.spec.js",
+                  "line": 49,
+                  "column": 14
                 },
                 {
-                  "title": "verify edit the message",
+                  "title": "verify validate all links for Reviews ",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2184,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                              "text": "[INFO] 2026-02-16T13:19:23.933Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T10:24:02.175Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-c20ed2e04eceedc56281",
-                  "file": "documents-signature.spec.js",
-                  "line": 102,
-                  "column": 9
-                },
-                {
-                  "title": "verify forward the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6026,
-                          "errors": [],
-                          "stdout": [
+                          "startTime": "2026-02-16T13:19:23.910Z",
+                          "annotations": [
                             {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                              "type": "skip"
                             }
                           ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:04.368Z",
-                          "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
                     }
                   ],
-                  "id": "74933a137b7f859975f9-71b978047281fb92729e",
-                  "file": "documents-signature.spec.js",
-                  "line": 106,
-                  "column": 9
-                },
-                {
-                  "title": "verify reply to the message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1267,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:10.407Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-37c7e5ca6ddf3fe238d2",
-                  "file": "documents-signature.spec.js",
-                  "line": 110,
-                  "column": 9
-                },
-                {
-                  "title": "verify the edit the reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2142,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:11.690Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-22f1cd8a1cb53f75ac38",
-                  "file": "documents-signature.spec.js",
-                  "line": 114,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete the reply message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4742,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:13.842Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-8941cba7131a9b97f919",
-                  "file": "documents-signature.spec.js",
-                  "line": 118,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward to remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9402,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:18.590Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-068136c900d570b834a5",
-                  "file": "documents-signature.spec.js",
-                  "line": 122,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete message",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5641,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Edit Message'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:28.006Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-8d506be3f8c5d5200caa",
-                  "file": "documents-signature.spec.js",
-                  "line": 126,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Send Document",
-              "file": "documents-signature.spec.js",
-              "line": 132,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify the send a document",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 977,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:33.661Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-62862faa73e2da218636",
-                  "file": "documents-signature.spec.js",
-                  "line": 133,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7469,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:34.652Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-4eada64a77ece1dcbd77",
-                  "file": "documents-signature.spec.js",
-                  "line": 138,
-                  "column": 9
-                },
-                {
-                  "title": "verify the reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1213,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:42.132Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-a7f3560dbd9ca0561f3e",
-                  "file": "documents-signature.spec.js",
-                  "line": 142,
-                  "column": 9
-                },
-                {
-                  "title": "verify the edit reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1808,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:43.358Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-2992173e2e7c6cddcfec",
-                  "file": "documents-signature.spec.js",
-                  "line": 146,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6165,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:45.175Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-31c6d64ccf8ba59f774b",
-                  "file": "documents-signature.spec.js",
-                  "line": 150,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward to remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10071,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:24:51.355Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-6528a86cb8184d237af8",
-                  "file": "documents-signature.spec.js",
-                  "line": 154,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete document",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5597,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:25:01.438Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-37ed10e7f7c30c7faf6a",
-                  "file": "documents-signature.spec.js",
-                  "line": 158,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "Send VoiceOver",
-              "file": "documents-signature.spec.js",
-              "line": 164,
-              "column": 10,
-              "specs": [
-                {
-                  "title": "verify the send a voiceOver",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2417,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:25:07.051Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-baf0dd74b55820293cfe",
-                  "file": "documents-signature.spec.js",
-                  "line": 165,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 7714,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:25:09.482Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-ec990e72e7246c5f1b49",
-                  "file": "documents-signature.spec.js",
-                  "line": 169,
-                  "column": 9
-                },
-                {
-                  "title": "verify the reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1202,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:25:17.205Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-e91b8b0fc38e33a634cd",
-                  "file": "documents-signature.spec.js",
-                  "line": 173,
-                  "column": 9
-                },
-                {
-                  "title": "verify the edit reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2795,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:25:18.416Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-be47b75e86ec29328c08",
-                  "file": "documents-signature.spec.js",
-                  "line": 177,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4805,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:25:21.219Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-6204ce7d346e6f61fff6",
-                  "file": "documents-signature.spec.js",
-                  "line": 181,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward to remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9889,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:25:26.034Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-8c839d0c82a5cd15c363",
-                  "file": "documents-signature.spec.js",
-                  "line": 185,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete audio",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5563,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Download'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T10:25:35.935Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "74933a137b7f859975f9-d7af1c92b6bf250c14e1",
-                  "file": "documents-signature.spec.js",
-                  "line": 189,
-                  "column": 9
+                  "id": "3742a90bc3b515cd02b6-da09ab0190d7ba95eac6",
+                  "file": "zillit-help.spec.js",
+                  "line": 56,
+                  "column": 14
                 }
               ]
             }
@@ -1495,10 +396,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-16T10:23:30.719Z",
-    "duration": 131219.674,
-    "expected": 23,
-    "skipped": 11,
+    "startTime": "2026-02-16T13:18:42.203Z",
+    "duration": 42018.117999999995,
+    "expected": 2,
+    "skipped": 2,
     "unexpected": 0,
     "flaky": 0
   }

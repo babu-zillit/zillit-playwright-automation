@@ -1,6 +1,50 @@
-<testsuites id="" name="" tests="34" failures="0" skipped="11" errors="0" time="131.219674">
-<testsuite name="documents-signature.spec.js" timestamp="2026-02-16T10:23:30.744Z" hostname="chromium" tests="34" failures="0" skipped="11" time="115.783" errors="0">
-<testcase name="Documents &amp; Signature › Documents &amp; Signature: Signature Management › verify user can add new signature" classname="documents-signature.spec.js" time="0">
+<testsuites id="" name="" tests="4" failures="0" skipped="2" errors="0" time="42.018117999999994">
+<testsuite name="zillit-help.spec.js" timestamp="2026-02-16T13:18:42.229Z" hostname="chromium" tests="4" failures="0" skipped="2" time="28.206" errors="0">
+<testcase name="Tools Customization › Zillit Help › verify validate all links in newly opened tab" classname="zillit-help.spec.js" time="21.142">
+<system-out>
+<![CDATA[[INFO] 2026-02-16T13:18:43.709Z - browser is launching
+[INFO] 2026-02-16T13:18:52.149Z - open the project
+Current hostname is: web.zillit.com
+[INFO] 2026-02-16T13:18:52.149Z - Production environment is started...
+New Tab URL: https://corporate.zillit.com/terms-of-use
+Total Links Found: 16
+https://corporate.zillit.com/ → 200
+https://support.apple.com/en-us/HT204396 → 200
+https://support.apple.com/en-us/HT201304 → 200
+https://support.google.com/googleplay/answer/1626831?hl=en → 200
+https://support.google.com/googleplay/answer/1075738?hl=en → 200
+https://support.apple.com/guide/iphone/important-safety-information-iph301fc905/ios#:~:text=Medical%20device%20interference%20iPhone%20contains,such%20as%20pacemakers%20and%20defibrillators → 200
+https://support.google.com/pixelphone/answer/9803272?hl=en → 200
+https://images.samsung.com/is/content/samsung/p5/hk_en/support/mobile-devices/how-do-i-ensure-that-my-samsung-mobile-device-is-powered-by-safe-batteries/how-do-i-ensure-that-my-samsung-mobile-device-is-powered-by-safe-batteries.pdf → 200
+https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage → 200
+https://corporate.zillit.com/ → 200
+https://corporate.zillit.com/about-us → 200
+https://corporate.zillit.com/our-team → 200
+https://corporate.zillit.com/frequently-asked-questions → 200
+https://corporate.zillit.com/terms-of-use → 200
+https://corporate.zillit.com/privacy-policy → 200
+https://corporate.zillit.com/end-user-license-agreement → 200
+]]>
+</system-out>
+</testcase>
+<testcase name="Tools Customization › Zillit Help › verify validate all links " classname="zillit-help.spec.js" time="7.064">
+<system-out>
+<![CDATA[New Tab URL: https://corporate.zillit.com/privacy-policy
+Total Links Found: 10
+https://corporate.zillit.com/ → 200
+https://support.google.com/analytics/answer/181881?hl=en → 200
+https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage → 200
+https://corporate.zillit.com/ → 200
+https://corporate.zillit.com/about-us → 200
+https://corporate.zillit.com/our-team → 200
+https://corporate.zillit.com/frequently-asked-questions → 200
+https://corporate.zillit.com/terms-of-use → 200
+https://corporate.zillit.com/privacy-policy → 200
+https://corporate.zillit.com/end-user-license-agreement → 200
+]]>
+</system-out>
+</testcase>
+<testcase name="Tools Customization › Zillit Help › verify validate all links for FAQ " classname="zillit-help.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
@@ -8,290 +52,13 @@
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Documents &amp; Signature › Documents &amp; Signature: Signature Management › verify user can edit signature" classname="documents-signature.spec.js" time="0">
+<testcase name="Tools Customization › Zillit Help › verify validate all links for Reviews " classname="zillit-help.spec.js" time="0">
 <properties>
 <property name="skip" value="">
 </property>
 </properties>
 <skipped>
 </skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Documents &amp; Signature: Signature Management › verify user can delete signature" classname="documents-signature.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Documents &amp; Signature: Signature Management › verify user add signature again" classname="documents-signature.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can upload documents" classname="documents-signature.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can view the uploaded document" classname="documents-signature.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can add the document to My Downloads" classname="documents-signature.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can check history" classname="documents-signature.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify user can delete uploaded documents" classname="documents-signature.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify the sign the document from My Downloads" classname="documents-signature.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Standrad Documents › verify My Downloads → History details" classname="documents-signature.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Documents &amp; Signature › Chat With Users › verify user clicks on chat with user tab and select the user" classname="documents-signature.spec.js" time="14.385">
-<system-out>
-<![CDATA[Current hostname is: web.zillit.com
-[INFO] 2026-02-16T10:23:40.677Z - Production environment is started...
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Chat With Users › verify send a message" classname="documents-signature.spec.js" time="2.309">
-</testcase>
-<testcase name="Documents &amp; Signature › Chat With Users › verify edit the message" classname="documents-signature.spec.js" time="2.184">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Chat With Users › verify forward the message" classname="documents-signature.spec.js" time="6.026">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Chat With Users › verify reply to the message" classname="documents-signature.spec.js" time="1.267">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Chat With Users › verify the edit the reply message" classname="documents-signature.spec.js" time="2.142">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Chat With Users › verify the delete the reply message" classname="documents-signature.spec.js" time="4.742">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Chat With Users › verify the forward to remote project" classname="documents-signature.spec.js" time="9.402">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Chat With Users › verify the delete message" classname="documents-signature.spec.js" time="5.641">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Edit Message'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send Document › verify the send a document" classname="documents-signature.spec.js" time="0.977">
-</testcase>
-<testcase name="Documents &amp; Signature › Send Document › verify the forward" classname="documents-signature.spec.js" time="7.469">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send Document › verify the reply" classname="documents-signature.spec.js" time="1.213">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send Document › verify the edit reply" classname="documents-signature.spec.js" time="1.808">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send Document › verify the delete reply" classname="documents-signature.spec.js" time="6.165">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send Document › verify the forward to remote project" classname="documents-signature.spec.js" time="10.071">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send Document › verify the delete document" classname="documents-signature.spec.js" time="5.597">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send VoiceOver › verify the send a voiceOver" classname="documents-signature.spec.js" time="2.417">
-</testcase>
-<testcase name="Documents &amp; Signature › Send VoiceOver › verify the forward" classname="documents-signature.spec.js" time="7.714">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send VoiceOver › verify the reply" classname="documents-signature.spec.js" time="1.202">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send VoiceOver › verify the edit reply" classname="documents-signature.spec.js" time="2.795">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send VoiceOver › verify the delete reply" classname="documents-signature.spec.js" time="4.805">
-<system-out>
-<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m ]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send VoiceOver › verify the forward to remote project" classname="documents-signature.spec.js" time="9.889">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
-</testcase>
-<testcase name="Documents &amp; Signature › Send VoiceOver › verify the delete audio" classname="documents-signature.spec.js" time="5.563">
-<system-out>
-<![CDATA[Dropdown list items: [
-  [32m'Reply'[39m,
-  [32m'Forward'[39m,
-  [32m'Delete'[39m,
-  [32m'Download'[39m,
-  [32m'Forward to Remote Projects'[39m
-]
-]]>
-</system-out>
 </testcase>
 </testsuite>
 </testsuites>

@@ -32,32 +32,27 @@ test.describe('Tools Customization', () => {
 
     test.describe('Zillit Help', () => {
 
-        test('verify validate all links in newly opened tab', async () => {
+        test('verify validate all links for terms of use in newly opened tab', async () => {
         await zillitHelpPage.validateAllLinks(() =>
         zillitHelpPage.openTermsOfUse(0)
         );
 
         });
 
-        test('verify validate all links ', async () => {
+        test('verify validate all links for privacy policy in newly opened tab', async () => {
         await zillitHelpPage.validateAllLinks(() =>
         zillitHelpPage.openPrivacyPolicy(1)
         );
 
         });
 
-        test.skip('verify validate all links for FAQ ', async () => {
-        await zillitHelpPage.validateAllLinks(() =>
-        zillitHelpPage.openFAQ(2)
-        );
+        test('verify the FAQ opened in new tab', async () => {
+        await zillitHelpPage.openFAQ(2);
 
         });
 
-        test.skip('verify validate all links for Reviews ', async () => {
-        await zillitHelpPage.validateAllLinks(() =>
-        zillitHelpPage.openReviews(4)
-        );
-
+        test('verify Reviews opened in new tab', async () => {
+            await zillitHelpPage.openReviews(4);
         });
     
     });

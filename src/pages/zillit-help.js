@@ -23,11 +23,31 @@ export default class ZillitHelp {
     }
 
     async openFAQ(index){
-        await this.page.locator('div.p-6').nth(index).click()
+        const context = this.page.context();
+
+        const [newPage] = await Promise.all([
+        context.waitForEvent('page'),
+        this.page.locator('div.p-6').nth(index).click()
+        ]);
+
+        await newPage.waitForLoadState('load');
+        console.log('Opened URL:', newPage.url());
+
+        await newPage.close();
     }
 
     async openReviews(index){
-        await this.page.locator('div.p-6').nth(index).click()
+        const context = this.page.context();
+
+        const [newPage] = await Promise.all([
+        context.waitForEvent('page'),
+        this.page.locator('div.p-6').nth(index).click()
+        ]);
+
+        await newPage.waitForLoadState('load');
+        console.log('Opened URL:', newPage.url());
+
+        await newPage.close();
     }
 
     async validateAllLinks(clickAction){
@@ -35,7 +55,6 @@ export default class ZillitHelp {
 
         const [newPage] = await Promise.all([
         context.waitForEvent('page'),
-        //this.page.locator('div.p-6').first().click()
         clickAction()
         ]);
 

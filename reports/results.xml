@@ -1,11 +1,11 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="2" errors="0" time="42.018117999999994">
-<testsuite name="zillit-help.spec.js" timestamp="2026-02-16T13:18:42.229Z" hostname="chromium" tests="4" failures="0" skipped="2" time="28.206" errors="0">
-<testcase name="Tools Customization › Zillit Help › verify validate all links in newly opened tab" classname="zillit-help.spec.js" time="21.142">
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="49.709288">
+<testsuite name="zillit-help.spec.js" timestamp="2026-02-16T14:00:18.112Z" hostname="chromium" tests="4" failures="0" skipped="0" time="32.993" errors="0">
+<testcase name="Tools Customization › Zillit Help › verify validate all links for terms of use in newly opened tab" classname="zillit-help.spec.js" time="19.468">
 <system-out>
-<![CDATA[[INFO] 2026-02-16T13:18:43.709Z - browser is launching
-[INFO] 2026-02-16T13:18:52.149Z - open the project
+<![CDATA[[INFO] 2026-02-16T14:00:20.022Z - browser is launching
+[INFO] 2026-02-16T14:00:28.743Z - open the project
 Current hostname is: web.zillit.com
-[INFO] 2026-02-16T13:18:52.149Z - Production environment is started...
+[INFO] 2026-02-16T14:00:28.743Z - Production environment is started...
 New Tab URL: https://corporate.zillit.com/terms-of-use
 Total Links Found: 16
 https://corporate.zillit.com/ → 200
@@ -27,7 +27,7 @@ https://corporate.zillit.com/end-user-license-agreement → 200
 ]]>
 </system-out>
 </testcase>
-<testcase name="Tools Customization › Zillit Help › verify validate all links " classname="zillit-help.spec.js" time="7.064">
+<testcase name="Tools Customization › Zillit Help › verify validate all links for privacy policy in newly opened tab" classname="zillit-help.spec.js" time="7.344">
 <system-out>
 <![CDATA[New Tab URL: https://corporate.zillit.com/privacy-policy
 Total Links Found: 10
@@ -44,21 +44,18 @@ https://corporate.zillit.com/end-user-license-agreement → 200
 ]]>
 </system-out>
 </testcase>
-<testcase name="Tools Customization › Zillit Help › verify validate all links for FAQ " classname="zillit-help.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
+<testcase name="Tools Customization › Zillit Help › verify the FAQ opened in new tab" classname="zillit-help.spec.js" time="2.452">
+<system-out>
+<![CDATA[Opened URL: https://corporate.zillit.com/frequently-asked-questions
+]]>
+</system-out>
 </testcase>
-<testcase name="Tools Customization › Zillit Help › verify validate all links for Reviews " classname="zillit-help.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
+<testcase name="Tools Customization › Zillit Help › verify Reviews opened in new tab" classname="zillit-help.spec.js" time="3.729">
+<system-out>
+<![CDATA[Opened URL: https://play.google.com/store/apps/details?id=com.zillit.zillitapp&pli=1
+[INFO] 2026-02-16T14:01:07.433Z - close browser
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

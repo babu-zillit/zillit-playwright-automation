@@ -128,7 +128,7 @@
               "column": 10,
               "specs": [
                 {
-                  "title": "verify validate all links in newly opened tab",
+                  "title": "verify validate all links for terms of use in newly opened tab",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -143,20 +143,20 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 21142,
+                          "duration": 19468,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-16T13:18:43.709Z - browser is launching\n"
+                              "text": "[INFO] 2026-02-16T14:00:20.022Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-16T13:18:52.149Z - open the project\n"
+                              "text": "[INFO] 2026-02-16T14:00:28.743Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-16T13:18:52.149Z - Production environment is started...\n"
+                              "text": "[INFO] 2026-02-16T14:00:28.743Z - Production environment is started...\n"
                             },
                             {
                               "text": "New Tab URL: https://corporate.zillit.com/terms-of-use\n"
@@ -215,7 +215,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T13:18:42.561Z",
+                          "startTime": "2026-02-16T14:00:18.453Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -223,13 +223,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3742a90bc3b515cd02b6-34cf6b63f30a98428aba",
+                  "id": "3742a90bc3b515cd02b6-d2bde8b6a7f8dc26e90d",
                   "file": "zillit-help.spec.js",
                   "line": 35,
                   "column": 9
                 },
                 {
-                  "title": "verify validate all links ",
+                  "title": "verify validate all links for privacy policy in newly opened tab",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -244,7 +244,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7064,
+                          "duration": 7344,
                           "errors": [],
                           "stdout": [
                             {
@@ -286,7 +286,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T13:19:16.815Z",
+                          "startTime": "2026-02-16T14:00:53.818Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -294,98 +294,89 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3742a90bc3b515cd02b6-21ee765b6bcfd33da227",
+                  "id": "3742a90bc3b515cd02b6-686c3a60021034cdd2ad",
                   "file": "zillit-help.spec.js",
                   "line": 42,
                   "column": 9
                 },
                 {
-                  "title": "verify validate all links for FAQ ",
+                  "title": "verify the FAQ opened in new tab",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
+                      "annotations": [],
+                      "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-16T13:19:23.910Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "3742a90bc3b515cd02b6-61bab9f790dbd2f075fd",
-                  "file": "zillit-help.spec.js",
-                  "line": 49,
-                  "column": 14
-                },
-                {
-                  "title": "verify validate all links for Reviews ",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "skipped",
-                          "duration": 0,
+                          "status": "passed",
+                          "duration": 2452,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-16T13:19:23.933Z - close browser\n"
+                              "text": "Opened URL: https://corporate.zillit.com/frequently-asked-questions\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T13:19:23.910Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
+                          "startTime": "2026-02-16T14:01:01.185Z",
+                          "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
-                  "id": "3742a90bc3b515cd02b6-da09ab0190d7ba95eac6",
+                  "id": "3742a90bc3b515cd02b6-02bc87d5d14f37bf2fa6",
                   "file": "zillit-help.spec.js",
-                  "line": 56,
-                  "column": 14
+                  "line": 49,
+                  "column": 9
+                },
+                {
+                  "title": "verify Reviews opened in new tab",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3729,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Opened URL: https://play.google.com/store/apps/details?id=com.zillit.zillitapp&pli=1\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-16T14:01:07.433Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-16T14:01:03.654Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3742a90bc3b515cd02b6-65a1426b5ecb5b106ff0",
+                  "file": "zillit-help.spec.js",
+                  "line": 54,
+                  "column": 9
                 }
               ]
             }
@@ -396,10 +387,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-16T13:18:42.203Z",
-    "duration": 42018.117999999995,
-    "expected": 2,
-    "skipped": 2,
+    "startTime": "2026-02-16T14:00:18.048Z",
+    "duration": 49709.288,
+    "expected": 4,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

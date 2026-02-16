@@ -166,6 +166,23 @@ export default class DocumentsSignature {
         await closeButton.click();
     }
 
+    async chatWithUsers(){
+        await this.page.getByText('Standard Documents', { exact: false }).click();
+        await this.page.getByText('Chat with Users', { exact: false }).click();
+    }
+
+    async selectUser(){
+        await this.page.getByText('Select User', { exact: true }).click();
+
+        const checkboxes = this.page.locator('input.ant-checkbox-input');
+        await checkboxes.nth(0).click();
+
+        const submit = this.page.locator('div.ant-modal-footer button');
+        await submit.click();
+    }
+
+
+
 
 
 

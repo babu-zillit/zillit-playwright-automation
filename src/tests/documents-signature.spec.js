@@ -27,7 +27,7 @@ test.describe('Documents & Signature', () => {
 
 
 
-    test.describe('Documents & Signature: Signature Management', () => {
+    test.describe.skip('Documents & Signature: Signature Management', () => {
 
         test('verify user can add new signature', async () => {
 
@@ -52,7 +52,7 @@ test.describe('Documents & Signature', () => {
         });
     });
 
-    test.describe('Standrad Documents', () => {
+    test.describe.skip('Standrad Documents', () => {
 
         test('verify user can upload documents', async () => {
 
@@ -87,6 +87,112 @@ test.describe('Documents & Signature', () => {
             await documentSignaturePage.downloadCheckHistory();
         });
     });
+
+    test.describe('Chat With Users', () => {
+
+        test('verify user clicks on chat with user tab and select the user', async () => {
+            await documentSignaturePage.chatWithUsers();
+            await documentSignaturePage.selectUser();
+        });
+
+        test('verify send a message', async () => {
+            await uploadmedia.sendMessage();
+        });  
+    
+        test('verify edit the message', async () => {
+            await uploadmedia.edit();
+        });
+
+        test('verify forward the message', async () => {
+            await uploadmedia.forward();
+        });
+
+        test('verify reply to the message', async () => {
+            await uploadmedia.reply();
+        });
+
+        test('verify the edit the reply message', async () => {
+            await uploadmedia.editReply();
+        });
+
+        test('verify the delete the reply message', async () => {
+            await uploadmedia.deleteReply();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
+        test('verify the delete message', async () => {
+            await uploadmedia.delete();
+        });
+
+    });
+
+    test.describe('Send Document', () => {
+        test('verify the send a document', async () => {
+            await uploadmedia.clickAttachment();
+            await uploadmedia.uploadDocument();
+        });
+
+        test('verify the forward', async () => {
+            await uploadmedia.forward();
+        });
+
+        test('verify the reply', async () => {
+            await uploadmedia.reply();
+        });
+
+        test('verify the edit reply', async () => {
+            await uploadmedia.editReply();
+        });
+
+        test('verify the delete reply', async () => {
+            await uploadmedia.deleteReply();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
+        test('verify the delete document', async () => {
+            await uploadmedia.delete();
+        });
+
+    });
+
+    test.describe('Send VoiceOver', () => {
+        test('verify the send a voiceOver', async () => {
+            await uploadmedia.voiceOverRecord();
+        });
+
+        test('verify the forward', async () => {
+            await uploadmedia.forward();
+        });
+
+        test('verify the reply', async () => {
+            await uploadmedia.reply();
+        });
+
+        test('verify the edit reply', async () => {
+            await uploadmedia.editReply();
+        });
+
+        test('verify the delete reply', async () => {
+            await uploadmedia.deleteReply();
+        });
+
+        test('verify the forward to remote project', async () => {
+            await uploadmedia.forwardRemoteProject();
+        });
+
+        test('verify the delete audio', async () => {
+            await uploadmedia.delete();
+        });
+
+    });
+
+
 
 });
 

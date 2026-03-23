@@ -1,59 +1,89 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="49.709288">
-<testsuite name="zillit-help.spec.js" timestamp="2026-02-16T14:00:18.112Z" hostname="chromium" tests="4" failures="0" skipped="0" time="32.993" errors="0">
-<testcase name="Tools Customization › Zillit Help › verify validate all links for terms of use in newly opened tab" classname="zillit-help.spec.js" time="19.468">
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="56.847643000000005">
+<testsuite name="bulletin.spec.js" timestamp="2026-02-19T14:33:20.510Z" hostname="chromium" tests="9" failures="0" skipped="0" time="45.249" errors="0">
+<testcase name="Bulletin › Send Location › verify the send a location" classname="bulletin.spec.js" time="11.727">
 <system-out>
-<![CDATA[[INFO] 2026-02-16T14:00:20.022Z - browser is launching
-[INFO] 2026-02-16T14:00:28.743Z - open the project
+<![CDATA[[INFO] 2026-02-19T14:33:21.121Z - browser is launching
 Current hostname is: web.zillit.com
-[INFO] 2026-02-16T14:00:28.743Z - Production environment is started...
-New Tab URL: https://corporate.zillit.com/terms-of-use
-Total Links Found: 16
-https://corporate.zillit.com/ → 200
-https://support.apple.com/en-us/HT204396 → 200
-https://support.apple.com/en-us/HT201304 → 200
-https://support.google.com/googleplay/answer/1626831?hl=en → 200
-https://support.google.com/googleplay/answer/1075738?hl=en → 200
-https://support.apple.com/guide/iphone/important-safety-information-iph301fc905/ios#:~:text=Medical%20device%20interference%20iPhone%20contains,such%20as%20pacemakers%20and%20defibrillators → 200
-https://support.google.com/pixelphone/answer/9803272?hl=en → 200
-https://images.samsung.com/is/content/samsung/p5/hk_en/support/mobile-devices/how-do-i-ensure-that-my-samsung-mobile-device-is-powered-by-safe-batteries/how-do-i-ensure-that-my-samsung-mobile-device-is-powered-by-safe-batteries.pdf → 200
-https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage → 200
-https://corporate.zillit.com/ → 200
-https://corporate.zillit.com/about-us → 200
-https://corporate.zillit.com/our-team → 200
-https://corporate.zillit.com/frequently-asked-questions → 200
-https://corporate.zillit.com/terms-of-use → 200
-https://corporate.zillit.com/privacy-policy → 200
-https://corporate.zillit.com/end-user-license-agreement → 200
+[INFO] 2026-02-19T14:33:29.015Z - Production environment is started...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Tools Customization › Zillit Help › verify validate all links for privacy policy in newly opened tab" classname="zillit-help.spec.js" time="7.344">
+<testcase name="Bulletin › Send Location › verify the readBy status" classname="bulletin.spec.js" time="2.263">
 <system-out>
-<![CDATA[New Tab URL: https://corporate.zillit.com/privacy-policy
-Total Links Found: 10
-https://corporate.zillit.com/ → 200
-https://support.google.com/analytics/answer/181881?hl=en → 200
-https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage → 200
-https://corporate.zillit.com/ → 200
-https://corporate.zillit.com/about-us → 200
-https://corporate.zillit.com/our-team → 200
-https://corporate.zillit.com/frequently-asked-questions → 200
-https://corporate.zillit.com/terms-of-use → 200
-https://corporate.zillit.com/privacy-policy → 200
-https://corporate.zillit.com/end-user-license-agreement → 200
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Tools Customization › Zillit Help › verify the FAQ opened in new tab" classname="zillit-help.spec.js" time="2.452">
+<testcase name="Bulletin › Send Location › verify the forward" classname="bulletin.spec.js" time="5.561">
 <system-out>
-<![CDATA[Opened URL: https://corporate.zillit.com/frequently-asked-questions
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Tools Customization › Zillit Help › verify Reviews opened in new tab" classname="zillit-help.spec.js" time="3.729">
+<testcase name="Bulletin › Send Location › verify the reply" classname="bulletin.spec.js" time="0.841">
 <system-out>
-<![CDATA[Opened URL: https://play.google.com/store/apps/details?id=com.zillit.zillitapp&pli=1
-[INFO] 2026-02-16T14:01:07.433Z - close browser
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the edit reply" classname="bulletin.spec.js" time="2.662">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the readBy reply" classname="bulletin.spec.js" time="2.46">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the delete reply" classname="bulletin.spec.js" time="4.848">
+<system-out>
+<![CDATA[Dropdown list items: [ [32m'Edit Message'[39m, [32m'Delete'[39m, [32m'Read By'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the forward to remote project" classname="bulletin.spec.js" time="9.29">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the delete location" classname="bulletin.spec.js" time="5.597">
+<system-out>
+<![CDATA[Dropdown list items: [
+  [32m'Reply'[39m,
+  [32m'Forward'[39m,
+  [32m'Delete'[39m,
+  [32m'Read By'[39m,
+  [32m'Forward to Remote Projects'[39m
+]
+[INFO] 2026-02-19T14:34:17.143Z - close browser
 ]]>
 </system-out>
 </testcase>

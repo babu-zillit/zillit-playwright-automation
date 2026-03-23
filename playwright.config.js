@@ -379,6 +379,17 @@ use: {
           'clipboard-read',
           'clipboard-write',
         ],
+        launchOptions: {
+      args: [
+        '--use-fake-ui-for-media-stream',
+        '--use-fake-device-for-media-stream'
+      ]
+    },
+    // ✅ Add this for location mocking
+    geolocation: {
+      latitude: 28.6139,
+      longitude: 77.2090
+    }
       },
     },
 

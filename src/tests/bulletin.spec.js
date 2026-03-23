@@ -24,7 +24,7 @@ test.describe('Bulletin', () => {
         await context.close();
     });
 
-    test.describe('Send Message', () => {
+    test.describe.only('Send Message', () => {
 
         test('verify send a message', async () => {
             await uploadmedia.sendMessage();
@@ -263,7 +263,10 @@ test.describe('Bulletin', () => {
 
     });
 
-    test.describe('Send Location', () => {
+    test.describe.only('Send Location', () => {
+        // test.skip(({ headless }) => headless, 
+        // 'Skipping Send Location tests in headless mode');
+
         test('verify the send a location', async () => {
             await uploadmedia.clickAttachment();
             await uploadmedia.uploadLocation();

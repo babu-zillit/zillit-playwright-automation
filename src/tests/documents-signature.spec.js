@@ -27,7 +27,7 @@ test.describe('Documents & Signature', () => {
 
 
 
-    test.describe.skip('Documents & Signature: Signature Management', () => {
+    test.describe('Documents & Signature: Signature Management', () => {
 
         test('verify user can add new signature', async () => {
 
@@ -52,7 +52,7 @@ test.describe('Documents & Signature', () => {
         });
     });
 
-    test.describe.skip('Standrad Documents', () => {
+    test.describe('Standrad Documents', () => {
 
         test('verify user can upload documents', async () => {
 

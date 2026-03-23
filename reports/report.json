@@ -108,27 +108,27 @@
   },
   "suites": [
     {
-      "title": "zillit-help.spec.js",
-      "file": "zillit-help.spec.js",
+      "title": "bulletin.spec.js",
+      "file": "bulletin.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Tools Customization",
-          "file": "zillit-help.spec.js",
+          "title": "Bulletin",
+          "file": "bulletin.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Zillit Help",
-              "file": "zillit-help.spec.js",
-              "line": 33,
-              "column": 10,
+              "title": "Send Location",
+              "file": "bulletin.spec.js",
+              "line": 266,
+              "column": 19,
               "specs": [
                 {
-                  "title": "verify validate all links for terms of use in newly opened tab",
+                  "title": "verify the send a location",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -143,79 +143,22 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 19468,
+                          "duration": 11727,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-16T14:00:20.022Z - browser is launching\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-16T14:00:28.743Z - open the project\n"
+                              "text": "[INFO] 2026-02-19T14:33:21.121Z - browser is launching\n"
                             },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-16T14:00:28.743Z - Production environment is started...\n"
-                            },
-                            {
-                              "text": "New Tab URL: https://corporate.zillit.com/terms-of-use\n"
-                            },
-                            {
-                              "text": "Total Links Found: 16\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/ → 200\n"
-                            },
-                            {
-                              "text": "https://support.apple.com/en-us/HT204396 → 200\n"
-                            },
-                            {
-                              "text": "https://support.apple.com/en-us/HT201304 → 200\n"
-                            },
-                            {
-                              "text": "https://support.google.com/googleplay/answer/1626831?hl=en → 200\n"
-                            },
-                            {
-                              "text": "https://support.google.com/googleplay/answer/1075738?hl=en → 200\n"
-                            },
-                            {
-                              "text": "https://support.apple.com/guide/iphone/important-safety-information-iph301fc905/ios#:~:text=Medical%20device%20interference%20iPhone%20contains,such%20as%20pacemakers%20and%20defibrillators → 200\n"
-                            },
-                            {
-                              "text": "https://support.google.com/pixelphone/answer/9803272?hl=en → 200\n"
-                            },
-                            {
-                              "text": "https://images.samsung.com/is/content/samsung/p5/hk_en/support/mobile-devices/how-do-i-ensure-that-my-samsung-mobile-device-is-powered-by-safe-batteries/how-do-i-ensure-that-my-samsung-mobile-device-is-powered-by-safe-batteries.pdf → 200\n"
-                            },
-                            {
-                              "text": "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/ → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/about-us → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/our-team → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/frequently-asked-questions → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/terms-of-use → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/privacy-policy → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/end-user-license-agreement → 200\n"
+                              "text": "[INFO] 2026-02-19T14:33:29.015Z - Production environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T14:00:18.453Z",
+                          "startTime": "2026-02-19T14:33:20.847Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -223,13 +166,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3742a90bc3b515cd02b6-d2bde8b6a7f8dc26e90d",
-                  "file": "zillit-help.spec.js",
-                  "line": 35,
+                  "id": "c14f1c3de425bdf1a521-8d7dfac45d776d5e66a2",
+                  "file": "bulletin.spec.js",
+                  "line": 270,
                   "column": 9
                 },
                 {
-                  "title": "verify validate all links for privacy policy in newly opened tab",
+                  "title": "verify the readBy status",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -244,49 +187,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7344,
+                          "duration": 2263,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "New Tab URL: https://corporate.zillit.com/privacy-policy\n"
-                            },
-                            {
-                              "text": "Total Links Found: 10\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/ → 200\n"
-                            },
-                            {
-                              "text": "https://support.google.com/analytics/answer/181881?hl=en → 200\n"
-                            },
-                            {
-                              "text": "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/ → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/about-us → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/our-team → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/frequently-asked-questions → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/terms-of-use → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/privacy-policy → 200\n"
-                            },
-                            {
-                              "text": "https://corporate.zillit.com/end-user-license-agreement → 200\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T14:00:53.818Z",
+                          "startTime": "2026-02-19T14:33:43.524Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -294,13 +204,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3742a90bc3b515cd02b6-686c3a60021034cdd2ad",
-                  "file": "zillit-help.spec.js",
-                  "line": 42,
+                  "id": "c14f1c3de425bdf1a521-ed681a7469ebb1e6112d",
+                  "file": "bulletin.spec.js",
+                  "line": 275,
                   "column": 9
                 },
                 {
-                  "title": "verify the FAQ opened in new tab",
+                  "title": "verify the forward",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -315,16 +225,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2452,
+                          "duration": 5561,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Opened URL: https://corporate.zillit.com/frequently-asked-questions\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T14:01:01.185Z",
+                          "startTime": "2026-02-19T14:33:45.796Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -332,13 +242,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3742a90bc3b515cd02b6-02bc87d5d14f37bf2fa6",
-                  "file": "zillit-help.spec.js",
-                  "line": 49,
+                  "id": "c14f1c3de425bdf1a521-67ba3ef6eb852ea4109d",
+                  "file": "bulletin.spec.js",
+                  "line": 279,
                   "column": 9
                 },
                 {
-                  "title": "verify Reviews opened in new tab",
+                  "title": "verify the reply",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -353,19 +263,16 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3729,
+                          "duration": 841,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Opened URL: https://play.google.com/store/apps/details?id=com.zillit.zillitapp&pli=1\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-16T14:01:07.433Z - close browser\n"
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-16T14:01:03.654Z",
+                          "startTime": "2026-02-19T14:33:51.366Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -373,9 +280,202 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "3742a90bc3b515cd02b6-65a1426b5ecb5b106ff0",
-                  "file": "zillit-help.spec.js",
-                  "line": 54,
+                  "id": "c14f1c3de425bdf1a521-86f46b0631387cebd8f7",
+                  "file": "bulletin.spec.js",
+                  "line": 283,
+                  "column": 9
+                },
+                {
+                  "title": "verify the edit reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2662,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-19T14:33:52.222Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c14f1c3de425bdf1a521-d9a65b02c86df4d92b6f",
+                  "file": "bulletin.spec.js",
+                  "line": 287,
+                  "column": 9
+                },
+                {
+                  "title": "verify the readBy reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2460,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-19T14:33:54.894Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c14f1c3de425bdf1a521-8709c34ca2594e12d7fd",
+                  "file": "bulletin.spec.js",
+                  "line": 291,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete reply",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4848,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-19T14:33:57.362Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c14f1c3de425bdf1a521-8baf5cdf10d5b7867fab",
+                  "file": "bulletin.spec.js",
+                  "line": 295,
+                  "column": 9
+                },
+                {
+                  "title": "verify the forward to remote project",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9290,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-19T14:34:02.220Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c14f1c3de425bdf1a521-296ce86181fdded50c92",
+                  "file": "bulletin.spec.js",
+                  "line": 299,
+                  "column": 9
+                },
+                {
+                  "title": "verify the delete location",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5597,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-02-19T14:34:17.143Z - close browser\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-19T14:34:11.524Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "c14f1c3de425bdf1a521-8894d113d081d7a6f306",
+                  "file": "bulletin.spec.js",
+                  "line": 303,
                   "column": 9
                 }
               ]
@@ -387,9 +487,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-16T14:00:18.048Z",
-    "duration": 49709.288,
-    "expected": 4,
+    "startTime": "2026-02-19T14:33:20.492Z",
+    "duration": 56847.643000000004,
+    "expected": 9,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

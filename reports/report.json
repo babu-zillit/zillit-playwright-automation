@@ -108,27 +108,27 @@
   },
   "suites": [
     {
-      "title": "bulletin.spec.js",
-      "file": "bulletin.spec.js",
+      "title": "dod.spec.js",
+      "file": "dod.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Bulletin",
-          "file": "bulletin.spec.js",
+          "title": "Schedule D.O.D",
+          "file": "dod.spec.js",
           "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Send Location",
-              "file": "bulletin.spec.js",
-              "line": 266,
-              "column": 19,
+              "title": "D.O.D",
+              "file": "dod.spec.js",
+              "line": 34,
+              "column": 10,
               "specs": [
                 {
-                  "title": "verify the send a location",
+                  "title": "verify upload dod document",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -143,22 +143,25 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 11727,
+                          "duration": 10508,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-02-19T14:33:21.121Z - browser is launching\n"
+                              "text": "[INFO] 2026-03-23T08:30:06.060Z - browser is launching\n"
+                            },
+                            {
+                              "text": "[INFO] 2026-03-23T08:30:09.290Z - open the project\n"
                             },
                             {
                               "text": "Current hostname is: web.zillit.com\n"
                             },
                             {
-                              "text": "[INFO] 2026-02-19T14:33:29.015Z - Production environment is started...\n"
+                              "text": "[INFO] 2026-03-23T08:30:09.290Z - Production environment is started...\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-19T14:33:20.847Z",
+                          "startTime": "2026-03-23T08:30:05.003Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -166,13 +169,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c14f1c3de425bdf1a521-8d7dfac45d776d5e66a2",
-                  "file": "bulletin.spec.js",
-                  "line": 270,
+                  "id": "c869e2d808b33cfea373-db187136fe3189e96d5a",
+                  "file": "dod.spec.js",
+                  "line": 36,
                   "column": 9
                 },
                 {
-                  "title": "verify the readBy status",
+                  "title": "verify dod workflow: view → viewCount → download → downloadCount → move → delete",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -187,16 +190,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 2263,
+                          "duration": 15716,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-19T14:33:43.524Z",
+                          "startTime": "2026-03-23T08:30:25.948Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -204,278 +203,63 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "c14f1c3de425bdf1a521-ed681a7469ebb1e6112d",
-                  "file": "bulletin.spec.js",
-                  "line": 275,
+                  "id": "c869e2d808b33cfea373-046b555adb9354eb767b",
+                  "file": "dod.spec.js",
+                  "line": 41,
                   "column": 9
-                },
+                }
+              ]
+            },
+            {
+              "title": "D.O.D History",
+              "file": "dod.spec.js",
+              "line": 58,
+              "column": 19,
+              "specs": [
                 {
-                  "title": "verify the forward",
+                  "title": "verify upload dod history",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
+                      "annotations": [
+                        {
+                          "type": "skip"
+                        }
+                      ],
+                      "expectedStatus": "skipped",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5561,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                              "text": "[INFO] 2026-03-23T08:30:41.695Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-19T14:33:45.796Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c14f1c3de425bdf1a521-67ba3ef6eb852ea4109d",
-                  "file": "bulletin.spec.js",
-                  "line": 279,
-                  "column": 9
-                },
-                {
-                  "title": "verify the reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 841,
-                          "errors": [],
-                          "stdout": [
+                          "startTime": "2026-03-23T08:30:41.683Z",
+                          "annotations": [
                             {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
+                              "type": "skip"
                             }
                           ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-19T14:33:51.366Z",
-                          "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
                     }
                   ],
-                  "id": "c14f1c3de425bdf1a521-86f46b0631387cebd8f7",
-                  "file": "bulletin.spec.js",
-                  "line": 283,
-                  "column": 9
-                },
-                {
-                  "title": "verify the edit reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2662,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-19T14:33:52.222Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c14f1c3de425bdf1a521-d9a65b02c86df4d92b6f",
-                  "file": "bulletin.spec.js",
-                  "line": 287,
-                  "column": 9
-                },
-                {
-                  "title": "verify the readBy reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2460,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-19T14:33:54.894Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c14f1c3de425bdf1a521-8709c34ca2594e12d7fd",
-                  "file": "bulletin.spec.js",
-                  "line": 291,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete reply",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4848,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [ \u001b[32m'Edit Message'\u001b[39m, \u001b[32m'Delete'\u001b[39m, \u001b[32m'Read By'\u001b[39m ]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-19T14:33:57.362Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c14f1c3de425bdf1a521-8baf5cdf10d5b7867fab",
-                  "file": "bulletin.spec.js",
-                  "line": 295,
-                  "column": 9
-                },
-                {
-                  "title": "verify the forward to remote project",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9290,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-19T14:34:02.220Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c14f1c3de425bdf1a521-296ce86181fdded50c92",
-                  "file": "bulletin.spec.js",
-                  "line": 299,
-                  "column": 9
-                },
-                {
-                  "title": "verify the delete location",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium",
-                      "projectName": "chromium",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5597,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Dropdown list items: [\n  \u001b[32m'Reply'\u001b[39m,\n  \u001b[32m'Forward'\u001b[39m,\n  \u001b[32m'Delete'\u001b[39m,\n  \u001b[32m'Read By'\u001b[39m,\n  \u001b[32m'Forward to Remote Projects'\u001b[39m\n]\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-02-19T14:34:17.143Z - close browser\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-19T14:34:11.524Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c14f1c3de425bdf1a521-8894d113d081d7a6f306",
-                  "file": "bulletin.spec.js",
-                  "line": 303,
+                  "id": "c869e2d808b33cfea373-b16dc349f721504a45c0",
+                  "file": "dod.spec.js",
+                  "line": 59,
                   "column": 9
                 }
               ]
@@ -487,10 +271,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-19T14:33:20.492Z",
-    "duration": 56847.643000000004,
-    "expected": 9,
-    "skipped": 0,
+    "startTime": "2026-03-23T08:30:04.636Z",
+    "duration": 37359.301999999996,
+    "expected": 2,
+    "skipped": 1,
     "unexpected": 0,
     "flaky": 0
   }

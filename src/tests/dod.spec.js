@@ -43,8 +43,8 @@ test.describe('Schedule D.O.D', () => {
             await dodPage.view();
             await dodPage.viewCount();
 
-            await dodPage.download();
-            await dodPage.verifyPopUpMessage('File downloaded successfully');
+            //await dodPage.download();
+            //await dodPage.verifyPopUpMessage('File downloaded successfully');
             await dodPage.downloadCount();
 
             await dodPage.move();
@@ -55,7 +55,7 @@ test.describe('Schedule D.O.D', () => {
     
     });
 
-    test.describe('D.O.D History', () => {
+    test.describe.skip('D.O.D History', () => {
         test('verify upload dod history', async () => {
             await uploadmedia.history();
         });

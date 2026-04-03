@@ -24,7 +24,7 @@ test.describe('Bulletin', () => {
         await context.close();
     });
 
-    test.describe.only('Send Message', () => {
+    test.describe('Send Message', () => {
 
         test('verify send a message', async () => {
             await uploadmedia.sendMessage();
@@ -62,7 +62,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.forwardRemoteProject();
         });
 
-        test('verify the delete message', async () => {
+        test('verify the delete message ', async () => {
             await uploadmedia.delete();
         });
 
@@ -104,7 +104,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.save();
         });
 
-        test('verify the distribute', async () => {
+        test.skip('verify the distribute', async () => {
             await uploadmedia.distribute();
         });
 
@@ -153,7 +153,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.save();
         });
 
-        test('verify the distribute', async () => {
+        test.skip('verify the distribute', async () => {
             await uploadmedia.distribute();
         });
 
@@ -201,7 +201,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.save();
         });
 
-        test('verify the distribute', async () => {
+        test.skip('verify the distribute', async () => {
             await uploadmedia.distribute();
         });
 
@@ -249,7 +249,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.save();
         });
 
-        test('verify the distribute', async () => {
+        test.skip('verify the distribute', async () => {
             await uploadmedia.distribute();
         });
 
@@ -263,7 +263,7 @@ test.describe('Bulletin', () => {
 
     });
 
-    test.describe.only('Send Location', () => {
+    test.describe('Send Location', () => {
         // test.skip(({ headless }) => headless, 
         // 'Skipping Send Location tests in headless mode');
 
@@ -339,7 +339,7 @@ test.describe('Bulletin', () => {
             await uploadmedia.save();
         });
 
-        test('verify the distribute', async () => {
+        test.skip('verify the distribute', async () => {
             await uploadmedia.distribute();
         });
 

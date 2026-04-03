@@ -168,6 +168,7 @@ export default defineConfig({
    * Locally, you get faster test runs by allowing full parallelism.
    * 
    */ 
+  
   workers: process.env.CI ? 1 : undefined,
 
 

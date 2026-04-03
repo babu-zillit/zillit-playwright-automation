@@ -24,7 +24,7 @@ export default class UploadMedia {
         /**
          * Message locators
          */
-        this.typeYourMessage = page.locator('textarea[placeholder="Type your message"]');
+        this.typeYourMessage = page.locator('textarea[placeholder="Type your message here..."]');
         this.sendButton = page.locator('#send_messages_to_users_button');
         this.sendingIndicator = page.locator('span[aria-label="clock-circle"]');
         this.edited = page.locator("//span[text()='Edited']");

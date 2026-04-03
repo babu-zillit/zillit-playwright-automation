@@ -1,21 +1,49 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="1" errors="0" time="37.359302">
-<testsuite name="dod.spec.js" timestamp="2026-03-23T08:30:04.665Z" hostname="chromium" tests="3" failures="0" skipped="1" time="26.224" errors="0">
-<testcase name="Schedule D.O.D › D.O.D › verify upload dod document" classname="dod.spec.js" time="10.508">
+<testsuites id="" name="" tests="3" failures="1" skipped="2" errors="0" time="3.5227820000000003">
+<testsuite name="dod.spec.js" timestamp="2026-03-26T08:26:59.834Z" hostname="chromium" tests="3" failures="1" skipped="2" time="0" errors="0">
+<testcase name="Schedule D.O.D › D.O.D @regression › verify upload dod document" classname="dod.spec.js" time="0">
+<failure message="dod.spec.js:36:9 verify upload dod document" type="FAILURE">
+<![CDATA[  [chromium] › dod.spec.js:36:9 › Schedule D.O.D › D.O.D @regression › verify upload dod document ──
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://web.zillit.com/home", waiting until "load"
+
+
+      15 |         page = await context.newPage();
+      16 |
+    > 17 |         await page.goto('/home');
+         |                    ^
+      18 |         
+      19 |         uploadmedia = new UploadMedia(page);
+      20 |         dodPage = new ScheduleDOD(page);
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/dod.spec.js:17:20
+
+    Error Context: ../../test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[[INFO] 2026-03-23T08:30:06.060Z - browser is launching
-[INFO] 2026-03-23T08:30:09.290Z - open the project
-Current hostname is: web.zillit.com
-[INFO] 2026-03-23T08:30:09.290Z - Production environment is started...
+<![CDATA[[INFO] 2026-03-26T08:27:01.192Z - browser is launching
+[INFO] 2026-03-26T08:27:03.141Z - close browser
+
+[[ATTACHMENT|../test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Schedule D.O.D › D.O.D › verify dod workflow: view → viewCount → download → downloadCount → move → delete" classname="dod.spec.js" time="15.716">
+<testcase name="Schedule D.O.D › D.O.D @regression › verify dod workflow: view → viewCount → download → downloadCount → move → delete " classname="dod.spec.js" time="0">
+<skipped>
+</skipped>
 </testcase>
-<testcase name="Schedule D.O.D › D.O.D History › verify upload dod history" classname="dod.spec.js" time="0">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
+<testcase name="Schedule D.O.D › D.O.D History @smoke › verify upload dod history" classname="dod.spec.js" time="0">
 <skipped>
 </skipped>
 </testcase>

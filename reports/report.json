@@ -118,19 +118,21 @@
           "title": "Schedule D.O.D",
           "file": "dod.spec.js",
           "line": 6,
-          "column": 6,
+          "column": 15,
           "specs": [],
           "suites": [
             {
-              "title": "D.O.D",
+              "title": "D.O.D @regression",
               "file": "dod.spec.js",
               "line": 34,
               "column": 10,
               "specs": [
                 {
                   "title": "verify upload dod document",
-                  "ok": true,
-                  "tags": [],
+                  "ok": false,
+                  "tags": [
+                    "regression"
+                  ],
                   "tests": [
                     {
                       "timeout": 30000,
@@ -142,42 +144,73 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10508,
-                          "errors": [],
+                          "status": "failed",
+                          "duration": 0,
+                          "error": {
+                            "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n",
+                            "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n\n    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/dod.spec.js:17:20",
+                            "location": {
+                              "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/dod.spec.js",
+                              "column": 20,
+                              "line": 17
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/home'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m         \n \u001b[90m 19 |\u001b[39m         uploadmedia \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mUploadMedia\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m         dodPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mScheduleDOD\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/dod.spec.js",
+                                "column": 20,
+                                "line": 17
+                              },
+                              "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://web.zillit.com/home\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/home'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m         \n \u001b[90m 19 |\u001b[39m         uploadmedia \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mUploadMedia\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m         dodPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mScheduleDOD\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/dod.spec.js:17:20\u001b[22m"
+                            }
+                          ],
                           "stdout": [
                             {
-                              "text": "[INFO] 2026-03-23T08:30:06.060Z - browser is launching\n"
+                              "text": "[INFO] 2026-03-26T08:27:01.192Z - browser is launching\n"
                             },
                             {
-                              "text": "[INFO] 2026-03-23T08:30:09.290Z - open the project\n"
-                            },
-                            {
-                              "text": "Current hostname is: web.zillit.com\n"
-                            },
-                            {
-                              "text": "[INFO] 2026-03-23T08:30:09.290Z - Production environment is started...\n"
+                              "text": "[INFO] 2026-03-26T08:27:03.141Z - close browser\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-03-23T08:30:05.003Z",
+                          "startTime": "2026-03-26T08:27:00.170Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "_error-context-0",
+                              "contentType": "text/markdown",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/babuyadav/Documents/zillit-playwright-automation/test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/babuyadav/Documents/zillit-playwright-automation/src/tests/dod.spec.js",
+                            "column": 20,
+                            "line": 17
+                          }
                         }
                       ],
-                      "status": "expected"
+                      "status": "unexpected"
                     }
                   ],
-                  "id": "c869e2d808b33cfea373-db187136fe3189e96d5a",
+                  "id": "c869e2d808b33cfea373-dd737b615ba7a208d54d",
                   "file": "dod.spec.js",
                   "line": 36,
                   "column": 9
                 },
                 {
-                  "title": "verify dod workflow: view → viewCount → download → downloadCount → move → delete",
+                  "title": "verify dod workflow: view → viewCount → download → downloadCount → move → delete ",
                   "ok": true,
-                  "tags": [],
+                  "tags": [
+                    "regression"
+                  ],
                   "tests": [
                     {
                       "timeout": 30000,
@@ -187,23 +220,23 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 15716,
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-03-23T08:30:25.948Z",
+                          "startTime": "2026-03-26T08:27:03.314Z",
                           "annotations": [],
                           "attachments": []
                         }
                       ],
-                      "status": "expected"
+                      "status": "skipped"
                     }
                   ],
-                  "id": "c869e2d808b33cfea373-046b555adb9354eb767b",
+                  "id": "c869e2d808b33cfea373-daf4901ca1b4f1021628",
                   "file": "dod.spec.js",
                   "line": 41,
                   "column": 9
@@ -211,53 +244,43 @@
               ]
             },
             {
-              "title": "D.O.D History",
+              "title": "D.O.D History @smoke",
               "file": "dod.spec.js",
               "line": 58,
-              "column": 19,
+              "column": 10,
               "specs": [
                 {
                   "title": "verify upload dod history",
                   "ok": true,
-                  "tags": [],
+                  "tags": [
+                    "smoke"
+                  ],
                   "tests": [
                     {
                       "timeout": 30000,
-                      "annotations": [
-                        {
-                          "type": "skip"
-                        }
-                      ],
-                      "expectedStatus": "skipped",
+                      "annotations": [],
+                      "expectedStatus": "passed",
                       "projectId": "chromium",
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
                           "status": "skipped",
                           "duration": 0,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "[INFO] 2026-03-23T08:30:41.695Z - close browser\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-03-23T08:30:41.683Z",
-                          "annotations": [
-                            {
-                              "type": "skip"
-                            }
-                          ],
+                          "startTime": "2026-03-26T08:27:03.317Z",
+                          "annotations": [],
                           "attachments": []
                         }
                       ],
                       "status": "skipped"
                     }
                   ],
-                  "id": "c869e2d808b33cfea373-b16dc349f721504a45c0",
+                  "id": "c869e2d808b33cfea373-d1344e6a72915c581ebc",
                   "file": "dod.spec.js",
                   "line": 59,
                   "column": 9
@@ -271,11 +294,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-23T08:30:04.636Z",
-    "duration": 37359.301999999996,
-    "expected": 2,
-    "skipped": 1,
-    "unexpected": 0,
+    "startTime": "2026-03-26T08:26:59.810Z",
+    "duration": 3522.782,
+    "expected": 0,
+    "skipped": 2,
+    "unexpected": 1,
     "flaky": 0
   }
 }

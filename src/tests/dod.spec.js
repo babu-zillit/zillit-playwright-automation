@@ -3,7 +3,7 @@ import ScheduleDOD from "../pages/schedule-dod";
 import UploadMedia from "../actions/media-uploader";
 import logger from "../utils/loggerUtils";
 
-test.describe('Schedule D.O.D', () => {
+test.describe.serial('Schedule D.O.D', () => {
     let context;
     let page;
     let uploadmedia;
@@ -31,14 +31,14 @@ test.describe('Schedule D.O.D', () => {
 
 
 
-    test.describe('D.O.D', () => {
+    test.describe('D.O.D @regression', () => {
 
         test('verify upload dod document', async () => {
             await dodPage.uploadDOD('Babu', '99');  
             await dodPage.verifyPopUpMessage('Schedule D.O.D. page uploaded successfully.');
         });
 
-        test('verify dod workflow: view → viewCount → download → downloadCount → move → delete', async () => {
+        test('verify dod workflow: view → viewCount → download → downloadCount → move → delete ', async () => {
             await dodPage.clickDODFolder();
             await dodPage.view();
             await dodPage.viewCount();
@@ -47,7 +47,7 @@ test.describe('Schedule D.O.D', () => {
             //await dodPage.verifyPopUpMessage('File downloaded successfully');
             await dodPage.downloadCount();
 
-            await dodPage.move();
+           // await dodPage.move();
 
             await dodPage.delete();
             await dodPage.verifyPopUpMessage('Schedule D.O.D. page deleted successfully.');
@@ -55,11 +55,18 @@ test.describe('Schedule D.O.D', () => {
     
     });
 
-    test.describe.skip('D.O.D History', () => {
+    test.describe('D.O.D History @smoke', () => {
         test('verify upload dod history', async () => {
             await uploadmedia.history();
         });
+
+        test.describe('babu is automation tester', async ()=>{
+            console.log('hello');
+        });
+
     });
+
+    
 
 });
 

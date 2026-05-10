@@ -1,49 +1,417 @@
-<testsuites id="" name="" tests="3" failures="1" skipped="2" errors="0" time="3.5227820000000003">
-<testsuite name="dod.spec.js" timestamp="2026-03-26T08:26:59.834Z" hostname="chromium" tests="3" failures="1" skipped="2" time="0" errors="0">
-<testcase name="Schedule D.O.D › D.O.D @regression › verify upload dod document" classname="dod.spec.js" time="0">
-<failure message="dod.spec.js:36:9 verify upload dod document" type="FAILURE">
-<![CDATA[  [chromium] › dod.spec.js:36:9 › Schedule D.O.D › D.O.D @regression › verify upload dod document ──
+<testsuites id="" name="" tests="75" failures="2" skipped="73" errors="0" time="30.620442999999998">
+<testsuite name="bulletin.spec.js" timestamp="2026-05-10T11:10:31.242Z" hostname="chromium" tests="75" failures="2" skipped="73" time="17.819" errors="0">
+<testcase name="Bulletin › Send Message › verify send a message" classname="bulletin.spec.js" time="17.819">
+<failure message="bulletin.spec.js:29:9 verify send a message" type="FAILURE">
+<![CDATA[  [chromium] › bulletin.spec.js:29:9 › Bulletin › Send Message › verify send a message ─────────────
 
-    Error: page.goto: Target page, context or browser has been closed
+    Error: locator.click: Target page, context or browser has been closed
     Call log:
-      - navigating to "https://web.zillit.com/home", waiting until "load"
+      - waiting for locator('#send_messages_to_users_button')
 
 
-      15 |         page = await context.newPage();
-      16 |
-    > 17 |         await page.goto('/home');
-         |                    ^
-      18 |         
-      19 |         uploadmedia = new UploadMedia(page);
-      20 |         dodPage = new ScheduleDOD(page);
-        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/dod.spec.js:17:20
+       at ../actions/media-uploader.js:122
 
-    Error Context: ../../test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/error-context.md
+      120 |     async sendMessage(){
+      121 |         await this.typeYourMessage.fill('Hello How are you');
+    > 122 |         await this.sendButton.click();
+          |                               ^
+      123 |         await this.page.waitForTimeout(2000);
+      124 |         await this.sendingIndicator.waitFor({state: 'hidden', timeout: 10000});
+      125 |     }
+        at UploadMedia.sendMessage (/Users/babuyadav/Documents/zillit-playwright-automation/src/actions/media-uploader.js:122:31)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/bulletin.spec.js:30:13
+
+    Error Context: ../../test-results/bulletin-Bulletin-Send-Message-verify-send-a-message-chromium/error-context.md
 
     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/trace.zip
+    test-results/bulletin-Bulletin-Send-Message-verify-send-a-message-chromium/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/trace.zip
+        npx playwright show-trace test-results/bulletin-Bulletin-Send-Message-verify-send-a-message-chromium/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[[INFO] 2026-03-26T08:27:01.192Z - browser is launching
-[INFO] 2026-03-26T08:27:03.141Z - close browser
+<![CDATA[[INFO] 2026-05-10T11:10:32.299Z - browser is launching
+Current hostname is: web.zillit.com
+[INFO] 2026-05-10T11:10:35.596Z - Production environment is started...
+[INFO] 2026-05-10T11:10:55.868Z - close browser
 
-[[ATTACHMENT|../test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/error-context.md]]
+[[ATTACHMENT|../test-results/bulletin-Bulletin-Send-Message-verify-send-a-message-chromium/error-context.md]]
 
-[[ATTACHMENT|../test-results/dod-Schedule-D-O-D-D-O-D-r-73905--verify-upload-dod-document-chromium/trace.zip]]
+[[ATTACHMENT|../test-results/bulletin-Bulletin-Send-Message-verify-send-a-message-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Schedule D.O.D › D.O.D @regression › verify dod workflow: view → viewCount → download → downloadCount → move → delete " classname="dod.spec.js" time="0">
+<testcase name="Bulletin › Send Message › verify edit the message" classname="bulletin.spec.js" time="0">
+<failure message="bulletin.spec.js:33:9 verify edit the message" type="FAILURE">
+<![CDATA[  [chromium] › bulletin.spec.js:33:9 › Bulletin › Send Message › verify edit the message ───────────
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://web.zillit.com/", waiting until "load"
+
+
+      14 |         page = await context.newPage();
+      15 |
+    > 16 |         await page.goto('/');
+         |                    ^
+      17 |         
+      18 |         uploadmedia = new UploadMedia(page);
+      19 |         await uploadmedia.clickProjectName();
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/bulletin.spec.js:16:20
+
+    Error Context: ../../test-results/bulletin-Bulletin-Send-Message-verify-edit-the-message-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/bulletin-Bulletin-Send-Message-verify-edit-the-message-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/bulletin-Bulletin-Send-Message-verify-edit-the-message-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[[INFO] 2026-05-10T11:10:58.410Z - browser is launching
+[INFO] 2026-05-10T11:11:01.551Z - close browser
+
+[[ATTACHMENT|../test-results/bulletin-Bulletin-Send-Message-verify-edit-the-message-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/bulletin-Bulletin-Send-Message-verify-edit-the-message-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Bulletin › Send Message › verify read by status on message" classname="bulletin.spec.js" time="0">
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Schedule D.O.D › D.O.D History @smoke › verify upload dod history" classname="dod.spec.js" time="0">
+<testcase name="Bulletin › Send Message › verify forward the message" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Message › verify reply to the message" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the edit the reply message" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the read by status on reply message" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the delete the reply message" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the forward to remote project" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Message › verify the delete message " classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the send a image" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the readBy status" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the forward" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the edit reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the readBy reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the delete reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the save or download" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the distribute" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the forward to remote project" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image › verify the delete image" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the send a video" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the readBy status" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the forward" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the edit reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the readBy reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the delete reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the save or download" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the distribute" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the forward to remote project" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Video › verify the delete video" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the send a audio" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the readBy status" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the forward" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the edit reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the readBy reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the delete reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the save or download" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the distribute" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the forward to remote project" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Audio › verify the delete audio" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the send a document" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the readBy status" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the forward" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the edit reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the readBy reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the delete reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the save or download" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the distribute" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the forward to remote project" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Document › verify the delete document" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the send a location" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the readBy status" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the forward" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the edit reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the readBy reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the delete reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the forward to remote project" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Location › verify the delete location" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the send a voiceOver" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the readBy status" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the forward" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the edit reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the readBy reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the delete reply" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the save or download" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the distribute" classname="bulletin.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the forward to remote project" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send VoiceOver › verify the delete audio" classname="bulletin.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Bulletin › Send Image Reply › verify send a image reply" classname="bulletin.spec.js" time="0">
 <skipped>
 </skipped>
 </testcase>
